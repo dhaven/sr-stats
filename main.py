@@ -112,7 +112,7 @@ class Action:
         self.removedPoolCombat = 0
         self.addedPoolTrade = 0
         self.removedPoolTrade = 0
-        self.authority = 50
+        self.authorityChange = dict() #track to authority change for each player
         self.playedCards = list()
         self.purchasedCards = list()
         self.scrappedCards = list()
@@ -133,8 +133,11 @@ class Action:
         else:
             pass
     
-    def changeAuthority(self, amount):
-        self.authority += amount
+    def updateAuthority(self, name, amount):
+        if name not in self.authorityChange:
+            self.authorityChange[name] = list()
+        self.authorityChange[name].append(amount)
+
     
     def getString(self):
         if self.type == Action.ACTION_PURCHASE:
@@ -149,7 +152,7 @@ class Action:
     def __str__(self):
         action = "action type: " + self.getString() + "\n"
         action += "Authority: "
-        action += str(self.authority)
+        action += str(self.authorityChange)
         action += "\n"
         action += "Pool balance \n"
         action += "addedPoolCombat: " + str(self.addedPoolCombat) + ", removedPoolCombat: " + str(self.removedPoolCombat) + ", addedPoolTrade: " + str(self.addedPoolTrade) + ", removedPoolTrade: " + str(self.removedPoolTrade) + "\n"
@@ -237,8 +240,8 @@ class MyVisitor(StarRealmsVisitor):
     def visitTurn(self, ctx):
         nextRound = Round(list(),self.visit(ctx.endTurn()))
         for action in ctx.action():
-            nextBalance = self.visit(action)
-            nextRound.actions.append(nextBalance)
+            nextAction = self.visit(action)
+            nextRound.actions.append(nextAction)
         return nextRound
 
     # endTurn subtree has the name of the player who played this turn
@@ -270,11 +273,16 @@ class MyVisitor(StarRealmsVisitor):
         for actionDetail in ctx.actionDetail():
             if actionDetail.newBalanceDetail():
                 summary = self.visit(actionDetail.newBalanceDetail())
-                nextAction.addToPool(Action.POOL_TRADE,summary['effect']['addedPoolTrade'])
-                nextAction.addToPool(Action.POOL_COMBAT,summary['effect']['addedPoolCombat'])
-                nextAction.removeFromPool(Action.POOL_TRADE,summary['effect']['removedPoolTrade'])
-                nextAction.removeFromPool(Action.POOL_COMBAT,summary['effect']['removedPoolCombat'])
-                nextAction.changeAuthority(summary['effect']['authority'])
+                if 'addedPoolTrade' in summary['effect']:
+                    nextAction.addToPool(Action.POOL_TRADE,summary['effect']['addedPoolTrade'])
+                if 'addedPoolCombat' in summary['effect']:
+                    nextAction.addToPool(Action.POOL_COMBAT,summary['effect']['addedPoolCombat'])
+                if 'removedPoolTrade' in summary['effect']:
+                    nextAction.removeFromPool(Action.POOL_TRADE,summary['effect']['removedPoolTrade'])
+                if 'removedPoolCombat' in summary['effect']:
+                    nextAction.removeFromPool(Action.POOL_COMBAT,summary['effect']['removedPoolCombat'])
+                if 'authority' in summary['effect']:
+                    nextAction.updateAuthority(summary['name'], summary['effect']['authority'])
                 if summary['card']:
                     nextAction.playedCards.append(summary['card'])
             elif actionDetail.scrapDetail():
@@ -290,7 +298,8 @@ class MyVisitor(StarRealmsVisitor):
         if ctx.card():
             card = self.visit(ctx.card())
         effect = self.visit(ctx.effect())
-        return dict(card=card,effect=effect)
+        name = self.visit(ctx.name())
+        return dict(name=name, card=card, effect=effect)
     
     # grammar: SCRAPPED card ;
     def visitScrapDetail(self, ctx):
@@ -301,7 +310,7 @@ class MyVisitor(StarRealmsVisitor):
 
     # grammar: : (INCREMENT | DECREASE) category ;
     def visitEffect(self, ctx):
-        effect = dict(addedPoolTrade=0, removedPoolTrade=0, addedPoolCombat=0, removedPoolCombat=0, authority=0)
+        effect = dict()
         category = self.visit(ctx.category())
         if ctx.INCREMENT() and category == "Trade":
             effect['addedPoolTrade'] = int(ctx.INCREMENT().getText().strip('+'))
