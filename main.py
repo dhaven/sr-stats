@@ -74,6 +74,7 @@ class Deck:
         self.cards[cardScout.getString()] = cardScout
         self.cards[cardViper.getString()] = cardViper
     
+    #
     def update(self, actions):
         for action in actions:
             if action.type == Action.ACTION_PURCHASE:
@@ -156,18 +157,6 @@ class Action:
         action += "\n"
         action += "Pool balance \n"
         action += "addedPoolCombat: " + str(self.addedPoolCombat) + ", removedPoolCombat: " + str(self.removedPoolCombat) + ", addedPoolTrade: " + str(self.addedPoolTrade) + ", removedPoolTrade: " + str(self.removedPoolTrade) + "\n"
-        # action += "Played Cards: \n"
-        # for card in self.playedCards:
-        #     action += str(card)
-        #     action += "\n"
-        # action += "Purchased Cards: \n"
-        # for card in self.purchasedCards:
-        #     action += str(card)
-        #     action += "\n"
-        # action += "Scrapped Cards: \n"
-        # for card in self.scrappedCards:
-        #     action += str(card)
-        #     action += "\n"
         return action
     
 
@@ -236,23 +225,23 @@ class MyVisitor(StarRealmsVisitor):
         return battle
 
     # for each turn, get the summary of action and the user who performed it
-    # grammar: action+ endTurn NEWLINE ;
+    # grammar: action+ endPhase ;
     def visitTurn(self, ctx):
-        nextRound = Round(list(),self.visit(ctx.endTurn()))
+        nextRound = Round(list(),self.visit(ctx.endPhase()))
         for action in ctx.action():
             nextAction = self.visit(action)
             nextRound.actions.append(nextAction)
         return nextRound
 
+    def visitEndPhase(self, ctx):
+        return self.visit(ctx.endTurn())
+
     # endTurn subtree has the name of the player who played this turn
     # grammar: WORD+ turnCount ;
     def visitEndTurn(self, ctx):
         playerName = ""
-        for word in ctx.WORD():
-            if word.getText() != "ends":
-                playerName += word.getText()
-            else:
-                return playerName
+        for word in ctx.name().WORD():
+            playerName += word.getText()
             playerName += " "
         return playerName
 
@@ -262,7 +251,7 @@ class MyVisitor(StarRealmsVisitor):
         if ctx.summaryAction().purchase():
             nextAction.type = Action.ACTION_PURCHASE
             nextAction.purchasedCards.append(self.visit(ctx.summaryAction().purchase()))
-        elif ctx.summaryAction().attack():
+        elif ctx.summaryAction().attackPlayer():
             nextAction.type = Action.ACTION_ATTACK
         elif  ctx.summaryAction().play():
             nextAction.type = Action.ACTION_PLAY
@@ -308,10 +297,10 @@ class MyVisitor(StarRealmsVisitor):
             card = self.visit(ctx.card())
         return card
 
-    # grammar: : (INCREMENT | DECREASE) category ;
+    # grammar: : (INCREMENT | DECREASE) WORD ;
     def visitEffect(self, ctx):
         effect = dict()
-        category = self.visit(ctx.category())
+        category = ctx.WORD().getText()
         if ctx.INCREMENT() and category == "Trade":
             effect['addedPoolTrade'] = int(ctx.INCREMENT().getText().strip('+'))
         elif ctx.DECREASE() and category == "Trade":
