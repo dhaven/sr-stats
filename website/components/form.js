@@ -1,24 +1,37 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { atom, useAtom } from 'jotai'
-import { parseBattle, getDecks, getAuthority, getTrade } from '../lib/test'
+import { Battle, getDecks } from '../lib/classes'
 
-export const authorityAtom = atom({})
-export const tradeAtom = atom({})
-export const deckAtom = atom({})
+const logDataAtom = atom({})
 
 export default function Basic(){
-    const [valueAuthority, setAuthority] = useAtom(authorityAtom)
-    const [valueTrade, setTrade] = useAtom(tradeAtom)
-    const [valueDeck, setDeck] = useAtom(deckAtom)
+  const [logData, setLogData] = useAtom(logDataAtom)
+  console.log(logData)
+  let decks = {}
+  if('players' in logData){
+    decks = getDecks(Battle.deserialize(logData))
+    console.log(decks)
+  }
     return (
         <div>
           <Formik
             initialValues={{ battlelog: ''}}
             onSubmit={(values) => {
-                let battle = parseBattle(values.battlelog)
-                setDeck(getDecks(battle))
-                setAuthority(getAuthority(battle))
-                setTrade(getTrade(battle))
+              fetch('/api/parse_log', {
+                method: 'POST', // or 'PUT'
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(values.battlelog),
+              })
+              .then(response => response.json())
+              .then(data => {
+                console.log(data)
+                setLogData(data)
+              })
+              .catch((error) => {
+                console.error('Error:', error);
+              });
             }}
           >
             {({ isSubmitting }) => (
@@ -31,6 +44,7 @@ export default function Basic(){
               </Form>
             )}
           </Formik>
+          <strong>{JSON.stringify(decks)}</strong>
         </div>
       )
 }

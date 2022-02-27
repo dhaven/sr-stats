@@ -1,73 +1,4 @@
-import antlr4 from 'antlr4';
-import StarRealmsLexer from './antlr4/StarRealmsLexer.js';
-import StarRealmsParser from './antlr4/StarRealmsParser.js';
-import StarRealmsVisitor from './antlr4/StarRealmsVisitor.js';
-
-const input = `Play all
-        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
-        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
-        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
-Acquired <color=#1589FF>Cutter</color>
-        Hard AI - -2 Trade (Trade:1)
-Acquired <color=#1589FF>Federation Shuttle</color>
-        Hard AI - -1 Trade (Trade:0)
-Hard AI ends turn 1
-        Drew 5 cards.
-        Refresh ally indicators
-        It is now Player's turn 2
-Play all
-        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
-        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
-        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
-        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
-        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
-Acquired <color=#1589FF>Cutter</color>
-        Player - -2 Trade (Trade:2)
-Acquired <color=#800080>Explorer</color>
-        Player - -2 Trade (Trade:0)
-Attacked Hard AI for 1 (New Authority:49)
-        Player - -1 Combat (Combat:0)
-        Hard AI - -1 Authority (Authority:49)
-Player ends turn 2
-        Drew 5 cards.
-        Refresh ally indicators
-        It is now Hard AI's turn 3
-Play all
-        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
-        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:2)
-        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
-        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
-        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
-Acquired <color=#FF0000>Battle Station</color>
-        Hard AI - -3 Trade (Trade:0)
-Attacked Player for 2 (New Authority:48)
-        Hard AI - -2 Combat (Combat:0)
-        Player - -2 Authority (Authority:48)
-Hard AI ends turn 3
-        Drew 2 cards.
-        Shuffled discard pile to form new deck
-        Drew 3 cards.
-        Refresh ally indicators
-        It is now Player's turn 4
-Play all
-        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
-        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
-        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
-        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
-        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
-Acquired <color=#FFFF00>Recycling Station</color>
-        Player - -4 Trade (Trade:0)
-Attacked Hard AI for 1 (New Authority:48)
-        Player - -1 Combat (Combat:0)
-        Hard AI - -1 Authority (Authority:48)
-Player ends turn 4
-        Shuffled discard pile to form new deck
-        Drew 5 cards.
-        Refresh ally indicators
-        It is now Hard AI's turn 5
-`
-
-class Card{
+export class Card{
     static CARD_SCOUT = 0
     static CARD_VIPER = 1
     static CARD_SUPPLY_BOT = 2
@@ -170,9 +101,18 @@ class Card{
     toString(){
         return this.getString() + "-- count: " + String(this.count) + ", played times: " + String(this.playedCount) + ", scrapped times: " + String(this.scrappedCount)
     }
+
+    static deserialize(jobject){
+        let card = new Card()
+        card.cardType = jobject['cardType']
+        card.count = jobject['count']
+        card.playedCount = jobject['playedCount']
+        card.scrappedCount = jobject['scrappedCount']
+        return card
+    }
 }
 
-class Deck{
+export class Deck{
     constructor(){
         this.cards = {}
         let cardScout = new Card(Card.CARD_SCOUT, 8)
@@ -212,8 +152,18 @@ class Deck{
         }
         return cardList
     }
+
+    static deserialize(jobject){
+        let deck = new Deck()
+        deck.cards = {} //make sure the deck is empty
+        for(let card in jobject['cards']){
+            let nextCard = jobject['cards'][card]
+            deck.cards[card] = Card.deserialize(nextCard)
+        }
+        return deck
+    }
 }
-class Action{
+export class Action{
     static ACTION_PURCHASE = 0
     static ACTION_PLAY = 1
     static ACTION_ATTACK = 2
@@ -279,9 +229,32 @@ class Action{
         action += "addedPoolCombat: " + String(this.addedPoolCombat) + ", removedPoolCombat: " + String(this.removedPoolCombat) + ", addedPoolTrade: " + String(this.addedPoolTrade) + ", removedPoolTrade: " + String(this.removedPoolTrade) + "\n"
         return action
     }
+
+    static deserialize(jobject){
+        let action = new Action()
+        action.type = jobject['type']
+        action.addedPoolCombat = jobject['addedPoolCombat']
+        action.addedPoolTrade = jobject['addedPoolTrade']
+        action.removedPoolCombat = jobject['removedPoolCombat']
+        action.removedPoolTrade = jobject['removedPoolTrade']
+        action.authorityChange = jobject['authorityChange']
+        for(let i = 0; i < jobject['playedCards'].length; i++){
+            let nextPlayedCard = jobject['playedCards'][i]
+            action.playedCards.push(Card.deserialize(nextPlayedCard))
+        }
+        for(let i = 0; i < jobject['purchasedCards'].length; i++){
+            let nextPurchasedCard = jobject['purchasedCards'][i]
+            action.purchasedCards.push(Card.deserialize(nextPurchasedCard))
+        }
+        for(let i = 0; i < jobject['scrappedCards'].length; i++){
+            let nextScrappedCard = jobject['scrappedCards'][i]
+            action.scrappedCards.push(Card.deserialize(nextScrappedCard))
+        }
+        return action
+    }
 }
 
-class Player{
+export class Player{
     constructor(name){
         this.deck = new Deck()
         this.name = name.trim()
@@ -294,10 +267,16 @@ class Player{
     toString(){
         return this.name + " with deck: \n" + String(this.deck) + "\n"
     }
+
+    static deserialize(jobject){
+        let player = new Player(jobject['name'])
+        player.deck = Deck.deserialize(jobject['deck'])
+        return player
+    }
 }
 
 // information representing a round in a game
-class Round {
+export class Round {
     constructor(actions, player){
         this.actions = actions
         this.player = player
@@ -311,9 +290,18 @@ class Round {
         }
         return roundActions
     }
+
+    static deserialize(jobject){
+        let round = new Round([],jobject['player'])
+        for(let i = 0; i < jobject['actions'].length; i++){
+            let nextAction = jobject['actions'][i]
+            round.actions.push(Action.deserialize(nextAction))
+        }
+        return round
+    }
 }
 
-class Battle {
+export class Battle {
     constructor(){
         this.rounds = []
         this.players = []
@@ -342,174 +330,19 @@ class Battle {
         }
         return battle
     }
-}
-class Visitor extends StarRealmsVisitor{
 
-    visitBattle(ctx){
+    static deserialize(jobject){
         let battle = new Battle()
-        for(let i = 0; i < ctx.turn().length; i++){
-            let nextRound = this.visit(ctx.turn()[i])
-            battle.rounds.push(nextRound)
-            battle.updatePlayer(nextRound.player, nextRound.actions)
+        for(let i = 0; i < jobject['rounds'].length; i++){
+            let nextRound = jobject['rounds'][i]
+            battle.rounds.push(Round.deserialize(nextRound))
+        }
+        for(let i = 0; i < jobject['players'].length; i++){
+            let nextPlayer = jobject['players'][i]
+            battle.players.push(Player.deserialize(nextPlayer))
         }
         return battle
     }
-
-    // for each turn, get the summary of action and the user who performed it
-    // grammar: action+ endPhase ;
-    visitTurn(ctx){
-        let nextRound = new Round([],this.visit(ctx.endPhase()))
-        for(let i = 0; i < ctx.action().length; i++){
-            let nextAction = this.visit(ctx.action()[i])
-            nextRound.actions.push(nextAction)
-        }
-        return nextRound
-    }
-
-    visitEndPhase(ctx){
-        return this.visit(ctx.endTurn())
-    }
-
-    // endTurn subtree has the name of the player who played this turn
-    // grammar: WORD+ turnCount ;
-    visitEndTurn(ctx){
-        let playerName = ""
-        for(let i = 0; i < ctx.name().WORD().length; i++){
-            playerName += ctx.name().WORD()[i].getText()
-        }
-        return playerName
-    }
-
-    // grammar: summaryAction NEWLINE actionDetail* ;
-    visitAction(ctx){
-        let nextAction = new Action()
-        if(ctx.summaryAction().purchase()){
-            nextAction.type = Action.ACTION_PURCHASE
-            nextAction.purchasedCards.push(this.visit(ctx.summaryAction().purchase()))
-        }else if(ctx.summaryAction().attackPlayer()){
-            nextAction.type = Action.ACTION_ATTACK
-        }else if(ctx.summaryAction().play()){
-            nextAction.type = Action.ACTION_PLAY
-        }else if(ctx.summaryAction().scrap()){
-            nextAction.type = Action.ACTION_SCRAP
-        }else{
-            throw new Error()
-        }
-        for(let i = 0; i < ctx.actionDetail().length; i++){
-            let tempActionDetail =ctx.actionDetail()[i]
-            if(tempActionDetail.newBalanceDetail()){
-                let summary = this.visit(tempActionDetail.newBalanceDetail())
-                if('addedPoolTrade' in summary['effect']){
-                    nextAction.addToPool(Action.POOL_TRADE,summary['effect']['addedPoolTrade'])
-                }
-                if('addedPoolCombat' in summary['effect']){
-                    nextAction.addToPool(Action.POOL_COMBAT,summary['effect']['addedPoolCombat'])
-                }
-                if('removedPoolTrade' in summary['effect']){
-                    nextAction.removeFromPool(Action.POOL_TRADE,summary['effect']['removedPoolTrade'])
-                }
-                if('removedPoolCombat' in summary['effect']){
-                    nextAction.removeFromPool(Action.POOL_COMBAT,summary['effect']['removedPoolCombat'])
-                }
-                if('authority' in summary['effect']){
-                    nextAction.updateAuthority(summary['name'], summary['effect']['authority'])
-                }
-                if(summary['card'] !== undefined){
-                    nextAction.playedCards.push(summary['card'])
-                }
-            }else if(tempActionDetail.scrapDetail()){
-                let scrappedCard = this.visit(tempActionDetail.scrapDetail())
-                nextAction.scrappedCards.push(scrappedCard)
-            }else{
-                throw new Error()
-            }
-        }
-        return nextAction
-    }
-    //grammar: name SEPARATOR card? effect balance ;
-    visitNewBalanceDetail(ctx){
-        let card
-        if(ctx.card()){
-            card = this.visit(ctx.card())
-        }
-        let effect = this.visit(ctx.effect())
-        let name = this.visit(ctx.name())
-        return {
-            "name": name,
-            "effect": effect,
-            "card": card,
-        }
-    }
-
-    // grammar: SCRAPPED card ;
-    visitScrapDetail(ctx){
-        let card
-        if(ctx.card()){
-            card = this.visit(ctx.card())
-        }
-        return card
-    }
-
-    // grammar: : (INCREMENT | DECREASE) WORD ;
-    visitEffect(ctx){
-        let effect = {}
-        let category = ctx.WORD().getText()
-        if(ctx.INCREMENT() && category == "Trade"){
-            effect['addedPoolTrade'] = Number(ctx.INCREMENT().getText().replace('+',''))
-        }
-        else if(ctx.DECREASE() && category == "Trade"){
-            effect['removedPoolTrade'] = Number(ctx.DECREASE().getText().replace('-',''))
-        }
-        else if(ctx.INCREMENT() && category == "Combat"){
-            effect['addedPoolCombat'] = Number(ctx.INCREMENT().getText().replace('+',''))
-        }
-        else if(ctx.DECREASE() && category == "Combat"){
-            effect['removedPoolCombat'] = Number(ctx.DECREASE().getText().replace('-',''))
-        }
-        else if(ctx.INCREMENT() && category == "Authority"){
-            effect['authority'] = Number(ctx.INCREMENT().getText().replace('+',''))
-        }
-        else if(ctx.DECREASE() && category == "Authority"){
-            effect['authority'] = 0 - Number(ctx.DECREASE().getText().replace('-',''))
-        }
-        else{
-            throw new Error()
-        }
-        return effect
-    }
-
-    visitPurchase(ctx){
-        return this.visit(ctx.card())
-    }
-
-    visitScrap(ctx){
-        return this.visit(ctx.card())
-    }
-
-    visitCategory(ctx){
-        return ctx.getText()
-    }
-
-    visitName(ctx){
-        return ctx.getText()
-    }
-
-    visitCard(ctx){
-        let nextCard = new Card()
-        nextCard.addNameFromString(ctx.getText())
-        return nextCard
-    }
-
-}
-
-export function parseBattle(battlelog) {
-    const chars = new antlr4.InputStream(battlelog);
-    const lexer = new StarRealmsLexer(chars);
-    const tokens = new antlr4.CommonTokenStream(lexer);
-    const parser = new StarRealmsParser(tokens);
-    parser.buildParseTrees = true;
-    const tree = parser.battle();
-    return tree.accept(new Visitor());
 }
 
 //accepts a Battle object as input
@@ -552,6 +385,7 @@ function getRoundAuthority(round){
     }
     return roundAuthority
 }
+
 //accept a Battle object as input
 // each item in the array represent the amount of authority for that player 
 // at the end of the current round
