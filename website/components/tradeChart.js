@@ -1,6 +1,15 @@
 import Chart from 'chart.js/auto';
+import { useAtom } from 'jotai'
+import { getTrade } from '../lib/classes'
+import { logDataAtom } from './form'
 
-export default function TradeChart({ tradeData }) {
+export default function TradeChart() {
+    const [battle, setBattle] = useAtom(logDataAtom)
+    let tradeData = {}
+    if(Object.keys(battle).length != 0){
+        tradeData = getTrade(battle)
+        console.log(tradeData)
+    }
     //construct our dataset array
     let datasets = []
     let numTurns = 0

@@ -1,17 +1,11 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { atom, useAtom } from 'jotai'
-import { Battle, getDecks } from '../lib/classes'
+import { Battle } from '../lib/classes'
 
-const logDataAtom = atom({})
+export const logDataAtom = atom({})
 
 export default function Basic(){
   const [logData, setLogData] = useAtom(logDataAtom)
-  console.log(logData)
-  let decks = {}
-  if('players' in logData){
-    decks = getDecks(Battle.deserialize(logData))
-    console.log(decks)
-  }
     return (
         <div>
           <Formik
@@ -26,8 +20,7 @@ export default function Basic(){
               })
               .then(response => response.json())
               .then(data => {
-                console.log(data)
-                setLogData(data)
+                setLogData(Battle.deserialize(data))
               })
               .catch((error) => {
                 console.error('Error:', error);
@@ -44,7 +37,6 @@ export default function Basic(){
               </Form>
             )}
           </Formik>
-          <strong>{JSON.stringify(decks)}</strong>
         </div>
       )
 }

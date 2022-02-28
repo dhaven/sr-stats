@@ -311,6 +311,7 @@ export class Battle {
         for(let i = 0; i < this.players.length; i++){
             if(this.players[i].isPlayer(name)){
                 this.players[i].deck.update(actions)
+                return
             }
         }
         let nextPlayer = new Player(name)

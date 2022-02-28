@@ -1,6 +1,15 @@
 import Chart from 'chart.js/auto';
+import { useAtom } from 'jotai'
+import { getAuthority } from '../lib/classes'
+import { logDataAtom } from './form'
 
-export default function AuthorityChart({ authorityData }) {
+export default function AuthorityChart() {
+    const [battle, setBattle] = useAtom(logDataAtom)
+    let authorityData = {}
+    if(Object.keys(battle).length != 0){
+        authorityData = getAuthority(battle)
+        console.log(authorityData)
+    }
     //construct our dataset array
     let datasets = []
     let numTurns = 0
