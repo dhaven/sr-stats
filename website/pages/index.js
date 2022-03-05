@@ -1,48 +1,56 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import Date from '../components/date'
 import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from '../lib/posts'
+import InputLog, { logDataAtom } from '../components/form.js'
+import DeckList from '../components/deck_list.js'
+import AuthorityChart from '../components/authorityChart.js'
+import TradeChart from '../components/tradeChart.js'
+import { useAtom } from 'jotai'
+import { getDecks } from '../lib/classes'
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
+export default function Home() {
+  const [battle, setBattle] = useAtom(logDataAtom)
+  let decksData = {}
+  if(Object.keys(battle).length != 0){
+    decksData = getDecks(battle)
+    console.log(decksData)
   }
-}
-
-export default function Home({ allPostsData }) {
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-            <Link href={`/posts/${id}`}>
-              <a>{title}</a>
-            </Link>
-            <br />
-            <small className={utilStyles.lightText}>
-              <Date dateString={date} />
-            </small>
-          </li>
-          ))}
-        </ul>
-      </section>
+      <InputLog className="child"></InputLog>
+      <div className="finalDecks">
+        { 
+          Object.keys(decksData).map((oneKey,i)=>{
+            let subDict = {}
+            subDict[oneKey] = decksData[oneKey]
+            return (
+              <DeckList key={i} deckData={subDict}></DeckList>
+            )
+          })
+        }
+      </div>
+      <div className="chartContainer">
+        <AuthorityChart></AuthorityChart>
+        <TradeChart></TradeChart>
+      </div>
+      <style jsx>{`
+        .finalDecks {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin: 0.5rem;
+        }
+        .chartContainer {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin: 0.5rem;
+        }
+      `}</style>
     </Layout>
   )
 }

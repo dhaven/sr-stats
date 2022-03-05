@@ -1,10 +1,11 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { atom, useAtom } from 'jotai'
 import { Battle } from '../lib/classes'
+import styles from './form.module.css'
 
 export const logDataAtom = atom({})
 
-export default function Basic(){
+export default function InputLog(){
   const [logData, setLogData] = useAtom(logDataAtom)
     return (
         <div>
@@ -27,15 +28,13 @@ export default function Basic(){
               });
             }}
           >
-            {({ isSubmitting }) => (
-              <Form>
-                <Field name="battlelog" as="textarea"/>
-                <ErrorMessage name="battlelog" component="div" />
-                <button type="submit">
-                  Submit
-                </button>
-              </Form>
-            )}
+            <Form className={styles.container}>
+              <Field className={styles.textarea} name="battlelog" as="textarea"/>
+              <ErrorMessage name="battlelog" component="div" />
+              <button type="submit" className={styles.item}>
+                Submit
+              </button>
+            </Form>
           </Formik>
         </div>
       )

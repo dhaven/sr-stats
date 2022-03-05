@@ -2,13 +2,13 @@ import Chart from 'chart.js/auto';
 import { useAtom } from 'jotai'
 import { getTrade } from '../lib/classes'
 import { logDataAtom } from './form'
+import styles from './chart.module.css'
 
 export default function TradeChart() {
     const [battle, setBattle] = useAtom(logDataAtom)
     let tradeData = {}
     if(Object.keys(battle).length != 0){
         tradeData = getTrade(battle)
-        console.log(tradeData)
     }
     //construct our dataset array
     let datasets = []
@@ -41,6 +41,8 @@ export default function TradeChart() {
           },
     })
     return (
-        <canvas id="tradeChart"></canvas>
+        <div className={styles.container}>
+            <canvas id="tradeChart"></canvas>
+        </div>
     )
   } 

@@ -2,13 +2,13 @@ import Chart from 'chart.js/auto';
 import { useAtom } from 'jotai'
 import { getAuthority } from '../lib/classes'
 import { logDataAtom } from './form'
+import styles from './chart.module.css'
 
 export default function AuthorityChart() {
     const [battle, setBattle] = useAtom(logDataAtom)
     let authorityData = {}
     if(Object.keys(battle).length != 0){
         authorityData = getAuthority(battle)
-        console.log(authorityData)
     }
     //construct our dataset array
     let datasets = []
@@ -41,6 +41,8 @@ export default function AuthorityChart() {
           },
     })
     return (
-        <canvas id="authorityChart"></canvas>
+        <div className={styles.container}>
+            <canvas id="authorityChart"></canvas>
+        </div>
     )
   }
