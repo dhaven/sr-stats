@@ -12,6 +12,12 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
+	// Visit a parse tree produced by StarRealmsParser#winStatus.
+	visitWinStatus(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
 	// Visit a parse tree produced by StarRealmsParser#turn.
 	visitTurn(ctx) {
 	  return this.visitChildren(ctx);
@@ -56,6 +62,36 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 
 	// Visit a parse tree produced by StarRealmsParser#activateBase.
 	visitActivateBase(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#increasePool.
+	visitIncreasePool(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#discardAndDraw.
+	visitDiscardAndDraw(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#discardAndDrawDescription.
+	visitDiscardAndDrawDescription(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#selectDiscardCard.
+	visitSelectDiscardCard(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#activateEffect.
+	visitActivateEffect(ctx) {
 	  return this.visitChildren(ctx);
 	}
 

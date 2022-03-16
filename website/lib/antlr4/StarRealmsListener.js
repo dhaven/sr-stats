@@ -14,6 +14,15 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#winStatus.
+	enterWinStatus(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#winStatus.
+	exitWinStatus(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#turn.
 	enterTurn(ctx) {
 	}
@@ -83,6 +92,51 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 
 	// Exit a parse tree produced by StarRealmsParser#activateBase.
 	exitActivateBase(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#increasePool.
+	enterIncreasePool(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#increasePool.
+	exitIncreasePool(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#discardAndDraw.
+	enterDiscardAndDraw(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#discardAndDraw.
+	exitDiscardAndDraw(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#discardAndDrawDescription.
+	enterDiscardAndDrawDescription(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#discardAndDrawDescription.
+	exitDiscardAndDrawDescription(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#selectDiscardCard.
+	enterSelectDiscardCard(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#selectDiscardCard.
+	exitSelectDiscardCard(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#activateEffect.
+	enterActivateEffect(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#activateEffect.
+	exitActivateEffect(ctx) {
 	}
 
 

@@ -9,6 +9,7 @@ export default function AuthorityChart() {
     let authorityData = {}
     if(Object.keys(battle).length != 0){
         authorityData = getAuthority(battle)
+        console.log(authorityData)
     }
     //construct our dataset array
     let datasets = []

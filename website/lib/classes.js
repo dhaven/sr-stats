@@ -492,37 +492,18 @@ export class Battle {
 // }
 export function getDecks(battle){
     let finalDecks = {}
-    for(let i = 0; i < battle.players.length; i++){
-        let tempPlayer = battle.players[i]
-        let cardDeck = []
-        for(let card in tempPlayer.deck.cards){
+    let lastRound = battle['rounds'][battle['rounds'].length-1]
+    for(let i = 0; i < lastRound['players'].length; i++){
+        let player = lastRound['players'][i]
+        finalDecks[player['name']] = []
+        for(let card in player['deck']){
             let nextCard = {}
-            let nextCardName = tempPlayer.deck.cards[card].getString()
-            let nextCardCount = tempPlayer.deck.cards[card].count
-            nextCard[nextCardName] = nextCardCount
-            cardDeck.push(nextCard)
+            nextCard[card] = player['deck'][card]['count']
+            finalDecks[player['name']].push(nextCard)
         }
-        finalDecks[tempPlayer.name] = cardDeck
+
     }
     return finalDecks
-}
-
-//return the authority change for each player in this round
-function getRoundAuthority(round){
-    let roundAuthority = {}
-    for(let i = 0; i < round.actions.length; i++){
-        let nextAuthorityChange = round.actions[i].authorityChange
-        let playerList = Object.keys(nextAuthorityChange)
-        for(let j = 0; j < playerList.length; j++){
-            let nextPlayer = playerList[j]
-            if(nextPlayer in roundAuthority){
-                roundAuthority[nextPlayer] += nextAuthorityChange[nextPlayer]
-            }else{
-                roundAuthority[nextPlayer] = nextAuthorityChange[nextPlayer]
-            }
-        }
-    }
-    return roundAuthority
 }
 
 //accept a Battle object as input
@@ -535,25 +516,15 @@ function getRoundAuthority(round){
 // }
 export function getAuthority(battle){
     let authorityData = {}
-    for(let i = 0; i < battle.players.length; i++){
-        authorityData[battle.players[i].name] = []
-    }
-    for(let i = 0; i < battle.rounds.length; i++){
-        let nextRound = battle.rounds[i]
-        let nextRoundAuthority = getRoundAuthority(nextRound)
-        for(let player in authorityData){
-            if(!(player in nextRoundAuthority)){
-                authorityData[player].push(0)
+    for(let i = 0; i < battle['rounds'].length; i++){
+        for(let j = 0; j < battle['rounds'][i]['players'].length; j++){
+            let player = battle['rounds'][i]['players'][j]
+            if(player['name'] in authorityData){
+                authorityData[player['name']].push(player['authority'])
             }else{
-                authorityData[player].push(nextRoundAuthority[player])
+                authorityData[player['name']] = [player['authority']]
             }
         }
-    }
-    //transform authority change into total authority at given turn
-    for(let player in authorityData){
-        authorityData[player] = authorityData[player].map((x,i, array)=>{
-            return array[i] += array[i-1] ? array[i-1] : 50
-        })
     }
     return authorityData
 }
@@ -569,19 +540,22 @@ export function getAuthority(battle){
 // }
 export function getTrade(battle){
     let tradeData = {}
-    for(let i = 0; i < battle.players.length; i++){
-        tradeData[battle.players[i].name] = []
-    }
-    //for each turn check who is the player for this turn
-    //for each action in this turn accumulate the amount of trade
-    //push the total amount of trade
-    for(let i = 0; i < battle.rounds.length; i++){
-        let nextRound = battle.rounds[i]
-        let nextTrade = 0
-        for(let j = 0; j < nextRound.actions.length; j++){
-            nextTrade += nextRound.actions[j].addedPoolTrade
+    let firstPlayer = battle['firstPlayer']
+    let secondPlayer = ""
+    for(let i = 0; i < battle['rounds'][0]['players'].length; i++){
+        let player = battle['rounds'][0]['players'][i]
+        if(player['name'] != battle['firstPlayer']){
+            secondPlayer = player['name']
         }
-        tradeData[nextRound.player].push(nextTrade)
+    }
+    tradeData[firstPlayer] = []
+    tradeData[secondPlayer] = []
+    for(let i = 0; i < battle['rounds'].length; i++){
+        if(i % 2 == 0){
+            tradeData[firstPlayer].push(battle['rounds'][i]['tradePool'])
+        }else{
+            tradeData[secondPlayer].push(battle['rounds'][i]['tradePool'])
+        }
     }
     return tradeData
 }

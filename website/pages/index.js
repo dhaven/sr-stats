@@ -12,7 +12,6 @@ export default function Home() {
   let decksData = {}
   if(Object.keys(battle).length != 0){
     decksData = getDecks(battle)
-    console.log(decksData)
   }
   return (
     <Layout>
@@ -49,6 +48,7 @@ export default function Home() {
           justify-content: center;
           align-items: center;
           margin: 0.5rem;
+          flex-wrap: wrap;
         }
       `}</style>
     </Layout>

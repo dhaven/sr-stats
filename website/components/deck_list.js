@@ -1,7 +1,6 @@
 import styles from './form.module.css'
 
 export default function DeckList({deckData}) {
-    console.log(deckData)
     return (
         <div className={styles.container}>
             {   deckData &&

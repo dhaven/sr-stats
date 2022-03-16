@@ -1,6 +1,5 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { atom, useAtom } from 'jotai'
-import { Battle } from '../lib/classes'
 import styles from './form.module.css'
 
 export const logDataAtom = atom({})
@@ -21,7 +20,7 @@ export default function InputLog(){
               })
               .then(response => response.json())
               .then(data => {
-                setLogData(Battle.deserialize(data))
+                setLogData(data)
               })
               .catch((error) => {
                 console.error('Error:', error);
