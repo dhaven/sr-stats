@@ -41,7 +41,7 @@ export default function TradeChart() {
           },
     })
     return (
-        <div className={styles.container}>
+        <div>
             <canvas id="tradeChart"></canvas>
         </div>
     )

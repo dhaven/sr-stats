@@ -5,7 +5,7 @@ export const siteTitle = 'Star Realms stats'
 
 export default function Layout({ children}) {
   return (
-    <div className={styles.layout}>
+    <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -21,7 +21,7 @@ export default function Layout({ children}) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <main className={styles.main}>{children}</main>
+      <main class="flex flex-col justify-center items-center gap-3">{children}</main>
     </div>
   )
 }

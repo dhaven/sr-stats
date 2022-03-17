@@ -7,7 +7,7 @@ export const logDataAtom = atom({})
 export default function InputLog(){
   const [logData, setLogData] = useAtom(logDataAtom)
     return (
-        <div>
+        <div class="w-screen p-1 m-1 sm:w-4/5 md:w-3/4 lg:w-1/2 max-w-lg">
           <Formik
             initialValues={{ battlelog: ''}}
             onSubmit={(values) => {
@@ -27,10 +27,10 @@ export default function InputLog(){
               });
             }}
           >
-            <Form className={styles.container}>
-              <Field className={styles.textarea} name="battlelog" as="textarea"/>
+            <Form class="flex flex-col items-end gap-1">
+              <Field class="w-full h-24 p-2 text-sm lg:h-48 bg-gray-50 rounded-lg border border-gray-300 resize-none" name="battlelog" as="textarea"/>
               <ErrorMessage name="battlelog" component="div" />
-              <button type="submit" className={styles.item}>
+              <button class="w-min bg-white text-sm px-5 py-2.5 border border-gray-300 hover:bg-gray-100 rounded-lg" type="submit">
                 Submit
               </button>
             </Form>

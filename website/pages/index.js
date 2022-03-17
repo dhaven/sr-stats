@@ -18,39 +18,22 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <InputLog className="child"></InputLog>
-      <div className="finalDecks">
+      <InputLog></InputLog>
+      <div class="flex flex-row flex-wrap p-1 m-1 justify-between gap-1 w-screen sm:w-4/5 md:w-3/4 lg:w-1/2 max-w-lg">
         { 
           Object.keys(decksData).map((oneKey,i)=>{
             let subDict = {}
             subDict[oneKey] = decksData[oneKey]
             return (
-              <DeckList key={i} deckData={subDict}></DeckList>
+              <DeckList key={i} deckData={decksData[oneKey]} player={oneKey}></DeckList>
             )
           })
         }
       </div>
-      <div className="chartContainer">
+      <div class="flex flex-row flex-wrap p-1 m-1 justify-center gap-1">
         <AuthorityChart></AuthorityChart>
         <TradeChart></TradeChart>
       </div>
-      <style jsx>{`
-        .finalDecks {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          margin: 0.5rem;
-        }
-        .chartContainer {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          margin: 0.5rem;
-          flex-wrap: wrap;
-        }
-      `}</style>
     </Layout>
   )
 }

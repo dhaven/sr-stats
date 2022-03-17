@@ -42,7 +42,7 @@ export default function AuthorityChart() {
           },
     })
     return (
-        <div className={styles.container}>
+        <div>
             <canvas id="authorityChart"></canvas>
         </div>
     )
