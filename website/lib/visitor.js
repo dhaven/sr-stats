@@ -266,6 +266,16 @@ export function parseBattle(battlelog) {
     const tokens = new antlr4.CommonTokenStream(lexer);
     const parser = new StarRealmsParser(tokens);
     parser.buildParseTrees = true;
-    const tree = parser.battle();
-    return tree.accept(new Visitor());
+    try{
+        const tree = parser.battle();
+        return {
+            status: "success",
+            data: tree.accept(new Visitor())
+        }
+    }catch(error){
+        return {
+            status: "error",
+            data: error.message
+        }
+    }
 }

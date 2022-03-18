@@ -7,10 +7,14 @@ import styles from './chart.module.css'
 export default function AuthorityChart() {
     const [battle, setBattle] = useAtom(logDataAtom)
     let authorityData = {}
-    if(Object.keys(battle).length != 0){
-        authorityData = getAuthority(battle)
-        console.log(authorityData)
+    if(Object.keys(battle).length == 0){
+        return(
+            <div className="w-screen p-1 m-1 sm:w-4/5 md:w-3/4 lg:w-2/3 max-w-lg">
+                <canvas id="tradeChart"></canvas>
+            </div>
+        )
     }
+    authorityData = getAuthority(battle)
     //construct our dataset array
     let datasets = []
     let numTurns = 0
@@ -41,8 +45,8 @@ export default function AuthorityChart() {
             }
           },
     })
-    return (
-        <div>
+    return(
+        <div className="w-screen p-1 m-1 sm:w-4/5 md:w-3/4 lg:w-2/3 max-w-lg">
             <canvas id="authorityChart"></canvas>
         </div>
     )

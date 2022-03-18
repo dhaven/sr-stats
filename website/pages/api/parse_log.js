@@ -3,6 +3,7 @@ import { parseBattle } from '../../lib/visitor'
 //returns a JSON object representing a battle with format:
 // {
 //     firstPlayer: "normalAI",
+//     winner: "Player",
 //     rounds: [
 //         {
 //             players: [ //represents the status of the player at the end of the turn

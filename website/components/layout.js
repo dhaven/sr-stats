@@ -1,11 +1,10 @@
 import Head from 'next/head'
-import styles from './layout.module.css'
 
 export const siteTitle = 'Star Realms stats'
 
 export default function Layout({ children}) {
   return (
-    <div>
+    <div className="md:py-10 sm:py-4">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -21,7 +20,7 @@ export default function Layout({ children}) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <main class="flex flex-col justify-center items-center gap-3">{children}</main>
+      <main className="flex flex-col justify-center items-center gap-3">{children}</main>
     </div>
   )
 }

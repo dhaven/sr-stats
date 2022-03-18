@@ -7,9 +7,14 @@ import styles from './chart.module.css'
 export default function TradeChart() {
     const [battle, setBattle] = useAtom(logDataAtom)
     let tradeData = {}
-    if(Object.keys(battle).length != 0){
-        tradeData = getTrade(battle)
+    if(Object.keys(battle).length == 0){
+        return(
+            <div className="w-screen p-1 m-1 sm:w-4/5 md:w-3/4 lg:w-2/3 max-w-lg">
+                <canvas id="tradeChart"></canvas>
+            </div>
+        )
     }
+    tradeData = getTrade(battle)
     //construct our dataset array
     let datasets = []
     let numTurns = 0
@@ -40,8 +45,8 @@ export default function TradeChart() {
             }
           },
     })
-    return (
-        <div>
+    return(
+        <div className="w-screen p-1 m-1 sm:w-4/5 md:w-3/4 lg:w-2/3 max-w-lg">
             <canvas id="tradeChart"></canvas>
         </div>
     )

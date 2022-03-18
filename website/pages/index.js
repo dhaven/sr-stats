@@ -4,6 +4,7 @@ import InputLog, { logDataAtom } from '../components/form.js'
 import DeckList from '../components/deck_list.js'
 import AuthorityChart from '../components/authorityChart.js'
 import TradeChart from '../components/tradeChart.js'
+import WinnerMessage from '../components/winnerMessage.js'
 import { useAtom } from 'jotai'
 import { getDecks } from '../lib/classes'
 
@@ -19,7 +20,8 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <InputLog></InputLog>
-      <div class="flex flex-row flex-wrap p-1 m-1 justify-between gap-1 w-screen sm:w-4/5 md:w-3/4 lg:w-1/2 max-w-lg">
+      <WinnerMessage></WinnerMessage>
+      <div className="flex flex-row flex-wrap p-1 m-1 justify-between gap-1 w-screen sm:w-4/5 md:w-3/4 lg:w-1/2 max-w-lg">
         { 
           Object.keys(decksData).map((oneKey,i)=>{
             let subDict = {}
@@ -30,7 +32,7 @@ export default function Home() {
           })
         }
       </div>
-      <div class="flex flex-row flex-wrap p-1 m-1 justify-center gap-1">
+      <div className="flex flex-row flex-wrap p-1 m-1 justify-center gap-5 w-screen md:w-3/4 lg:w-3/4">
         <AuthorityChart></AuthorityChart>
         <TradeChart></TradeChart>
       </div>
