@@ -27,14 +27,14 @@ export default function Home() {
             let subDict = {}
             subDict[oneKey] = decksData[oneKey]
             return (
-              <DeckList key={i} deckData={decksData[oneKey]} player={oneKey}></DeckList>
+              <DeckList key={i} deckData={decksData[oneKey]} player={oneKey} winner={battle.winner}></DeckList>
             )
           })
         }
       </div>
       <div className="flex flex-row flex-wrap p-1 m-1 justify-center gap-5 w-screen md:w-3/4 lg:w-3/4">
-        <AuthorityChart></AuthorityChart>
-        <TradeChart></TradeChart>
+        <AuthorityChart winner={battle.winner}></AuthorityChart>
+        <TradeChart winner={battle.winner}></TradeChart>
       </div>
     </Layout>
   )

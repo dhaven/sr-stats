@@ -1,9 +1,16 @@
-import styles from './form.module.css'
-
-export default function DeckList({deckData, player}) {
+export default function DeckList({deckData, player, winner}) {
+    let bgColor = ""
+    if(player == winner){
+        bgColor = "bg-winner"
+    }else{
+        bgColor = "bg-loser"
+    }
+    let playerTextClass = bgColor + " text-white text-xl rounded pr-2"
     return (
-        <div className="text-lg w-screen md:w-2/5 lg:w-2/5">
-            <h1>{player}</h1>
+        <div className="text-lg w-screen md:w-2/5 lg:w-2/5 pr-5">
+            <span className={playerTextClass}>
+                {player}
+            </span>
             <div className="text-gray-900 bg-white rounded-lg border border-gray-200 overflow-auto h-80">
                 {deckData &&
                     <div className="flex flex-col">

@@ -9,8 +9,15 @@ export default function WinnerMessage() {
             </div>
         )
     }else{
-        return <div>
-            <p className="font-sans text-2xl font-bold tracking-wide">{battle['winner']} won the game 🎉</p>
+        return(
+            <div>
+            <p className="text-2xl font-semibold tracking-wide">
+                <span className="bg-winnerdark text-white mx-2 text-2xl px-2 rounded">
+                {battle['winner']}
+                </span>
+                won the game 🎉
+            </p>
         </div>
+        )
     }
   } 
