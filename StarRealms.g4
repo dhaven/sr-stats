@@ -94,7 +94,7 @@ APOSTROPHE          : '\'' -> skip ;
 PLAYED              : 'Played' ;
 INT                 : [0-9]+ ;
 fragment LETTER     : [A-Za-z] ;
-WORD                : LETTER+ ;
+WORD                : (LETTER | INT)+ ;
 SEPARATOR           : '>' | '-' | '<';
 INCREMENT           : '+'INT ;
 DECREASE            : '-'INT ;
