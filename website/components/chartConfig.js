@@ -15,10 +15,13 @@ export const Config = {
     responsive: true,
     //   show the x and y scales
     scales: {
-        x: { display: false },
+        x: {
+            beginAtZero: false,
+            offset: true,
+            display: false,
+        },
         y: { 
-            display: true ,
-            beginAtZero: true
+            beginAtZero: true,
         },
     },
 };

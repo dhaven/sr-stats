@@ -11,7 +11,7 @@ export default function WinnerMessage() {
     }else{
         return(
             <div>
-            <p className="text-2xl font-semibold tracking-wide">
+            <p className="text-3xl font-semibold tracking-wide">
                 <span className="bg-winnerdark text-white mx-2 text-2xl px-2 rounded">
                 {battle['winner']}
                 </span>

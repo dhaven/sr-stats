@@ -1,6 +1,6 @@
 import Chart from 'chart.js/auto';
 import { useAtom } from 'jotai'
-import { getAuthority } from '../lib/classes'
+import { getAuthority } from '../lib/helper'
 import { logDataAtom } from './form'
 import { Config } from './chartConfig'
 

@@ -4,9 +4,10 @@ import InputLog, { logDataAtom } from '../components/form.js'
 import DeckList from '../components/deck_list.js'
 import AuthorityChart from '../components/authorityChart.js'
 import TradeChart from '../components/tradeChart.js'
+import CombatChart from '../components/combatChart.js'
 import WinnerMessage from '../components/winnerMessage.js'
 import { useAtom } from 'jotai'
-import { getDecks } from '../lib/classes'
+import { getDecks } from '../lib/helper'
 
 export default function Home() {
   const [battle, setBattle] = useAtom(logDataAtom)
@@ -35,6 +36,7 @@ export default function Home() {
       <div className="flex flex-row flex-wrap p-1 m-1 justify-center gap-5 w-screen md:w-3/4 lg:w-3/4">
         <AuthorityChart winner={battle.winner}></AuthorityChart>
         <TradeChart winner={battle.winner}></TradeChart>
+        <CombatChart winner={battle.winner}></CombatChart>
       </div>
     </Layout>
   )
