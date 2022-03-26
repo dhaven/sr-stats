@@ -42,6 +42,12 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
+	// Visit a parse tree produced by StarRealmsParser#activateCard.
+	visitActivateCard(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
 	// Visit a parse tree produced by StarRealmsParser#actionDetail.
 	visitActionDetail(ctx) {
 	  return this.visitChildren(ctx);
@@ -62,6 +68,12 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 
 	// Visit a parse tree produced by StarRealmsParser#activateBase.
 	visitActivateBase(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#activateCardEffect.
+	visitActivateCardEffect(ctx) {
 	  return this.visitChildren(ctx);
 	}
 

@@ -59,6 +59,15 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#activateCard.
+	enterActivateCard(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#activateCard.
+	exitActivateCard(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#actionDetail.
 	enterActionDetail(ctx) {
 	}
@@ -92,6 +101,15 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 
 	// Exit a parse tree produced by StarRealmsParser#activateBase.
 	exitActivateBase(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#activateCardEffect.
+	enterActivateCardEffect(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#activateCardEffect.
+	exitActivateCardEffect(ctx) {
 	}
 
 
