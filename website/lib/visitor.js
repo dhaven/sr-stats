@@ -205,7 +205,7 @@ class Visitor extends StarRealmsVisitor{
         return this.visit(ctx.card())
     }
 
-    // grammar: (scrapDetail | newBalanceDetail | newAbility | destroyBase | drawCards) NEWLINE;
+    // grammar: (scrapDetail | newBalanceDetail | newAbility | destroyBase | drawCards | activateCardEffect | shuffleCards) NEWLINE
     visitActionDetail(ctx){
         //visit scrapDetail to get any scrapped cards
         // visit newBalanceDetail to get any new balance
