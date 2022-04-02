@@ -30,3 +30,14 @@ Any changes in the grammar will mean the visitor file (`website/lib/visitor.js`)
 cd website
 npm run dev
 ```
+
+## Add battle log to the input field
+
+Once you finished a game of Star Realms on desktop or mobile you can retrieve the battle logs and
+use it as input to the parser. The following screenshots shows how to get the battle logs.
+
+![1](./assets/1.png)
+
+![2](./assets/2.png)
+
+![3](./assets/3.png)
