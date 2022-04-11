@@ -4,7 +4,6 @@ import { example1, example2 } from '../lib/example_data.js'
 
 export const logDataAtom = atom({})
 const errorMessageAtom = atom("")
-const rawDataAtom = atom("")
 
 export default function InputLog(){
   const [logData, setLogData] = useAtom(logDataAtom)
