@@ -61,13 +61,14 @@ export function getCombat(battle){
             secondPlayer = player['name']
         }
     }
-    combatData[firstPlayer] = []
-    combatData[secondPlayer] = []
+    let indivTurns = Math.ceil(battle['rounds'].length/2)
+    combatData[firstPlayer] = Array(indivTurns).fill(0)
+    combatData[secondPlayer] = Array(indivTurns).fill(0)
     for(let i = 0; i < battle['rounds'].length; i++){
         if(i % 2 == 0){
-            combatData[firstPlayer].push(battle['rounds'][i]['combatPool'])
+            combatData[firstPlayer][i/2] = battle['rounds'][i]['combatPool']
         }else{
-            combatData[secondPlayer].push(battle['rounds'][i]['combatPool'])
+            combatData[secondPlayer][parseInt(i/2)] = battle['rounds'][i]['combatPool']
         }
     }
     return combatData
@@ -91,13 +92,14 @@ export function getTrade(battle){
             secondPlayer = player['name']
         }
     }
-    tradeData[firstPlayer] = []
-    tradeData[secondPlayer] = []
+    let indivTurns = Math.ceil(battle['rounds'].length/2)
+    tradeData[firstPlayer] = Array(indivTurns).fill(0)
+    tradeData[secondPlayer] = Array(indivTurns).fill(0)
     for(let i = 0; i < battle['rounds'].length; i++){
         if(i % 2 == 0){
-            tradeData[firstPlayer].push(battle['rounds'][i]['tradePool'])
+            tradeData[firstPlayer][i/2] = battle['rounds'][i]['tradePool']
         }else{
-            tradeData[secondPlayer].push(battle['rounds'][i]['tradePool'])
+            tradeData[secondPlayer][parseInt(i/2)] = battle['rounds'][i]['tradePool']
         }
     }
     return tradeData

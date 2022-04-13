@@ -2,7 +2,6 @@ import Chart from 'chart.js/auto';
 import { useAtom } from 'jotai'
 import { getAuthority } from '../lib/helper'
 import { logDataAtom } from './form'
-import { Config } from './chartConfig'
 
 export default function AuthorityChart({winner}) {
     const [battle, setBattle] = useAtom(logDataAtom)
@@ -47,14 +46,40 @@ export default function AuthorityChart({winner}) {
     if (chartStatus != undefined) {
         chartStatus.destroy();
     }
-    Config.plugins.title = {
-        display: true,
-        text: 'Authority'
-    }
     new Chart("authorityChart",{
         type: "line",
         data: data,
-        options: Config,
+        options: {
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Authority'
+                },
+                legend: {
+                    display: false,
+                },
+            },
+            interaction: {
+                intersect: false,
+                mode: 'index',
+            },
+            //   animate in
+            animation: {
+                duration: 1,
+            },
+            responsive: true,
+            //   show the x and y scales
+            scales: {
+                x: {
+                    beginAtZero: false,
+                    offset: true,
+                    display: false,
+                },
+                y: { 
+                    beginAtZero: true,
+                },
+            },
+        }
     })
     return(
         <div className="w-screen p-1 m-1 sm:w-4/5 md:w-3/4 lg:w-2/3 max-w-lg">

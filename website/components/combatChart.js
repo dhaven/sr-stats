@@ -2,7 +2,6 @@ import Chart from 'chart.js/auto';
 import { useAtom } from 'jotai'
 import { getCombat } from '../lib/helper'
 import { logDataAtom } from './form'
-import { Config } from './chartConfig'
 
 export default function CombatChart({winner}) {
     const [battle, setBattle] = useAtom(logDataAtom)
@@ -46,14 +45,40 @@ export default function CombatChart({winner}) {
     if (chartStatus != undefined) {
         chartStatus.destroy();
     }
-    Config.plugins.title = {
-        display: true,
-        text: 'Combat pool'
-    }
     new Chart("combatChart",{
         type: "bar",
         data: data,
-        options: Config,
+        options: {
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Combat pool'
+                },
+                legend: {
+                    display: false,
+                },
+            },
+            interaction: {
+                intersect: false,
+                mode: 'index',
+            },
+            //   animate in
+            animation: {
+                duration: 1,
+            },
+            responsive: true,
+            //   show the x and y scales
+            scales: {
+                x: {
+                    beginAtZero: false,
+                    offset: true,
+                    display: false,
+                },
+                y: { 
+                    beginAtZero: true,
+                },
+            },
+        },
     })
     return(
         <div className="w-screen p-1 m-1 sm:w-4/5 md:w-3/4 lg:w-2/3 max-w-lg">

@@ -34,9 +34,9 @@ export default function Home() {
         }
       </div>
       <div className="flex flex-row flex-wrap p-1 m-1 justify-center gap-5 w-screen md:w-3/4 lg:w-3/4">
-        <AuthorityChart winner={battle.winner}></AuthorityChart>
-        <TradeChart winner={battle.winner}></TradeChart>
-        <CombatChart winner={battle.winner}></CombatChart>
+        <AuthorityChart key={0} winner={battle.winner}></AuthorityChart>
+        <TradeChart key={1} winner={battle.winner}></TradeChart>
+        <CombatChart key={2} winner={battle.winner}></CombatChart>
       </div>
     </Layout>
   )
