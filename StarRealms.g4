@@ -1,42 +1,91 @@
 grammar StarRealms;
-battle           : turn+ winStatus EOF ;
-winStatus        : name 'has' 'won' 'the' 'game' NEWLINE ;
-turn             : (newBalanceDetail NEWLINE)* action+ endPhase ;
-action           : summaryAction actionDetail* ;
-endPhase         : endTurn NEWLINE drawPhase ;
-summaryAction    : play | purchase | attackPlayer | attackBase | scrap | discard | activateBase | activateCard;
-activateCard     : name 'selecting' 'ship' name NEWLINE;
-actionDetail     : (scrapDetail | newBalanceDetail | newAbility | destroyBase | drawCards | activateCardEffect | shuffleCards) NEWLINE;
-drawPhase        : ('Changed' card 'to' 'Unaligned' NEWLINE)? (drawCards NEWLINE)? (shuffleCards NEWLINE drawCards NEWLINE)? refreshIndicators NEWLINE newTurn NEWLINE;
-drawCards        : DREW INT 'cards';
-activateBase     : increasePool | discardAndDraw | activateEffect;
-activateCardEffect : 'Changed' card 'to' card;
-increasePool     : 'Chose' 'Add' INT WORD NEWLINE ;
-discardAndDraw   : discardAndDrawDescription selectDiscardCard+ (DISCARDED card NEWLINE)*  ((shuffleCards | (DREW INT 'cards')) NEWLINE)*  ;
-discardAndDrawDescription : 'Chose' DISCARD 'and' 'Redraw' 'up' 'to' INT 'card(s)' NEWLINE ;
-selectDiscardCard : name IS 'selecting' card NEWLINE ;
-activateEffect   : 'Activating' card NEWLINE;
+
+battle            : turn+ EOF ;
+winStatus         : name 'has' 'won' 'the' 'game' NEWLINE ;
+turn              : baseInstantEffect* action+ (endPhase | winStatus) ;
+baseInstantEffect : newBalanceDetail | drawCardsWithShuffle;
+action            : purchase | play | attackPlayer | attackBase | scrapCard | discard | choseEffect | activatingEffect;
+
+//describes a purchase action
+purchase        : purchaseSummary purchaseDetail;
+purchaseDetail  : newBalanceDetail (ACQUIRED card 'to' 'the' 'top' WORD 'the' 'deck' NEWLINE)?;
+purchaseSummary : ACQUIRED card  NEWLINE;
+
+//describes a play action
+play        : playSummary playDetail?;
+playSummary : (PLAY ALL NEWLINE) | playSingle;
+playSingle  : PLAYED card NEWLINE;
+playDetail  : (newBalanceDetail | newAbility | drawCardsWithShuffle | scrapCardEffect | simpleScrap | destroyBase)+;
+newAbility  : name SEPARATOR card 'ability' 'available' NEWLINE;
+scrapCardEffect : scrapCardEffectSummary scrapCardEffectDetail;
+scrapCardEffectSummary: name IS SCRAPPING (':')? card NEWLINE;
+scrapCardEffectDetail: newBalanceDetail? SCRAPPED card NEWLINE;
+simpleScrap : SCRAPPED card NEWLINE;
+
+//describes a attackPlayer action
+attackPlayer        : attackPlayerSummary newBalanceDetail+;
+attackPlayerSummary : ATTACKED name WORD INT newAuthority NEWLINE;
+newAuthority        : '(' NEW WORD':'(INT | DECREASE)')' ;
+
+//describes a attackBase action
+attackBase        : attackBaseSummary newBalanceDetail destroyBase;
+attackBaseSummary : ATTACKED card NEWLINE;
+
+//describes a scrap action
+scrapCard        : scrappingSummary scrappingDetail;
+scrappingSummary : SCRAPPING card NEWLINE;
+scrappingDetail  : scrapAction scrapEffect;
+scrapAction      : SCRAPPED card NEWLINE;
+scrapEffect      : (drawCardsWithShuffle | destroyBase | newBalanceDetail)+;
+
+//describes a discard card action
 discard          : resolveDiscard discardAction+ discardDetails ;
 resolveDiscard   : 'Resolving' DISCARD INT 'cards' NEWLINE ;
 discardAction    : name IS WORD card NEWLINE ;
 discardDetails   : 'no' 'more' 'cards' 'to' DISCARD NEWLINE (DISCARDED card NEWLINE)+ ;
-play             : (PLAY ALL NEWLINE) | playSingle;
-playSingle       : PLAYED card NEWLINE;
-purchase         : ACQUIRED card ('to' 'the' 'top' WORD 'the' 'deck')? NEWLINE;
-attackPlayer     : ATTACKED name WORD INT newAuthority NEWLINE;
-attackBase       : ATTACKED card NEWLINE;
-scrap            : (name IS SCRAPPING (':')? card NEWLINE) | (SCRAPPING card NEWLINE);
-scrapDetail      : SCRAPPED card ;
-newBalanceDetail : name SEPARATOR card? effect balance ;
-newAbility       : name SEPARATOR card 'ability' 'available';
-destroyBase      : 'Destroyed' card ;
+
+//describe  a log line that starts with 'Chose ...'
+//applies to ships and bases where the user can chose between one or more effects
+choseEffect           : choseDiscardAndDraw | choseIncreasePool;
+choseDiscardAndDraw   : discardAndDrawSummary selectDiscard+ discarding+ drawCardsWithShuffle;
+discardAndDrawSummary : 'Chose' DISCARD 'and' 'Redraw' 'up' 'to' INT 'card(s)' NEWLINE ;
+selectDiscard         : name IS 'selecting' card NEWLINE ;
+discarding            : DISCARDED card NEWLINE;
+choseIncreasePool     : 'Chose' 'Add' INT WORD NEWLINE newBalanceDetail;
+
+
+//describes a log line that start with 'Activating ...'
+//applies to bases and ships where the user can chose when the effect is activated
+activatingEffect        : activatingSummary activatingDetail;
+activatingSummary       : 'Activating' card NEWLINE;
+activatingDetail        : drawAndScrapFromHand | scrapAndDraw | scrap | freeAcquireToTop | destroyAndScrap | stealthNeedle;
+scrapAndDraw            : scrap shuffleCards? drawCardsWithShuffle;
+scrap                   : scrapSummary+ scrapDetail+;
+drawAndScrapFromHand    : shuffleCards? drawCardsWithShuffle resolveHandScrap;
+resolveHandScrap        : resolveHandScrapSummary scrapDetail;
+freeAcquireToTop        : ACQUIRED card NEWLINE purchaseToTop;
+stealthNeedle           : name 'selecting' 'ship' name NEWLINE 'Changed' card 'to' card NEWLINE;
+destroyAndScrap         : destroyBase | scrapDetail | destroyBase scrapDetail;
+purchaseToTop           : ACQUIRED card 'to' 'the' 'top' WORD 'the' 'deck' NEWLINE;
+scrapSummary            : name IS SCRAPPING (':')? card NEWLINE;
+scrapDetail             : SCRAPPED card NEWLINE;
+resolveHandScrapSummary : 'Resolving' 'Scrap' 'a' 'card' 'from' 'your' 'hand' NEWLINE;
+
+//stuff that happens at the end of the turn
+endPhase         : endTurn drawPhase ;
+endTurn          : name ENDS TURN INT NEWLINE;
+drawPhase        : ('Changed' card 'to' 'Unaligned' NEWLINE)? drawCardsWithShuffle refreshIndicators newTurn;
+refreshIndicators : 'Refresh' 'ally' 'indicators' NEWLINE;
+newTurn          : IT IS NOW name '\'s' TURN INT NEWLINE;
+
+//shared patterns
+drawCardsWithShuffle : (drawCards+ shuffleCards drawCards+) | (shuffleCards? drawCards+);
+drawCards        : DREW INT 'cards' NEWLINE;
+newBalanceDetail : name SEPARATOR card? effect balance NEWLINE;
 effect           : (INCREMENT | DECREASE) (WORD | DISCARD) ;
 balance          : '('WORD':'(INT | DECREASE)')' ;
-newAuthority     : '(' NEW WORD':'(INT | DECREASE)')' ;
-endTurn          : name ENDS TURN INT ;
-newTurn          : IT IS NOW name '\'s' TURN INT ;
-shuffleCards     : 'Shuffled' DISCARD 'pile' 'to' 'form' 'new' 'deck' ;
-refreshIndicators : 'Refresh' 'ally' 'indicators' ;
+destroyBase      : 'Destroyed' card NEWLINE;
+shuffleCards     : 'Shuffled' DISCARD 'pile' 'to' 'form' 'new' 'deck' NEWLINE;
 name             : WORD+ ;
 card             : WORD+ ;
 
