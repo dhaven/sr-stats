@@ -25,7 +25,7 @@ export default function DeckList({deckData, player, winner}) {
                         })}
                     </div>    
                 }
-        </div>
+            </div>
         </div>
     )
   }

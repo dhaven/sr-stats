@@ -2,9 +2,11 @@ import antlr4 from 'antlr4';
 import StarRealmsLexer from './antlr4/StarRealmsLexer.js';
 import StarRealmsParser from './antlr4/StarRealmsParser.js';
 import StarRealmsVisitor from './antlr4/StarRealmsVisitor.js';
+import { core_set } from './core_set.js';
 
 class Visitor extends StarRealmsVisitor{
 
+    // update both players data with info from the latest round
     updatePlayerData(currentPlayer, lastRoundPlayers, nextRound){
         let newPlayerData = []
         for(let i = 0; i < lastRoundPlayers.length; i++){
@@ -14,18 +16,42 @@ class Visitor extends StarRealmsVisitor{
                 player['authority'] += nextRound['selfAuthority']
                 for(let j = 0; j < nextRound['purchasedCards'].length; j++){
                     let nextCard = nextRound['purchasedCards'][j]
-                    if(nextCard in player.deck){
-                        player.deck[nextCard].count += 1
+                    if(nextCard in player['deck']){
+                        player['deck'][nextCard]['count'] += 1
                     }else{
                         player.deck[nextCard] = {
-                            type: nextCard,
-                            count: 1
+                            name: core_set['cards'][nextCard]['name'],
+                            cost: core_set['cards'][nextCard]['cost'],
+                            faction: core_set['cards'][nextCard]['faction'],
+                            count: 1,
+                            scrapCount: 0,
+                            discardCount: 0,
+                            destroyedCount: 0,
+                            playedCount: 0
                         }
                     }
+                }
+                for(let j = 0; j < nextRound['scrappedCards'].length; j++){
+                    let nextCard = nextRound['scrappedCards'][j]
+                    //console.log(nextCard)
+                    //console.log(player['deck'])
+                    player['deck'][nextCard]['scrapCount'] += 1
+                }
+                for(let j = 0; j < nextRound['discardedCards'].length; j++){
+                    let nextCard = nextRound['discardedCards'][j]
+                    player['deck'][nextCard]['discardCount'] += 1
+                }
+                for(let j = 0; j < nextRound['playedCards'].length; j++){
+                    let nextCard = nextRound['playedCards'][j]
+                    player['deck'][nextCard]['playedCount'] += 1
                 }
                 newPlayerData.push(player)
             }else{
                 player['authority'] += nextRound['otherAuthority']
+                for(let j = 0; j < nextRound['destroyedBases'].length; j++){
+                    let nextCard = nextRound['destroyedBases'][j]
+                    player['deck'][nextCard]['destroyedCount'] += 1
+                }
                 newPlayerData.push(player)
             }
         }
@@ -33,8 +59,9 @@ class Visitor extends StarRealmsVisitor{
     }
     
     computeNewBalance(currentBalance, nextBalance){
-        if(Object.keys(currentBalance).length === 0){
-            currentBalance = {
+        let newBalance = {}
+        if(Object.keys(currentBalance).length == 0){
+            newBalance = {
                 tradePool: 0,
                 combatPool: 0,
                 usedTrade: 0,
@@ -42,31 +69,33 @@ class Visitor extends StarRealmsVisitor{
                 selfAuthority: 0, // authority change of current player
                 otherAuthority: 0 // authority change of other player
             }
+        }else{
+            newBalance = JSON.parse(JSON.stringify(currentBalance))
         }
         if(nextBalance['category'] == 'Trade'){
             if(nextBalance['value'] > 0){
-                currentBalance['tradePool'] += nextBalance['value']
+                newBalance['tradePool'] += nextBalance['value']
             }else{
-                currentBalance['usedTrade'] += nextBalance['value']
+                newBalance['usedTrade'] += nextBalance['value']
             }
         }
         else if(nextBalance['category'] == 'Combat'){
             if(nextBalance['value'] > 0){
-                currentBalance['combatPool'] += nextBalance['value']
+                newBalance['combatPool'] += nextBalance['value']
             }else{
-                currentBalance['usedCombat'] += nextBalance['value']
+                newBalance['usedCombat'] += nextBalance['value']
             }
         }
         else if(nextBalance['category'] == 'Authority'){
             //we assume any > 0 authority is for the current player
             // and any < 0 authority isfor the opponent
             if(nextBalance['value'] > 0){
-                currentBalance['selfAuthority'] += nextBalance['value']
+                newBalance['selfAuthority'] += nextBalance['value']
             }else{
-                currentBalance['otherAuthority'] += nextBalance['value']
+                newBalance['otherAuthority'] += nextBalance['value']
             }
         }
-        return currentBalance
+        return newBalance
     }
 
     // grammar: turn+ EOF ;
@@ -81,13 +110,25 @@ class Visitor extends StarRealmsVisitor{
                 name: firstPlayer,
                 authority: 50,
                 deck: {
-                    "Scout": {
-                        name: "Scout",
-                        count: 8
+                    "scout": {
+                        name: core_set['cards']['scout']['name'],
+                        cost: core_set['cards']['scout']['cost'],
+                        faction: core_set['cards']['scout']['faction'],
+                        count: 8,
+                        scrapCount: 0,
+                        discardCount: 0,
+                        destroyedCount: 0,
+                        playedCount: 0
                     },
-                    "Viper": {
-                        name: "Viper",
-                        count: 2
+                    "viper": {
+                        name: core_set['cards']['viper']['name'],
+                        cost: core_set['cards']['viper']['cost'],
+                        faction: core_set['cards']['viper']['faction'],
+                        count: 2,
+                        scrapCount: 0,
+                        discardCount: 0,
+                        destroyedCount: 0,
+                        playedCount: 0
                     }
                 }
             },
@@ -95,13 +136,25 @@ class Visitor extends StarRealmsVisitor{
                 name: secondPlayer,
                 authority: 50,
                 deck: {
-                    "Scout": {
-                        name: "Scout",
-                        count: 8
+                    "scout": {
+                        name: core_set['cards']['scout']['name'],
+                        cost: core_set['cards']['scout']['cost'],
+                        faction: core_set['cards']['scout']['faction'],
+                        count: 8,
+                        scrapCount: 0,
+                        discardCount: 0,
+                        destroyedCount: 0,
+                        playedCount: 0
                     },
-                    "Viper": {
-                        name: "Viper",
-                        count: 2
+                    "viper": {
+                        name: core_set['cards']['viper']['name'],
+                        cost: core_set['cards']['viper']['cost'],
+                        faction: core_set['cards']['viper']['faction'],
+                        count: 2,
+                        scrapCount: 0,
+                        discardCount: 0,
+                        destroyedCount: 0,
+                        playedCount: 0
                     }
                 }
             }
@@ -174,6 +227,7 @@ class Visitor extends StarRealmsVisitor{
                 let playActionDetail = this.visit(ctx.action()[i])
                 turnData['playedCards'] = turnData['playedCards'].concat(playActionDetail['playedCards'])
                 turnData['scrappedCards'] = turnData['scrappedCards'].concat(playActionDetail['scrappedCards'])
+                //console.log(playActionDetail['scrappedCards'])
                 turnData['drawCount'] += playActionDetail['drawCount']
                 turnData['tradePool'] += playActionDetail['balance']['tradePool']
                 turnData['combatPool'] += playActionDetail['balance']['combatPool']
@@ -194,6 +248,7 @@ class Visitor extends StarRealmsVisitor{
             }
             else if(ctx.action()[i].scrapCard()){
                 let scrapCardActionDetail = this.visit(ctx.action()[i])
+                turnData['scrappedCards'].push(scrapCardActionDetail['card'])
                 turnData['destroyedBases'] = turnData['destroyedBases'].concat(scrapCardActionDetail['destroyedBases'])
                 turnData['drawCount'] += scrapCardActionDetail['drawCount']
                 turnData['tradePool'] += scrapCardActionDetail['balance']['tradePool']
@@ -227,6 +282,7 @@ class Visitor extends StarRealmsVisitor{
                     turnData['scrappedCards'].push(activatingEffectActionDetail['drawAndScrapFromHand']['scrappedCard'])
                 }else if('scrapAndDraw' in activatingEffectActionDetail){
                     turnData['drawCount'] += activatingEffectActionDetail['scrapAndDraw']['drawCount']
+                    //console.log(activatingEffectActionDetail['scrapAndDraw']['scrappedCards'])
                     turnData['scrappedCards'] = turnData['scrappedCards'].concat(activatingEffectActionDetail['scrapAndDraw']['scrappedCards'])
                 }else if('scrap' in activatingEffectActionDetail){
                     turnData['scrappedCards'] = turnData['scrappedCards'].concat(activatingEffectActionDetail['scrap'])
@@ -242,6 +298,7 @@ class Visitor extends StarRealmsVisitor{
                 }
             }
         }
+        console.log(turnData)
         return turnData
     }
 
@@ -342,8 +399,11 @@ class Visitor extends StarRealmsVisitor{
                 }
                 else if(ctx.playDetail()[i].scrapCardEffect()){
                     let scrapCardEffectSummary = this.visit(ctx.playDetail()[i])
+                    //console.log(scrapCardEffectSummary['scrappedCard'])
                     playSummary['scrappedCards'].push(scrapCardEffectSummary['scrappedCard'])
-                    playSummary['balance'] = this.computeNewBalance(playSummary['balance'], scrapCardEffectSummary['balance'])
+                    if(Object.keys(scrapCardEffectSummary['balance']).length != 0){
+                        playSummary['balance'] = this.computeNewBalance(playSummary['balance'], scrapCardEffectSummary['balance'])
+                    }
                 }
                 else if(ctx.playDetail()[i].simpleScrap()){
                     let simpleScrapSummary = this.visit(ctx.playDetail()[i])
@@ -355,6 +415,7 @@ class Visitor extends StarRealmsVisitor{
                 }
             }
         }
+        //console.log(playSummary)
         return playSummary
     }
 
@@ -380,12 +441,14 @@ class Visitor extends StarRealmsVisitor{
 
     // grammar: scrapCardEffectSummary scrapCardEffectDetail;
     visitScrapCardEffect(ctx) {
-        let scrapSummary = {}
-        scrapSummary['scrappedCard'] = this.visit(ctx.scrapCardEffectSummary())
+        let balance = {}
         if(ctx.scrapCardEffectDetail().newBalanceDetail()){
-            scrapSummary['balance'] = this.visit(ctx.scrapCardEffectDetail().newBalanceDetail())
+            balance = this.visit(ctx.scrapCardEffectDetail().newBalanceDetail())
         }
-        return scrapSummary
+        return {
+            'scrappedCard': this.visit(ctx.scrapCardEffectSummary()),
+            'balance': balance
+        }
     }
 
     // grammar: SCRAPPED card NEWLINE;
@@ -435,7 +498,14 @@ class Visitor extends StarRealmsVisitor{
             card: this.visit(ctx.scrapAction()),
             drawCount: 0,
             destroyedBases: [],
-            balance: {}
+            balance: {
+                tradePool: 0,
+                combatPool: 0,
+                usedTrade: 0,
+                usedCombat: 0,
+                selfAuthority: 0, // authority change of current player
+                otherAuthority: 0 // authority change of other player
+            }
         }
         for(let i = 0; i < ctx.scrapEffect().length; i++){
             if(ctx.scrapEffect()[i].drawCardsWithShuffle()){
@@ -540,6 +610,8 @@ class Visitor extends StarRealmsVisitor{
             return {
                 destroyAndScrap: this.visit(ctx.destroyAndScrap())
             }
+        }else{
+            return {}
         }
     }
 
@@ -588,7 +660,7 @@ class Visitor extends StarRealmsVisitor{
     visitScrap(ctx){
         let scrappedCards = []
         for(let i = 0; i < ctx.scrapDetail().length; i++){
-            scrapDetail['scrappedCards'].push(this.visit(ctx.scrapDetail()))
+            scrappedCards.push(this.visit(ctx.scrapDetail()[i]))
         }
         return scrappedCards
     }
@@ -648,7 +720,7 @@ class Visitor extends StarRealmsVisitor{
 
     //grammar WORD+ 
     visitCard(ctx){
-        return ctx.getText()
+        return ctx.getText().toLowerCase()
     }
 
 }

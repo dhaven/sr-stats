@@ -20,6 +20,51 @@ export function getDecks(battle){
     return finalDecks
 }
 
+export function getFinalDecks(battle){
+    let finalDecks = {}
+    let lastRound = battle['rounds'][battle['rounds'].length-1]
+    for(let i = 0; i < lastRound['players'].length; i++){
+        let player = lastRound['players'][i]
+        finalDecks[player['name']] = lastRound['players'][i]['deck']
+    }
+    return finalDecks
+}
+
+//returns the summary of a deck
+// -> number of cards of each faction
+// -> total number of cards after scraps
+// -> total cost to create the deck
+export function getDeckSummary(deck){
+    let blob_count = 0
+    let trade_federation_count = 0
+    let star_empire_count = 0
+    let machine_cult_count = 0
+    let total_count = 0
+    let total_cost = 0
+    for(let card in deck){
+        total_cost += deck[card]['cost']
+        let final_card_count = deck[card]['count'] - deck[card]['scrapCount']
+        total_count += final_card_count
+        if(deck[card]['faction'] == "Blob"){
+            blob_count += final_card_count
+        }else if(deck[card]['faction'] == "Trade Federation"){
+            trade_federation_count += final_card_count
+        }else if(deck[card]['faction'] == "Star Empire"){
+            star_empire_count += final_card_count
+        }else if(deck[card]['faction'] == "Machine Cult"){
+            machine_cult_count += final_card_count
+        }
+    }
+    return {
+        total_cost: total_cost,
+        total_count: total_count,
+        blob_count: blob_count,
+        trade_federation_count: trade_federation_count,
+        star_empire_count: star_empire_count,
+        machine_cult_count: machine_cult_count
+    }
+}
+
 //accept a Battle object as input
 // each item in the array represent the amount of authority for that player 
 // at the end of the current round

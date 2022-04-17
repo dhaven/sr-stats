@@ -18,7 +18,6 @@ export default function AuthorityChart({winner}) {
         )
     }
     authorityData = getAuthority(battle)
-    console.log(authorityData)
     //construct our dataset array
     let datasets = []
     let numTurns = 0
