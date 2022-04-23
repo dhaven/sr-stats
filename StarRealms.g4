@@ -1,21 +1,23 @@
 grammar StarRealms;
 
 battle            : turn+ EOF ;
+turn              : action+ (endPhase | winStatus) ;
+action            : baseInstantEffect | purchase | play | attackPlayer | attackBase | scrapCard | discard | choseEffect | activatingEffect;
 winStatus         : name 'has' 'won' 'the' 'game' NEWLINE ;
-turn              : baseInstantEffect* action+ (endPhase | winStatus) ;
+
+//describes a base instant effect action
 baseInstantEffect : newBalanceDetail | drawCardsWithShuffle;
-action            : purchase | play | attackPlayer | attackBase | scrapCard | discard | choseEffect | activatingEffect;
 
 //describes a purchase action
 purchase        : purchaseSummary purchaseDetail;
-purchaseDetail  : newBalanceDetail (ACQUIRED card 'to' 'the' 'top' WORD 'the' 'deck' NEWLINE)?;
 purchaseSummary : ACQUIRED card  NEWLINE;
+purchaseDetail  : newBalanceDetail (ACQUIRED card 'to' 'the' 'top' WORD 'the' 'deck' NEWLINE)?;
 
 //describes a play action
-play        : playSummary playDetail?;
+play        : playSummary playDetail*;
 playSummary : (PLAY ALL NEWLINE) | playSingle;
 playSingle  : PLAYED card NEWLINE;
-playDetail  : (newBalanceDetail | newAbility | drawCardsWithShuffle | scrapCardEffect | simpleScrap | destroyBase)+;
+playDetail  : newBalanceDetail | newAbility | drawCardsWithShuffle | scrapCardEffect | simpleScrap | destroyBase;
 newAbility  : name SEPARATOR card 'ability' 'available' NEWLINE;
 scrapCardEffect : scrapCardEffectSummary scrapCardEffectDetail;
 scrapCardEffectSummary: name IS SCRAPPING (':')? card NEWLINE;
@@ -34,9 +36,9 @@ attackBaseSummary : ATTACKED card NEWLINE;
 //describes a scrap action
 scrapCard        : scrappingSummary scrappingDetail;
 scrappingSummary : SCRAPPING card NEWLINE;
-scrappingDetail  : scrapAction scrapEffect;
+scrappingDetail  : scrapAction scrapEffect+;
 scrapAction      : SCRAPPED card NEWLINE;
-scrapEffect      : (drawCardsWithShuffle | destroyBase | newBalanceDetail)+;
+scrapEffect      : drawCardsWithShuffle | destroyBase | newBalanceDetail;
 
 //describes a discard card action
 discard          : resolveDiscard discardAction+ discardDetails ;
@@ -56,12 +58,12 @@ choseIncreasePool     : 'Chose' 'Add' INT WORD NEWLINE newBalanceDetail;
 
 //describes a log line that start with 'Activating ...'
 //applies to bases and ships where the user can chose when the effect is activated
-activatingEffect        : activatingSummary activatingDetail;
+activatingEffect        : activatingSummary activatingDetail?;
 activatingSummary       : 'Activating' card NEWLINE;
 activatingDetail        : drawAndScrapFromHand | scrapAndDraw | scrap | freeAcquireToTop | destroyAndScrap | stealthNeedle;
-scrapAndDraw            : scrap shuffleCards? drawCardsWithShuffle;
+scrapAndDraw            : scrap drawCardsWithShuffle;
 scrap                   : scrapSummary+ scrapDetail+;
-drawAndScrapFromHand    : shuffleCards? drawCardsWithShuffle resolveHandScrap;
+drawAndScrapFromHand    : drawCardsWithShuffle resolveHandScrap;
 resolveHandScrap        : resolveHandScrapSummary scrapDetail;
 freeAcquireToTop        : ACQUIRED card NEWLINE purchaseToTop;
 stealthNeedle           : name 'selecting' 'ship' name NEWLINE 'Changed' card 'to' card NEWLINE;

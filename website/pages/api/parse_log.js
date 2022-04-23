@@ -12,11 +12,14 @@ import { parseBattle } from '../../lib/visitor'
 //                     authority: 50,
 //                     deck: {
 //                         'blobFighter' : {
-//                             type: Card.CARD_BLOB_FIGHTER,
+//                             faction: 'blob'
+//                             cost: 4 
+//                             name: 'Blob Fighter'
 //                             count: 2 //total amount of time purchased
-//                             playedCount: 4 //total amount of times played
-//                             scrapCount: 1 //total amount of times scrapped
-//                             discardCount: 0 //total amount of times discarded
+//                             playedCount: 4
+//                             scrapCount: 1
+//                             discardCount: 0
+//                             destroyedCount: 0
 
 //                         }
 
@@ -43,10 +46,17 @@ import { parseBattle } from '../../lib/visitor'
 //                     <card-data>
 //                 }
 //             ],
+//             destroyedBases: [
+//                 {
+//                     <card-data>
+//                 }
+//             ],
 //             tradePool: 5,
 //             combatPool: 2,
 //             usedTrade: 5, //sometimes < tradePool
-//             usedCombat: 2 //sometimes < combatPool 
+//             usedCombat: 2 //sometimes < combatPool
+//             selfAuthority: 0
+//             otherAuthority: -1 
 //         }
 
 //     ]

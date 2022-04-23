@@ -14,15 +14,6 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
-	// Enter a parse tree produced by StarRealmsParser#winStatus.
-	enterWinStatus(ctx) {
-	}
-
-	// Exit a parse tree produced by StarRealmsParser#winStatus.
-	exitWinStatus(ctx) {
-	}
-
-
 	// Enter a parse tree produced by StarRealmsParser#turn.
 	enterTurn(ctx) {
 	}
@@ -41,120 +32,219 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
-	// Enter a parse tree produced by StarRealmsParser#endPhase.
-	enterEndPhase(ctx) {
+	// Enter a parse tree produced by StarRealmsParser#winStatus.
+	enterWinStatus(ctx) {
 	}
 
-	// Exit a parse tree produced by StarRealmsParser#endPhase.
-	exitEndPhase(ctx) {
-	}
-
-
-	// Enter a parse tree produced by StarRealmsParser#summaryAction.
-	enterSummaryAction(ctx) {
-	}
-
-	// Exit a parse tree produced by StarRealmsParser#summaryAction.
-	exitSummaryAction(ctx) {
+	// Exit a parse tree produced by StarRealmsParser#winStatus.
+	exitWinStatus(ctx) {
 	}
 
 
-	// Enter a parse tree produced by StarRealmsParser#activateCard.
-	enterActivateCard(ctx) {
+	// Enter a parse tree produced by StarRealmsParser#baseInstantEffect.
+	enterBaseInstantEffect(ctx) {
 	}
 
-	// Exit a parse tree produced by StarRealmsParser#activateCard.
-	exitActivateCard(ctx) {
-	}
-
-
-	// Enter a parse tree produced by StarRealmsParser#actionDetail.
-	enterActionDetail(ctx) {
-	}
-
-	// Exit a parse tree produced by StarRealmsParser#actionDetail.
-	exitActionDetail(ctx) {
+	// Exit a parse tree produced by StarRealmsParser#baseInstantEffect.
+	exitBaseInstantEffect(ctx) {
 	}
 
 
-	// Enter a parse tree produced by StarRealmsParser#drawPhase.
-	enterDrawPhase(ctx) {
+	// Enter a parse tree produced by StarRealmsParser#purchase.
+	enterPurchase(ctx) {
 	}
 
-	// Exit a parse tree produced by StarRealmsParser#drawPhase.
-	exitDrawPhase(ctx) {
-	}
-
-
-	// Enter a parse tree produced by StarRealmsParser#drawCards.
-	enterDrawCards(ctx) {
-	}
-
-	// Exit a parse tree produced by StarRealmsParser#drawCards.
-	exitDrawCards(ctx) {
+	// Exit a parse tree produced by StarRealmsParser#purchase.
+	exitPurchase(ctx) {
 	}
 
 
-	// Enter a parse tree produced by StarRealmsParser#activateBase.
-	enterActivateBase(ctx) {
+	// Enter a parse tree produced by StarRealmsParser#purchaseSummary.
+	enterPurchaseSummary(ctx) {
 	}
 
-	// Exit a parse tree produced by StarRealmsParser#activateBase.
-	exitActivateBase(ctx) {
-	}
-
-
-	// Enter a parse tree produced by StarRealmsParser#activateCardEffect.
-	enterActivateCardEffect(ctx) {
-	}
-
-	// Exit a parse tree produced by StarRealmsParser#activateCardEffect.
-	exitActivateCardEffect(ctx) {
+	// Exit a parse tree produced by StarRealmsParser#purchaseSummary.
+	exitPurchaseSummary(ctx) {
 	}
 
 
-	// Enter a parse tree produced by StarRealmsParser#increasePool.
-	enterIncreasePool(ctx) {
+	// Enter a parse tree produced by StarRealmsParser#purchaseDetail.
+	enterPurchaseDetail(ctx) {
 	}
 
-	// Exit a parse tree produced by StarRealmsParser#increasePool.
-	exitIncreasePool(ctx) {
-	}
-
-
-	// Enter a parse tree produced by StarRealmsParser#discardAndDraw.
-	enterDiscardAndDraw(ctx) {
-	}
-
-	// Exit a parse tree produced by StarRealmsParser#discardAndDraw.
-	exitDiscardAndDraw(ctx) {
+	// Exit a parse tree produced by StarRealmsParser#purchaseDetail.
+	exitPurchaseDetail(ctx) {
 	}
 
 
-	// Enter a parse tree produced by StarRealmsParser#discardAndDrawDescription.
-	enterDiscardAndDrawDescription(ctx) {
+	// Enter a parse tree produced by StarRealmsParser#play.
+	enterPlay(ctx) {
 	}
 
-	// Exit a parse tree produced by StarRealmsParser#discardAndDrawDescription.
-	exitDiscardAndDrawDescription(ctx) {
-	}
-
-
-	// Enter a parse tree produced by StarRealmsParser#selectDiscardCard.
-	enterSelectDiscardCard(ctx) {
-	}
-
-	// Exit a parse tree produced by StarRealmsParser#selectDiscardCard.
-	exitSelectDiscardCard(ctx) {
+	// Exit a parse tree produced by StarRealmsParser#play.
+	exitPlay(ctx) {
 	}
 
 
-	// Enter a parse tree produced by StarRealmsParser#activateEffect.
-	enterActivateEffect(ctx) {
+	// Enter a parse tree produced by StarRealmsParser#playSummary.
+	enterPlaySummary(ctx) {
 	}
 
-	// Exit a parse tree produced by StarRealmsParser#activateEffect.
-	exitActivateEffect(ctx) {
+	// Exit a parse tree produced by StarRealmsParser#playSummary.
+	exitPlaySummary(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#playSingle.
+	enterPlaySingle(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#playSingle.
+	exitPlaySingle(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#playDetail.
+	enterPlayDetail(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#playDetail.
+	exitPlayDetail(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#newAbility.
+	enterNewAbility(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#newAbility.
+	exitNewAbility(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#scrapCardEffect.
+	enterScrapCardEffect(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#scrapCardEffect.
+	exitScrapCardEffect(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#scrapCardEffectSummary.
+	enterScrapCardEffectSummary(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#scrapCardEffectSummary.
+	exitScrapCardEffectSummary(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#scrapCardEffectDetail.
+	enterScrapCardEffectDetail(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#scrapCardEffectDetail.
+	exitScrapCardEffectDetail(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#simpleScrap.
+	enterSimpleScrap(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#simpleScrap.
+	exitSimpleScrap(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#attackPlayer.
+	enterAttackPlayer(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#attackPlayer.
+	exitAttackPlayer(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#attackPlayerSummary.
+	enterAttackPlayerSummary(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#attackPlayerSummary.
+	exitAttackPlayerSummary(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#newAuthority.
+	enterNewAuthority(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#newAuthority.
+	exitNewAuthority(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#attackBase.
+	enterAttackBase(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#attackBase.
+	exitAttackBase(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#attackBaseSummary.
+	enterAttackBaseSummary(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#attackBaseSummary.
+	exitAttackBaseSummary(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#scrapCard.
+	enterScrapCard(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#scrapCard.
+	exitScrapCard(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#scrappingSummary.
+	enterScrappingSummary(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#scrappingSummary.
+	exitScrappingSummary(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#scrappingDetail.
+	enterScrappingDetail(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#scrappingDetail.
+	exitScrappingDetail(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#scrapAction.
+	enterScrapAction(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#scrapAction.
+	exitScrapAction(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#scrapEffect.
+	enterScrapEffect(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#scrapEffect.
+	exitScrapEffect(ctx) {
 	}
 
 
@@ -194,48 +284,93 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
-	// Enter a parse tree produced by StarRealmsParser#play.
-	enterPlay(ctx) {
+	// Enter a parse tree produced by StarRealmsParser#choseEffect.
+	enterChoseEffect(ctx) {
 	}
 
-	// Exit a parse tree produced by StarRealmsParser#play.
-	exitPlay(ctx) {
-	}
-
-
-	// Enter a parse tree produced by StarRealmsParser#playSingle.
-	enterPlaySingle(ctx) {
-	}
-
-	// Exit a parse tree produced by StarRealmsParser#playSingle.
-	exitPlaySingle(ctx) {
+	// Exit a parse tree produced by StarRealmsParser#choseEffect.
+	exitChoseEffect(ctx) {
 	}
 
 
-	// Enter a parse tree produced by StarRealmsParser#purchase.
-	enterPurchase(ctx) {
+	// Enter a parse tree produced by StarRealmsParser#choseDiscardAndDraw.
+	enterChoseDiscardAndDraw(ctx) {
 	}
 
-	// Exit a parse tree produced by StarRealmsParser#purchase.
-	exitPurchase(ctx) {
-	}
-
-
-	// Enter a parse tree produced by StarRealmsParser#attackPlayer.
-	enterAttackPlayer(ctx) {
-	}
-
-	// Exit a parse tree produced by StarRealmsParser#attackPlayer.
-	exitAttackPlayer(ctx) {
+	// Exit a parse tree produced by StarRealmsParser#choseDiscardAndDraw.
+	exitChoseDiscardAndDraw(ctx) {
 	}
 
 
-	// Enter a parse tree produced by StarRealmsParser#attackBase.
-	enterAttackBase(ctx) {
+	// Enter a parse tree produced by StarRealmsParser#discardAndDrawSummary.
+	enterDiscardAndDrawSummary(ctx) {
 	}
 
-	// Exit a parse tree produced by StarRealmsParser#attackBase.
-	exitAttackBase(ctx) {
+	// Exit a parse tree produced by StarRealmsParser#discardAndDrawSummary.
+	exitDiscardAndDrawSummary(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#selectDiscard.
+	enterSelectDiscard(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#selectDiscard.
+	exitSelectDiscard(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#discarding.
+	enterDiscarding(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#discarding.
+	exitDiscarding(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#choseIncreasePool.
+	enterChoseIncreasePool(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#choseIncreasePool.
+	exitChoseIncreasePool(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#activatingEffect.
+	enterActivatingEffect(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#activatingEffect.
+	exitActivatingEffect(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#activatingSummary.
+	enterActivatingSummary(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#activatingSummary.
+	exitActivatingSummary(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#activatingDetail.
+	enterActivatingDetail(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#activatingDetail.
+	exitActivatingDetail(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#scrapAndDraw.
+	enterScrapAndDraw(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#scrapAndDraw.
+	exitScrapAndDraw(ctx) {
 	}
 
 
@@ -248,6 +383,69 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#drawAndScrapFromHand.
+	enterDrawAndScrapFromHand(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#drawAndScrapFromHand.
+	exitDrawAndScrapFromHand(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#resolveHandScrap.
+	enterResolveHandScrap(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#resolveHandScrap.
+	exitResolveHandScrap(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#freeAcquireToTop.
+	enterFreeAcquireToTop(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#freeAcquireToTop.
+	exitFreeAcquireToTop(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#stealthNeedle.
+	enterStealthNeedle(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#stealthNeedle.
+	exitStealthNeedle(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#destroyAndScrap.
+	enterDestroyAndScrap(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#destroyAndScrap.
+	exitDestroyAndScrap(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#purchaseToTop.
+	enterPurchaseToTop(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#purchaseToTop.
+	exitPurchaseToTop(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#scrapSummary.
+	enterScrapSummary(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#scrapSummary.
+	exitScrapSummary(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#scrapDetail.
 	enterScrapDetail(ctx) {
 	}
@@ -257,30 +455,84 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#resolveHandScrapSummary.
+	enterResolveHandScrapSummary(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#resolveHandScrapSummary.
+	exitResolveHandScrapSummary(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#endPhase.
+	enterEndPhase(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#endPhase.
+	exitEndPhase(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#endTurn.
+	enterEndTurn(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#endTurn.
+	exitEndTurn(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#drawPhase.
+	enterDrawPhase(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#drawPhase.
+	exitDrawPhase(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#refreshIndicators.
+	enterRefreshIndicators(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#refreshIndicators.
+	exitRefreshIndicators(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#newTurn.
+	enterNewTurn(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#newTurn.
+	exitNewTurn(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#drawCardsWithShuffle.
+	enterDrawCardsWithShuffle(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#drawCardsWithShuffle.
+	exitDrawCardsWithShuffle(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#drawCards.
+	enterDrawCards(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#drawCards.
+	exitDrawCards(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#newBalanceDetail.
 	enterNewBalanceDetail(ctx) {
 	}
 
 	// Exit a parse tree produced by StarRealmsParser#newBalanceDetail.
 	exitNewBalanceDetail(ctx) {
-	}
-
-
-	// Enter a parse tree produced by StarRealmsParser#newAbility.
-	enterNewAbility(ctx) {
-	}
-
-	// Exit a parse tree produced by StarRealmsParser#newAbility.
-	exitNewAbility(ctx) {
-	}
-
-
-	// Enter a parse tree produced by StarRealmsParser#destroyBase.
-	enterDestroyBase(ctx) {
-	}
-
-	// Exit a parse tree produced by StarRealmsParser#destroyBase.
-	exitDestroyBase(ctx) {
 	}
 
 
@@ -302,30 +554,12 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
-	// Enter a parse tree produced by StarRealmsParser#newAuthority.
-	enterNewAuthority(ctx) {
+	// Enter a parse tree produced by StarRealmsParser#destroyBase.
+	enterDestroyBase(ctx) {
 	}
 
-	// Exit a parse tree produced by StarRealmsParser#newAuthority.
-	exitNewAuthority(ctx) {
-	}
-
-
-	// Enter a parse tree produced by StarRealmsParser#endTurn.
-	enterEndTurn(ctx) {
-	}
-
-	// Exit a parse tree produced by StarRealmsParser#endTurn.
-	exitEndTurn(ctx) {
-	}
-
-
-	// Enter a parse tree produced by StarRealmsParser#newTurn.
-	enterNewTurn(ctx) {
-	}
-
-	// Exit a parse tree produced by StarRealmsParser#newTurn.
-	exitNewTurn(ctx) {
+	// Exit a parse tree produced by StarRealmsParser#destroyBase.
+	exitDestroyBase(ctx) {
 	}
 
 
@@ -335,15 +569,6 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 
 	// Exit a parse tree produced by StarRealmsParser#shuffleCards.
 	exitShuffleCards(ctx) {
-	}
-
-
-	// Enter a parse tree produced by StarRealmsParser#refreshIndicators.
-	enterRefreshIndicators(ctx) {
-	}
-
-	// Exit a parse tree produced by StarRealmsParser#refreshIndicators.
-	exitRefreshIndicators(ctx) {
 	}
 
 
