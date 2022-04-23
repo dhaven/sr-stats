@@ -1,10 +1,12 @@
 grammar StarRealms;
 
 battle            : turn+ EOF ;
-turn              : baseInstantEffect* action+ (endPhase | winStatus) ;
-baseInstantEffect : newBalanceDetail | drawCardsWithShuffle;
-action            : purchase | play | attackPlayer | attackBase | scrapCard | discard | choseEffect | activatingEffect;
+turn              : action+ (endPhase | winStatus) ;
+action            : baseInstantEffect | purchase | play | attackPlayer | attackBase | scrapCard | discard | choseEffect | activatingEffect;
 winStatus         : name 'has' 'won' 'the' 'game' NEWLINE ;
+
+//describes a base instant effect action
+baseInstantEffect : newBalanceDetail | drawCardsWithShuffle;
 
 //describes a purchase action
 purchase        : purchaseSummary purchaseDetail;
@@ -56,7 +58,7 @@ choseIncreasePool     : 'Chose' 'Add' INT WORD NEWLINE newBalanceDetail;
 
 //describes a log line that start with 'Activating ...'
 //applies to bases and ships where the user can chose when the effect is activated
-activatingEffect        : activatingSummary activatingDetail;
+activatingEffect        : activatingSummary activatingDetail?;
 activatingSummary       : 'Activating' card NEWLINE;
 activatingDetail        : drawAndScrapFromHand | scrapAndDraw | scrap | freeAcquireToTop | destroyAndScrap | stealthNeedle;
 scrapAndDraw            : scrap drawCardsWithShuffle;

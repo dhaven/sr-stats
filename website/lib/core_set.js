@@ -29,7 +29,7 @@ export const core_set = {
         "tradepod": {
             "name": "Trade Pod",
             "cost": 2,
-            "faction": "Blob"
+            "faction": "Blob",
         },
         "ram": {
             "name": "Ram",

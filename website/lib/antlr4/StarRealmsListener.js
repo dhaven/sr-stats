@@ -23,15 +23,6 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
-	// Enter a parse tree produced by StarRealmsParser#baseInstantEffect.
-	enterBaseInstantEffect(ctx) {
-	}
-
-	// Exit a parse tree produced by StarRealmsParser#baseInstantEffect.
-	exitBaseInstantEffect(ctx) {
-	}
-
-
 	// Enter a parse tree produced by StarRealmsParser#action.
 	enterAction(ctx) {
 	}
@@ -47,6 +38,15 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 
 	// Exit a parse tree produced by StarRealmsParser#winStatus.
 	exitWinStatus(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#baseInstantEffect.
+	enterBaseInstantEffect(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#baseInstantEffect.
+	exitBaseInstantEffect(ctx) {
 	}
 
 

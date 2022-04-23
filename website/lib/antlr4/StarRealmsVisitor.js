@@ -18,12 +18,6 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
-	// Visit a parse tree produced by StarRealmsParser#baseInstantEffect.
-	visitBaseInstantEffect(ctx) {
-	  return this.visitChildren(ctx);
-	}
-
-
 	// Visit a parse tree produced by StarRealmsParser#action.
 	visitAction(ctx) {
 	  return this.visitChildren(ctx);
@@ -32,6 +26,12 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 
 	// Visit a parse tree produced by StarRealmsParser#winStatus.
 	visitWinStatus(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#baseInstantEffect.
+	visitBaseInstantEffect(ctx) {
 	  return this.visitChildren(ctx);
 	}
 

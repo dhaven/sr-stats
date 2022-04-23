@@ -33,9 +33,9 @@ class Visitor extends StarRealmsVisitor{
                 }
                 for(let j = 0; j < nextRound['scrappedCards'].length; j++){
                     let nextCard = nextRound['scrappedCards'][j]
-                    //console.log(nextCard)
-                    //console.log(player['deck'])
-                    player['deck'][nextCard]['scrapCount'] += 1
+                    if(nextCard in player['deck']){
+                        player['deck'][nextCard]['scrapCount'] += 1
+                    }
                 }
                 for(let j = 0; j < nextRound['discardedCards'].length; j++){
                     let nextCard = nextRound['discardedCards'][j]
@@ -200,11 +200,11 @@ class Visitor extends StarRealmsVisitor{
             selfAuthority: 0, // authority change of current player
             otherAuthority: 0 // authority change of other player
         }
-        //get any new balance triggered from bases
-        if(ctx.baseInstantEffect()){
-            for(let i = 0; i < ctx.baseInstantEffect().length; i++){
-                if(ctx.baseInstantEffect()[i].newBalanceDetail()){
-                    let balance = this.computeNewBalance({}, this.visit(ctx.baseInstantEffect()[i]))
+        //get summary of all actions performed in this turn
+        for(let i = 0; i < ctx.action().length; i++){
+            if(ctx.action()[i].baseInstantEffect()){
+                if(ctx.action()[i].baseInstantEffect().newBalanceDetail()){
+                    let balance = this.computeNewBalance({}, this.visit(ctx.action()[i]))
                     turnData['tradePool'] += balance['tradePool']
                     turnData['combatPool'] += balance['combatPool']
                     turnData['usedTrade'] += balance['usedTrade']
@@ -212,13 +212,10 @@ class Visitor extends StarRealmsVisitor{
                     turnData['selfAuthority'] += balance['selfAuthority']
                     turnData['otherAuthority'] += balance['otherAuthority']
                 }else{ //drawCardsWithShuffle
-                    turnData['drawCount'] += this.visit(ctx.baseInstantEffect()[i])
+                    turnData['drawCount'] += this.visit(ctx.action()[i])
                 }
             }
-        }
-        //get summary of all actions performed in this turn
-        for(let i = 0; i < ctx.action().length; i++){
-            if(ctx.action()[i].purchase()){
+            else if(ctx.action()[i].purchase()){
                 let purchaseActionDetail = this.visit(ctx.action()[i])
                 turnData['purchasedCards'].push(purchaseActionDetail['card'])
                 turnData['usedTrade'] += purchaseActionDetail['balance']['value']
@@ -227,7 +224,6 @@ class Visitor extends StarRealmsVisitor{
                 let playActionDetail = this.visit(ctx.action()[i])
                 turnData['playedCards'] = turnData['playedCards'].concat(playActionDetail['playedCards'])
                 turnData['scrappedCards'] = turnData['scrappedCards'].concat(playActionDetail['scrappedCards'])
-                //console.log(playActionDetail['scrappedCards'])
                 turnData['drawCount'] += playActionDetail['drawCount']
                 turnData['tradePool'] += playActionDetail['balance']['tradePool']
                 turnData['combatPool'] += playActionDetail['balance']['combatPool']
@@ -282,7 +278,6 @@ class Visitor extends StarRealmsVisitor{
                     turnData['scrappedCards'].push(activatingEffectActionDetail['drawAndScrapFromHand']['scrappedCard'])
                 }else if('scrapAndDraw' in activatingEffectActionDetail){
                     turnData['drawCount'] += activatingEffectActionDetail['scrapAndDraw']['drawCount']
-                    //console.log(activatingEffectActionDetail['scrapAndDraw']['scrappedCards'])
                     turnData['scrappedCards'] = turnData['scrappedCards'].concat(activatingEffectActionDetail['scrapAndDraw']['scrappedCards'])
                 }else if('scrap' in activatingEffectActionDetail){
                     turnData['scrappedCards'] = turnData['scrappedCards'].concat(activatingEffectActionDetail['scrap'])
@@ -298,18 +293,7 @@ class Visitor extends StarRealmsVisitor{
                 }
             }
         }
-        console.log(turnData)
         return turnData
-    }
-
-    // grammar: newBalanceDetail | drawCardsWithShuffle;
-    visitBaseInstantEffect(ctx){
-        if(ctx.newBalanceDetail()){
-            return this.visit(ctx.newBalanceDetail())
-        }
-        if(ctx.drawCardsWithShuffle()){
-            return this.visit(ctx.drawCardsWithShuffle())
-        }
     }
 
     visitEndPhase(ctx){
@@ -322,9 +306,11 @@ class Visitor extends StarRealmsVisitor{
         return ctx.name().getText()
     }
 
-    //grammar: purchase | play | attackPlayer | attackBase | scrapCard | discard | choseEffect | activatingEffect;
+    //grammar: baseInstantEffect | purchase | play | attackPlayer | attackBase | scrapCard | discard | choseEffect | activatingEffect;
     visitAction(ctx){
-        if(ctx.purchase()){
+        if(ctx.baseInstantEffect()){
+            return this.visit(ctx.baseInstantEffect())
+        }else if(ctx.purchase()){
             return this.visit(ctx.purchase())
         }else if(ctx.play()){
             return this.visit(ctx.play())
@@ -340,6 +326,16 @@ class Visitor extends StarRealmsVisitor{
             return this.visit(ctx.choseEffect())
         }else{
             return this.visit(ctx.activatingEffect())
+        }
+    }
+
+    // grammar: newBalanceDetail | drawCardsWithShuffle;
+    visitBaseInstantEffect(ctx){
+        if(ctx.newBalanceDetail()){
+            return this.visit(ctx.newBalanceDetail())
+        }
+        if(ctx.drawCardsWithShuffle()){
+            return this.visit(ctx.drawCardsWithShuffle())
         }
     }
 
@@ -391,7 +387,7 @@ class Visitor extends StarRealmsVisitor{
             for(let i = 0; i < ctx.playDetail().length; i++){
                 if(ctx.playDetail()[i].newBalanceDetail()){
                     let newBalanceDetail = this.visit(ctx.playDetail()[i])
-                    playSummary['balance'] = this.computeNewBalance(playSummary['balance'], newBalanceDetail)
+                    playSummary['balance'] = this.computeNewBalance(playSummary['balance'], newBalanceDetail)   
                 }
                 else if(ctx.playDetail()[i].drawCardsWithShuffle()){
                     let drawCountSummary = this.visit(ctx.playDetail()[i])
@@ -399,7 +395,6 @@ class Visitor extends StarRealmsVisitor{
                 }
                 else if(ctx.playDetail()[i].scrapCardEffect()){
                     let scrapCardEffectSummary = this.visit(ctx.playDetail()[i])
-                    //console.log(scrapCardEffectSummary['scrappedCard'])
                     playSummary['scrappedCards'].push(scrapCardEffectSummary['scrappedCard'])
                     if(Object.keys(scrapCardEffectSummary['balance']).length != 0){
                         playSummary['balance'] = this.computeNewBalance(playSummary['balance'], scrapCardEffectSummary['balance'])
@@ -415,7 +410,6 @@ class Visitor extends StarRealmsVisitor{
                 }
             }
         }
-        //console.log(playSummary)
         return playSummary
     }
 
@@ -583,9 +577,13 @@ class Visitor extends StarRealmsVisitor{
         return this.visit(ctx.newBalanceDetail());
     }
 
-    // grammar: activatingSummary activatingDetail;
+    // grammar: activatingSummary activatingDetail?;
     visitActivatingEffect(ctx) {
-        return this.visit(ctx.activatingDetail())
+        if(ctx.activatingDetail()){
+            return this.visit(ctx.activatingDetail())
+        }else{
+            return {}
+        }
     }
 
     // grammar: drawAndScrapFromHand | scrapAndDraw | scrap | freeAcquireToTop | destroyAndScrap | stealthNeedle;

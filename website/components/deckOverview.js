@@ -41,15 +41,20 @@ export default function DeckOverview({deckData, player, winner}) {
                             </Disclosure.Button>
                             <Disclosure.Panel className="pb-2">
                             <div className="text-gray-900 bg-white rounded-lg border border-gray-200 overflow-auto h-80">
+                                <div className=" py-2 px-4 flex flex-row text-sm font-medium w-full">
+                                    <p className="basis-1/3 text-center">name</p>
+                                    <p className="basis-1/3 text-center">faction</p>
+                                    <p className="basis-1/3 text-center">acquired/scrapped</p>
+                                </div>
                                 {deckData &&
                                     <div className="flex flex-col">
                                         {Object.keys(deckData).map((cardName,i)=>{
                                             return (
                                                 <button key={i} type="button" className="py-2 px-4 text-left text-sm border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700">
-                                                    <div className="flex flex-row justify-between w-full">
-                                                        <p className="basis-1/3">{deckData[cardName]['name']}</p>
-                                                        <p className="basis-1/3">{deckData[cardName]['faction']}</p>
-                                                        <p className="text-right">{deckData[cardName]['count']}</p>
+                                                    <div className="flex flex-row w-full">
+                                                        <p className="basis-1/3 text-center">{deckData[cardName]['name']}</p>
+                                                        <p className="basis-1/3 text-center">{deckData[cardName]['faction']}</p>
+                                                        <p className="basis-1/3 text-center">{deckData[cardName]['count']}/{deckData[cardName]['scrapCount']}</p>
                                                     </div>
                                                 </button>
                                             )

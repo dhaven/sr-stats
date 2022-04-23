@@ -43,7 +43,7 @@ export function getDeckSummary(deck){
     let total_cost = 0
     for(let card in deck){
         total_cost += deck[card]['cost']
-        let final_card_count = deck[card]['count'] - deck[card]['scrapCount']
+        let final_card_count = deck[card]['count']
         total_count += final_card_count
         if(deck[card]['faction'] == "Blob"){
             blob_count += final_card_count
@@ -62,6 +62,18 @@ export function getDeckSummary(deck){
         trade_federation_count: trade_federation_count,
         star_empire_count: star_empire_count,
         machine_cult_count: machine_cult_count
+    }
+}
+
+//return all chart data
+export function getChartData(battle){
+    return {
+        authorityData: getAuthority(battle),
+        combatData: getCombat(battle),
+        tradeData: getTrade(battle),
+        scrapData: getScrapAction(battle),
+        discardData: getDiscardAction(battle),
+        drawCount: getDrawCount(battle)
     }
 }
 
@@ -148,4 +160,73 @@ export function getTrade(battle){
         }
     }
     return tradeData
+}
+
+export function getScrapAction(battle){
+    let scrapData = {}
+    let firstPlayer = battle['firstPlayer']
+    let secondPlayer = ""
+    for(let i = 0; i < battle['rounds'][0]['players'].length; i++){
+        let player = battle['rounds'][0]['players'][i]
+        if(player['name'] != battle['firstPlayer']){
+            secondPlayer = player['name']
+        }
+    }
+    let indivTurns = Math.ceil(battle['rounds'].length/2)
+    scrapData[firstPlayer] = Array(indivTurns).fill(0)
+    scrapData[secondPlayer] = Array(indivTurns).fill(0)
+    for(let i = 0; i < battle['rounds'].length; i++){
+        if(i % 2 == 0){
+            scrapData[firstPlayer][i/2] = battle['rounds'][i]['scrappedCards'].length
+        }else{
+            scrapData[secondPlayer][parseInt(i/2)] = battle['rounds'][i]['scrappedCards'].length
+        }
+    }
+    return scrapData
+}
+
+export function getDiscardAction(battle){
+    let discardData = {}
+    let firstPlayer = battle['firstPlayer']
+    let secondPlayer = ""
+    for(let i = 0; i < battle['rounds'][0]['players'].length; i++){
+        let player = battle['rounds'][0]['players'][i]
+        if(player['name'] != battle['firstPlayer']){
+            secondPlayer = player['name']
+        }
+    }
+    let indivTurns = Math.ceil(battle['rounds'].length/2)
+    discardData[firstPlayer] = Array(indivTurns).fill(0)
+    discardData[secondPlayer] = Array(indivTurns).fill(0)
+    for(let i = 0; i < battle['rounds'].length; i++){
+        if(i % 2 == 0){
+            discardData[firstPlayer][i/2] = battle['rounds'][i]['discardedCards'].length
+        }else{
+            discardData[secondPlayer][parseInt(i/2)] = battle['rounds'][i]['discardedCards'].length
+        }
+    }
+    return discardData
+}
+
+export function getDrawCount(battle){
+    let drawData = {}
+    let firstPlayer = battle['firstPlayer']
+    let secondPlayer = ""
+    for(let i = 0; i < battle['rounds'][0]['players'].length; i++){
+        let player = battle['rounds'][0]['players'][i]
+        if(player['name'] != battle['firstPlayer']){
+            secondPlayer = player['name']
+        }
+    }
+    let indivTurns = Math.ceil(battle['rounds'].length/2)
+    drawData[firstPlayer] = Array(indivTurns).fill(0)
+    drawData[secondPlayer] = Array(indivTurns).fill(0)
+    for(let i = 0; i < battle['rounds'].length; i++){
+        if(i % 2 == 0){
+            drawData[firstPlayer][i/2] = battle['rounds'][i]['drawCount']
+        }else{
+            drawData[secondPlayer][parseInt(i/2)] = battle['rounds'][i]['drawCount']
+        }
+    }
+    return drawData
 }
