@@ -1,12 +1,14 @@
 import { Formik, Form, Field } from 'formik';
 import { atom, useAtom } from 'jotai'
 import { example1, example2 } from '../lib/example_data.js'
+import { chartTypeAtom } from './gameChart.js'
 
 export const logDataAtom = atom({})
 const errorMessageAtom = atom("")
 
 export default function InputLog(){
   const [logData, setLogData] = useAtom(logDataAtom)
+  const [chartType, setChartType] = useAtom(chartTypeAtom)
   const [errorMessage, setErrorMessage] = useAtom(errorMessageAtom)
     return (
         <div className="w-screen p-1 m-1 sm:w-4/5 md:w-4/5 lg:w-3/4 max-w-lg">
@@ -15,6 +17,7 @@ export default function InputLog(){
             onSubmit={(values) => {
               setErrorMessage("")
               setLogData({})
+              setChartType("authorityData")
               fetch('/api/parse_log', {
                 method: 'POST', // or 'PUT'
                 headers: {

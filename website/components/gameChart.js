@@ -5,7 +5,7 @@ import { logDataAtom } from './form'
 import { Tab } from '@headlessui/react'
 import { Fragment } from 'react'
 
-const chartTypeAtom = atom("authorityData")
+export const chartTypeAtom = atom("authorityData")
 
 export default function GameChart({winner}) {
     const [battle, setBattle] = useAtom(logDataAtom)
