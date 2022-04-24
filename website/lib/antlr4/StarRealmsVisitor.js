@@ -54,6 +54,12 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
+	// Visit a parse tree produced by StarRealmsParser#purchaseSuffix.
+	visitPurchaseSuffix(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
 	// Visit a parse tree produced by StarRealmsParser#play.
 	visitPlay(ctx) {
 	  return this.visitChildren(ctx);
@@ -84,26 +90,44 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
+	// Visit a parse tree produced by StarRealmsParser#multiScrap.
+	visitMultiScrap(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#multiScrapSummary.
+	visitMultiScrapSummary(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#multiScrapDetail.
+	visitMultiScrapDetail(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
 	// Visit a parse tree produced by StarRealmsParser#scrapCardEffect.
 	visitScrapCardEffect(ctx) {
 	  return this.visitChildren(ctx);
 	}
 
 
-	// Visit a parse tree produced by StarRealmsParser#scrapCardEffectSummary.
-	visitScrapCardEffectSummary(ctx) {
-	  return this.visitChildren(ctx);
-	}
-
-
-	// Visit a parse tree produced by StarRealmsParser#scrapCardEffectDetail.
-	visitScrapCardEffectDetail(ctx) {
-	  return this.visitChildren(ctx);
-	}
-
-
 	// Visit a parse tree produced by StarRealmsParser#simpleScrap.
 	visitSimpleScrap(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#moveBaseToDeck.
+	visitMoveBaseToDeck(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#freeAcquire.
+	visitFreeAcquire(ctx) {
 	  return this.visitChildren(ctx);
 	}
 
@@ -156,14 +180,20 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
+	// Visit a parse tree produced by StarRealmsParser#scrapEffect.
+	visitScrapEffect(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
 	// Visit a parse tree produced by StarRealmsParser#scrapAction.
 	visitScrapAction(ctx) {
 	  return this.visitChildren(ctx);
 	}
 
 
-	// Visit a parse tree produced by StarRealmsParser#scrapEffect.
-	visitScrapEffect(ctx) {
+	// Visit a parse tree produced by StarRealmsParser#freePurchase.
+	visitFreePurchase(ctx) {
 	  return this.visitChildren(ctx);
 	}
 
@@ -206,18 +236,6 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 
 	// Visit a parse tree produced by StarRealmsParser#discardAndDrawSummary.
 	visitDiscardAndDrawSummary(ctx) {
-	  return this.visitChildren(ctx);
-	}
-
-
-	// Visit a parse tree produced by StarRealmsParser#selectDiscard.
-	visitSelectDiscard(ctx) {
-	  return this.visitChildren(ctx);
-	}
-
-
-	// Visit a parse tree produced by StarRealmsParser#discarding.
-	visitDiscarding(ctx) {
 	  return this.visitChildren(ctx);
 	}
 
@@ -276,8 +294,32 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
-	// Visit a parse tree produced by StarRealmsParser#stealthNeedle.
-	visitStealthNeedle(ctx) {
+	// Visit a parse tree produced by StarRealmsParser#copyBase.
+	visitCopyBase(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#copyBaseSummary.
+	visitCopyBaseSummary(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#copyBaseDetail.
+	visitCopyBaseDetail(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#copyCard.
+	visitCopyCard(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#copyCardEffect.
+	visitCopyCardEffect(ctx) {
 	  return this.visitChildren(ctx);
 	}
 
@@ -312,6 +354,12 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
+	// Visit a parse tree produced by StarRealmsParser#discardAndDraw.
+	visitDiscardAndDraw(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
 	// Visit a parse tree produced by StarRealmsParser#endPhase.
 	visitEndPhase(ctx) {
 	  return this.visitChildren(ctx);
@@ -324,8 +372,14 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
-	// Visit a parse tree produced by StarRealmsParser#drawPhase.
-	visitDrawPhase(ctx) {
+	// Visit a parse tree produced by StarRealmsParser#drawPhaseDetail.
+	visitDrawPhaseDetail(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#resetCopiedCards.
+	visitResetCopiedCards(ctx) {
 	  return this.visitChildren(ctx);
 	}
 
@@ -338,6 +392,24 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 
 	// Visit a parse tree produced by StarRealmsParser#newTurn.
 	visitNewTurn(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#noScrap.
+	visitNoScrap(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#selectDiscard.
+	visitSelectDiscard(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#discarding.
+	visitDiscarding(ctx) {
 	  return this.visitChildren(ctx);
 	}
 

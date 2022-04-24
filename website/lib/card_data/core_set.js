@@ -1,5 +1,5 @@
 export const core_set = {
-    "name": "core",
+    "name": "core_set",
     "cards": {
         "scout": {
             "name": "Scout",
