@@ -11,18 +11,23 @@ baseInstantEffect : newBalanceDetail | drawCardsWithShuffle;
 //describes a purchase action
 purchase        : purchaseSummary purchaseDetail;
 purchaseSummary : ACQUIRED card  NEWLINE;
-purchaseDetail  : newBalanceDetail (ACQUIRED card 'to' 'the' 'top' WORD 'the' 'deck' NEWLINE)?;
+purchaseDetail  : newBalanceDetail purchaseSuffix?;
+purchaseSuffix  : (ACQUIRED card 'to' 'the' 'top' WORD 'the' 'deck' NEWLINE) | (ACQUIRED card 'to' 'hand' NEWLINE);
 
 //describes a play action
-play        : playSummary playDetail*;
-playSummary : (PLAY ALL NEWLINE) | playSingle;
-playSingle  : PLAYED card NEWLINE;
-playDetail  : newBalanceDetail | newAbility | drawCardsWithShuffle | scrapCardEffect | simpleScrap | destroyBase;
-newAbility  : name SEPARATOR card 'ability' 'available' NEWLINE;
-scrapCardEffect : scrapCardEffectSummary scrapCardEffectDetail;
-scrapCardEffectSummary: name IS SCRAPPING (':')? card NEWLINE;
-scrapCardEffectDetail: newBalanceDetail? SCRAPPED card NEWLINE;
-simpleScrap : SCRAPPED card NEWLINE;
+play                  : playSummary playDetail*;
+playSummary           : (PLAY ALL NEWLINE) | playSingle;
+playSingle            : PLAYED card NEWLINE;
+playDetail            : newBalanceDetail | newAbility | drawCardsWithShuffle | scrapCardEffect | multiScrap | noScrap | simpleScrap | destroyBase | moveBaseToDeck | freeAcquire;
+newAbility            : name SEPARATOR card 'ability' 'available' NEWLINE;
+multiScrap            : multiScrapSummary multiScrapDetail;
+multiScrapSummary     : 'Resolving' 'Scrap' 'up' 'to'INT 'cards' 'from' 'your' 'hand' 'or' DISCARD 'pile' NEWLINE;
+multiScrapDetail      : scrapCardEffect+ simpleScrap+;
+scrapCardEffect       : name IS SCRAPPING (':')? card NEWLINE;
+simpleScrap           : SCRAPPED card NEWLINE;
+moveBaseToDeck        : moveBaseToDeckSummary playDetail*;
+moveBaseToDeckSummary : name IS 'selecting' card NEWLINE;
+freeAcquire           : ACQUIRED card  NEWLINE purchaseSuffix;
 
 //describes a attackPlayer action
 attackPlayer        : attackPlayerSummary newBalanceDetail+;
@@ -36,9 +41,10 @@ attackBaseSummary : ATTACKED card NEWLINE;
 //describes a scrap action
 scrapCard        : scrappingSummary scrappingDetail;
 scrappingSummary : SCRAPPING card NEWLINE;
-scrappingDetail  : scrapAction scrapEffect+;
+scrappingDetail  : scrapEffect+;
+scrapEffect      : scrapAction | drawCardsWithShuffle | destroyBase | newBalanceDetail | freePurchase;
 scrapAction      : SCRAPPED card NEWLINE;
-scrapEffect      : drawCardsWithShuffle | destroyBase | newBalanceDetail;
+freePurchase     : ACQUIRED card  NEWLINE;
 
 //describes a discard card action
 discard          : resolveDiscard discardAction+ discardDetails ;
@@ -51,8 +57,6 @@ discardDetails   : 'no' 'more' 'cards' 'to' DISCARD NEWLINE (DISCARDED card NEWL
 choseEffect           : choseDiscardAndDraw | choseIncreasePool;
 choseDiscardAndDraw   : discardAndDrawSummary selectDiscard+ discarding+ drawCardsWithShuffle;
 discardAndDrawSummary : 'Chose' DISCARD 'and' 'Redraw' 'up' 'to' INT 'card(s)' NEWLINE ;
-selectDiscard         : name IS 'selecting' card NEWLINE ;
-discarding            : DISCARDED card NEWLINE;
 choseIncreasePool     : 'Chose' 'Add' INT WORD NEWLINE newBalanceDetail;
 
 
@@ -60,36 +64,45 @@ choseIncreasePool     : 'Chose' 'Add' INT WORD NEWLINE newBalanceDetail;
 //applies to bases and ships where the user can chose when the effect is activated
 activatingEffect        : activatingSummary activatingDetail?;
 activatingSummary       : 'Activating' card NEWLINE;
-activatingDetail        : drawAndScrapFromHand | scrapAndDraw | scrap | freeAcquireToTop | destroyAndScrap | stealthNeedle;
+activatingDetail        : drawAndScrapFromHand | scrapAndDraw | scrap | noScrap | freeAcquireToTop | destroyAndScrap | copyCard | copyBase | discardAndDraw;
 scrapAndDraw            : scrap drawCardsWithShuffle;
 scrap                   : scrapSummary+ scrapDetail+;
 drawAndScrapFromHand    : drawCardsWithShuffle resolveHandScrap;
 resolveHandScrap        : resolveHandScrapSummary scrapDetail;
 freeAcquireToTop        : ACQUIRED card NEWLINE purchaseToTop;
-stealthNeedle           : name 'selecting' 'ship' name NEWLINE 'Changed' card 'to' card NEWLINE;
+copyBase                : copyBaseSummary copyBaseDetail;
+copyBaseSummary         : name 'copied' 'base' name NEWLINE ;
+copyBaseDetail          : copyCardEffect newBalanceDetail*;
+copyCard                : name 'selecting' 'ship' card NEWLINE copyCardEffect;
+copyCardEffect          : 'Changed' card 'to' card NEWLINE;
 destroyAndScrap         : destroyBase | scrapDetail | destroyBase scrapDetail;
 purchaseToTop           : ACQUIRED card 'to' 'the' 'top' WORD 'the' 'deck' NEWLINE;
 scrapSummary            : name IS SCRAPPING (':')? card NEWLINE;
 scrapDetail             : SCRAPPED card NEWLINE;
 resolveHandScrapSummary : 'Resolving' 'Scrap' 'a' 'card' 'from' 'your' 'hand' NEWLINE;
+discardAndDraw          :  selectDiscard+ discarding+ drawCardsWithShuffle;
 
 //stuff that happens at the end of the turn
-endPhase         : endTurn drawPhase ;
-endTurn          : name ENDS TURN INT NEWLINE;
-drawPhase        : ('Changed' card 'to' 'Unaligned' NEWLINE)? drawCardsWithShuffle refreshIndicators newTurn;
+endPhase          : endTurn drawPhaseDetail* ;
+endTurn           : name ENDS TURN INT NEWLINE;
+drawPhaseDetail   : resetCopiedCards | drawCardsWithShuffle | refreshIndicators | newTurn;
+resetCopiedCards  : 'Changed' card 'to' 'Unaligned' NEWLINE;
 refreshIndicators : 'Refresh' 'ally' 'indicators' NEWLINE;
-newTurn          : IT IS NOW name '\'s' TURN INT NEWLINE;
+newTurn           : IT IS NOW name '\'s' TURN INT NEWLINE;
 
 //shared patterns
-drawCardsWithShuffle : (drawCards+ shuffleCards drawCards+) | (shuffleCards? drawCards+);
-drawCards        : DREW INT 'cards' NEWLINE;
-newBalanceDetail : name SEPARATOR card? effect balance NEWLINE;
-effect           : (INCREMENT | DECREASE) (WORD | DISCARD) ;
-balance          : '('WORD':'(INT | DECREASE)')' ;
-destroyBase      : 'Destroyed' card NEWLINE;
-shuffleCards     : 'Shuffled' DISCARD 'pile' 'to' 'form' 'new' 'deck' NEWLINE;
-name             : WORD+ ;
-card             : WORD+ ;
+noScrap               : name IS 'not' SCRAPPING 'any' 'cards' NEWLINE;
+selectDiscard         : name IS 'selecting' card NEWLINE ;
+discarding            : DISCARDED card NEWLINE;
+drawCardsWithShuffle  : (drawCards+ shuffleCards drawCards+) | (shuffleCards? drawCards+);
+drawCards             : DREW INT 'cards' NEWLINE;
+newBalanceDetail      : name SEPARATOR card? effect balance NEWLINE;
+effect                : (INCREMENT | DECREASE) (WORD | DISCARD) ;
+balance               : '('WORD':'(INT | DECREASE)')' ;
+destroyBase           : 'Destroyed' card NEWLINE;
+shuffleCards          : 'Shuffled' DISCARD 'pile' 'to' 'form' 'new' 'deck' NEWLINE;
+name                  : WORD+ ;
+card                  : (WORD '\'s'?)+ ;
 
 fragment A : ('A'|'a');
 fragment B : ('B'|'b');
@@ -143,7 +156,6 @@ COLOR_START_TAG     : '<color=#'(LETTER | INT)*'>' -> skip ;
 COLOR_END_TAG       : '</color>' -> skip ;
 END_GAME_TAG        : '===' -> skip ;
 DOT                 : '.' -> skip ;
-APOSTROPHE          : '\'' -> skip ;
 PLAYED              : 'Played' ;
 INT                 : [0-9]+ ;
 fragment LETTER     : [A-Za-z] ;
