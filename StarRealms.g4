@@ -25,8 +25,7 @@ multiScrapSummary     : 'Resolving' 'Scrap' 'up' 'to'INT 'cards' 'from' 'your' '
 multiScrapDetail      : scrapCardEffect+ simpleScrap+;
 scrapCardEffect       : name IS SCRAPPING (':')? card NEWLINE;
 simpleScrap           : SCRAPPED card NEWLINE;
-moveBaseToDeck        : moveBaseToDeckSummary playDetail*;
-moveBaseToDeckSummary : name IS 'selecting' card NEWLINE;
+moveBaseToDeck        : name IS 'selecting' card NEWLINE;
 freeAcquire           : ACQUIRED card  NEWLINE purchaseSuffix;
 
 //describes a attackPlayer action
