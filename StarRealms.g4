@@ -96,7 +96,7 @@ discarding            : DISCARDED card NEWLINE;
 drawCardsWithShuffle  : (drawCards+ shuffleCards drawCards+) | (shuffleCards? drawCards+);
 drawCards             : DREW INT 'cards' NEWLINE;
 newBalanceDetail      : name SEPARATOR card? effect balance NEWLINE;
-effect                : (INCREMENT | DECREASE) (WORD | DISCARD) ;
+effect                : (INCREMENT | DECREASE | '0') (WORD | DISCARD) ;
 balance               : '('WORD':'(INT | DECREASE)')' ;
 destroyBase           : 'Destroyed' card NEWLINE;
 shuffleCards          : 'Shuffled' DISCARD 'pile' 'to' 'form' 'new' 'deck' NEWLINE;

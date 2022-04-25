@@ -792,7 +792,7 @@ class Visitor extends StarRealmsVisitor{
         return this.visit(ctx.effect())
     }
 
-    // grammar: : (INCREMENT | DECREASE) (WORD | DISCARD) ;
+    // grammar: : (INCREMENT | DECREASE | NULL) (WORD | DISCARD) ;
     visitEffect(ctx){
         // don't return anything if it's a discard effect
         if(ctx.DISCARD()){
@@ -801,8 +801,10 @@ class Visitor extends StarRealmsVisitor{
         let val
         if(ctx.INCREMENT()){
             val = Number(ctx.INCREMENT().getText().replace('+',''))
-        }else{
+        }else if(ctx.DECREASE()){
             val = 0 - Number(ctx.DECREASE().getText().replace('-',''))
+        }else{
+            val = 0
         }
         return {category: ctx.WORD().getText(), value: val}
     }
