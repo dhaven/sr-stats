@@ -184,7 +184,7 @@ export default function GameChart({winner}) {
                                                "bg-white text-sm px-2 py-2 border border-gray-300 hover:bg-gray-100 rounded-lg"
                                 }
                                 type="button" onClick={(e) => {setChartType("drawCount")}}>
-                                draw
+                                extra draw
                             </button>
                         }
                     </Tab>
