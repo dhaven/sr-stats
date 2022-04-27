@@ -1,3 +1,5 @@
 .antlr/
 java/
 python/
+test-error/
+test-output/
