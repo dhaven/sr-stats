@@ -18,8 +18,8 @@ export default function DeckOverview({deckData, player, winner}) {
                 </div>
                 <div className="flex flex-col gap-1">
                     <div className="flex flex-row m-2 gap-1 justify-between">
-                        <p className="basis-1/2 text-gray-900 text-lg leading-tight font-medium mb-2">Blob / Trade Federation / Star Empire / Machine cult</p>
-                        <p className="basis-1/2 text-right text-gray-900 text-xl font-medium mb-2">{deckSummary['blob_count']} / {deckSummary['trade_federation_count']} / {deckSummary['star_empire_count']} / {deckSummary['machine_cult_count']}</p>
+                        <p className="basis-1/2 text-gray-900 text-lg leading-tight font-medium mb-2">Blob / Trade Federation / Star Empire / Machine cult / Unaligned</p>
+                        <p className="basis-1/2 text-right text-gray-900 text-xl font-medium mb-2">{deckSummary['blob_count']} / {deckSummary['trade_federation_count']} / {deckSummary['star_empire_count']} / {deckSummary['machine_cult_count']} / {deckSummary['unaligned_count']}</p>
                     </div>
                     <div className="flex flex-row m-2 gap-1 justify-between">
                         <p className="text-gray-900 text-lg leading-tight font-medium mb-2">Cost</p>
