@@ -115,7 +115,7 @@ export default function GameChart({winner}) {
     return(
         <div className="w-screen p-1 m-1 sm:w-4/5 md:w-3/4 lg:w-2/3">
             <Tab.Group defaultIndex={0}>
-                <Tab.List className="flex justify-center p-1 space-x-1">
+                <Tab.List className="flex flex-wrap p-1 space-x-1">
                     <Tab as={Fragment}>
                         {({ selected }) =>
                             <button 
