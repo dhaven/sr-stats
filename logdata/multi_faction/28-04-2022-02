@@ -1,0 +1,285 @@
+Play all
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Acquired <color=#4CC417>P</color><color=#44BC38>a</color><color=#3CB359>c</color><color=#34AB7A>t</color><color=#2DA29C> </color><color=#259ABD>P</color><color=#1D91DE>o</color><color=#1589FF>d</color>
+        Hard AI - -2 Trade (Trade:0)
+Attacked Player for 1 (New Authority:49)
+        Hard AI - -1 Combat (Combat:0)
+        Player - -1 Authority (Authority:49)
+Hard AI ends turn 1
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 2
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#4CC417>B</color><color=#66A814>l</color><color=#7F8C10>o</color><color=#99700D>b</color><color=#B2540A> </color><color=#CC3807>B</color><color=#E51C03>o</color><color=#FF0000>t</color>
+        Player - -3 Trade (Trade:1)
+Acquired <color=#FFFF00>A</color><color=#FFEA00>l</color><color=#FFD400>i</color><color=#FFBF00>g</color><color=#FFAA00>n</color><color=#FF9500>m</color><color=#FF8000>e</color><color=#FF6A00>n</color><color=#FF5500>t</color><color=#FF4000> </color><color=#FF2B00>B</color><color=#FF1500>o</color><color=#FF0000>t</color>
+        Player - -1 Trade (Trade:0)
+Attacked Hard AI for 1 (New Authority:49)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:49)
+Player ends turn 2
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 3
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#4CC417>P</color><color=#47BF2C>a</color><color=#42B941>c</color><color=#3DB456>t</color><color=#38AF6B> </color><color=#33A980>W</color><color=#2EA496>a</color><color=#299EAB>r</color><color=#2499C0>s</color><color=#1F94D5>h</color><color=#1A8EEA>i</color><color=#1589FF>p</color>
+        Hard AI - -4 Trade (Trade:1)
+Acquired <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>F</color><color=#B4520A>i</color><color=#C34108>g</color><color=#D23106>h</color><color=#E12104>t</color><color=#F01002>e</color><color=#FF0000>r</color>
+        Hard AI - -1 Trade (Trade:0)
+Hard AI ends turn 3
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now Player's turn 4
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Acquired <color=#FF0000>Stealth Needle</color>
+        Player - -4 Trade (Trade:0)
+Attacked Hard AI for 1 (New Authority:48)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:48)
+Player ends turn 4
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 5
+Play all
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FFFF00>Imperial Frigate</color>
+        Hard AI - -3 Trade (Trade:1)
+Attacked Player for 1 (New Authority:48)
+        Hard AI - -1 Combat (Combat:0)
+        Player - -1 Authority (Authority:48)
+Hard AI ends turn 5
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 6
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#4CC417>B</color><color=#66A814>l</color><color=#7F8C10>o</color><color=#99700D>b</color><color=#B2540A> </color><color=#CC3807>B</color><color=#E51C03>o</color><color=#FF0000>t</color> +5 Combat (Combat:5)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FF0000>Missile Bot</color>
+        Player - -2 Trade (Trade:2)
+Acquired <color=#800080>Explorer</color>
+        Player - -2 Trade (Trade:0)
+Attacked Hard AI for 5 (New Authority:43)
+        Player - -5 Combat (Combat:0)
+        Hard AI - -5 Authority (Authority:43)
+Player ends turn 6
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 7
+Played <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>F</color><color=#B4520A>i</color><color=#C34108>g</color><color=#D23106>h</color><color=#E12104>t</color><color=#F01002>e</color><color=#FF0000>r</color>
+        Hard AI  >  <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>F</color><color=#B4520A>i</color><color=#C34108>g</color><color=#D23106>h</color><color=#E12104>t</color><color=#F01002>e</color><color=#FF0000>r</color> ability available
+        Hard AI  >  <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>F</color><color=#B4520A>i</color><color=#C34108>g</color><color=#D23106>h</color><color=#E12104>t</color><color=#F01002>e</color><color=#FF0000>r</color> +3 Combat (Combat:3)
+        Scrapped <color=#FF0000>C</color><color=#F1080F>o</color><color=#E3101E>a</color><color=#D6182D>l</color><color=#C8203C>i</color><color=#BA284B>t</color><color=#AC305A>i</color><color=#9F3869>o</color><color=#914078>n</color><color=#834987> </color><color=#755196>F</color><color=#6859A5>o</color><color=#5A61B4>r</color><color=#4C69C3>t</color><color=#3E71D2>r</color><color=#3179E1>e</color><color=#2381F0>s</color><color=#1589FF>s</color>
+Play all
+        Hard AI  >  <color=#4CC417>P</color><color=#47BF2C>a</color><color=#42B941>c</color><color=#3DB456>t</color><color=#38AF6B> </color><color=#33A980>W</color><color=#2EA496>a</color><color=#299EAB>r</color><color=#2499C0>s</color><color=#1F94D5>h</color><color=#1A8EEA>i</color><color=#1589FF>p</color> +5 Combat (Combat:8)
+        Hard AI  >  <color=#4CC417>P</color><color=#47BF2C>a</color><color=#42B941>c</color><color=#3DB456>t</color><color=#38AF6B> </color><color=#33A980>W</color><color=#2EA496>a</color><color=#299EAB>r</color><color=#2499C0>s</color><color=#1F94D5>h</color><color=#1A8EEA>i</color><color=#1589FF>p</color> +5 Authority (Authority:48)
+        Hard AI  >  <color=#4CC417>P</color><color=#44BC38>a</color><color=#3CB359>c</color><color=#34AB7A>t</color><color=#2DA29C> </color><color=#259ABD>P</color><color=#1D91DE>o</color><color=#1589FF>d</color> +5 Combat (Combat:13)
+        Hard AI  >  <color=#4CC417>P</color><color=#44BC38>a</color><color=#3CB359>c</color><color=#34AB7A>t</color><color=#2DA29C> </color><color=#259ABD>P</color><color=#1D91DE>o</color><color=#1589FF>d</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#4CC417>P</color><color=#44BC38>a</color><color=#3CB359>c</color><color=#34AB7A>t</color><color=#2DA29C> </color><color=#259ABD>P</color><color=#1D91DE>o</color><color=#1589FF>d</color> +2 Trade (Trade:3)
+Activating Pact Warship
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#4CC417>P</color><color=#47BF2C>a</color><color=#42B941>c</color><color=#3DB456>t</color><color=#38AF6B> </color><color=#33A980>W</color><color=#2EA496>a</color><color=#299EAB>r</color><color=#2499C0>s</color><color=#1F94D5>h</color><color=#1A8EEA>i</color><color=#1589FF>p</color>
+        Hard AI - -4 Trade (Trade:1)
+Attacked Player for 13 (New Authority:35)
+        Hard AI - -13 Combat (Combat:0)
+        Player - -13 Authority (Authority:35)
+Hard AI ends turn 7
+        Drew 3 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now Player's turn 8
+Play all
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:2)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#FFFF00>A</color><color=#FFEA00>l</color><color=#FFD400>i</color><color=#FFBF00>g</color><color=#FFAA00>n</color><color=#FF9500>m</color><color=#FF8000>e</color><color=#FF6A00>n</color><color=#FF5500>t</color><color=#FF4000> </color><color=#FF2B00>B</color><color=#FF1500>o</color><color=#FF0000>t</color> +2 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#1589FF>Freighter</color>
+        Player - -4 Trade (Trade:0)
+Attacked Hard AI for 2 (New Authority:46)
+        Player - -2 Combat (Combat:0)
+        Hard AI - -2 Authority (Authority:46)
+Player ends turn 8
+        Drew 3 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 9
+Play all
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#1589FF>Embassy Yacht</color>
+        Hard AI - -3 Trade (Trade:1)
+Acquired <color=#1589FF>Federation Shuttle</color>
+        Hard AI - -1 Trade (Trade:0)
+Attacked Player for 1 (New Authority:34)
+        Hard AI - -1 Combat (Combat:0)
+        Player - -1 Authority (Authority:34)
+Hard AI ends turn 9
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 10
+Played <color=#4CC417>B</color><color=#66A814>l</color><color=#7F8C10>o</color><color=#99700D>b</color><color=#B2540A> </color><color=#CC3807>B</color><color=#E51C03>o</color><color=#FF0000>t</color>
+        Player  >  <color=#4CC417>B</color><color=#66A814>l</color><color=#7F8C10>o</color><color=#99700D>b</color><color=#B2540A> </color><color=#CC3807>B</color><color=#E51C03>o</color><color=#FF0000>t</color> +5 Combat (Combat:5)
+Played <color=#FF0000>Stealth Needle</color>
+Player selecting ship Blob Bot
+        Changed Stealth Needle to Blob Bot
+        Player  >  <color=#FF0000>Stealth Needle</color> +5 Combat (Combat:10)
+        Player  >  <color=#4CC417>B</color><color=#66A814>l</color><color=#7F8C10>o</color><color=#99700D>b</color><color=#B2540A> </color><color=#CC3807>B</color><color=#E51C03>o</color><color=#FF0000>t</color> +2 Trade (Trade:2)
+        Player  >  <color=#FF0000>Stealth Needle</color> +2 Trade (Trade:4)
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:7)
+Attacked Hard AI for 10 (New Authority:36)
+        Player - -10 Combat (Combat:0)
+        Hard AI - -10 Authority (Authority:36)
+Acquired <color=#1589FF>Flagship</color>
+        Player - -6 Trade (Trade:1)
+Activating Blob Bot
+Player ends turn 10
+        Changed Stealth Needle to Unaligned
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 11
+Played <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>F</color><color=#B4520A>i</color><color=#C34108>g</color><color=#D23106>h</color><color=#E12104>t</color><color=#F01002>e</color><color=#FF0000>r</color>
+        Hard AI  >  <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>F</color><color=#B4520A>i</color><color=#C34108>g</color><color=#D23106>h</color><color=#E12104>t</color><color=#F01002>e</color><color=#FF0000>r</color> ability available
+        Hard AI  >  <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>F</color><color=#B4520A>i</color><color=#C34108>g</color><color=#D23106>h</color><color=#E12104>t</color><color=#F01002>e</color><color=#FF0000>r</color> +3 Combat (Combat:3)
+        Scrapped <color=#FF0000>Junkyard</color>
+Play all
+        Hard AI  >  <color=#FFFF00>Imperial Frigate</color> +4 Combat (Combat:7)
+        Player  <  <color=#FFFF00>Imperial Frigate</color> +1 Discard (Discarding: 1)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#4CC417>B</color><color=#66A814>l</color><color=#7F8C10>o</color><color=#99700D>b</color><color=#B2540A> </color><color=#CC3807>B</color><color=#E51C03>o</color><color=#FF0000>t</color>
+        Hard AI - -3 Trade (Trade:0)
+Attacked Player for 7 (New Authority:27)
+        Hard AI - -7 Combat (Combat:0)
+        Player - -7 Authority (Authority:27)
+Hard AI ends turn 11
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 12
+Resolving Discard 1 cards
+Player is discarding Viper
+        no more cards to discard
+        Discarded <color=#800080>Viper</color>
+Played <color=#FF0000>Missile Bot</color>
+Player is scrapping: Viper
+        Player  >  <color=#FF0000>Missile Bot</color> +2 Combat (Combat:2)
+        Scrapped <color=#800080>Viper</color>
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#FF0000>Missile Bot</color> +2 Combat (Combat:4)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#FFFF00>A</color><color=#FFEA00>l</color><color=#FFD400>i</color><color=#FFBF00>g</color><color=#FFAA00>n</color><color=#FF9500>m</color><color=#FF8000>e</color><color=#FF6A00>n</color><color=#FF5500>t</color><color=#FF4000> </color><color=#FF2B00>B</color><color=#FF1500>o</color><color=#FF0000>t</color> +2 Trade (Trade:4)
+Acquired <color=#1589FF>Federation Shuttle</color>
+        Player - -1 Trade (Trade:3)
+Acquired <color=#FFFF00>Imperial Frigate</color>
+        Player - -3 Trade (Trade:0)
+Attacked Hard AI for 4 (New Authority:32)
+        Player - -4 Combat (Combat:0)
+        Hard AI - -4 Authority (Authority:32)
+Player ends turn 12
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 13
+Play all
+        Hard AI  >  <color=#4CC417>P</color><color=#44BC38>a</color><color=#3CB359>c</color><color=#34AB7A>t</color><color=#2DA29C> </color><color=#259ABD>P</color><color=#1D91DE>o</color><color=#1589FF>d</color> +2 Trade (Trade:2)
+        Hard AI  >  <color=#4CC417>P</color><color=#44BC38>a</color><color=#3CB359>c</color><color=#34AB7A>t</color><color=#2DA29C> </color><color=#259ABD>P</color><color=#1D91DE>o</color><color=#1589FF>d</color> +5 Combat (Combat:5)
+        Hard AI  >  <color=#4CC417>P</color><color=#44BC38>a</color><color=#3CB359>c</color><color=#34AB7A>t</color><color=#2DA29C> </color><color=#259ABD>P</color><color=#1D91DE>o</color><color=#1589FF>d</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#4CC417>P</color><color=#47BF2C>a</color><color=#42B941>c</color><color=#3DB456>t</color><color=#38AF6B> </color><color=#33A980>W</color><color=#2EA496>a</color><color=#299EAB>r</color><color=#2499C0>s</color><color=#1F94D5>h</color><color=#1A8EEA>i</color><color=#1589FF>p</color> +5 Authority (Authority:37)
+        Hard AI  >  <color=#4CC417>P</color><color=#47BF2C>a</color><color=#42B941>c</color><color=#3DB456>t</color><color=#38AF6B> </color><color=#33A980>W</color><color=#2EA496>a</color><color=#299EAB>r</color><color=#2499C0>s</color><color=#1F94D5>h</color><color=#1A8EEA>i</color><color=#1589FF>p</color> +5 Authority (Authority:42)
+        Hard AI  >  <color=#4CC417>P</color><color=#47BF2C>a</color><color=#42B941>c</color><color=#3DB456>t</color><color=#38AF6B> </color><color=#33A980>W</color><color=#2EA496>a</color><color=#299EAB>r</color><color=#2499C0>s</color><color=#1F94D5>h</color><color=#1A8EEA>i</color><color=#1589FF>p</color> +5 Combat (Combat:10)
+        Hard AI  >  <color=#4CC417>P</color><color=#47BF2C>a</color><color=#42B941>c</color><color=#3DB456>t</color><color=#38AF6B> </color><color=#33A980>W</color><color=#2EA496>a</color><color=#299EAB>r</color><color=#2499C0>s</color><color=#1F94D5>h</color><color=#1A8EEA>i</color><color=#1589FF>p</color> +5 Combat (Combat:15)
+Activating Pact Warship
+Activating Pact Warship
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:16)
+Acquired <color=#FFFF00>A</color><color=#EFF711>l</color><color=#E0EF22>l</color><color=#D0E733>i</color><color=#C1E044>a</color><color=#B1D855>n</color><color=#A1D066>c</color><color=#92C877>e</color><color=#82C088> </color><color=#73B899>F</color><color=#63B0AA>r</color><color=#53A8BB>i</color><color=#44A1CC>g</color><color=#3499DD>a</color><color=#2591EE>t</color><color=#1589FF>e</color>
+        Hard AI - -3 Trade (Trade:1)
+Attacked Player for 16 (New Authority:11)
+        Hard AI - -16 Combat (Combat:0)
+        Player - -16 Authority (Authority:11)
+Hard AI ends turn 13
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 14
+Play all
+        Player  >  <color=#800080>Explorer</color> +2 Trade (Trade:2)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Acquired <color=#FFFF00>Survey Ship</color>
+        Player - -3 Trade (Trade:2)
+Acquired <color=#800080>Explorer</color>
+        Player - -2 Trade (Trade:0)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        Player  >  <color=#800080>Explorer</color> +2 Combat (Combat:3)
+Attacked Hard AI for 3 (New Authority:39)
+        Player - -3 Combat (Combat:0)
+        Hard AI - -3 Authority (Authority:39)
+Player ends turn 14
+        Drew 1 cards.
+        Shuffled discard pile to form new deck
+        Drew 4 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 15
+Played <color=#4CC417>B</color><color=#66A814>l</color><color=#7F8C10>o</color><color=#99700D>b</color><color=#B2540A> </color><color=#CC3807>B</color><color=#E51C03>o</color><color=#FF0000>t</color>
+        Hard AI  >  <color=#4CC417>B</color><color=#66A814>l</color><color=#7F8C10>o</color><color=#99700D>b</color><color=#B2540A> </color><color=#CC3807>B</color><color=#E51C03>o</color><color=#FF0000>t</color> +5 Combat (Combat:5)
+Play all
+        Hard AI  >  <color=#FFFF00>Imperial Frigate</color> +4 Combat (Combat:9)
+        Player  <  <color=#FFFF00>Imperial Frigate</color> +1 Discard (Discarding: 1)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:10)
+Scrapping Imperial Frigate
+        Scrapped <color=#FFFF00>Imperial Frigate</color>
+        Drew 1 cards.
+Play all
+        Hard AI  >  <color=#4CC417>P</color><color=#47BF2C>a</color><color=#42B941>c</color><color=#3DB456>t</color><color=#38AF6B> </color><color=#33A980>W</color><color=#2EA496>a</color><color=#299EAB>r</color><color=#2499C0>s</color><color=#1F94D5>h</color><color=#1A8EEA>i</color><color=#1589FF>p</color> +5 Combat (Combat:15)
+        Hard AI  >  <color=#4CC417>B</color><color=#66A814>l</color><color=#7F8C10>o</color><color=#99700D>b</color><color=#B2540A> </color><color=#CC3807>B</color><color=#E51C03>o</color><color=#FF0000>t</color> +2 Trade (Trade:4)
+Activating Pact Warship
+Attacked Player for 15 (New Authority:-4)
+        Hard AI - -15 Combat (Combat:0)
+        Player - -15 Authority (Authority:-4)
+        === Hard AI has won the game. ===

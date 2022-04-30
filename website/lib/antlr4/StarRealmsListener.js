@@ -338,12 +338,12 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
-	// Enter a parse tree produced by StarRealmsParser#choseDiscardAndDraw.
-	enterChoseDiscardAndDraw(ctx) {
+	// Enter a parse tree produced by StarRealmsParser#choseEffectSummary.
+	enterChoseEffectSummary(ctx) {
 	}
 
-	// Exit a parse tree produced by StarRealmsParser#choseDiscardAndDraw.
-	exitChoseDiscardAndDraw(ctx) {
+	// Exit a parse tree produced by StarRealmsParser#choseEffectSummary.
+	exitChoseEffectSummary(ctx) {
 	}
 
 
@@ -362,6 +362,24 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 
 	// Exit a parse tree produced by StarRealmsParser#choseIncreasePool.
 	exitChoseIncreasePool(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#choseScrapFromDiscard.
+	enterChoseScrapFromDiscard(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#choseScrapFromDiscard.
+	exitChoseScrapFromDiscard(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#choseEffectDetail.
+	enterChoseEffectDetail(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#choseEffectDetail.
+	exitChoseEffectDetail(ctx) {
 	}
 
 
@@ -464,12 +482,30 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#noCopy.
+	enterNoCopy(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#noCopy.
+	exitNoCopy(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#copyCard.
 	enterCopyCard(ctx) {
 	}
 
 	// Exit a parse tree produced by StarRealmsParser#copyCard.
 	exitCopyCard(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#copyCardSummary.
+	enterCopyCardSummary(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#copyCardSummary.
+	exitCopyCardSummary(ctx) {
 	}
 
 

@@ -228,8 +228,8 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
-	// Visit a parse tree produced by StarRealmsParser#choseDiscardAndDraw.
-	visitChoseDiscardAndDraw(ctx) {
+	// Visit a parse tree produced by StarRealmsParser#choseEffectSummary.
+	visitChoseEffectSummary(ctx) {
 	  return this.visitChildren(ctx);
 	}
 
@@ -242,6 +242,18 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 
 	// Visit a parse tree produced by StarRealmsParser#choseIncreasePool.
 	visitChoseIncreasePool(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#choseScrapFromDiscard.
+	visitChoseScrapFromDiscard(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#choseEffectDetail.
+	visitChoseEffectDetail(ctx) {
 	  return this.visitChildren(ctx);
 	}
 
@@ -312,8 +324,20 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
+	// Visit a parse tree produced by StarRealmsParser#noCopy.
+	visitNoCopy(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
 	// Visit a parse tree produced by StarRealmsParser#copyCard.
 	visitCopyCard(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#copyCardSummary.
+	visitCopyCardSummary(ctx) {
 	  return this.visitChildren(ctx);
 	}
 

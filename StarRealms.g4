@@ -53,10 +53,12 @@ discardDetails   : 'no' 'more' 'cards' 'to' DISCARD NEWLINE (DISCARDED card NEWL
 
 //describe  a log line that starts with 'Chose ...'
 //applies to ships and bases where the user can chose between one or more effects
-choseEffect           : choseDiscardAndDraw | choseIncreasePool;
-choseDiscardAndDraw   : discardAndDrawSummary selectDiscard+ discarding+ drawCardsWithShuffle;
+choseEffect           : choseEffectSummary choseEffectDetail*;
+choseEffectSummary    : discardAndDrawSummary | choseIncreasePool | choseScrapFromDiscard;
 discardAndDrawSummary : 'Chose' DISCARD 'and' 'Redraw' 'up' 'to' INT 'card(s)' NEWLINE ;
-choseIncreasePool     : 'Chose' 'Add' INT WORD NEWLINE newBalanceDetail;
+choseIncreasePool     : 'Chose' 'Add' INT WORD NEWLINE;
+choseScrapFromDiscard : 'Chose' 'Scrap' WORD 'card' 'from' 'your' DISCARD 'pile' NEWLINE;
+choseEffectDetail     : selectDiscard | discarding | drawCardsWithShuffle | noScrap | simpleScrap | newBalanceDetail;
 
 
 //describes a log line that start with 'Activating ...'
@@ -80,7 +82,7 @@ destroyAndScrap         : destroyBase | scrapDetail | destroyBase scrapDetail;
 purchaseToTop           : ACQUIRED card 'to' 'the' 'top' WORD 'the' 'deck' NEWLINE;
 scrapSummary            : name IS SCRAPPING (':')? card NEWLINE;
 scrapDetail             : SCRAPPED card NEWLINE;
-resolveHandScrapSummary : 'Resolving' 'Scrap' 'a' 'card' 'from' 'your' 'hand' NEWLINE;
+resolveHandScrapSummary : 'Resolving' 'Scrap' WORD 'card' 'from' 'your' 'hand' NEWLINE;
 discardAndDraw          :  selectDiscard+ discarding+ drawCardsWithShuffle;
 
 //stuff that happens at the end of the turn
