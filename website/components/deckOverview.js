@@ -22,6 +22,10 @@ export default function DeckOverview({deckData, player, winner}) {
                         <p className="basis-1/2 text-right text-gray-900 text-xl font-medium mb-2">{deckSummary['blob_count']} / {deckSummary['trade_federation_count']} / {deckSummary['star_empire_count']} / {deckSummary['machine_cult_count']} / {deckSummary['unaligned_count']}</p>
                     </div>
                     <div className="flex flex-row m-2 gap-1 justify-between">
+                        <p className="text-gray-900 text-lg leading-tight font-medium mb-2">ships / bases</p>
+                        <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2">{deckSummary['total_ship_count']} / {deckSummary['total_base_count']}</h5>
+                    </div>
+                    <div className="flex flex-row m-2 gap-1 justify-between">
                         <p className="text-gray-900 text-lg leading-tight font-medium mb-2">Cost</p>
                         <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2">{deckSummary['total_cost']}</h5>
                     </div>
@@ -53,7 +57,11 @@ export default function DeckOverview({deckData, player, winner}) {
                                                 <button key={i} type="button" className="py-2 px-4 text-left text-sm border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700">
                                                     <div className="flex flex-row w-full">
                                                         <p className="basis-1/3 text-center">{deckData[cardName]['name']}</p>
-                                                        <p className="basis-1/3 text-center">{deckData[cardName]['faction']}</p>
+                                                        <p className="basis-1/3 text-center">
+                                                            {deckData[cardName]['faction'].map((faction,index) =>
+                                                                index == 1 ? " / " + faction : faction
+                                                            )}
+                                                        </p>
                                                         <p className="basis-1/3 text-center">{deckData[cardName]['count']}/{deckData[cardName]['scrapCount']}</p>
                                                     </div>
                                                 </button>
