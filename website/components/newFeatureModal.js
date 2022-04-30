@@ -64,6 +64,17 @@ export default function NewFeatureModal({isOpen, setIsOpen}) {
                                 </Dialog.Title>
                                 <div className="mt-2">
                                     <p className="text-sm text-gray-500">
+                                        - More extension support! (multi-faction & ships and bases)
+                                    </p>
+                                    <p className="text-sm text-gray-500">
+                                       - Display ships vs bases count
+                                    </p>
+                                </div>
+                                <div className="mt-2">
+                                    <p className="text-sm font-medium text-gray-900">
+                                        version 0.2.0
+                                    </p>
+                                    <p className="text-sm text-gray-500">
                                         - Added support for Frontiers and Colony Wars extensions
                                     </p>
                                     <p className="text-sm text-gray-500">
