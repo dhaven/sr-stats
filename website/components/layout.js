@@ -5,7 +5,7 @@ const NewFeatureModal = dynamic(() => import('./newFeatureModal'),{ ssr: false }
 import { useState } from 'react'
 
 export const siteTitle = 'Star Realms stats'
-export const appVersion = '0.3.0'
+export const appVersion = '0.3.1'
 
 export default function Layout({ children}) {
   let [isHelperOpen, setIsHelperOpen] = useState(false)

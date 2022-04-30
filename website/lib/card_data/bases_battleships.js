@@ -36,25 +36,33 @@ export const bases_battleships = {
         "megamech": {
             "name": "Mega Mech",
             "cost": 5,
-            "faction": "Machine Cult",
+            "faction": [
+                "Machine Cult"
+            ],
             "type": "ship"
         },
         "obliterator": {
             "name": "Obliterator",
             "cost": 6,
-            "faction": "Blob",
+            "faction": [
+                "Blob"
+            ],
             "type": "ship"
         },
         "traderaft": {
             "name": "Trade Raft",
             "cost": 1,
-            "faction": "Trade Federation",
+            "faction": [
+                "Trade Federation"
+            ],
             "type": "ship"
         },
         "tradewheel": {
             "name": "Trade Wheel",
             "cost": 3,
-            "faction": "Blob",
+            "faction": [
+                "Blob"
+            ],
             "type": "base"
         }
     }

@@ -69,6 +69,9 @@ export default function NewFeatureModal({isOpen, setIsOpen}) {
                                     <p className="text-sm text-gray-500">
                                        - Display ships vs bases count
                                     </p>
+                                    <p className="text-sm text-gray-500">
+                                       - Bug fixing
+                                    </p>
                                 </div>
                                 <div className="mt-2">
                                     <p className="text-sm font-medium text-gray-900">
