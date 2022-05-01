@@ -1,23 +1,19 @@
 import { Formik, Form, Field } from 'formik';
 import { atom, useAtom } from 'jotai'
 import { example1, example2 } from '../lib/example_data.js'
-import { chartTypeAtom } from './gameChart.js'
+import { useRouter } from 'next/router'
 
-export const logDataAtom = atom({})
 const errorMessageAtom = atom("")
 
 export default function InputLog(){
-  const [logData, setLogData] = useAtom(logDataAtom)
-  const [chartType, setChartType] = useAtom(chartTypeAtom)
   const [errorMessage, setErrorMessage] = useAtom(errorMessageAtom)
+  const router = useRouter()
     return (
         <div className="w-screen p-1 m-1 sm:w-4/5 md:w-4/5 lg:w-3/4 max-w-lg">
           <Formik
             initialValues={{ battlelog: ''}}
             onSubmit={(values) => {
               setErrorMessage("")
-              setLogData({})
-              setChartType("authorityData")
               fetch('/api/parse_log', {
                 method: 'POST', // or 'PUT'
                 headers: {
@@ -27,11 +23,8 @@ export default function InputLog(){
               })
               .then(response => response.json())
               .then(data => {
-                if(data.status == "success"){
-                  setLogData(data.data)
-                }else{
-                  setErrorMessage("Unable to parse data")
-                }
+                console.log(data)
+                router.push(`/game/${data['id']}`)
               })
               .catch((error) => {
                 console.error('Error:', error);
@@ -41,7 +34,7 @@ export default function InputLog(){
             {props => (
               <Form className="flex flex-col items-end gap-1">
                 <div className="flex flex-row justify-end gap-1 w-full">
-                  <button type="button" className="bg-white border border-gray-300 hover:bg-gray-100 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center" onClick={(e) => {props.setFieldValue("battlelog","");setLogData({});}}>
+                  <button type="button" className="bg-white border border-gray-300 hover:bg-gray-100 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center" onClick={(e) => {props.setFieldValue("battlelog","")}}>
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
                   </button>
                 </div>

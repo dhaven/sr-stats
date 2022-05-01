@@ -7,7 +7,7 @@ import { useState } from 'react'
 export const siteTitle = 'Star Realms stats'
 export const appVersion = '0.3.1'
 
-export default function Layout({ children}) {
+export default function Layout({ children }) {
   let [isHelperOpen, setIsHelperOpen] = useState(false)
   function openHelperModal() {
     setIsHelperOpen(true)

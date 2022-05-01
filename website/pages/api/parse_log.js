@@ -1,4 +1,4 @@
-import { parseBattle } from '../../lib/visitor'
+const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
 
 //returns a JSON object representing a battle with format:
 // {
@@ -61,9 +61,40 @@ import { parseBattle } from '../../lib/visitor'
 
 //     ]
 // }
-export default function handler(req, res) {
-  if (req.method === 'POST') {
-    let battle = parseBattle(req.body)
-    res.status(200).json(battle)
-  } 
+export default async function handler(req, res) {
+  const client = new S3Client({ 
+    region: "eu-central-1" ,
+    credentials: {
+      accessKeyId: process.env.SR_STATS_AWS_ACCESS_KEY_ID,
+      secretAccessKey: process.env.SR_STATS_AWS_SECRET_ACCESS_KEY,
+    }
+  });
+  let battleID = makeid(10)
+  const uploadParams = {
+		Bucket: 'star-realms-games',
+		Key: 'games/' + battleID,
+		Body: req.body,
+	};
+  await client.send(new PutObjectCommand(uploadParams))
+    .then(()=>{
+      console.log("file uploaded")
+    })
+    .catch(error => {
+      console.log(error)
+    })
+  console.log("end of request") 
+  res.status(200).json({
+    id: battleID
+  })
+}
+
+function makeid(length) {
+  var result           = '';
+  var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  var charactersLength = characters.length;
+  for ( var i = 0; i < length; i++ ) {
+    result += characters.charAt(Math.floor(Math.random() * 
+charactersLength));
+ }
+ return result;
 }

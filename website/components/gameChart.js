@@ -1,39 +1,18 @@
-import Chart from 'chart.js/auto';
+import { Chart as ChartJS } from 'chart.js/auto';
+import { Bar, Line } from 'react-chartjs-2';
 import { atom, useAtom } from 'jotai'
 import { getChartData } from '../lib/helper'
-import { logDataAtom } from './form'
 import { Tab } from '@headlessui/react'
 import { Fragment } from 'react'
 
 export const chartTypeAtom = atom("authorityData")
 
-export default function GameChart({winner}) {
-    const [battle, setBattle] = useAtom(logDataAtom)
+export default function GameChart({firstPlayer, winner, rounds}) {
     const [chartType, setChartType] = useAtom(chartTypeAtom)
-    let chartData = {}
-    if(Object.keys(battle).length == 0){
-        let chartStatus = Chart.getChart("gameChart");
-        if (chartStatus != undefined) {
-            chartStatus.destroy();
-        }
-        return(
-            <div className="w-screen p-1 m-1 sm:w-4/5 md:w-3/4 lg:w-2/3 max-w-lg">
-                <canvas id="gameChart"></canvas>
-            </div>
-        )
-    }
-    chartData = getChartData(battle)
+    let chartData = getChartData({firstPlayer, winner, rounds})
     //construct our dataset array
     let datasets = []
     let numTurns = 0
-    let chartTypes = {
-        authorityData: "line",
-        tradeData: "bar",
-        combatData: "bar",
-        scrapData: "bar",
-        discardData: "bar",
-        drawCount: "bar"
-    }
     let chartTitles = {
         authorityData: "Authority",
         tradeData: "Trade pool",
@@ -73,45 +52,38 @@ export default function GameChart({winner}) {
         labels: Array(numTurns).fill().map((x,i)=>i),
         datasets: datasets,
     };
-    let chartStatus = Chart.getChart("gameChart");
-    if (chartStatus != undefined) {
-        chartStatus.destroy();
+    let options = {
+        plugins: {
+            title: {
+                display: true,
+                text: chartTitles[chartType]
+            },
+            legend: {
+                display: false,
+            },
+        },
+        interaction: {
+            intersect: false,
+            mode: 'index',
+        },
+        //   animate in
+        animation: {
+            duration: 1,
+        },
+        responsive: true,
+        //   show the x and y scales
+        scales: {
+            x: {
+                beginAtZero: false,
+                offset: true,
+                display: false,
+            },
+            y: { 
+                beginAtZero: true,
+            },
+        },
     }
-    new Chart("gameChart",{
-        type: chartTypes[chartType],
-        data: data,
-        options: {
-            plugins: {
-                title: {
-                    display: true,
-                    text: chartTitles[chartType]
-                },
-                legend: {
-                    display: false,
-                },
-            },
-            interaction: {
-                intersect: false,
-                mode: 'index',
-            },
-            //   animate in
-            animation: {
-                duration: 1,
-            },
-            responsive: true,
-            //   show the x and y scales
-            scales: {
-                x: {
-                    beginAtZero: false,
-                    offset: true,
-                    display: false,
-                },
-                y: { 
-                    beginAtZero: true,
-                },
-            },
-        }
-    })
+    console.log(chartType)
     return(
         <div className="w-screen p-1 m-1 sm:w-4/5 md:w-3/4 lg:w-2/3">
             <Tab.Group defaultIndex={0}>
@@ -190,7 +162,17 @@ export default function GameChart({winner}) {
                     </Tab>
                 </Tab.List>
             </Tab.Group>
-            <canvas id="gameChart"></canvas>
+            {
+                chartType == "authorityData" ?
+                <Line
+                options={options}
+                data={data}
+                /> : 
+                <Bar
+                options={options}
+                data={data}
+                />
+            }
         </div>
     )
   }
