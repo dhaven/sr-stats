@@ -2,12 +2,16 @@ import { Dialog, Transition } from '@headlessui/react'
 import { Fragment} from 'react'
 import { Formik, Form, Field } from 'formik';
 import { useRouter } from 'next/router'
+import { atom, useAtom } from 'jotai'
+
+const errorMessageAtom = atom("")
 
 export default function AddGameModal({isOpen, setIsOpen}) {
-    function closeModal() {
-        setIsOpen(false)
-    }
-    const router = useRouter()
+  const [errorMessage, setErrorMessage] = useAtom(errorMessageAtom)
+  function closeModal() {
+    setIsOpen(false)
+  }
+  const router = useRouter()
   return (
     <>
       <Transition appear show={isOpen} as={Fragment}>
@@ -51,7 +55,7 @@ export default function AddGameModal({isOpen, setIsOpen}) {
                     <Formik
                         initialValues={{ battlelog: ''}}
                         onSubmit={(values) => {
-                            closeModal()
+                            setErrorMessage("")
                             fetch('/api/parse_log', {
                                 method: 'POST', // or 'PUT'
                                 headers: {
@@ -61,8 +65,12 @@ export default function AddGameModal({isOpen, setIsOpen}) {
                             })
                             .then(response => response.json())
                             .then(data => {
-                                console.log(data)
-                                router.push(`/game/${data['id']}`)
+                                if(data['status'] == 'success'){
+                                  closeModal()
+                                  router.push(`/game/${data['id']}`)
+                                }else{
+                                  setErrorMessage("Unable to parse data")
+                                }
                             })
                             .catch((error) => {
                                 console.error('Error:', error);
@@ -84,6 +92,13 @@ export default function AddGameModal({isOpen, setIsOpen}) {
                                 <div className="flex flex-row  h-24 md:h-48 lg:h-48 gap-1 w-full">
                                     <Field className="w-full grow h-full p-2 text-sm bg-gray-50 rounded-lg border border-gray-300 resize-none" name="battlelog" as="textarea"/>
                                 </div>
+                                {
+                                  errorMessage != "" && (
+                                    <div className="p-2 text-sm w-full text-red-700 bg-red-100 rounded-lg" role="alert">
+                                      <span className="font-medium">Error : Unable to parse input data. Sorry about that :(</span>
+                                    </div>
+                                  )
+                                }
                                 <button
                                     className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
                                     type="submit"

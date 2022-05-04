@@ -32,7 +32,7 @@ export default function DeckOverview({deckData, player, winner}) {
                     <Disclosure>
                         {({ open }) => (
                             <>
-                            <Disclosure.Button className=" flex flex-col items-center w-full text-sm font-medium bg-white rounded-lg hover:bg-gray-100">
+                            <Disclosure.Button className=" flex flex-col items-center w-full text-sm font-medium bg-white rounded-lg hover:ring ring-scifi-2">
                                 <div className="flex flex-row p-2 gap-1 justify-between w-full">
                                     <p className="text-gray-900 text-lg leading-tight font-medium mb-2">Cards</p>
                                     <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2">{deckSummary['total_count']}</h5>

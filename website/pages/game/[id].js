@@ -19,10 +19,11 @@ export default function Game({firstPlayer, winner, rounds}) {
             <Head>
                 <title>Game review | {siteTitle}</title>
             </Head>
-            <GameSummary winner={winner} decksData={decksData} lastRound={rounds[rounds.length -1]}></GameSummary>
-            <WinnerMessage winner={winner}></WinnerMessage>
-                <div className="flex flex-row flex-wrap p-1 m-1 justify-center gap-10 w-screen sm:w-4/5 md:w-4/5 lg:w-2/3">
-                    { 
+            <div className="flex flex-row flex-wrap p-1 m-1 justify-center gap-10 w-screen sm:w-4/5 md:w-4/5 lg:w-2/3">
+                <GameSummary winner={winner} decksData={decksData} lastRound={rounds[rounds.length -1]}></GameSummary>
+            </div>
+            <div className="flex flex-row flex-wrap p-1 m-1 justify-center gap-10 w-screen sm:w-4/5 md:w-4/5 lg:w-2/3">
+                { 
                     Object.keys(decksData).map((oneKey,i)=>{
                         let subDict = {}
                         subDict[oneKey] = decksData[oneKey]
@@ -30,8 +31,8 @@ export default function Game({firstPlayer, winner, rounds}) {
                         <DeckOverview key={i} deckData={decksData[oneKey]} player={oneKey} winner={winner}></DeckOverview>
                         )
                     })
-                    }
-                </div>
+                }
+            </div>
             <div className="flex flex-row flex-wrap p-1 m-1 justify-center gap-5 w-screen md:w-3/4 lg:w-3/4">
                 <GameChart winner={winner} firstPlayer={firstPlayer} rounds={rounds}></GameChart>
             </div>

@@ -1,4 +1,5 @@
 const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
+import { parseBattle } from '../../lib/visitor'
 
 //returns a JSON object representing a battle with format:
 // {
@@ -77,14 +78,18 @@ export default async function handler(req, res) {
 	};
   await client.send(new PutObjectCommand(uploadParams))
     .then(()=>{
-      console.log("file uploaded")
+      let battleData = parseBattle(req.body)
+      res.status(200).json({
+        id: battleID,
+        status: battleData['status']
+      })
     })
     .catch(error => {
       console.log(error)
+      res.status(500).json({
+        status: error
+      })
     })
-  res.status(200).json({
-    id: battleID
-  })
 }
 
 function makeid(length) {

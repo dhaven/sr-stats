@@ -1,6 +1,6 @@
 .line {
     clip-path: polygon(0% 0%,100% 0%,80% 100%,0% 100%);
-    background: rgb(219, 217, 217);
+    background: #e4eff0;
     padding: 0.25rem;
     margin: 0.25rem;
     grid-column-start: 1;
@@ -15,10 +15,9 @@
 
 .container {
     filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
-    width: 60%;
+    width: 100%;
     padding: 0.25rem;
     margin: 0.25rem;
-    gap: 2rem;
     display: grid;
     align-items: stretch;
     border-radius: 0.375rem;

@@ -14,6 +14,15 @@ export function getFinalDecks(battle){
     return finalDecks
 }
 
+export function getFinalAuthority(lastRound){
+    let finalAuthority = {}
+    for(let i = 0; i < lastRound['players'].length; i++){
+        let player = lastRound['players'][i]
+        finalAuthority[player['name']] = player['authority']
+    }
+    return finalAuthority
+}
+
 //returns the summary of a deck
 // -> number of cards of each faction after scrap
 // -> total number of cards after scrap
