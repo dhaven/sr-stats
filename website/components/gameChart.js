@@ -87,13 +87,13 @@ export default function GameChart({firstPlayer, winner, rounds}) {
     return(
         <div className="w-screen p-1 m-1 sm:w-4/5 md:w-3/4 lg:w-2/3">
             <Tab.Group defaultIndex={0}>
-                <Tab.List className="flex flex-wrap p-1 space-x-1">
+                <Tab.List className="flex flex-wrap p-1">
                     <Tab as={Fragment}>
                         {({ selected }) =>
                             <button 
                                 className={
-                                    selected ? "ring ring-scifi-2 text-sm px-2 py-2 border border-gray-300 rounded-lg drop-shadow-md" :
-                                               "bg-white text-sm px-2 py-2 border border-gray-300 hover:ring rounded-lg drop-shadow-md"
+                                    selected ? "ring ring-scifi-2 text-sm px-2 py-2 m-1 border border-gray-300 rounded-lg drop-shadow-md" :
+                                               "bg-white text-sm px-2 py-2 m-1 border border-gray-300 hover:ring rounded-lg drop-shadow-md"
                                 }
                                 type="button" onClick={(e) => {setChartType("authorityData")}}>
                                 authority
@@ -104,8 +104,8 @@ export default function GameChart({firstPlayer, winner, rounds}) {
                         {({ selected }) =>
                             <button 
                                 className={
-                                    selected ? "ring ring-scifi-2 text-sm px-2 py-2 border border-gray-300 rounded-lg drop-shadow-md" :
-                                               "bg-white text-sm px-2 py-2 border border-gray-300 hover:ring rounded-lg drop-shadow-md"
+                                    selected ? "ring ring-scifi-2 text-sm px-2 py-2 m-1 border border-gray-300 rounded-lg drop-shadow-md" :
+                                               "bg-white text-sm px-2 py-2 m-1 border border-gray-300 hover:ring rounded-lg drop-shadow-md"
                                 }
                                 type="button" onClick={(e) => {setChartType("tradeData")}}>
                                 trade pool
@@ -116,8 +116,8 @@ export default function GameChart({firstPlayer, winner, rounds}) {
                         {({ selected }) =>
                             <button 
                                 className={
-                                    selected ? "ring ring-scifi-2 text-sm px-2 py-2 border border-gray-300 rounded-lg drop-shadow-md" :
-                                               "bg-white text-sm px-2 py-2 border border-gray-300 hover:ring rounded-lg drop-shadow-md"
+                                    selected ? "ring ring-scifi-2 text-sm px-2 py-2 m-1 border border-gray-300 rounded-lg drop-shadow-md" :
+                                               "bg-white text-sm px-2 py-2 m-1 border border-gray-300 hover:ring rounded-lg drop-shadow-md"
                                 }
                                 type="button" onClick={(e) => {setChartType("combatData")}}>
                                 combat pool
@@ -128,8 +128,8 @@ export default function GameChart({firstPlayer, winner, rounds}) {
                         {({ selected }) =>
                             <button 
                                 className={
-                                    selected ? "ring ring-scifi-2 text-sm px-2 py-2 border border-gray-300 rounded-lg drop-shadow-md" :
-                                               "bg-white text-sm px-2 py-2 border border-gray-300 hover:ring rounded-lg drop-shadow-md"
+                                    selected ? "ring ring-scifi-2 text-sm px-2 py-2 m-1 border border-gray-300 rounded-lg drop-shadow-md" :
+                                               "bg-white text-sm px-2 py-2 m-1 border border-gray-300 hover:ring rounded-lg drop-shadow-md"
                                 }
                                 type="button" onClick={(e) => {setChartType("scrapData")}}>
                                 Scrap
@@ -140,8 +140,8 @@ export default function GameChart({firstPlayer, winner, rounds}) {
                         {({ selected }) =>
                             <button 
                                 className={
-                                    selected ? "ring ring-scifi-2 text-sm px-2 py-2 border border-gray-300 rounded-lg drop-shadow-md" :
-                                               "bg-white text-sm px-2 py-2 border border-gray-300 hover:ring rounded-lg drop-shadow-md"
+                                    selected ? "ring ring-scifi-2 text-sm px-2 py-2 m-1 border border-gray-300 rounded-lg drop-shadow-md" :
+                                               "bg-white text-sm px-2 py-2 m-1 border border-gray-300 hover:ring rounded-lg drop-shadow-md"
                                 }
                                 type="button" onClick={(e) => {setChartType("discardData")}}>
                                 Discard
@@ -152,8 +152,8 @@ export default function GameChart({firstPlayer, winner, rounds}) {
                         {({ selected }) =>
                             <button 
                                 className={
-                                    selected ? "ring ring-scifi-2 text-sm px-2 py-2 border border-gray-300 rounded-lg drop-shadow-md" :
-                                               "bg-white text-sm px-2 py-2 border border-gray-300 hover:ring rounded-lg drop-shadow-md"
+                                    selected ? "ring ring-scifi-2 text-sm px-2 py-2 m-1 border border-gray-300 rounded-lg drop-shadow-md" :
+                                               "bg-white text-sm px-2 py-2 m-1 border border-gray-300 hover:ring rounded-lg drop-shadow-md"
                                 }
                                 type="button" onClick={(e) => {setChartType("drawCount")}}>
                                 extra draw
