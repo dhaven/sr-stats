@@ -7,7 +7,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/router'
 
 export const siteTitle = 'Star Realms stats'
-export const appVersion = '0.3.1'
+export const appVersion = '0.4.0'
 
 export default function Layout({ children }) {
   let [isAddGameOpen, setAddGameIsOpen] = useState(false)

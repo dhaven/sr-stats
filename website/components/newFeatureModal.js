@@ -64,6 +64,20 @@ export default function NewFeatureModal({isOpen, setIsOpen}) {
                                 </Dialog.Title>
                                 <div className="mt-2">
                                     <p className="text-sm text-gray-500">
+                                        - Share your games with friends using the unique game URL!
+                                    </p>
+                                    <p className="text-sm text-gray-500">
+                                       - Added game overview component
+                                    </p>
+                                    <p className="text-sm text-gray-500">
+                                       - Bug fixing
+                                    </p>
+                                </div>
+                                <div className="mt-2">
+                                    <p className="text-sm font-medium text-gray-900">
+                                        version 0.3.1
+                                    </p>
+                                    <p className="text-sm text-gray-500">
                                         - More extension support! (multi-faction & ships and bases)
                                     </p>
                                     <p className="text-sm text-gray-500">
@@ -87,10 +101,10 @@ export default function NewFeatureModal({isOpen, setIsOpen}) {
                                        - Improve Deck summary view
                                     </p>
                                 </div>
-                                <div className="mt-4">
+                                <div className="flex mt-4 flex-col items-end">
                                     <button
                                         type="button"
-                                        className="inline-flex justify-center px-2 py-1 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                                        className="inline-flex font-medium bg-scifi3 text-white text-sm text-bold px-4 py-2 border drop-shadow-md border-scifi4 ring-scifi-2 hover:ring rounded-lg"
                                         onClick={closeModal}
                                     >
                                         close
