@@ -431,10 +431,6 @@ class Visitor extends StarRealmsVisitor{
                     let drawCountSummary = this.visit(ctx.playDetail()[i])
                     playSummary['drawCount'] += drawCountSummary
                 }
-                else if(ctx.playDetail()[i].scrapCardEffect()){
-                    let scrappedCard = this.visit(ctx.playDetail()[i])
-                    playSummary['scrappedCards'].push(scrappedCard)
-                }
                 else if(ctx.playDetail()[i].multiScrap()){
                     let scrappedCards = this.visit(ctx.playDetail()[i])
                     playSummary['scrappedCards'] = playSummary['scrappedCards'].concat(scrappedCards)
@@ -467,8 +463,6 @@ class Visitor extends StarRealmsVisitor{
             return this.visit(ctx.newBalanceDetail())
         }else if(ctx.drawCardsWithShuffle()){
             return this.visit(ctx.drawCardsWithShuffle())
-        }else if(ctx.scrapCardEffect()){
-            return this.visit(ctx.scrapCardEffect())
         }else if(ctx.multiScrap()){
             return this.visit(ctx.multiScrap())
         }else if(ctx.simpleScrap()){
@@ -480,11 +474,6 @@ class Visitor extends StarRealmsVisitor{
         }
     }
 
-    // grammar: name IS SCRAPPING (':')? card NEWLINE;
-    visitScrapCardEffect(ctx) {
-        return this.visit(ctx.card())
-    }
-
     // grammar: multiScrapSummary multiScrapDetail;
     visitMultiScrap(ctx) {
         return this.visit(ctx.multiScrapDetail());
@@ -493,8 +482,8 @@ class Visitor extends StarRealmsVisitor{
     // grammar: scrapCardEffect+ simpleScrap+;
     visitMultiScrapDetail(ctx) {
         let scrappedCards = []
-        for(let i = 0; i < ctx.scrapCardEffect(); i++){
-            scrappedCards.push(this.visit(ctx.scrapCardEffect()[i]))
+        for(let i = 0; i < ctx.simpleScrap(); i++){
+            scrappedCards.push(this.visit(ctx.simpleScrap()[i]))
         }
         return scrappedCards
     }

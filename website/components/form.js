@@ -26,9 +26,9 @@ export default function InputLog(){
               })
               .then(response => response.json())
               .then(data => {
-                setIsLoading(false)
                 if(data['status'] == 'success'){
                   router.push(`/game/${data['id']}`)
+                  setIsLoading(false)
                 }else{
                   setErrorMessage("Unable to parse data")
                 }
@@ -61,7 +61,7 @@ export default function InputLog(){
                     <svg className="w-6 h-6 mr-2 -ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
                     Paste
                   </button>
-                  <button className="inline-flex w-min font-medium bg-scifi3 text-white text-sm text-bold px-4 py-2 border drop-shadow-md border-scifi4 ring-scifi-2 hover:ring rounded-lg" type="submit">
+                  <button className="inline-flex w-min font-medium bg-scifi3 text-white text-sm text-bold px-4 py-2 border items-center drop-shadow-md border-scifi4 ring-scifi-2 hover:ring rounded-lg" type="submit">
                     {
                       isLoading &&
                       <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
