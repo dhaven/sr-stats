@@ -12,6 +12,8 @@ import { assault } from './card_data/assault.js';
 import { command } from './card_data/command.js';
 import { stellar_allies } from './card_data/stellar_allies.js'
 
+const { S3Client, GetObjectCommand } = require("@aws-sdk/client-s3");
+
 
 var card_list = Object.assign(
     core_set['cards'], 
@@ -429,10 +431,6 @@ class Visitor extends StarRealmsVisitor{
                     let drawCountSummary = this.visit(ctx.playDetail()[i])
                     playSummary['drawCount'] += drawCountSummary
                 }
-                else if(ctx.playDetail()[i].scrapCardEffect()){
-                    let scrappedCard = this.visit(ctx.playDetail()[i])
-                    playSummary['scrappedCards'].push(scrappedCard)
-                }
                 else if(ctx.playDetail()[i].multiScrap()){
                     let scrappedCards = this.visit(ctx.playDetail()[i])
                     playSummary['scrappedCards'] = playSummary['scrappedCards'].concat(scrappedCards)
@@ -465,8 +463,6 @@ class Visitor extends StarRealmsVisitor{
             return this.visit(ctx.newBalanceDetail())
         }else if(ctx.drawCardsWithShuffle()){
             return this.visit(ctx.drawCardsWithShuffle())
-        }else if(ctx.scrapCardEffect()){
-            return this.visit(ctx.scrapCardEffect())
         }else if(ctx.multiScrap()){
             return this.visit(ctx.multiScrap())
         }else if(ctx.simpleScrap()){
@@ -478,11 +474,6 @@ class Visitor extends StarRealmsVisitor{
         }
     }
 
-    // grammar: name IS SCRAPPING (':')? card NEWLINE;
-    visitScrapCardEffect(ctx) {
-        return this.visit(ctx.card())
-    }
-
     // grammar: multiScrapSummary multiScrapDetail;
     visitMultiScrap(ctx) {
         return this.visit(ctx.multiScrapDetail());
@@ -491,8 +482,8 @@ class Visitor extends StarRealmsVisitor{
     // grammar: scrapCardEffect+ simpleScrap+;
     visitMultiScrapDetail(ctx) {
         let scrappedCards = []
-        for(let i = 0; i < ctx.scrapCardEffect(); i++){
-            scrappedCards.push(this.visit(ctx.scrapCardEffect()[i]))
+        for(let i = 0; i < ctx.simpleScrap(); i++){
+            scrappedCards.push(this.visit(ctx.simpleScrap()[i]))
         }
         return scrappedCards
     }
@@ -897,4 +888,39 @@ export function parseBattle(battlelog) {
             data: error.message
         }
     }
+}
+
+function getBattleS3(id){
+    const client = new S3Client({ 
+        region: "eu-central-1" ,
+        credentials: {
+          accessKeyId: process.env.SR_STATS_AWS_ACCESS_KEY_ID,
+          secretAccessKey: process.env.SR_STATS_AWS_SECRET_ACCESS_KEY,
+        }
+    });
+    const downloadParams = {
+        Bucket: 'star-realms-games',
+        Key: 'games/' + id,
+    };
+    const streamToString = (stream) =>
+      new Promise((resolve, reject) => {
+        const chunks = [];
+        stream.on("data", (chunk) => chunks.push(chunk));
+        stream.on("error", reject);
+        stream.on("end", () => resolve(Buffer.concat(chunks).toString("utf8")));
+    });
+    let promise = new Promise((resolve,reject) => {
+        client.send(new GetObjectCommand(downloadParams))
+        .then((data) => {
+            streamToString(data.Body).then(bodyContents => {
+                return resolve(parseBattle(bodyContents))
+            });
+        })
+    })
+    return promise
+}
+//battle log is a string representation of a battle log file content
+export async function fetchBattle(id) {
+    let battleData = await getBattleS3(id)
+    return battleData
 }

@@ -75,7 +75,7 @@ export default function HelperModal({isOpen, setIsOpen}) {
                 <div className="mt-4 flex flex-col items-end">
                   <button
                     type="button"
-                    className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                    className="inline-flex font-medium bg-scifi3 text-white text-sm text-bold px-4 py-2 border drop-shadow-md border-scifi4 ring-scifi-2 hover:ring rounded-lg"
                     onClick={closeModal}
                   >
                     Got it, thanks!
