@@ -3,7 +3,7 @@ grammar StarRealms;
 battle            : turn+;
 turn              : action+ (endPhase | winStatus | EOF) ;
 action            : baseInstantEffect | purchase | purchaseHero | play | attackPlayer | attackBase | scrapCard | discard | choseEffect | activatingEffect;
-winStatus         : name HAS WON THE GAME NEWLINE ;
+winStatus         : name HAS WON THE GAME NEWLINE? ;
 
 //describes a base instant effect action
 baseInstantEffect : positiveBalance | drawCardsWithShuffle;
@@ -139,7 +139,7 @@ negativeBalance       : name SEPARATOR card? (DECREASE) (wordPlus) balance NEWLI
 balance               : '('wordPlus':'(INT | DECREASE)')' ;
 destroyBase           : DESTROYED card NEWLINE;
 shuffleCards          : SHUFFLED DISCARD PILE TO FORM NEW DECK NEWLINE;
-name                  : (wordPlus | INT)+ ;
+name                  : (wordPlus)+ ;
 card                  : ((wordPlus '\'s'?) | INT)+ ;
 // heroes                : ceoshaner | chairmanhaygan | chancellorhartman | commanderklik | commodorezhang | confessormorris | hivelord | screecher;
 // ceoshaner             : CEO SHANER;
