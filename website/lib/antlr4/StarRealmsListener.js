@@ -50,6 +50,69 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#purchaseHero.
+	enterPurchaseHero(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#purchaseHero.
+	exitPurchaseHero(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#purchaseHeroDetail.
+	enterPurchaseHeroDetail(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#purchaseHeroDetail.
+	exitPurchaseHeroDetail(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#acquireHeroToTable.
+	enterAcquireHeroToTable(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#acquireHeroToTable.
+	exitAcquireHeroToTable(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#playHero.
+	enterPlayHero(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#playHero.
+	exitPlayHero(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#tradeRowScrap.
+	enterTradeRowScrap(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#tradeRowScrap.
+	exitTradeRowScrap(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#resolveFreeAcquire.
+	enterResolveFreeAcquire(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#resolveFreeAcquire.
+	exitResolveFreeAcquire(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#resolveSelfScrap.
+	enterResolveSelfScrap(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#resolveSelfScrap.
+	exitResolveSelfScrap(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#purchase.
 	enterPurchase(ctx) {
 	}
@@ -77,12 +140,21 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
-	// Enter a parse tree produced by StarRealmsParser#purchaseSuffix.
-	enterPurchaseSuffix(ctx) {
+	// Enter a parse tree produced by StarRealmsParser#acquireToHand.
+	enterAcquireToHand(ctx) {
 	}
 
-	// Exit a parse tree produced by StarRealmsParser#purchaseSuffix.
-	exitPurchaseSuffix(ctx) {
+	// Exit a parse tree produced by StarRealmsParser#acquireToHand.
+	exitAcquireToHand(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#acquireToDeck.
+	enterAcquireToDeck(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#acquireToDeck.
+	exitAcquireToDeck(ctx) {
 	}
 
 
@@ -194,6 +266,78 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#completeMission.
+	enterCompleteMission(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#completeMission.
+	exitCompleteMission(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#completeMissionSummary.
+	enterCompleteMissionSummary(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#completeMissionSummary.
+	exitCompleteMissionSummary(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#completeMissionsDetail.
+	enterCompleteMissionsDetail(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#completeMissionsDetail.
+	exitCompleteMissionsDetail(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#selectMissionsReward.
+	enterSelectMissionsReward(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#selectMissionsReward.
+	exitSelectMissionsReward(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#resolveAllyReward.
+	enterResolveAllyReward(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#resolveAllyReward.
+	exitResolveAllyReward(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#resolveRuleReward.
+	enterResolveRuleReward(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#resolveRuleReward.
+	exitResolveRuleReward(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#resolveDefendReward.
+	enterResolveDefendReward(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#resolveDefendReward.
+	exitResolveDefendReward(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#resolveConvertReward.
+	enterResolveConvertReward(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#resolveConvertReward.
+	exitResolveConvertReward(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#attackPlayer.
 	enterAttackPlayer(ctx) {
 	}
@@ -236,6 +380,15 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 
 	// Exit a parse tree produced by StarRealmsParser#attackBaseSummary.
 	exitAttackBaseSummary(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#attackBaseDetail.
+	enterAttackBaseDetail(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#attackBaseDetail.
+	exitAttackBaseDetail(ctx) {
 	}
 
 
@@ -293,6 +446,15 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#moveDiscardToDeck.
+	enterMoveDiscardToDeck(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#moveDiscardToDeck.
+	exitMoveDiscardToDeck(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#discard.
 	enterDiscard(ctx) {
 	}
@@ -302,12 +464,21 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
-	// Enter a parse tree produced by StarRealmsParser#resolveDiscard.
-	enterResolveDiscard(ctx) {
+	// Enter a parse tree produced by StarRealmsParser#discardSummary.
+	enterDiscardSummary(ctx) {
 	}
 
-	// Exit a parse tree produced by StarRealmsParser#resolveDiscard.
-	exitResolveDiscard(ctx) {
+	// Exit a parse tree produced by StarRealmsParser#discardSummary.
+	exitDiscardSummary(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#discardDetail.
+	enterDiscardDetail(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#discardDetail.
+	exitDiscardDetail(ctx) {
 	}
 
 
@@ -320,12 +491,12 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
-	// Enter a parse tree produced by StarRealmsParser#discardDetails.
-	enterDiscardDetails(ctx) {
+	// Enter a parse tree produced by StarRealmsParser#discardEnd.
+	enterDiscardEnd(ctx) {
 	}
 
-	// Exit a parse tree produced by StarRealmsParser#discardDetails.
-	exitDiscardDetails(ctx) {
+	// Exit a parse tree produced by StarRealmsParser#discardEnd.
+	exitDiscardEnd(ctx) {
 	}
 
 
@@ -344,6 +515,15 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 
 	// Exit a parse tree produced by StarRealmsParser#choseEffectSummary.
 	exitChoseEffectSummary(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#discountFactionGambit.
+	enterDiscountFactionGambit(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#discountFactionGambit.
+	exitDiscountFactionGambit(ctx) {
 	}
 
 
@@ -374,12 +554,57 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#choseDiscardAndIncreasePool.
+	enterChoseDiscardAndIncreasePool(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#choseDiscardAndIncreasePool.
+	exitChoseDiscardAndIncreasePool(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#choseBlobDraw.
+	enterChoseBlobDraw(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#choseBlobDraw.
+	exitChoseBlobDraw(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#hiddenBaseGambit.
+	enterHiddenBaseGambit(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#hiddenBaseGambit.
+	exitHiddenBaseGambit(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#choseEffectDetail.
 	enterChoseEffectDetail(ctx) {
 	}
 
 	// Exit a parse tree produced by StarRealmsParser#choseEffectDetail.
 	exitChoseEffectDetail(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#refreshTradeRow.
+	enterRefreshTradeRow(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#refreshTradeRow.
+	exitRefreshTradeRow(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#changeHiddenBaseToFaction.
+	enterChangeHiddenBaseToFaction(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#changeHiddenBaseToFaction.
+	exitChangeHiddenBaseToFaction(ctx) {
 	}
 
 
@@ -488,6 +713,15 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 
 	// Exit a parse tree produced by StarRealmsParser#noCopy.
 	exitNoCopy(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#noCopyBases.
+	enterNoCopyBases(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#noCopyBases.
+	exitNoCopyBases(ctx) {
 	}
 
 
@@ -626,6 +860,15 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#replaceGambit.
+	enterReplaceGambit(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#replaceGambit.
+	exitReplaceGambit(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#noScrap.
 	enterNoScrap(ctx) {
 	}
@@ -641,6 +884,15 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 
 	// Exit a parse tree produced by StarRealmsParser#selectDiscard.
 	exitSelectDiscard(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#discardForPool.
+	enterDiscardForPool(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#discardForPool.
+	exitDiscardForPool(ctx) {
 	}
 
 
@@ -689,6 +941,24 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#positiveBalance.
+	enterPositiveBalance(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#positiveBalance.
+	exitPositiveBalance(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#negativeBalance.
+	enterNegativeBalance(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#negativeBalance.
+	exitNegativeBalance(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#balance.
 	enterBalance(ctx) {
 	}
@@ -731,6 +1001,15 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 
 	// Exit a parse tree produced by StarRealmsParser#card.
 	exitCard(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#wordPlus.
+	enterWordPlus(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#wordPlus.
+	exitWordPlus(ctx) {
 	}
 
 

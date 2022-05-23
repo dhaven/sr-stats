@@ -36,11 +36,15 @@ class Visitor extends StarRealmsVisitor{
             let player = JSON.parse(JSON.stringify(lastRoundPlayers[i]))
             if(player.name == currentPlayer){
                 player['authority'] += nextRound['selfAuthority']
+                if(nextRound['completedMission'] != ''){
+                    player['completedMissions'].push(nextRound['completedMission'])
+                }
                 for(let j = 0; j < nextRound['purchasedCards'].length; j++){
                     let nextCard = nextRound['purchasedCards'][j]
+                    //console.log(nextCard)
                     if(nextCard in player['deck']){
                         player['deck'][nextCard]['count'] += 1
-                    }else{
+                    }else if(nextCard in card_list){
                         player.deck[nextCard] = {
                             name: card_list[nextCard]['name'],
                             cost: card_list[nextCard]['cost'],
@@ -66,6 +70,7 @@ class Visitor extends StarRealmsVisitor{
                 }
                 for(let j = 0; j < nextRound['playedCards'].length; j++){
                     let nextCard = nextRound['playedCards'][j]
+                    //console.log(nextCard)
                     player['deck'][nextCard]['playedCount'] += 1
                 }
                 newPlayerData.push(player)
@@ -73,7 +78,9 @@ class Visitor extends StarRealmsVisitor{
                 player['authority'] += nextRound['otherAuthority']
                 for(let j = 0; j < nextRound['destroyedBases'].length; j++){
                     let nextCard = nextRound['destroyedBases'][j]
-                    player['deck'][nextCard]['destroyedCount'] += 1
+                    if(nextCard in player['deck']){
+                        player['deck'][nextCard]['destroyedCount'] += 1
+                    }
                 }
                 newPlayerData.push(player)
             }
@@ -121,17 +128,18 @@ class Visitor extends StarRealmsVisitor{
         return newBalance
     }
 
-    // grammar: turn+ EOF ;
+    // grammar: turn+;
     visitBattle(ctx){
         let firstPlayer = this.visit(ctx.turn()[0].endPhase())
         let secondPlayer = this.visit(ctx.turn()[1].endPhase())
-        let winner = this.visit(ctx.turn()[ctx.turn().length-1].winStatus())
         let rounds = []
+        let winner = ""
         //Initialize player data
         let lastRoundPlayers = [
             {
                 name: firstPlayer,
                 authority: 50,
+                completedMissions: [],
                 deck: {
                     "scout": {
                         name: card_list['scout']['name'],
@@ -160,6 +168,7 @@ class Visitor extends StarRealmsVisitor{
             {
                 name: secondPlayer,
                 authority: 50,
+                completedMissions: [],
                 deck: {
                     "scout": {
                         name: card_list['scout']['name'],
@@ -188,6 +197,9 @@ class Visitor extends StarRealmsVisitor{
         ]
         for(let i = 0; i < ctx.turn().length; i++){
             let nextRound = this.visit(ctx.turn()[i])
+            if(nextRound['winner'] != ""){
+                winner = nextRound['winner']
+            }
             //update the players  object based on the data collected from the latest round
             if(i % 2 == 0){
                 nextRound['players'] = this.updatePlayerData(firstPlayer,lastRoundPlayers, nextRound)
@@ -204,14 +216,14 @@ class Visitor extends StarRealmsVisitor{
         }
     }
 
-    // grammar: name 'has' 'won' 'the' 'game' NEWLINE ;
+    // grammar: name HAS WON THE GAME NEWLINE ;
     // returns the name of the winner
     visitWinStatus(ctx){
         return this.visit(ctx.name())
     }
 
     // for each turn, get the summary of action and the user who performed it
-    // baseInstantEffect* action+ (endPhase | winStatus) ;
+    // grammar: action+ (endPhase | winStatus | EOF) ;
     visitTurn(ctx){
         let turnData = {
             tradePool: 0,
@@ -219,10 +231,12 @@ class Visitor extends StarRealmsVisitor{
             usedTrade: 0,
             usedCombat: 0,
             purchasedCards: [],
+            completedMission: "",
             playedCards: [],
             scrappedCards: [],
             discardedCards: [],
             destroyedBases: [],
+            winner: "",
             drawCount: 0,
             selfAuthority: 0, // authority change of current player
             otherAuthority: 0 // authority change of other player
@@ -230,7 +244,7 @@ class Visitor extends StarRealmsVisitor{
         //get summary of all actions performed in this turn
         for(let i = 0; i < ctx.action().length; i++){
             if(ctx.action()[i].baseInstantEffect()){
-                if(ctx.action()[i].baseInstantEffect().newBalanceDetail()){
+                if(ctx.action()[i].baseInstantEffect().positiveBalance()){
                     let balance = this.computeNewBalance({}, this.visit(ctx.action()[i]))
                     turnData['tradePool'] += balance['tradePool']
                     turnData['combatPool'] += balance['combatPool']
@@ -245,7 +259,24 @@ class Visitor extends StarRealmsVisitor{
             else if(ctx.action()[i].purchase()){
                 let purchaseActionDetail = this.visit(ctx.action()[i])
                 turnData['purchasedCards'].push(purchaseActionDetail['card'])
-                turnData['usedTrade'] += purchaseActionDetail['balance']['value']
+                turnData['tradePool'] += purchaseActionDetail['balance']['tradePool']
+                turnData['combatPool'] += purchaseActionDetail['balance']['combatPool']
+                turnData['usedTrade'] += purchaseActionDetail['balance']['usedTrade']
+                turnData['usedCombat'] += purchaseActionDetail['balance']['usedCombat']
+                turnData['selfAuthority'] += purchaseActionDetail['balance']['selfAuthority']
+                turnData['otherAuthority'] += purchaseActionDetail['balance']['otherAuthority']
+            }
+            else if(ctx.action()[i].purchaseHero()){
+                let purchaseHeroDetail = this.visit(ctx.action()[i])
+                turnData['purchasedCards'].push(purchaseHeroDetail['card'])
+                turnData['tradePool'] += purchaseHeroDetail['balance']['tradePool']
+                turnData['combatPool'] += purchaseHeroDetail['balance']['combatPool']
+                turnData['usedTrade'] += purchaseHeroDetail['balance']['usedTrade']
+                turnData['usedCombat'] += purchaseHeroDetail['balance']['usedCombat']
+                turnData['selfAuthority'] += purchaseHeroDetail['balance']['selfAuthority']
+                turnData['otherAuthority'] += purchaseHeroDetail['balance']['otherAuthority']
+                turnData['scrappedCards'] = turnData['scrappedCards'].concat(purchaseHeroDetail['scrappedCards'])
+                turnData['drawCount'] += purchaseHeroDetail['drawCount']
             }
             else if(ctx.action()[i].play()){
                 let playActionDetail = this.visit(ctx.action()[i])
@@ -259,6 +290,12 @@ class Visitor extends StarRealmsVisitor{
                 turnData['usedCombat'] += playActionDetail['balance']['usedCombat']
                 turnData['selfAuthority'] += playActionDetail['balance']['selfAuthority']
                 turnData['otherAuthority'] += playActionDetail['balance']['otherAuthority']
+                if(playActionDetail['mission'] != ""){
+                    turnData['completedMission'] = playActionDetail['mission']
+                }
+                if(playActionDetail['winner'] != ""){
+                    turnData['winner'] = playActionDetail['winner']
+                }
             }
             else if(ctx.action()[i].attackPlayer()){
                 let attackPlayerActionDetail = this.visit(ctx.action()[i])
@@ -268,7 +305,13 @@ class Visitor extends StarRealmsVisitor{
             else if(ctx.action()[i].attackBase()){
                 let attackBaseActionDetail = this.visit(ctx.action()[i])
                 turnData['destroyedBases'].push(attackBaseActionDetail['target'])
-                turnData['usedCombat'] += attackBaseActionDetail['balance']['value']
+                turnData['scrappedCards'] = turnData['scrappedCards'].concat(attackBaseActionDetail['scrappedCards'])
+                turnData['tradePool'] += attackBaseActionDetail['balance']['tradePool']
+                turnData['combatPool'] += attackBaseActionDetail['balance']['combatPool']
+                turnData['usedTrade'] += attackBaseActionDetail['balance']['usedTrade']
+                turnData['usedCombat'] += attackBaseActionDetail['balance']['usedCombat']
+                turnData['selfAuthority'] += attackBaseActionDetail['balance']['selfAuthority']
+                turnData['otherAuthority'] += attackBaseActionDetail['balance']['otherAuthority']
             }
             else if(ctx.action()[i].scrapCard()){
                 let scrapCardActionDetail = this.visit(ctx.action()[i])
@@ -286,6 +329,7 @@ class Visitor extends StarRealmsVisitor{
             else if(ctx.action()[i].discard()){
                 let discardActionDetail = this.visit(ctx.action()[i])
                 turnData['discardedCards'] = turnData['discardedCards'].concat(discardActionDetail['discardedCards'])
+                //console.log(turnData['discardedCards'])
             }
             else if(ctx.action()[i].choseEffect()){
                 let choseEffectActionDetail = this.visit(ctx.action()[i])
@@ -329,7 +373,12 @@ class Visitor extends StarRealmsVisitor{
                     turnData['drawCount'] += activatingEffectActionDetail['discardAndDraw']['drawCount']
                 }
             }
+            //console.log(turnData['completedMission'])
         }
+        if(ctx.winStatus()){
+            turnData['winner'] = this.visit(ctx.winStatus())
+        }
+        //console.log(turnData['completedMission'])
         return turnData
     }
 
@@ -343,12 +392,14 @@ class Visitor extends StarRealmsVisitor{
         return ctx.name().getText()
     }
 
-    //grammar: baseInstantEffect | purchase | play | attackPlayer | attackBase | scrapCard | discard | choseEffect | activatingEffect;
+    //grammar: baseInstantEffect | purchase | purchaseHero | play | attackPlayer | attackBase | scrapCard | discard | choseEffect | activatingEffect;
     visitAction(ctx){
         if(ctx.baseInstantEffect()){
             return this.visit(ctx.baseInstantEffect())
         }else if(ctx.purchase()){
-            return this.visit(ctx.purchase())
+            return this.visit(ctx.purchase())   
+        }else if(ctx.purchaseHero()){
+            return this.visit(ctx.purchaseHero())
         }else if(ctx.play()){
             return this.visit(ctx.play())
         }else if(ctx.attackPlayer()){
@@ -366,24 +417,36 @@ class Visitor extends StarRealmsVisitor{
         }
     }
 
-    // grammar: newBalanceDetail | drawCardsWithShuffle;
+    // grammar: positiveBalance | drawCardsWithShuffle;
     visitBaseInstantEffect(ctx){
-        if(ctx.newBalanceDetail()){
-            return this.visit(ctx.newBalanceDetail())
+        if(ctx.positiveBalance()){
+            return this.visit(ctx.positiveBalance())
         }
         if(ctx.drawCardsWithShuffle()){
             return this.visit(ctx.drawCardsWithShuffle())
         }
     }
 
-    // grammar: purchaseSummary purchaseDetail;
+    // grammar: purchaseSummary purchaseDetail*;
     visitPurchase(ctx){
-        let cardName = this.visit(ctx.purchaseSummary())
-        let balance = this.visit(ctx.purchaseDetail())
-        return {
-            card: cardName,
-            balance: balance
+        let purchase = {
+            balance: {
+                tradePool: 0,
+                combatPool: 0,
+                usedTrade: 0,
+                usedCombat: 0,
+                selfAuthority: 0, // authority change of current player
+                otherAuthority: 0 // authority change of other player
+            }
         }
+        purchase['card'] = this.visit(ctx.purchaseSummary())
+        for(let i = 0; i < ctx.purchaseDetail().length; i++){
+            if(ctx.purchaseDetail()[i].negativeBalance()){
+                let newBalanceDetail = this.visit(ctx.purchaseDetail()[i])
+                purchase['balance'] = this.computeNewBalance(purchase['balance'], newBalanceDetail)
+            }
+        }
+        return purchase
     }
 
     // grammar: ACQUIRED card  NEWLINE;
@@ -391,16 +454,77 @@ class Visitor extends StarRealmsVisitor{
         return this.visit(ctx.card())
     }
 
-    // grammar: newBalanceDetail purchaseSuffix?;
+    // grammar: negativeBalance | acquireToHand | acquireToDeck;
     visitPurchaseDetail(ctx){
-        let balance = this.visit(ctx.newBalanceDetail())
+        let balance = this.visit(ctx.negativeBalance())
         if(balance['category'] != 'Trade' || balance['value'] > 0){
             return 'there was some error'
         }
         return balance
     }
 
-    // grammar: playSummary playDetail*;
+    // grammar: ACQUIRED card TO HAND NEWLINE;
+    visitAcquireToHand(ctx) {
+        return this.visit(ctx.card())
+      }
+
+    // grammar: purchaseSummary purchaseHeroDetail playHero*;
+    visitPurchaseHero(ctx) {
+        let purchase = {
+            card : '',
+            scrappedCards: [],
+            drawCount : 0,
+            balance: {
+                tradePool: 0,
+                combatPool: 0,
+                usedTrade: 0,
+                usedCombat: 0,
+                selfAuthority: 0, // authority change of current player
+                otherAuthority: 0 // authority change of other player
+            }
+        }
+        purchase['card'] = this.visit(ctx.purchaseSummary())
+        let newBalanceDetail = this.visit(ctx.purchaseHeroDetail())
+        purchase['balance'] = this.computeNewBalance(purchase['balance'], newBalanceDetail)
+        for(let i = 0; i < ctx.playHero().length; i++){
+            if(ctx.playHero()[i].positiveBalance()){
+                let playHeroDetail = this.visit(ctx.playHero()[i])
+                purchase['balance'] = this.computeNewBalance(purchase['balance'], playHeroDetail)
+            }else if(ctx.playHero()[i].drawCardsWithShuffle()){
+                purchase['drawCount'] += this.visit(ctx.playHero()[i])
+            }else if(ctx.playHero()[i].multiScrapDetail()){
+                let playHeroDetail = this.visit(ctx.playHero()[i])
+                purchase['scrappedCards'] = purchase['scrappedCards'].concat(playHeroDetail)
+            }else if(ctx.playHero()[i].simpleScrap()){
+                let playHeroDetail = this.visit(ctx.playHero()[i])
+                purchase['scrappedCards'].push(playHeroDetail)
+            }
+        }
+        //console.log(purchase)
+        return purchase
+    }
+
+    // grammar: negativeBalance acquireHeroToTable refreshIndicators;
+    visitPurchaseHeroDetail(ctx) {
+        return this.visit(ctx.negativeBalance())
+    }
+
+    // grammar: tradeRowScrap | resolveFreeAcquire | resolveSelfScrap | multiScrapSummary | positiveBalance | drawCardsWithShuffle | multiScrapDetail | simpleScrap;
+    visitPlayHero(ctx) {
+        if(ctx.positiveBalance()){
+            return this.visit(ctx.positiveBalance())
+        }else if(ctx.drawCardsWithShuffle()){
+            return this.visit(ctx.drawCardsWithShuffle())
+        }else if(ctx.multiScrapDetail()){
+            return this.visit(ctx.multiScrapDetail())
+        }else if(ctx.simpleScrap()){
+            return this.visit(ctx.simpleScrap())
+        }else{
+            console.log("error")
+        }
+      }
+
+    // grammar: playSummary playDetail* completeMission?;
     // returns info about the cards played and associated effects
     visitPlay(ctx){
         let playSummary =  {
@@ -409,6 +533,8 @@ class Visitor extends StarRealmsVisitor{
             scrappedCards: [],
             destroyedBases: [],
             drawCount: 0,
+            winner: "",
+            mission: "",
             balance: {
                 tradePool: 0,
                 combatPool: 0,
@@ -421,33 +547,39 @@ class Visitor extends StarRealmsVisitor{
         if(ctx.playSummary().playSingle()){
             playSummary['playedCards'].push(this.visit(ctx.playSummary().playSingle()))
         }
-        if(ctx.playDetail()){
-            for(let i = 0; i < ctx.playDetail().length; i++){
-                if(ctx.playDetail()[i].newBalanceDetail()){
-                    let newBalanceDetail = this.visit(ctx.playDetail()[i])
-                    playSummary['balance'] = this.computeNewBalance(playSummary['balance'], newBalanceDetail)   
-                }
-                else if(ctx.playDetail()[i].drawCardsWithShuffle()){
-                    let drawCountSummary = this.visit(ctx.playDetail()[i])
-                    playSummary['drawCount'] += drawCountSummary
-                }
-                else if(ctx.playDetail()[i].multiScrap()){
-                    let scrappedCards = this.visit(ctx.playDetail()[i])
-                    playSummary['scrappedCards'] = playSummary['scrappedCards'].concat(scrappedCards)
-                }
-                else if(ctx.playDetail()[i].simpleScrap()){
-                    let simpleScrapSummary = this.visit(ctx.playDetail()[i])
-                    playSummary['scrappedCards'].push(simpleScrapSummary)
-                }
-                else if(ctx.playDetail()[i].destroyBase()){
-                    let destroyBaseSummary = this.visit(ctx.playDetail()[i])
-                    playSummary['destroyedBases'].push(destroyBaseSummary)
-                }
-                else if(ctx.playDetail()[i].freeAcquire()){
-                    let acquiredCard = this.visit(ctx.playDetail()[i])
-                    playSummary['acquiredCards'].push(acquiredCard)
-                }
+        for(let i = 0; i < ctx.playDetail().length; i++){
+            if(ctx.playDetail()[i].positiveBalance()){
+                let newBalanceDetail = this.visit(ctx.playDetail()[i])
+                playSummary['balance'] = this.computeNewBalance(playSummary['balance'], newBalanceDetail)   
             }
+            else if(ctx.playDetail()[i].drawCardsWithShuffle()){
+                let drawCountSummary = this.visit(ctx.playDetail()[i])
+                playSummary['drawCount'] += drawCountSummary
+            }
+            else if(ctx.playDetail()[i].multiScrap()){
+                let scrappedCards = this.visit(ctx.playDetail()[i])
+                playSummary['scrappedCards'] = playSummary['scrappedCards'].concat(scrappedCards)
+            }
+            else if(ctx.playDetail()[i].simpleScrap()){
+                let simpleScrapSummary = this.visit(ctx.playDetail()[i])
+                playSummary['scrappedCards'].push(simpleScrapSummary)
+            }
+            else if(ctx.playDetail()[i].destroyBase()){
+                let destroyBaseSummary = this.visit(ctx.playDetail()[i])
+                playSummary['destroyedBases'].push(destroyBaseSummary)
+            }
+            else if(ctx.playDetail()[i].freeAcquire()){
+                let acquiredCard = this.visit(ctx.playDetail()[i])
+                playSummary['acquiredCards'].push(acquiredCard)
+            }
+        }
+        if(ctx.completeMission()){
+            let missionSummary = this.visit(ctx.completeMission())
+            playSummary['balance'] = this.computeNewBalance(playSummary['balance'], missionSummary['balance']) 
+            playSummary['acquiredCards'] = playSummary['acquiredCards'].concat(missionSummary['purchasedCards'])
+            playSummary['drawCount'] += missionSummary['drawCount']
+            playSummary['mission'] = missionSummary['name']
+            playSummary['winner'] = missionSummary['winner']
         }
         return playSummary
     }
@@ -457,10 +589,10 @@ class Visitor extends StarRealmsVisitor{
         return this.visit(ctx.card())
     }
 
-    // grammar: newBalanceDetail | newAbility | drawCardsWithShuffle | scrapCardEffect | discarding | multiScrap | noScrap | simpleScrap | destroyBase | moveBaseToDeck | freeAcquire | copyCardSummary | copyCardEffect;
+    // grammar: positiveBalance | newAbility | drawCardsWithShuffle | scrapCardEffect | discarding | multiScrap | noScrap | simpleScrap | destroyBase | moveBaseToDeck | freeAcquire | copyCardSummary | copyCardEffect;
     visitPlayDetail(ctx){
-        if(ctx.newBalanceDetail()){
-            return this.visit(ctx.newBalanceDetail())
+        if(ctx.positiveBalance()){
+            return this.visit(ctx.positiveBalance())
         }else if(ctx.drawCardsWithShuffle()){
             return this.visit(ctx.drawCardsWithShuffle())
         }else if(ctx.multiScrap()){
@@ -482,7 +614,7 @@ class Visitor extends StarRealmsVisitor{
     // grammar: scrapCardEffect+ simpleScrap+;
     visitMultiScrapDetail(ctx) {
         let scrappedCards = []
-        for(let i = 0; i < ctx.simpleScrap(); i++){
+        for(let i = 0; i < ctx.simpleScrap().length; i++){
             scrappedCards.push(this.visit(ctx.simpleScrap()[i]))
         }
         return scrappedCards
@@ -493,17 +625,73 @@ class Visitor extends StarRealmsVisitor{
         return this.visit(ctx.card())
     }
 
-    // grammar: ACQUIRED card NEWLINE purchaseSuffix;
+    // grammar: ACQUIRED card  NEWLINE (acquireToHand|acquireToDeck);
     visitFreeAcquire(ctx) {
         return this.visit(ctx.card());
-      }
+    }
 
-    // grammar: attackPlayerSummary newBalanceDetail+;
+    // grammar: completeMissionSummary  completeMissionsDetail*;
+    visitCompleteMission(ctx) {
+        let missionSummary = {
+            name: '',
+            drawCount: 0,
+            purchasedCards: [],
+            winner : "",
+            balance: {
+                tradePool: 0,
+                combatPool: 0,
+                usedTrade: 0,
+                usedCombat: 0,
+                selfAuthority: 0, // authority change of current player
+                otherAuthority: 0 // authority change of other player
+            }
+        }
+        missionSummary['name'] = this.visit(ctx.completeMissionSummary())
+        for(let i = 0; i < ctx.completeMissionsDetail().length; i++){
+            if(ctx.completeMissionsDetail()[i].positiveBalance()){
+                let missionDetail = this.visit(ctx.completeMissionsDetail()[i])
+                missionSummary['balance'] = this.computeNewBalance(missionSummary['balance'], missionDetail)  
+            }else if(ctx.completeMissionsDetail()[i].drawCardsWithShuffle()){
+                missionSummary['drawCount'] += this.visit(ctx.completeMissionsDetail()[i])
+            }else if(ctx.completeMissionsDetail()[i].acquireToHand()){
+                let missionDetail = this.visit(ctx.completeMissionsDetail()[i])
+                missionSummary['purchasedCards'].push(missionDetail)
+            }else if(ctx.completeMissionsDetail()[i].freeAcquire()){
+                let missionDetail = this.visit(ctx.completeMissionsDetail()[i])
+                missionSummary['purchasedCards'].push(missionDetail)
+            }else if(ctx.completeMissionsDetail()[i].winStatus()){
+                missionSummary['winner'] = this.visit(ctx.completeMissionsDetail()[i])
+            }
+        }
+        return missionSummary
+    }
+
+    // grammar: positiveBalance | drawCardsWithShuffle | acquireToHand | selectMissionsReward | winStatus | freeAcquire | resolveAllyReward | resolveRuleReward | resolveDefendReward | resolveConvertReward;
+    visitCompleteMissionsDetail(ctx) {
+        if(ctx.positiveBalance()){
+            return this.visit(ctx.positiveBalance())
+        }else if(ctx.drawCardsWithShuffle()){
+            return this.visit(ctx.drawCardsWithShuffle())
+        }else if(ctx.acquireToHand()){
+            return this.visit(ctx.acquireToHand())
+        }else if(ctx.freeAcquire()){
+            return this.visit(ctx.freeAcquire())
+        }else if(ctx.winStatus()){
+            return this.visit(ctx.winStatus())
+        }
+    }
+
+    //grammar: REVEALED card NEWLINE;
+    visitCompleteMissionSummary(ctx) {
+        return this.visit(ctx.card());
+    }
+
+    // grammar: attackPlayerSummary negativeBalance+;
     visitAttackPlayer(ctx){
         return this.visit(ctx.attackPlayerSummary())
     }
 
-    // grammar: ATTACKED name WORD INT newAuthority NEWLINE;
+    // grammar:  ATTACKED name FOR INT newAuthority NEWLINE;
     visitAttackPlayerSummary(ctx) {
         return {
             target: this.visit(ctx.name()),
@@ -511,18 +699,45 @@ class Visitor extends StarRealmsVisitor{
         }
     }
 
-    // grammar: attackBaseSummary newBalanceDetail destroyBase;
+    // grammar: atackBaseSummary attackBaseDetail* ;
     visitAttackBase(ctx) {
-        return {
-            target: this.visit(ctx.attackBaseSummary()),
-            balance: this.visit(ctx.newBalanceDetail())
+        let attackBase = {
+            scrappedCards: [],
+            balance: {
+                tradePool: 0,
+                combatPool: 0,
+                usedTrade: 0,
+                usedCombat: 0,
+                selfAuthority: 0, // authority change of current player
+                otherAuthority: 0 // authority change of other player
+            }
+
         }
+        attackBase['target'] = this.visit(ctx.attackBaseSummary())
+        for(let i = 0; i < ctx.attackBaseDetail().length; i++){
+            if(ctx.attackBaseDetail()[i].negativeBalance()){
+                let newBalanceDetail = this.visit(ctx.attackBaseDetail()[i])
+                attackBase['balance'] = this.computeNewBalance(attackBase['balance'], newBalanceDetail)
+            }else if (ctx.attackBaseDetail()[i].scrapAction()){
+                attackBase['scrappedCards'].push(this.visit(ctx.attackBaseDetail()[i]))
+            }
+        }
+        return attackBase
     }
     
     // grammar: ATTACKED card NEWLINE;
     visitAttackBaseSummary(ctx) {
         return this.visit(ctx.card())
     }
+
+    // grammar: negativeBalance | destroyBase | scrapAction;
+    visitAttackBaseDetail(ctx) {
+        if(ctx.negativeBalance()){
+            return this.visit(ctx.negativeBalance())
+        }else if(ctx.scrapAction()){
+            return this.visit(ctx.scrapAction())
+        }
+      }
 
     // grammar: scrappingSummary scrappingDetail;
 	visitScrapCard(ctx) {
@@ -548,6 +763,9 @@ class Visitor extends StarRealmsVisitor{
         for(let i = 0; i < ctx.scrapEffect().length; i++){
             if(ctx.scrapEffect()[i].scrapAction()){
                 scrapSummary['scrappedCards'].push(this.visit(ctx.scrapEffect()[i]))
+                if(ctx.scrapEffect()[i].freePurchase()){
+                    scrapSummary['acquiredCards'].push(this.visit(ctx.scrapEffect()[i].freePurchase()))
+                }
             }
             else if(ctx.scrapEffect()[i].drawCardsWithShuffle()){
                 scrapSummary['drawCount'] += this.visit(ctx.scrapEffect()[i])
@@ -556,16 +774,12 @@ class Visitor extends StarRealmsVisitor{
                 scrapSummary['destroyedBases'].push(this.visit(ctx.scrapEffect()[i]))
             }else if(ctx.scrapEffect()[i].newBalanceDetail()){
                 scrapSummary['balance'] = this.computeNewBalance(scrapSummary['balance'],this.visit(ctx.scrapEffect()[i]))
-            }else if(ctx.scrapEffect()[i].freePurchase()){
-                scrapSummary['acquiredCards'].push(this.visit(ctx.scrapEffect()[i]))
-            }else{
-                console.log("error for visitScrappingDetail")
             }
         }
         return scrapSummary
     }
 
-    // grammar: scrapAction | drawCardsWithShuffle | destroyBase | newBalanceDetail | freePurchase;
+    // grammar: scrapAction | drawCardsWithShuffle | destroyBase | newBalanceDetail | (freePurchase scrapAction) | replaceGambit | scrapSummary | moveDiscardToDeck;
     visitScrapEffect(ctx) {
         if(ctx.scrapAction()){
             return this.visit(ctx.scrapAction())
@@ -575,10 +789,6 @@ class Visitor extends StarRealmsVisitor{
             return this.visit(ctx.destroyBase())
         }else if(ctx.newBalanceDetail()){
             return this.visit(ctx.newBalanceDetail())
-        }else if(ctx.freePurchase()){
-            return this.visit(ctx.freePurchase())
-        }else{
-            console.log("error for visitScrapEffect")
         }
     }
 
@@ -587,25 +797,31 @@ class Visitor extends StarRealmsVisitor{
         return this.visit(ctx.card())
     }
 
-    // grammar: ACQUIRED card NEWLINE;
+    // grammar: (ACQUIRED card TO HAND NEWLINE) | ( ACQUIRED card TO THE TOP OF THE DECK NEWLINE) | (ACQUIRED card NEWLINE) ;
     visitFreePurchase(ctx) {
         return this.visit(ctx.card());
     }
 
-    // grammar: resolveDiscard discardAction+ discardDetails ;
+    // grammar: discardSummary discardDetail* ;
     visitDiscard(ctx) {
         let discardSummary = {
             discardedCards: []
         }
-        for(let i = 0; i < ctx.discardAction().length; i++){
-            discardSummary['discardedCards'].push(this.visit(ctx.discardAction()[i]))
+        for(let i = 0; i < ctx.discardDetail().length; i++){
+            if(ctx.discardDetail()[i].discarding()){
+                let discardedCard = this.visit(ctx.discardDetail()[i])
+                discardSummary['discardedCards'].push(discardedCard)
+            }
         }
+        //console.log(discardSummary)
         return discardSummary
     }
     
-    // grammar: name IS WORD card NEWLINE ;
-    visitDiscardAction(ctx) {
-        return this.visit(ctx.card())
+    // grammar: discardAction | discardEnd | discarding ;
+    visitDiscardDetail(ctx) {
+        if(ctx.discarding()){
+            return this.visit(ctx.discarding())
+        }
     }
 
     // grammar: choseEffectSummary choseEffectDetail*;
@@ -624,7 +840,7 @@ class Visitor extends StarRealmsVisitor{
             }
         }
         for(let i = 0; i < ctx.choseEffectDetail().length; i++){
-            if(ctx.choseEffectDetail()[i].selectDiscard()){
+            if(ctx.choseEffectDetail()[i].discarding()){
                 let discardedCard = this.visit(ctx.choseEffectDetail()[i])
                 choseEffectSummary['discardedCards'].push(discardedCard)
             }else if(ctx.choseEffectDetail()[i].drawCardsWithShuffle()){
@@ -633,7 +849,7 @@ class Visitor extends StarRealmsVisitor{
             }else if(ctx.choseEffectDetail()[i].simpleScrap()){
                 let scrappedCard = this.visit(ctx.choseEffectDetail()[i])
                 choseEffectSummary['scrappedCards'].push(scrappedCard)
-            }else if(ctx.choseEffectDetail()[i].newBalanceDetail()){
+            }else if(ctx.choseEffectDetail()[i].positiveBalance()){
                 let newBalance = this.visit(ctx.choseEffectDetail()[i])
                 choseEffectSummary['balance'] = this.computeNewBalance(choseEffectSummary['balance'], newBalance)
             }
@@ -641,39 +857,17 @@ class Visitor extends StarRealmsVisitor{
         return choseEffectSummary
     }
 
-    // grammar: selectDiscard | discarding | drawCardsWithShuffle | noScrap | simpleScrap | newBalanceDetail;
+    // grammar: selectDiscard | discardForPool | discarding | drawCardsWithShuffle | noScrap | simpleScrap | positiveBalance | refreshTradeRow | changeHiddenBaseToFaction | replaceGambit;
     visitChoseEffectDetail(ctx) {
-        if(ctx.selectDiscard()){
-            return this.visit(ctx.selectDiscard())
+        if(ctx.discarding()){
+            return this.visit(ctx.discarding())
         }else if(ctx.drawCardsWithShuffle()){
             return this.visit(ctx.drawCardsWithShuffle())
         }else if(ctx.simpleScrap()){
             return this.visit(ctx.simpleScrap())
-        }else if(ctx.newBalanceDetail()){
-            return this.visit(ctx.newBalanceDetail())
+        }else if(ctx.positiveBalance()){
+            return this.visit(ctx.positiveBalance())
         }
-    }
-    
-    // grammar: discardAndDrawSummary selectDiscard+ discarding+ drawCardsWithShuffle;
-    visitChoseDiscardAndDraw(ctx) {
-        let discardSummary = {
-            discardedCards: [],
-            drawCount: ctx.selectDiscard().length
-        }
-        for(let i = 0; i < ctx.selectDiscard().length; i++){
-            discardSummary['discardedCards'].push(this.visit(ctx.selectDiscard()[i]))
-        }
-        return discardSummary
-    }
-
-    // grammar: name IS 'selecting' card NEWLINE ;
-    visitSelectDiscard(ctx) {
-        return this.visit(ctx.card())
-      }
-
-    // grammar: 'Chose' 'Add' INT WORD NEWLINE newBalanceDetail;
-    visitChoseIncreasePool(ctx) {
-        return this.visit(ctx.newBalanceDetail());
     }
 
     // grammar: activatingSummary activatingDetail?;
@@ -685,7 +879,7 @@ class Visitor extends StarRealmsVisitor{
         }
     }
 
-    // grammar: drawAndScrapFromHand | scrapAndDraw | scrap | noScrap | freeAcquireToTop | destroyAndScrap | noCopy | copyCard | copyBase | discardAndDraw;
+    // grammar: drawAndScrapFromHand | scrapAndDraw | scrap | noScrap | freeAcquireToTop | destroyAndScrap | noCopy | noCopyBases | copyCard | copyBase | discardAndDraw;
     visitActivatingDetail(ctx) {
         if(ctx.drawAndScrapFromHand()){
             return {
@@ -791,8 +985,8 @@ class Visitor extends StarRealmsVisitor{
             discardedCards: [],
             drawCount: 0
         }
-        for(let i = 0; i < ctx.selectDiscard().length; i++){
-            discardAndDraw['discardedCards'].push(this.visit(ctx.selectDiscard()[i]))
+        for(let i = 0; i < ctx.discarding().length; i++){
+            discardAndDraw['discardedCards'].push(this.visit(ctx.discarding()[i]))
         }
         discardAndDraw['drawCount'] = this.visit(ctx.drawCardsWithShuffle())
         return discardAndDraw
@@ -816,6 +1010,11 @@ class Visitor extends StarRealmsVisitor{
 	visitDestroyBase(ctx) {
         return this.visit(ctx.card())
       }
+    
+    // grammar: DISCARDED card NEWLINE;
+    visitDiscarding(ctx){
+        return this.visit(ctx.card())
+    }
 
     // grammar: (drawCards+ shuffleCards drawCards+) | (shuffleCards? drawCards+);
     visitDrawCardsWithShuffle(ctx){
@@ -833,19 +1032,12 @@ class Visitor extends StarRealmsVisitor{
     }
 
     //grammar: name SEPARATOR card? effect balance NEWLINE;
-    // collect any new Trade/Combat/authority change. "Discard effect is ommited because
-    // it doesn't impact the current player"
     visitNewBalanceDetail(ctx){
-        //How to indentify when a card is played?
         return this.visit(ctx.effect())
     }
 
-    // grammar: : (INCREMENT | DECREASE | INT) (WORD | DISCARD) ;
+    // grammar: : (INCREMENT | DECREASE | INT) (wordPlus) ;
     visitEffect(ctx){
-        // don't return anything if it's a discard effect
-        if(ctx.DISCARD()){
-            return {}
-        }
         let val
         if(ctx.INCREMENT()){
             val = Number(ctx.INCREMENT().getText().replace('+',''))
@@ -854,17 +1046,41 @@ class Visitor extends StarRealmsVisitor{
         }else{
             val = 0
         }
-        return {category: ctx.WORD().getText(), value: val}
+        return {category: ctx.wordPlus().getText(), value: val}
     }
 
-    // grammar: WORD+
+    // grammar: name SEPARATOR card? (INCREMENT | INT) (wordPlus) balance NEWLINE;
+    visitPositiveBalance(ctx) {
+        let val
+        if(ctx.INCREMENT()){
+            val = Number(ctx.INCREMENT().getText().replace('+',''))
+        }else{
+            val = 0
+        }
+        return {category: ctx.wordPlus().getText(), value: val}
+    }
+
+    // grammar: name SEPARATOR card? (DECREASE) (wordPlus) balance NEWLINE;
+    visitNegativeBalance(ctx) {
+        let val
+        if(ctx.DECREASE()){
+            val = 0 - Number(ctx.DECREASE().getText().replace('-',''))
+        }
+        return {category: ctx.wordPlus().getText(), value: val}
+    }
+
+    // grammar: (wordPlus)+ ;
     visitName(ctx){
         return ctx.getText()
     }
 
-    //grammar ((WORD '\'s'?) | INT)+ ;
+    //grammar: ((wordPlus '\'s'?) | INT)+ 
     visitCard(ctx){
         return ctx.getText().toLowerCase()
+    }
+
+    visitWordPlus(ctx){
+        return ctx.getText()
     }
 
 }

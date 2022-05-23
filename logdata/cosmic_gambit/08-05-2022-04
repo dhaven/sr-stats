@@ -1,0 +1,609 @@
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Scrapping Political Maneuver
+        Scrapped <color=#800080>Political Maneuver</color>
+        Hard AI  >  <color=#800080>Political Maneuver</color> +2 Trade (Trade:4)
+Acquired <color=#1589FF>Central Station</color>
+        Hard AI - -4 Trade (Trade:0)
+Attacked Player for 1 (New Authority:49)
+        Hard AI - -1 Combat (Combat:0)
+        Player - -1 Authority (Authority:49)
+Hard AI ends turn 1
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 2
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Acquired <color=#FF0000>Mining Mech</color>
+        Player - -4 Trade (Trade:0)
+Attacked Hard AI for 1 (New Authority:49)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:49)
+Player ends turn 2
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 3
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#FF0000>Enforcer Mech</color>
+        Hard AI - -5 Trade (Trade:0)
+Hard AI ends turn 3
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now Player's turn 4
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Acquired <color=#FFFF00>Lancer</color>
+        Player - -2 Trade (Trade:2)
+Acquired <color=#800080>Explorer</color>
+        Player - -2 Trade (Trade:0)
+Attacked Hard AI for 1 (New Authority:48)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:48)
+Player ends turn 4
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 5
+Played <color=#1589FF>Central Station</color>
+        Hard AI  >  <color=#1589FF>Central Station</color> +2 Trade (Trade:2)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#4CC417>Nesting Ground</color>
+        Hard AI - -4 Trade (Trade:0)
+Attacked Player for 2 (New Authority:47)
+        Hard AI - -2 Combat (Combat:0)
+        Player - -2 Authority (Authority:47)
+Hard AI ends turn 5
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 6
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#FFFF00>Lancer</color> +4 Combat (Combat:5)
+        Player  >  <color=#FFFF00>Lancer</color> +2 Combat (Combat:7)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:8)
+Attacked Central Station
+        Player - -5 Combat (Combat:3)
+        Destroyed <color=#1589FF>Central Station</color>
+Attacked Hard AI for 3 (New Authority:45)
+        Player - -3 Combat (Combat:0)
+        Hard AI - -3 Authority (Authority:45)
+Acquired <color=#4CC417>Spike Cluster</color>
+        Player - -2 Trade (Trade:0)
+Player ends turn 6
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 7
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#FF0000>Destroyer Bot</color>
+        Hard AI - -3 Trade (Trade:2)
+Acquired <color=#800080>Explorer</color>
+        Hard AI - -2 Trade (Trade:0)
+Hard AI ends turn 7
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now Player's turn 8
+Played <color=#FF0000>Mining Mech</color>
+Player is scrapping: Viper
+        Player  >  <color=#FF0000>Mining Mech</color> +3 Trade (Trade:3)
+        Scrapped <color=#800080>Viper</color>
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Player  >  <color=#800080>Explorer</color> +2 Trade (Trade:6)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:7)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:8)
+Acquired <color=#4CC417>Moonwurm</color>
+        Player - -7 Trade (Trade:1)
+Acquired <color=#1589FF>Solar Skiff</color>
+        Player - -1 Trade (Trade:0)
+Player ends turn 8
+        Drew 3 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 9
+Played <color=#1589FF>Central Station</color>
+        Hard AI  >  <color=#1589FF>Central Station</color> +2 Trade (Trade:2)
+Played <color=#FF0000>Enforcer Mech</color>
+Hard AI is scrapping: Scout
+        Hard AI  >  <color=#FF0000>Enforcer Mech</color> +5 Combat (Combat:5)
+        Scrapped <color=#800080>Scout</color>
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Chose Create Federation Secret Outpost
+        Changed Secret Outpost to Federation
+        Replaced Hidden Base
+Acquired <color=#FFFF00>Captured Outpost</color>
+        Hard AI - -3 Trade (Trade:1)
+Attacked Player for 5 (New Authority:42)
+        Hard AI - -5 Combat (Combat:0)
+        Player - -5 Authority (Authority:42)
+Hard AI ends turn 9
+        Drew 5 cards.
+        Changed Secret Outpost to Unaligned
+        Refresh ally indicators
+        It is now Player's turn 10
+Played <color=#FF0000>Mining Mech</color>
+        Player  >  <color=#FF0000>Mining Mech</color> +3 Trade (Trade:3)
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+        Player  >  <color=#4CC417>Moonwurm</color> +8 Combat (Combat:8)
+        Drew 1 cards.
+Played <color=#800080>Explorer</color>
+        Player  >  <color=#800080>Explorer</color> +2 Trade (Trade:8)
+Acquired <color=#1589FF>Peacekeeper</color>
+        Player - -6 Trade (Trade:2)
+Acquired <color=#1589FF>Trade Hauler</color>
+        Player - -2 Trade (Trade:0)
+Attacked Secret Outpost
+        Player - -4 Combat (Combat:4)
+        Destroyed <color=#800080>Secret Outpost</color>
+        Scrapped <color=#800080>Secret Outpost</color>
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        Player  >  <color=#800080>Explorer</color> +2 Combat (Combat:6)
+Attacked Central Station
+        Player - -5 Combat (Combat:1)
+        Destroyed <color=#1589FF>Central Station</color>
+Attacked Hard AI for 1 (New Authority:44)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:44)
+Player ends turn 10
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 11
+Played <color=#FF0000>Destroyer Bot</color>
+Hard AI is scrapping: Scout
+        Hard AI  >  <color=#FF0000>Destroyer Bot</color> ability available
+        Hard AI  >  <color=#FF0000>Destroyer Bot</color> +5 Combat (Combat:5)
+        Scrapped <color=#800080>Scout</color>
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#4CC417>Crusher</color>
+        Hard AI - -3 Trade (Trade:1)
+Acquired <color=#FFFF00>Star Barge</color>
+        Hard AI - -1 Trade (Trade:0)
+Attacked Player for 5 (New Authority:37)
+        Hard AI - -5 Combat (Combat:0)
+        Player - -5 Authority (Authority:37)
+Hard AI ends turn 11
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 12
+Play all
+        Player  >  <color=#FFFF00>Lancer</color> +4 Combat (Combat:4)
+        Player  >  <color=#4CC417>Spike Cluster</color> +2 Combat (Combat:6)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:7)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Attacked Hard AI for 7 (New Authority:37)
+        Player - -7 Combat (Combat:0)
+        Hard AI - -7 Authority (Authority:37)
+Acquired <color=#800080>Explorer</color>
+        Player - -2 Trade (Trade:0)
+Player ends turn 12
+        Drew 4 cards.
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 13
+Played <color=#4CC417>Nesting Ground</color>
+        Hard AI  >  <color=#4CC417>Nesting Ground</color> +2 Trade (Trade:2)
+Play all
+        Hard AI  >  <color=#800080>Explorer</color> +2 Trade (Trade:4)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:2)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        Hard AI  >  <color=#800080>Explorer</color> +2 Combat (Combat:4)
+Acquired <color=#800080>Explorer</color>
+        Hard AI - -2 Trade (Trade:3)
+Acquired <color=#800080>Explorer</color>
+        Hard AI - -2 Trade (Trade:1)
+Attacked Spike Cluster
+        Hard AI - -3 Combat (Combat:1)
+        Destroyed <color=#4CC417>Spike Cluster</color>
+Attacked Player for 1 (New Authority:36)
+        Hard AI - -1 Combat (Combat:0)
+        Player - -1 Authority (Authority:36)
+Hard AI ends turn 13
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 14
+Played <color=#FF0000>Mining Mech</color>
+Player is scrapping: Scout
+        Player  >  <color=#FF0000>Mining Mech</color> +3 Trade (Trade:3)
+        Scrapped <color=#800080>Scout</color>
+Play all
+        Player  >  <color=#1589FF>Solar Skiff</color> +2 Trade (Trade:5)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:7)
+Acquired <color=#FFFF00>Imperial Palace</color>
+        Player - -7 Trade (Trade:0)
+Player ends turn 14
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 15
+        Hard AI  >  <color=#4CC417>Nesting Ground</color> +2 Trade (Trade:2)
+Played <color=#FF0000>Destroyer Bot</color>
+Hard AI is not scrapping any cards
+        Hard AI  >  <color=#FF0000>Destroyer Bot</color> ability available
+        Hard AI  >  <color=#FF0000>Destroyer Bot</color> +5 Combat (Combat:5)
+Play all
+        Hard AI  >  <color=#FFFF00>Star Barge</color> +2 Trade (Trade:4)
+        Hard AI  >  <color=#800080>Explorer</color> +2 Trade (Trade:6)
+        Hard AI  >  <color=#800080>Explorer</color> +2 Trade (Trade:8)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:9)
+Acquired <color=#FF0000>The Incinerator</color>
+        Hard AI - -8 Trade (Trade:1)
+Attacked Player for 5 (New Authority:31)
+        Hard AI - -5 Combat (Combat:0)
+        Player - -5 Authority (Authority:31)
+Hard AI ends turn 15
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 16
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#1589FF>Trade Hauler</color> +3 Trade (Trade:4)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Scrapping Asteroid Mining
+        Player  >  <color=#800080>Asteroid Mining</color> +1 Trade (Trade:7)
+        Replaced Asteroid Mining
+Scrapping Asteroid Mining 2
+        Scrapped <color=#800080>Asteroid Mining 2</color>
+        Drew 1 cards.
+Played <color=#800080>Scout</color>
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:8)
+Scrapping Smuggling Run
+Acquired <color=#1589FF>Patrol Cutter</color>
+        Scrapped <color=#800080>Smuggling Run</color>
+Acquired <color=#4CC417>Infested Moon</color>
+        Player - -6 Trade (Trade:2)
+Acquired <color=#FFFF00>Cargo Craft</color>
+        Player - -2 Trade (Trade:0)
+Attacked Hard AI for 1 (New Authority:36)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:36)
+Player ends turn 16
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 17
+        Hard AI  >  <color=#4CC417>Nesting Ground</color> +2 Trade (Trade:2)
+Played <color=#FF0000>Enforcer Mech</color>
+Hard AI is scrapping: Scout
+        Hard AI  >  <color=#FF0000>Enforcer Mech</color> +5 Combat (Combat:5)
+        Scrapped <color=#800080>Scout</color>
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:6)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#4CC417>Bioformer</color>
+        Hard AI - -4 Trade (Trade:1)
+Attacked Player for 6 (New Authority:25)
+        Hard AI - -6 Combat (Combat:0)
+        Player - -6 Authority (Authority:25)
+Hard AI ends turn 17
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 18
+Played <color=#4CC417>Moonwurm</color>
+        Player  >  <color=#4CC417>Moonwurm</color> +8 Combat (Combat:8)
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+Played <color=#FFFF00>Imperial Palace</color>
+        Drew 1 cards.
+        Hard AI  <  <color=#FFFF00>Imperial Palace</color> +1 Discard (Discarding: 1)
+Played <color=#FFFF00>Lancer</color>
+        Player  >  <color=#FFFF00>Lancer</color> +4 Combat (Combat:12)
+        Player  >  <color=#FFFF00>Lancer</color> +2 Combat (Combat:14)
+        Hard AI  <  <color=#FFFF00>Lancer</color> +1 Discard (Discarding: 2)
+        Player  >  <color=#FFFF00>Imperial Palace</color> +4 Combat (Combat:18)
+Played <color=#1589FF>Peacekeeper</color>
+        Player  >  <color=#1589FF>Peacekeeper</color> +6 Combat (Combat:24)
+        Player  >  <color=#1589FF>Peacekeeper</color> +6 Authority (Authority:31)
+Play all
+        Player  >  <color=#800080>Explorer</color> +2 Trade (Trade:2)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        Player  >  <color=#800080>Explorer</color> +2 Combat (Combat:26)
+Attacked Nesting Ground
+        Player - -5 Combat (Combat:21)
+        Destroyed <color=#4CC417>Nesting Ground</color>
+Attacked Hard AI for 21 (New Authority:15)
+        Player - -21 Combat (Combat:0)
+        Hard AI - -21 Authority (Authority:15)
+Acquired <color=#FFFF00>Command Center</color>
+        Player - -4 Trade (Trade:0)
+Player ends turn 18
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 19
+Resolving Discard 2 cards
+Hard AI is discarding Viper
+Hard AI is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Viper</color>
+        Discarded <color=#800080>Scout</color>
+Played <color=#1589FF>Central Station</color>
+        Hard AI  >  <color=#1589FF>Central Station</color> +2 Trade (Trade:2)
+Played <color=#FFFF00>Captured Outpost</color>
+        Hard AI  >  <color=#FFFF00>Captured Outpost</color> ability available
+Activating Captured Outpost
+        Drew 1 cards.
+Resolving Discard 1 cards
+Hard AI is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Play all
+        Hard AI  >  <color=#4CC417>Crusher</color> +6 Combat (Combat:6)
+Scrapping Hidden Base 2
+        Scrapped <color=#800080>Hidden Base 2</color>
+        Hard AI  >  <color=#800080>Hidden Base 2</color> +4 Authority (Authority:19)
+Acquired <color=#4CC417>Spike Cluster</color>
+        Hard AI - -2 Trade (Trade:0)
+Attacked Imperial Palace
+        Hard AI - -6 Combat (Combat:0)
+        Destroyed <color=#FFFF00>Imperial Palace</color>
+Hard AI ends turn 19
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 20
+Played <color=#FF0000>Mining Mech</color>
+Player is scrapping: Scout
+        Player  >  <color=#FF0000>Mining Mech</color> +3 Trade (Trade:3)
+        Scrapped <color=#800080>Scout</color>
+Played <color=#1589FF>Trade Hauler</color>
+        Player  >  <color=#1589FF>Trade Hauler</color> +3 Trade (Trade:6)
+Played <color=#1589FF>Solar Skiff</color>
+        Player  >  <color=#1589FF>Solar Skiff</color> +2 Trade (Trade:8)
+        Player  >  <color=#1589FF>Trade Hauler</color> +3 Authority (Authority:34)
+        Drew 1 cards.
+Played <color=#1589FF>Patrol Cutter</color>
+        Player  >  <color=#1589FF>Patrol Cutter</color> +2 Trade (Trade:10)
+        Player  >  <color=#1589FF>Patrol Cutter</color> +3 Combat (Combat:3)
+        Player  >  <color=#1589FF>Patrol Cutter</color> +4 Authority (Authority:38)
+Play all
+        Player  >  <color=#FFFF00>Cargo Craft</color> +2 Trade (Trade:12)
+        Hard AI  <  <color=#FFFF00>Cargo Craft</color> +1 Discard (Discarding: 1)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:4)
+Attacked Captured Outpost
+        Player - -3 Combat (Combat:1)
+        Destroyed <color=#FFFF00>Captured Outpost</color>
+Attacked Hard AI for 1 (New Authority:18)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:18)
+Acquired <color=#FF0000>Neural Nexus</color>
+        Player - -7 Trade (Trade:5)
+Acquired <color=#1589FF>Outland Station</color>
+        Player - -3 Trade (Trade:2)
+Acquired <color=#4CC417>Predator</color>
+        Player - -2 Trade (Trade:0)
+Player ends turn 20
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 21
+Resolving Discard 1 cards
+Hard AI is discarding Viper
+        no more cards to discard
+        Discarded <color=#800080>Viper</color>
+        Hard AI  >  <color=#1589FF>Central Station</color> +2 Trade (Trade:2)
+Played <color=#4CC417>Bioformer</color>
+        Hard AI  >  <color=#4CC417>Bioformer</color> +3 Combat (Combat:3)
+Play all
+        Hard AI  >  <color=#800080>Explorer</color> +2 Trade (Trade:4)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        Hard AI  >  <color=#800080>Explorer</color> +2 Combat (Combat:5)
+Acquired <color=#FFFF00>Supply Depot</color>
+        Hard AI - -6 Trade (Trade:0)
+Attacked Player for 5 (New Authority:33)
+        Hard AI - -5 Combat (Combat:0)
+        Player - -5 Authority (Authority:33)
+Hard AI ends turn 21
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 22
+Played <color=#4CC417>Infested Moon</color>
+        Player  >  <color=#4CC417>Infested Moon</color> +4 Combat (Combat:4)
+Played <color=#4CC417>Spike Cluster</color>
+        Player  >  <color=#4CC417>Spike Cluster</color> +2 Combat (Combat:6)
+        Drew 1 cards.
+        Player  >  <color=#4CC417>Spike Cluster</color> +1 Trade (Trade:1)
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#FFFF00>Falcon</color>
+        Player - -3 Trade (Trade:2)
+Attacked Central Station
+        Player - -5 Combat (Combat:1)
+        Destroyed <color=#1589FF>Central Station</color>
+Attacked Hard AI for 1 (New Authority:17)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:17)
+Player ends turn 22
+        Drew 1 cards.
+        Shuffled discard pile to form new deck
+        Drew 4 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 23
+        Hard AI  >  <color=#4CC417>Bioformer</color> +3 Combat (Combat:3)
+Played <color=#FF0000>The Incinerator</color>
+        Hard AI  >  <color=#FF0000>The Incinerator</color> ability available
+Played <color=#4CC417>Spike Cluster</color>
+        Hard AI  >  <color=#4CC417>Spike Cluster</color> +2 Combat (Combat:5)
+        Hard AI  >  <color=#4CC417>Spike Cluster</color> +1 Trade (Trade:1)
+Activating The Incinerator
+Hard AI is scrapping: Viper
+Hard AI is scrapping: Scout
+        Scrapped <color=#800080>Viper</color>
+        Scrapped <color=#800080>Scout</color>
+Play all
+        Hard AI  >  <color=#4CC417>Crusher</color> +6 Combat (Combat:11)
+        Hard AI  >  <color=#4CC417>Crusher</color> +2 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Explorer</color> +2 Trade (Trade:5)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        Hard AI  >  <color=#800080>Explorer</color> +2 Combat (Combat:13)
+Acquired <color=#FFFF00>Command Center</color>
+        Hard AI - -4 Trade (Trade:2)
+Acquired <color=#800080>Explorer</color>
+        Hard AI - -2 Trade (Trade:0)
+Attacked Infested Moon
+        Hard AI - -5 Combat (Combat:8)
+        Destroyed <color=#4CC417>Infested Moon</color>
+Attacked Spike Cluster
+        Hard AI - -3 Combat (Combat:5)
+        Destroyed <color=#4CC417>Spike Cluster</color>
+Attacked Player for 5 (New Authority:28)
+        Hard AI - -5 Combat (Combat:0)
+        Player - -5 Authority (Authority:28)
+Hard AI ends turn 23
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 24
+Played <color=#FFFF00>Imperial Palace</color>
+        Drew 1 cards.
+        Hard AI  <  <color=#FFFF00>Imperial Palace</color> +1 Discard (Discarding: 1)
+Played <color=#1589FF>Patrol Cutter</color>
+        Player  >  <color=#1589FF>Patrol Cutter</color> +2 Trade (Trade:2)
+        Player  >  <color=#1589FF>Patrol Cutter</color> +3 Combat (Combat:3)
+Played <color=#FFFF00>Command Center</color>
+        Player  >  <color=#FFFF00>Command Center</color> +2 Trade (Trade:4)
+        Player  >  <color=#FFFF00>Imperial Palace</color> +4 Combat (Combat:7)
+Played <color=#1589FF>Peacekeeper</color>
+        Player  >  <color=#1589FF>Peacekeeper</color> +6 Combat (Combat:13)
+        Player  >  <color=#1589FF>Peacekeeper</color> +6 Authority (Authority:34)
+        Player  >  <color=#1589FF>Patrol Cutter</color> +4 Authority (Authority:38)
+        Drew 1 cards.
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:7)
+Attacked The Incinerator
+        Player - -6 Combat (Combat:7)
+        Destroyed <color=#FF0000>The Incinerator</color>
+Attacked Bioformer
+        Player - -4 Combat (Combat:3)
+        Destroyed <color=#4CC417>Bioformer</color>
+Attacked Spike Cluster
+        Player - -3 Combat (Combat:0)
+        Destroyed <color=#4CC417>Spike Cluster</color>
+Acquired <color=#FFFF00>Siege Fortress</color>
+        Player - -7 Trade (Trade:0)
+Player ends turn 24
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 25
+Resolving Discard 1 cards
+Hard AI is discarding Viper
+        no more cards to discard
+        Discarded <color=#800080>Viper</color>
+Played <color=#FF0000>Enforcer Mech</color>
+Hard AI is scrapping: Viper
+        Hard AI  >  <color=#FF0000>Enforcer Mech</color> +5 Combat (Combat:5)
+        Scrapped <color=#800080>Viper</color>
+Played <color=#FF0000>Destroyer Bot</color>
+Hard AI is scrapping: Scout
+        Hard AI  >  <color=#FF0000>Destroyer Bot</color> ability available
+        Hard AI  >  <color=#FF0000>Destroyer Bot</color> +5 Combat (Combat:10)
+        Scrapped <color=#800080>Scout</color>
+Activating Enforcer Mech
+        Destroyed <color=#FFFF00>Imperial Palace</color>
+Play all
+        Hard AI  >  <color=#FFFF00>Star Barge</color> +2 Trade (Trade:2)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#FF0000>Convoy Bot</color>
+        Hard AI - -3 Trade (Trade:0)
+Attacked Command Center
+        Hard AI - -4 Combat (Combat:6)
+        Destroyed <color=#FFFF00>Command Center</color>
+Attacked Player for 6 (New Authority:32)
+        Hard AI - -6 Combat (Combat:0)
+        Player - -6 Authority (Authority:32)
+Hard AI ends turn 25
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now Player's turn 26
+Played <color=#4CC417>Moonwurm</color>
+        Player  >  <color=#4CC417>Moonwurm</color> +8 Combat (Combat:8)
+        Drew 1 cards.
+Played <color=#FF0000>Neural Nexus</color>
+Played <color=#FFFF00>Falcon</color>
+        Player  >  <color=#FFFF00>Falcon</color> +2 Combat (Combat:10)
+        Drew 1 cards.
+Played <color=#1589FF>Solar Skiff</color>
+        Player  >  <color=#1589FF>Solar Skiff</color> +2 Trade (Trade:2)
+Played <color=#1589FF>Trade Hauler</color>
+        Player  >  <color=#1589FF>Trade Hauler</color> +3 Trade (Trade:5)
+        Drew 1 cards.
+        Player  >  <color=#1589FF>Trade Hauler</color> +3 Authority (Authority:35)
+Played <color=#FFFF00>Lancer</color>
+        Player  >  <color=#FFFF00>Lancer</color> +4 Combat (Combat:14)
+        Hard AI  <  <color=#FFFF00>Lancer</color> +1 Discard (Discarding: 1)
+Activating Neural Nexus
+Player is scrapping Imperial Palace
+        Scrapped <color=#FFFF00>Imperial Palace</color>
+        Player  >  <color=#FF0000>Neural Nexus</color> +7 Combat (Combat:21)
+Play all
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:22)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+Attacked Hard AI for 22 (New Authority:-5)
+        Player - -22 Combat (Combat:0)
+        Hard AI - -22 Authority (Authority:-5)
+        === Player has won the game. ===

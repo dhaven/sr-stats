@@ -1,0 +1,373 @@
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Acquired <color=#1589FF>Frontier Runner</color>
+        Player - -1 Trade (Trade:1)
+Acquired <color=#4CC417>Swarmer</color>
+        Player - -1 Trade (Trade:0)
+Attacked Hard AI for 1 (New Authority:49)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:49)
+Player ends turn 1
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 2
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#FF0000>Stealth Tower</color>
+        Hard AI - -5 Trade (Trade:0)
+Hard AI ends turn 2
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 3
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#1589FF>Solar Skiff</color>
+        Player - -1 Trade (Trade:4)
+Acquired <color=#FF0000>Builder Bot</color>
+        Player - -1 Trade (Trade:3)
+Acquired <color=#1589FF>Trade Hauler</color>
+        Player - -2 Trade (Trade:1)
+Player ends turn 3
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 4
+Play all
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#FFFF00>Orbital Platform</color>
+        Hard AI - -3 Trade (Trade:0)
+Attacked Player for 2 (New Authority:48)
+        Hard AI - -2 Combat (Combat:0)
+        Player - -2 Authority (Authority:48)
+Hard AI ends turn 4
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 5
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:2)
+Acquired <color=#4CC417>Crusher</color>
+        Player - -3 Trade (Trade:0)
+Attacked Hard AI for 2 (New Authority:47)
+        Player - -2 Combat (Combat:0)
+        Hard AI - -2 Authority (Authority:47)
+Player ends turn 5
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 6
+Played <color=#FF0000>Stealth Tower</color>
+        Hard AI  >  <color=#FF0000>Stealth Tower</color> ability available
+Activating Stealth Tower
+Hard AI did not copy any bases.
+Play all
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#FFFF00>Light Cruiser</color>
+        Hard AI - -3 Trade (Trade:0)
+Attacked Player for 1 (New Authority:47)
+        Hard AI - -1 Combat (Combat:0)
+        Player - -1 Authority (Authority:47)
+Hard AI ends turn 6
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 7
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Played <color=#FF0000>Builder Bot</color>
+Player is scrapping: Viper
+        Player  >  <color=#FF0000>Builder Bot</color> +1 Trade (Trade:5)
+        Scrapped <color=#800080>Viper</color>
+Acquired <color=#4CC417>Stinger</color>
+        Player - -1 Trade (Trade:4)
+Acquired <color=#1589FF>Long Hauler</color>
+        Player - -4 Trade (Trade:0)
+Player ends turn 7
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 8
+Activating Stealth Tower
+Hard AI did not copy any bases.
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FF0000>Mining Mech</color>
+        Hard AI - -4 Trade (Trade:0)
+Attacked Player for 1 (New Authority:46)
+        Hard AI - -1 Combat (Combat:0)
+        Player - -1 Authority (Authority:46)
+Hard AI ends turn 8
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now Player's turn 9
+Play all
+        Player  >  <color=#1589FF>Frontier Runner</color> +2 Trade (Trade:2)
+        Player  >  <color=#1589FF>Frontier Runner</color> +2 Authority (Authority:48)
+        Player  >  <color=#1589FF>Trade Hauler</color> +3 Authority (Authority:51)
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+        Player  >  <color=#1589FF>Trade Hauler</color> +3 Trade (Trade:5)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+        Player  >  <color=#1589FF>Solar Skiff</color> +2 Trade (Trade:8)
+Played <color=#4CC417>Stinger</color>
+        Player  >  <color=#4CC417>Stinger</color> +3 Combat (Combat:3)
+Played <color=#4CC417>Swarmer</color>
+        Player  >  <color=#4CC417>Swarmer</color> +3 Combat (Combat:6)
+        Player  >  <color=#4CC417>Stinger</color> +3 Combat (Combat:9)
+        Player  >  <color=#4CC417>Swarmer</color> +2 Combat (Combat:11)
+        Revealed Diversify
+Resolving Add 4 Trade or Add 5 Combat or Add 6 Authority
+        Player  >  <color=#800080>Diversify</color> +4 Trade (Trade:12)
+Attacked Stealth Tower
+        Player - -5 Combat (Combat:6)
+        Destroyed <color=#FF0000>Stealth Tower</color>
+Attacked Hard AI for 6 (New Authority:41)
+        Player - -6 Combat (Combat:0)
+        Hard AI - -6 Authority (Authority:41)
+Acquired <color=#1589FF>Factory World</color>
+        Player - -8 Trade (Trade:4)
+Acquired <color=#1589FF>Mobile Market</color>
+        Player - -4 Trade (Trade:0)
+Player ends turn 9
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 10
+Played <color=#FFFF00>Orbital Platform</color>
+Activating Orbital Platform
+Hard AI is selecting Viper
+        Discarded <color=#800080>Viper</color>
+        Drew 1 cards.
+Played <color=#FF0000>Mining Mech</color>
+Hard AI is scrapping: Viper
+        Hard AI  >  <color=#FF0000>Mining Mech</color> +3 Trade (Trade:3)
+        Scrapped <color=#800080>Viper</color>
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+Acquired <color=#4CC417>Blob Alpha</color>
+        Hard AI - -6 Trade (Trade:0)
+Hard AI ends turn 10
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 11
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Acquired <color=#1589FF>Patrol Boat</color>
+        Player - -3 Trade (Trade:1)
+Acquired <color=#4CC417>Swarmer</color>
+        Player - -1 Trade (Trade:0)
+Attacked Hard AI for 1 (New Authority:40)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:40)
+Player ends turn 11
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 12
+Activating Orbital Platform
+Hard AI is selecting Viper
+        Discarded <color=#800080>Viper</color>
+        Drew 1 cards.
+Play all
+        Hard AI  >  <color=#FFFF00>Light Cruiser</color> +4 Combat (Combat:4)
+        Player  <  <color=#FFFF00>Light Cruiser</color> +1 Discard (Discarding: 1)
+        Hard AI  >  <color=#FFFF00>Light Cruiser</color> +2 Combat (Combat:6)
+        Hard AI  >  <color=#FFFF00>Orbital Platform</color> +3 Combat (Combat:9)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FFFF00>Orbital Platform</color>
+        Hard AI - -3 Trade (Trade:1)
+Attacked Player for 9 (New Authority:42)
+        Hard AI - -9 Combat (Combat:0)
+        Player - -9 Authority (Authority:42)
+Hard AI ends turn 12
+        Drew 1 cards.
+        Shuffled discard pile to form new deck
+        Drew 4 cards.
+        Refresh ally indicators
+        It is now Player's turn 13
+Resolving Discard 1 cards
+Player is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Play all
+        Player  >  <color=#1589FF>Long Hauler</color> +3 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Player  >  <color=#4CC417>Crusher</color> +6 Combat (Combat:6)
+Played <color=#FF0000>Builder Bot</color>
+Player is scrapping: Viper
+        Player  >  <color=#FF0000>Builder Bot</color> +1 Trade (Trade:5)
+        Scrapped <color=#800080>Viper</color>
+        Revealed Unite
+        Player - +5 Authority (Authority:47)
+        Drew 1 cards.
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+Attacked Orbital Platform
+        Player - -4 Combat (Combat:2)
+        Destroyed <color=#FFFF00>Orbital Platform</color>
+Acquired <color=#FFFF00>Heavy Cruiser</color>
+        Player - -5 Trade (Trade:1)
+Scrapping Builder Bot
+        Scrapped <color=#FF0000>Builder Bot</color>
+        Player  >  <color=#FF0000>Builder Bot</color> +2 Combat (Combat:4)
+Attacked Hard AI for 4 (New Authority:36)
+        Player - -4 Combat (Combat:0)
+        Hard AI - -4 Authority (Authority:36)
+Player ends turn 13
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 14
+Played <color=#FF0000>Stealth Tower</color>
+        Hard AI  >  <color=#FF0000>Stealth Tower</color> ability available
+Activating Stealth Tower
+Hard AI did not copy any bases.
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FF0000>The Oracle</color>
+        Hard AI - -4 Trade (Trade:0)
+Hard AI ends turn 14
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 15
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#1589FF>Trade Hauler</color> +3 Trade (Trade:5)
+        Player  >  <color=#FFFF00>Heavy Cruiser</color> +4 Combat (Combat:4)
+        Drew 1 cards.
+        Player  >  <color=#4CC417>Crusher</color> +6 Combat (Combat:10)
+Played <color=#4CC417>Swarmer</color>
+        Player  >  <color=#4CC417>Swarmer</color> +3 Combat (Combat:13)
+        Player  >  <color=#4CC417>Crusher</color> +2 Trade (Trade:7)
+        Player  >  <color=#4CC417>Swarmer</color> +2 Combat (Combat:15)
+Attacked Stealth Tower
+        Player - -5 Combat (Combat:10)
+        Destroyed <color=#FF0000>Stealth Tower</color>
+Attacked Hard AI for 10 (New Authority:26)
+        Player - -10 Combat (Combat:0)
+        Hard AI - -10 Authority (Authority:26)
+Acquired <color=#FFFF00>Siege Fortress</color>
+        Player - -7 Trade (Trade:0)
+Player ends turn 15
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 16
+Played <color=#FF0000>Mining Mech</color>
+Hard AI is scrapping: Scout
+        Hard AI  >  <color=#FF0000>Mining Mech</color> +3 Trade (Trade:3)
+        Scrapped <color=#800080>Scout</color>
+Play all
+        Hard AI  >  <color=#4CC417>Blob Alpha</color> +10 Combat (Combat:10)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+Acquired <color=#1589FF>Federation Cruiser</color>
+        Hard AI - -5 Trade (Trade:1)
+Acquired <color=#FF0000>Battle Bot</color>
+        Hard AI - -1 Trade (Trade:0)
+Attacked Player for 10 (New Authority:37)
+        Hard AI - -10 Combat (Combat:0)
+        Player - -10 Authority (Authority:37)
+Hard AI ends turn 16
+        Drew 4 cards.
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+        Refresh ally indicators
+        It is now Player's turn 17
+Play all
+        Player  >  <color=#1589FF>Solar Skiff</color> +2 Trade (Trade:2)
+        Drew 1 cards.
+        Player  >  <color=#1589FF>Long Hauler</color> +2 Trade (Trade:4)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        Player  >  <color=#1589FF>Long Hauler</color> +3 Trade (Trade:8)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:9)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:10)
+Played <color=#4CC417>Swarmer</color>
+        Player  >  <color=#4CC417>Swarmer</color> +3 Combat (Combat:3)
+Acquired <color=#4CC417>Leviathan</color>
+        Player - -8 Trade (Trade:2)
+Attacked Hard AI for 3 (New Authority:23)
+        Player - -3 Combat (Combat:0)
+        Hard AI - -3 Authority (Authority:23)
+Player ends turn 17
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 18
+Played <color=#FFFF00>Orbital Platform</color>
+Activating Orbital Platform
+Hard AI is selecting Viper
+        Discarded <color=#800080>Viper</color>
+        Drew 1 cards.
+Played <color=#FF0000>Battle Bot</color>
+        Hard AI  >  <color=#FF0000>Battle Bot</color> +2 Combat (Combat:2)
+        Scrapped <color=#800080>Scout</color>
+Play all
+        Hard AI  >  <color=#FFFF00>Light Cruiser</color> +4 Combat (Combat:6)
+        Player  <  <color=#FFFF00>Light Cruiser</color> +1 Discard (Discarding: 1)
+        Hard AI  >  <color=#FFFF00>Light Cruiser</color> +2 Combat (Combat:8)
+        Hard AI  >  <color=#FFFF00>Orbital Platform</color> +3 Combat (Combat:11)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+Acquired <color=#1589FF>Solar Skiff</color>
+        Hard AI - -1 Trade (Trade:0)
+Attacked Player for 11 (New Authority:26)
+        Hard AI - -11 Combat (Combat:0)
+        Player - -11 Authority (Authority:26)
+Hard AI ends turn 18
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 19
+Resolving Discard 1 cards
+Player is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#1589FF>Factory World</color> +3 Trade (Trade:4)
+        Player  >  <color=#1589FF>Frontier Runner</color> +2 Trade (Trade:6)
+        Player  >  <color=#1589FF>Frontier Runner</color> +2 Authority (Authority:28)
+        Player  >  <color=#4CC417>Stinger</color> +3 Combat (Combat:3)
+        Revealed Monopolize
+        === Player has won the game. ===
+        Player  >  <color=#800080>Monopolize</color> +10 Authority (Authority:38)
