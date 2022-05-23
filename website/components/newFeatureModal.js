@@ -64,6 +64,14 @@ export default function NewFeatureModal({isOpen, setIsOpen}) {
                                 </Dialog.Title>
                                 <div className="mt-2">
                                     <p className="text-sm text-gray-500">
+                                        - Added support for Heroes, Missions and Gambits!
+                                    </p>
+                                </div>
+                                <div className="mt-2">
+                                <p className="text-sm font-medium text-gray-900">
+                                        version 0.4.0
+                                    </p>
+                                    <p className="text-sm text-gray-500">
                                         - Share your games with friends using the unique game URL!
                                     </p>
                                     <p className="text-sm text-gray-500">
