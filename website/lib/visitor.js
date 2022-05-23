@@ -10,7 +10,8 @@ import { fleets_fortresses } from './card_data/fleets_fortresses.js';
 import { frontiers_promos } from './card_data/frontiers_promos.js';
 import { assault } from './card_data/assault.js';
 import { command } from './card_data/command.js';
-import { stellar_allies } from './card_data/stellar_allies.js'
+import { stellar_allies } from './card_data/stellar_allies.js';
+import { united_heroes } from './card_data/united_heroes.js';
 
 const { S3Client, GetObjectCommand } = require("@aws-sdk/client-s3");
 
@@ -24,7 +25,8 @@ var card_list = Object.assign(
     frontiers_promos['cards'],
     assault['cards'],
     command['cards'],
-    stellar_allies['cards']
+    stellar_allies['cards'],
+    united_heroes['cards']
 )
 
 class Visitor extends StarRealmsVisitor{

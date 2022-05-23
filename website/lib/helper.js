@@ -43,7 +43,7 @@ export function getDeckSummary(deck){
         total_count += final_card_count
         if(deck[card]['type'] == "ship"){
             total_ship_count += final_card_count
-        }else{
+        }else if((deck[card]['type'] == "base")){
             total_base_count += final_card_count
         }
         for(let i = 0; i < deck[card]['faction'].length; i++){
