@@ -36,6 +36,48 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
+	// Visit a parse tree produced by StarRealmsParser#purchaseHero.
+	visitPurchaseHero(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#purchaseHeroDetail.
+	visitPurchaseHeroDetail(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#acquireHeroToTable.
+	visitAcquireHeroToTable(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#playHero.
+	visitPlayHero(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#tradeRowScrap.
+	visitTradeRowScrap(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#resolveFreeAcquire.
+	visitResolveFreeAcquire(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#resolveSelfScrap.
+	visitResolveSelfScrap(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
 	// Visit a parse tree produced by StarRealmsParser#purchase.
 	visitPurchase(ctx) {
 	  return this.visitChildren(ctx);
@@ -134,6 +176,54 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 
 	// Visit a parse tree produced by StarRealmsParser#freeAcquire.
 	visitFreeAcquire(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#completeMission.
+	visitCompleteMission(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#completeMissionSummary.
+	visitCompleteMissionSummary(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#completeMissionsDetail.
+	visitCompleteMissionsDetail(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#selectMissionsReward.
+	visitSelectMissionsReward(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#resolveAllyReward.
+	visitResolveAllyReward(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#resolveRuleReward.
+	visitResolveRuleReward(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#resolveDefendReward.
+	visitResolveDefendReward(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#resolveConvertReward.
+	visitResolveConvertReward(ctx) {
 	  return this.visitChildren(ctx);
 	}
 
@@ -284,6 +374,12 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 
 	// Visit a parse tree produced by StarRealmsParser#choseDiscardAndIncreasePool.
 	visitChoseDiscardAndIncreasePool(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#choseBlobDraw.
+	visitChoseBlobDraw(ctx) {
 	  return this.visitChildren(ctx);
 	}
 

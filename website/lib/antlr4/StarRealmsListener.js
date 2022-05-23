@@ -50,6 +50,69 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#purchaseHero.
+	enterPurchaseHero(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#purchaseHero.
+	exitPurchaseHero(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#purchaseHeroDetail.
+	enterPurchaseHeroDetail(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#purchaseHeroDetail.
+	exitPurchaseHeroDetail(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#acquireHeroToTable.
+	enterAcquireHeroToTable(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#acquireHeroToTable.
+	exitAcquireHeroToTable(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#playHero.
+	enterPlayHero(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#playHero.
+	exitPlayHero(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#tradeRowScrap.
+	enterTradeRowScrap(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#tradeRowScrap.
+	exitTradeRowScrap(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#resolveFreeAcquire.
+	enterResolveFreeAcquire(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#resolveFreeAcquire.
+	exitResolveFreeAcquire(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#resolveSelfScrap.
+	enterResolveSelfScrap(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#resolveSelfScrap.
+	exitResolveSelfScrap(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#purchase.
 	enterPurchase(ctx) {
 	}
@@ -200,6 +263,78 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 
 	// Exit a parse tree produced by StarRealmsParser#freeAcquire.
 	exitFreeAcquire(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#completeMission.
+	enterCompleteMission(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#completeMission.
+	exitCompleteMission(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#completeMissionSummary.
+	enterCompleteMissionSummary(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#completeMissionSummary.
+	exitCompleteMissionSummary(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#completeMissionsDetail.
+	enterCompleteMissionsDetail(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#completeMissionsDetail.
+	exitCompleteMissionsDetail(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#selectMissionsReward.
+	enterSelectMissionsReward(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#selectMissionsReward.
+	exitSelectMissionsReward(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#resolveAllyReward.
+	enterResolveAllyReward(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#resolveAllyReward.
+	exitResolveAllyReward(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#resolveRuleReward.
+	enterResolveRuleReward(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#resolveRuleReward.
+	exitResolveRuleReward(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#resolveDefendReward.
+	enterResolveDefendReward(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#resolveDefendReward.
+	exitResolveDefendReward(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#resolveConvertReward.
+	enterResolveConvertReward(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#resolveConvertReward.
+	exitResolveConvertReward(ctx) {
 	}
 
 
@@ -425,6 +560,15 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 
 	// Exit a parse tree produced by StarRealmsParser#choseDiscardAndIncreasePool.
 	exitChoseDiscardAndIncreasePool(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#choseBlobDraw.
+	enterChoseBlobDraw(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#choseBlobDraw.
+	exitChoseBlobDraw(ctx) {
 	}
 
 

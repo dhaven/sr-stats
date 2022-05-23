@@ -29,6 +29,7 @@ export default function InputLog(){
 
                 if(data['status'] == 'success'){
                   router.push(`/game/${data['id']}`)
+                  setIsLoading(false)
                 }else{
                   setErrorMessage("Unable to parse data")
                   setIsLoading(false)
