@@ -83,7 +83,6 @@ export default function GameChart({firstPlayer, winner, rounds}) {
             },
         },
     }
-    console.log(chartType)
     return(
         <div className="w-screen p-1 m-1 sm:w-4/5 md:w-3/4 lg:w-2/3">
             <Tab.Group defaultIndex={0}>

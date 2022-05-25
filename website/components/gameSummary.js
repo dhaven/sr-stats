@@ -1,8 +1,9 @@
 import styles from './gameSummary.module.css'
-import { getDeckSummary, getFinalAuthority  } from '../lib/helper.js'
+import { getDeckSummary, getFinalAuthority, getCompletedMissions } from '../lib/helper.js'
 
 export default function GameSummary({winner, decksData, lastRound}) {
     let finalAuthority = getFinalAuthority(lastRound)
+    let completedMissions = getCompletedMissions(lastRound)
     let classNames = {}
     let loser = ""
     for(let key in decksData){
@@ -39,6 +40,7 @@ export default function GameSummary({winner, decksData, lastRound}) {
         <div className={styles.container}>
             <div className={styles.line}>
                 <p className="p-2 text-xl text-scifi5 font-bold">{winner} won 🥇</p>
+                <p className="p-2 text-scifi5">{completedMissions[winner]} completed mission(s)</p>
                 <div className="relative p-2 w-24 h-20">
                     <svg className="absolute inset-x-0 drop-shadow-md" fill="#0f8942" stroke="#0f8942" viewBox="0 0 166.88282 104.205" xmlns="http://www.w3.org/2000/svg">
                         <g transform="translate(-148.13691,-117.23627)">
@@ -72,6 +74,7 @@ export default function GameSummary({winner, decksData, lastRound}) {
             </div>
             <div className={styles.invert}>
                 <p className="text-xl p-2 text-scifi5 font-bold">{loser}</p>
+                <p className="p-2 text-scifi5">{completedMissions[loser]} completed mission(s)</p>
                 <div className="relative p-2 w-24 h-20">
                     <svg className="absolute inset-x-0 drop-shadow-md" fill="#0f8942" stroke="#0f8942" viewBox="0 0 166.88282 104.205" xmlns="http://www.w3.org/2000/svg">
                         <g transform="translate(-148.13691,-117.23627)">

@@ -21,7 +21,6 @@ export default function Layout({ children }) {
   let [isNewFeatureOpen, setIsNewFeatureOpen] = useState(true)
   const {pathname} = useRouter()
   const router = useRouter()
-  console.log(pathname)
   return (
     <div>
       <Head>
