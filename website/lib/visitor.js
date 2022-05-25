@@ -12,6 +12,7 @@ import { assault } from './card_data/assault.js';
 import { command } from './card_data/command.js';
 import { stellar_allies } from './card_data/stellar_allies.js';
 import { united_heroes } from './card_data/united_heroes.js';
+import { crisis_heroes } from './card_data/crisis_heroes.js';
 
 const { S3Client, GetObjectCommand } = require("@aws-sdk/client-s3");
 
@@ -26,7 +27,8 @@ var card_list = Object.assign(
     assault['cards'],
     command['cards'],
     stellar_allies['cards'],
-    united_heroes['cards']
+    united_heroes['cards'],
+    crisis_heroes['cards']
 )
 
 class Visitor extends StarRealmsVisitor{
