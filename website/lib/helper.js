@@ -23,6 +23,15 @@ export function getFinalAuthority(lastRound){
     return finalAuthority
 }
 
+export function getCompletedMissions(lastRound){
+    let completedMisions = {}
+    for(let i = 0; i < lastRound['players'].length; i++){
+        let player = lastRound['players'][i]
+        completedMisions[player['name']] = player['completedMissions'].length
+    }
+    return completedMisions
+}
+
 //returns the summary of a deck
 // -> number of cards of each faction after scrap
 // -> total number of cards after scrap
@@ -43,7 +52,7 @@ export function getDeckSummary(deck){
         total_count += final_card_count
         if(deck[card]['type'] == "ship"){
             total_ship_count += final_card_count
-        }else{
+        }else if((deck[card]['type'] == "base")){
             total_base_count += final_card_count
         }
         for(let i = 0; i < deck[card]['faction'].length; i++){
