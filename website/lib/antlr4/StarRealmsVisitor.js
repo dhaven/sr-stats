@@ -228,6 +228,72 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
+	// Visit a parse tree produced by StarRealmsParser#triggeredEvent.
+	visitTriggeredEvent(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#triggeredEventSummary.
+	visitTriggeredEventSummary(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#triggeredEventDetail.
+	visitTriggeredEventDetail(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#resolveEvent.
+	visitResolveEvent(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#resolveEventSummary.
+	visitResolveEventSummary(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#resolveSimple.
+	visitResolveSimple(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#resolveBombardment.
+	visitResolveBombardment(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#resolveCard.
+	visitResolveCard(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#resolveComet.
+	visitResolveComet(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#resolveEventDetail.
+	visitResolveEventDetail(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#discardFromEvent.
+	visitDiscardFromEvent(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
 	// Visit a parse tree produced by StarRealmsParser#attackPlayer.
 	visitAttackPlayer(ctx) {
 	  return this.visitChildren(ctx);
@@ -332,6 +398,12 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 
 	// Visit a parse tree produced by StarRealmsParser#discardEnd.
 	visitDiscardEnd(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#eventRefuseDiscard.
+	visitEventRefuseDiscard(ctx) {
 	  return this.visitChildren(ctx);
 	}
 

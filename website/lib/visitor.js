@@ -696,6 +696,114 @@ class Visitor extends StarRealmsVisitor{
         return this.visit(ctx.card());
     }
 
+    // grammar: triggeredEventSummary triggeredEventDetail* ;
+    visitTriggeredEvent(ctx) {
+        let eventSummary = {
+            drawCount: 0,
+            scrappedCards: [],
+            balance: {
+                tradePool: 0,
+                combatPool: 0,
+                usedTrade: 0,
+                usedCombat: 0,
+                selfAuthority: 0, // authority change of current player
+                otherAuthority: 0 // authority change of other player
+            }
+        }
+        eventSummary['event'] = this.visit(ctx.triggeredEventSummary())
+        for(let i = 0; i < ctx.triggeredEventDetail().length; i++){
+            if(ctx.triggeredEventDetail()[i].positiveBalance()) {
+                let newBalance = this.visit(ctx.triggeredEventDetail()[i])
+                eventSummary['balance'] = this.computeNewBalance(eventSummary['balance'], newBalance)
+            }else if(ctx.triggeredEventDetail()[i].negativeBalance()) {
+                let newBalance = this.visit(ctx.triggeredEventDetail()[i])
+                eventSummary['balance'] = this.computeNewBalance(eventSummary['balance'], newBalance)
+            }else if(ctx.triggeredEventDetail()[i].scrapAction()) {
+                let scrappedCard = this.visit(ctx.triggeredEventDetail()[i])
+                eventSummary['scrappedCards'].push(scrappedCard)
+            }else if(ctx.triggeredEventDetail()[i].drawCardsWithShuffle()) {
+                eventSummary['drawCount'] += this.visit(ctx.triggeredEventDetail()[i])
+            }else if(ctx.triggeredEventDetail()[i].resolveEvent()) {
+                let resolveEvent = this.visit(ctx.triggeredEventDetail()[i])
+                eventSummary['balance']['tradePool'] += resolveEvent['balance']['tradePool']
+                eventSummary['balance']['combatPool'] += resolveEvent['balance']['combatPool']
+                eventSummary['balance']['usedTrade'] += resolveEvent['balance']['usedTrade']
+                eventSummary['balance']['usedCombat'] += resolveEvent['balance']['usedCombat']
+                eventSummary['balance']['selfAuthority'] += resolveEvent['balance']['selfAuthority']
+                eventSummary['balance']['otherAuthority'] += resolveEvent['balance']['otherAuthority']
+                eventSummary['scrappedCards'] = eventSummary['scrappedCards'].concat(resolveEvent['scrappedCards'])
+                eventSummary['discardedCards'] = eventSummary['discardedCards'].concat(resolveEvent['discardedCards'])
+            }
+        }
+        return eventSummary
+    }
+
+    //grammar: REVEALED EVENT card NEWLINE ;
+    visitTriggeredEventSummary(ctx) {
+        return this.visit(ctx.card())
+    }
+  
+  
+    // positiveBalance | negativeBalance | scrapAction | drawCardsWithShuffle | resolveEvent;
+    visitTriggeredEventDetail(ctx) {
+        if(ctx.positiveBalance()){
+            return this.visit(ctx.positiveBalance())
+        }else if(ctx.negativeBalance()){
+            return this.visit(ctx.negativeBalance())
+        }else if(ctx.scrapAction()){
+            return this.visit(ctx.scrapAction())
+        }else if(ctx.drawCardsWithShuffle()){
+            return this.visit(ctx.drawCardsWithShuffle())
+        }else if(ctx.resolveEvent()){
+            return this.visit(ctx.resolveEvent())
+        }
+    }
+
+    // grammar: resolveEventSummary resolveEventDetail*;
+    visitResolveEvent(ctx) {
+        let eventSummary = {
+            scrappedCards: [],
+            discardedCards: [],
+            balance: {
+                tradePool: 0,
+                combatPool: 0,
+                usedTrade: 0,
+                usedCombat: 0,
+                selfAuthority: 0, // authority change of current player
+                otherAuthority: 0 // authority change of other player
+            }
+        }
+        if(ctx.resolveEventSummary().negativeBalance()){
+            let newBalance = this.visit(ctx.resolveEventSummary())
+            eventSummary['balance'] = this.computeNewBalance(eventSummary['balance'], newBalance)
+        }
+        for(let i = 0; i < ctx.resolveEventDetail().length; i++){
+            if(ctx.resolveEventDetail()[i].negativeBalance()){
+                let newBalance = this.visit(ctx.resolveEventDetail()[i])
+                eventSummary['balance'] = this.computeNewBalance(eventSummary['balance'], newBalance)
+            }else if(ctx.resolveEventDetail()[i].discarding()){
+                let discardedCard = this.visit(ctx.resolveEventDetail()[i])
+                eventSummary['discardedCards'].push(discardedCard)
+            }else if(ctx.resolveEventDetail()[i].scrapDetail()){
+                let scrappedCard = this.visit(ctx.resolveEventDetail()[i])
+                eventSummary['scrappedCards'].push(scrappedCard)
+            }
+        }
+        return eventSummary
+    }
+  
+  
+    // grammar: negativeBalance | discardFromEvent | discarding | scrapSummary | scrapDetail;
+	visitResolveEventDetail(ctx) {
+	  if(ctx.negativeBalance()){
+          return this.visit(ctx.negativeBalance())
+      }else if(ctx.discarding()){
+          return this.visit(ctx.discarding())
+      }else if(ctx.scrapDetail()){
+          return this.visit(ctx.scrapDetail())
+      }
+	}
+
     // grammar: attackPlayerSummary negativeBalance+;
     visitAttackPlayer(ctx){
         return this.visit(ctx.attackPlayerSummary())
