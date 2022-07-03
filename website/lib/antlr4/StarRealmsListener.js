@@ -689,6 +689,15 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#midGateEffect.
+	enterMidGateEffect(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#midGateEffect.
+	exitMidGateEffect(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#choseEffectDetail.
 	enterChoseEffectDetail(ctx) {
 	}

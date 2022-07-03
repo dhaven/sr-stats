@@ -1,0 +1,557 @@
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Acquired <color=#4CC417>Blob Fighter</color>
+        Hard AI - -1 Trade (Trade:1)
+Attacked Player for 1 (New Authority:49)
+        Hard AI - -1 Combat (Combat:0)
+        Player - -1 Authority (Authority:49)
+Hard AI ends turn 1
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 2
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FF0000>Stealth Needle</color>
+        Player - -4 Trade (Trade:0)
+Attacked Hard AI for 1 (New Authority:49)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:49)
+Player ends turn 2
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 3
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FFFF00>Survey Ship</color>
+        Hard AI - -3 Trade (Trade:1)
+Attacked Player for 1 (New Authority:48)
+        Hard AI - -1 Combat (Combat:0)
+        Player - -1 Authority (Authority:48)
+Hard AI ends turn 3
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now Player's turn 4
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#800080>Explorer</color>
+        Player - -2 Trade (Trade:2)
+Acquired <color=#800080>Explorer</color>
+        Player - -2 Trade (Trade:0)
+Attacked Hard AI for 1 (New Authority:48)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:48)
+Player ends turn 4
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 5
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FFFF00>Imperial Defender</color>
+        Hard AI - -3 Trade (Trade:1)
+Acquired <color=#FFFF00>Blockade Runner</color>
+        Hard AI - -1 Trade (Trade:0)
+Attacked Player for 1 (New Authority:47)
+        Hard AI - -1 Combat (Combat:0)
+        Player - -1 Authority (Authority:47)
+Hard AI ends turn 5
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 6
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Played <color=#FF0000>Stealth Needle</color>
+Player selecting ship Scout
+        Changed Stealth Needle to Scout
+        Player  >  <color=#FF0000>Stealth Needle</color> +1 Trade (Trade:4)
+Acquired <color=#FF0000>Fortress Oblivion</color>
+        Player - -3 Trade (Trade:1)
+Attacked Hard AI for 1 (New Authority:47)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:47)
+Player ends turn 6
+        Changed Stealth Needle to Unaligned
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 7
+Play all
+        Hard AI  >  <color=#4CC417>Blob Fighter</color> +3 Combat (Combat:3)
+        Drew 1 cards.
+        Hard AI  >  <color=#FFFF00>Survey Ship</color> +1 Trade (Trade:1)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#1589FF>Bounty Hunter</color>
+        Hard AI - -5 Trade (Trade:0)
+Attacked Player for 3 (New Authority:44)
+        Hard AI - -3 Combat (Combat:0)
+        Player - -3 Authority (Authority:44)
+Hard AI ends turn 7
+        Drew 1 cards.
+        Shuffled discard pile to form new deck
+        Drew 4 cards.
+        Refresh ally indicators
+        It is now Player's turn 8
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Player  >  <color=#800080>Explorer</color> +2 Trade (Trade:5)
+Acquired <color=#FF0000>Supply Bot</color>
+        Player - -3 Trade (Trade:2)
+Acquired <color=#800080>Explorer</color>
+        Player - -2 Trade (Trade:0)
+Attacked Hard AI for 1 (New Authority:46)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:46)
+Player ends turn 8
+        Drew 3 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 9
+Played <color=#FFFF00>Blockade Runner</color>
+Hard AI is selecting Viper
+Hard AI is selecting Scout
+        Hard AI  >  <color=#FFFF00>Blockade Runner</color> ability available
+        Discarded <color=#800080>Viper</color>
+        Discarded <color=#800080>Scout</color>
+        Drew 1 cards.
+        Drew 1 cards.
+Play all
+        Hard AI  >  <color=#FFFF00>Imperial Defender</color> +1 Combat (Combat:1)
+        Drew 1 cards.
+        Hard AI  >  <color=#4CC417>Blob Fighter</color> +3 Combat (Combat:4)
+Activating Blockade Runner
+        Scrapped <color=#FFFF00>Blockade Runner</color>
+        Drew 1 cards.
+        Player  <  <color=#FFFF00>Blockade Runner</color> +1 Discard (Discarding: 1)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#4CC417>Blob Wheel</color>
+        Hard AI - -3 Trade (Trade:1)
+Attacked Player for 4 (New Authority:40)
+        Hard AI - -4 Combat (Combat:0)
+        Player - -4 Authority (Authority:40)
+Hard AI ends turn 9
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 10
+Resolving Discard 1 cards
+Player is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Explorer</color> +2 Trade (Trade:4)
+        Player  >  <color=#800080>Explorer</color> +2 Trade (Trade:6)
+Acquired <color=#FFFF00>Midgate Station</color>
+        Player - -5 Trade (Trade:1)
+Player ends turn 10
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 11
+Play all
+        Drew 1 cards.
+        Hard AI  >  <color=#FFFF00>Survey Ship</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#1589FF>Bounty Hunter</color> +7 Combat (Combat:7)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:8)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FF0000>Temple Guardian</color>
+        Hard AI - -3 Trade (Trade:1)
+Attacked Player for 8 (New Authority:32)
+        Hard AI - -8 Combat (Combat:0)
+        Player - -8 Authority (Authority:32)
+Hard AI ends turn 11
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 12
+Played <color=#FF0000>Fortress Oblivion</color>
+        Player  >  <color=#FF0000>Fortress Oblivion</color> ability available
+Activating Fortress Oblivion
+Player is scrapping: Scout
+        Scrapped <color=#800080>Scout</color>
+Play all
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Played <color=#FF0000>Stealth Needle</color>
+Player selecting ship Viper
+        Changed Stealth Needle to Viper
+        Player  >  <color=#FF0000>Stealth Needle</color> +1 Combat (Combat:2)
+Acquired <color=#4CC417>Trade Pod</color>
+        Player - -2 Trade (Trade:0)
+Attacked Hard AI for 2 (New Authority:44)
+        Player - -2 Combat (Combat:0)
+        Hard AI - -2 Authority (Authority:44)
+Player ends turn 12
+        Changed Stealth Needle to Unaligned
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 13
+Play all
+        Hard AI  >  <color=#FFFF00>Imperial Defender</color> +1 Combat (Combat:1)
+        Drew 1 cards.
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#FF0000>Missile Bot</color>
+        Hard AI - -2 Trade (Trade:3)
+Acquired <color=#FFFF00>Imperial Frigate</color>
+        Hard AI - -3 Trade (Trade:0)
+Hard AI ends turn 13
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 14
+Played <color=#FF0000>Supply Bot</color>
+Player is scrapping: Viper
+        Player  >  <color=#FF0000>Supply Bot</color> +2 Trade (Trade:2)
+        Scrapped <color=#800080>Viper</color>
+        Player  >  <color=#FF0000>Supply Bot</color> +2 Combat (Combat:2)
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Player  >  <color=#800080>Explorer</color> +2 Trade (Trade:6)
+Acquired <color=#FFFF00>Imperial Fighter</color>
+        Player - -1 Trade (Trade:5)
+Acquired <color=#800080>Explorer</color>
+        Player - -2 Trade (Trade:3)
+Acquired <color=#800080>Explorer</color>
+        Player - -2 Trade (Trade:1)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        Player  >  <color=#800080>Explorer</color> +2 Combat (Combat:5)
+Attacked Hard AI for 5 (New Authority:39)
+        Player - -5 Combat (Combat:0)
+        Hard AI - -5 Authority (Authority:39)
+Player ends turn 14
+        Drew 1 cards.
+        Shuffled discard pile to form new deck
+        Drew 4 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 15
+Play all
+        Drew 1 cards.
+        Hard AI  >  <color=#FFFF00>Survey Ship</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#1589FF>Bounty Hunter</color> +7 Combat (Combat:7)
+        Hard AI  >  <color=#4CC417>Blob Fighter</color> +3 Combat (Combat:10)
+Played <color=#FF0000>Temple Guardian</color>
+        Hard AI  >  <color=#FF0000>Temple Guardian</color> ability available
+        Hard AI  >  <color=#FF0000>Temple Guardian</color> +2 Trade (Trade:3)
+Play all
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:11)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:12)
+Acquired <color=#800080>Explorer</color>
+        Hard AI - -2 Trade (Trade:1)
+Attacked Fortress Oblivion
+        Hard AI - -4 Combat (Combat:8)
+        Destroyed <color=#FF0000>Fortress Oblivion</color>
+Attacked Player for 8 (New Authority:24)
+        Hard AI - -8 Combat (Combat:0)
+        Player - -8 Authority (Authority:24)
+Hard AI ends turn 15
+        Drew 4 cards.
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+        Refresh ally indicators
+        It is now Player's turn 16
+Played <color=#FFFF00>Midgate Station</color>
+Played <color=#4CC417>Trade Pod</color>
+        Player  >  <color=#4CC417>Trade Pod</color> +3 Trade (Trade:3)
+Played <color=#800080>Explorer</color>
+        Player  >  <color=#800080>Explorer</color> +2 Trade (Trade:5)
+Chose Add 1 Trade, Discard any number of cards; receive 1 trade for each
+Player is discarding for trade.
+Player is discarding for trade.
+        Player  >  <color=#FFFF00>Midgate Station</color> +1 Trade (Trade:6)
+        Player  >  <color=#FFFF00>Midgate Station</color> +1 Trade (Trade:7)
+        Discarded <color=#800080>Scout</color>
+        Player  >  <color=#FFFF00>Midgate Station</color> +1 Trade (Trade:8)
+        Discarded <color=#800080>Scout</color>
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        Player  >  <color=#800080>Explorer</color> +2 Combat (Combat:2)
+Acquired <color=#1589FF>Megahauler</color>
+        Player - -7 Trade (Trade:1)
+Attacked Hard AI for 2 (New Authority:37)
+        Player - -2 Combat (Combat:0)
+        Hard AI - -2 Authority (Authority:37)
+Player ends turn 16
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 17
+Played <color=#4CC417>Blob Wheel</color>
+        Hard AI  >  <color=#4CC417>Blob Wheel</color> +1 Combat (Combat:1)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Scrapping Blob Wheel
+        Scrapped <color=#4CC417>Blob Wheel</color>
+        Hard AI  >  <color=#4CC417>Blob Wheel</color> +3 Trade (Trade:7)
+Acquired <color=#FFFF00>Dreadnaught</color>
+        Hard AI - -7 Trade (Trade:0)
+Hard AI ends turn 17
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 18
+Played <color=#800080>Explorer</color>
+        Player  >  <color=#800080>Explorer</color> +2 Trade (Trade:2)
+Chose Add 1 Trade, Discard any number of cards; receive 1 trade for each
+Player is discarding for trade.
+Player is discarding for trade.
+Player is discarding for trade.
+Player is discarding for trade.
+        Player  >  <color=#FFFF00>Midgate Station</color> +1 Trade (Trade:3)
+        Player  >  <color=#FFFF00>Midgate Station</color> +1 Trade (Trade:4)
+        Discarded <color=#800080>Viper</color>
+        Player  >  <color=#FFFF00>Midgate Station</color> +1 Trade (Trade:5)
+        Discarded <color=#800080>Scout</color>
+        Player  >  <color=#FFFF00>Midgate Station</color> +1 Trade (Trade:6)
+        Discarded <color=#800080>Scout</color>
+        Player  >  <color=#FFFF00>Midgate Station</color> +1 Trade (Trade:7)
+        Discarded <color=#800080>Scout</color>
+Acquired <color=#4CC417>Spawning Wurm</color>
+        Player - -7 Trade (Trade:0)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        Player  >  <color=#800080>Explorer</color> +2 Combat (Combat:2)
+Attacked Hard AI for 2 (New Authority:35)
+        Player - -2 Combat (Combat:0)
+        Hard AI - -2 Authority (Authority:35)
+Player ends turn 18
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 19
+Played <color=#FF0000>Missile Bot</color>
+Hard AI is scrapping: Scout
+        Hard AI  >  <color=#FF0000>Missile Bot</color> +2 Combat (Combat:2)
+        Scrapped <color=#800080>Scout</color>
+Play all
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#FFFF00>Blockade Runner</color>
+        Hard AI - -1 Trade (Trade:2)
+Acquired <color=#1589FF>Cargo Rocket</color>
+        Hard AI - -1 Trade (Trade:1)
+Hard AI ends turn 19
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 20
+Played <color=#FF0000>Supply Bot</color>
+Player is scrapping: Viper
+        Player  >  <color=#FF0000>Supply Bot</color> +2 Trade (Trade:2)
+        Scrapped <color=#800080>Viper</color>
+Played <color=#FF0000>Stealth Needle</color>
+Player selecting ship Supply Bot
+        Changed Stealth Needle to Supply Bot
+        Player  >  <color=#FF0000>Stealth Needle</color> +2 Trade (Trade:4)
+        Player  >  <color=#FF0000>Supply Bot</color> +2 Combat (Combat:2)
+        Player  >  <color=#FF0000>Stealth Needle</color> +2 Combat (Combat:4)
+Chose Add 1 Trade, Discard any number of cards; receive 1 trade for each
+Player is discarding for trade.
+        Player  >  <color=#FFFF00>Midgate Station</color> +1 Trade (Trade:5)
+        Player  >  <color=#FFFF00>Midgate Station</color> +1 Trade (Trade:6)
+        Discarded <color=#800080>Scout</color>
+Play all
+        Player  >  <color=#800080>Explorer</color> +2 Trade (Trade:8)
+        Player  >  <color=#800080>Explorer</color> +2 Trade (Trade:10)
+Acquired <color=#FF0000>Brain World</color>
+        Player - -8 Trade (Trade:2)
+Acquired <color=#800080>Explorer</color>
+        Player - -2 Trade (Trade:0)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        Player  >  <color=#800080>Explorer</color> +2 Combat (Combat:6)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        Player  >  <color=#800080>Explorer</color> +2 Combat (Combat:8)
+Attacked Hard AI for 8 (New Authority:27)
+        Player - -8 Combat (Combat:0)
+        Hard AI - -8 Authority (Authority:27)
+Player ends turn 20
+        Changed Stealth Needle to Unaligned
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 21
+Played <color=#FF0000>Temple Guardian</color>
+        Hard AI  >  <color=#FF0000>Temple Guardian</color> ability available
+        Hard AI  >  <color=#FF0000>Temple Guardian</color> +4 Combat (Combat:4)
+Play all
+        Drew 1 cards.
+        Hard AI  >  <color=#FFFF00>Survey Ship</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#FFFF00>Imperial Defender</color> +1 Combat (Combat:5)
+        Drew 1 cards.
+        Hard AI  >  <color=#1589FF>Bounty Hunter</color> +7 Combat (Combat:12)
+Play all
+        Hard AI  >  <color=#800080>Explorer</color> +2 Trade (Trade:3)
+Play all
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:13)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        Hard AI  >  <color=#800080>Explorer</color> +2 Combat (Combat:15)
+Acquired <color=#FFFF00>Recycling Station</color>
+        Hard AI - -4 Trade (Trade:0)
+Attacked Midgate Station
+        Hard AI - -5 Combat (Combat:10)
+        Destroyed <color=#FFFF00>Midgate Station</color>
+Attacked Player for 10 (New Authority:14)
+        Hard AI - -10 Combat (Combat:0)
+        Player - -10 Authority (Authority:14)
+Hard AI ends turn 21
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now Player's turn 22
+Played <color=#FF0000>Fortress Oblivion</color>
+        Player  >  <color=#FF0000>Fortress Oblivion</color> ability available
+Activating Fortress Oblivion
+Player is scrapping: Scout
+        Scrapped <color=#800080>Scout</color>
+Played <color=#1589FF>Megahauler</color>
+Acquired <color=#800080>Merc Battlecruiser</color>
+        Acquired <color=#800080>Merc Battlecruiser</color> to the top of the deck.
+        Player  >  <color=#1589FF>Megahauler</color> +5 Authority (Authority:19)
+Play all
+        Player  >  <color=#FFFF00>Imperial Fighter</color> +2 Combat (Combat:2)
+        Hard AI  <  <color=#FFFF00>Imperial Fighter</color> +1 Discard (Discarding: 1)
+        Player  >  <color=#4CC417>Trade Pod</color> +3 Trade (Trade:3)
+Acquired <color=#1589FF>Freight Raft</color>
+        Player - -3 Trade (Trade:0)
+Attacked Hard AI for 2 (New Authority:25)
+        Player - -2 Combat (Combat:0)
+        Hard AI - -2 Authority (Authority:25)
+Player ends turn 22
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 23
+Resolving Discard 1 cards
+Hard AI is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Played <color=#FF0000>Temple Guardian</color>
+        Hard AI  >  <color=#FF0000>Temple Guardian</color> ability available
+        Hard AI  >  <color=#FF0000>Temple Guardian</color> +4 Combat (Combat:4)
+Played <color=#FFFF00>Blockade Runner</color>
+        Hard AI  >  <color=#FFFF00>Blockade Runner</color> ability available
+Play all
+        Hard AI  >  <color=#4CC417>Blob Fighter</color> +3 Combat (Combat:7)
+        Hard AI  >  <color=#FFFF00>Imperial Frigate</color> +2 Combat (Combat:9)
+        Hard AI  >  <color=#FFFF00>Imperial Frigate</color> +4 Combat (Combat:13)
+        Player  <  <color=#FFFF00>Imperial Frigate</color> +1 Discard (Discarding: 1)
+Activating Blockade Runner
+        Scrapped <color=#FFFF00>Blockade Runner</color>
+        Drew 1 cards.
+        Player  <  <color=#FFFF00>Blockade Runner</color> +1 Discard (Discarding: 2)
+Play all
+        Hard AI  >  <color=#1589FF>Cargo Rocket</color> +3 Authority (Authority:28)
+        Hard AI  >  <color=#1589FF>Cargo Rocket</color> +2 Combat (Combat:15)
+        Hard AI  >  <color=#1589FF>Cargo Rocket</color> +1 Trade (Trade:1)
+Scrapping Imperial Frigate
+        Scrapped <color=#FFFF00>Imperial Frigate</color>
+        Drew 1 cards.
+Played <color=#FFFF00>Recycling Station</color>
+        Hard AI  >  <color=#FFFF00>Recycling Station</color> ability available
+Chose Add 1 Trade
+        Hard AI  >  <color=#FFFF00>Recycling Station</color> +1 Trade (Trade:2)
+Attacked Fortress Oblivion
+        Hard AI - -4 Combat (Combat:11)
+        Destroyed <color=#FF0000>Fortress Oblivion</color>
+Attacked Player for 11 (New Authority:8)
+        Hard AI - -11 Combat (Combat:0)
+        Player - -11 Authority (Authority:8)
+Acquired <color=#FFFF00>Imperial Smuggler</color>
+        Hard AI - -2 Trade (Trade:0)
+Hard AI ends turn 23
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 24
+Resolving Discard 2 cards
+Player is discarding Scout
+Player is discarding Supply Bot
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+        Discarded <color=#FF0000>Supply Bot</color>
+Played <color=#FF0000>Brain World</color>
+        Player  >  <color=#FF0000>Brain World</color> ability available
+Activating Brain World
+Player is scrapping Scout
+Player is scrapping Imperial Fighter
+        Scrapped <color=#800080>Scout</color>
+        Scrapped <color=#FFFF00>Imperial Fighter</color>
+        Drew 2 cards.
+Played <color=#4CC417>Spawning Wurm</color>
+        Player  >  <color=#4CC417>Spawning Wurm</color> ability available
+        Player  >  <color=#4CC417>Spawning Wurm</color> +8 Combat (Combat:8)
+        Destroyed <color=#FFFF00>Recycling Station</color>
+Played <color=#FF0000>Stealth Needle</color>
+Player selecting ship Spawning Wurm
+        Player  >  <color=#FF0000>Stealth Needle</color> ability available
+        Changed Stealth Needle to Spawning Wurm
+        Player  >  <color=#FF0000>Stealth Needle</color> +8 Combat (Combat:16)
+Played <color=#800080>Merc Battlecruiser</color>
+        Player  >  <color=#800080>Merc Battlecruiser</color> ability available
+        Player  >  <color=#800080>Merc Battlecruiser</color> +6 Combat (Combat:22)
+        Drew 1 cards.
+        Changed Merc Battlecruiser to Blob
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Attacked Hard AI for 22 (New Authority:6)
+        Player - -22 Combat (Combat:0)
+        Hard AI - -22 Authority (Authority:6)
+Activating Spawning Wurm
+        Scrapped <color=#4CC417>Spawning Wurm</color>
+        Player  >  <color=#4CC417>Spawning Wurm</color> +8 Combat (Combat:8)
+Activating Spawning Wurm
+        Scrapped <color=#FF0000>Stealth Needle</color>
+        Player  >  <color=#FF0000>Stealth Needle</color> +8 Combat (Combat:16)
+Attacked Hard AI for 16 (New Authority:-10)
+        Player - -16 Combat (Combat:0)
+        Hard AI - -16 Authority (Authority:-10)
+        === Player has won the game. ===
