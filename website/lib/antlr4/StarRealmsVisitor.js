@@ -30,8 +30,8 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
-	// Visit a parse tree produced by StarRealmsParser#baseInstantEffect.
-	visitBaseInstantEffect(ctx) {
+	// Visit a parse tree produced by StarRealmsParser#startTurnEffect.
+	visitStartTurnEffect(ctx) {
 	  return this.visitChildren(ctx);
 	}
 

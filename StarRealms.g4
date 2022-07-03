@@ -2,11 +2,11 @@ grammar StarRealms;
 
 battle            : turn+;
 turn              : action+ (endPhase | winStatus | EOF) ;
-action            : baseInstantEffect | triggeredEvent | resolveEvent | purchase | purchaseHero | play | attackPlayer | attackBase | scrapCard | discard | choseEffect | activatingEffect;
+action            : startTurnEffect | triggeredEvent | resolveEvent | purchase | purchaseHero | play | attackPlayer | attackBase | scrapCard | discard | choseEffect | activatingEffect;
 winStatus         : name HAS WON THE GAME NEWLINE? ;
 
-//describes a base instant effect action
-baseInstantEffect : positiveBalance | drawCardsWithShuffle;
+//describes an effect that gets activated at the start of a turn (base or event)
+startTurnEffect   : positiveBalance | drawCardsWithShuffle;
 
 //describe a purchase Hero action
 purchaseHero       : purchaseSummary purchaseHeroDetail playHero*;
@@ -21,7 +21,7 @@ resolveSelfScrap   : RESOLVING SCRAP WORD CARD FROM YOUR HAND OR DISCARD PILE NE
 //describes a purchase action
 purchase        : purchaseSummary purchaseDetail*;
 purchaseSummary : ACQUIRED card  NEWLINE;
-purchaseDetail  : negativeBalance | acquireToHand | acquireToDeck;
+purchaseDetail  : negativeBalance | acquireToHand | acquireToDeck | eventRefuseDiscard;
 acquireToHand   : ACQUIRED card TO HAND NEWLINE;
 acquireToDeck   : ACQUIRED card TO THE TOP OF THE DECK NEWLINE;
 
@@ -133,9 +133,9 @@ resolveHandScrapSummary : RESOLVING SCRAP WORD CARD FROM YOUR HAND NEWLINE;
 discardAndDraw          :  selectDiscard+ discarding+ drawCardsWithShuffle;
 
 //stuff that happens at the end of the turn
-endPhase          : endTurn drawPhaseDetail* ;
+endPhase          : endTurn drawPhaseDetail* newTurn;
 endTurn           : name ENDS TURN INT NEWLINE;
-drawPhaseDetail   : resetCopiedCards | drawCardsWithShuffle | refreshIndicators | newTurn | eventRefuseDiscard;
+drawPhaseDetail   : resetCopiedCards | drawCardsWithShuffle | refreshIndicators | eventRefuseDiscard;
 resetCopiedCards  : CHANGED card TO UNALIGNED NEWLINE;
 refreshIndicators : REFRESH ALLY INDICATORS NEWLINE;
 newTurn           : IT IS NOW name '\'s' TURN INT NEWLINE;
