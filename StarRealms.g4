@@ -2,11 +2,11 @@ grammar StarRealms;
 
 battle            : turn+;
 turn              : action+ (endPhase | winStatus | EOF) ;
-action            : baseInstantEffect | purchase | purchaseHero | play | attackPlayer | attackBase | scrapCard | discard | choseEffect | activatingEffect;
+action            : startTurnEffect | triggeredEvent | resolveEvent | purchase | purchaseHero | play | attackPlayer | attackBase | scrapCard | discard | choseEffect | activatingEffect;
 winStatus         : name HAS WON THE GAME NEWLINE? ;
 
-//describes a base instant effect action
-baseInstantEffect : positiveBalance | drawCardsWithShuffle;
+//describes an effect that gets activated at the start of a turn (base or event)
+startTurnEffect   : positiveBalance | drawCardsWithShuffle;
 
 //describe a purchase Hero action
 purchaseHero       : purchaseSummary purchaseHeroDetail playHero*;
@@ -21,7 +21,7 @@ resolveSelfScrap   : RESOLVING SCRAP WORD CARD FROM YOUR HAND OR DISCARD PILE NE
 //describes a purchase action
 purchase        : purchaseSummary purchaseDetail*;
 purchaseSummary : ACQUIRED card  NEWLINE;
-purchaseDetail  : negativeBalance (acquireToHand | acquireToDeck)?;
+purchaseDetail  : negativeBalance | acquireToHand | acquireToDeck | eventRefuseDiscard;
 acquireToHand   : ACQUIRED card TO HAND NEWLINE;
 acquireToDeck   : ACQUIRED card TO THE TOP OF THE DECK NEWLINE;
 
@@ -49,6 +49,21 @@ resolveRuleReward    : RESOLVING ACQUIRE ANY CARD OF COST INT OR LESS TO HAND NE
 resolveDefendReward  : RESOLVING RETURN TARGET BASE NEWLINE;
 resolveConvertReward : RESOLVING RETURN INT CARD TO THE TOP OF YOUR DECK NEWLINE name IS RETURNING card NEWLINE discard ;
 
+//describean event being triggered
+triggeredEvent        : triggeredEventSummary triggeredEventDetail* ;
+triggeredEventSummary : REVEALED EVENT card NEWLINE ;
+triggeredEventDetail  : positiveBalance | negativeBalance | scrapAction | drawCardsWithShuffle | resolveEvent;
+
+//when the event effects needs to be resolved b the user
+resolveEvent          : resolveEventSummary resolveEventDetail*;
+resolveEventSummary   : resolveSimple | resolveBombardment | resolveComet | resolveCard | negativeBalance;
+resolveSimple         : RESOLVING NEWLINE ;
+resolveBombardment    : RESOLVING card ':' DESTROY WORD BASE OR LOSE INT AUTHORITY NEWLINE;
+resolveCard           : RESOLVING card NEWLINE ;
+resolveComet          : RESOLVING SCRAP UP TO INT CARDS FROM YOUR HAND OR DISCARD PILE NEWLINE ;
+resolveEventDetail    : negativeBalance | discardFromEvent | discarding | scrapSummary | scrapDetail;
+discardFromEvent      : name DISCARDING ':'? card NEWLINE ;
+
 //describes a attackPlayer action
 attackPlayer        : attackPlayerSummary negativeBalance+;
 attackPlayerSummary : ATTACKED name FOR INT newAuthority NEWLINE;
@@ -71,9 +86,10 @@ moveDiscardToDeck : name IS SELECTING card NEWLINE;
 //describes a discard card action
 discard          : discardSummary discardDetail* ;
 discardSummary   : RESOLVING DISCARD INT CARDS NEWLINE ;
-discardDetail    : discardAction | discardEnd | discarding ;
+discardDetail    : discardAction | discardEnd | discarding | eventRefuseDiscard | negativeBalance ;
 discardAction    : name IS DISCARDING card NEWLINE ;
 discardEnd       : NO MORE2 CARDS TO DISCARD NEWLINE ;
+eventRefuseDiscard : name IS NOT DISCARDING ANY CARDS NEWLINE ;
 
 //describe  a log line that starts with 'Chose ...'
 //applies to ships and bases where the user can chose between one or more effects
@@ -117,9 +133,9 @@ resolveHandScrapSummary : RESOLVING SCRAP WORD CARD FROM YOUR HAND NEWLINE;
 discardAndDraw          :  selectDiscard+ discarding+ drawCardsWithShuffle;
 
 //stuff that happens at the end of the turn
-endPhase          : endTurn drawPhaseDetail* ;
+endPhase          : endTurn drawPhaseDetail* newTurn;
 endTurn           : name ENDS TURN INT NEWLINE;
-drawPhaseDetail   : resetCopiedCards | drawCardsWithShuffle | refreshIndicators | newTurn;
+drawPhaseDetail   : resetCopiedCards | drawCardsWithShuffle | refreshIndicators | eventRefuseDiscard;
 resetCopiedCards  : CHANGED card TO UNALIGNED NEWLINE;
 refreshIndicators : REFRESH ALLY INDICATORS NEWLINE;
 newTurn           : IT IS NOW name '\'s' TURN INT NEWLINE;
@@ -150,7 +166,7 @@ card                  : ((wordPlus '\'s'?) | INT)+ ;
 // confessormorris       : CONFESSOR MORRIS;
 // hivelord              : HIVE LORD;
 // screecher             : SCREECHER;
-wordPlus              : WORD|COMBAT|AUTHORITY|TRADE|ACQUIRE|ACQUIRED|DISCOUNTS|CREATE|SECRET|OUTPOST|UNALIGNED|ACTIVATING|ATTACKED|SCRAPPING|SCRAPPED|RETURNING|SCRAP|SELECTING|SHUFFLED|DISCARDED|DISCARD|REFRESH|REVEALED|DISCARDING|DESTROYED|RESOLVING|INDICATORS|AVAILABLE|ABILITY|CHANGED|IMAGE|PLAYED|COPYING|COPIED|REPLACED|RECEIVE|REDRAW|COPY|RETURN|TARGET|DRAW|EVERY|BLOB|CARDS|CHOSE|TURN|SHIP|SHIPS|BASE|TABLE|BASES|PILE|EACH|PLAY|COST|FORM|DECK|DREW|ENDS|CARD|MORE2|FROM|YOUR|ALLY|THIS|HAND|GAME|LESS|ONE|NEW|ALL|NOW|ROW|THE|TOP|FOR|DID|AND|ADD|NOT|HAS|WON|ANY|IS|IT|IN|TO|OF|UP|OR|NO|ON;
+wordPlus              : WORD|COMBAT|AUTHORITY|TRADE|ACQUIRE|ACQUIRED|DISCOUNTS|CREATE|SECRET|OUTPOST|UNALIGNED|ACTIVATING|ATTACKED|SCRAPPING|SCRAPPED|RETURNING|SCRAP|SELECTING|SHUFFLED|DISCARDED|DISCARD|REFRESH|REVEALED|DISCARDING|DESTROYED|RESOLVING|INDICATORS|AVAILABLE|ABILITY|CHANGED|IMAGE|PLAYED|COPYING|COPIED|REPLACED|RECEIVE|REDRAW|COPY|RETURN|EVENT|TARGET|DRAW|EVERY|BLOB|CARDS|CHOSE|TURN|SHIP|SHIPS|BASE|TABLE|BASES|PILE|EACH|PLAY|COST|FORM|DECK|DREW|DESTROY|LOSE|ENDS|CARD|MORE2|FROM|YOUR|ALLY|THIS|HAND|GAME|LESS|ONE|NEW|ALL|NOW|ROW|THE|TOP|FOR|DID|AND|ADD|NOT|HAS|WON|ANY|IS|IT|IN|TO|OF|UP|OR|NO|ON;
 
 fragment A : ('A'|'a');
 fragment B : ('B'|'b');
@@ -241,6 +257,8 @@ COPY                : C O P Y ;
 CARDS               : C A R D S ;
 CHOSE               : C H O S E ;
 TURN                : T U R N ;
+DESTROY             : D E S T R O Y ;
+LOSE                : L O S E ;
 SHIP                : S H I P ;
 SHIPS               : S H I P S ;
 BASE                : B A S E ;
@@ -262,6 +280,7 @@ HAND                : H A N D ;
 GAME                : G A M E ;
 LESS                : L E S S ;
 THIS                : T H I S ;
+EVENT               : E V E N T ;
 NEW                 : N E W ;
 ALL                 : A L L ;
 NOW                 : N O W ;
