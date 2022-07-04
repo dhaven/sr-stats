@@ -15,6 +15,7 @@ import { united_heroes } from './card_data/united_heroes.js';
 import { crisis_heroes } from './card_data/crisis_heroes.js';
 import { promo1 } from './card_data/promo1.js';
 import { promo2 } from './card_data/promo2.js';
+import { tech } from './card_data/tech.js';
 
 const { S3Client, GetObjectCommand } = require("@aws-sdk/client-s3");
 
@@ -32,7 +33,8 @@ var card_list = Object.assign(
     united_heroes['cards'],
     crisis_heroes['cards'],
     promo1['cards'],
-    promo2['cards']
+    promo2['cards'],
+    tech['cards']
 )
 
 class Visitor extends StarRealmsVisitor{
@@ -403,34 +405,15 @@ class Visitor extends StarRealmsVisitor{
                 turnData['authority'] = this.updateAuthorityObj(turnData['authority'], choseEffectActionDetail['balance']['authority'])
             }else if(ctx.action()[i].activatingEffect()){
                 let activatingEffectActionDetail = this.visit(ctx.action()[i])
-                if( 'drawAndScrapFromHand' in activatingEffectActionDetail){
-                    turnData['drawCount'] += activatingEffectActionDetail['drawAndScrapFromHand']['drawCount']
-                    turnData['scrappedCards'].push(activatingEffectActionDetail['drawAndScrapFromHand']['scrappedCard'])
-                }else if('scrapAndDraw' in activatingEffectActionDetail){
-                    turnData['drawCount'] += activatingEffectActionDetail['scrapAndDraw']['drawCount']
-                    turnData['scrappedCards'] = turnData['scrappedCards'].concat(activatingEffectActionDetail['scrapAndDraw']['scrappedCards'])
-                }else if('scrap' in activatingEffectActionDetail){
-                    turnData['scrappedCards'] = turnData['scrappedCards'].concat(activatingEffectActionDetail['scrap'])
-                }else if('freeAcquireToTop' in activatingEffectActionDetail){
-                    turnData['purchasedCards'].push(activatingEffectActionDetail['freeAcquireToTop'])
-                }else if('destroyAndScrap' in activatingEffectActionDetail){
-                    if(activatingEffectActionDetail['destroyAndScrap']['destroyedBase'] != ""){
-                        turnData['destroyedBases'].push(activatingEffectActionDetail['destroyAndScrap']['destroyedBase'])
-                    }
-                    if(activatingEffectActionDetail['destroyAndScrap']['scrappedCard'] != ""){
-                        turnData['scrappedCards'].push(activatingEffectActionDetail['destroyAndScrap']['scrappedCard'])
-                    }
-                }else if('copyBase' in activatingEffectActionDetail){
-                    turnData['tradePool'] += activatingEffectActionDetail['copyBase']['tradePool']
-                    turnData['combatPool'] += activatingEffectActionDetail['copyBase']['combatPool']
-                    turnData['usedTrade'] += activatingEffectActionDetail['copyBase']['usedTrade']
-                    turnData['usedCombat'] += activatingEffectActionDetail['copyBase']['usedCombat']
-                    //console.log(activatingEffectActionDetail['balance']['authority'])
-                    turnData['authority'] = this.updateAuthorityObj(turnData['authority'], activatingEffectActionDetail['balance']['authority'])
-                }else if('discardAndDraw' in activatingEffectActionDetail){
-                    turnData['discardedCards'] = turnData['discardedCards'].concat(activatingEffectActionDetail['discardAndDraw']['discardedCards'])
-                    turnData['drawCount'] += activatingEffectActionDetail['discardAndDraw']['drawCount']
-                }
+                turnData['purchasedCards'] = turnData['purchasedCards'].concat(activatingEffectActionDetail['acquiredCards'])
+                turnData['scrappedCards'] = turnData['scrappedCards'].concat(activatingEffectActionDetail['scrappedCards'])
+                turnData['discardedCards'] = turnData['discardedCards'].concat(activatingEffectActionDetail['discardedCards'])
+                turnData['drawCount'] += activatingEffectActionDetail['drawCount']
+                turnData['tradePool'] += activatingEffectActionDetail['balance']['tradePool']
+                turnData['combatPool'] += activatingEffectActionDetail['balance']['combatPool']
+                turnData['usedTrade'] += activatingEffectActionDetail['balance']['usedTrade']
+                turnData['usedCombat'] += activatingEffectActionDetail['balance']['usedCombat']
+                turnData['authority'] = this.updateAuthorityObj(turnData['authority'], activatingEffectActionDetail['balance']['authority'])
             }
         }
         if(ctx.winStatus()){
@@ -439,7 +422,7 @@ class Visitor extends StarRealmsVisitor{
         //console.log(turnData['authority'])
         return turnData
     }
-
+    
     //grammar: endTurn drawPhaseDetail* ;
     visitEndPhase(ctx){
         return this.visit(ctx.endTurn())
@@ -1059,48 +1042,72 @@ class Visitor extends StarRealmsVisitor{
         }
     }
 
-    // grammar: activatingSummary activatingDetail?;
+    // grammar: activatingSummary activatingDetail*;
     visitActivatingEffect(ctx) {
-        if(ctx.activatingDetail()){
-            return this.visit(ctx.activatingDetail())
-        }else{
-            return {}
+        let activatingEffectSummary = {
+            acquiredCards: [],
+            scrappedCards: [],
+            discardedCards: [],
+            drawCount: 0,
+            balance: {
+                tradePool: 0,
+                combatPool: 0,
+                usedTrade: 0,
+                usedCombat: 0,
+                authority: {}
+            }
         }
+        for(let i = 0; i < ctx.activatingDetail().length; i++){
+            if(ctx.activatingDetail()[i].drawAndScrapFromHand()){
+                let summary = this.visit(ctx.activatingDetail()[i])
+                activatingEffectSummary['scrappedCards'].push(summary['scrappedCard'])
+                activatingEffectSummary['drawCount'] += summary['drawCount']
+            }else if(ctx.activatingDetail()[i].scrapAndDraw()){
+                let summary = this.visit(ctx.activatingDetail()[i])
+                activatingEffectSummary['scrappedCards'] = activatingEffectSummary['scrappedCards'].concat(summary['scrappedCards'])
+                activatingEffectSummary['drawCount'] += summary['drawCount']
+            }else if(ctx.activatingDetail()[i].scrap()){
+                let summary = this.visit(ctx.activatingDetail()[i])
+                activatingEffectSummary['scrappedCards'] = activatingEffectSummary['scrappedCards'].concat(summary)
+            }else if(ctx.activatingDetail()[i].freeAcquireToTop()){
+                let summary = this.visit(ctx.activatingDetail()[i])
+                activatingEffectSummary['acquiredCards'].push(summary)
+            }else if(ctx.activatingDetail()[i].scrapDetail()){
+                let summary = this.visit(ctx.activatingDetail()[i])
+                activatingEffectSummary['scrappedCards'].push(summary)
+            }else if(ctx.activatingDetail()[i].copyBase()){
+                let summary = this.visit(ctx.activatingDetail()[i])
+                activatingEffectSummary['balance'] = this.computeNewBalance(activatingEffectSummary['balance'],summary)
+            }else if(ctx.activatingDetail()[i].discardAndDraw()){
+                let summary = this.visit(ctx.activatingDetail()[i])
+                activatingEffectSummary['discardedCards'] = activatingEffectSummary['discardedCards'].concat(summary['discardedCards'])
+                activatingEffectSummary['drawCount'] += summary['drawCount']
+            }else if(ctx.activatingDetail()[i].negativeBalance()){
+                let summary = this.visit(ctx.activatingDetail()[i])
+                activatingEffectSummary['balance'] = this.computeNewBalance(activatingEffectSummary['balance'],summary)
+            }
+        }
+        return activatingEffectSummary
     }
 
-    // grammar: drawAndScrapFromHand | scrapAndDraw | scrap | noScrap | freeAcquireToTop | destroyAndScrap | noCopy | noCopyBases | copyCard | copyBase | discardAndDraw;
+    // grammar: drawAndScrapFromHand | scrapAndDraw | scrap | noScrap | freeAcquireToTop | destroyBase | scrapDetail | noCopy | noCopyBases | copyCard | copyBase | discardAndDraw | negativeBalance | resolveStealth | copyStealth;
     visitActivatingDetail(ctx) {
         if(ctx.drawAndScrapFromHand()){
-            return {
-                drawAndScrapFromHand: this.visit(ctx.drawAndScrapFromHand())
-            }
+            return this.visit(ctx.drawAndScrapFromHand())
         }else if(ctx.scrapAndDraw()){
-            return {
-                scrapAndDraw: this.visit(ctx.scrapAndDraw())
-            }
+            return this.visit(ctx.scrapAndDraw())
         }else if(ctx.scrap()){
-            return {
-                scrap: this.visit(ctx.scrap())
-            }
+            return this.visit(ctx.scrap())
         }else if(ctx.freeAcquireToTop()){
-            return {
-                freeAcquireToTop: this.visit(ctx.freeAcquireToTop())
-            }
-        }else if(ctx.destroyAndScrap()){
-            return {
-                destroyAndScrap: this.visit(ctx.destroyAndScrap())
-            }
+            return this.visit(ctx.freeAcquireToTop())
+        }else if(ctx.scrapDetail()){
+            return this.visit(ctx.scrapDetail())
         }else if(ctx.copyBase()){
-            return {
-                copyBase: this.visit(ctx.copyBase())
-            }
+            return this.visit(ctx.copyBase())
         }else if(ctx.discardAndDraw()){
-            return {
-                discardAndDraw: this.visit(ctx.discardAndDraw())
-            }
-        }
-        else{
-            return {}
+            return this.visit(ctx.discardAndDraw())
+        }else if(ctx.negativeBalance()){
+            return this.visit(ctx.negativeBalance())
         }
     }
 
@@ -1128,21 +1135,6 @@ class Visitor extends StarRealmsVisitor{
     // grammar: ACQUIRED card NEWLINE purchaseToTop;
     visitFreeAcquireToTop(ctx) {
         return this.visit(ctx.card())
-    }
-
-    // grammar: destroyBase | scrapDetail | destroyBase scrapDetail;
-    visitDestroyAndScrap(ctx) {
-        let destroyAndOrScrapSummary = {
-            destroyedBase: "",
-            scrappedCard: ""
-        }
-        if(ctx.destroyBase()){
-            destroyAndOrScrapSummary['destroyedBase'] = this.visit(ctx.destroyBase())
-        }
-        if(ctx.scrapDetail()){
-            destroyAndOrScrapSummary['scrappedCard'] = this.visit(ctx.scrapDetail())
-        }
-        return destroyAndOrScrapSummary
     }
 
     // grammar: copyBaseSummary copyBaseDetail;
