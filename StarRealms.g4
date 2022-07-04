@@ -110,9 +110,9 @@ changeHiddenBaseToFaction : CHANGED SECRET OUTPOST TO wordPlus+ NEWLINE;
 
 //describes a log line that start with 'Activating ...'
 //applies to bases and ships where the user can chose when the effect is activated
-activatingEffect        : activatingSummary activatingDetail?;
+activatingEffect        : activatingSummary activatingDetail*;
 activatingSummary       : ACTIVATING card NEWLINE;
-activatingDetail        : drawAndScrapFromHand | scrapAndDraw | scrap | noScrap | freeAcquireToTop | destroyAndScrap | noCopy | noCopyBases | copyCard | copyBase | discardAndDraw;
+activatingDetail        : drawAndScrapFromHand | scrapAndDraw | scrap | noScrap | freeAcquireToTop | destroyBase | scrapDetail | noCopy | noCopyBases | copyCard | copyBase | discardAndDraw | negativeBalance | resolveStealth | copyStealth;
 scrapAndDraw            : scrap drawCardsWithShuffle;
 scrap                   : scrapSummary+ scrapDetail+;
 drawAndScrapFromHand    : drawCardsWithShuffle resolveHandScrap;
@@ -126,11 +126,12 @@ noCopyBases             : name DID NOT COPY ANY BASES NEWLINE;
 copyCard                : copyCardSummary copyCardEffect;
 copyCardSummary         : name SELECTING SHIP card NEWLINE;
 copyCardEffect          : CHANGED card TO card NEWLINE;
-destroyAndScrap         : destroyBase | scrapDetail | destroyBase scrapDetail;
 purchaseToTop           : ACQUIRED card TO THE TOP OF THE DECK NEWLINE;
 scrapSummary            : name IS SCRAPPING (':')? card NEWLINE;
 scrapDetail             : SCRAPPED card NEWLINE;
 resolveHandScrapSummary : RESOLVING SCRAP WORD CARD FROM YOUR HAND NEWLINE;
+resolveStealth          : RESOLVING FEDERATION OR STAR EMPIRE OR MACHINE CULT OR BLOB NEWLINE;
+copyStealth             : CHANGED card TO wordPlus+ NEWLINE;
 discardAndDraw          :  selectDiscard+ discarding+ drawCardsWithShuffle;
 
 //stuff that happens at the end of the turn
@@ -167,7 +168,7 @@ card                  : ((wordPlus '\'s'?) | INT)+ ;
 // confessormorris       : CONFESSOR MORRIS;
 // hivelord              : HIVE LORD;
 // screecher             : SCREECHER;
-wordPlus              : WORD|COMBAT|AUTHORITY|TRADE|ACQUIRE|ACQUIRED|DISCOUNTS|CREATE|SECRET|OUTPOST|UNALIGNED|ACTIVATING|ATTACKED|SCRAPPING|SCRAPPED|RETURNING|SCRAP|SELECTING|SHUFFLED|DISCARDED|DISCARD|REFRESH|REVEALED|DISCARDING|DESTROYED|RESOLVING|INDICATORS|AVAILABLE|ABILITY|CHANGED|IMAGE|PLAYED|COPYING|COPIED|REPLACED|RECEIVE|REDRAW|COPY|RETURN|EVENT|TARGET|DRAW|EVERY|NUMBER|BLOB|CARDS|CHOSE|TURN|SHIP|SHIPS|BASE|TABLE|BASES|PILE|EACH|PLAY|COST|FORM|DECK|DREW|DESTROY|LOSE|ENDS|CARD|MORE2|FROM|YOUR|ALLY|THIS|HAND|GAME|LESS|ONE|NEW|ALL|NOW|ROW|THE|TOP|FOR|DID|AND|ADD|NOT|HAS|WON|ANY|IS|IT|IN|TO|OF|UP|OR|NO|ON;
+wordPlus              : WORD|COMBAT|AUTHORITY|TRADE|ACQUIRE|FEDERATION|STAR|EMPIRE|MACHINE|CULT|ACQUIRED|DISCOUNTS|CREATE|SECRET|OUTPOST|UNALIGNED|ACTIVATING|ATTACKED|SCRAPPING|SCRAPPED|RETURNING|SCRAP|SELECTING|SHUFFLED|DISCARDED|DISCARD|REFRESH|REVEALED|DISCARDING|DESTROYED|RESOLVING|INDICATORS|AVAILABLE|ABILITY|CHANGED|IMAGE|PLAYED|COPYING|COPIED|REPLACED|RECEIVE|REDRAW|COPY|RETURN|EVENT|TARGET|DRAW|EVERY|NUMBER|BLOB|CARDS|CHOSE|TURN|SHIP|SHIPS|BASE|TABLE|BASES|PILE|EACH|PLAY|COST|FORM|DECK|DREW|DESTROY|LOSE|ENDS|CARD|MORE2|FROM|YOUR|ALLY|THIS|HAND|GAME|LESS|ONE|NEW|ALL|NOW|ROW|THE|TOP|FOR|DID|AND|ADD|NOT|HAS|WON|ANY|IS|IT|IN|TO|OF|UP|OR|NO|ON;
 
 fragment A : ('A'|'a');
 fragment B : ('B'|'b');
@@ -215,6 +216,11 @@ COMBAT              : C O M B A T ;
 AUTHORITY           : A U T H O R I T Y ;
 TRADE               : T R A D E ;
 
+FEDERATION          : F E D E R A T I O N ;
+STAR                : S T A R ;
+EMPIRE              : E M P I R E ;
+MACHINE             : M A C H I N E ;
+CULT                : C U L T ;
 ACQUIRE             : A C Q U I R E ;
 ACQUIRED            : A C Q U I R E D ;
 UNALIGNED           : U N A L I G N E D ;

@@ -869,15 +869,6 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
-	// Enter a parse tree produced by StarRealmsParser#destroyAndScrap.
-	enterDestroyAndScrap(ctx) {
-	}
-
-	// Exit a parse tree produced by StarRealmsParser#destroyAndScrap.
-	exitDestroyAndScrap(ctx) {
-	}
-
-
 	// Enter a parse tree produced by StarRealmsParser#purchaseToTop.
 	enterPurchaseToTop(ctx) {
 	}
@@ -911,6 +902,24 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 
 	// Exit a parse tree produced by StarRealmsParser#resolveHandScrapSummary.
 	exitResolveHandScrapSummary(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#resolveStealth.
+	enterResolveStealth(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#resolveStealth.
+	exitResolveStealth(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#copyStealth.
+	enterCopyStealth(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#copyStealth.
+	exitCopyStealth(ctx) {
 	}
 
 
