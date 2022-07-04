@@ -79,7 +79,19 @@ class Visitor extends StarRealmsVisitor{
                 }
                 for(let j = 0; j < nextRound['playedCards'].length; j++){
                     let nextCard = nextRound['playedCards'][j]
-                    //console.log(nextCard)
+                    if(!(nextCard in player['deck'])){
+                        player.deck[nextCard] = {
+                            name: card_list[nextCard]['name'],
+                            cost: card_list[nextCard]['cost'],
+                            faction: card_list[nextCard]['faction'],
+                            type: card_list[nextCard]['type'],
+                            count: 1,
+                            scrapCount: 0,
+                            discardCount: 0,
+                            destroyedCount: 0,
+                            playedCount: 0
+                        }
+                    }
                     player['deck'][nextCard]['playedCount'] += 1
                 }
                 newPlayerData.push(player)
@@ -300,10 +312,12 @@ class Visitor extends StarRealmsVisitor{
                 turnData['authority'] = this.updateAuthorityObj(turnData['authority'], triggeredEventDetail['balance']['authority'])
                 turnData['scrappedCards'] = turnData['scrappedCards'].concat(triggeredEventDetail['scrappedCards'])
                 turnData['discardedCards'] = turnData['discardedCards'].concat(triggeredEventDetail['discardedCards'])
+                turnData['purchasedCards'] = turnData['purchasedCards'].concat(triggeredEventDetail['acquiredCards'])
                 turnData['drawCount'] += triggeredEventDetail['drawCount']
             }
             else if(ctx.action()[i].resolveEvent()){
                 let resolveEventDetail = this.visit(ctx.action()[i])
+                turnData['drawCount'] += resolveEventDetail['drawCount']
                 turnData['tradePool'] += resolveEventDetail['balance']['tradePool']
                 turnData['combatPool'] += resolveEventDetail['balance']['combatPool']
                 turnData['usedTrade'] += resolveEventDetail['balance']['usedTrade']
@@ -312,6 +326,7 @@ class Visitor extends StarRealmsVisitor{
                 turnData['authority'] = this.updateAuthorityObj(turnData['authority'], resolveEventDetail['balance']['authority'])
                 turnData['scrappedCards'] = turnData['scrappedCards'].concat(resolveEventDetail['scrappedCards'])
                 turnData['discardedCards'] = turnData['discardedCards'].concat(resolveEventDetail['discardedCards'])
+                turnData['purchasedCards'] = turnData['purchasedCards'].concat(resolveEventDetail['acquiredCards'])
             }
             else if(ctx.action()[i].purchase()){
                 let purchaseActionDetail = this.visit(ctx.action()[i])
@@ -510,7 +525,12 @@ class Visitor extends StarRealmsVisitor{
     // grammar: ACQUIRED card TO HAND NEWLINE;
     visitAcquireToHand(ctx) {
         return this.visit(ctx.card())
-      }
+    }
+    
+    // grammar: ACQUIRED card TO THE TOP OF THE DECK NEWLINE;
+	visitAcquireToDeck(ctx) {
+        return this.visit(ctx.card());
+    }
 
     // grammar: purchaseSummary purchaseHeroDetail playHero*;
     visitPurchaseHero(ctx) {
@@ -739,6 +759,7 @@ class Visitor extends StarRealmsVisitor{
             drawCount: 0,
             scrappedCards: [],
             discardedCards: [],
+            acquiredCards: [],
             balance: {
                 tradePool: 0,
                 combatPool: 0,
@@ -762,14 +783,15 @@ class Visitor extends StarRealmsVisitor{
                 eventSummary['drawCount'] += this.visit(ctx.triggeredEventDetail()[i])
             }else if(ctx.triggeredEventDetail()[i].resolveEvent()) {
                 let resolveEvent = this.visit(ctx.triggeredEventDetail()[i])
+                eventSummary['drawCount'] += resolveEvent['drawCount']
                 eventSummary['balance']['tradePool'] += resolveEvent['balance']['tradePool']
                 eventSummary['balance']['combatPool'] += resolveEvent['balance']['combatPool']
                 eventSummary['balance']['usedTrade'] += resolveEvent['balance']['usedTrade']
                 eventSummary['balance']['usedCombat'] += resolveEvent['balance']['usedCombat']
-                //console.log(resolveEvent['balance']['authority'])
                 eventSummary['balance']['authority'] = this.updateAuthorityObj(eventSummary['balance']['authority'],  resolveEvent['balance']['authority'])
                 eventSummary['scrappedCards'] = eventSummary['scrappedCards'].concat(resolveEvent['scrappedCards'])
                 eventSummary['discardedCards'] = eventSummary['discardedCards'].concat(resolveEvent['discardedCards'])
+                eventSummary['acquiredCards'] = eventSummary['acquiredCards'].concat(resolveEvent['acquiredCards'])
             }
         }
         //console.log(eventSummary)
@@ -802,6 +824,8 @@ class Visitor extends StarRealmsVisitor{
         let eventSummary = {
             scrappedCards: [],
             discardedCards: [],
+            acquiredCards: [],
+            drawCount: 0,
             balance: {
                 tradePool: 0,
                 combatPool: 0,
@@ -819,6 +843,14 @@ class Visitor extends StarRealmsVisitor{
             if(ctx.resolveEventDetail()[i].negativeBalance()){
                 let newBalance = this.visit(ctx.resolveEventDetail()[i])
                 eventSummary['balance'] = this.computeNewBalance(eventSummary['balance'], newBalance)
+            }else if(ctx.resolveEventDetail()[i].positiveBalance()){
+                let newBalance = this.visit(ctx.resolveEventDetail()[i])
+                eventSummary['balance'] = this.computeNewBalance(eventSummary['balance'], newBalance)
+            }else if(ctx.resolveEventDetail()[i].acquireToDeck()){
+                let summary = this.visit(ctx.resolveEventDetail()[i])
+                eventSummary['acquiredCards'].push(summary)
+            }else if(ctx.resolveEventDetail()[i].drawCardsWithShuffle()){
+                eventSummary['drawCount'] += this.visit(ctx.resolveEventDetail()[i])
             }else if(ctx.resolveEventDetail()[i].discarding()){
                 let discardedCard = this.visit(ctx.resolveEventDetail()[i])
                 eventSummary['discardedCards'].push(discardedCard)
@@ -830,17 +862,23 @@ class Visitor extends StarRealmsVisitor{
         return eventSummary
     }
     
-    // grammar: resolveSimple | resolveBombardment | resolveComet | resolveCard | negativeBalance;
+    // grammar: resolveSimple | resolveBombardment | resolveComet | resolveCard | negativeBalance | resolveSupplyRun | resolvingTacticalMan1 | resolvingTacticalMan2 | resolveWormhole;
     visitResolveEventSummary(ctx) {
         if(ctx.negativeBalance()){
             return this.visit(ctx.negativeBalance())
         }
     }
   
-    // grammar: negativeBalance | discardFromEvent | discarding | scrapSummary | scrapDetail;
+    // grammar: negativeBalance | positiveBalance | discardFromEvent | discarding | scrapSummary | scrapDetail | resolveMobilization | acquireToDeck | selectCard | drawCardsWithShuffle | moveCardToHand | acquireToHand;
 	visitResolveEventDetail(ctx) {
       if(ctx.negativeBalance()){
           return this.visit(ctx.negativeBalance())
+      }else if(ctx.positiveBalance()){
+        return this.visit(ctx.positiveBalance())
+      }else if(ctx.acquireToDeck()){
+        return this.visit(ctx.acquireToDeck())
+      }else if(ctx.drawCardsWithShuffle()){
+        return this.visit(ctx.drawCardsWithShuffle())
       }else if(ctx.discarding()){
           return this.visit(ctx.discarding())
       }else if(ctx.scrapDetail()){
