@@ -270,14 +270,32 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
-	// Visit a parse tree produced by StarRealmsParser#resolveCard.
-	visitResolveCard(ctx) {
+	// Visit a parse tree produced by StarRealmsParser#resolveComet.
+	visitResolveComet(ctx) {
 	  return this.visitChildren(ctx);
 	}
 
 
-	// Visit a parse tree produced by StarRealmsParser#resolveComet.
-	visitResolveComet(ctx) {
+	// Visit a parse tree produced by StarRealmsParser#resolveSupplyRun.
+	visitResolveSupplyRun(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#resolvingTacticalMan1.
+	visitResolvingTacticalMan1(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#resolvingTacticalMan2.
+	visitResolvingTacticalMan2(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#resolveWormhole.
+	visitResolveWormhole(ctx) {
 	  return this.visitChildren(ctx);
 	}
 
@@ -290,6 +308,24 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 
 	// Visit a parse tree produced by StarRealmsParser#discardFromEvent.
 	visitDiscardFromEvent(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#resolveMobilization.
+	visitResolveMobilization(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#moveCardToHand.
+	visitMoveCardToHand(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#resolveCard.
+	visitResolveCard(ctx) {
 	  return this.visitChildren(ctx);
 	}
 
@@ -656,6 +692,12 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 
 	// Visit a parse tree produced by StarRealmsParser#newTurn.
 	visitNewTurn(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#selectCard.
+	visitSelectCard(ctx) {
 	  return this.visitChildren(ctx);
 	}
 

@@ -49,20 +49,26 @@ resolveRuleReward    : RESOLVING ACQUIRE ANY CARD OF COST INT OR LESS TO HAND NE
 resolveDefendReward  : RESOLVING RETURN TARGET BASE NEWLINE;
 resolveConvertReward : RESOLVING RETURN INT CARD TO THE TOP OF YOUR DECK NEWLINE name IS RETURNING card NEWLINE discard ;
 
-//describean event being triggered
+//describe an event being triggered
 triggeredEvent        : triggeredEventSummary triggeredEventDetail* ;
 triggeredEventSummary : REVEALED EVENT card NEWLINE ;
-triggeredEventDetail  : positiveBalance | negativeBalance | scrapAction | drawCardsWithShuffle | resolveEvent;
+triggeredEventDetail  : positiveBalance | acquireToHand | negativeBalance | scrapAction | drawCardsWithShuffle | resolveEvent | refreshIndicators;
 
 //when the event effects needs to be resolved b the user
 resolveEvent          : resolveEventSummary resolveEventDetail*;
-resolveEventSummary   : resolveSimple | resolveBombardment | resolveComet | resolveCard | negativeBalance;
+resolveEventSummary   : resolveSimple | resolveBombardment | resolveComet | negativeBalance | resolveSupplyRun | resolvingTacticalMan1 | resolvingTacticalMan2 | resolveWormhole | resolveCard;
 resolveSimple         : RESOLVING NEWLINE ;
 resolveBombardment    : RESOLVING card ':' DESTROY WORD BASE OR LOSE INT AUTHORITY NEWLINE;
-resolveCard           : RESOLVING card NEWLINE ;
 resolveComet          : RESOLVING SCRAP UP TO INT CARDS FROM YOUR HAND OR DISCARD PILE NEWLINE ;
-resolveEventDetail    : negativeBalance | discardFromEvent | discarding | scrapSummary | scrapDetail;
+resolveSupplyRun      : RESOLVING ACQUIRE INT EXPLORER TO DECK OR PUT TARGET CARD FROM YOUR DISCARD PILE ON TOP OF YOUR DECK NEWLINE ;
+resolvingTacticalMan1 : RESOLVING ADD INT TRADE OR ADD INT COMBAT NEWLINE ;
+resolvingTacticalMan2 : RESOLVING ADD INT AUTHORITY OR DRAW INT CARDS NEWLINE ;
+resolveWormhole       : RESOLVING PUT wordPlus CARD FROM THE DISCARD PILE INTO THE HAND OR DRAW INT CARDS NEWLINE ;
+resolveEventDetail    : negativeBalance | positiveBalance | discardFromEvent | discarding | scrapSummary | scrapDetail | resolveMobilization | acquireToDeck | selectCard | drawCardsWithShuffle | moveCardToHand | acquireToHand;
 discardFromEvent      : name DISCARDING ':'? card NEWLINE ;
+resolveMobilization   : name IS NOT SELECTING ANY CARDS NEWLINE;
+moveCardToHand        : name IS MOVING card TO HAND NEWLINE ;
+resolveCard           : RESOLVING card NEWLINE ;
 
 //describes a attackPlayer action
 attackPlayer        : attackPlayerSummary negativeBalance+;
@@ -143,6 +149,7 @@ refreshIndicators : REFRESH ALLY INDICATORS NEWLINE;
 newTurn           : IT IS NOW name '\'s' TURN INT NEWLINE;
 
 //shared patterns
+selectCard            : name IS SELECTING card NEWLINE;
 replaceGambit         : REPLACED card NEWLINE;
 noScrap               : name IS NOT SCRAPPING ANY CARDS NEWLINE;
 selectDiscard         : name IS SELECTING card NEWLINE ;
@@ -168,7 +175,7 @@ card                  : ((wordPlus '\'s'?) | INT)+ ;
 // confessormorris       : CONFESSOR MORRIS;
 // hivelord              : HIVE LORD;
 // screecher             : SCREECHER;
-wordPlus              : WORD|COMBAT|AUTHORITY|TRADE|ACQUIRE|FEDERATION|STAR|EMPIRE|MACHINE|CULT|ACQUIRED|DISCOUNTS|CREATE|SECRET|OUTPOST|UNALIGNED|ACTIVATING|ATTACKED|SCRAPPING|SCRAPPED|RETURNING|SCRAP|SELECTING|SHUFFLED|DISCARDED|DISCARD|REFRESH|REVEALED|DISCARDING|DESTROYED|RESOLVING|INDICATORS|AVAILABLE|ABILITY|CHANGED|IMAGE|PLAYED|COPYING|COPIED|REPLACED|RECEIVE|REDRAW|COPY|RETURN|EVENT|TARGET|DRAW|EVERY|NUMBER|BLOB|CARDS|CHOSE|TURN|SHIP|SHIPS|BASE|TABLE|BASES|PILE|EACH|PLAY|COST|FORM|DECK|DREW|DESTROY|LOSE|ENDS|CARD|MORE2|FROM|YOUR|ALLY|THIS|HAND|GAME|LESS|ONE|NEW|ALL|NOW|ROW|THE|TOP|FOR|DID|AND|ADD|NOT|HAS|WON|ANY|IS|IT|IN|TO|OF|UP|OR|NO|ON;
+wordPlus              : WORD|COMBAT|AUTHORITY|TRADE|ACQUIRE|FEDERATION|STAR|EXPLORER|PUT|EMPIRE|MACHINE|CULT|ACQUIRED|DISCOUNTS|CREATE|SECRET|OUTPOST|UNALIGNED|ACTIVATING|ATTACKED|SCRAPPING|SCRAPPED|RETURNING|SCRAP|SELECTING|SHUFFLED|DISCARDED|DISCARD|REFRESH|REVEALED|DISCARDING|DESTROYED|RESOLVING|INDICATORS|MOVING|AVAILABLE|ABILITY|CHANGED|IMAGE|PLAYED|COPYING|COPIED|REPLACED|RECEIVE|REDRAW|COPY|RETURN|INTO|EVENT|TARGET|DRAW|EVERY|NUMBER|BLOB|CARDS|CHOSE|TURN|SHIP|SHIPS|BASE|TABLE|BASES|PILE|EACH|PLAY|COST|FORM|DECK|DREW|DESTROY|LOSE|ENDS|CARD|MORE2|FROM|YOUR|ALLY|THIS|HAND|GAME|LESS|ONE|NEW|ALL|NOW|ROW|THE|TOP|FOR|DID|AND|ADD|NOT|HAS|WON|ANY|IS|IT|IN|TO|OF|UP|OR|NO|ON;
 
 fragment A : ('A'|'a');
 fragment B : ('B'|'b');
@@ -193,6 +200,7 @@ fragment T : ('T'|'t');
 fragment U : ('U'|'u');
 fragment V : ('V'|'v');
 fragment W : ('W'|'w');
+fragment X : ('X'|'x');
 fragment Y : ('Y'|'y');
 fragment Z : ('Z'|'z');
 
@@ -251,6 +259,8 @@ IMAGE               : I M A G E ;
 RECEIVE             : R E C E I V E ;
 REDRAW              : R E D R A W ;
 TABLE               : T A B L E ;
+EXPLORER            : E X P L O R E R ;
+PUT                 : P U T ;
 CREATE              : C R E A T E ;
 PLAYED              : P L A Y E D ;
 SECRET              : S E C R E T ;
@@ -287,6 +297,8 @@ ALLY                : A L L Y ;
 HAND                : H A N D ;
 GAME                : G A M E ;
 LESS                : L E S S ;
+MOVING              : M O V I N G ;
+INTO                : I N T O ;
 THIS                : T H I S ;
 EVENT               : E V E N T ;
 NEW                 : N E W ;
