@@ -266,6 +266,15 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#refreshCost.
+	enterRefreshCost(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#refreshCost.
+	exitRefreshCost(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#completeMission.
 	enterCompleteMission(ctx) {
 	}
@@ -707,6 +716,15 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#choseAddToDeck.
+	enterChoseAddToDeck(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#choseAddToDeck.
+	exitChoseAddToDeck(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#choseScrapFromDiscard.
 	enterChoseScrapFromDiscard(ctx) {
 	}
@@ -731,6 +749,15 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 
 	// Exit a parse tree produced by StarRealmsParser#choseBlobDraw.
 	exitChoseBlobDraw(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#choseIngenuityGambit.
+	enterChoseIngenuityGambit(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#choseIngenuityGambit.
+	exitChoseIngenuityGambit(ctx) {
 	}
 
 

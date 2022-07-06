@@ -1,0 +1,648 @@
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Acquired <color=#800080>Explorer</color>
+        Player - -2 Trade (Trade:0)
+Attacked Hard AI for 1 (New Authority:69)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:69)
+Player ends turn 1
+        Drew 6 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 2
+Played <color=#FF0000>Welder Drone</color>
+        Hard AI  >  <color=#FF0000>Welder Drone</color> ability available
+        Hard AI  >  <color=#FF0000>Welder Drone</color> +2 Trade (Trade:2)
+Play all
+        Hard AI  >  <color=#FF0000>Laser Drone</color> +2 Combat (Combat:2)
+        Hard AI  >  <color=#FF0000>Laser Drone</color> +1 Combat (Combat:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        Hard AI  >  <color=#4CC417>Swarmling</color> +2 Combat (Combat:5)
+Acquired <color=#4CC417>The Hive</color>
+        Hard AI - -5 Trade (Trade:0)
+Attacked Player for 5 (New Authority:65)
+        Hard AI - -5 Combat (Combat:0)
+        Player - -5 Authority (Authority:65)
+Hard AI ends turn 2
+        Drew 6 cards.
+        Refresh ally indicators
+        It is now Player's turn 3
+Play all
+        Player  >  <color=#4CC417>Swarmling</color> +2 Combat (Combat:2)
+        Player  >  <color=#800080>Cluster Viper</color> +1 Combat (Combat:3)
+        Player  >  <color=#800080>Cluster Viper</color> +2 Combat (Combat:5)
+        Player  >  <color=#800080>Scout Bot</color> +1 Trade (Trade:1)
+        Player  >  <color=#FF0000>Laser Drone</color> +2 Combat (Combat:7)
+Played <color=#FF0000>Welder Drone</color>
+        Player  >  <color=#FF0000>Welder Drone</color> ability available
+        Player  >  <color=#FF0000>Welder Drone</color> +2 Trade (Trade:3)
+        Player  >  <color=#FF0000>Laser Drone</color> +1 Combat (Combat:8)
+Played <color=#800080>Ranger</color>
+        Player  >  <color=#800080>Ranger</color> ability available
+        Player  >  <color=#800080>Ranger</color> +1 Trade (Trade:4)
+Acquired <color=#FF0000>Supply Bot</color>
+        Player - -3 Trade (Trade:1)
+Acquired <color=#FF0000>Trade Bot</color>
+        Player - -1 Trade (Trade:0)
+Attacked Hard AI for 8 (New Authority:61)
+        Player - -8 Combat (Combat:0)
+        Hard AI - -8 Authority (Authority:61)
+Activating Scout Bot
+Player is selecting Explorer
+Player ends turn 3
+        Drew 4 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 4
+Played <color=#800080>Ranger</color>
+        Hard AI  >  <color=#800080>Ranger</color> ability available
+        Hard AI  >  <color=#800080>Ranger</color> +1 Trade (Trade:1)
+Play all
+        Hard AI  >  <color=#800080>Cluster Viper</color> +2 Combat (Combat:2)
+        Hard AI  >  <color=#800080>Cluster Viper</color> +1 Combat (Combat:3)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:4)
+        Hard AI  >  <color=#800080>Scout Bot</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#4CC417>Protopod</color> +2 Trade (Trade:5)
+Acquired <color=#FFFF00>War World</color>
+        Hard AI - -5 Trade (Trade:0)
+Attacked Player for 4 (New Authority:61)
+        Hard AI - -4 Combat (Combat:0)
+        Player - -4 Authority (Authority:61)
+Hard AI ends turn 4
+        Shuffled discard pile to form new deck
+        Drew 6 cards.
+        Refresh ally indicators
+        It is now Player's turn 5
+Played <color=#FF0000>Trade Bot</color>
+        Player  >  <color=#FF0000>Trade Bot</color> +1 Trade (Trade:1)
+Play all
+        Player  >  <color=#800080>Explorer</color> +2 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Player  >  <color=#4CC417>Protopod</color> +2 Trade (Trade:6)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:7)
+Played <color=#800080>Ranger</color>
+        Player  >  <color=#800080>Ranger</color> ability available
+        Player  >  <color=#800080>Ranger</color> +1 Trade (Trade:8)
+Acquired <color=#FF0000>Battle Station</color>
+        Player - -3 Trade (Trade:5)
+Acquired <color=#FF0000>Missile Bot</color>
+        Player - -2 Trade (Trade:3)
+Acquired <color=#4CC417>Blob Wheel</color>
+        Player - -3 Trade (Trade:0)
+Player ends turn 5
+        Drew 6 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 6
+Played <color=#FFFF00>War World</color>
+        Hard AI  >  <color=#FFFF00>War World</color> +3 Combat (Combat:3)
+Played <color=#800080>Ranger</color>
+        Hard AI  >  <color=#800080>Ranger</color> ability available
+        Hard AI  >  <color=#800080>Ranger</color> +1 Trade (Trade:1)
+Play all
+        Hard AI  >  <color=#4CC417>Swarmling</color> +2 Combat (Combat:5)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#FF0000>Laser Drone</color> +2 Combat (Combat:7)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Scrapping Walsh's Stratagem
+        Scrapped <color=#800080>Walsh's Stratagem</color>
+        Hard AI  >  <color=#800080>Walsh's Stratagem</color> +2 Trade (Trade:5)
+        Refresh ally indicators
+        Hard AI  >  <color=#FF0000>Laser Drone</color> +1 Combat (Combat:8)
+Activating Swarmling
+        Hard AI  >  <color=#4CC417>Swarmling</color> +1 Combat (Combat:9)
+        Scrapped <color=#1589FF>Command Ship</color>
+Acquired <color=#4CC417>Blob Destroyer</color>
+        Hard AI - -4 Trade (Trade:1)
+Acquired <color=#4CC417>Blob Fighter</color>
+        Hard AI - -1 Trade (Trade:0)
+Attacked Player for 9 (New Authority:52)
+        Hard AI - -9 Combat (Combat:0)
+        Player - -9 Authority (Authority:52)
+Hard AI ends turn 6
+        Drew 6 cards.
+        Refresh ally indicators
+        It is now Player's turn 7
+Played <color=#FF0000>Supply Bot</color>
+Player is scrapping: Scout
+        Player  >  <color=#FF0000>Supply Bot</color> +2 Trade (Trade:2)
+        Scrapped <color=#800080>Scout</color>
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Cluster Viper</color> +1 Combat (Combat:1)
+        Player  >  <color=#800080>Scout Bot</color> +1 Trade (Trade:4)
+        Player  >  <color=#800080>Cluster Viper</color> +2 Combat (Combat:3)
+        Player  >  <color=#4CC417>Swarmling</color> +2 Combat (Combat:5)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:6)
+Attacked War World
+        Player - -4 Combat (Combat:2)
+        Destroyed <color=#FFFF00>War World</color>
+Attacked Hard AI for 2 (New Authority:59)
+        Player - -2 Combat (Combat:0)
+        Hard AI - -2 Authority (Authority:59)
+Activating Scout Bot
+Player is selecting Missile Bot
+Acquired <color=#1589FF>Cutter</color>
+        Player - -2 Trade (Trade:2)
+Acquired <color=#FFFF00>Corvette</color>
+        Player - -2 Trade (Trade:0)
+Player ends turn 7
+        Drew 4 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 8
+Played <color=#4CC417>The Hive</color>
+        Hard AI  >  <color=#4CC417>The Hive</color> +3 Combat (Combat:3)
+Played <color=#FF0000>Welder Drone</color>
+        Hard AI  >  <color=#FF0000>Welder Drone</color> ability available
+        Hard AI  >  <color=#FF0000>Welder Drone</color> +2 Trade (Trade:2)
+Play all
+        Hard AI  >  <color=#4CC417>Protopod</color> +2 Trade (Trade:4)
+        Hard AI  >  <color=#4CC417>Protopod</color> +1 Combat (Combat:4)
+        Hard AI  >  <color=#800080>Cluster Viper</color> +1 Combat (Combat:5)
+        Drew 1 cards.
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        Hard AI  >  <color=#800080>Cluster Viper</color> +2 Combat (Combat:7)
+        Hard AI  >  <color=#800080>Scout Bot</color> +1 Trade (Trade:6)
+Activating Scout Bot
+Hard AI is selecting Blob Fighter
+Play all
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:8)
+Acquired <color=#FFFF00>Royal Redoubt</color>
+        Hard AI - -6 Trade (Trade:0)
+Attacked Player for 8 (New Authority:44)
+        Hard AI - -8 Combat (Combat:0)
+        Player - -8 Authority (Authority:44)
+Hard AI ends turn 8
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 4 cards.
+        Refresh ally indicators
+        It is now Player's turn 9
+Played <color=#FF0000>Missile Bot</color>
+Player is scrapping: Scout
+        Player  >  <color=#FF0000>Missile Bot</color> +2 Combat (Combat:2)
+        Scrapped <color=#800080>Scout</color>
+Played <color=#FF0000>Supply Bot</color>
+Player is scrapping: Ranger
+        Player  >  <color=#FF0000>Supply Bot</color> +2 Trade (Trade:2)
+        Scrapped <color=#800080>Ranger</color>
+        Player  >  <color=#FF0000>Missile Bot</color> +2 Combat (Combat:4)
+        Player  >  <color=#FF0000>Supply Bot</color> +2 Combat (Combat:6)
+Play all
+        Player  >  <color=#FF0000>Laser Drone</color> +2 Combat (Combat:8)
+        Player  >  <color=#FF0000>Laser Drone</color> +1 Combat (Combat:9)
+        Player  >  <color=#FF0000>Laser Drone</color> +2 Combat (Combat:11)
+Played <color=#FF0000>Welder Drone</color>
+        Player  >  <color=#FF0000>Welder Drone</color> ability available
+        Player  >  <color=#FF0000>Welder Drone</color> +2 Trade (Trade:4)
+Acquired <color=#FFFF00>Space Station</color>
+        Player - -4 Trade (Trade:0)
+Attacked The Hive
+        Player - -5 Combat (Combat:6)
+        Destroyed <color=#4CC417>The Hive</color>
+Attacked Hard AI for 6 (New Authority:53)
+        Player - -6 Combat (Combat:0)
+        Hard AI - -6 Authority (Authority:53)
+Player ends turn 9
+        Drew 6 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 10
+Played <color=#FFFF00>War World</color>
+        Hard AI  >  <color=#FFFF00>War World</color> +3 Combat (Combat:3)
+Played <color=#800080>Ranger</color>
+        Hard AI  >  <color=#800080>Ranger</color> ability available
+        Hard AI  >  <color=#800080>Ranger</color> +1 Trade (Trade:1)
+Play all
+        Hard AI  >  <color=#4CC417>Blob Fighter</color> +3 Combat (Combat:6)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:7)
+Acquired <color=#1589FF>Embassy Yacht</color>
+        Hard AI - -3 Trade (Trade:0)
+Attacked Player for 7 (New Authority:37)
+        Hard AI - -7 Combat (Combat:0)
+        Player - -7 Authority (Authority:37)
+Hard AI ends turn 10
+        Drew 6 cards.
+        Refresh ally indicators
+        It is now Player's turn 11
+Played <color=#FFFF00>Corvette</color>
+        Player  >  <color=#FFFF00>Corvette</color> +1 Combat (Combat:1)
+        Drew 1 cards.
+Played <color=#FF0000>Battle Station</color>
+Played <color=#FF0000>Trade Bot</color>
+Player is scrapping: Viper
+        Player  >  <color=#FF0000>Trade Bot</color> +1 Trade (Trade:1)
+        Scrapped <color=#800080>Viper</color>
+        Player  >  <color=#FF0000>Trade Bot</color> +2 Combat (Combat:3)
+Played <color=#1589FF>Cutter</color>
+        Player  >  <color=#1589FF>Cutter</color> +4 Authority (Authority:41)
+        Player  >  <color=#1589FF>Cutter</color> +2 Trade (Trade:3)
+Played <color=#4CC417>Blob Wheel</color>
+        Player  >  <color=#4CC417>Blob Wheel</color> +1 Combat (Combat:4)
+Played <color=#800080>Scout</color>
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Scrapping Blob Wheel
+        Scrapped <color=#4CC417>Blob Wheel</color>
+        Player  >  <color=#4CC417>Blob Wheel</color> +3 Trade (Trade:7)
+Scrapping Walsh's Stratagem
+        Scrapped <color=#800080>Walsh's Stratagem</color>
+        Player  >  <color=#800080>Walsh's Stratagem</color> +2 Trade (Trade:9)
+        Refresh ally indicators
+Acquired <color=#4CC417>Blob World</color>
+        Player - -8 Trade (Trade:1)
+Chose Add 5 Combat
+        Player  >  <color=#4CC417>Blob World</color> +5 Combat (Combat:9)
+Attacked War World
+        Player - -4 Combat (Combat:5)
+        Destroyed <color=#FFFF00>War World</color>
+Attacked Hard AI for 5 (New Authority:48)
+        Player - -5 Combat (Combat:0)
+        Hard AI - -5 Authority (Authority:48)
+Player ends turn 11
+        Drew 6 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 12
+Played <color=#FFFF00>Royal Redoubt</color>
+        Hard AI  >  <color=#FFFF00>Royal Redoubt</color> +3 Combat (Combat:3)
+Play all
+        Hard AI  >  <color=#FF0000>Laser Drone</color> +2 Combat (Combat:5)
+        Hard AI  >  <color=#800080>Cluster Viper</color> +1 Combat (Combat:6)
+        Hard AI  >  <color=#800080>Cluster Viper</color> +2 Combat (Combat:8)
+        Hard AI  >  <color=#4CC417>Swarmling</color> +2 Combat (Combat:10)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout Bot</color> +1 Trade (Trade:2)
+Activating Scout Bot
+Hard AI is selecting Blob Fighter
+Acquired <color=#4CC417>Trade Pod</color>
+        Hard AI - -2 Trade (Trade:0)
+Attacked Battle Station
+        Hard AI - -5 Combat (Combat:5)
+        Destroyed <color=#FF0000>Battle Station</color>
+Attacked Player for 5 (New Authority:36)
+        Hard AI - -5 Combat (Combat:0)
+        Player - -5 Authority (Authority:36)
+Hard AI ends turn 12
+        Drew 5 cards.
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+        Refresh ally indicators
+        It is now Player's turn 13
+Chose Draw a card for every Blob card played this turn
+Played <color=#4CC417>Swarmling</color>
+        Player  >  <color=#4CC417>Swarmling</color> +2 Combat (Combat:2)
+Played <color=#4CC417>Protopod</color>
+        Player  >  <color=#4CC417>Protopod</color> +2 Trade (Trade:2)
+        Player  >  <color=#4CC417>Protopod</color> +1 Combat (Combat:3)
+Play all
+        Player  >  <color=#800080>Scout Bot</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Cluster Viper</color> +1 Combat (Combat:4)
+        Player  >  <color=#800080>Cluster Viper</color> +2 Combat (Combat:6)
+        Player  >  <color=#800080>Explorer</color> +2 Trade (Trade:5)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        Player  >  <color=#800080>Explorer</color> +2 Combat (Combat:8)
+Attacked Royal Redoubt
+        Player - -6 Combat (Combat:2)
+        Destroyed <color=#FFFF00>Royal Redoubt</color>
+Acquired <color=#FFFF00>Imperial Frigate</color>
+        Player - -3 Trade (Trade:3)
+Acquired <color=#1589FF>Embassy Yacht</color>
+        Player - -3 Trade (Trade:0)
+Attacked Hard AI for 2 (New Authority:46)
+        Player - -2 Combat (Combat:0)
+        Hard AI - -2 Authority (Authority:46)
+Player ends turn 13
+        Shuffled discard pile to form new deck
+        Drew 6 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 14
+Played <color=#FF0000>Welder Drone</color>
+        Hard AI  >  <color=#FF0000>Welder Drone</color> ability available
+        Hard AI  >  <color=#FF0000>Welder Drone</color> +2 Trade (Trade:2)
+Play all
+        Hard AI  >  <color=#4CC417>Blob Fighter</color> +3 Combat (Combat:3)
+        Drew 1 cards.
+        Hard AI  >  <color=#4CC417>Blob Destroyer</color> +6 Combat (Combat:9)
+        Hard AI  >  <color=#1589FF>Embassy Yacht</color> +3 Authority (Authority:49)
+        Hard AI  >  <color=#1589FF>Embassy Yacht</color> +2 Trade (Trade:4)
+Activating Blob Destroyer
+        Destroyed <color=#4CC417>Blob World</color>
+        Scrapped <color=#4CC417>M</color><color=#62AC14>e</color><color=#799311>c</color><color=#8F7A0E>h</color><color=#A6620C> </color><color=#BC4A09>W</color><color=#D23106>u</color><color=#E91803>r</color><color=#FF0000>m</color>
+Play all
+        Hard AI  >  <color=#4CC417>Protopod</color> +2 Trade (Trade:6)
+        Hard AI  >  <color=#4CC417>Protopod</color> +1 Combat (Combat:10)
+        Hard AI  >  <color=#FF0000>Laser Drone</color> +1 Combat (Combat:11)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:7)
+        Hard AI  >  <color=#FF0000>Laser Drone</color> +2 Combat (Combat:13)
+Acquired <color=#1589FF>Central Office</color>
+        Hard AI - -7 Trade (Trade:0)
+Attacked Player for 13 (New Authority:23)
+        Hard AI - -13 Combat (Combat:0)
+        Player - -13 Authority (Authority:23)
+Hard AI ends turn 14
+        Drew 6 cards.
+        Refresh ally indicators
+        It is now Player's turn 15
+Played <color=#FF0000>Supply Bot</color>
+Player is scrapping: Scout
+        Player  >  <color=#FF0000>Supply Bot</color> +2 Trade (Trade:2)
+        Scrapped <color=#800080>Scout</color>
+Played <color=#FFFF00>Corvette</color>
+        Player  >  <color=#FFFF00>Corvette</color> +1 Combat (Combat:1)
+        Drew 1 cards.
+Played <color=#FFFF00>Space Station</color>
+        Player  >  <color=#FFFF00>Space Station</color> +2 Combat (Combat:3)
+        Player  >  <color=#FFFF00>Corvette</color> +2 Combat (Combat:5)
+        Player  >  <color=#FFFF00>Space Station</color> +2 Combat (Combat:7)
+Played <color=#FF0000>Trade Bot</color>
+Player is scrapping: Cluster Viper
+        Player  >  <color=#FF0000>Trade Bot</color> +1 Trade (Trade:3)
+        Scrapped <color=#800080>Cluster Viper</color>
+        Player  >  <color=#FF0000>Supply Bot</color> +2 Combat (Combat:9)
+        Player  >  <color=#FF0000>Trade Bot</color> +2 Combat (Combat:11)
+Played <color=#1589FF>Embassy Yacht</color>
+        Player  >  <color=#1589FF>Embassy Yacht</color> +3 Authority (Authority:26)
+        Player  >  <color=#1589FF>Embassy Yacht</color> +2 Trade (Trade:5)
+Acquired <color=#4CC417>Blob Wheel</color>
+        Player - -3 Trade (Trade:2)
+Acquired <color=#FF0000>Missile Bot</color>
+        Player - -2 Trade (Trade:0)
+Attacked Hard AI for 11 (New Authority:38)
+        Player - -11 Combat (Combat:0)
+        Hard AI - -11 Authority (Authority:38)
+Player ends turn 15
+        Drew 6 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 16
+Played <color=#FFFF00>War World</color>
+        Hard AI  >  <color=#FFFF00>War World</color> +3 Combat (Combat:3)
+Played <color=#4CC417>The Hive</color>
+        Hard AI  >  <color=#4CC417>The Hive</color> +3 Combat (Combat:6)
+Play all
+        Hard AI  >  <color=#4CC417>Trade Pod</color> +3 Trade (Trade:3)
+        Hard AI  >  <color=#4CC417>Trade Pod</color> +2 Combat (Combat:8)
+        Drew 1 cards.
+Play all
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:9)
+        Hard AI  >  <color=#800080>Cluster Viper</color> +1 Combat (Combat:10)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Hard AI  >  <color=#800080>Cluster Viper</color> +2 Combat (Combat:12)
+        Hard AI  >  <color=#800080>Scout Bot</color> +1 Trade (Trade:5)
+Acquired <color=#4CC417>Battle Pod</color>
+        Hard AI - -2 Trade (Trade:3)
+Acquired <color=#FFFF00>Imperial Fighter</color>
+        Hard AI - -1 Trade (Trade:2)
+Acquired <color=#FFFF00>Imperial Fighter</color>
+        Hard AI - -1 Trade (Trade:1)
+Attacked Space Station
+        Hard AI - -4 Combat (Combat:8)
+        Destroyed <color=#FFFF00>Space Station</color>
+Attacked Player for 8 (New Authority:18)
+        Hard AI - -8 Combat (Combat:0)
+        Player - -8 Authority (Authority:18)
+Hard AI ends turn 16
+        Drew 4 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now Player's turn 17
+Played <color=#FFFF00>Imperial Frigate</color>
+        Player  >  <color=#FFFF00>Imperial Frigate</color> +4 Combat (Combat:4)
+        Hard AI  <  <color=#FFFF00>Imperial Frigate</color> +1 Discard (Discarding: 1)
+Scrapping Imperial Frigate
+        Scrapped <color=#FFFF00>Imperial Frigate</color>
+        Drew 1 cards.
+Played <color=#FF0000>Missile Bot</color>
+Player is scrapping: Scout
+        Player  >  <color=#FF0000>Missile Bot</color> +2 Combat (Combat:6)
+        Scrapped <color=#800080>Scout</color>
+Play all
+        Player  >  <color=#800080>Scout Bot</color> +1 Trade (Trade:1)
+        Player  >  <color=#FF0000>Missile Bot</color> +2 Combat (Combat:8)
+        Player  >  <color=#FF0000>Laser Drone</color> +1 Combat (Combat:9)
+        Player  >  <color=#1589FF>Cutter</color> +4 Authority (Authority:22)
+        Player  >  <color=#1589FF>Cutter</color> +2 Trade (Trade:3)
+        Player  >  <color=#FF0000>Laser Drone</color> +2 Combat (Combat:11)
+        Player  >  <color=#4CC417>Protopod</color> +2 Trade (Trade:5)
+Attacked War World
+        Player - -4 Combat (Combat:7)
+        Destroyed <color=#FFFF00>War World</color>
+Attacked The Hive
+        Player - -5 Combat (Combat:2)
+        Destroyed <color=#4CC417>The Hive</color>
+Attacked Hard AI for 2 (New Authority:36)
+        Player - -2 Combat (Combat:0)
+        Hard AI - -2 Authority (Authority:36)
+Acquired <color=#FF0000>Mech World</color>
+        Player - -5 Trade (Trade:0)
+Player ends turn 17
+        Drew 3 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 18
+Resolving Discard 1 cards
+Hard AI is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Played <color=#800080>Ranger</color>
+        Hard AI  >  <color=#800080>Ranger</color> ability available
+        Hard AI  >  <color=#800080>Ranger</color> +1 Trade (Trade:1)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#4CC417>Swarmling</color> +2 Combat (Combat:2)
+        Hard AI  >  <color=#FF0000>Laser Drone</color> +2 Combat (Combat:4)
+Attacked Player for 4 (New Authority:18)
+        Hard AI - -4 Combat (Combat:0)
+        Player - -4 Authority (Authority:18)
+Acquired <color=#1589FF>Federation Shuttle</color>
+        Hard AI - -1 Trade (Trade:2)
+Acquired <color=#800080>Explorer</color>
+        Hard AI - -2 Trade (Trade:0)
+Hard AI ends turn 18
+        Drew 6 cards.
+        Refresh ally indicators
+        It is now Player's turn 19
+Played <color=#FF0000>Battle Station</color>
+Played <color=#FF0000>Supply Bot</color>
+Player is scrapping: Scout Bot
+        Player  >  <color=#FF0000>Supply Bot</color> +2 Trade (Trade:2)
+        Scrapped <color=#800080>Scout Bot</color>
+        Player  >  <color=#FF0000>Supply Bot</color> +2 Combat (Combat:2)
+Played <color=#4CC417>Swarmling</color>
+        Player  >  <color=#4CC417>Swarmling</color> +2 Combat (Combat:4)
+Played <color=#FF0000>Missile Bot</color>
+        Player  >  <color=#FF0000>Missile Bot</color> +2 Combat (Combat:6)
+        Player  >  <color=#FF0000>Missile Bot</color> +2 Combat (Combat:8)
+Played <color=#FF0000>Welder Drone</color>
+        Player  >  <color=#FF0000>Welder Drone</color> ability available
+        Player  >  <color=#FF0000>Welder Drone</color> +2 Combat (Combat:10)
+Attacked Hard AI for 10 (New Authority:26)
+        Player - -10 Combat (Combat:0)
+        Hard AI - -10 Authority (Authority:26)
+Player ends turn 19
+        Drew 6 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 20
+Played <color=#1589FF>Central Office</color>
+        Hard AI  >  <color=#1589FF>Central Office</color> +2 Trade (Trade:2)
+Played <color=#FFFF00>Royal Redoubt</color>
+        Hard AI  >  <color=#FFFF00>Royal Redoubt</color> +3 Combat (Combat:3)
+Played <color=#FF0000>Welder Drone</color>
+        Hard AI  >  <color=#FF0000>Welder Drone</color> ability available
+        Hard AI  >  <color=#FF0000>Welder Drone</color> +2 Combat (Combat:5)
+Play all
+        Hard AI  >  <color=#4CC417>Blob Destroyer</color> +6 Combat (Combat:11)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Cluster Viper</color> +1 Combat (Combat:12)
+        Hard AI  >  <color=#800080>Cluster Viper</color> +2 Combat (Combat:14)
+Attacked Battle Station
+        Hard AI - -5 Combat (Combat:9)
+        Destroyed <color=#FF0000>Battle Station</color>
+Attacked Player for 9 (New Authority:9)
+        Hard AI - -9 Combat (Combat:0)
+        Player - -9 Authority (Authority:9)
+Acquired <color=#800080>Explorer</color>
+        Hard AI - -2 Trade (Trade:1)
+        Acquired <color=#800080>Explorer</color> to the top of the deck.
+Hard AI ends turn 20
+        Drew 6 cards.
+        Refresh ally indicators
+        It is now Player's turn 21
+Played <color=#FFFF00>Space Station</color>
+        Player  >  <color=#FFFF00>Space Station</color> +2 Combat (Combat:2)
+Played <color=#FF0000>Mech World</color>
+        Player  >  <color=#FF0000>Mech World</color> ability available
+        Player  >  <color=#FFFF00>Space Station</color> +2 Combat (Combat:4)
+Played <color=#1589FF>Embassy Yacht</color>
+        Player  >  <color=#1589FF>Embassy Yacht</color> +3 Authority (Authority:12)
+        Player  >  <color=#1589FF>Embassy Yacht</color> +2 Trade (Trade:2)
+        Drew 1 cards.
+        Drew 1 cards.
+Played <color=#FFFF00>Corvette</color>
+        Player  >  <color=#FFFF00>Corvette</color> +1 Combat (Combat:5)
+        Drew 1 cards.
+        Player  >  <color=#FFFF00>Corvette</color> +2 Combat (Combat:7)
+Played <color=#FF0000>Laser Drone</color>
+        Player  >  <color=#FF0000>Laser Drone</color> +2 Combat (Combat:9)
+        Player  >  <color=#FF0000>Laser Drone</color> +1 Combat (Combat:10)
+Played <color=#4CC417>Blob Wheel</color>
+        Player  >  <color=#4CC417>Blob Wheel</color> +1 Combat (Combat:11)
+Played <color=#4CC417>Protopod</color>
+        Player  >  <color=#4CC417>Protopod</color> +2 Trade (Trade:4)
+        Player  >  <color=#4CC417>Protopod</color> +1 Combat (Combat:12)
+Played <color=#FF0000>Trade Bot</color>
+Player is scrapping: Welder Drone
+        Player  >  <color=#FF0000>Trade Bot</color> +1 Trade (Trade:5)
+        Scrapped <color=#FF0000>Welder Drone</color>
+        Player  >  <color=#FF0000>Laser Drone</color> +2 Combat (Combat:14)
+        Player  >  <color=#FF0000>Trade Bot</color> +2 Combat (Combat:16)
+Played <color=#FF0000>Missile Bot</color>
+Player is scrapping: Missile Bot
+        Player  >  <color=#FF0000>Missile Bot</color> +2 Combat (Combat:18)
+        Scrapped <color=#FF0000>Missile Bot</color>
+        Player  >  <color=#FF0000>Missile Bot</color> +2 Combat (Combat:20)
+Acquired <color=#FF0000>Battle Mech</color>
+        Player - -5 Trade (Trade:0)
+Attacked Royal Redoubt
+        Player - -6 Combat (Combat:14)
+        Destroyed <color=#FFFF00>Royal Redoubt</color>
+Attacked Central Office
+        Player - -6 Combat (Combat:8)
+        Destroyed <color=#1589FF>Central Office</color>
+Attacked Hard AI for 8 (New Authority:18)
+        Player - -8 Combat (Combat:0)
+        Hard AI - -8 Authority (Authority:18)
+Player ends turn 21
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 4 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 22
+Played <color=#4CC417>Battle Pod</color>
+        Hard AI  >  <color=#4CC417>Battle Pod</color> +4 Combat (Combat:4)
+        Scrapped <color=#FF0000>Missile Mech</color>
+Play all
+        Hard AI  >  <color=#800080>Explorer</color> +2 Trade (Trade:2)
+        Hard AI  >  <color=#4CC417>Battle Pod</color> +2 Combat (Combat:6)
+        Hard AI  >  <color=#4CC417>Trade Pod</color> +2 Combat (Combat:8)
+        Hard AI  >  <color=#4CC417>Trade Pod</color> +3 Trade (Trade:5)
+        Hard AI  >  <color=#FFFF00>Imperial Fighter</color> +2 Combat (Combat:10)
+        Player  <  <color=#FFFF00>Imperial Fighter</color> +1 Discard (Discarding: 1)
+Play all
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:11)
+        Hard AI  >  <color=#4CC417>Protopod</color> +1 Combat (Combat:12)
+        Hard AI  >  <color=#4CC417>Protopod</color> +2 Trade (Trade:7)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        Hard AI  >  <color=#800080>Explorer</color> +2 Combat (Combat:14)
+Acquired <color=#FF0000>Machine Base</color>
+        Hard AI - -7 Trade (Trade:0)
+Attacked Mech World
+        Hard AI - -6 Combat (Combat:8)
+        Destroyed <color=#FF0000>Mech World</color>
+Attacked Space Station
+        Hard AI - -4 Combat (Combat:4)
+        Destroyed <color=#FFFF00>Space Station</color>
+Attacked Player for 4 (New Authority:8)
+        Hard AI - -4 Combat (Combat:0)
+        Player - -4 Authority (Authority:8)
+Hard AI ends turn 22
+        Drew 4 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now Player's turn 23
+Resolving Discard 1 cards
+Player is discarding Trade Bot
+        no more cards to discard
+        Discarded <color=#FF0000>Trade Bot</color>
+        Player  >  <color=#4CC417>Blob Wheel</color> +1 Combat (Combat:1)
+Played <color=#4CC417>Blob World</color>
+        Player  >  <color=#4CC417>Blob World</color> ability available
+Played <color=#4CC417>Protopod</color>
+        Player  >  <color=#4CC417>Protopod</color> +2 Trade (Trade:2)
+        Player  >  <color=#4CC417>Protopod</color> +1 Combat (Combat:2)
+Played <color=#4CC417>Swarmling</color>
+        Player  >  <color=#4CC417>Swarmling</color> +2 Combat (Combat:4)
+Chose Draw a card for every Blob card played this turn
+        Drew 1 cards.
+        Drew 1 cards.
+        Drew 1 cards.
+Played <color=#FFFF00>Corvette</color>
+        Player  >  <color=#FFFF00>Corvette</color> +1 Combat (Combat:5)
+        Drew 1 cards.
+Played <color=#FF0000>Battle Station</color>
+Played <color=#FF0000>Battle Mech</color>
+Player is scrapping: Trade Bot
+        Player  >  <color=#FF0000>Battle Mech</color> +4 Combat (Combat:9)
+        Scrapped <color=#FF0000>Trade Bot</color>
+        Drew 1 cards.
+Played <color=#FF0000>Laser Drone</color>
+        Player  >  <color=#FF0000>Laser Drone</color> +2 Combat (Combat:11)
+        Player  >  <color=#FF0000>Laser Drone</color> +1 Combat (Combat:12)
+        Player  >  <color=#FF0000>Laser Drone</color> +2 Combat (Combat:14)
+Played <color=#FF0000>Missile Bot</color>
+        Player  >  <color=#FF0000>Missile Bot</color> +2 Combat (Combat:16)
+        Player  >  <color=#FF0000>Missile Bot</color> +2 Combat (Combat:18)
+Played <color=#FF0000>Supply Bot</color>
+        Player  >  <color=#FF0000>Supply Bot</color> +2 Trade (Trade:4)
+        Player  >  <color=#FF0000>Supply Bot</color> +2 Combat (Combat:20)
+Played <color=#1589FF>Cutter</color>
+        Player  >  <color=#1589FF>Cutter</color> +4 Authority (Authority:12)
+        Player  >  <color=#1589FF>Cutter</color> +2 Trade (Trade:6)
+Attacked Hard AI for 20 (New Authority:-2)
+        Player - -20 Combat (Combat:0)
+        Hard AI - -20 Authority (Authority:-2)
+        === Player has won the game. ===
