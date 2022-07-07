@@ -1,0 +1,231 @@
+Play all
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#FFFF00>Star Barge</color>
+        YL5943 - -1 Trade (Trade:2)
+Acquired <color=#4CC417>Trade Pod</color>
+        YL5943 - -2 Trade (Trade:0)
+YL5943 ends turn 1
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now greg19's turn 2
+Play all
+        greg19  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        greg19  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        greg19  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        greg19  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        greg19  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Acquired <color=#FF0000>Defense Bot</color>
+        greg19 - -2 Trade (Trade:2)
+Acquired <color=#800080>Explorer</color>
+        greg19 - -2 Trade (Trade:0)
+Attacked YL5943 for 1 (New Authority:49)
+        greg19 - -1 Combat (Combat:0)
+        YL5943 - -1 Authority (Authority:49)
+greg19 ends turn 2
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 3
+Play all
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#FFFF00>Captured Outpost</color>
+        YL5943 - -3 Trade (Trade:2)
+Acquired <color=#800080>Explorer</color>
+        YL5943 - -2 Trade (Trade:0)
+YL5943 ends turn 3
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now greg19's turn 4
+Play all
+        greg19  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        greg19  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        greg19  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        greg19  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        greg19  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#800080>Explorer</color>
+        greg19 - -2 Trade (Trade:2)
+Acquired <color=#800080>Explorer</color>
+        greg19 - -2 Trade (Trade:0)
+Attacked YL5943 for 1 (New Authority:48)
+        greg19 - -1 Combat (Combat:0)
+        YL5943 - -1 Authority (Authority:48)
+greg19 ends turn 4
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 5
+Played <color=#FFFF00>Captured Outpost</color>
+        YL5943  >  <color=#FFFF00>Captured Outpost</color> ability available
+Activating Captured Outpost
+        Drew 1 cards.
+Resolving Discard 1 cards
+YL5943 is discarding Viper
+        no more cards to discard
+        Discarded <color=#800080>Viper</color>
+Play all
+        YL5943  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#FFFF00>Fighter Base</color>
+        YL5943 - -3 Trade (Trade:0)
+Attacked greg19 for 1 (New Authority:49)
+        YL5943 - -1 Combat (Combat:0)
+        greg19 - -1 Authority (Authority:49)
+YL5943 ends turn 5
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now greg19's turn 6
+Play all
+        greg19  >  <color=#800080>Explorer</color> +2 Trade (Trade:2)
+        greg19  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        greg19  >  <color=#800080>Explorer</color> +2 Trade (Trade:5)
+        greg19  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+        greg19  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        greg19  >  <color=#800080>Explorer</color> +2 Combat (Combat:3)
+Attacked Captured Outpost
+        greg19 - -3 Combat (Combat:0)
+        Destroyed <color=#FFFF00>Captured Outpost</color>
+Acquired <color=#1589FF>Port of Call</color>
+        greg19 - -6 Trade (Trade:0)
+greg19 ends turn 6
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 7
+Play all
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        YL5943  >  <color=#800080>Explorer</color> +2 Trade (Trade:4)
+        YL5943  >  <color=#4CC417>Trade Pod</color> +3 Trade (Trade:7)
+        YL5943  >  <color=#FFFF00>Star Barge</color> +2 Trade (Trade:9)
+Acquired <color=#FF0000>The Incinerator</color>
+        YL5943 - -8 Trade (Trade:1)
+YL5943 ends turn 7
+        Drew 3 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now greg19's turn 8
+Play all
+        greg19  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        greg19  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        greg19  >  <color=#800080>Explorer</color> +2 Trade (Trade:3)
+        greg19  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        greg19  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#FFFF00>Lancer</color>
+        greg19 - -2 Trade (Trade:3)
+Acquired <color=#4CC417>Burrower</color>
+        greg19 - -3 Trade (Trade:0)
+Attacked YL5943 for 1 (New Authority:47)
+        greg19 - -1 Combat (Combat:0)
+        YL5943 - -1 Authority (Authority:47)
+greg19 ends turn 8
+        Drew 4 cards.
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 9
+Play all
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        YL5943  >  <color=#FFFF00>Star Barge</color> +2 Trade (Trade:6)
+Acquired <color=#1589FF>Gateship</color>
+        YL5943 - -6 Trade (Trade:0)
+YL5943 ends turn 9
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now greg19's turn 10
+Played <color=#FF0000>Defense Bot</color>
+greg19 is scrapping: Scout
+        greg19  >  <color=#FF0000>Defense Bot</color> ability available
+        greg19  >  <color=#FF0000>Defense Bot</color> +1 Combat (Combat:1)
+        Scrapped <color=#800080>Scout</color>
+Play all
+        greg19  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        greg19  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        greg19  >  <color=#800080>Explorer</color> +2 Trade (Trade:4)
+Attacked YL5943 for 1 (New Authority:46)
+        greg19 - -1 Combat (Combat:0)
+        YL5943 - -1 Authority (Authority:46)
+Acquired <color=#FF0000>Builder Bot</color>
+        greg19 - -1 Trade (Trade:3)
+Acquired <color=#FFFF00>Captured Outpost</color>
+        greg19 - -3 Trade (Trade:0)
+greg19 ends turn 10
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 11
+Play all
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        YL5943  >  <color=#800080>Explorer</color> +2 Trade (Trade:3)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#4CC417>Swarmer</color>
+        YL5943 - -1 Trade (Trade:4)
+Acquired <color=#1589FF>Trading Post</color>
+        YL5943 - -3 Trade (Trade:1)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        YL5943  >  <color=#800080>Explorer</color> +2 Combat (Combat:2)
+Attacked greg19 for 2 (New Authority:47)
+        YL5943 - -2 Combat (Combat:0)
+        greg19 - -2 Authority (Authority:47)
+YL5943 ends turn 11
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now greg19's turn 12
+Play all
+        greg19  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        greg19  >  <color=#FFFF00>Lancer</color> +4 Combat (Combat:4)
+        greg19  >  <color=#FFFF00>Lancer</color> +2 Combat (Combat:6)
+        greg19  >  <color=#800080>Viper</color> +1 Combat (Combat:7)
+        greg19  >  <color=#800080>Explorer</color> +2 Trade (Trade:3)
+        greg19  >  <color=#4CC417>Burrower</color> +5 Combat (Combat:12)
+Attacked Fighter Base
+        greg19 - -5 Combat (Combat:7)
+        Destroyed <color=#FFFF00>Fighter Base</color>
+Attacked YL5943 for 7 (New Authority:39)
+        greg19 - -7 Combat (Combat:0)
+        YL5943 - -7 Authority (Authority:39)
+Scrapping Burrower
+Acquired <color=#FFFF00>Farm Ship</color>
+        Scrapped <color=#4CC417>Burrower</color>
+Acquired <color=#800080>Explorer</color>
+        greg19 - -2 Trade (Trade:1)
+greg19 ends turn 12
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 13
+Played <color=#FF0000>The Incinerator</color>
+        YL5943  >  <color=#FF0000>The Incinerator</color> ability available
+Activating The Incinerator
+YL5943 is scrapping: Scout
+YL5943 is scrapping: Scout
+        Scrapped <color=#800080>Scout</color>
+        Scrapped <color=#800080>Scout</color>
+Played <color=#FFFF00>Captured Outpost</color>
+        YL5943  >  <color=#FFFF00>Captured Outpost</color> ability available
+Activating Captured Outpost
+        Drew 1 cards.
+Resolving Discard 1 cards
+YL5943 is discarding Viper
+        no more cards to discard
+        Discarded <color=#800080>Viper</color>
+Play all
+        YL5943  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        YL5943  >  <color=#4CC417>Trade Pod</color> +3 Trade (Trade:4)
+greg19(1) conceded
+        greg19 - -47 Authority (Authority:0)
+        === YL5943 has won the game. ===

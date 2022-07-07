@@ -1,0 +1,628 @@
+Play all
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        YL5943  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Acquired <color=#1589FF>Cutter</color>
+        YL5943 - -2 Trade (Trade:0)
+Attacked TyO for 1 (New Authority:49)
+        YL5943 - -1 Combat (Combat:0)
+        TyO - -1 Authority (Authority:49)
+YL5943 ends turn 1
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now TyO's turn 2
+Play all
+        TyO  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#1589FF>Frontier Runner</color>
+        TyO - -1 Trade (Trade:3)
+Acquired <color=#1589FF>Patrol Boat</color>
+        TyO - -3 Trade (Trade:0)
+Scrapping Political Maneuver
+        Scrapped <color=#800080>Political Maneuver</color>
+        TyO  >  <color=#800080>Political Maneuver</color> +2 Trade (Trade:2)
+Acquired <color=#FFFF00>Cargo Craft</color>
+        TyO - -2 Trade (Trade:0)
+Attacked YL5943 for 1 (New Authority:49)
+        TyO - -1 Combat (Combat:0)
+        YL5943 - -1 Authority (Authority:49)
+TyO ends turn 2
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 3
+Scrapping Exploration
+YL5943 is scrapping Viper
+        Scrapped <color=#800080>Exploration</color>
+        Scrapped <color=#800080>Viper</color>
+        Acquired <color=#800080>Explorer</color> to the top of the deck.
+Play all
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        YL5943  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Acquired <color=#4CC417>Crusher</color>
+        YL5943 - -3 Trade (Trade:1)
+Acquired <color=#4CC417>Stinger</color>
+        YL5943 - -1 Trade (Trade:0)
+Attacked TyO for 1 (New Authority:48)
+        YL5943 - -1 Combat (Combat:0)
+        TyO - -1 Authority (Authority:48)
+YL5943 ends turn 3
+        Drew 3 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now TyO's turn 4
+Play all
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        TyO  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Acquired <color=#FFFF00>Captured Outpost</color>
+        TyO - -3 Trade (Trade:1)
+Attacked YL5943 for 1 (New Authority:48)
+        TyO - -1 Combat (Combat:0)
+        YL5943 - -1 Authority (Authority:48)
+TyO ends turn 4
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 5
+Play all
+        YL5943  >  <color=#800080>Explorer</color> +2 Trade (Trade:2)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        YL5943  >  <color=#4CC417>Crusher</color> +6 Combat (Combat:6)
+        YL5943  >  <color=#800080>Viper</color> +1 Combat (Combat:7)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        YL5943  >  <color=#800080>Explorer</color> +2 Combat (Combat:9)
+Attacked TyO for 9 (New Authority:39)
+        YL5943 - -9 Combat (Combat:0)
+        TyO - -9 Authority (Authority:39)
+Acquired <color=#4CC417>Trade Pod</color>
+        YL5943 - -2 Trade (Trade:2)
+Acquired <color=#FFFF00>Cargo Craft</color>
+        YL5943 - -2 Trade (Trade:0)
+YL5943 ends turn 5
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now TyO's turn 6
+Played <color=#FFFF00>Captured Outpost</color>
+        TyO  >  <color=#FFFF00>Captured Outpost</color> ability available
+Activating Captured Outpost
+        Drew 1 cards.
+Resolving Discard 1 cards
+TyO is discarding Viper
+        no more cards to discard
+        Discarded <color=#800080>Viper</color>
+Play all
+        TyO  >  <color=#1589FF>Frontier Runner</color> +2 Trade (Trade:2)
+        TyO  >  <color=#1589FF>Frontier Runner</color> +2 Authority (Authority:41)
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#4CC417>P</color><color=#47BF2C>a</color><color=#42B941>c</color><color=#3DB456>t</color><color=#38AF6B> </color><color=#33A980>W</color><color=#2EA496>a</color><color=#299EAB>r</color><color=#2499C0>s</color><color=#1F94D5>h</color><color=#1A8EEA>i</color><color=#1589FF>p</color>
+        TyO - -4 Trade (Trade:1)
+TyO ends turn 6
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 7
+Play all
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        YL5943  >  <color=#4CC417>Stinger</color> +3 Combat (Combat:3)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Attacked Captured Outpost
+        YL5943 - -3 Combat (Combat:0)
+        Destroyed <color=#FFFF00>Captured Outpost</color>
+Acquired <color=#4CC417>Blob Destroyer</color>
+        YL5943 - -4 Trade (Trade:0)
+YL5943 ends turn 7
+        Drew 3 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now TyO's turn 8
+Play all
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        TyO  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Acquired <color=#FF0000>C</color><color=#F2080E>o</color><color=#E50F1C>a</color><color=#D8172A>l</color><color=#CB1E39>i</color><color=#BE2647>t</color><color=#B12E55>i</color><color=#A43563>o</color><color=#973D71>n</color><color=#8A4480> </color><color=#7D4C8E>F</color><color=#70549C>r</color><color=#635BAA>e</color><color=#5663B8>i</color><color=#496BC6>g</color><color=#3C72D4>h</color><color=#2F7AE3>t</color><color=#2281F1>e</color><color=#1589FF>r</color>
+        TyO - -4 Trade (Trade:0)
+Attacked YL5943 for 1 (New Authority:47)
+        TyO - -1 Combat (Combat:0)
+        YL5943 - -1 Authority (Authority:47)
+TyO ends turn 8
+        Drew 3 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 9
+Play all
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        YL5943  >  <color=#1589FF>Cutter</color> +4 Authority (Authority:51)
+        YL5943  >  <color=#1589FF>Cutter</color> +2 Trade (Trade:3)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        YL5943  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Acquired <color=#1589FF>Trading Post</color>
+        YL5943 - -3 Trade (Trade:2)
+Acquired <color=#4CC417>Spike Cluster</color>
+        YL5943 - -2 Trade (Trade:0)
+Attacked TyO for 1 (New Authority:40)
+        YL5943 - -1 Combat (Combat:0)
+        TyO - -1 Authority (Authority:40)
+YL5943 ends turn 9
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now TyO's turn 10
+Play all
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        TyO  >  <color=#1589FF>Patrol Boat</color> +2 Authority (Authority:42)
+        TyO  >  <color=#FFFF00>Cargo Craft</color> +2 Trade (Trade:3)
+        YL5943  <  <color=#FFFF00>Cargo Craft</color> +1 Discard (Discarding: 1)
+        TyO  >  <color=#1589FF>Patrol Boat</color> +4 Combat (Combat:4)
+        TyO  >  <color=#1589FF>Patrol Boat</color> +3 Authority (Authority:45)
+        TyO  >  <color=#1589FF>Frontier Runner</color> +2 Trade (Trade:5)
+        TyO  >  <color=#1589FF>Frontier Runner</color> +2 Authority (Authority:47)
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+Acquired <color=#FF0000>Defense System</color>
+        TyO - -4 Trade (Trade:2)
+Scrapping Asteroid Mining
+        TyO  >  <color=#800080>Asteroid Mining</color> +1 Trade (Trade:3)
+        Replaced Asteroid Mining
+Acquired <color=#4CC417>Ram</color>
+        TyO - -3 Trade (Trade:0)
+Attacked YL5943 for 4 (New Authority:47)
+        TyO - -4 Combat (Combat:0)
+        YL5943 - -4 Authority (Authority:47)
+TyO ends turn 10
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 11
+Resolving Discard 1 cards
+YL5943 is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Play all
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        YL5943  >  <color=#4CC417>Trade Pod</color> +2 Combat (Combat:2)
+        YL5943  >  <color=#FFFF00>Cargo Craft</color> +2 Trade (Trade:3)
+        TyO  <  <color=#FFFF00>Cargo Craft</color> +1 Discard (Discarding: 1)
+        YL5943  >  <color=#4CC417>Blob Destroyer</color> +6 Combat (Combat:8)
+        YL5943  >  <color=#4CC417>Trade Pod</color> +3 Trade (Trade:6)
+Attacked TyO for 8 (New Authority:39)
+        YL5943 - -8 Combat (Combat:0)
+        TyO - -8 Authority (Authority:39)
+Acquired <color=#FF0000>C</color><color=#F2080E>o</color><color=#E50F1C>a</color><color=#D8172A>l</color><color=#CB1E39>i</color><color=#BE2647>t</color><color=#B12E55>i</color><color=#A43563>o</color><color=#973D71>n</color><color=#8A4480> </color><color=#7D4C8E>F</color><color=#70549C>r</color><color=#635BAA>e</color><color=#5663B8>i</color><color=#496BC6>g</color><color=#3C72D4>h</color><color=#2F7AE3>t</color><color=#2281F1>e</color><color=#1589FF>r</color>
+        YL5943 - -4 Trade (Trade:2)
+Acquired <color=#4CC417>A</color><color=#5ECA15>s</color><color=#70D012>s</color><color=#82D610>a</color><color=#94DC0E>u</color><color=#A6E20C>l</color><color=#B7E709>t</color><color=#C9ED07> </color><color=#DBF305>P</color><color=#EDF902>o</color><color=#FFFF00>d</color>
+        YL5943 - -2 Trade (Trade:0)
+YL5943 ends turn 11
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now TyO's turn 12
+Resolving Discard 1 cards
+TyO is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Played <color=#4CC417>P</color><color=#47BF2C>a</color><color=#42B941>c</color><color=#3DB456>t</color><color=#38AF6B> </color><color=#33A980>W</color><color=#2EA496>a</color><color=#299EAB>r</color><color=#2499C0>s</color><color=#1F94D5>h</color><color=#1A8EEA>i</color><color=#1589FF>p</color>
+        TyO  >  <color=#4CC417>P</color><color=#47BF2C>a</color><color=#42B941>c</color><color=#3DB456>t</color><color=#38AF6B> </color><color=#33A980>W</color><color=#2EA496>a</color><color=#299EAB>r</color><color=#2499C0>s</color><color=#1F94D5>h</color><color=#1A8EEA>i</color><color=#1589FF>p</color> +5 Combat (Combat:5)
+Played <color=#FF0000>C</color><color=#F2080E>o</color><color=#E50F1C>a</color><color=#D8172A>l</color><color=#CB1E39>i</color><color=#BE2647>t</color><color=#B12E55>i</color><color=#A43563>o</color><color=#973D71>n</color><color=#8A4480> </color><color=#7D4C8E>F</color><color=#70549C>r</color><color=#635BAA>e</color><color=#5663B8>i</color><color=#496BC6>g</color><color=#3C72D4>h</color><color=#2F7AE3>t</color><color=#2281F1>e</color><color=#1589FF>r</color>
+        TyO  >  <color=#FF0000>C</color><color=#F2080E>o</color><color=#E50F1C>a</color><color=#D8172A>l</color><color=#CB1E39>i</color><color=#BE2647>t</color><color=#B12E55>i</color><color=#A43563>o</color><color=#973D71>n</color><color=#8A4480> </color><color=#7D4C8E>F</color><color=#70549C>r</color><color=#635BAA>e</color><color=#5663B8>i</color><color=#496BC6>g</color><color=#3C72D4>h</color><color=#2F7AE3>t</color><color=#2281F1>e</color><color=#1589FF>r</color> +3 Trade (Trade:3)
+        TyO  >  <color=#4CC417>P</color><color=#47BF2C>a</color><color=#42B941>c</color><color=#3DB456>t</color><color=#38AF6B> </color><color=#33A980>W</color><color=#2EA496>a</color><color=#299EAB>r</color><color=#2499C0>s</color><color=#1F94D5>h</color><color=#1A8EEA>i</color><color=#1589FF>p</color> +5 Authority (Authority:44)
+Played <color=#800080>Scout</color>
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Played <color=#800080>Scout</color>
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Scrapping Asteroid Mining 2
+        Scrapped <color=#800080>Asteroid Mining 2</color>
+        Drew 1 cards.
+Played <color=#800080>Scout</color>
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+Acquired <color=#FF0000>Reclamation Station</color>
+        TyO - -6 Trade (Trade:0)
+Attacked YL5943 for 5 (New Authority:42)
+        TyO - -5 Combat (Combat:0)
+        YL5943 - -5 Authority (Authority:42)
+TyO ends turn 12
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 13
+Play all
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        YL5943  >  <color=#4CC417>Crusher</color> +2 Trade (Trade:3)
+        YL5943  >  <color=#4CC417>Stinger</color> +3 Combat (Combat:3)
+        YL5943  >  <color=#4CC417>Crusher</color> +6 Combat (Combat:9)
+        YL5943  >  <color=#4CC417>Stinger</color> +3 Combat (Combat:12)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Attacked TyO for 12 (New Authority:32)
+        YL5943 - -12 Combat (Combat:0)
+        TyO - -12 Authority (Authority:32)
+Acquired <color=#FF0000>Defense System</color>
+        YL5943 - -4 Trade (Trade:1)
+Acquired <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>F</color><color=#B4520A>i</color><color=#C34108>g</color><color=#D23106>h</color><color=#E12104>t</color><color=#F01002>e</color><color=#FF0000>r</color>
+        YL5943 - -1 Trade (Trade:0)
+Scrapping Salvage Operation
+YL5943 is selecting Defense System
+        Scrapped <color=#800080>Salvage Operation</color>
+YL5943 ends turn 13
+        Drew 1 cards.
+        Shuffled discard pile to form new deck
+        Drew 4 cards.
+        Refresh ally indicators
+        It is now TyO's turn 14
+Played <color=#FFFF00>Captured Outpost</color>
+        TyO  >  <color=#FFFF00>Captured Outpost</color> ability available
+Activating Captured Outpost
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+Resolving Discard 1 cards
+TyO is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Play all
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        TyO  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        TyO  >  <color=#800080>Viper</color> +1 Combat (Combat:2)
+Attacked YL5943 for 2 (New Authority:40)
+        TyO - -2 Combat (Combat:0)
+        YL5943 - -2 Authority (Authority:40)
+Acquired <color=#FFFF00>A</color><color=#FFEA00>l</color><color=#FFD400>i</color><color=#FFBF00>g</color><color=#FFAA00>n</color><color=#FF9500>m</color><color=#FF8000>e</color><color=#FF6A00>n</color><color=#FF5500>t</color><color=#FF4000> </color><color=#FF2B00>B</color><color=#FF1500>o</color><color=#FF0000>t</color>
+        TyO - -1 Trade (Trade:1)
+TyO ends turn 14
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 15
+Play all
+        YL5943  >  <color=#FF0000>Defense System</color> +2 Combat (Combat:2)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        YL5943  >  <color=#FFFF00>Cargo Craft</color> +2 Trade (Trade:4)
+        TyO  <  <color=#FFFF00>Cargo Craft</color> +1 Discard (Discarding: 1)
+        YL5943  >  <color=#800080>Viper</color> +1 Combat (Combat:3)
+Acquired <color=#FFFF00>A</color><color=#EFF711>l</color><color=#E0EF22>l</color><color=#D0E733>i</color><color=#C1E044>a</color><color=#B1D855>n</color><color=#A1D066>c</color><color=#92C877>e</color><color=#82C088> </color><color=#73B899>F</color><color=#63B0AA>r</color><color=#53A8BB>i</color><color=#44A1CC>g</color><color=#3499DD>a</color><color=#2591EE>t</color><color=#1589FF>e</color>
+        YL5943 - -3 Trade (Trade:1)
+Attacked Captured Outpost
+        YL5943 - -3 Combat (Combat:0)
+        Destroyed <color=#FFFF00>Captured Outpost</color>
+YL5943 ends turn 15
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now TyO's turn 16
+Resolving Discard 1 cards
+TyO is discarding Coalition Freighter
+        no more cards to discard
+        Discarded <color=#FF0000>C</color><color=#F2080E>o</color><color=#E50F1C>a</color><color=#D8172A>l</color><color=#CB1E39>i</color><color=#BE2647>t</color><color=#B12E55>i</color><color=#A43563>o</color><color=#973D71>n</color><color=#8A4480> </color><color=#7D4C8E>F</color><color=#70549C>r</color><color=#635BAA>e</color><color=#5663B8>i</color><color=#496BC6>g</color><color=#3C72D4>h</color><color=#2F7AE3>t</color><color=#2281F1>e</color><color=#1589FF>r</color>
+Played <color=#FF0000>Reclamation Station</color>
+        TyO  >  <color=#FF0000>Reclamation Station</color> ability available
+Activating Reclamation Station
+TyO is scrapping: Scout
+        Scrapped <color=#800080>Scout</color>
+Played <color=#FF0000>Defense System</color>
+        TyO  >  <color=#FF0000>Defense System</color> +2 Combat (Combat:2)
+        TyO  >  <color=#FF0000>Defense System</color> +2 Combat (Combat:4)
+Play all
+        TyO  >  <color=#1589FF>Frontier Runner</color> +2 Trade (Trade:2)
+        TyO  >  <color=#1589FF>Frontier Runner</color> +2 Authority (Authority:34)
+        TyO  >  <color=#4CC417>P</color><color=#47BF2C>a</color><color=#42B941>c</color><color=#3DB456>t</color><color=#38AF6B> </color><color=#33A980>W</color><color=#2EA496>a</color><color=#299EAB>r</color><color=#2499C0>s</color><color=#1F94D5>h</color><color=#1A8EEA>i</color><color=#1589FF>p</color> +5 Authority (Authority:39)
+        TyO  >  <color=#4CC417>P</color><color=#47BF2C>a</color><color=#42B941>c</color><color=#3DB456>t</color><color=#38AF6B> </color><color=#33A980>W</color><color=#2EA496>a</color><color=#299EAB>r</color><color=#2499C0>s</color><color=#1F94D5>h</color><color=#1A8EEA>i</color><color=#1589FF>p</color> +5 Combat (Combat:9)
+Attacked Defense System
+        TyO - -5 Combat (Combat:4)
+        Destroyed <color=#FF0000>Defense System</color>
+Attacked YL5943 for 4 (New Authority:36)
+        TyO - -4 Combat (Combat:0)
+        YL5943 - -4 Authority (Authority:36)
+TyO ends turn 16
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 17
+Played <color=#1589FF>Trading Post</color>
+Play all
+        YL5943  >  <color=#4CC417>Spike Cluster</color> +2 Combat (Combat:2)
+        YL5943  >  <color=#4CC417>Stinger</color> +3 Combat (Combat:5)
+        YL5943  >  <color=#4CC417>Trade Pod</color> +2 Combat (Combat:7)
+        YL5943  >  <color=#4CC417>Spike Cluster</color> +1 Trade (Trade:1)
+        YL5943  >  <color=#4CC417>Stinger</color> +3 Combat (Combat:10)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        YL5943  >  <color=#4CC417>Trade Pod</color> +3 Trade (Trade:5)
+Chose Add 1 Trade
+        YL5943  >  <color=#1589FF>Trading Post</color> +1 Trade (Trade:6)
+Acquired <color=#FF0000>Conversion Yard</color>
+        YL5943 - -5 Trade (Trade:1)
+Attacked Reclamation Station
+        YL5943 - -6 Combat (Combat:4)
+        Destroyed <color=#FF0000>Reclamation Station</color>
+YL5943 ends turn 17
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now TyO's turn 18
+        TyO  >  <color=#FF0000>Defense System</color> +2 Combat (Combat:2)
+Play all
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        TyO  >  <color=#4CC417>Ram</color> +5 Combat (Combat:7)
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Attacked Trading Post
+        TyO - -4 Combat (Combat:3)
+        Destroyed <color=#1589FF>Trading Post</color>
+Attacked Spike Cluster
+        TyO - -3 Combat (Combat:0)
+        Destroyed <color=#4CC417>Spike Cluster</color>
+Scrapping Ram
+        Scrapped <color=#4CC417>Ram</color>
+        TyO  >  <color=#4CC417>Ram</color> +3 Trade (Trade:7)
+Acquired <color=#FF0000>Enforcer Mech</color>
+        TyO - -5 Trade (Trade:2)
+Acquired <color=#FF0000>Missile Bot</color>
+        TyO - -2 Trade (Trade:0)
+TyO ends turn 18
+        Drew 3 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 19
+Play all
+        YL5943  >  <color=#FF0000>C</color><color=#F2080E>o</color><color=#E50F1C>a</color><color=#D8172A>l</color><color=#CB1E39>i</color><color=#BE2647>t</color><color=#B12E55>i</color><color=#A43563>o</color><color=#973D71>n</color><color=#8A4480> </color><color=#7D4C8E>F</color><color=#70549C>r</color><color=#635BAA>e</color><color=#5663B8>i</color><color=#496BC6>g</color><color=#3C72D4>h</color><color=#2F7AE3>t</color><color=#2281F1>e</color><color=#1589FF>r</color> +3 Trade (Trade:3)
+        YL5943  >  <color=#4CC417>Crusher</color> +2 Trade (Trade:5)
+        YL5943  >  <color=#4CC417>Blob Destroyer</color> +6 Combat (Combat:6)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:7)
+        YL5943  >  <color=#4CC417>Crusher</color> +6 Combat (Combat:12)
+Activating Blob Destroyer
+        Destroyed <color=#FF0000>Defense System</color>
+Attacked TyO for 12 (New Authority:27)
+        YL5943 - -12 Combat (Combat:0)
+        TyO - -12 Authority (Authority:27)
+Acquired <color=#1589FF>Central Office</color>
+        YL5943 - -7 Trade (Trade:0)
+YL5943 ends turn 19
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now TyO's turn 20
+Played <color=#FF0000>Enforcer Mech</color>
+TyO is scrapping: Scout
+        TyO  >  <color=#FF0000>Enforcer Mech</color> +5 Combat (Combat:5)
+        Scrapped <color=#800080>Scout</color>
+Play all
+        TyO  >  <color=#FFFF00>Cargo Craft</color> +2 Trade (Trade:2)
+        YL5943  <  <color=#FFFF00>Cargo Craft</color> +1 Discard (Discarding: 1)
+        TyO  >  <color=#1589FF>Patrol Boat</color> +4 Combat (Combat:9)
+        TyO  >  <color=#1589FF>Patrol Boat</color> +3 Authority (Authority:30)
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Attacked YL5943 for 9 (New Authority:27)
+        TyO - -9 Combat (Combat:0)
+        YL5943 - -9 Authority (Authority:27)
+TyO ends turn 20
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 21
+Resolving Discard 1 cards
+YL5943 is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Played <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>F</color><color=#B4520A>i</color><color=#C34108>g</color><color=#D23106>h</color><color=#E12104>t</color><color=#F01002>e</color><color=#FF0000>r</color>
+        YL5943  >  <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>F</color><color=#B4520A>i</color><color=#C34108>g</color><color=#D23106>h</color><color=#E12104>t</color><color=#F01002>e</color><color=#FF0000>r</color> ability available
+        YL5943  >  <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>F</color><color=#B4520A>i</color><color=#C34108>g</color><color=#D23106>h</color><color=#E12104>t</color><color=#F01002>e</color><color=#FF0000>r</color> +3 Combat (Combat:3)
+Scrapping Unity Fighter
+YL5943 is scrapping: Viper
+        Scrapped <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>F</color><color=#B4520A>i</color><color=#C34108>g</color><color=#D23106>h</color><color=#E12104>t</color><color=#F01002>e</color><color=#FF0000>r</color>
+        Scrapped <color=#800080>Viper</color>
+Play all
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        YL5943  >  <color=#1589FF>Cutter</color> +4 Authority (Authority:31)
+        YL5943  >  <color=#1589FF>Cutter</color> +2 Trade (Trade:3)
+        YL5943  >  <color=#4CC417>A</color><color=#5ECA15>s</color><color=#70D012>s</color><color=#82D610>a</color><color=#94DC0E>u</color><color=#A6E20C>l</color><color=#B7E709>t</color><color=#C9ED07> </color><color=#DBF305>P</color><color=#EDF902>o</color><color=#FFFF00>d</color> +3 Combat (Combat:6)
+Attacked TyO for 6 (New Authority:24)
+        YL5943 - -6 Combat (Combat:0)
+        TyO - -6 Authority (Authority:24)
+Acquired <color=#1589FF>Orbital Shuttle</color>
+        YL5943 - -2 Trade (Trade:1)
+YL5943 ends turn 21
+        Drew 1 cards.
+        Shuffled discard pile to form new deck
+        Drew 4 cards.
+        Refresh ally indicators
+        It is now TyO's turn 22
+Played <color=#FF0000>Missile Bot</color>
+TyO is scrapping: Scout
+        TyO  >  <color=#FF0000>Missile Bot</color> +2 Combat (Combat:2)
+        Scrapped <color=#800080>Scout</color>
+Play all
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        TyO  >  <color=#800080>Viper</color> +1 Combat (Combat:3)
+Attacked YL5943 for 3 (New Authority:28)
+        TyO - -3 Combat (Combat:0)
+        YL5943 - -3 Authority (Authority:28)
+TyO ends turn 22
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 23
+Played <color=#FF0000>Conversion Yard</color>
+        YL5943  >  <color=#FF0000>Conversion Yard</color> ability available
+Activating Conversion Yard
+YL5943 is scrapping Scout
+        Scrapped <color=#800080>Scout</color>
+        YL5943  >  <color=#FF0000>Conversion Yard</color> +4 Combat (Combat:4)
+Play all
+        YL5943  >  <color=#1589FF>Orbital Shuttle</color> +3 Trade (Trade:3)
+        YL5943  >  <color=#4CC417>Trade Pod</color> +3 Trade (Trade:6)
+        YL5943  >  <color=#FFFF00>Cargo Craft</color> +2 Trade (Trade:8)
+        TyO  <  <color=#FFFF00>Cargo Craft</color> +1 Discard (Discarding: 1)
+Acquired <color=#4CC417>Blob World</color>
+        YL5943 - -8 Trade (Trade:0)
+Attacked TyO for 4 (New Authority:20)
+        YL5943 - -4 Combat (Combat:0)
+        TyO - -4 Authority (Authority:20)
+YL5943 ends turn 23
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now TyO's turn 24
+Resolving Discard 1 cards
+TyO is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Played <color=#FFFF00>Captured Outpost</color>
+        TyO  >  <color=#FFFF00>Captured Outpost</color> ability available
+Activating Captured Outpost
+        Drew 1 cards.
+Resolving Discard 1 cards
+TyO is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Play all
+        TyO  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        TyO  >  <color=#1589FF>Frontier Runner</color> +2 Trade (Trade:2)
+        TyO  >  <color=#1589FF>Frontier Runner</color> +2 Authority (Authority:22)
+        TyO  >  <color=#FFFF00>A</color><color=#FFEA00>l</color><color=#FFD400>i</color><color=#FFBF00>g</color><color=#FFAA00>n</color><color=#FF9500>m</color><color=#FF8000>e</color><color=#FF6A00>n</color><color=#FF5500>t</color><color=#FF4000> </color><color=#FF2B00>B</color><color=#FF1500>o</color><color=#FF0000>t</color> +2 Trade (Trade:4)
+Chose Scrap a card from your discard pile
+TyO is scrapping: Scout
+        Scrapped <color=#FFFF00>A</color><color=#FFEA00>l</color><color=#FFD400>i</color><color=#FFBF00>g</color><color=#FFAA00>n</color><color=#FF9500>m</color><color=#FF8000>e</color><color=#FF6A00>n</color><color=#FF5500>t</color><color=#FF4000> </color><color=#FF2B00>B</color><color=#FF1500>o</color><color=#FF0000>t</color>
+        Scrapped <color=#800080>Scout</color>
+TyO ends turn 24
+        Drew 3 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 25
+Played <color=#4CC417>A</color><color=#5ECA15>s</color><color=#70D012>s</color><color=#82D610>a</color><color=#94DC0E>u</color><color=#A6E20C>l</color><color=#B7E709>t</color><color=#C9ED07> </color><color=#DBF305>P</color><color=#EDF902>o</color><color=#FFFF00>d</color>
+        YL5943  >  <color=#4CC417>A</color><color=#5ECA15>s</color><color=#70D012>s</color><color=#82D610>a</color><color=#94DC0E>u</color><color=#A6E20C>l</color><color=#B7E709>t</color><color=#C9ED07> </color><color=#DBF305>P</color><color=#EDF902>o</color><color=#FFFF00>d</color> +3 Combat (Combat:3)
+Played <color=#FFFF00>A</color><color=#EFF711>l</color><color=#E0EF22>l</color><color=#D0E733>i</color><color=#C1E044>a</color><color=#B1D855>n</color><color=#A1D066>c</color><color=#92C877>e</color><color=#82C088> </color><color=#73B899>F</color><color=#63B0AA>r</color><color=#53A8BB>i</color><color=#44A1CC>g</color><color=#3499DD>a</color><color=#2591EE>t</color><color=#1589FF>e</color>
+        YL5943  >  <color=#FFFF00>A</color><color=#EFF711>l</color><color=#E0EF22>l</color><color=#D0E733>i</color><color=#C1E044>a</color><color=#B1D855>n</color><color=#A1D066>c</color><color=#92C877>e</color><color=#82C088> </color><color=#73B899>F</color><color=#63B0AA>r</color><color=#53A8BB>i</color><color=#44A1CC>g</color><color=#3499DD>a</color><color=#2591EE>t</color><color=#1589FF>e</color> +4 Combat (Combat:7)
+        Drew 1 cards.
+        YL5943  >  <color=#FFFF00>A</color><color=#EFF711>l</color><color=#E0EF22>l</color><color=#D0E733>i</color><color=#C1E044>a</color><color=#B1D855>n</color><color=#A1D066>c</color><color=#92C877>e</color><color=#82C088> </color><color=#73B899>F</color><color=#63B0AA>r</color><color=#53A8BB>i</color><color=#44A1CC>g</color><color=#3499DD>a</color><color=#2591EE>t</color><color=#1589FF>e</color> +3 Combat (Combat:10)
+Played <color=#4CC417>Spike Cluster</color>
+        YL5943  >  <color=#4CC417>Spike Cluster</color> +2 Combat (Combat:12)
+        YL5943  >  <color=#4CC417>Spike Cluster</color> +1 Trade (Trade:1)
+Activating Conversion Yard
+YL5943 is scrapping Scout
+        Scrapped <color=#800080>Scout</color>
+        YL5943  >  <color=#FF0000>Conversion Yard</color> +4 Combat (Combat:16)
+Attacked Captured Outpost
+        YL5943 - -3 Combat (Combat:13)
+        Destroyed <color=#FFFF00>Captured Outpost</color>
+Attacked TyO for 13 (New Authority:9)
+        YL5943 - -13 Combat (Combat:0)
+        TyO - -13 Authority (Authority:9)
+Play all
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+YL5943 ends turn 25
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now TyO's turn 26
+Played <color=#FF0000>Defense System</color>
+        TyO  >  <color=#FF0000>Defense System</color> +2 Combat (Combat:2)
+Played <color=#FF0000>C</color><color=#F2080E>o</color><color=#E50F1C>a</color><color=#D8172A>l</color><color=#CB1E39>i</color><color=#BE2647>t</color><color=#B12E55>i</color><color=#A43563>o</color><color=#973D71>n</color><color=#8A4480> </color><color=#7D4C8E>F</color><color=#70549C>r</color><color=#635BAA>e</color><color=#5663B8>i</color><color=#496BC6>g</color><color=#3C72D4>h</color><color=#2F7AE3>t</color><color=#2281F1>e</color><color=#1589FF>r</color>
+        TyO  >  <color=#FF0000>C</color><color=#F2080E>o</color><color=#E50F1C>a</color><color=#D8172A>l</color><color=#CB1E39>i</color><color=#BE2647>t</color><color=#B12E55>i</color><color=#A43563>o</color><color=#973D71>n</color><color=#8A4480> </color><color=#7D4C8E>F</color><color=#70549C>r</color><color=#635BAA>e</color><color=#5663B8>i</color><color=#496BC6>g</color><color=#3C72D4>h</color><color=#2F7AE3>t</color><color=#2281F1>e</color><color=#1589FF>r</color> +3 Trade (Trade:3)
+        TyO  >  <color=#FF0000>Defense System</color> +2 Combat (Combat:4)
+Played <color=#4CC417>P</color><color=#47BF2C>a</color><color=#42B941>c</color><color=#3DB456>t</color><color=#38AF6B> </color><color=#33A980>W</color><color=#2EA496>a</color><color=#299EAB>r</color><color=#2499C0>s</color><color=#1F94D5>h</color><color=#1A8EEA>i</color><color=#1589FF>p</color>
+        TyO  >  <color=#4CC417>P</color><color=#47BF2C>a</color><color=#42B941>c</color><color=#3DB456>t</color><color=#38AF6B> </color><color=#33A980>W</color><color=#2EA496>a</color><color=#299EAB>r</color><color=#2499C0>s</color><color=#1F94D5>h</color><color=#1A8EEA>i</color><color=#1589FF>p</color> +5 Combat (Combat:9)
+        TyO  >  <color=#4CC417>P</color><color=#47BF2C>a</color><color=#42B941>c</color><color=#3DB456>t</color><color=#38AF6B> </color><color=#33A980>W</color><color=#2EA496>a</color><color=#299EAB>r</color><color=#2499C0>s</color><color=#1F94D5>h</color><color=#1A8EEA>i</color><color=#1589FF>p</color> +5 Authority (Authority:14)
+Played <color=#FF0000>Reclamation Station</color>
+        TyO  >  <color=#FF0000>Reclamation Station</color> ability available
+Played <color=#800080>Viper</color>
+        TyO  >  <color=#800080>Viper</color> +1 Combat (Combat:10)
+Attacked Conversion Yard
+        TyO - -4 Combat (Combat:6)
+        Destroyed <color=#FF0000>Conversion Yard</color>
+Attacked Spike Cluster
+        TyO - -3 Combat (Combat:3)
+        Destroyed <color=#4CC417>Spike Cluster</color>
+Attacked YL5943 for 3 (New Authority:25)
+        TyO - -3 Combat (Combat:0)
+        YL5943 - -3 Authority (Authority:25)
+TyO ends turn 26
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 27
+Played <color=#FF0000>Defense System</color>
+        YL5943  >  <color=#FF0000>Defense System</color> +2 Combat (Combat:2)
+Played <color=#1589FF>Central Office</color>
+        YL5943  >  <color=#1589FF>Central Office</color> +2 Trade (Trade:2)
+Play all
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+YL5943 ends turn 27
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now TyO's turn 28
+        TyO  >  <color=#FF0000>Defense System</color> +2 Combat (Combat:2)
+        TyO  >  <color=#FF0000>Defense System</color> +2 Combat (Combat:4)
+Activating Reclamation Station
+TyO is scrapping: Viper
+        Scrapped <color=#800080>Viper</color>
+Played <color=#FF0000>Missile Bot</color>
+TyO is scrapping: Scout
+        TyO  >  <color=#FF0000>Missile Bot</color> +2 Combat (Combat:6)
+        Scrapped <color=#800080>Scout</color>
+        TyO  >  <color=#FF0000>Missile Bot</color> +2 Combat (Combat:8)
+Played <color=#FF0000>Enforcer Mech</color>
+        TyO  >  <color=#FF0000>Enforcer Mech</color> +5 Combat (Combat:13)
+Attacked Defense System
+        TyO - -5 Combat (Combat:8)
+        Destroyed <color=#FF0000>Defense System</color>
+Activating Enforcer Mech
+        Destroyed <color=#1589FF>Central Office</color>
+Played <color=#FFFF00>Cargo Craft</color>
+        TyO  >  <color=#FFFF00>Cargo Craft</color> +2 Trade (Trade:2)
+        YL5943  <  <color=#FFFF00>Cargo Craft</color> +1 Discard (Discarding: 1)
+Played <color=#800080>Viper</color>
+        TyO  >  <color=#800080>Viper</color> +1 Combat (Combat:9)
+Attacked YL5943 for 9 (New Authority:16)
+        TyO - -9 Combat (Combat:0)
+        YL5943 - -9 Authority (Authority:16)
+Scrapping Enforcer Mech
+        Scrapped <color=#FF0000>Enforcer Mech</color>
+        Drew 1 cards.
+Played <color=#800080>Scout</color>
+        TyO  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+TyO ends turn 28
+        Drew 4 cards.
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 29
+Resolving Discard 1 cards
+YL5943 is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Played <color=#4CC417>Blob Destroyer</color>
+        YL5943  >  <color=#4CC417>Blob Destroyer</color> +6 Combat (Combat:6)
+Played <color=#4CC417>Crusher</color>
+        YL5943  >  <color=#4CC417>Crusher</color> +6 Combat (Combat:12)
+        YL5943  >  <color=#4CC417>Crusher</color> +2 Trade (Trade:2)
+Activating Blob Destroyer
+        Destroyed <color=#FF0000>Reclamation Station</color>
+Played <color=#1589FF>Trading Post</color>
+Played <color=#1589FF>Cutter</color>
+        YL5943  >  <color=#1589FF>Cutter</color> +4 Authority (Authority:20)
+        YL5943  >  <color=#1589FF>Cutter</color> +2 Trade (Trade:4)
+        YL5943  >  <color=#1589FF>Cutter</color> +4 Combat (Combat:16)
+Chose Add 1 Authority
+        YL5943  >  <color=#1589FF>Trading Post</color> +1 Authority (Authority:21)
+Scrapping Trading Post
+        Scrapped <color=#1589FF>Trading Post</color>
+        YL5943  >  <color=#1589FF>Trading Post</color> +3 Combat (Combat:19)
+Attacked Defense System
+        YL5943 - -5 Combat (Combat:14)
+        Destroyed <color=#FF0000>Defense System</color>
+Attacked TyO for 14 (New Authority:0)
+        YL5943 - -14 Combat (Combat:0)
+        TyO - -14 Authority (Authority:0)
+        === YL5943 has won the game. ===

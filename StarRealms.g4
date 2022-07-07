@@ -113,7 +113,7 @@ choseBlobDraw         : CHOSE DRAW WORD CARD FOR EVERY BLOB CARD PLAYED THIS TUR
 choseIngenuityGambit  : CHOSE DRAW INT CARDS DISCARD INT CARDS NEWLINE ;
 hiddenBaseGambit      : CHOSE CREATE wordPlus+ SECRET OUTPOST NEWLINE;
 midGateEffect         : CHOSE ADD INT wordPlus DISCARD ANY NUMBER OF CARDS RECEIVE INT wordPlus FOR EACH NEWLINE;
-choseEffectDetail     : selectDiscard | discardForPool | discarding | drawCardsWithShuffle | noScrap | simpleScrap | positiveBalance | refreshTradeRow | changeHiddenBaseToFaction | replaceGambit;
+choseEffectDetail     : selectDiscard | discardForPool | discarding | drawCardsWithShuffle | noScrap | simpleScrap | positiveBalance | refreshTradeRow | changeHiddenBaseToFaction | replaceGambit | scrapSummary;
 refreshTradeRow       : REFRESH TRADE ROW DISCOUNTS NEWLINE;
 changeHiddenBaseToFaction : CHANGED SECRET OUTPOST TO wordPlus+ NEWLINE;
 
