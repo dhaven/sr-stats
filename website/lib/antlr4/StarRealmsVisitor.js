@@ -180,6 +180,12 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
+	// Visit a parse tree produced by StarRealmsParser#refreshCost.
+	visitRefreshCost(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
 	// Visit a parse tree produced by StarRealmsParser#completeMission.
 	visitCompleteMission(ctx) {
 	  return this.visitChildren(ctx);
@@ -296,6 +302,12 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 
 	// Visit a parse tree produced by StarRealmsParser#resolveWormhole.
 	visitResolveWormhole(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#resolveSplinterGambit.
+	visitResolveSplinterGambit(ctx) {
 	  return this.visitChildren(ctx);
 	}
 
@@ -474,6 +486,12 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
+	// Visit a parse tree produced by StarRealmsParser#choseAddToDeck.
+	visitChoseAddToDeck(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
 	// Visit a parse tree produced by StarRealmsParser#choseScrapFromDiscard.
 	visitChoseScrapFromDiscard(ctx) {
 	  return this.visitChildren(ctx);
@@ -488,6 +506,12 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 
 	// Visit a parse tree produced by StarRealmsParser#choseBlobDraw.
 	visitChoseBlobDraw(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#choseIngenuityGambit.
+	visitChoseIngenuityGambit(ctx) {
 	  return this.visitChildren(ctx);
 	}
 

@@ -16,6 +16,7 @@ import { crisis_heroes } from './card_data/crisis_heroes.js';
 import { promo1 } from './card_data/promo1.js';
 import { promo2 } from './card_data/promo2.js';
 import { tech } from './card_data/tech.js';
+import { command_decks } from './card_data/command_decks.js'
 
 const { S3Client, GetObjectCommand } = require("@aws-sdk/client-s3");
 
@@ -34,10 +35,12 @@ var card_list = Object.assign(
     crisis_heroes['cards'],
     promo1['cards'],
     promo2['cards'],
-    tech['cards']
+    tech['cards'],
+    command_decks['cards']
 )
 
 class Visitor extends StarRealmsVisitor{
+
     // update both players data with info from the latest round
     updatePlayerData(currentPlayer, lastRoundPlayers, nextRound){
         let newPlayerData = []
@@ -45,7 +48,7 @@ class Visitor extends StarRealmsVisitor{
             //get  copy of our player object
             let player = JSON.parse(JSON.stringify(lastRoundPlayers[i]))
             if(player.name in nextRound['authority']){
-                player['authority'] += nextRound['authority'][player.name]
+                player['authority'] += nextRound['authority'][player.name]['diff']
             }
             if(player.name == currentPlayer){
                 for(let j = 0; j < nextRound['purchasedCards'].length; j++){
@@ -75,24 +78,15 @@ class Visitor extends StarRealmsVisitor{
                 }
                 for(let j = 0; j < nextRound['discardedCards'].length; j++){
                     let nextCard = nextRound['discardedCards'][j]
-                    player['deck'][nextCard]['discardCount'] += 1
+                    if(nextCard in player['deck']){
+                        player['deck'][nextCard]['discardCount'] += 1
+                    }
                 }
                 for(let j = 0; j < nextRound['playedCards'].length; j++){
                     let nextCard = nextRound['playedCards'][j]
-                    if(!(nextCard in player['deck'])){
-                        player.deck[nextCard] = {
-                            name: card_list[nextCard]['name'],
-                            cost: card_list[nextCard]['cost'],
-                            faction: card_list[nextCard]['faction'],
-                            type: card_list[nextCard]['type'],
-                            count: 1,
-                            scrapCount: 0,
-                            discardCount: 0,
-                            destroyedCount: 0,
-                            playedCount: 0
-                        }
+                    if(nextCard in player['deck']){
+                        player['deck'][nextCard]['playedCount'] += 1
                     }
-                    player['deck'][nextCard]['playedCount'] += 1
                 }
                 newPlayerData.push(player)
             }else{
@@ -113,9 +107,11 @@ class Visitor extends StarRealmsVisitor{
     //     category: Trade/Combat/authority,
     //     target: string
     //     value: int
+    //     newBalance: int
     // }
     computeNewBalance(currentBalance, nextBalance){
         let newBalance = {}
+        //console.log(nextBalance)
         if(Object.keys(currentBalance).length == 0){
             newBalance = {
                 tradePool: 0,
@@ -143,35 +139,93 @@ class Visitor extends StarRealmsVisitor{
         }
         else if(nextBalance['category'] == 'Authority'){
             if(!(nextBalance['target'] in newBalance['authority'])){
-                newBalance['authority'][nextBalance['target']] = nextBalance['value']
+                newBalance['authority'][nextBalance['target']] = {}
+                newBalance['authority'][nextBalance['target']]['diff'] = nextBalance['value']
             }else{
-                newBalance['authority'][nextBalance['target']] += nextBalance['value']
+                newBalance['authority'][nextBalance['target']]['diff'] += nextBalance['value']
             }
+            newBalance['authority'][nextBalance['target']]['new'] = nextBalance['newBalance']
         }
+        //console.log(newBalance)
         return newBalance
     }
     //auth1 auth2 are authority object of the form
     // {
-    //     playerX: N,
-    //     playerY: P
+    //     playerX: {diff: X, new: Y},
+    //     playerY: {diff: X, new: Y}
     // }
     updateAuthorityObj(auth1, auth2){
         let newAuth = {}
+        //console.log(auth1)
+        //console.log(auth2)
         for(let key1 in auth1){
+            newAuth[key1] = {}
             if(key1 in auth2){
-                newAuth[key1] = auth1[key1] + auth2[key1]
+                newAuth[key1]['diff'] = auth1[key1]['diff'] + auth2[key1]['diff']
             }else{
-                newAuth[key1] = auth1[key1]
+                newAuth[key1]['diff'] = auth1[key1]['diff']
             }
+            newAuth[key1]['new'] = auth1[key1]['new']
         }
         for(let key2 in auth2){
             if(!(key2 in auth1)){
-                newAuth[key2] = auth2[key2]
+                newAuth[key2] = {}
+                newAuth[key2]['diff'] = auth2[key2]['diff']
+                newAuth[key2]['new'] = auth2[key2]['new']
             }
         }
-        //console.log(auth1)
-        //console.log(auth2)
+        //console.log(newAuth)
         return newAuth
+    }
+
+    initializeDeck(type, current){
+        if(type == "default"){
+            // add 8 scout and 2 vipers to current deck
+            current["scout"] = {
+                name: card_list['scout']['name'],
+                cost: card_list['scout']['cost'],
+                faction: card_list['scout']['faction'],
+                type: card_list['scout']['type'],
+                count: 8,
+                scrapCount: 0,
+                discardCount: 0,
+                destroyedCount: 0,
+                playedCount: 0
+            }
+            current["viper"] = {
+                name: card_list['viper']['name'],
+                cost: card_list['viper']['cost'],
+                faction: card_list['viper']['faction'],
+                type: card_list['scout']['type'],
+                count: 2,
+                scrapCount: 0,
+                discardCount: 0,
+                destroyedCount: 0,
+                playedCount: 0
+            }
+        }else if(type == "alignment_commander"){
+            let card_set = command_decks['commanders']['alignment']['deck']
+            current = Object.assign(current,card_set)
+        }else if(type == "alliance_commander"){
+            let card_set = command_decks['commanders']['alliance']['deck']
+            current = Object.assign(current,card_set)
+        }else if(type == "coalition_commander"){
+            let card_set = command_decks['commanders']['coalition']['deck']
+            current = Object.assign(current,card_set)
+        }else if(type == "pact_commander"){
+            let card_set = command_decks['commanders']['pact']['deck']
+            current = Object.assign(current,card_set)
+        }else if(type == "unity_commander"){
+            let card_set = command_decks['commanders']['unity']['deck']
+            current = Object.assign(current,card_set)
+        }else if(type == "union_commander"){
+            let card_set = command_decks['commanders']['union']['deck']
+            current = Object.assign(current,card_set)
+        }else if(type == "lostfleet_commander"){
+            let card_set = command_decks['commanders']['lostfleet']['deck']
+            current = Object.assign(current,card_set)
+        }
+        return current
     }
 
     // grammar: turn+;
@@ -184,61 +238,15 @@ class Visitor extends StarRealmsVisitor{
         let lastRoundPlayers = [
             {
                 name: firstPlayer,
-                authority: 50,
                 completedMissions: [],
-                deck: {
-                    "scout": {
-                        name: card_list['scout']['name'],
-                        cost: card_list['scout']['cost'],
-                        faction: card_list['scout']['faction'],
-                        type: card_list['scout']['type'],
-                        count: 8,
-                        scrapCount: 0,
-                        discardCount: 0,
-                        destroyedCount: 0,
-                        playedCount: 0
-                    },
-                    "viper": {
-                        name: card_list['viper']['name'],
-                        cost: card_list['viper']['cost'],
-                        faction: card_list['viper']['faction'],
-                        type: card_list['scout']['type'],
-                        count: 2,
-                        scrapCount: 0,
-                        discardCount: 0,
-                        destroyedCount: 0,
-                        playedCount: 0
-                    }
-                }
+                deckInitialized: false,
+                deck: {}
             },
             {
                 name: secondPlayer,
-                authority: 50,
                 completedMissions: [],
-                deck: {
-                    "scout": {
-                        name: card_list['scout']['name'],
-                        cost: card_list['scout']['cost'],
-                        faction: card_list['scout']['faction'],
-                        type: card_list['scout']['type'],
-                        count: 8,
-                        scrapCount: 0,
-                        discardCount: 0,
-                        destroyedCount: 0,
-                        playedCount: 0
-                    },
-                    "viper": {
-                        name: card_list['viper']['name'],
-                        cost: card_list['viper']['cost'],
-                        faction: card_list['viper']['faction'],
-                        type: card_list['scout']['type'],
-                        count: 2,
-                        scrapCount: 0,
-                        discardCount: 0,
-                        destroyedCount: 0,
-                        playedCount: 0
-                    }
-                }
+                deckInitialized: false,
+                deck: {}
             }
         ]
         for(let i = 0; i < ctx.turn().length; i++){
@@ -246,14 +254,60 @@ class Visitor extends StarRealmsVisitor{
             if(nextRound['winner'] != ""){
                 winner = nextRound['winner']
             }
+            //console.log(nextRound['authority'])
             //update the players  object based on the data collected from the latest round
+            for(let j = 0; j < lastRoundPlayers.length; j++){
+                if(!(lastRoundPlayers[j]['deckInitialized']) && (lastRoundPlayers[j]['name'] in nextRound['authority'])){
+                    let startAuthority = nextRound['authority'][lastRoundPlayers[j]['name']]['new'] - nextRound['authority'][lastRoundPlayers[j]['name']]['diff']
+                    if(startAuthority == 50){
+                        //initialize deck with standard game
+                        lastRoundPlayers[j]['authority'] = 50
+                        lastRoundPlayers[j]['deck'] = this.initializeDeck("default", lastRoundPlayers[j]['deck'])
+                        lastRoundPlayers[j]['deckInitialized']= true
+                    }else if(startAuthority == 64){
+                        lastRoundPlayers[j]['authority'] = 64
+                        lastRoundPlayers[j]['deck'] = this.initializeDeck("alignment_commander", lastRoundPlayers[j]['deck'])
+                        lastRoundPlayers[j]['deckInitialized']= true
+                    }
+                    else if(startAuthority == 68){
+                        lastRoundPlayers[j]['authority'] = 68
+                        lastRoundPlayers[j]['deck'] = this.initializeDeck("alliance_commander", lastRoundPlayers[j]['deck'])
+                        lastRoundPlayers[j]['deckInitialized']= true
+                    }
+                    else if(startAuthority == 62){
+                        lastRoundPlayers[j]['authority'] = 62
+                        lastRoundPlayers[j]['deck'] = this.initializeDeck("coalition_commander", lastRoundPlayers[j]['deck'])
+                        lastRoundPlayers[j]['deckInitialized']= true
+                    }
+                    else if(startAuthority == 66){
+                        lastRoundPlayers[j]['authority'] = 66
+                        lastRoundPlayers[j]['deck'] = this.initializeDeck("pact_commander", lastRoundPlayers[j]['deck'])
+                        lastRoundPlayers[j]['deckInitialized']= true
+                    }
+                    else if(startAuthority == 70){
+                        lastRoundPlayers[j]['authority'] = 70
+                        lastRoundPlayers[j]['deck'] = this.initializeDeck("unity_commander", lastRoundPlayers[j]['deck'])
+                        lastRoundPlayers[j]['deckInitialized']= true
+                    }
+                    else if(startAuthority == 60){
+                        lastRoundPlayers[j]['authority'] = 60
+                        lastRoundPlayers[j]['deck'] = this.initializeDeck("union_commander", lastRoundPlayers[j]['deck'])
+                        lastRoundPlayers[j]['deckInitialized']= true
+                    }
+                    else if(startAuthority == 72){
+                        lastRoundPlayers[j]['authority'] = 72
+                        lastRoundPlayers[j]['deck'] = this.initializeDeck("lostfleet_commander", lastRoundPlayers[j]['deck'])
+                        lastRoundPlayers[j]['deckInitialized']= true
+                    }
+                }
+            }
             if(i % 2 == 0){
                 nextRound['players'] = this.updatePlayerData(firstPlayer,lastRoundPlayers, nextRound)
             }else{
                 nextRound['players'] = this.updatePlayerData(secondPlayer,lastRoundPlayers, nextRound)
             }
             rounds.push(nextRound)
-            lastRoundPlayers = nextRound['players']
+            lastRoundPlayers = JSON.parse(JSON.stringify(nextRound['players']))
         }
         return {
             firstPlayer: firstPlayer,
@@ -284,7 +338,7 @@ class Visitor extends StarRealmsVisitor{
             destroyedBases: [],
             winner: "",
             drawCount: 0,
-            authority: {}
+            authority: {},
         }
         //get summary of all actions performed in this turn
         for(let i = 0; i < ctx.action().length; i++){
@@ -371,12 +425,11 @@ class Visitor extends StarRealmsVisitor{
             }
             else if(ctx.action()[i].attackPlayer()){
                 let attackPlayerActionDetail = this.visit(ctx.action()[i])
-                if(attackPlayerActionDetail['target'] in turnData['authority']){
-                    turnData['authority'][attackPlayerActionDetail['target']] -= attackPlayerActionDetail['combat']
-                }else{
-                    turnData['authority'][attackPlayerActionDetail['target']] = 0 - attackPlayerActionDetail['combat']
-                }
-                turnData['usedCombat'] -= attackPlayerActionDetail['combat']
+                turnData['authority'] = this.updateAuthorityObj(turnData['authority'], attackPlayerActionDetail['authority'])
+                turnData['tradePool'] += attackPlayerActionDetail['tradePool']
+                turnData['combatPool'] += attackPlayerActionDetail['combatPool']
+                turnData['usedTrade'] += attackPlayerActionDetail['usedTrade']
+                turnData['usedCombat'] += attackPlayerActionDetail['usedCombat']
             }
             else if(ctx.action()[i].attackBase()){
                 let attackBaseActionDetail = this.visit(ctx.action()[i])
@@ -888,15 +941,18 @@ class Visitor extends StarRealmsVisitor{
 
     // grammar: attackPlayerSummary negativeBalance+;
     visitAttackPlayer(ctx){
-        return this.visit(ctx.attackPlayerSummary())
-    }
-
-    // grammar:  ATTACKED name FOR INT newAuthority NEWLINE;
-    visitAttackPlayerSummary(ctx) {
-        return {
-            target: this.visit(ctx.name()),
-            combat: parseInt(ctx.INT())
+        let balance = {
+            tradePool: 0,
+            combatPool: 0,
+            usedTrade: 0,
+            usedCombat: 0,
+            authority: {}
         }
+        for(let i = 0; i < ctx.negativeBalance().length; i++){
+            let newBalance = this.visit(ctx.negativeBalance()[i])
+            balance = this.computeNewBalance(balance, newBalance)
+        }
+        return balance
     }
 
     // grammar: atackBaseSummary attackBaseDetail* ;
@@ -1104,6 +1160,8 @@ class Visitor extends StarRealmsVisitor{
                 let summary = this.visit(ctx.activatingDetail()[i])
                 activatingEffectSummary['scrappedCards'] = activatingEffectSummary['scrappedCards'].concat(summary['scrappedCards'])
                 activatingEffectSummary['drawCount'] += summary['drawCount']
+            }else if(ctx.activatingDetail()[i].drawCardsWithShuffle()){
+                activatingEffectSummary['drawCount'] += this.visit(ctx.activatingDetail()[i])
             }else if(ctx.activatingDetail()[i].scrap()){
                 let summary = this.visit(ctx.activatingDetail()[i])
                 activatingEffectSummary['scrappedCards'] = activatingEffectSummary['scrappedCards'].concat(summary)
@@ -1120,20 +1178,28 @@ class Visitor extends StarRealmsVisitor{
                 let summary = this.visit(ctx.activatingDetail()[i])
                 activatingEffectSummary['discardedCards'] = activatingEffectSummary['discardedCards'].concat(summary['discardedCards'])
                 activatingEffectSummary['drawCount'] += summary['drawCount']
+            }else if(ctx.activatingDetail()[i].positiveBalance()){
+                let summary = this.visit(ctx.activatingDetail()[i])
+                activatingEffectSummary['balance'] = this.computeNewBalance(activatingEffectSummary['balance'],summary)
             }else if(ctx.activatingDetail()[i].negativeBalance()){
                 let summary = this.visit(ctx.activatingDetail()[i])
                 activatingEffectSummary['balance'] = this.computeNewBalance(activatingEffectSummary['balance'],summary)
+            }else if(ctx.activatingDetail()[i].discarding()){
+                let summary = this.visit(ctx.activatingDetail()[i])
+                activatingEffectSummary['discardedCards'].push(summary)
             }
         }
         return activatingEffectSummary
     }
 
-    // grammar: drawAndScrapFromHand | scrapAndDraw | scrap | noScrap | freeAcquireToTop | destroyBase | scrapDetail | noCopy | noCopyBases | copyCard | copyBase | discardAndDraw | negativeBalance | resolveStealth | copyStealth;
+    // grammar: drawAndScrapFromHand | scrapAndDraw | drawCardsWithShuffle | scrap | noScrap | freeAcquireToTop | destroyBase | scrapDetail | noCopy | noCopyBases | copyCard | copyBase | discardAndDraw | positiveBalance | negativeBalance | resolveStealth | copyStealth | selectCard;
     visitActivatingDetail(ctx) {
         if(ctx.drawAndScrapFromHand()){
             return this.visit(ctx.drawAndScrapFromHand())
         }else if(ctx.scrapAndDraw()){
             return this.visit(ctx.scrapAndDraw())
+        }else if(ctx.drawCardsWithShuffle()){
+            return this.visit(ctx.drawCardsWithShuffle())
         }else if(ctx.scrap()){
             return this.visit(ctx.scrap())
         }else if(ctx.freeAcquireToTop()){
@@ -1144,8 +1210,12 @@ class Visitor extends StarRealmsVisitor{
             return this.visit(ctx.copyBase())
         }else if(ctx.discardAndDraw()){
             return this.visit(ctx.discardAndDraw())
+        }else if(ctx.positiveBalance()){
+            return this.visit(ctx.positiveBalance())
         }else if(ctx.negativeBalance()){
             return this.visit(ctx.negativeBalance())
+        }else if(ctx.discarding()){
+            return this.visit(ctx.discarding())
         }
     }
 
@@ -1280,7 +1350,8 @@ class Visitor extends StarRealmsVisitor{
         return {
             category: ctx.wordPlus().getText(),
             value: val,
-            target: ctx.name().getText()
+            target: ctx.name().getText(),
+            newBalance: this.visit(ctx.balance())
         }
     }
 
@@ -1293,9 +1364,19 @@ class Visitor extends StarRealmsVisitor{
         return {
             category: ctx.wordPlus().getText(), 
             value: val,
-            target: ctx.name().getText()
+            target: ctx.name().getText(),
+            newBalance: this.visit(ctx.balance())
         }
     }
+
+    // grammar: '('wordPlus':'(INT | DECREASE)')' ;
+	visitBalance(ctx) {
+        if(ctx.INT()){
+            return parseInt(ctx.INT())
+        }else{
+            return 0 - Number(ctx.DECREASE().getText().replace('-',''))
+        }
+      }
 
     // grammar: (wordPlus)+ ;
     visitName(ctx){
