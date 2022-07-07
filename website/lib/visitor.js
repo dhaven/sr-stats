@@ -1184,6 +1184,9 @@ class Visitor extends StarRealmsVisitor{
             }else if(ctx.activatingDetail()[i].negativeBalance()){
                 let summary = this.visit(ctx.activatingDetail()[i])
                 activatingEffectSummary['balance'] = this.computeNewBalance(activatingEffectSummary['balance'],summary)
+            }else if(ctx.activatingDetail()[i].discarding()){
+                let summary = this.visit(ctx.activatingDetail()[i])
+                activatingEffectSummary['discardedCards'].push(summary)
             }
         }
         return activatingEffectSummary
@@ -1211,6 +1214,8 @@ class Visitor extends StarRealmsVisitor{
             return this.visit(ctx.positiveBalance())
         }else if(ctx.negativeBalance()){
             return this.visit(ctx.negativeBalance())
+        }else if(ctx.discarding()){
+            return this.visit(ctx.discarding())
         }
     }
 

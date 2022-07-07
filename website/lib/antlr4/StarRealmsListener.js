@@ -455,6 +455,15 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#resolveSplinterGambit.
+	enterResolveSplinterGambit(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#resolveSplinterGambit.
+	exitResolveSplinterGambit(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#resolveEventDetail.
 	enterResolveEventDetail(ctx) {
 	}
