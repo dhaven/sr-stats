@@ -482,6 +482,9 @@ class Visitor extends StarRealmsVisitor{
                 turnData['usedTrade'] += activatingEffectActionDetail['balance']['usedTrade']
                 turnData['usedCombat'] += activatingEffectActionDetail['balance']['usedCombat']
                 turnData['authority'] = this.updateAuthorityObj(turnData['authority'], activatingEffectActionDetail['balance']['authority'])
+            }else if(ctx.action()[i].concede()){
+                let summary = this.visit(ctx.action()[i])
+                turnData['authority'] = this.updateAuthorityObj(turnData['authority'], summary['authority'])
             }
         }
         if(ctx.winStatus()){
@@ -501,7 +504,12 @@ class Visitor extends StarRealmsVisitor{
         return ctx.name().getText()
     }
 
-    //grammar: startTurnEffect | triggeredEvent | resolveEvent | purchase | purchaseHero | play | attackPlayer | attackBase | scrapCard | discard | choseEffect | activatingEffect;
+    // grammar: name '('INT ')' CONCEDED NEWLINE negativeBalance;
+	visitConcede(ctx) {
+        return this.computeNewBalance({}, this.visit(ctx.negativeBalance()))
+      }
+
+    //grammar: startTurnEffect | triggeredEvent | resolveEvent | purchase | purchaseHero | play | attackPlayer | attackBase | scrapCard | discard | choseEffect | activatingEffect | concede;
     visitAction(ctx){
         if(ctx.startTurnEffect()){
             return this.visit(ctx.startTurnEffect())
@@ -525,8 +533,10 @@ class Visitor extends StarRealmsVisitor{
             return this.visit(ctx.discard())
         }else if(ctx.choseEffect()){
             return this.visit(ctx.choseEffect())
-        }else{
+        }else if(ctx.activatingEffect()){
             return this.visit(ctx.activatingEffect())
+        }else if(ctx.concede()){
+            return this.visit(ctx.concede())
         }
     }
 
@@ -1118,12 +1128,15 @@ class Visitor extends StarRealmsVisitor{
             }else if(ctx.choseEffectDetail()[i].positiveBalance()){
                 let newBalance = this.visit(ctx.choseEffectDetail()[i])
                 choseEffectSummary['balance'] = this.computeNewBalance(choseEffectSummary['balance'], newBalance)
+            }else if(ctx.choseEffectDetail()[i].scrap()){
+                let summary = this.visit(ctx.choseEffectDetail()[i])
+                choseEffectSummary['scrappedCards'] = choseEffectSummary['scrappedCards'].concat(summary)
             }
         }
         return choseEffectSummary
     }
 
-    // grammar: selectDiscard | discardForPool | discarding | drawCardsWithShuffle | noScrap | simpleScrap | positiveBalance | refreshTradeRow | changeHiddenBaseToFaction | replaceGambit;
+    // grammar: selectDiscard | discardForPool | discarding | drawCardsWithShuffle | noScrap | simpleScrap | positiveBalance | refreshTradeRow | changeHiddenBaseToFaction | replaceGambit | scrap;
     visitChoseEffectDetail(ctx) {
         if(ctx.discarding()){
             return this.visit(ctx.discarding())
@@ -1133,6 +1146,8 @@ class Visitor extends StarRealmsVisitor{
             return this.visit(ctx.simpleScrap())
         }else if(ctx.positiveBalance()){
             return this.visit(ctx.positiveBalance())
+        }else if(ctx.scrap()){
+            return this .visit(ctx.scrap())
         }
     }
 
