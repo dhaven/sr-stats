@@ -2,8 +2,9 @@ grammar StarRealms;
 
 battle            : turn+;
 turn              : action+ (endPhase | winStatus | EOF) ;
-action            : startTurnEffect | triggeredEvent | resolveEvent | purchase | purchaseHero | play | attackPlayer | attackBase | scrapCard | discard | choseEffect | activatingEffect;
+action            : startTurnEffect | triggeredEvent | resolveEvent | purchase | purchaseHero | play | attackPlayer | attackBase | scrapCard | discard | choseEffect | activatingEffect | concede;
 winStatus         : name HAS WON THE GAME NEWLINE? ;
+concede           : name '('INT ')' CONCEDED NEWLINE negativeBalance;
 
 //describes an effect that gets activated at the start of a turn (base or event)
 startTurnEffect   : positiveBalance | drawCardsWithShuffle;
@@ -113,7 +114,7 @@ choseBlobDraw         : CHOSE DRAW WORD CARD FOR EVERY BLOB CARD PLAYED THIS TUR
 choseIngenuityGambit  : CHOSE DRAW INT CARDS DISCARD INT CARDS NEWLINE ;
 hiddenBaseGambit      : CHOSE CREATE wordPlus+ SECRET OUTPOST NEWLINE;
 midGateEffect         : CHOSE ADD INT wordPlus DISCARD ANY NUMBER OF CARDS RECEIVE INT wordPlus FOR EACH NEWLINE;
-choseEffectDetail     : selectDiscard | discardForPool | discarding | drawCardsWithShuffle | noScrap | simpleScrap | positiveBalance | refreshTradeRow | changeHiddenBaseToFaction | replaceGambit;
+choseEffectDetail     : selectDiscard | discardForPool | discarding | drawCardsWithShuffle | noScrap | simpleScrap | positiveBalance | refreshTradeRow | changeHiddenBaseToFaction | replaceGambit | scrap;
 refreshTradeRow       : REFRESH TRADE ROW DISCOUNTS NEWLINE;
 changeHiddenBaseToFaction : CHANGED SECRET OUTPOST TO wordPlus+ NEWLINE;
 
@@ -179,7 +180,7 @@ card                  : ((wordPlus '\'s'?) | INT)+ ;
 // confessormorris       : CONFESSOR MORRIS;
 // hivelord              : HIVE LORD;
 // screecher             : SCREECHER;
-wordPlus              : WORD|COMBAT|AUTHORITY|TRADE|ALLIES|ACQUIRE|FEDERATION|STAR|EXPLORER|PUT|EMPIRE|MACHINE|CULT|ACQUIRED|DISCOUNTS|CREATE|SECRET|OUTPOST|UNALIGNED|ACTIVATING|NEXT|ATTACKED|SCRAPPING|SCRAPPED|RETURNING|SCRAP|SELECTING|SHUFFLED|DISCARDED|DISCARD|REFRESH|REVEALED|DISCARDING|DESTROYED|RESOLVING|INDICATORS|MOVING|AVAILABLE|ABILITY|CHANGED|IMAGE|PLAYED|COPYING|COPIED|REPLACED|RECEIVE|REDRAW|COPY|RETURN|INTO|EVENT|TARGET|DRAW|EVERY|NUMBER|BLOB|CARDS|CHOSE|TURN|SHIP|SHIPS|BASE|TABLE|BASES|PILE|EACH|PLAY|COST|FORM|DECK|DREW|DESTROY|LOSE|ENDS|CARD|MORE2|FROM|YOUR|ALLY|THIS|HAND|GAME|LESS|ONE|NEW|ALL|NOW|ROW|THE|TOP|FOR|DID|AND|ADD|NOT|HAS|WON|ANY|IS|IT|IN|TO|OF|UP|OR|NO|ON;
+wordPlus              : WORD|COMBAT|AUTHORITY|TRADE|ALLIES|ACQUIRE|CONCEDED|FEDERATION|STAR|EXPLORER|PUT|EMPIRE|MACHINE|CULT|ACQUIRED|DISCOUNTS|CREATE|SECRET|OUTPOST|UNALIGNED|ACTIVATING|NEXT|ATTACKED|SCRAPPING|SCRAPPED|RETURNING|SCRAP|SELECTING|SHUFFLED|DISCARDED|DISCARD|REFRESH|REVEALED|DISCARDING|DESTROYED|RESOLVING|INDICATORS|MOVING|AVAILABLE|ABILITY|CHANGED|IMAGE|PLAYED|COPYING|COPIED|REPLACED|RECEIVE|REDRAW|COPY|RETURN|INTO|EVENT|TARGET|DRAW|EVERY|NUMBER|BLOB|CARDS|CHOSE|TURN|SHIP|SHIPS|BASE|TABLE|BASES|PILE|EACH|PLAY|COST|FORM|DECK|DREW|DESTROY|LOSE|ENDS|CARD|MORE2|FROM|YOUR|ALLY|THIS|HAND|GAME|LESS|ONE|NEW|ALL|NOW|ROW|THE|TOP|FOR|DID|AND|ADD|NOT|HAS|WON|ANY|IS|IT|IN|TO|OF|UP|OR|NO|ON;
 
 fragment A : ('A'|'a');
 fragment B : ('B'|'b');
@@ -248,6 +249,7 @@ DISCARD             : D I S C A R D ;
 DISCOUNTS           : D I S C O U N T S ;
 REFRESH             : R E F R E S H ;
 NEXT                : N E X T ;
+CONCEDED            : C O N C E D E D ;
 DISCARDING          : D I S C A R D I N G ;
 DESTROYED           : D E S T R O Y E D ;
 RESOLVING           : R E S O L V I N G ;

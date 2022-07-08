@@ -41,6 +41,15 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#concede.
+	enterConcede(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#concede.
+	exitConcede(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#startTurnEffect.
 	enterStartTurnEffect(ctx) {
 	}
