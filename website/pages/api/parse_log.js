@@ -1,5 +1,5 @@
 const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
-import { parseBattle } from '../../lib/visitor'
+import { findErrors } from '../../lib/visitor'
 
 //returns a JSON object representing a battle with format:
 // {
@@ -71,18 +71,29 @@ export default async function handler(req, res) {
     }
   });
   let battleID = makeid(10)
+  let success = findErrors(req.body)
   const uploadParams = {
 		Bucket: 'star-realms-games',
-		Key: 'games/' + battleID,
 		Body: req.body,
-	};
+	}
+  if(success){
+    uploadParams['Key'] = 'games/' + battleID
+  }else{
+    uploadParams['Key'] = "errors/" +  battleID
+  }
   await client.send(new PutObjectCommand(uploadParams))
     .then(()=>{
-      let battleData = parseBattle(req.body)
-      res.status(200).json({
-        id: battleID,
-        status: battleData['status']
-      })
+      if(success){
+        res.status(200).json({
+          id: battleID,
+          status: "success"
+        })
+      }else{
+        res.status(200).json({
+          id: battleID,
+          status: "parsing error"
+        })
+      }
     })
     .catch(error => {
       console.log(error)
