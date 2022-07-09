@@ -26,7 +26,7 @@ export default function InputLog(){
               })
               .then(response => response.json())
               .then(data => {
-
+                console.log(data)
                 if(data['status'] == 'success'){
                   router.push(`/game/${data['id']}`)
                   setIsLoading(false)

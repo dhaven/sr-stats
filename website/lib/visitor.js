@@ -2,6 +2,7 @@ import antlr4 from 'antlr4';
 import StarRealmsLexer from './antlr4/StarRealmsLexer.js';
 import StarRealmsParser from './antlr4/StarRealmsParser.js';
 import StarRealmsVisitor from './antlr4/StarRealmsVisitor.js';
+import StarRealmsErrorListener from './antlr4/StarRealmsErrorListener.js';
 import { core_set } from './card_data/core_set.js';
 import { colony_wars } from './card_data/colony_wars.js';
 import { frontiers } from './card_data/frontiers.js';
@@ -1430,6 +1431,17 @@ export function parseBattle(battlelog) {
     }
 }
 
+//identify if there are any syntax errors in the file
+export function findErrors(battlelog) {
+    const chars = new antlr4.InputStream(battlelog);
+    const lexer = new StarRealmsLexer(chars);
+    const tokens = new antlr4.CommonTokenStream(lexer);
+    const parser = new StarRealmsParser(tokens);
+    parser.buildParseTrees = true;
+    parser.battle() //this is really slow
+    return parser._syntaxErrors == 0
+}
+
 function getBattleS3(id){
     const client = new S3Client({ 
         region: "eu-central-1" ,
@@ -1459,7 +1471,7 @@ function getBattleS3(id){
     })
     return promise
 }
-//battle log is a string representation of a battle log file content
+
 export async function fetchBattle(id) {
     let battleData = await getBattleS3(id)
     return battleData
