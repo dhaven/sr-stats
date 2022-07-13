@@ -22,7 +22,7 @@ export default function Layout({ children }) {
   const {pathname} = useRouter()
   const router = useRouter()
   return (
-    <div>
+    <div className="flex flex-col h-screen bg-repeat bg-emoji-pattern">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -32,7 +32,7 @@ export default function Layout({ children }) {
         <meta name="og:title" content={siteTitle} />
       </Head>
       <header className="bg-white flex flex-row drop-shadow-lg justify-center p-4 gap-1">
-        <p onClick={()=>{router.push('/')}} className="text-2xl text-scifi5 font-semibold tracking-widest">
+        <p onClick={()=>{router.push('/')}} className="text-2xl text-scifi5 font-semibold tracking-widest hover:ring ring-scifi-2 rounded-md">
           <span className="bg-scifi5 text-white mx-2 text-2xl px-1">
             SR
           </span>
@@ -51,7 +51,7 @@ export default function Layout({ children }) {
           </button>
         }
       </header>
-      <main className="bg-white flex flex-col justify-center items-center gap-3 md:py-10 sm:py-4">
+      <main className="bg-emoji-pattern grow flex flex-col justify-center items-center gap-3 md:py-10 sm:py-4">
         {children}
       </main>
       <NewFeatureModal isOpen={isNewFeatureOpen} setIsOpen={setIsNewFeatureOpen}></NewFeatureModal>
