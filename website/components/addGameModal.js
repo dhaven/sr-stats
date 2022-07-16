@@ -3,13 +3,15 @@ import { Fragment} from 'react'
 import { Formik, Form, Field } from 'formik';
 import { useRouter } from 'next/router'
 import { atom, useAtom } from 'jotai'
+import { useState } from "react";
 
 const errorMessageAtom = atom("")
 const isLoadingAtom = atom(false)
 
 export default function AddGameModal({isOpen, setIsOpen}) {
   const [errorMessage, setErrorMessage] = useAtom(errorMessageAtom)
-  const [isLoading, setIsLoading] = useAtom(isLoadingAtom)
+  //const [isLoading, setIsLoading] = useAtom(isLoadingAtom)
+  const [isLoading, setIsLoading] = useState(false);
   function closeModal() {
     setIsOpen(false)
   }
@@ -68,9 +70,8 @@ export default function AddGameModal({isOpen, setIsOpen}) {
                             })
                             .then(response => response.json())
                             .then(data => {
-                                setIsLoading(false)
                                 if(data['status'] == 'success'){
-                                  closeModal()
+                                  //closeModal()
                                   router.push(`/game/${data['id']}`)
                                 }else{
                                   setErrorMessage("Unable to parse data")

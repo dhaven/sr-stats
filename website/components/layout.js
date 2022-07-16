@@ -44,7 +44,7 @@ export default function Layout({ children }) {
         {children}
       </main>
       <div className="md:hidden fixed bottom-0 right-0">
-        <button type="button" className=" m-3 bg-scifi3 border border-scifi4 ring-scifi-2 drop-shadow-md hover:ring font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center" onClick={openAddGameModal}>
+        <button type="button" className="opacity-90 m-3 bg-scifi3 border border-scifi4 ring-scifi-2 drop-shadow-md hover:ring font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center" onClick={openAddGameModal}>
             <svg className="w-12 h-12" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
         </button>
       </div>
