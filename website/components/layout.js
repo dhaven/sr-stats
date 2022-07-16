@@ -13,10 +13,6 @@ export default function Layout({ children }) {
   function openAddGameModal() {
     setAddGameIsOpen(true)
   }
-  let [isHelperOpen, setIsHelperOpen] = useState(false)
-  function openHelperModal() {
-    setIsHelperOpen(true)
-  }
   let [isNewFeatureOpen, setIsNewFeatureOpen] = useState(true)
   const {pathname} = useRouter()
   const router = useRouter()
