@@ -24,7 +24,7 @@ module.exports = {
         'scifi5': '0 10px 8px rgba(0, 36, 57, 0.5)'
       },
       backgroundImage: {
-        'emoji-pattern': "url('/images/emoji_pattern.png')",
+        'emoji-pattern': "linear-gradient(rgba(228, 239, 240, 0.4), rgba(228, 239, 240, 0.4)), url('/images/star-sky.jpg')",
       }
     },
   },
