@@ -54,8 +54,8 @@ export default function AddGameModal({isOpen, setIsOpen}) {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <div className="inline-block w-full lg-w-1/2 p-4 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
-                <div className="w-full lg-w-1/2 p-1 m-1">
+              <div className="inline-block w-full md:max-w-lg p-4 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+                <div className="w-full p-1 m-1">
                     <Formik
                         initialValues={{ battlelog: ''}}
                         onSubmit={(values) => {
@@ -71,7 +71,8 @@ export default function AddGameModal({isOpen, setIsOpen}) {
                             .then(response => response.json())
                             .then(data => {
                                 if(data['status'] == 'success'){
-                                  //closeModal()
+                                  closeModal()
+                                  setIsLoading(false)
                                   router.push(`/game/${data['id']}`)
                                 }else{
                                   setErrorMessage("Unable to parse data")
