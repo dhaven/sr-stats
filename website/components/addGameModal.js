@@ -75,6 +75,7 @@ export default function AddGameModal({isOpen, setIsOpen}) {
                                   setIsLoading(false)
                                   router.push(`/game/${data['id']}`)
                                 }else{
+                                  setIsLoading(false)
                                   setErrorMessage("Unable to parse data")
                                 }
                             })
