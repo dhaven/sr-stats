@@ -10,22 +10,22 @@ export default function DeckOverview({deckData, player, winner}) {
     }else{
         bgColor = "bg-loser"
     }
-    let playerTextClass = bgColor + " text-white text-xl text-center rounded pr-2"
+    let playerTextClass = bgColor + " text-white text-xl text-center rounded-t-lg"
     return (
-            <div className="block p-6 rounded-lg shadow-lg bg-white h-min">
+            <div className="block m-2 h-min">
                 <div className={playerTextClass}>
                     {player} deck summary
                 </div>
-                <div className="flex flex-col gap-1">
-                    <div className="flex flex-row m-2 gap-1 justify-between">
+                <div className="flex flex-col gap-2 p-2 sm:p-4 drop-shadow-scifi5 bg-white rounded-b-lg">
+                    <div className="flex flex-row gap-1 justify-between">
                         <p className="basis-1/2 text-gray-900 text-lg leading-tight font-medium mb-2">Blob / Trade Federation / Star Empire / Machine cult / Unaligned</p>
                         <p className="basis-1/2 text-right text-gray-900 text-xl font-medium mb-2">{deckSummary['blob_count']} / {deckSummary['trade_federation_count']} / {deckSummary['star_empire_count']} / {deckSummary['machine_cult_count']} / {deckSummary['unaligned_count']}</p>
                     </div>
-                    <div className="flex flex-row m-2 gap-1 justify-between">
+                    <div className="flex flex-row gap-1 justify-between">
                         <p className="text-gray-900 text-lg leading-tight font-medium mb-2">ships / bases</p>
                         <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2">{deckSummary['total_ship_count']} / {deckSummary['total_base_count']}</h5>
                     </div>
-                    <div className="flex flex-row m-2 gap-1 justify-between">
+                    <div className="flex flex-row gap-1 justify-between">
                         <p className="text-gray-900 text-lg leading-tight font-medium mb-2">Cost</p>
                         <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2">{deckSummary['total_cost']}</h5>
                     </div>
@@ -33,7 +33,7 @@ export default function DeckOverview({deckData, player, winner}) {
                         {({ open }) => (
                             <>
                             <Disclosure.Button className=" flex flex-col items-center w-full text-sm font-medium bg-white rounded-lg hover:ring ring-scifi-2">
-                                <div className="flex flex-row p-2 gap-1 justify-between w-full">
+                                <div className="flex flex-row gap-1 justify-between w-full">
                                     <p className="text-gray-900 text-lg leading-tight font-medium mb-2">Cards</p>
                                     <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2">{deckSummary['total_count']}</h5>
                                 </div>

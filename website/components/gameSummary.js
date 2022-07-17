@@ -1,4 +1,3 @@
-import styles from './gameSummary.module.css'
 import { getDeckSummary, getFinalAuthority, getCompletedMissions } from '../lib/helper.js'
 
 export default function GameSummary({winner, decksData, lastRound}) {
@@ -37,9 +36,9 @@ export default function GameSummary({winner, decksData, lastRound}) {
         }
     }
     return (
-        <div className={styles.container}>
-            <div className={styles.line}>
-                <p className="p-2 text-xl text-scifi5 font-bold">{winner} won 🥇</p>
+        <div className="flex w-full justify-between drop-shadow-scifi5 m-2">
+            <div className="w-1/2 p-2 sm:p-4 bg-gradient-to-r from-white rounded-lg">
+                <p className="p-2 text-xl text-scifi5 font-bold whitespace-nowrap">{winner} won 🥇</p>
                 <p className="p-2 text-scifi5">{completedMissions[winner]} completed mission(s)</p>
                 <div className="relative p-2 w-24 h-20">
                     <svg className="absolute inset-x-0 drop-shadow-md" fill="#0f8942" stroke="#0f8942" viewBox="0 0 166.88282 104.205" xmlns="http://www.w3.org/2000/svg">
@@ -54,7 +53,7 @@ export default function GameSummary({winner, decksData, lastRound}) {
                     </svg>
                     <p className="font-bold text-scifi5 text-lg absolute text-center inset-x-2 inset-y-4">{finalAuthority[winner]}</p>
                 </div>
-                <div className="drop-shadow-md flex flex-row h-4 w-1/2 m-2">
+                <div className="drop-shadow-md flex flex-row h-4 w-full sm:w-4/5">
                     {
                         classNames[winner].map((item, index)=>{
                             return (
@@ -72,9 +71,9 @@ export default function GameSummary({winner, decksData, lastRound}) {
                     }
                 </div>
             </div>
-            <div className={styles.invert}>
+            <div className="w-1/2 flex flex-col items-end p-2 sm:p-4 bg-gradient-to-l from-white rounded-lg">
                 <p className="text-xl p-2 text-scifi5 font-bold">{loser}</p>
-                <p className="p-2 text-scifi5">{completedMissions[loser]} completed mission(s)</p>
+                <p className="p-2 text-scifi5 text-right">{completedMissions[loser]} completed mission(s)</p>
                 <div className="relative p-2 w-24 h-20">
                     <svg className="absolute inset-x-0 drop-shadow-md" fill="#0f8942" stroke="#0f8942" viewBox="0 0 166.88282 104.205" xmlns="http://www.w3.org/2000/svg">
                         <g transform="translate(-148.13691,-117.23627)">
@@ -88,7 +87,7 @@ export default function GameSummary({winner, decksData, lastRound}) {
                     </svg>
                     <p className="text-lg text-scifi5 font-bold absolute text-center inset-x-2 inset-y-4">{finalAuthority[loser]}</p>
                 </div>
-                <div className="drop-shadow-md flex flex-row h-4 w-1/3 m-2">
+                <div className="drop-shadow-md flex flex-row h-4 w-full sm:w-4/5">
                     {
                         classNames[loser].map((item, index)=>{
                             return (

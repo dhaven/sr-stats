@@ -84,9 +84,9 @@ export default function GameChart({firstPlayer, winner, rounds}) {
         },
     }
     return(
-        <div className="w-screen p-1 m-1 sm:w-4/5 md:w-3/4 lg:w-2/3">
+        <div className="bg-white rounded-lg drop-shadow-scifi5 w-full p-2 m-2 sm:p-4">
             <Tab.Group defaultIndex={0}>
-                <Tab.List className="flex flex-wrap p-1">
+                <Tab.List className="flex flex-wrap p-2">
                     <Tab as={Fragment}>
                         {({ selected }) =>
                             <button 
