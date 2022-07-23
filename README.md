@@ -31,6 +31,31 @@ cd website
 npm run dev
 ```
 
+## testing
+
+You can run the test suite using the following commands:
+
+1. start the website:
+```bash
+cd website
+npm run dev
+```
+2. In a separate window run:
+```bash
+antlr4 -Dlanguage=JavaScript StarRealms.g4 -visitor -o website/test/antlr4
+cd website/test
+node test.js
+```
+
+The test suite will check 3 things:
+1. That the grammar can successfully be used to parse all the test cases (no parsing errors).
+2. That that generated parse tree is the same as previous iterations of the app. This ensures we are not introducing errors (no tree generation errors)
+3. That the json object representing a battle is the same as previous iterations of the app. This ensures we are not introducing errors (no battle object errors)
+
+Some changes to the tree structure can be expected when the grammar changes. In that case the test cases need to be updated with the latest data
+Changes to the battle object should be less frequent.
+
+
 ## Add battle log to the input field
 
 Once you finished a game of Star Realms on desktop or mobile you can retrieve the battle logs and
