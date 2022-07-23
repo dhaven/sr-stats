@@ -10001,73 +10001,77 @@
                 {
                   "activatingDetail": [
                     {
-                      "scrap": [
+                      "scrapSummary": [
                         {
-                          "scrapSummary": [
+                          "name": [
                             {
-                              "name": [
-                                {
-                                  "wordPlus": [
-                                    "Hard"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "AI"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Hard"
                               ]
                             },
-                            "is",
-                            "scrapping",
-                            ":",
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Scout"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "AI"
                               ]
-                            },
-                            "\n"
+                            }
                           ]
                         },
+                        "is",
+                        "scrapping",
+                        ":",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Recycle"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Bot"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Scout"
                               ]
-                            },
-                            "\n"
+                            }
                           ]
                         },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Scout"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Recycle"
                               ]
                             },
-                            "\n"
+                            {
+                              "wordPlus": [
+                                "Bot"
+                              ]
+                            }
                           ]
-                        }
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Scout"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]

@@ -12636,63 +12636,63 @@
                 {
                   "activatingDetail": [
                     {
-                      "scrap": [
+                      "scrapSummary": [
                         {
-                          "scrapSummary": [
+                          "name": [
                             {
-                              "name": [
-                                {
-                                  "wordPlus": [
-                                    "Hard"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "AI"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Hard"
                               ]
                             },
-                            "is",
-                            "scrapping",
-                            ":",
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Transport"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Shard"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "AI"
                               ]
-                            },
-                            "\n"
+                            }
                           ]
                         },
+                        "is",
+                        "scrapping",
+                        ":",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Transport"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Shard"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Transport"
                               ]
                             },
-                            "\n"
+                            {
+                              "wordPlus": [
+                                "Shard"
+                              ]
+                            }
                           ]
-                        }
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Transport"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "Shard"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]
@@ -14159,63 +14159,63 @@
                 {
                   "activatingDetail": [
                     {
-                      "scrap": [
+                      "scrapSummary": [
                         {
-                          "scrapSummary": [
+                          "name": [
                             {
-                              "name": [
-                                {
-                                  "wordPlus": [
-                                    "Hard"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "AI"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Hard"
                               ]
                             },
-                            "is",
-                            "scrapping",
-                            ":",
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Transport"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Shard"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "AI"
                               ]
-                            },
-                            "\n"
+                            }
                           ]
                         },
+                        "is",
+                        "scrapping",
+                        ":",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Transport"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Shard"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Transport"
                               ]
                             },
-                            "\n"
+                            {
+                              "wordPlus": [
+                                "Shard"
+                              ]
+                            }
                           ]
-                        }
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Transport"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "Shard"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]
@@ -18385,63 +18385,63 @@
                 {
                   "activatingDetail": [
                     {
-                      "scrap": [
+                      "scrapSummary": [
                         {
-                          "scrapSummary": [
+                          "name": [
                             {
-                              "name": [
-                                {
-                                  "wordPlus": [
-                                    "Hard"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "AI"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Hard"
                               ]
                             },
-                            "is",
-                            "scrapping",
-                            ":",
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Assault"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Shard"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "AI"
                               ]
-                            },
-                            "\n"
+                            }
                           ]
                         },
+                        "is",
+                        "scrapping",
+                        ":",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Assault"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Shard"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Assault"
                               ]
                             },
-                            "\n"
+                            {
+                              "wordPlus": [
+                                "Shard"
+                              ]
+                            }
                           ]
-                        }
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Assault"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "Shard"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]
@@ -21623,63 +21623,63 @@
                 {
                   "activatingDetail": [
                     {
-                      "scrap": [
+                      "scrapSummary": [
                         {
-                          "scrapSummary": [
+                          "name": [
                             {
-                              "name": [
-                                {
-                                  "wordPlus": [
-                                    "Hard"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "AI"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Hard"
                               ]
                             },
-                            "is",
-                            "scrapping",
-                            ":",
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Assault"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Shard"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "AI"
                               ]
-                            },
-                            "\n"
+                            }
                           ]
                         },
+                        "is",
+                        "scrapping",
+                        ":",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Assault"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Shard"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Assault"
                               ]
                             },
-                            "\n"
+                            {
+                              "wordPlus": [
+                                "Shard"
+                              ]
+                            }
                           ]
-                        }
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Assault"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "Shard"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]
@@ -24200,63 +24200,63 @@
                 {
                   "activatingDetail": [
                     {
-                      "scrap": [
+                      "scrapSummary": [
                         {
-                          "scrapSummary": [
+                          "name": [
                             {
-                              "name": [
-                                {
-                                  "wordPlus": [
-                                    "Hard"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "AI"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Hard"
                               ]
                             },
-                            "is",
-                            "scrapping",
-                            ":",
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Assault"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Shard"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "AI"
                               ]
-                            },
-                            "\n"
+                            }
                           ]
                         },
+                        "is",
+                        "scrapping",
+                        ":",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Assault"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Shard"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Assault"
                               ]
                             },
-                            "\n"
+                            {
+                              "wordPlus": [
+                                "Shard"
+                              ]
+                            }
                           ]
-                        }
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Assault"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "Shard"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]
@@ -25460,63 +25460,63 @@
                 {
                   "activatingDetail": [
                     {
-                      "scrap": [
+                      "scrapSummary": [
                         {
-                          "scrapSummary": [
+                          "name": [
                             {
-                              "name": [
-                                {
-                                  "wordPlus": [
-                                    "Hard"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "AI"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Hard"
                               ]
                             },
-                            "is",
-                            "scrapping",
-                            ":",
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Recon"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Shard"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "AI"
                               ]
-                            },
-                            "\n"
+                            }
                           ]
                         },
+                        "is",
+                        "scrapping",
+                        ":",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Recon"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Shard"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Recon"
                               ]
                             },
-                            "\n"
+                            {
+                              "wordPlus": [
+                                "Shard"
+                              ]
+                            }
                           ]
-                        }
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Recon"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "Shard"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]

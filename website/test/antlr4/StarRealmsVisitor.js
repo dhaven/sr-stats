@@ -1,4 +1,4 @@
-// Generated from StarRealms.g4 by ANTLR 4.9
+// Generated from StarRealms.g4 by ANTLR 4.10.1
 // jshint ignore: start
 import antlr4 from 'antlr4';
 
@@ -534,6 +534,12 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
+	// Visit a parse tree produced by StarRealmsParser#alignBotEffect.
+	visitAlignBotEffect(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
 	// Visit a parse tree produced by StarRealmsParser#choseEffectDetail.
 	visitChoseEffectDetail(ctx) {
 	  return this.visitChildren(ctx);
@@ -570,20 +576,8 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
-	// Visit a parse tree produced by StarRealmsParser#scrapAndDraw.
-	visitScrapAndDraw(ctx) {
-	  return this.visitChildren(ctx);
-	}
-
-
 	// Visit a parse tree produced by StarRealmsParser#scrap.
 	visitScrap(ctx) {
-	  return this.visitChildren(ctx);
-	}
-
-
-	// Visit a parse tree produced by StarRealmsParser#drawAndScrapFromHand.
-	visitDrawAndScrapFromHand(ctx) {
 	  return this.visitChildren(ctx);
 	}
 

@@ -4242,48 +4242,48 @@
                 {
                   "activatingDetail": [
                     {
-                      "drawAndScrapFromHand": [
+                      "drawCardsWithShuffle": [
                         {
-                          "drawCardsWithShuffle": [
-                            {
-                              "drawCards": [
-                                "Drew",
-                                "1",
-                                "cards",
-                                "\n"
-                              ]
-                            }
+                          "drawCards": [
+                            "Drew",
+                            "1",
+                            "cards",
+                            "\n"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "resolveHandScrap": [
+                        {
+                          "resolveHandScrapSummary": [
+                            "Resolving",
+                            "Scrap",
+                            "a",
+                            "card",
+                            "from",
+                            "your",
+                            "hand",
+                            "\n"
                           ]
                         },
                         {
-                          "resolveHandScrap": [
+                          "scrapDetail": [
+                            "Scrapped",
                             {
-                              "resolveHandScrapSummary": [
-                                "Resolving",
-                                "Scrap",
-                                "a",
-                                "card",
-                                "from",
-                                "your",
-                                "hand",
-                                "\n"
+                              "card": [
+                                {
+                                  "wordPlus": [
+                                    "Viper"
+                                  ]
+                                }
                               ]
                             },
-                            {
-                              "scrapDetail": [
-                                "Scrapped",
-                                {
-                                  "card": [
-                                    {
-                                      "wordPlus": [
-                                        "Viper"
-                                      ]
-                                    }
-                                  ]
-                                },
-                                "\n"
-                              ]
-                            }
+                            "\n"
                           ]
                         }
                       ]
@@ -7338,48 +7338,48 @@
                 {
                   "activatingDetail": [
                     {
-                      "scrap": [
+                      "scrapSummary": [
                         {
-                          "scrapSummary": [
+                          "name": [
                             {
-                              "name": [
-                                {
-                                  "wordPlus": [
-                                    "Player"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Player"
                               ]
-                            },
-                            "is",
-                            "scrapping",
-                            ":",
-                            {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Viper"
-                                  ]
-                                }
-                              ]
-                            },
-                            "\n"
+                            }
                           ]
                         },
+                        "is",
+                        "scrapping",
+                        ":",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Viper"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Viper"
                               ]
-                            },
-                            "\n"
+                            }
                           ]
-                        }
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Viper"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]
@@ -9149,48 +9149,48 @@
                 {
                   "activatingDetail": [
                     {
-                      "drawAndScrapFromHand": [
+                      "drawCardsWithShuffle": [
                         {
-                          "drawCardsWithShuffle": [
-                            {
-                              "drawCards": [
-                                "Drew",
-                                "1",
-                                "cards",
-                                "\n"
-                              ]
-                            }
+                          "drawCards": [
+                            "Drew",
+                            "1",
+                            "cards",
+                            "\n"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "resolveHandScrap": [
+                        {
+                          "resolveHandScrapSummary": [
+                            "Resolving",
+                            "Scrap",
+                            "a",
+                            "card",
+                            "from",
+                            "your",
+                            "hand",
+                            "\n"
                           ]
                         },
                         {
-                          "resolveHandScrap": [
+                          "scrapDetail": [
+                            "Scrapped",
                             {
-                              "resolveHandScrapSummary": [
-                                "Resolving",
-                                "Scrap",
-                                "a",
-                                "card",
-                                "from",
-                                "your",
-                                "hand",
-                                "\n"
+                              "card": [
+                                {
+                                  "wordPlus": [
+                                    "Scout"
+                                  ]
+                                }
                               ]
                             },
-                            {
-                              "scrapDetail": [
-                                "Scrapped",
-                                {
-                                  "card": [
-                                    {
-                                      "wordPlus": [
-                                        "Scout"
-                                      ]
-                                    }
-                                  ]
-                                },
-                                "\n"
-                              ]
-                            }
+                            "\n"
                           ]
                         }
                       ]
@@ -10314,53 +10314,53 @@
                 {
                   "activatingDetail": [
                     {
-                      "scrap": [
+                      "scrapSummary": [
                         {
-                          "scrapSummary": [
+                          "name": [
                             {
-                              "name": [
-                                {
-                                  "wordPlus": [
-                                    "Hard"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "AI"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Hard"
                               ]
                             },
-                            "is",
-                            "scrapping",
-                            ":",
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Viper"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "AI"
                               ]
-                            },
-                            "\n"
+                            }
                           ]
                         },
+                        "is",
+                        "scrapping",
+                        ":",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Viper"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Viper"
                               ]
-                            },
-                            "\n"
+                            }
                           ]
-                        }
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Viper"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]
@@ -15251,48 +15251,48 @@
                 {
                   "activatingDetail": [
                     {
-                      "scrap": [
+                      "scrapSummary": [
                         {
-                          "scrapSummary": [
+                          "name": [
                             {
-                              "name": [
-                                {
-                                  "wordPlus": [
-                                    "Player"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Player"
                               ]
-                            },
-                            "is",
-                            "scrapping",
-                            ":",
-                            {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Scout"
-                                  ]
-                                }
-                              ]
-                            },
-                            "\n"
+                            }
                           ]
                         },
+                        "is",
+                        "scrapping",
+                        ":",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Scout"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Scout"
                               ]
-                            },
-                            "\n"
+                            }
                           ]
-                        }
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Scout"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]
@@ -16858,48 +16858,48 @@
                 {
                   "activatingDetail": [
                     {
-                      "scrap": [
+                      "scrapSummary": [
                         {
-                          "scrapSummary": [
+                          "name": [
                             {
-                              "name": [
-                                {
-                                  "wordPlus": [
-                                    "Player"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Player"
                               ]
-                            },
-                            "is",
-                            "scrapping",
-                            ":",
-                            {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Scout"
-                                  ]
-                                }
-                              ]
-                            },
-                            "\n"
+                            }
                           ]
                         },
+                        "is",
+                        "scrapping",
+                        ":",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Scout"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Scout"
                               ]
-                            },
-                            "\n"
+                            }
                           ]
-                        }
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Scout"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]
@@ -17162,48 +17162,48 @@
                 {
                   "activatingDetail": [
                     {
-                      "drawAndScrapFromHand": [
+                      "drawCardsWithShuffle": [
                         {
-                          "drawCardsWithShuffle": [
-                            {
-                              "drawCards": [
-                                "Drew",
-                                "1",
-                                "cards",
-                                "\n"
-                              ]
-                            }
+                          "drawCards": [
+                            "Drew",
+                            "1",
+                            "cards",
+                            "\n"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "resolveHandScrap": [
+                        {
+                          "resolveHandScrapSummary": [
+                            "Resolving",
+                            "Scrap",
+                            "a",
+                            "card",
+                            "from",
+                            "your",
+                            "hand",
+                            "\n"
                           ]
                         },
                         {
-                          "resolveHandScrap": [
+                          "scrapDetail": [
+                            "Scrapped",
                             {
-                              "resolveHandScrapSummary": [
-                                "Resolving",
-                                "Scrap",
-                                "a",
-                                "card",
-                                "from",
-                                "your",
-                                "hand",
-                                "\n"
+                              "card": [
+                                {
+                                  "wordPlus": [
+                                    "Scout"
+                                  ]
+                                }
                               ]
                             },
-                            {
-                              "scrapDetail": [
-                                "Scrapped",
-                                {
-                                  "card": [
-                                    {
-                                      "wordPlus": [
-                                        "Scout"
-                                      ]
-                                    }
-                                  ]
-                                },
-                                "\n"
-                              ]
-                            }
+                            "\n"
                           ]
                         }
                       ]
@@ -19047,60 +19047,60 @@
                 {
                   "activatingDetail": [
                     {
-                      "drawAndScrapFromHand": [
+                      "drawCardsWithShuffle": [
                         {
-                          "drawCardsWithShuffle": [
-                            {
-                              "shuffleCards": [
-                                "Shuffled",
-                                "discard",
-                                "pile",
-                                "to",
-                                "form",
-                                "new",
-                                "deck",
-                                "\n"
-                              ]
-                            },
-                            {
-                              "drawCards": [
-                                "Drew",
-                                "1",
-                                "cards",
-                                "\n"
-                              ]
-                            }
+                          "shuffleCards": [
+                            "Shuffled",
+                            "discard",
+                            "pile",
+                            "to",
+                            "form",
+                            "new",
+                            "deck",
+                            "\n"
                           ]
                         },
                         {
-                          "resolveHandScrap": [
+                          "drawCards": [
+                            "Drew",
+                            "1",
+                            "cards",
+                            "\n"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "resolveHandScrap": [
+                        {
+                          "resolveHandScrapSummary": [
+                            "Resolving",
+                            "Scrap",
+                            "a",
+                            "card",
+                            "from",
+                            "your",
+                            "hand",
+                            "\n"
+                          ]
+                        },
+                        {
+                          "scrapDetail": [
+                            "Scrapped",
                             {
-                              "resolveHandScrapSummary": [
-                                "Resolving",
-                                "Scrap",
-                                "a",
-                                "card",
-                                "from",
-                                "your",
-                                "hand",
-                                "\n"
+                              "card": [
+                                {
+                                  "wordPlus": [
+                                    "Scout"
+                                  ]
+                                }
                               ]
                             },
-                            {
-                              "scrapDetail": [
-                                "Scrapped",
-                                {
-                                  "card": [
-                                    {
-                                      "wordPlus": [
-                                        "Scout"
-                                      ]
-                                    }
-                                  ]
-                                },
-                                "\n"
-                              ]
-                            }
+                            "\n"
                           ]
                         }
                       ]
@@ -19133,48 +19133,48 @@
                 {
                   "activatingDetail": [
                     {
-                      "scrap": [
+                      "scrapSummary": [
                         {
-                          "scrapSummary": [
+                          "name": [
                             {
-                              "name": [
-                                {
-                                  "wordPlus": [
-                                    "Player"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Player"
                               ]
-                            },
-                            "is",
-                            "scrapping",
-                            ":",
-                            {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Scout"
-                                  ]
-                                }
-                              ]
-                            },
-                            "\n"
+                            }
                           ]
                         },
+                        "is",
+                        "scrapping",
+                        ":",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Scout"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Scout"
                               ]
-                            },
-                            "\n"
+                            }
                           ]
-                        }
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Scout"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]
@@ -20249,111 +20249,119 @@
                 {
                   "activatingDetail": [
                     {
-                      "scrapAndDraw": [
+                      "scrapSummary": [
                         {
-                          "scrap": [
+                          "name": [
                             {
-                              "scrapSummary": [
-                                {
-                                  "name": [
-                                    {
-                                      "wordPlus": [
-                                        "Hard"
-                                      ]
-                                    },
-                                    {
-                                      "wordPlus": [
-                                        "AI"
-                                      ]
-                                    }
-                                  ]
-                                },
-                                "is",
-                                "scrapping",
-                                {
-                                  "card": [
-                                    {
-                                      "wordPlus": [
-                                        "Scout"
-                                      ]
-                                    }
-                                  ]
-                                },
-                                "\n"
+                              "wordPlus": [
+                                "Hard"
                               ]
                             },
                             {
-                              "scrapSummary": [
-                                {
-                                  "name": [
-                                    {
-                                      "wordPlus": [
-                                        "Hard"
-                                      ]
-                                    },
-                                    {
-                                      "wordPlus": [
-                                        "AI"
-                                      ]
-                                    }
-                                  ]
-                                },
-                                "is",
-                                "scrapping",
-                                {
-                                  "card": [
-                                    {
-                                      "wordPlus": [
-                                        "Scout"
-                                      ]
-                                    }
-                                  ]
-                                },
-                                "\n"
-                              ]
-                            },
-                            {
-                              "scrapDetail": [
-                                "Scrapped",
-                                {
-                                  "card": [
-                                    {
-                                      "wordPlus": [
-                                        "Scout"
-                                      ]
-                                    }
-                                  ]
-                                },
-                                "\n"
-                              ]
-                            },
-                            {
-                              "scrapDetail": [
-                                "Scrapped",
-                                {
-                                  "card": [
-                                    {
-                                      "wordPlus": [
-                                        "Scout"
-                                      ]
-                                    }
-                                  ]
-                                },
-                                "\n"
+                              "wordPlus": [
+                                "AI"
                               ]
                             }
                           ]
                         },
+                        "is",
+                        "scrapping",
                         {
-                          "drawCardsWithShuffle": [
+                          "card": [
                             {
-                              "drawCards": [
-                                "Drew",
-                                "2",
-                                "cards",
-                                "\n"
+                              "wordPlus": [
+                                "Scout"
                               ]
                             }
+                          ]
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapSummary": [
+                        {
+                          "name": [
+                            {
+                              "wordPlus": [
+                                "Hard"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "AI"
+                              ]
+                            }
+                          ]
+                        },
+                        "is",
+                        "scrapping",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Scout"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Scout"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Scout"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "drawCardsWithShuffle": [
+                        {
+                          "drawCards": [
+                            "Drew",
+                            "2",
+                            "cards",
+                            "\n"
                           ]
                         }
                       ]
@@ -20720,53 +20728,53 @@
                 {
                   "activatingDetail": [
                     {
-                      "scrap": [
+                      "scrapSummary": [
                         {
-                          "scrapSummary": [
+                          "name": [
                             {
-                              "name": [
-                                {
-                                  "wordPlus": [
-                                    "Hard"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "AI"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Hard"
                               ]
                             },
-                            "is",
-                            "scrapping",
-                            ":",
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Scout"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "AI"
                               ]
-                            },
-                            "\n"
+                            }
                           ]
                         },
+                        "is",
+                        "scrapping",
+                        ":",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Scout"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Scout"
                               ]
-                            },
-                            "\n"
+                            }
                           ]
-                        }
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Scout"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]
@@ -22686,58 +22694,58 @@
                 {
                   "activatingDetail": [
                     {
-                      "scrap": [
+                      "scrapSummary": [
                         {
-                          "scrapSummary": [
+                          "name": [
                             {
-                              "name": [
-                                {
-                                  "wordPlus": [
-                                    "Player"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Player"
                               ]
-                            },
-                            "is",
-                            "scrapping",
-                            ":",
-                            {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Trade"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Bot"
-                                  ]
-                                }
-                              ]
-                            },
-                            "\n"
+                            }
                           ]
                         },
+                        "is",
+                        "scrapping",
+                        ":",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Trade"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Bot"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Trade"
                               ]
                             },
-                            "\n"
+                            {
+                              "wordPlus": [
+                                "Bot"
+                              ]
+                            }
                           ]
-                        }
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Trade"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "Bot"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]
@@ -26344,53 +26352,53 @@
                 {
                   "activatingDetail": [
                     {
-                      "scrap": [
+                      "scrapSummary": [
                         {
-                          "scrapSummary": [
+                          "name": [
                             {
-                              "name": [
-                                {
-                                  "wordPlus": [
-                                    "Hard"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "AI"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Hard"
                               ]
                             },
-                            "is",
-                            "scrapping",
-                            ":",
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Scout"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "AI"
                               ]
-                            },
-                            "\n"
+                            }
                           ]
                         },
+                        "is",
+                        "scrapping",
+                        ":",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Scout"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Scout"
                               ]
-                            },
-                            "\n"
+                            }
                           ]
-                        }
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Scout"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]
@@ -26426,63 +26434,63 @@
                 {
                   "activatingDetail": [
                     {
-                      "scrap": [
+                      "scrapSummary": [
                         {
-                          "scrapSummary": [
+                          "name": [
                             {
-                              "name": [
-                                {
-                                  "wordPlus": [
-                                    "Hard"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "AI"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Hard"
                               ]
                             },
-                            "is",
-                            "scrapping",
-                            ":",
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Blob"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Fighter"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "AI"
                               ]
-                            },
-                            "\n"
+                            }
                           ]
                         },
+                        "is",
+                        "scrapping",
+                        ":",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Blob"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Fighter"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Blob"
                               ]
                             },
-                            "\n"
+                            {
+                              "wordPlus": [
+                                "Fighter"
+                              ]
+                            }
                           ]
-                        }
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Blob"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "Fighter"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]
@@ -26866,48 +26874,48 @@
                 {
                   "activatingDetail": [
                     {
-                      "drawAndScrapFromHand": [
+                      "drawCardsWithShuffle": [
                         {
-                          "drawCardsWithShuffle": [
-                            {
-                              "drawCards": [
-                                "Drew",
-                                "1",
-                                "cards",
-                                "\n"
-                              ]
-                            }
+                          "drawCards": [
+                            "Drew",
+                            "1",
+                            "cards",
+                            "\n"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "resolveHandScrap": [
+                        {
+                          "resolveHandScrapSummary": [
+                            "Resolving",
+                            "Scrap",
+                            "a",
+                            "card",
+                            "from",
+                            "your",
+                            "hand",
+                            "\n"
                           ]
                         },
                         {
-                          "resolveHandScrap": [
+                          "scrapDetail": [
+                            "Scrapped",
                             {
-                              "resolveHandScrapSummary": [
-                                "Resolving",
-                                "Scrap",
-                                "a",
-                                "card",
-                                "from",
-                                "your",
-                                "hand",
-                                "\n"
+                              "card": [
+                                {
+                                  "wordPlus": [
+                                    "Scout"
+                                  ]
+                                }
                               ]
                             },
-                            {
-                              "scrapDetail": [
-                                "Scrapped",
-                                {
-                                  "card": [
-                                    {
-                                      "wordPlus": [
-                                        "Scout"
-                                      ]
-                                    }
-                                  ]
-                                },
-                                "\n"
-                              ]
-                            }
+                            "\n"
                           ]
                         }
                       ]

@@ -17831,57 +17831,57 @@
                 {
                   "activatingDetail": [
                     {
-                      "scrap": [
+                      "scrapSummary": [
                         {
-                          "scrapSummary": [
+                          "name": [
                             {
-                              "name": [
-                                {
-                                  "wordPlus": [
-                                    "Player"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Player"
                               ]
-                            },
-                            "is",
-                            "scrapping",
-                            {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Defense"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "System"
-                                  ]
-                                }
-                              ]
-                            },
-                            "\n"
+                            }
                           ]
                         },
+                        "is",
+                        "scrapping",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Defense"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "System"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Defense"
                               ]
                             },
-                            "\n"
+                            {
+                              "wordPlus": [
+                                "System"
+                              ]
+                            }
                           ]
-                        }
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Defense"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "System"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]

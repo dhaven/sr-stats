@@ -45,6 +45,7 @@ function getFolderFiles(folder){
     return my_list.flat()
 }
 
+const myArgs = process.argv.slice(2);
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 let test_input = getFolderFiles("logdata")
 let parsing_error = 0
@@ -76,6 +77,11 @@ for(let i = 0; i < test_input.length; i++){
       if(json1 != json2){
         tree_error_count += 1
         console.log(`Error: The tree structure has changed for file ${test_input[i]}`)
+        if(myArgs.length == 1 && myArgs[0] == "--override"){
+          fs.writeFileSync(treefile, JSON.stringify(tree_output, null, 2), 'utf8');
+        }else{
+          fs.writeFileSync(treefile + "_error", JSON.stringify(tree_output, null, 2), 'utf8');
+        }
       }
     } catch (err) {
       if(err.syscall == 'open'){
@@ -98,6 +104,11 @@ for(let i = 0; i < test_input.length; i++){
           if(json1 != json2){
             battle_error_count += 1
             console.log(`Error: The battle object has changed for file ${test_input[i]}`)
+            if(myArgs.length == 1 && myArgs[0] == "--override"){
+              fs.writeFileSync(battlefile, JSON.stringify(res.data, null, 2), 'utf8');
+            }else{
+              fs.writeFileSync(battlefile + "_error", JSON.stringify(res.data, null, 2), 'utf8');
+            }
           }
         } catch (err) {
           if(err.syscall == 'open'){

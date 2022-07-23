@@ -1,4 +1,4 @@
-// Generated from StarRealms.g4 by ANTLR 4.9
+// Generated from StarRealms.g4 by ANTLR 4.10.1
 // jshint ignore: start
 import antlr4 from 'antlr4';
 
@@ -797,6 +797,15 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#alignBotEffect.
+	enterAlignBotEffect(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#alignBotEffect.
+	exitAlignBotEffect(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#choseEffectDetail.
 	enterChoseEffectDetail(ctx) {
 	}
@@ -851,30 +860,12 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
-	// Enter a parse tree produced by StarRealmsParser#scrapAndDraw.
-	enterScrapAndDraw(ctx) {
-	}
-
-	// Exit a parse tree produced by StarRealmsParser#scrapAndDraw.
-	exitScrapAndDraw(ctx) {
-	}
-
-
 	// Enter a parse tree produced by StarRealmsParser#scrap.
 	enterScrap(ctx) {
 	}
 
 	// Exit a parse tree produced by StarRealmsParser#scrap.
 	exitScrap(ctx) {
-	}
-
-
-	// Enter a parse tree produced by StarRealmsParser#drawAndScrapFromHand.
-	enterDrawAndScrapFromHand(ctx) {
-	}
-
-	// Exit a parse tree produced by StarRealmsParser#drawAndScrapFromHand.
-	exitDrawAndScrapFromHand(ctx) {
 	}
 
 

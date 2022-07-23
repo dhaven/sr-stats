@@ -18945,83 +18945,87 @@
                 {
                   "activatingDetail": [
                     {
-                      "scrap": [
+                      "scrapSummary": [
                         {
-                          "scrapSummary": [
+                          "name": [
                             {
-                              "name": [
-                                {
-                                  "wordPlus": [
-                                    "Hard"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "AI"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Hard"
                               ]
                             },
-                            "is",
-                            "scrapping",
-                            ":",
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Missile"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Bot"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "AI"
                               ]
-                            },
-                            "\n"
+                            }
                           ]
                         },
+                        "is",
+                        "scrapping",
+                        ":",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Recycle"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Bot"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Missile"
                               ]
                             },
-                            "\n"
+                            {
+                              "wordPlus": [
+                                "Bot"
+                              ]
+                            }
                           ]
                         },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Missile"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Bot"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Recycle"
                               ]
                             },
-                            "\n"
+                            {
+                              "wordPlus": [
+                                "Bot"
+                              ]
+                            }
                           ]
-                        }
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Missile"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "Bot"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]

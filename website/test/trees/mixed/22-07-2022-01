@@ -10311,152 +10311,149 @@
                     "\n"
                   ]
                 },
-                "",
                 {
                   "activatingDetail": [
-                    "Aharon75"
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "turn": [
-        "",
-        "is"
-      ]
-    },
-    {
-      "turn": [
-        {
-          "action": [
-            "scrapping",
-            ":"
-          ]
-        }
-      ]
-    },
-    {
-      "turn": [
-        {
-          "action": [
-            "Viper",
-            "\n"
-          ]
-        },
-        {
-          "action": [
-            {
-              "startTurnEffect": [
-                {
-                  "positiveBalance": [
                     {
-                      "name": [
+                      "scrapSummary": [
                         {
-                          "wordPlus": [
-                            "YL5943"
-                          ]
-                        }
-                      ]
-                    },
-                    "<",
-                    {
-                      "card": [
-                        {
-                          "wordPlus": [
-                            "T"
+                          "name": [
+                            {
+                              "wordPlus": [
+                                "Aharon75"
+                              ]
+                            }
                           ]
                         },
-                        {
-                          "wordPlus": [
-                            "h"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "e"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "C"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "i"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "t"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "a"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "d"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "e"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "l"
-                          ]
-                        }
-                      ]
-                    },
-                    "+1",
-                    {
-                      "wordPlus": [
-                        "Discard"
-                      ]
-                    },
-                    {
-                      "balance": [
-                        "(",
-                        {
-                          "wordPlus": [
-                            "Discarding"
-                          ]
-                        },
+                        "is",
+                        "scrapping",
                         ":",
-                        "1",
-                        ")"
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Viper"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
-                    },
-                    "\n"
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "positiveBalance": [
+                        {
+                          "name": [
+                            {
+                              "wordPlus": [
+                                "YL5943"
+                              ]
+                            }
+                          ]
+                        },
+                        "<",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "T"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "h"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "e"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "C"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "i"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "t"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "a"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "d"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "e"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "l"
+                              ]
+                            }
+                          ]
+                        },
+                        "+1",
+                        {
+                          "wordPlus": [
+                            "Discard"
+                          ]
+                        },
+                        {
+                          "balance": [
+                            "(",
+                            {
+                              "wordPlus": [
+                                "Discarding"
+                              ]
+                            },
+                            ":",
+                            "1",
+                            ")"
+                          ]
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Viper"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
+                      ]
+                    }
                   ]
                 }
               ]
             }
-          ]
-        }
-      ]
-    },
-    {
-      "turn": [
-        "",
-        "Scrapped"
-      ]
-    },
-    {
-      "turn": [
-        {
-          "action": [
-            "Viper",
-            "\n"
           ]
         },
         {
@@ -12368,152 +12365,149 @@
                     "\n"
                   ]
                 },
-                "",
                 {
                   "activatingDetail": [
-                    "Aharon75"
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "turn": [
-        "",
-        "is"
-      ]
-    },
-    {
-      "turn": [
-        {
-          "action": [
-            "scrapping",
-            ":"
-          ]
-        }
-      ]
-    },
-    {
-      "turn": [
-        {
-          "action": [
-            "Scout",
-            "\n"
-          ]
-        },
-        {
-          "action": [
-            {
-              "startTurnEffect": [
-                {
-                  "positiveBalance": [
                     {
-                      "name": [
+                      "scrapSummary": [
                         {
-                          "wordPlus": [
-                            "YL5943"
-                          ]
-                        }
-                      ]
-                    },
-                    "<",
-                    {
-                      "card": [
-                        {
-                          "wordPlus": [
-                            "T"
+                          "name": [
+                            {
+                              "wordPlus": [
+                                "Aharon75"
+                              ]
+                            }
                           ]
                         },
-                        {
-                          "wordPlus": [
-                            "h"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "e"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "C"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "i"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "t"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "a"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "d"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "e"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "l"
-                          ]
-                        }
-                      ]
-                    },
-                    "+1",
-                    {
-                      "wordPlus": [
-                        "Discard"
-                      ]
-                    },
-                    {
-                      "balance": [
-                        "(",
-                        {
-                          "wordPlus": [
-                            "Discarding"
-                          ]
-                        },
+                        "is",
+                        "scrapping",
                         ":",
-                        "1",
-                        ")"
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Scout"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
-                    },
-                    "\n"
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "positiveBalance": [
+                        {
+                          "name": [
+                            {
+                              "wordPlus": [
+                                "YL5943"
+                              ]
+                            }
+                          ]
+                        },
+                        "<",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "T"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "h"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "e"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "C"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "i"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "t"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "a"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "d"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "e"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "l"
+                              ]
+                            }
+                          ]
+                        },
+                        "+1",
+                        {
+                          "wordPlus": [
+                            "Discard"
+                          ]
+                        },
+                        {
+                          "balance": [
+                            "(",
+                            {
+                              "wordPlus": [
+                                "Discarding"
+                              ]
+                            },
+                            ":",
+                            "1",
+                            ")"
+                          ]
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Scout"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
+                      ]
+                    }
                   ]
                 }
               ]
             }
-          ]
-        }
-      ]
-    },
-    {
-      "turn": [
-        "",
-        "Scrapped"
-      ]
-    },
-    {
-      "turn": [
-        {
-          "action": [
-            "Scout",
-            "\n"
           ]
         },
         {
@@ -13296,332 +13290,303 @@
           "action": [
             {
               "choseEffect": [
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "action": [
-            {
-              "choseEffect": [
                 {
                   "choseEffectSummary": [
-                    "Chose"
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "turn": [
-        "",
-        "Add",
-        "2"
-      ]
-    },
-    {
-      "turn": [
-        "",
-        "Combat"
-      ]
-    },
-    {
-      "turn": [
-        {
-          "action": [
-            "Opponent"
-          ]
-        },
-        "Discards",
-        "1"
-      ]
-    },
-    {
-      "turn": [
-        "",
-        "Cards",
-        "\n"
-      ]
-    },
-    {
-      "turn": [
-        "",
-        "Scrapped"
-      ]
-    },
-    {
-      "turn": [
-        {
-          "action": [
-            "A"
-          ]
-        },
-        "l"
-      ]
-    },
-    {
-      "turn": [
-        {
-          "action": [
-            "i"
-          ]
-        },
-        "g"
-      ]
-    },
-    {
-      "turn": [
-        {
-          "action": [
-            "n"
-          ]
-        },
-        "m"
-      ]
-    },
-    {
-      "turn": [
-        {
-          "action": [
-            "e"
-          ]
-        },
-        "n"
-      ]
-    },
-    {
-      "turn": [
-        {
-          "action": [
-            "t"
-          ]
-        },
-        "B"
-      ]
-    },
-    {
-      "turn": [
-        {
-          "action": [
-            "o"
-          ]
-        },
-        "t",
-        "\n"
-      ]
-    },
-    {
-      "turn": [
-        {
-          "action": [
-            {
-              "startTurnEffect": [
-                {
-                  "positiveBalance": [
                     {
-                      "name": [
-                        {
-                          "wordPlus": [
-                            "Aharon75"
-                          ]
-                        }
-                      ]
-                    },
-                    ">",
-                    {
-                      "card": [
-                        {
-                          "wordPlus": [
-                            "A"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "l"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "i"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "g"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "n"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "m"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "e"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "n"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "t"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "B"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "o"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "t"
-                          ]
-                        }
-                      ]
-                    },
-                    "+2",
-                    {
-                      "wordPlus": [
-                        "Combat"
-                      ]
-                    },
-                    {
-                      "balance": [
-                        "(",
+                      "alignBotEffect": [
+                        "Chose",
+                        "Add",
+                        "2",
                         {
                           "wordPlus": [
                             "Combat"
                           ]
                         },
-                        ":",
-                        "7",
-                        ")"
+                        "Opponent",
+                        "Discards",
+                        "1",
+                        "Cards",
+                        "\n"
                       ]
-                    },
-                    "\n"
+                    }
                   ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "action": [
-            {
-              "startTurnEffect": [
+                },
                 {
-                  "positiveBalance": [
+                  "choseEffectDetail": [
                     {
-                      "name": [
+                      "simpleScrap": [
+                        "Scrapped",
                         {
-                          "wordPlus": [
-                            "YL5943"
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "A"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "l"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "i"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "g"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "n"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "m"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "e"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "n"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "t"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "B"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "o"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "t"
+                              ]
+                            }
                           ]
-                        }
+                        },
+                        "\n"
                       ]
-                    },
-                    "<",
+                    }
+                  ]
+                },
+                {
+                  "choseEffectDetail": [
                     {
-                      "card": [
+                      "positiveBalance": [
+                        {
+                          "name": [
+                            {
+                              "wordPlus": [
+                                "Aharon75"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "A"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "l"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "i"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "g"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "n"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "m"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "e"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "n"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "t"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "B"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "o"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "t"
+                              ]
+                            }
+                          ]
+                        },
+                        "+2",
                         {
                           "wordPlus": [
-                            "A"
+                            "Combat"
                           ]
                         },
                         {
-                          "wordPlus": [
-                            "l"
+                          "balance": [
+                            "(",
+                            {
+                              "wordPlus": [
+                                "Combat"
+                              ]
+                            },
+                            ":",
+                            "7",
+                            ")"
                           ]
                         },
-                        {
-                          "wordPlus": [
-                            "i"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "g"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "n"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "m"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "e"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "n"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "t"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "B"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "o"
-                          ]
-                        },
-                        {
-                          "wordPlus": [
-                            "t"
-                          ]
-                        }
+                        "\n"
                       ]
-                    },
-                    "+1",
+                    }
+                  ]
+                },
+                {
+                  "choseEffectDetail": [
                     {
-                      "wordPlus": [
-                        "Discard"
-                      ]
-                    },
-                    {
-                      "balance": [
-                        "(",
+                      "positiveBalance": [
                         {
-                          "wordPlus": [
-                            "Discarding"
+                          "name": [
+                            {
+                              "wordPlus": [
+                                "YL5943"
+                              ]
+                            }
                           ]
                         },
-                        ":",
-                        "2",
-                        ")"
+                        "<",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "A"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "l"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "i"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "g"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "n"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "m"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "e"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "n"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "t"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "B"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "o"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "t"
+                              ]
+                            }
+                          ]
+                        },
+                        "+1",
+                        {
+                          "wordPlus": [
+                            "Discard"
+                          ]
+                        },
+                        {
+                          "balance": [
+                            "(",
+                            {
+                              "wordPlus": [
+                                "Discarding"
+                              ]
+                            },
+                            ":",
+                            "2",
+                            ")"
+                          ]
+                        },
+                        "\n"
                       ]
-                    },
-                    "\n"
+                    }
                   ]
                 }
               ]

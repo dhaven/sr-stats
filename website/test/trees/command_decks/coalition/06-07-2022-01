@@ -8772,58 +8772,58 @@
                 {
                   "activatingDetail": [
                     {
-                      "scrap": [
+                      "scrapSummary": [
                         {
-                          "scrapSummary": [
+                          "name": [
                             {
-                              "name": [
-                                {
-                                  "wordPlus": [
-                                    "Player"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Player"
                               ]
-                            },
-                            "is",
-                            "scrapping",
-                            ":",
-                            {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Federation"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Scout"
-                                  ]
-                                }
-                              ]
-                            },
-                            "\n"
+                            }
                           ]
                         },
+                        "is",
+                        "scrapping",
+                        ":",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Federation"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Scout"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Federation"
                               ]
                             },
-                            "\n"
+                            {
+                              "wordPlus": [
+                                "Scout"
+                              ]
+                            }
                           ]
-                        }
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Federation"
+                              ]
+                            },
+                            {
+                              "wordPlus": [
+                                "Scout"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]
@@ -16956,48 +16956,48 @@
                 {
                   "activatingDetail": [
                     {
-                      "scrap": [
+                      "scrapSummary": [
                         {
-                          "scrapSummary": [
+                          "name": [
                             {
-                              "name": [
-                                {
-                                  "wordPlus": [
-                                    "Player"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Player"
                               ]
-                            },
-                            "is",
-                            "scrapping",
-                            ":",
-                            {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Scout"
-                                  ]
-                                }
-                              ]
-                            },
-                            "\n"
+                            }
                           ]
                         },
+                        "is",
+                        "scrapping",
+                        ":",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Scout"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Scout"
                               ]
-                            },
-                            "\n"
+                            }
                           ]
-                        }
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Scout"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]
@@ -22389,48 +22389,48 @@
                 {
                   "activatingDetail": [
                     {
-                      "scrap": [
+                      "scrapSummary": [
                         {
-                          "scrapSummary": [
+                          "name": [
                             {
-                              "name": [
-                                {
-                                  "wordPlus": [
-                                    "Player"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Player"
                               ]
-                            },
-                            "is",
-                            "scrapping",
-                            ":",
-                            {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Scout"
-                                  ]
-                                }
-                              ]
-                            },
-                            "\n"
+                            }
                           ]
                         },
+                        "is",
+                        "scrapping",
+                        ":",
                         {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Scout"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Scout"
                               ]
-                            },
-                            "\n"
+                            }
                           ]
-                        }
+                        },
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Scout"
+                              ]
+                            }
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]
@@ -28552,48 +28552,48 @@
                 {
                   "activatingDetail": [
                     {
-                      "drawAndScrapFromHand": [
+                      "drawCardsWithShuffle": [
                         {
-                          "drawCardsWithShuffle": [
-                            {
-                              "drawCards": [
-                                "Drew",
-                                "1",
-                                "cards",
-                                "\n"
-                              ]
-                            }
+                          "drawCards": [
+                            "Drew",
+                            "1",
+                            "cards",
+                            "\n"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "resolveHandScrap": [
+                        {
+                          "resolveHandScrapSummary": [
+                            "Resolving",
+                            "Scrap",
+                            "a",
+                            "card",
+                            "from",
+                            "your",
+                            "hand",
+                            "\n"
                           ]
                         },
                         {
-                          "resolveHandScrap": [
+                          "scrapDetail": [
+                            "Scrapped",
                             {
-                              "resolveHandScrapSummary": [
-                                "Resolving",
-                                "Scrap",
-                                "a",
-                                "card",
-                                "from",
-                                "your",
-                                "hand",
-                                "\n"
+                              "card": [
+                                {
+                                  "wordPlus": [
+                                    "Viper"
+                                  ]
+                                }
                               ]
                             },
-                            {
-                              "scrapDetail": [
-                                "Scrapped",
-                                {
-                                  "card": [
-                                    {
-                                      "wordPlus": [
-                                        "Viper"
-                                      ]
-                                    }
-                                  ]
-                                },
-                                "\n"
-                              ]
-                            }
+                            "\n"
                           ]
                         }
                       ]

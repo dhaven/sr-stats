@@ -9271,60 +9271,60 @@
                 {
                   "activatingDetail": [
                     {
-                      "drawAndScrapFromHand": [
+                      "drawCardsWithShuffle": [
                         {
-                          "drawCardsWithShuffle": [
-                            {
-                              "shuffleCards": [
-                                "Shuffled",
-                                "discard",
-                                "pile",
-                                "to",
-                                "form",
-                                "new",
-                                "deck",
-                                "\n"
-                              ]
-                            },
-                            {
-                              "drawCards": [
-                                "Drew",
-                                "1",
-                                "cards",
-                                "\n"
-                              ]
-                            }
+                          "shuffleCards": [
+                            "Shuffled",
+                            "discard",
+                            "pile",
+                            "to",
+                            "form",
+                            "new",
+                            "deck",
+                            "\n"
                           ]
                         },
                         {
-                          "resolveHandScrap": [
+                          "drawCards": [
+                            "Drew",
+                            "1",
+                            "cards",
+                            "\n"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "resolveHandScrap": [
+                        {
+                          "resolveHandScrapSummary": [
+                            "Resolving",
+                            "Scrap",
+                            "a",
+                            "card",
+                            "from",
+                            "your",
+                            "hand",
+                            "\n"
+                          ]
+                        },
+                        {
+                          "scrapDetail": [
+                            "Scrapped",
                             {
-                              "resolveHandScrapSummary": [
-                                "Resolving",
-                                "Scrap",
-                                "a",
-                                "card",
-                                "from",
-                                "your",
-                                "hand",
-                                "\n"
+                              "card": [
+                                {
+                                  "wordPlus": [
+                                    "Scout"
+                                  ]
+                                }
                               ]
                             },
-                            {
-                              "scrapDetail": [
-                                "Scrapped",
-                                {
-                                  "card": [
-                                    {
-                                      "wordPlus": [
-                                        "Scout"
-                                      ]
-                                    }
-                                  ]
-                                },
-                                "\n"
-                              ]
-                            }
+                            "\n"
                           ]
                         }
                       ]

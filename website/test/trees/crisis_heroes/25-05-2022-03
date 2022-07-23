@@ -12637,48 +12637,48 @@
                 {
                   "activatingDetail": [
                     {
-                      "drawAndScrapFromHand": [
+                      "drawCardsWithShuffle": [
                         {
-                          "drawCardsWithShuffle": [
-                            {
-                              "drawCards": [
-                                "Drew",
-                                "1",
-                                "cards",
-                                "\n"
-                              ]
-                            }
+                          "drawCards": [
+                            "Drew",
+                            "1",
+                            "cards",
+                            "\n"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "resolveHandScrap": [
+                        {
+                          "resolveHandScrapSummary": [
+                            "Resolving",
+                            "Scrap",
+                            "a",
+                            "card",
+                            "from",
+                            "your",
+                            "hand",
+                            "\n"
                           ]
                         },
                         {
-                          "resolveHandScrap": [
+                          "scrapDetail": [
+                            "Scrapped",
                             {
-                              "resolveHandScrapSummary": [
-                                "Resolving",
-                                "Scrap",
-                                "a",
-                                "card",
-                                "from",
-                                "your",
-                                "hand",
-                                "\n"
+                              "card": [
+                                {
+                                  "wordPlus": [
+                                    "Viper"
+                                  ]
+                                }
                               ]
                             },
-                            {
-                              "scrapDetail": [
-                                "Scrapped",
-                                {
-                                  "card": [
-                                    {
-                                      "wordPlus": [
-                                        "Viper"
-                                      ]
-                                    }
-                                  ]
-                                },
-                                "\n"
-                              ]
-                            }
+                            "\n"
                           ]
                         }
                       ]

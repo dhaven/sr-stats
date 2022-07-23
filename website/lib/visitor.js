@@ -1168,19 +1168,11 @@ class Visitor extends StarRealmsVisitor{
             }
         }
         for(let i = 0; i < ctx.activatingDetail().length; i++){
-            if(ctx.activatingDetail()[i].drawAndScrapFromHand()){
+            if(ctx.activatingDetail()[i].resolveHandScrap()){
                 let summary = this.visit(ctx.activatingDetail()[i])
-                activatingEffectSummary['scrappedCards'].push(summary['scrappedCard'])
-                activatingEffectSummary['drawCount'] += summary['drawCount']
-            }else if(ctx.activatingDetail()[i].scrapAndDraw()){
-                let summary = this.visit(ctx.activatingDetail()[i])
-                activatingEffectSummary['scrappedCards'] = activatingEffectSummary['scrappedCards'].concat(summary['scrappedCards'])
-                activatingEffectSummary['drawCount'] += summary['drawCount']
+                activatingEffectSummary['scrappedCards'].push(summary)
             }else if(ctx.activatingDetail()[i].drawCardsWithShuffle()){
                 activatingEffectSummary['drawCount'] += this.visit(ctx.activatingDetail()[i])
-            }else if(ctx.activatingDetail()[i].scrap()){
-                let summary = this.visit(ctx.activatingDetail()[i])
-                activatingEffectSummary['scrappedCards'] = activatingEffectSummary['scrappedCards'].concat(summary)
             }else if(ctx.activatingDetail()[i].freeAcquireToTop()){
                 let summary = this.visit(ctx.activatingDetail()[i])
                 activatingEffectSummary['acquiredCards'].push(summary)
@@ -1210,14 +1202,10 @@ class Visitor extends StarRealmsVisitor{
 
     // grammar: drawAndScrapFromHand | scrapAndDraw | drawCardsWithShuffle | scrap | noScrap | freeAcquireToTop | destroyBase | scrapDetail | noCopy | noCopyBases | copyCard | copyBase | discardAndDraw | positiveBalance | negativeBalance | resolveStealth | copyStealth | selectCard;
     visitActivatingDetail(ctx) {
-        if(ctx.drawAndScrapFromHand()){
-            return this.visit(ctx.drawAndScrapFromHand())
-        }else if(ctx.scrapAndDraw()){
-            return this.visit(ctx.scrapAndDraw())
+        if(ctx.resolveHandScrap()){
+            return this.visit(ctx.resolveHandScrap())
         }else if(ctx.drawCardsWithShuffle()){
             return this.visit(ctx.drawCardsWithShuffle())
-        }else if(ctx.scrap()){
-            return this.visit(ctx.scrap())
         }else if(ctx.freeAcquireToTop()){
             return this.visit(ctx.freeAcquireToTop())
         }else if(ctx.scrapDetail()){
@@ -1235,25 +1223,9 @@ class Visitor extends StarRealmsVisitor{
         }
     }
 
-    // grammar: drawCardsWithShuffle resolveHandScrap;
-    visitDrawAndScrapFromHand(ctx) {
-        return {
-            drawCount: this.visit(ctx.drawCardsWithShuffle()),
-            scrappedCard: this.visit(ctx.resolveHandScrap())
-        }
-    }
-
     // grammar: resolveHandScrapSummary scrapDetail;
     visitResolveHandScrap(ctx) {
         return this.visit(ctx.scrapDetail())
-    }
-
-    // grammar: scrap drawCardsWithShuffle;
-    visitScrapAndDraw(ctx) {
-        return {
-            scrappedCards: this.visit(ctx.scrap()),
-            drawCount: this.visit(ctx.drawCardsWithShuffle())
-        }
     }
 
     // grammar: ACQUIRED card NEWLINE purchaseToTop;
