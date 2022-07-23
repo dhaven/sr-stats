@@ -31,7 +31,7 @@ cd website
 npm run dev
 ```
 
-## testing
+## Testing
 
 You can run the test suite using the following commands:
 
