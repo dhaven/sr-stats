@@ -82,6 +82,48 @@ export function getDeckSummary(deck){
     }
 }
 
+export function getAggrChartData(battle){
+    let firstPlayer = battle['firstPlayer']
+    let secondPlayer = ""
+    for(let i = 0; i < battle['rounds'][0]['players'].length; i++){
+        let player = battle['rounds'][0]['players'][i]
+        if(player['name'] != battle['firstPlayer']){
+            secondPlayer = player['name']
+        }
+    }
+    let combatData = {}
+    combatData[firstPlayer] = 0
+    combatData[secondPlayer] = 0
+    let tradeData =  {}
+    tradeData[firstPlayer] = 0
+    tradeData[secondPlayer] = 0
+    let discardData =  {}
+    discardData[firstPlayer] = 0
+    discardData[secondPlayer] = 0
+    let drawData =  {}
+    drawData[firstPlayer] = 0
+    drawData[secondPlayer] = 0
+    for(let i = 0; i < battle['rounds'].length; i++){
+        if(i % 2 == 0){
+            combatData[firstPlayer] += battle['rounds'][i]['combatPool']
+            tradeData[firstPlayer] += battle['rounds'][i]['tradePool']
+            discardData[firstPlayer] += battle['rounds'][i]['discardedCards'].length
+            drawData[firstPlayer] += battle['rounds'][i]['drawCount']
+        }else{
+            combatData[secondPlayer] += battle['rounds'][i]['combatPool']
+            tradeData[secondPlayer] += battle['rounds'][i]['tradePool']
+            discardData[secondPlayer] += battle['rounds'][i]['discardedCards'].length
+            drawData[secondPlayer] += battle['rounds'][i]['drawCount']
+        }
+    }
+    return {
+        combatData: combatData,
+        tradeData: tradeData,
+        discardData: discardData,
+        drawCount: drawData
+    }
+}
+
 //return all chart data
 export function getChartData(battle){
     let authorityData = {}

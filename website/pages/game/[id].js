@@ -9,6 +9,9 @@ import { useState } from 'react'
 
 export default function Game({firstPlayer, winner, rounds}) {
     let decksData = getFinalDecks({firstPlayer, winner, rounds})
+    console.log(firstPlayer)
+    console.log(winner)
+    console.log(rounds)
     let [isOpen, setIsOpen] = useState(false)
     console.log(rounds)
     function openModal() {
