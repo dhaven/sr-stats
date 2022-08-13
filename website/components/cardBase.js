@@ -1,14 +1,32 @@
-function CardBase({name}) {
+import Base from '../public/svg/base_station.svg'
+import StarEmpire from '../public/svg/star_empire.svg'
+import Blob from '../public/svg/blob.svg'
+import TradeFederation from '../public/svg/trade_federation.svg'
+import MachineCult from '../public/svg/machine_cult.svg'
+
+function CardBase({card}) {
+    let factionIcon = function(card){
+        if(card['faction'][0] == "Blob"){
+            return <Blob className="bg-blob border-2 border-black rounded-full m-1 p-0.5 w-7 h-7"/>
+        }else if(card['faction'][0] == "Trade Federation"){
+            return <TradeFederation className="bg-tradefederation border-2 border-black rounded-full m-1 p-0.5 w-7 h-7"/>
+        }else if(card['faction'][0] == "Star Empire"){
+            return <StarEmpire className="bg-starempire border-2 border-black rounded-full m-1 p-0.5 w-7 h-7"/>
+        }else if(card['faction'][0] == "Machine Cult"){
+            return <MachineCult className="bg-machinecult border-2 border-black rounded-full m-1 p-0.5 w-7 h-7"/>
+        }
+    }
     return (
-        <div className="flex flex-col items-center w-32 h-24 bg-slate-100 m-2">
-            <p className="z-10 bg-white text-md text-center">{name}</p>
-            <svg className="p-1" viewBox="0 0 23.999994 23.999994" xmlns="http://www.w3.org/2000/svg">
-                <g transform="translate(-0.08176902,-272.5945)">
-                    <path d="m 20.999602,275.67855 a 3.9028772,1.315487 45.021686 0 0 -3.688627,-1.82999 3.9028772,1.315487 45.021686 0 0 0.989503,2.74989 l -0.432491,0.46926 a 5.1401596,1.7325201 45.021687 0 1 -1.532486,-3.9025 5.1401596,1.7325201 45.021687 0 1 0.01541,-0.0112 7.5707552,3.1437875 45.024455 0 0 -3.41188,-0.11968 7.5707552,3.1437875 45.024455 0 0 2.388353,6.7875 l -0.605068,0.65598 a 7.1851224,2.2646153 45.02107 0 0 -2.910636,-2.18798 l 1.910609,3.27214 -0.950567,1.03116 a 2.2324337,0.70362112 45.02107 0 1 -0.139982,-0.19621 l -3.3336568,-1.80401 a 7.1851224,2.2646153 45.02107 0 0 2.3820348,3.18369 l -0.39566,0.42889 a 9.4955134,3.7663758 45.023707 0 1 -3.5090385,-8.81789 9.4955134,3.7663758 45.023707 0 1 0.6713627,-0.3959 11.48445,4.5552837 45.023707 0 0 -3.3589125,0.36221 11.48445,4.5552837 45.023707 0 0 4.384193,10.81669 l -1.0087998,1.09363 -4.4974893,-7.70038 -0.4009188,-0.0138 4.0702587,7.65477 -7.55334448,-4.42018 0.45389144,1.47058 7.14469634,3.85757 -1.7846807,1.93527 0.7312981,0.72902 1.9512973,-1.79874 3.9418795,7.41329 1.392537,0.20286 -4.365254,-7.47401 7.675056,4.14396 -0.06981,-0.48961 -7.7637948,-4.54373 1.1182308,-1.03045 a 11.48445,4.5552837 45.023707 0 0 10.817197,4.39946 11.48445,4.5552837 45.023707 0 0 0.292886,-3.55923 9.4955134,3.7663758 45.023707 0 1 -0.417406,0.77916 9.4955134,3.7663758 45.023707 0 1 -8.726293,-3.43183 l 0.425825,-0.39238 a 7.1851224,2.2646153 45.02107 0 0 3.201419,2.3982 l -1.779422,-3.31706 a 2.2324337,0.70362112 45.02107 0 1 -0.239948,-0.17054 l 1.029135,-0.94834 3.278942,1.91912 a 7.1851224,2.2646153 45.02107 0 0 -2.19087,-2.92213 L 16.855208,281.35 a 7.5707552,3.1437875 45.024455 0 0 6.787274,2.39435 7.5707552,3.1437875 45.024455 0 0 -0.06454,-3.28934 5.1401596,1.7325201 45.021687 0 1 -3.975905,-1.63659 l 0.477744,-0.44012 a 3.9028772,1.315487 45.021686 0 0 2.748933,0.9915 3.9028772,1.315487 45.021686 0 0 -1.829235,-3.69119 z m -10.009035,2.18972 a 7.1851224,2.2646153 45.02107 0 0 -2.1880608,-0.14881 7.1851224,2.2646153 45.02107 0 0 -0.1175043,1.47866 l 3.5742751,2.09181 a 2.2324337,0.70362112 45.02107 0 1 0.04422,-0.0674 2.2324337,0.70362112 45.02107 0 1 0.468267,-0.034 z m 7.848018,7.88848 -3.333302,-1.80436 a 2.2324337,0.70362112 45.02107 0 1 -0.0456,0.42818 2.2324337,0.70362112 45.02107 0 1 -0.06523,0.0442 l 2.087398,3.57328 a 7.1851224,2.2646153 45.02107 0 0 1.478467,-0.11478 7.1851224,2.2646153 45.02107 0 0 -0.121364,-2.1262 z"/>
-                    <g transform="translate(56.554577,28.575)"/>
-                    <g transform="translate(49.153346,-5.1498417)" />
-                </g>
-            </svg>
+        <div className="relative flex flex-col w-32 h-24 bg-slate-300 m-2 border-2 border-black border-double rounded-sm bg-gradient-to-t from-scifi2 to-scifi3">
+            <p className="z-10 bg-white/70 text-md text-center rounded-t-sm leading-snug">{card['name']}</p>
+            <div className="absolute inset-0 flex items-center justify-center">
+                <Base/>
+            </div>
+            <div className="absolute inset-0 flex items-end justify-center">
+                {
+                    factionIcon(card)
+                }
+            </div>
         </div>
     )
   }

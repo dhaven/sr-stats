@@ -1,13 +1,12 @@
 import FinalAuthority from './finalAuthority'
 import FactionPie from './factionPie'
-import Card from './card'
 import MissionCardBack from './missionCardBack'
 import { getDeckSummary } from '../lib/helper.js'
 
-function PlayerOverviewV2({setActivePlayer, name, deckData, authority, missions}) {
+function PlayerOverviewV2({name, deckData, authority, missions}) {
     let deckSummary = getDeckSummary(deckData)
     return (
-        <div onClick={() => setActivePlayer(name)} className="flex flex-row gap-3">
+        <div className="flex items-start gap-3 ">
             <div className="flex flex-col">
                 <div className="text-center">
                     <p className="p-2 text-3xl text-scifi5 font-bold whitespace-nowrap">{name}</p>

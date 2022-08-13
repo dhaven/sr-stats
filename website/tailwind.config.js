@@ -14,7 +14,11 @@ module.exports = {
         scifi2: "#78cce2",
         scifi3: "#4e7988",
         scifi4: "#005066",
-        scifi5: "#002439"
+        scifi5: "#002439",
+        starempire: "#f1c61a",
+        blob: "#46a24d",
+        machinecult: "#ba2028",
+        tradefederation: "#4850a2"
       },
       dropShadow: {
         'scifi1': '0 10px 8px rgba(228, 239, 240, 0.5)',

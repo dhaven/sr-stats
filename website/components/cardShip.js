@@ -1,14 +1,40 @@
-function CardBase({name}) {
+import Rocket from '../public/svg/rocket.svg'
+import StarEmpire from '../public/svg/star_empire.svg'
+import Blob from '../public/svg/blob.svg'
+import TradeFederation from '../public/svg/trade_federation.svg'
+import MachineCult from '../public/svg/machine_cult.svg'
+import SRCard from './SRCard.js'
+import { useState } from 'react'
+
+function CardShip({card}) {
+    let [isOpen, setIsOpen] = useState(false)
+    let factionIcon = function(card){
+        if(card['faction'][0] == "Blob"){
+            return <Blob className="bg-blob border-2 border-black rounded-full m-1 p-0.5 w-7 h-7"/>
+        }else if(card['faction'][0] == "Trade Federation"){
+            return <TradeFederation className="bg-tradefederation border-2 border-black rounded-full m-1 p-0.5 w-7 h-7"/>
+        }else if(card['faction'][0] == "Star Empire"){
+            return <StarEmpire className="bg-starempire border-2 border-black rounded-full m-1 p-0.5 w-7 h-7"/>
+        }else if(card['faction'][0] == "Machine Cult"){
+            return <MachineCult className="bg-machinecult border-2 border-black rounded-full m-1 p-0.5 w-7 h-7"/>
+        }
+    }
     return (
-        <div className="flex flex-col items-center w-24 h-32 bg-slate-100 m-2">
-            <p className="z-10 bg-white text-md text-center">{name}</p>
-            <svg className="p-4" viewBox="0 0 12.69996 12.699997" xmlns="http://www.w3.org/2000/svg">
-                <g transform="translate(-228.01068,-163.9122)">
-                    <path d="m 240.41351,164.20657 c -0.56369,-0.30333 -1.27028,-0.25686 -1.89701,-0.29437 -2.36273,0.0347 -4.67774,1.11438 -6.25795,2.84948 -1.54382,-0.59064 -3.44256,0.25543 -4.01527,1.79793 -0.17421,0.50635 -0.33976,1.10619 -0.14433,1.62457 0.25861,0.34805 0.73222,0.11946 1.09152,0.13711 0.45158,-0.0367 0.90318,-0.0734 1.35477,-0.11016 0.0209,0.40687 -0.17931,1.04825 0.29124,1.26787 0.59527,0.0849 1.1805,0.26149 1.70338,0.56291 0.35963,0.54491 0.50845,1.18484 0.64922,1.80584 0.27388,0.41602 0.94836,0.15035 1.27198,0.2689 -0.0462,0.71327 -0.14361,1.42737 -0.15728,2.14013 0.13009,0.48471 0.75479,0.34334 1.12498,0.31245 1.63435,-0.20562 2.89636,-1.83081 2.68204,-3.4505 -0.0658,-0.73142 0,0 -0.0658,-0.73142 0.4946,-0.58271 0,0 0.4946,-0.58271 1.7785,-1.99119 2.57286,-4.85501 1.9734,-7.45733 -0.0233,-0.0529 -0.0573,-0.10105 -0.0996,-0.14069 z m -0.67699,0.68065 c 0.48082,2.99734 -0.94602,6.30335 -3.66377,7.79047 -0.65113,0.3556 -1.39276,0.56974 -2.14004,0.53965 -0.15672,-0.65266 -0.38429,-1.33287 -0.82272,-1.85083 -0.47201,-0.41877 -1.39354,-0.41701 -1.70225,-0.81305 0.0557,-1.74288 1.27706,-3.19525 2.60914,-4.21291 1.62201,-1.17048 3.71944,-1.80962 5.71964,-1.45333 z m -1.895,1.97185 c -0.72867,-0.78838 -2.19969,-0.3132 -2.35202,0.73623 -0.24268,0.97861 0.83842,1.91589 1.7839,1.55192 0.95883,-0.28023 1.30447,-1.60002 0.56812,-2.28815 z m -0.63545,6.12929 c 0.30884,1.26693 -0.69181,2.63423 -2.00267,2.73321 0.0499,-0.60391 0.0998,-1.20782 0.14972,-1.81175 0.66802,-0.19115 1.29039,-0.51936 1.85295,-0.92146 z m -5.54723,-5.49998 c -0.49834,0.51345 -0.66063,1.39955 -1.06511,1.85083 -0.5618,0.0457 -1.1236,0.0913 -1.6854,0.13704 0.11433,-1.31184 1.45596,-2.28169 2.75051,-1.98787 z m 0.38058,5.13058 c -0.5696,-0.62953 -1.5948,-0.66514 -2.23734,-0.12575 -0.99346,0.67117 -1.07489,1.97221 -1.16279,3.05307 -0.009,0.24963 -0.10083,0.58112 0.27109,0.45179 1.0104,-0.0713 2.15399,-0.11004 2.94782,-0.81497 0.62293,-0.54852 0.95615,-1.53375 0.43175,-2.25815 -0.0722,-0.11048 -0.1567,-0.21293 -0.25053,-0.30599 z m -0.61672,0.61184 c 0.61965,0.53315 -0.0289,1.449 -0.67257,1.5966 -0.45115,0.12981 -1.49162,0.56741 -1.12021,-0.28613 0.11048,-0.66304 0.42273,-1.43444 1.1721,-1.56535 0.24119,-0.0461 0.46181,0.0893 0.62067,0.25488 z"/>
-                </g>
-            </svg>
+        <div>
+        <div onClick={() => setIsOpen(true)} className="relative flex flex-col w-24 h-32 bg-slate-300 m-2 border-2 border-black border-double bg-gradient-to-t from-scifi2 to-scifi3">
+            <p className="z-10 bg-white/70 text-md text-center rounded-t-sm leading-snug">{card['name']}</p>
+            <div className="absolute inset-0 flex items-center justify-center">
+                <Rocket/>
+            </div>
+            <div className="absolute inset-0 flex items-end justify-center">
+                {
+                    factionIcon(card)
+                }
+            </div>
+        </div>
+        <SRCard isOpen={isOpen} setIsOpen={setIsOpen}></SRCard>
         </div>
     )
   }
   
-  export default CardBase
+  export default CardShip

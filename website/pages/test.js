@@ -7,6 +7,7 @@ import { Fragment, useState } from 'react'
 import AuthorityChart from '../components/authorityChart'
 import OtherCharts from '../components/otherCharts'
 import { getFinalDecks, getFinalAuthority, getCompletedMissions } from '../lib/helper.js'
+import { ChevronUpIcon } from '@heroicons/react/solid'
 
 function Test() {
     let winner = "Player"
@@ -4493,22 +4494,34 @@ function Test() {
     let finalAuthority = getFinalAuthority(rounds[rounds.length -1])
     let completedMissions = getCompletedMissions(rounds[rounds.length -1])
     let [activePlayer, setActivePlayer] = useState(winner)
+    let [open, setOpen] = useState(true)
+    let updatVisibleDeck = function(player){
+        if(player == activePlayer){
+            setOpen(!open)
+        }
+        if(!open){
+            setOpen(true)
+        }
+        setActivePlayer(player)
+    }
     return (
         <Layout>
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <div id="test" className="flex flex-col bg-slate-300 gap-2">
-                <div onClick={() => console.log("hello")} className="m-4">
-                    <p className="text-scifi5 text-3xl">David won by defeating HardAI</p>
+            <div id="test" className="flex flex-col gap-2">
+                <div className="m-4 p-4 bg-scifi1 rounded-md border-2 border-scifi4 drop-shadow-scifi5">
+                    <p className="text-scifi5 text-3xl font-medium">David won by defeating HardAI</p>
                 </div>
                 <Tab.Group>
-                    <Tab.List>
+                    <div className="flex flex-row mx-4">
+                    <Tab.List className="flex space-x-2 grow-0 bg-scifi1 rounded-md border-2 border-scifi4 drop-shadow-scifi5 p-1">
                         <Tab as={Fragment}>
                             {({ selected }) => (
                                 <button
                                     className={
-                                        selected ? 'bg-blue-500 text-white' : 'bg-white text-black'
+                                        selected ? 'bg-white rounded-md border-2 border-scifi4 py-2.5 px-2 text-sm font-medium leading-5 text-scifi5' 
+                                        : 'hover:bg-white/[0.12] ring-scifi-2 hover:ring rounded-lg py-2.5 px-2 text-sm font-medium leading-5 text-scifi5'
                                     }
                                 >
                                 Player stats
@@ -4519,7 +4532,8 @@ function Test() {
                             {({ selected }) => (
                                 <button
                                     className={
-                                        selected ? 'bg-blue-500 text-white' : 'bg-white text-black'
+                                        selected ? 'bg-white rounded-md border-2 border-scifi4 py-2.5 px-2 text-sm font-medium leading-5 text-scifi5'
+                                        : 'hover:bg-white/[0.12] ring-scifi-2 hover:ring rounded-lg py-2.5 px-2 text-sm font-medium leading-5 text-scifi5'
                                     }
                                 >
                                 Game stats
@@ -4527,18 +4541,38 @@ function Test() {
                             )}
                         </Tab>
                     </Tab.List>
+                    </div>
                     <Tab.Panels>
                         <Tab.Panel>
-                            <div className="flex flex-row gap-4 m-4">
+                            <div className="flex flex-row gap-4 mx-4">
                                 { 
                                     Object.keys(decksData).map((oneKey,i)=>{
                                         return (
-                                        <PlayerOverviewV2 setActivePlayer={setActivePlayer} key={i} name={oneKey} deckData={decksData[oneKey]} authority={finalAuthority[oneKey]} missions={completedMissions[oneKey]}></PlayerOverviewV2>
+                                            <div className="flex flex-col w-1/2 p-4 bg-scifi1 rounded-md border-2 border-scifi4 drop-shadow-scifi5">
+                                                <PlayerOverviewV2 key={i} name={oneKey} deckData={decksData[oneKey]} authority={finalAuthority[oneKey]} missions={completedMissions[oneKey]}></PlayerOverviewV2>
+                                                <div className="flex justify-center p-2">
+                                                    <button onClick={() => updatVisibleDeck(oneKey)} 
+                                                        className={ activePlayer == oneKey && open ?
+                                                        "rounded-full bg-scifi3 ring-scifi-2 text-white hover:ring border-2 border-scifi4 p-2 text-left text-sm font-medium" :
+                                                        "rounded-full bg-scifi1 ring-scifi-2 hover:ring border-2 border-scifi4 p-2 text-left text-sm font-medium"
+                                                        }
+                                                    >
+                                                        <ChevronUpIcon
+                                                            className={`${
+                                                                activePlayer == oneKey && open ? 'rotate-180 transform' : ''
+                                                            } h-5 w-5`}
+                                                        />
+                                                    </button>
+                                                </div>
+                                            </div>
+        
                                         )
                                     })
                                 }
                             </div>
-                            <DeckOverviewV2 deckData={decksData[activePlayer]} ></DeckOverviewV2>
+                            {
+                                open && <DeckOverviewV2 deckData={decksData[activePlayer]} ></DeckOverviewV2>
+                            }
                         </Tab.Panel>
                         <Tab.Panel>
                             <div className="flex flex-col">
