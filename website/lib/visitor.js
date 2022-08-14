@@ -89,6 +89,10 @@ class Visitor extends StarRealmsVisitor{
                         player['deck'][nextCard]['playedCount'] += 1
                     }
                 }
+                for(let j = 0; j < nextRound['completedMissions'].length; j++){
+                    let mission = nextRound['completedMissions'][j]
+                    player['completedMissions'].push(mission)
+                }
                 newPlayerData.push(player)
             }else{
                 for(let j = 0; j < nextRound['destroyedBases'].length; j++){
@@ -332,7 +336,7 @@ class Visitor extends StarRealmsVisitor{
             usedTrade: 0,
             usedCombat: 0,
             purchasedCards: [],
-            completedMission: "",
+            completedMissions: [],
             playedCards: [],
             scrappedCards: [],
             discardedCards: [],
@@ -418,7 +422,7 @@ class Visitor extends StarRealmsVisitor{
                 //console.log(playActionDetail['balance']['authority'])
                 turnData['authority'] = this.updateAuthorityObj(turnData['authority'], playActionDetail['balance']['authority'])
                 if(playActionDetail['mission'] != ""){
-                    turnData['completedMission'] = playActionDetail['mission']
+                    turnData['completedMissions'].push(playActionDetail['mission'])
                 }
                 if(playActionDetail['winner'] != ""){
                     turnData['winner'] = playActionDetail['winner']

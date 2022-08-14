@@ -11,7 +11,7 @@ function DeckOverviewV2({deckData}) {
     let deckSummary = getDeckSummary(deckData)
     return (
         <div className="flex flex-col gap-2 m-4">
-                <div className="flex flex-row justify-between gap-2 bg-scifi1 rounded-md border-2 border-scifi4 drop-shadow-scifi5">
+                <div className="flex flex-row justify-around gap-2 bg-scifi1 rounded-md border-2 border-scifi4 drop-shadow-scifi5">
                     <div className="flex flex-row m-4 gap-4 items-center">
                         <div className="w-10 h-10">
                             <Coin/>

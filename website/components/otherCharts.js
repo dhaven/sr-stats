@@ -13,13 +13,6 @@ function OtherCharts({firstPlayer, winner, rounds}){
     let datasetsTempChart = []
     let datasetsAggrChart = []
     let numTurns = 0
-    let players = []
-    let chartTitles = {
-        tradeData: "Trade",
-        combatData: "Combat",
-        discardData: "Discarded",
-        drawCount: "Draw"
-    }
     datasetsAggrChart.push({
         data: Object.values(aggrChartData[chartType]),
         fill: false,
@@ -69,15 +62,19 @@ function OtherCharts({firstPlayer, winner, rounds}){
             duration: 1,
         },
         responsive: true,
+        maintainAspectRatio: false,
         //   show the x and y scales
         scales: {
             x: {
                 beginAtZero: false,
-                offset: true,
+                offset: false,
                 display: false,
             },
             y: { 
                 beginAtZero: true,
+                grid: {
+                    display: false
+                }
             },
         },
     }
@@ -96,23 +93,31 @@ function OtherCharts({firstPlayer, winner, rounds}){
             duration: 1,
         },
         responsive: true,
-        //   show the x and y scales
+        maintainAspectRatio: false,
+        //   show the x and y scales*-
         scales: {
             x: { 
                 beginAtZero: true,
+                display: false,
+                offset: false
             },
+            y: {
+                grid: {
+                    display: false
+                }
+            }
         },
     }
     return (
-        <div className="bg-white rounded-lg drop-shadow-scifi5">
+        <div className="flex w-full bg-scifi3 rounded-md border-2 border-scifi4 drop-shadow-scifi5 p-4">
             <Tab.Group defaultIndex={0}>
-                <Tab.List className="flex flex-wrap p-2">
+                <Tab.List className="flex flex-col flex-wrap p-4 gap-4">
                     <Tab as={Fragment}>
                         {({ selected }) =>
                             <button 
                                 className={
-                                    selected ? "ring ring-scifi-2 text-sm px-2 py-2 m-1 border border-gray-300 rounded-lg drop-shadow-md" :
-                                               "bg-white text-sm px-2 py-2 m-1 border border-gray-300 hover:ring rounded-lg drop-shadow-md"
+                                    selected ? "bg-slate-500/70 text-scifi1 text-sm border border-2 font-medium px-6 py-2 rounded-lg" :
+                                               "bg-white text-scifi5 hover:ring ring-scifi1 text-sm font-medium px-6 py-2 border rounded-lg"
                                 }
                                 type="button" onClick={(e) => {setChartType("tradeData")}}>
                                 Trade
@@ -123,8 +128,8 @@ function OtherCharts({firstPlayer, winner, rounds}){
                         {({ selected }) =>
                             <button 
                                 className={
-                                    selected ? "ring ring-scifi-2 text-sm px-2 py-2 m-1 border border-gray-300 rounded-lg drop-shadow-md" :
-                                               "bg-white text-sm px-2 py-2 m-1 border border-gray-300 hover:ring rounded-lg drop-shadow-md"
+                                    selected ? "bg-slate-500/70 text-scifi1 text-sm border border-2 font-medium px-6 py-2 rounded-lg" :
+                                               "bg-white text-scifi5 hover:ring ring-scifi1 text-sm font-medium px-6 py-2 border rounded-lg"
                                 }
                                 type="button" onClick={(e) => {setChartType("combatData")}}>
                                 Combat
@@ -135,8 +140,8 @@ function OtherCharts({firstPlayer, winner, rounds}){
                         {({ selected }) =>
                             <button 
                                 className={
-                                    selected ? "ring ring-scifi-2 text-sm px-2 py-2 m-1 border border-gray-300 rounded-lg drop-shadow-md" :
-                                               "bg-white text-sm px-2 py-2 m-1 border border-gray-300 hover:ring rounded-lg drop-shadow-md"
+                                    selected ? "bg-slate-500/70 text-scifi1 text-sm border border-2 font-medium px-6 py-2 rounded-lg" :
+                                               "bg-white text-scifi5 hover:ring ring-scifi1 text-sm font-medium px-6 py-2 border rounded-lg"
                                 }
                                 type="button" onClick={(e) => {setChartType("discardData")}}>
                                 Discard
@@ -147,8 +152,8 @@ function OtherCharts({firstPlayer, winner, rounds}){
                         {({ selected }) =>
                             <button 
                                 className={
-                                    selected ? "ring ring-scifi-2 text-sm px-2 py-2 m-1 border border-gray-300 rounded-lg drop-shadow-md" :
-                                               "bg-white text-sm px-2 py-2 m-1 border border-gray-300 hover:ring rounded-lg drop-shadow-md"
+                                    selected ? "bg-slate-500/70 text-scifi1 text-sm border border-2 font-medium px-6 py-2 rounded-lg" :
+                                               "bg-white text-scifi5 hover:ring ring-scifi1 text-sm font-medium px-6 py-2 border rounded-lg"
                                 }
                                 type="button" onClick={(e) => {setChartType("drawCount")}}>
                                 Draw
@@ -157,14 +162,20 @@ function OtherCharts({firstPlayer, winner, rounds}){
                     </Tab>
                 </Tab.List>
             </Tab.Group>
-            <Bar
-                options={optionsAggrChart}
-                data={dataAggrChart}
-            />
-             <Bar
-                options={optionsTempChart}
-                data={dataTempChart}
-            />
+            <div className="flex flex-col w-full p-4 gap-4">
+                <div className="h-60 bg-scifi1 rounded-md p-2 drop-shadow-scifi5">
+                    <Bar
+                        options={optionsAggrChart}
+                        data={dataAggrChart}
+                    />
+                </div>
+                <div className="h-80 w-full bg-scifi1 rounded-md p-2 drop-shadow-scifi5">
+                    <Bar
+                        options={optionsTempChart}
+                        data={dataTempChart}
+                    />
+                </div>
+            </div>
         </div>
     )
 }

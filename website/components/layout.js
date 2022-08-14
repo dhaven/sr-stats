@@ -26,7 +26,7 @@ export default function Layout({ children }) {
         />
         <meta name="og:title" content={siteTitle} />
       </Head>
-      <header className="bg-white/90 flex flex-row drop-shadow-scifi5 justify-center p-4 gap-1">
+      <header className="bg-scifi1 flex flex-row drop-shadow-scifi5 justify-center p-4 gap-1">
         <p onClick={()=>{router.push('/')}} className="text-2xl text-scifi5 font-semibold tracking-widest hover:ring ring-scifi-2 rounded-md">
           <span className="bg-scifi5 text-white mx-2 text-2xl px-1">
             SR

@@ -1,8 +1,24 @@
+import { core_set } from './card_data/core_set.js';
+import { colony_wars } from './card_data/colony_wars.js';
+import { frontiers } from './card_data/frontiers.js';
+import { bases_battleships } from './card_data/bases_battleships.js';
+import { fleets_fortresses } from './card_data/fleets_fortresses.js';
+import { frontiers_promos } from './card_data/frontiers_promos.js';
+import { assault } from './card_data/assault.js';
+import { command } from './card_data/command.js';
+import { stellar_allies } from './card_data/stellar_allies.js';
+import { united_heroes } from './card_data/united_heroes.js';
+import { crisis_heroes } from './card_data/crisis_heroes.js';
+import { promo1 } from './card_data/promo1.js';
+import { promo2 } from './card_data/promo2.js';
+import { tech } from './card_data/tech.js';
+import { command_decks } from './card_data/command_decks.js'
+
 //accepts a Battle object as input
 // returns an object:
 // {
-//     "user1": [{"card1": x},{"card2": y},{"card3":z}, ...,{"cardN":w],
-//     "user2": [{"card1": x},{"card2": y},{"card3":z}, ...,{"cardN":w],
+//     "user1": {"card1": {x},"card2": {y},"card3":{z}, ...,"cardN":{w}},
+//     "user2": {"card1": {x},"card2": {y},"card3":{z}, ...,"cardN":{w}},
 // }
 export function getFinalDecks(battle){
     let finalDecks = {}
@@ -24,12 +40,113 @@ export function getFinalAuthority(lastRound){
 }
 
 export function getCompletedMissions(lastRound){
-    let completedMisions = {}
+    let completedMissions = {}
     for(let i = 0; i < lastRound['players'].length; i++){
         let player = lastRound['players'][i]
-        completedMisions[player['name']] = player['completedMissions'].length
+        completedMissions[player['name']] = player['completedMissions']
     }
-    return completedMisions
+    return completedMissions
+}
+
+export function getExtensions(decks){
+    let extensions = {}
+    for(let player in decks){
+        for(let card in decks[player]){
+            if(card in core_set['cards']){
+                extensions[core_set['name']] = {
+                    'name': core_set['name'] + '.png',
+                    'width': 107,
+                    'height': 107
+                }
+            }else if(card in colony_wars['cards']){
+                 extensions[colony_wars['name']] = {
+                    'name': colony_wars['name'] + '.png',
+                    'width': 110,
+                    'height': 110
+                 }
+            }else if(card in frontiers['cards']){
+                 extensions[frontiers['name']] = {
+                    'name': frontiers['name'] + '.png',
+                    'width': 118,
+                    'height': 107
+                 }
+            }else if(card in bases_battleships['cards']){
+                 extensions[bases_battleships['name']] = {
+                    'name': bases_battleships['name'] + '.png',
+                    'width': 180,
+                    'height': 84
+                 }
+            }else if(card in fleets_fortresses['cards']){
+                 extensions[fleets_fortresses['name']] = {
+                    'name': fleets_fortresses['name'] + '.png',
+                    'width': 180,
+                    'height': 84
+                 }
+            }else if(card in frontiers_promos['cards']){
+                 extensions[frontiers_promos['name']] = {
+                    'name': frontiers_promos['name'] + '.png',
+                    'width': 98,
+                    'height': 107
+                 }
+            }else if(card in assault['cards']){
+                 extensions[assault['name']] = {
+                    'name': assault['name'] + '.png',
+                    'width': 158,
+                    'height': 78
+                 }
+            }else if(card in command['cards']){
+                 extensions[command['name']] = {
+                    'name': command['name'] + '.png',
+                    'width': 158,
+                    'height': 78
+                 }
+            }else if(card in stellar_allies['cards']){
+                 extensions[stellar_allies['name']] = {
+                    'name': stellar_allies['name'] + '.png',
+                    'width': 114,
+                    'height': 107
+                 }
+            }else if(card in united_heroes['cards']){
+                 extensions[united_heroes['name']] = {
+                    'name': united_heroes['name'] + '.png',
+                    'width': 158,
+                    'height': 78
+                 }
+            }else if(card in crisis_heroes['cards']){
+                 extensions[crisis_heroes['name']] = {
+                    'name': crisis_heroes['name'] + '.png',
+                    'width': 180,
+                    'height': 84
+                 }
+            }else if(card in promo1['cards']){
+                 extensions[promo1['name']] = {
+                    'name': promo1['name'] + '.png',
+                    'width': 107,
+                    'height': 107
+                 }
+            }else if(card in promo2['cards']){
+                 extensions[promo2['name']] = {
+                    'name': promo2['name'] + '.png',
+                    'width': 107,
+                    'height': 107
+                 }
+            }else if(card in tech['cards']){
+                 extensions[tech['name']] = {
+                    'name': tech['name'] + '.png',
+                    'width': 110,
+                    'height': 110
+                 }
+
+            }else if(card in command_decks['cards']){
+                 extensions[command_decks['name']] = {
+                    'name': command_decks['name'] + '.png',
+                    'width': 110,
+                    'height': 110
+                 }
+            }
+        }
+    }
+    return extensions
 }
 
 //returns the summary of a deck

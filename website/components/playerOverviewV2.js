@@ -16,7 +16,7 @@ function PlayerOverviewV2({name, deckData, authority, missions}) {
                 </div>
                 <div className="flex flex-row gap-2 p-2">
                     {
-                        Array(missions).fill(0).map((value, index) => {
+                        missions.map((value, index) => {
                             return (
                                 <MissionCardBack key={index}></MissionCardBack>
                             )

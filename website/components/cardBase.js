@@ -17,7 +17,7 @@ function CardBase({card}) {
         }
     }
     return (
-        <div className="relative flex flex-col w-32 h-24 bg-slate-300 m-2 border-2 border-black border-double rounded-sm bg-gradient-to-t from-scifi2 to-scifi3">
+        <div className="relative flex flex-col w-32 h-24 bg-slate-300 m-2 border-2 border-black border-double rounded-sm bg-gradient-to-t from-scifi2 to-scifi3 hover:ring ring-scifi3">
             <p className="z-10 bg-white/70 text-md text-center rounded-t-sm leading-snug">{card['name']}</p>
             <div className="absolute inset-0 flex items-center justify-center">
                 <Base/>

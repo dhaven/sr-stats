@@ -31,7 +31,10 @@ function AuthorityChart({firstPlayer, winner, rounds}){
         plugins: {
             title: {
                 display: true,
-                text: "Authority"
+                text: "Authority",
+                font: {
+                    size: 16
+                }
             },
             legend: {
                 display: false,
@@ -46,6 +49,7 @@ function AuthorityChart({firstPlayer, winner, rounds}){
             duration: 1,
         },
         responsive: true,
+        maintainAspectRatio: false,
         //   show the x and y scales
         scales: {
             x: {
@@ -55,11 +59,16 @@ function AuthorityChart({firstPlayer, winner, rounds}){
             },
             y: { 
                 beginAtZero: true,
+                display: true,
+                offset: true,
+                grid: {
+                    display: false
+                }
             },
         },
     }
     return (
-        <div className="bg-white rounded-lg drop-shadow-scifi5">
+        <div className="bg-scifi1 rounded-lg drop-shadow-scifi5 w-full p-4">
             <Line
                 options={options}
                 data={data}

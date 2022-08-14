@@ -1,7 +1,7 @@
 function MissionCardBack() {
     return (
-        <div className="relative w-24 h-32 bg-slate-100 border-black">
-            <svg className="absolute top-0 left-0 w-24 h-32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.866666 33.866668">
+        <div className="relative w-16 h-24 bg-slate-100">
+            <svg className="absolute top-0 left-0 w-16 h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.866666 33.866668">
                 <g transform="translate(0,-263.13332)">
                     <g>
                         <path
@@ -12,7 +12,7 @@ function MissionCardBack() {
                 </g>
             </svg>
             <div className="flex h-full flex-col justify-center">
-                <p className="z-10 font-bold bg-white text-lg text-center">mission</p>
+                <p className="z-10 font-bold bg-white/70 text-sm text-center">mission</p>
             </div>
         </div>
     )
