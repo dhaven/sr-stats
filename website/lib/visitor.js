@@ -337,6 +337,7 @@ class Visitor extends StarRealmsVisitor{
             usedCombat: 0,
             purchasedCards: [],
             completedMissions: [],
+            events: [],
             playedCards: [],
             scrappedCards: [],
             discardedCards: [],
@@ -363,6 +364,7 @@ class Visitor extends StarRealmsVisitor{
             }
             else if(ctx.action()[i].triggeredEvent()){
                 let triggeredEventDetail = this.visit(ctx.action()[i])
+                turnData['events'].push(triggeredEventDetail['event'])
                 turnData['tradePool'] += triggeredEventDetail['balance']['tradePool']
                 turnData['combatPool'] += triggeredEventDetail['balance']['combatPool']
                 turnData['usedTrade'] += triggeredEventDetail['balance']['usedTrade']
@@ -825,6 +827,7 @@ class Visitor extends StarRealmsVisitor{
     visitTriggeredEvent(ctx) {
         let eventSummary = {
             drawCount: 0,
+            event: '',
             scrappedCards: [],
             discardedCards: [],
             acquiredCards: [],
@@ -905,7 +908,6 @@ class Visitor extends StarRealmsVisitor{
         if(ctx.resolveEventSummary().negativeBalance()){
             let newBalance = this.visit(ctx.resolveEventSummary())
             eventSummary['balance'] = this.computeNewBalance(eventSummary['balance'], newBalance)
-            console.log(eventSummary['balance'])
         }
         for(let i = 0; i < ctx.resolveEventDetail().length; i++){
             if(ctx.resolveEventDetail()[i].negativeBalance()){

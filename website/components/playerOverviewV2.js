@@ -1,6 +1,6 @@
 import FinalAuthority from './finalAuthority'
 import FactionPie from './factionPie'
-import MissionCardBack from './missionCardBack'
+import MissionCard from './missionCard'
 import { getDeckSummary } from '../lib/helper.js'
 
 function PlayerOverviewV2({name, deckData, authority, missions}) {
@@ -18,7 +18,7 @@ function PlayerOverviewV2({name, deckData, authority, missions}) {
                     {
                         missions.map((value, index) => {
                             return (
-                                <MissionCardBack key={index}></MissionCardBack>
+                                <MissionCard key={index} mission={value}></MissionCard>
                             )
                         })
                     }

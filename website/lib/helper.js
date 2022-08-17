@@ -48,6 +48,30 @@ export function getCompletedMissions(lastRound){
     return completedMissions
 }
 
+export function getEvents(battle){
+    let events = []
+    for(let i = 0; i < battle['rounds'].length; i++){
+        events = events.concat(battle['rounds'][i]['events'])
+    }
+    return events
+}
+
+
+export function getWinCondition(lastRound){
+    let winner = lastRound['winner']
+    let winCondition = winner + " won by resignation"
+    for(let i = 0; i < lastRound['players'].length; i++){
+        let player = lastRound['players'][i]
+        if(player['name'] == winner && player['completedMissions'].length == 3){
+            winCondition = winner + " won by completing 3 missions"
+        }
+        if(player['name'] != winner && player['authority'] <= 0){
+            winCondition = winner + " won by defeating " + player['name']
+        }
+    }
+    return winCondition
+}
+
 export function getExtensions(decks){
     let extensions = {}
     for(let player in decks){

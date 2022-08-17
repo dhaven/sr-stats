@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment} from 'react'
 
-function SRCard({isOpen, setIsOpen}) {
+function SRCard({filename, isOpen, setIsOpen}) {
     function closeModal() {
         setIsOpen(false)
       }
@@ -56,11 +56,13 @@ function SRCard({isOpen, setIsOpen}) {
                                         </svg>
                                     </button>
                                 </div>
-                               <Image
-                               src="/images/powerful_backing.jpg" // Route of the image file
-                               height={910} // Desired size with correct aspect ratio
-                               width={698} // Desired size with correct aspect ratio
-                               alt="Step 1"/>
+                                <div className="border-4 border-black">
+                                    <Image
+                                        src= {filename}
+                                        height={950}
+                                        width={666}
+                                />
+                                </div>
                             </div>
                         </Transition.Child>
                     </div>

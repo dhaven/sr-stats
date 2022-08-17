@@ -2,9 +2,8 @@ import CardShip from './cardShip'
 import CardBase from './cardBase'
 
 function DeckDetailV2({deckData}){
-    console.log(deckData)
     return ( 
-        <div className="grid grid-cols-5 bg-scifi1 rounded-md border-2 border-scifi4 drop-shadow-scifi5">
+        <div className="grid grid-cols-5 p-4 justify-items-center">
             {
                 Object.keys(deckData).map((card, index) => {
                         return (

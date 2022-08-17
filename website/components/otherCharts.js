@@ -42,8 +42,6 @@ function OtherCharts({firstPlayer, winner, rounds}){
         labels: Object.keys(aggrChartData[chartType]),
         datasets: datasetsAggrChart
     };
-    console.log(dataAggrChart)
-    console.log(dataTempChart)
     let optionsTempChart = {
         plugins: {
             title: {
