@@ -8,7 +8,8 @@ function FactionPie({deckSummary}) {
             display: false,
         },
     },
-    responsive: true
+    responsive: true,
+    maintainAspectRatio: true
   }
     const data = {
         labels: [
@@ -35,12 +36,10 @@ function FactionPie({deckSummary}) {
         }]
       };
     return (
-        <div className="flex">
             <Doughnut
                 data={data}
                 options={options}
                 />
-        </div>
     )
   }
   

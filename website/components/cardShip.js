@@ -21,7 +21,7 @@ function CardShip({card}) {
     }
     return (
         <div>
-        <div onClick={() => setIsOpen(true)} className="relative flex flex-col w-24 h-32 bg-slate-300 m-2 border-2 border-black border-double bg-gradient-to-t from-scifi2 to-scifi3 hover:ring ring-scifi2">
+        <div onClick={() => setIsOpen(true)} className="relative flex flex-col w-16 h-24 sm:w-24 sm:h-32 m-2 border-2 border-scifi4 border-double bg-gradient-to-t from-scifi2 to-scifi3 hover:ring ring-scifi2">
             <p className="z-10 bg-white/70 text-md text-center rounded-t-sm leading-snug">{card['name']}</p>
             <div className="absolute inset-0 flex items-center justify-center">
                 <Rocket/>

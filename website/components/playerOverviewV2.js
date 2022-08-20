@@ -2,11 +2,12 @@ import FinalAuthority from './finalAuthority'
 import FactionPie from './factionPie'
 import MissionCard from './missionCard'
 import { getDeckSummary } from '../lib/helper.js'
+import Tooltip from './tooltip.js'
 
 function PlayerOverviewV2({name, deckData, authority, missions}) {
     let deckSummary = getDeckSummary(deckData)
     return (
-        <div className="flex items-start gap-3 ">
+        <div className="flex items-stretch justify-center 2xl:gap-4">
             <div className="flex flex-col">
                 <div className="text-center">
                     <p className="p-2 text-3xl text-scifi5 font-bold whitespace-nowrap">{name}</p>
@@ -18,13 +19,16 @@ function PlayerOverviewV2({name, deckData, authority, missions}) {
                     {
                         missions.map((value, index) => {
                             return (
-                                <MissionCard key={index} mission={value}></MissionCard>
+                                <div key={index} className="group relative">
+                                    <MissionCard key={index} mission={value}></MissionCard>
+                                    <Tooltip hint={value}></Tooltip>
+                                </div>
                             )
                         })
                     }
                 </div>
             </div>
-            <div className="">
+            <div className="flex h-36 w-36 sm:h-24 sm:w-24 md:h-36 md:w-36 lg:h-40 lg:w-40 xl:w-48 wl:h-48 2xl:h-64 2xl:w-64">
                 <FactionPie deckSummary={deckSummary}></FactionPie>
             </div>
         </div>

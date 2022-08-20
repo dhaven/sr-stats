@@ -7,9 +7,9 @@ function MissionCard({mission}) {
     let filename = "/images/missions/" + mission + ".jpg"
     return (
         <>
-            <div onClick={() => setIsOpen(true)} className="relative w-16 h-24 bg-slate-100">
+            <div onClick={() => setIsOpen(true)} className="relative w-11 h-16 sm:w-16 sm:h-24 bg-white hover:ring ring-scifi2">
                 <div className="absolute top-0 left-0">
-                    <SRLogo className="fill-machinecult border-2 border-black w-16 h-24"></SRLogo>
+                    <SRLogo className="fill-machinecult border-2 border-scifi4 w-12 h-16 sm:w-16 sm:h-24"></SRLogo>
                 </div>
                 <div className="flex h-full flex-col justify-center">
                     <p className="z-10 font-bold bg-white/70 text-sm text-center">mission</p>

@@ -107,15 +107,15 @@ function OtherCharts({firstPlayer, winner, rounds}){
         },
     }
     return (
-        <div className="flex w-full bg-scifi3 rounded-md border-2 border-scifi4 drop-shadow-scifi5 p-4">
+        <div className="flex flex-col sm:flex-row w-full bg-scifi4 rounded-md border-2 border-scifi4 drop-shadow-scifi5 p-4">
             <Tab.Group defaultIndex={0}>
-                <Tab.List className="flex flex-col flex-wrap p-4 gap-4">
+                <Tab.List className="flex flex-row sm:flex-col flex-wrap p-2 sm:p-4 gap-2 sm:gap-4">
                     <Tab as={Fragment}>
                         {({ selected }) =>
                             <button 
                                 className={
-                                    selected ? "bg-slate-500/70 text-scifi1 text-sm border border-2 font-medium px-6 py-2 rounded-lg" :
-                                               "bg-white text-scifi5 hover:ring ring-scifi1 text-sm font-medium px-6 py-2 border rounded-lg"
+                                    selected ? "bg-scifi3 text-white text-sm font-medium px-4 sm:px-6 py-2 rounded-lg" :
+                                               "bg-white text-scifi5 hover:ring ring-scifi2 text-sm font-medium px-4 sm:px-6 py-2 border rounded-lg"
                                 }
                                 type="button" onClick={(e) => {setChartType("tradeData")}}>
                                 Trade
@@ -126,8 +126,8 @@ function OtherCharts({firstPlayer, winner, rounds}){
                         {({ selected }) =>
                             <button 
                                 className={
-                                    selected ? "bg-slate-500/70 text-scifi1 text-sm border border-2 font-medium px-6 py-2 rounded-lg" :
-                                               "bg-white text-scifi5 hover:ring ring-scifi1 text-sm font-medium px-6 py-2 border rounded-lg"
+                                    selected ? "bg-scifi3 text-white text-sm font-medium px-4 sm:px-6 py-2 rounded-lg" :
+                                               "bg-white text-scifi5 hover:ring ring-scifi2 text-sm font-medium px-4 sm:px-6 py-2 border rounded-lg"
                                 }
                                 type="button" onClick={(e) => {setChartType("combatData")}}>
                                 Combat
@@ -138,8 +138,8 @@ function OtherCharts({firstPlayer, winner, rounds}){
                         {({ selected }) =>
                             <button 
                                 className={
-                                    selected ? "bg-slate-500/70 text-scifi1 text-sm border border-2 font-medium px-6 py-2 rounded-lg" :
-                                               "bg-white text-scifi5 hover:ring ring-scifi1 text-sm font-medium px-6 py-2 border rounded-lg"
+                                    selected ? "bg-scifi3 text-white text-sm font-medium px-4 sm:px-6 py-2 rounded-lg" :
+                                               "bg-white text-scifi5 hover:ring ring-scifi2 text-sm font-medium px-4 sm:px-6 py-2 border rounded-lg"
                                 }
                                 type="button" onClick={(e) => {setChartType("discardData")}}>
                                 Discard
@@ -150,8 +150,8 @@ function OtherCharts({firstPlayer, winner, rounds}){
                         {({ selected }) =>
                             <button 
                                 className={
-                                    selected ? "bg-slate-500/70 text-scifi1 text-sm border border-2 font-medium px-6 py-2 rounded-lg" :
-                                               "bg-white text-scifi5 hover:ring ring-scifi1 text-sm font-medium px-6 py-2 border rounded-lg"
+                                    selected ? "bg-scifi3 text-white text-sm font-medium px-4 sm:px-6 py-2 rounded-lg" :
+                                               "bg-white text-scifi5 hover:ring ring-scifi2 text-sm font-medium px-4 sm:px-6 py-2 border rounded-lg"
                                 }
                                 type="button" onClick={(e) => {setChartType("drawCount")}}>
                                 Draw
@@ -161,13 +161,13 @@ function OtherCharts({firstPlayer, winner, rounds}){
                 </Tab.List>
             </Tab.Group>
             <div className="flex flex-col w-full p-4 gap-4">
-                <div className="h-60 bg-scifi1 rounded-md p-2 drop-shadow-scifi5">
+                <div className="h-32 sm:h-60 bg-scifi1 rounded-md p-2 drop-shadow-scifi5">
                     <Bar
                         options={optionsAggrChart}
                         data={dataAggrChart}
                     />
                 </div>
-                <div className="h-80 w-full bg-scifi1 rounded-md p-2 drop-shadow-scifi5">
+                <div className="h-40 sm:h-80 w-full bg-scifi1 rounded-md p-2 drop-shadow-scifi5">
                     <Bar
                         options={optionsTempChart}
                         data={dataTempChart}
