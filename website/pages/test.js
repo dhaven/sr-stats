@@ -12799,13 +12799,13 @@ function Test() {
                 <title>{siteTitle}</title>
             </Head>
             <div className="flex flex-col gap-2 w-screen sm:w-full lg:w-5/6 2xl:w-2/3">
-                <div className="flex flex-col sm:flex-row sm:items-center gap-4 m-4 p-4 bg-scifi1 rounded-md border-2 border-scifi4 drop-shadow-scifi5 outline outline-offset-2 outline-double outline-scifi1">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-4 2xl:gap-8 m-4 p-4 bg-scifi1 rounded-md border-2 border-scifi4 drop-shadow-scifi5 outline outline-offset-2 outline-double outline-scifi1">
                     <p className="text-scifi5 text-lg md:text-3xl font-medium">{winCondition}</p>
                     <div className="flex flex-wrap items-center gap-2">
                         {
                             Object.keys(extensions).map((oneKey,i)=>{
                                 return (
-                                    <div key={i} className="flex w-10">
+                                    <div key={i} className="flex w-10 2xl:w-16">
                                         <Image
                                             src={"/images/extensions/" + extensions[oneKey]['name']} // Route of the image file
                                             height={extensions[oneKey]['height']} // Desired size with correct aspect ratio
@@ -12848,12 +12848,12 @@ function Test() {
                     </div>
                     <Tab.Panels>
                         <Tab.Panel>
-                            <div className="flex flex-row flex-wrap sm:flex-nowrap px-4">
+                            <div className="flex flex-row flex-wrap md:flex-nowrap px-4">
                             { 
                                     Object.keys(decksData).map((oneKey,i)=>{
                                         return (
                                             <div key={i} className={`${activePlayer == oneKey && open ? 'bg-scifi4 rounded-t-xl': ''} flex flex-col w-full`}>
-                                                <div  className="md:m-2 lg:m-4 flex grow w-full flex-col justify-between p-2 sm:p-4 bg-scifi1 rounded-md border-2 border-scifi4 drop-shadow-scifi5 gap-4">
+                                                <div  className="md:m-2 lg:m-4 flex flex-col justify-between p-2 sm:p-4 bg-scifi1 rounded-md border-2 border-scifi4 drop-shadow-scifi5 gap-4">
                                                     <PlayerOverviewV2 name={oneKey} deckData={decksData[oneKey]} authority={finalAuthority[oneKey]} missions={completedMissions[oneKey]}></PlayerOverviewV2>
                                                     <div className="flex justify-center px-2">
                                                         <button onClick={() => updatVisibleDeck(oneKey)} 
@@ -12872,7 +12872,7 @@ function Test() {
                                                 </div>
                                                 {
                                                     activePlayer == oneKey && open && 
-                                                    <div className="sm:hidden bg-scifi4 md:py-4 lg:py-6 md:px-2 lg:px-4 md:mx-4 lg:p-2 rounded-b-xl">
+                                                    <div className="md:hidden bg-scifi4 rounded-b-xl">
                                                         <DeckOverviewV2 deckData={decksData[activePlayer]} ></DeckOverviewV2>
                                                     </div>
                                                 }
@@ -12884,7 +12884,7 @@ function Test() {
                             </div>
                             {
                                 open && 
-                                <div className="hidden sm:flex bg-scifi4 md:py-4 lg:py-6 md:px-2 lg:px-4 md:mx-4 lg:p-2 rounded-b-xl">
+                                <div className="hidden md:flex bg-scifi4 sm:py-4 lg:py-6 sm:px-2 lg:px-4 sm:mx-4 lg:p-2 rounded-b-xl">
                                     <DeckOverviewV2 deckData={decksData[activePlayer]} ></DeckOverviewV2>
                                 </div>
                             }

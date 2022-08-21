@@ -6,7 +6,7 @@ import MachineCult from '../public/svg/machine_cult.svg'
 import SRCard from './SRCard.js'
 import { useState } from 'react'
 
-function CardShip({card}) {
+function CardShip({file, card}) {
     let [isOpen, setIsOpen] = useState(false)
     let factionIcon = function(card){
         if(card['faction'][0] == "Blob"){
@@ -19,6 +19,7 @@ function CardShip({card}) {
             return <MachineCult className="bg-machinecult border-2 border-black rounded-full m-1 p-0.5 w-7 h-7"/>
         }
     }
+    let filename = "/images/"+ "core" + "/" + file + ".jpg"
     return (
         <div>
         <div onClick={() => setIsOpen(true)} className="relative flex flex-col w-16 h-24 sm:w-24 sm:h-32 m-2 border-2 border-scifi4 border-double bg-gradient-to-t from-scifi2 to-scifi3 hover:ring ring-scifi2">
@@ -32,7 +33,7 @@ function CardShip({card}) {
                 }
             </div>
         </div>
-        <SRCard isOpen={isOpen} setIsOpen={setIsOpen}></SRCard>
+        <SRCard filename={filename} isOpen={isOpen} setIsOpen={setIsOpen}></SRCard>
         </div>
     )
   }

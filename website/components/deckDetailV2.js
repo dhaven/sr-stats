@@ -8,7 +8,7 @@ function DeckDetailV2({deckData}){
                 Object.keys(deckData).map((card, index) => {
                         return (
                             deckData[card]['type'] == 'ship' ?
-                                <CardShip key={index} card={deckData[card]}></CardShip>
+                                <CardShip key={index} file={card} card={deckData[card]}></CardShip>
                                 :
                                 <CardBase key={index} card={deckData[card]}></CardBase>
                         )
