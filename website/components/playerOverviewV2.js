@@ -1,11 +1,9 @@
 import FinalAuthority from './finalAuthority'
 import FactionPie from './factionPie'
 import MissionCard from './missionCard'
-import { getDeckSummary } from '../lib/helper.js'
 import Tooltip from './tooltip.js'
 
 function PlayerOverviewV2({name, deckData, authority, missions}) {
-    let deckSummary = getDeckSummary(deckData)
     return (
         <div className="flex items-stretch justify-center 2xl:gap-4">
             <div className="flex flex-col">
@@ -29,7 +27,7 @@ function PlayerOverviewV2({name, deckData, authority, missions}) {
                 </div>
             </div>
             <div className="flex h-36 w-36 sm:h-48 sm:w-48 md:h-36 md:w-36 lg:h-40 lg:w-40 xl:w-48 wl:h-48 2xl:h-56 2xl:w-56">
-                <FactionPie deckSummary={deckSummary}></FactionPie>
+                <FactionPie factions={deckData['factions']}></FactionPie>
             </div>
         </div>
     )

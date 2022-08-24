@@ -16,6 +16,7 @@
     "formik": "^2.2.9",
     "gray-matter": "^4.0.3",
     "jotai": "^1.6.0",
+    "mongodb": "^4.9.0",
     "next": "latest",
     "react": "17.0.2",
     "react-chartjs-2": "^4.0.1",

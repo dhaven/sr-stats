@@ -8,10 +8,10 @@ import GameSummary from '../../components/gameSummary.js'
 import { useState } from 'react'
 
 export default function Game({firstPlayer, winner, rounds}) {
-    let decksData = getFinalDecks({firstPlayer, winner, rounds})
     console.log(firstPlayer)
     console.log(winner)
     console.log(rounds)
+    let decksData = getFinalDecks({firstPlayer, winner, rounds})
     let [isOpen, setIsOpen] = useState(false)
     console.log(rounds)
     function openModal() {
@@ -45,6 +45,9 @@ export default function Game({firstPlayer, winner, rounds}) {
 
 export async function getServerSideProps(context) {
     let { data } = await fetchBattle(context.params['id'])
+    if(data == null){
+        console.log("enable to fetch data object from mongodb")
+    }
     return {
       props: {
           ...data

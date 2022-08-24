@@ -7,7 +7,15 @@ export const frontiers_promos = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers_promos",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "assur4": {
             "name": "Assur 4",
@@ -15,7 +23,15 @@ export const frontiers_promos = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "frontiers_promos",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "blockaderunner": {
             "name": "Blockade Runner",
@@ -23,7 +39,15 @@ export const frontiers_promos = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers_promos",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "cargorocket": {
             "name": "Cargo Rocket",
@@ -31,7 +55,15 @@ export const frontiers_promos = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers_promos",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "converter": {
             "name": "Converter",
@@ -39,7 +71,15 @@ export const frontiers_promos = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "frontiers_promos",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "demolisher": {
             "name": "Demolisher",
@@ -47,7 +87,15 @@ export const frontiers_promos = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers_promos",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "freightraft": {
             "name": "Freight Raft",
@@ -55,7 +103,15 @@ export const frontiers_promos = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers_promos",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "imperialdefender": {
             "name": "Imperial Defender",
@@ -63,7 +119,15 @@ export const frontiers_promos = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers_promos",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "midgatestation": {
             "name": "Midgate Station",
@@ -71,7 +135,15 @@ export const frontiers_promos = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "frontiers_promos",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "plaguepod": {
             "name": "Plague Pod",
@@ -79,7 +151,15 @@ export const frontiers_promos = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers_promos",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "recyclebot": {
             "name": "Recycle Bot",
@@ -87,7 +167,15 @@ export const frontiers_promos = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers_promos",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "sentinel": {
             "name": "Sentinel",
@@ -95,7 +183,15 @@ export const frontiers_promos = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers_promos",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "spawningwurm": {
             "name": "Spawning Wurm",
@@ -103,7 +199,15 @@ export const frontiers_promos = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers_promos",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "swarmingpoint": {
             "name": "Swarming Point",
@@ -111,7 +215,15 @@ export const frontiers_promos = {
             "faction": [
                 "Blob"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "frontiers_promos",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "templeguardian": {
             "name": "Temple Guardian",
@@ -119,7 +231,15 @@ export const frontiers_promos = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers_promos",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "thecolossus": {
             "name": "The Colossus",
@@ -127,7 +247,15 @@ export const frontiers_promos = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers_promos",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "tradeenvoy": {
             "name": "Trade Envoy",
@@ -135,7 +263,15 @@ export const frontiers_promos = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers_promos",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         }
     }
 }

@@ -7,7 +7,15 @@ export const frontiers = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "blobminer": {
             "name": "Blob Miner",
@@ -15,7 +23,15 @@ export const frontiers = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "builderbot": {
             "name": "Builder Bot",
@@ -23,7 +39,15 @@ export const frontiers = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "burrower": {
             "name": "Burrower",
@@ -31,7 +55,15 @@ export const frontiers = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "capturedoutpost": {
             "name": "Captured Outpost",
@@ -39,7 +71,15 @@ export const frontiers = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "cargocraft": {
             "name": "Cargo Craft",
@@ -47,7 +87,15 @@ export const frontiers = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "conversionyard": {
             "name": "Conversion Yard",
@@ -55,7 +103,15 @@ export const frontiers = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "crusher": {
             "name": "Crusher",
@@ -63,7 +119,15 @@ export const frontiers = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "defensesystem": {
             "name": "Defense System",
@@ -71,7 +135,15 @@ export const frontiers = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "destroyerbot": {
             "name": "Destroyer Bot",
@@ -79,7 +151,15 @@ export const frontiers = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "enforcermech": {
             "name": "Enforcer Mech",
@@ -87,7 +167,15 @@ export const frontiers = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "farmship": {
             "name": "Farm Ship",
@@ -95,7 +183,15 @@ export const frontiers = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "federationbattleship": {
             "name": "Federation Battleship",
@@ -103,7 +199,15 @@ export const frontiers = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "federationcruiser": {
             "name": "Federation Cruiser",
@@ -111,7 +215,15 @@ export const frontiers = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "frontierhawk": {
             "name": "Frontier Hawk",
@@ -119,7 +231,15 @@ export const frontiers = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "frontierrunner": {
             "name": "Frontier Runner",
@@ -127,7 +247,15 @@ export const frontiers = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "gateship": {
             "name": "Gateship",
@@ -135,7 +263,15 @@ export const frontiers = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "hammerhead": {
             "name": "Hammerhead",
@@ -143,7 +279,15 @@ export const frontiers = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "hivequeen": {
             "name": "Hive Queen",
@@ -151,7 +295,15 @@ export const frontiers = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "imperialflagship": {
             "name": "Imperial Flagship",
@@ -159,7 +311,15 @@ export const frontiers = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "infestedmoon": {
             "name": "Infested Moon",
@@ -167,7 +327,15 @@ export const frontiers = {
             "faction": [
                 "Blob"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "integrationport": {
             "name": "Integration Port",
@@ -175,7 +343,15 @@ export const frontiers = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "ionstation": {
             "name": "Ion Station",
@@ -183,7 +359,15 @@ export const frontiers = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "jammingterminal": {
             "name": "Jamming Terminal",
@@ -191,7 +375,15 @@ export const frontiers = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "lightcruiser": {
             "name": "Light Cruiser",
@@ -199,7 +391,15 @@ export const frontiers = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "longhauler": {
             "name": "Long Hauler",
@@ -207,7 +407,15 @@ export const frontiers = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "mobilemarket": {
             "name": "Mobile Market",
@@ -215,7 +423,15 @@ export const frontiers = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "moonwurmhatchling": {
             "name": "Moonwurm Hatchling",
@@ -223,7 +439,15 @@ export const frontiers = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "nanobotswarm": {
             "name": "Nanobot Swarm",
@@ -231,7 +455,15 @@ export const frontiers = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "nestingground": {
             "name": "Nesting Ground",
@@ -239,7 +471,15 @@ export const frontiers = {
             "faction": [
                 "Blob"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "neuralnexus": {
             "name": "Neural Nexus",
@@ -247,7 +487,15 @@ export const frontiers = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "orbitalgunplatform": {
             "name": "Orbital Gun Platform",
@@ -255,7 +503,15 @@ export const frontiers = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "orbitalshuttle": {
             "name": "Orbital Shuttle",
@@ -263,7 +519,15 @@ export const frontiers = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "outlandstation": {
             "name": "Outland Station",
@@ -271,7 +535,15 @@ export const frontiers = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "patrolboat": {
             "name": "Patrol Boat",
@@ -279,7 +551,15 @@ export const frontiers = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "plasmabot": {
             "name": "Plasma Bot",
@@ -287,7 +567,15 @@ export const frontiers = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "pulverizer": {
             "name": "Pulverizer",
@@ -295,7 +583,15 @@ export const frontiers = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "reclamationstation": {
             "name": "Reclamation Station",
@@ -303,7 +599,15 @@ export const frontiers = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "repairmech": {
             "name": "Repair Mech",
@@ -311,7 +615,15 @@ export const frontiers = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "siegefortress": {
             "name": "Siege Fortress",
@@ -319,7 +631,15 @@ export const frontiers = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "spikecluster": {
             "name": "Spike Cluster",
@@ -327,7 +647,15 @@ export const frontiers = {
             "faction": [
                 "Blob"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "stinger": {
             "name": "Stinger",
@@ -335,7 +663,15 @@ export const frontiers = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "swarmcluster": {
             "name": "Swarm Cluster",
@@ -343,7 +679,15 @@ export const frontiers = {
             "faction": [
                 "Blob"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "transitnexus": {
             "name": "Transit Nexus",
@@ -351,7 +695,15 @@ export const frontiers = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "warpgatecruiser": {
             "name": "Warpgate Cruiser",
@@ -359,7 +711,15 @@ export const frontiers = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "frontiers",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         }
     }
 }

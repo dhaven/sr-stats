@@ -1,16 +1,16 @@
 import CardShip from './cardShip'
 import CardBase from './cardBase'
 
-function DeckDetailV2({deckData}){
+function DeckDetailV2({cards}){
     return ( 
         <div className="grid grid-cols-3 sm:grid-cols-5 p-4 justify-items-center">
             {
-                Object.keys(deckData).map((card, index) => {
+                Object.keys(cards).map((card, index) => {
                         return (
-                            deckData[card]['type'] == 'ship' ?
-                                <CardShip key={index} file={card} card={deckData[card]}></CardShip>
+                            cards[card]['type'] == 'ship' ?
+                                <CardShip key={index} file={card} card={cards[card]}></CardShip>
                                 :
-                                <CardBase key={index} card={deckData[card]}></CardBase>
+                                <CardBase key={index} card={cards[card]}></CardBase>
                         )
                         
                 })

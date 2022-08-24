@@ -8,7 +8,15 @@ export const command_decks = {
                 "Star Empire",
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "superfreighter": {
             "name": "Super Freighter",
@@ -17,7 +25,15 @@ export const command_decks = {
                 "Star Empire",
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "mechcommandship": {
             "name": "Mech Command Ship",
@@ -26,7 +42,15 @@ export const command_decks = {
                 "Machine Cult",
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "supercarrier": {
             "name": "Super Carrier",
@@ -35,7 +59,15 @@ export const command_decks = {
                 "Blob",
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "mechwurm": {
             "name": "Mech Wurm",
@@ -44,7 +76,15 @@ export const command_decks = {
                 "Blob",
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "meganaut": {
             "name": "Meganaut",
@@ -53,7 +93,15 @@ export const command_decks = {
                 "Blob",
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "lostdreadnaught": {
             "name": "Lost Dreadnaught",
@@ -61,7 +109,15 @@ export const command_decks = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
     },
     "commanders": {
@@ -406,6 +462,20 @@ export const command_decks = {
                         "Unaligned"
                     ],
                     "type": "ship",
+                    "cost": 0,
+                    "count": 1,
+                    "scrapCount": 0,
+                    "discardCount": 0,
+                    "destroyedCount": 0,
+                    "playedCount": 0
+                },
+                "coalitionstronghold": {
+                    "name": "Coalition Stronghold",
+                    "faction": [
+                        "Machine Cult",
+                        "Trade Federation"
+                    ],
+                    "type": "base",
                     "cost": 0,
                     "count": 1,
                     "scrapCount": 0,

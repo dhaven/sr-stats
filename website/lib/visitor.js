@@ -19,6 +19,7 @@ import { promo2 } from './card_data/promo2.js';
 import { tech } from './card_data/tech.js';
 import { command_decks } from './card_data/command_decks.js'
 
+const { MongoClient, ObjectId } = require('mongodb');
 const { S3Client, GetObjectCommand } = require("@aws-sdk/client-s3");
 
 
@@ -239,80 +240,17 @@ class Visitor extends StarRealmsVisitor{
         let secondPlayer = this.visit(ctx.turn()[1].endPhase())
         let rounds = []
         let winner = ""
-        //Initialize player data
-        let lastRoundPlayers = [
-            {
-                name: firstPlayer,
-                completedMissions: [],
-                deckInitialized: false,
-                deck: {}
-            },
-            {
-                name: secondPlayer,
-                completedMissions: [],
-                deckInitialized: false,
-                deck: {}
-            }
-        ]
         for(let i = 0; i < ctx.turn().length; i++){
             let nextRound = this.visit(ctx.turn()[i])
             if(nextRound['winner'] != ""){
                 winner = nextRound['winner']
             }
-            //console.log(nextRound['authority'])
-            //update the players  object based on the data collected from the latest round
-            for(let j = 0; j < lastRoundPlayers.length; j++){
-                if(!(lastRoundPlayers[j]['deckInitialized']) && (lastRoundPlayers[j]['name'] in nextRound['authority'])){
-                    let startAuthority = nextRound['authority'][lastRoundPlayers[j]['name']]['new'] - nextRound['authority'][lastRoundPlayers[j]['name']]['diff']
-                    if(startAuthority == 50){
-                        //initialize deck with standard game
-                        lastRoundPlayers[j]['authority'] = 50
-                        lastRoundPlayers[j]['deck'] = this.initializeDeck("default", lastRoundPlayers[j]['deck'])
-                        lastRoundPlayers[j]['deckInitialized']= true
-                    }else if(startAuthority == 64){
-                        lastRoundPlayers[j]['authority'] = 64
-                        lastRoundPlayers[j]['deck'] = this.initializeDeck("alignment_commander", lastRoundPlayers[j]['deck'])
-                        lastRoundPlayers[j]['deckInitialized']= true
-                    }
-                    else if(startAuthority == 68){
-                        lastRoundPlayers[j]['authority'] = 68
-                        lastRoundPlayers[j]['deck'] = this.initializeDeck("alliance_commander", lastRoundPlayers[j]['deck'])
-                        lastRoundPlayers[j]['deckInitialized']= true
-                    }
-                    else if(startAuthority == 62){
-                        lastRoundPlayers[j]['authority'] = 62
-                        lastRoundPlayers[j]['deck'] = this.initializeDeck("coalition_commander", lastRoundPlayers[j]['deck'])
-                        lastRoundPlayers[j]['deckInitialized']= true
-                    }
-                    else if(startAuthority == 66){
-                        lastRoundPlayers[j]['authority'] = 66
-                        lastRoundPlayers[j]['deck'] = this.initializeDeck("pact_commander", lastRoundPlayers[j]['deck'])
-                        lastRoundPlayers[j]['deckInitialized']= true
-                    }
-                    else if(startAuthority == 70){
-                        lastRoundPlayers[j]['authority'] = 70
-                        lastRoundPlayers[j]['deck'] = this.initializeDeck("unity_commander", lastRoundPlayers[j]['deck'])
-                        lastRoundPlayers[j]['deckInitialized']= true
-                    }
-                    else if(startAuthority == 60){
-                        lastRoundPlayers[j]['authority'] = 60
-                        lastRoundPlayers[j]['deck'] = this.initializeDeck("union_commander", lastRoundPlayers[j]['deck'])
-                        lastRoundPlayers[j]['deckInitialized']= true
-                    }
-                    else if(startAuthority == 72){
-                        lastRoundPlayers[j]['authority'] = 72
-                        lastRoundPlayers[j]['deck'] = this.initializeDeck("lostfleet_commander", lastRoundPlayers[j]['deck'])
-                        lastRoundPlayers[j]['deckInitialized']= true
-                    }
-                }
-            }
             if(i % 2 == 0){
-                nextRound['players'] = this.updatePlayerData(firstPlayer,lastRoundPlayers, nextRound)
+                nextRound['player'] = firstPlayer
             }else{
-                nextRound['players'] = this.updatePlayerData(secondPlayer,lastRoundPlayers, nextRound)
+                nextRound['player'] = secondPlayer
             }
             rounds.push(nextRound)
-            lastRoundPlayers = JSON.parse(JSON.stringify(nextRound['players']))
         }
         return {
             firstPlayer: firstPlayer,
@@ -1451,6 +1389,13 @@ function getBattleS3(id){
 }
 
 export async function fetchBattle(id) {
-    let battleData = await getBattleS3(id)
-    return battleData
+    const DBclient = await new MongoClient(process.env.MONGODB_URI, { useNewUrlParser: true }).connect();
+    const db = DBclient.db("starrealms")
+    const cursor = db.collection('battle').find({'_id': ObjectId(id)}).project({ data: 1});
+    if(await cursor.hasNext()){
+        return await cursor.next()
+    }else{
+        console.log("bug")
+        return null
+    }
 }

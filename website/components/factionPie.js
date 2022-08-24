@@ -1,7 +1,7 @@
 import { Doughnut } from 'react-chartjs-2';
 import 'chart.js/auto';
 
-function FactionPie({deckSummary}) {
+function FactionPie({factions}) {
   let options = {
     plugins: {
         legend: {
@@ -16,21 +16,24 @@ function FactionPie({deckSummary}) {
           'Machine Cult',
           'Trade Federation',
           'Star Empire',
-          'Blob'
+          'Blob',
+          'Unaligned'
         ],
         datasets: [{
           label: 'My First Dataset',
           data: [
-            deckSummary['machine_cult_count'],
-            deckSummary['trade_federation_count'],
-            deckSummary['star_empire_count'],
-            deckSummary['blob_count']
+            factions['Machine Cult'],
+            factions['Trade Federation'],
+            factions['Star Empire'],
+            factions['Blob'],
+            factions['Unaligned']
           ],
           backgroundColor: [
             '#ba2028',
             '#4850a2',
             '#f1c61a',
-            '#46a24d'
+            '#46a24d',
+            '#a9a9a9'
           ],
           hoverOffset: 4
         }]

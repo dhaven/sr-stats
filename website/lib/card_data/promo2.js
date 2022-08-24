@@ -7,7 +7,15 @@ export const promo2 = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "promo2",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "cargomech": {
             "name": "Cargo Mech",
@@ -15,7 +23,15 @@ export const promo2 = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "promo2",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "federaltransport": {
             "name": "Federal Transport",
@@ -23,7 +39,15 @@ export const promo2 = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "promo2",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "imperialsmuggler": {
             "name": "Imperial Smuggler",
@@ -31,7 +55,15 @@ export const promo2 = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "promo2",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "knightstar": {
             "name": "Knightstar",
@@ -39,7 +71,15 @@ export const promo2 = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "promo2",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "mercbattlecruiser": {
             "name": "Merc Battlecruiser",
@@ -47,7 +87,15 @@ export const promo2 = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "promo2",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "mercenarygarrison": {
             "name": "Mercenary Garrison",
@@ -55,7 +103,15 @@ export const promo2 = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "promo2",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "probebot": {
             "name": "Probe Bot",
@@ -63,7 +119,15 @@ export const promo2 = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "promo2",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "securitycraft": {
             "name": "Security Craft",
@@ -71,7 +135,15 @@ export const promo2 = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "promo2",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "stellarray": {
             "name": "Stellar Ray",
@@ -79,7 +151,15 @@ export const promo2 = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "promo2",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "warkite": {
             "name": "War Kite",
@@ -87,7 +167,15 @@ export const promo2 = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "promo2",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         }
     }
 }

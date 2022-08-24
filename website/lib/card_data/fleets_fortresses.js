@@ -7,7 +7,15 @@ export const fleets_fortresses = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "fleets_fortresses",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "capitolworld": {
             "name": "Capitol World",
@@ -15,7 +23,15 @@ export const fleets_fortresses = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "fleets_fortresses",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "cargolaunch": {
             "name": "Cargo Launch",
@@ -23,7 +39,15 @@ export const fleets_fortresses = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "fleets_fortresses",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "customsfrigate": {
             "name": "Customs Frigate",
@@ -31,7 +55,15 @@ export const fleets_fortresses = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "fleets_fortresses",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "deathworld": {
             "name": "Death World",
@@ -39,7 +71,15 @@ export const fleets_fortresses = {
             "faction": [
                 "Blob"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "fleets_fortresses",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "patrolbot": {
             "name": "Patrol Bot",
@@ -47,7 +87,15 @@ export const fleets_fortresses = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "fleets_fortresses",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "spikepod": {
             "name": "Spike Pod",
@@ -55,7 +103,15 @@ export const fleets_fortresses = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "fleets_fortresses",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "starfortress": {
             "name": "Star Fortress",
@@ -63,7 +119,15 @@ export const fleets_fortresses = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "fleets_fortresses",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         }
     }
 }

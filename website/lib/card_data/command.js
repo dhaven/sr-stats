@@ -8,7 +8,15 @@ export const command = {
                 "Star Empire",
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "command",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "alliancelanding": {
             "name": "Alliance Landing",
@@ -17,7 +25,15 @@ export const command = {
                 "Star Empire",
                 "Trade Federation"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "command",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "assaultpod": {
             "name": "Assault Pod",
@@ -26,7 +42,15 @@ export const command = {
                 "Blob",
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "command",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "coalitionfortress": {
             "name": "Coalition Fortress",
@@ -35,7 +59,15 @@ export const command = {
                 "Machine Cult",
                 "Trade Federation"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "command",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "coalitionfreighter": {
             "name": "Coalition Freighter",
@@ -44,7 +76,15 @@ export const command = {
                 "Machine Cult",
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "command",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "unioncluster": {
             "name": "Union Cluster",
@@ -53,7 +93,15 @@ export const command = {
                 "Blob",
                 "Star Empire"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "command",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "unityfighter": {
             "name": "Unity Fighter",
@@ -62,7 +110,15 @@ export const command = {
                 "Blob",
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "command",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "unitystation": {
             "name": "Unity Station",
@@ -71,7 +127,15 @@ export const command = {
                 "Blob",
                 "Machine Cult"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "command",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         }
     }
 }

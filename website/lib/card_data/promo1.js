@@ -7,7 +7,15 @@ export const promo1 = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "promo1",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "battlescreecher": {
             "name": "Battle Screecher",
@@ -15,7 +23,15 @@ export const promo1 = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "promo1",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "breedingsite": {
             "name": "Breeding Site",
@@ -23,7 +39,15 @@ export const promo1 = {
             "faction": [
                 "Blob"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "promo1",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "fortressoblivion": {
             "name": "Fortress Oblivion",
@@ -31,7 +55,15 @@ export const promo1 = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "promo1",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "megahauler": {
             "name": "Mega Hauler",
@@ -39,7 +71,15 @@ export const promo1 = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "promo1",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "merccruiser": {
             "name": "Merc Cruiser",
@@ -47,7 +87,15 @@ export const promo1 = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "promo1",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "starbaseomega": {
             "name": "Starbase Omega",
@@ -55,7 +103,15 @@ export const promo1 = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "promo1",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "starmarket": {
             "name": "Starmarket",
@@ -63,7 +119,15 @@ export const promo1 = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "promo1",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "theark": {
             "name": "The Ark",
@@ -71,7 +135,15 @@ export const promo1 = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "promo1",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         }
     }
 }
