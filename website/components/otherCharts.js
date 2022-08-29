@@ -1,24 +1,33 @@
 import { useState } from "react";
-import { getChartData, getAggrChartData } from '../lib/helper'
 import { Tab } from '@headlessui/react'
 import { Fragment } from 'react'
 import { Chart as ChartJS } from 'chart.js/auto';
 import { Bar } from 'react-chartjs-2';
 
-function OtherCharts({firstPlayer, winner, rounds}){
+function OtherCharts({winner, otherData, otherAggrData}){
     const [chartType, setChartType] = useState("tradeData");
-    let chartData = getChartData({firstPlayer, winner, rounds})
-    let aggrChartData = getAggrChartData({firstPlayer, winner, rounds})
     //construct our dataset array
     let datasetsTempChart = []
     let datasetsAggrChart = []
     let numTurns = 0
+    let aggrData = []
+    let aggrLabels = []
+    let aggrColors = []
+    for(let player in otherAggrData[chartType]){
+        aggrData.push(otherAggrData[chartType][player])
+        aggrLabels.push(player)
+        if(player == winner){
+            aggrColors.push("#3d5a80")
+        }else{
+            aggrColors.push("#ee6c4d")
+        }
+    }
     datasetsAggrChart.push({
-        data: Object.values(aggrChartData[chartType]),
+        data: aggrData,
         fill: false,
-        backgroundColor: ["#3d5a80","#ee6c4d"]
+        backgroundColor: aggrColors
     })
-    for(let player in chartData[chartType]){
+    for(let player in otherData[chartType]){
         let borderColor = ""
         if(player == winner){
             borderColor = "#3d5a80"
@@ -28,18 +37,18 @@ function OtherCharts({firstPlayer, winner, rounds}){
         datasetsTempChart.push({
             label: player,
             fill: false,
-            data: chartData[chartType][player],
+            data: otherData[chartType][player],
             backgroundColor: borderColor,
             categoryPercentage: 0.75
         })
-        numTurns = chartData[chartType][player].length
+        numTurns = otherData[chartType][player].length
     }
     const dataTempChart = {
         labels: Array(numTurns).fill().map((x,i)=>i),
         datasets: datasetsTempChart,
     };
     const dataAggrChart = {
-        labels: Object.keys(aggrChartData[chartType]),
+        labels: aggrLabels,
         datasets: datasetsAggrChart
     };
     let optionsTempChart = {
@@ -153,7 +162,7 @@ function OtherCharts({firstPlayer, winner, rounds}){
                                     selected ? "bg-scifi3 text-white text-sm font-medium px-4 sm:px-6 py-2 rounded-lg" :
                                                "bg-white text-scifi5 hover:ring ring-scifi2 text-sm font-medium px-4 sm:px-6 py-2 border rounded-lg"
                                 }
-                                type="button" onClick={(e) => {setChartType("drawCount")}}>
+                                type="button" onClick={(e) => {setChartType("drawData")}}>
                                 Draw
                             </button>
                         }

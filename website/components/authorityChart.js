@@ -1,13 +1,11 @@
 import { Chart as ChartJS } from 'chart.js/auto';
 import { Line } from 'react-chartjs-2';
-import { getChartData } from '../lib/helper'
 
-function AuthorityChart({firstPlayer, winner, rounds}){
-    let chartData = getChartData({firstPlayer, winner, rounds})
+function AuthorityChart({winner, authorityData}){
     //construct our dataset array
     let datasets = []
     let numTurns = 0
-    for(let player in chartData["authorityData"]){
+    for(let player in authorityData){
         let borderColor = ""
         if(player == winner){
             borderColor = "#3d5a80"
@@ -17,11 +15,11 @@ function AuthorityChart({firstPlayer, winner, rounds}){
         datasets.push({
             label: player,
             fill: false,
-            data: chartData["authorityData"][player],
+            data: authorityData[player],
             borderColor: borderColor,
             backgroundColor: borderColor,
         })
-        numTurns = chartData["authorityData"][player].length
+        numTurns = authorityData[player].length
     }
     const data = {
         labels: Array(numTurns).fill().map((x,i)=>i),
