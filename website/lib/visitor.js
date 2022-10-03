@@ -2,111 +2,11 @@ import antlr4 from 'antlr4';
 import StarRealmsLexer from './antlr4/StarRealmsLexer.js';
 import StarRealmsParser from './antlr4/StarRealmsParser.js';
 import StarRealmsVisitor from './antlr4/StarRealmsVisitor.js';
-import StarRealmsErrorListener from './antlr4/StarRealmsErrorListener.js';
-import { core_set } from './card_data/core_set.js';
-import { colony_wars } from './card_data/colony_wars.js';
-import { frontiers } from './card_data/frontiers.js';
-import { bases_battleships } from './card_data/bases_battleships.js';
-import { fleets_fortresses } from './card_data/fleets_fortresses.js';
-import { frontiers_promos } from './card_data/frontiers_promos.js';
-import { assault } from './card_data/assault.js';
-import { command } from './card_data/command.js';
-import { stellar_allies } from './card_data/stellar_allies.js';
-import { united_heroes } from './card_data/united_heroes.js';
-import { crisis_heroes } from './card_data/crisis_heroes.js';
-import { promo1 } from './card_data/promo1.js';
-import { promo2 } from './card_data/promo2.js';
-import { tech } from './card_data/tech.js';
-import { command_decks } from './card_data/command_decks.js'
 
 const { MongoClient, ObjectId } = require('mongodb');
-const { S3Client, GetObjectCommand } = require("@aws-sdk/client-s3");
-
-
-var card_list = Object.assign(
-    core_set['cards'], 
-    frontiers['cards'], 
-    colony_wars['cards'],
-    bases_battleships['cards'],
-    fleets_fortresses['cards'],
-    frontiers_promos['cards'],
-    assault['cards'],
-    command['cards'],
-    stellar_allies['cards'],
-    united_heroes['cards'],
-    crisis_heroes['cards'],
-    promo1['cards'],
-    promo2['cards'],
-    tech['cards'],
-    command_decks['cards']
-)
 
 class Visitor extends StarRealmsVisitor{
 
-    // update both players data with info from the latest round
-    updatePlayerData(currentPlayer, lastRoundPlayers, nextRound){
-        let newPlayerData = []
-        for(let i = 0; i < lastRoundPlayers.length; i++){
-            //get  copy of our player object
-            let player = JSON.parse(JSON.stringify(lastRoundPlayers[i]))
-            if(player.name in nextRound['authority']){
-                player['authority'] += nextRound['authority'][player.name]['diff']
-            }
-            if(player.name == currentPlayer){
-                for(let j = 0; j < nextRound['purchasedCards'].length; j++){
-                    let nextCard = nextRound['purchasedCards'][j]
-                    //console.log(nextCard)
-                    if(nextCard in player['deck']){
-                        player['deck'][nextCard]['count'] += 1
-                    }else if(nextCard in card_list){
-                        player.deck[nextCard] = {
-                            name: card_list[nextCard]['name'],
-                            cost: card_list[nextCard]['cost'],
-                            faction: card_list[nextCard]['faction'],
-                            type: card_list[nextCard]['type'],
-                            count: 1,
-                            scrapCount: 0,
-                            discardCount: 0,
-                            destroyedCount: 0,
-                            playedCount: 0
-                        }
-                    }
-                }
-                for(let j = 0; j < nextRound['scrappedCards'].length; j++){
-                    let nextCard = nextRound['scrappedCards'][j]
-                    if(nextCard in player['deck']){
-                        player['deck'][nextCard]['scrapCount'] += 1
-                    }
-                }
-                for(let j = 0; j < nextRound['discardedCards'].length; j++){
-                    let nextCard = nextRound['discardedCards'][j]
-                    if(nextCard in player['deck']){
-                        player['deck'][nextCard]['discardCount'] += 1
-                    }
-                }
-                for(let j = 0; j < nextRound['playedCards'].length; j++){
-                    let nextCard = nextRound['playedCards'][j]
-                    if(nextCard in player['deck']){
-                        player['deck'][nextCard]['playedCount'] += 1
-                    }
-                }
-                for(let j = 0; j < nextRound['completedMissions'].length; j++){
-                    let mission = nextRound['completedMissions'][j]
-                    player['completedMissions'].push(mission)
-                }
-                newPlayerData.push(player)
-            }else{
-                for(let j = 0; j < nextRound['destroyedBases'].length; j++){
-                    let nextCard = nextRound['destroyedBases'][j]
-                    if(nextCard in player['deck']){
-                        player['deck'][nextCard]['destroyedCount'] += 1
-                    }
-                }
-                newPlayerData.push(player)
-            }
-        }
-        return newPlayerData
-    }
     // returns a standard balance object from the union of curentBalance and nextBalance
     // nextBalance has format
     // {
@@ -160,78 +60,30 @@ class Visitor extends StarRealmsVisitor{
     //     playerX: {diff: X, new: Y},
     //     playerY: {diff: X, new: Y}
     // }
-    updateAuthorityObj(auth1, auth2){
+    updateAuthorityObj(currentAuth, nextAuth){
         let newAuth = {}
-        //console.log(auth1)
-        //console.log(auth2)
-        for(let key1 in auth1){
+        console.log(currentAuth)
+        console.log(nextAuth)
+        for(let key1 in currentAuth){
             newAuth[key1] = {}
-            if(key1 in auth2){
-                newAuth[key1]['diff'] = auth1[key1]['diff'] + auth2[key1]['diff']
+            if(key1 in nextAuth){
+                newAuth[key1]['diff'] = currentAuth[key1]['diff'] + nextAuth[key1]['diff']
+                newAuth[key1]['new'] = nextAuth[key1]['new']
             }else{
-                newAuth[key1]['diff'] = auth1[key1]['diff']
+                newAuth[key1]['diff'] = currentAuth[key1]['diff']
+                newAuth[key1]['new'] = currentAuth[key1]['new']
             }
-            newAuth[key1]['new'] = auth1[key1]['new']
         }
-        for(let key2 in auth2){
-            if(!(key2 in auth1)){
+        for(let key2 in nextAuth){
+            if(!(key2 in currentAuth)){
                 newAuth[key2] = {}
-                newAuth[key2]['diff'] = auth2[key2]['diff']
-                newAuth[key2]['new'] = auth2[key2]['new']
+                newAuth[key2]['diff'] = nextAuth[key2]['diff']
+                newAuth[key2]['new'] = nextAuth[key2]['new']
             }
         }
-        //console.log(newAuth)
+        console.log(newAuth)
+        console.log("---")
         return newAuth
-    }
-
-    initializeDeck(type, current){
-        if(type == "default"){
-            // add 8 scout and 2 vipers to current deck
-            current["scout"] = {
-                name: card_list['scout']['name'],
-                cost: card_list['scout']['cost'],
-                faction: card_list['scout']['faction'],
-                type: card_list['scout']['type'],
-                count: 8,
-                scrapCount: 0,
-                discardCount: 0,
-                destroyedCount: 0,
-                playedCount: 0
-            }
-            current["viper"] = {
-                name: card_list['viper']['name'],
-                cost: card_list['viper']['cost'],
-                faction: card_list['viper']['faction'],
-                type: card_list['scout']['type'],
-                count: 2,
-                scrapCount: 0,
-                discardCount: 0,
-                destroyedCount: 0,
-                playedCount: 0
-            }
-        }else if(type == "alignment_commander"){
-            let card_set = command_decks['commanders']['alignment']['deck']
-            current = Object.assign(current,card_set)
-        }else if(type == "alliance_commander"){
-            let card_set = command_decks['commanders']['alliance']['deck']
-            current = Object.assign(current,card_set)
-        }else if(type == "coalition_commander"){
-            let card_set = command_decks['commanders']['coalition']['deck']
-            current = Object.assign(current,card_set)
-        }else if(type == "pact_commander"){
-            let card_set = command_decks['commanders']['pact']['deck']
-            current = Object.assign(current,card_set)
-        }else if(type == "unity_commander"){
-            let card_set = command_decks['commanders']['unity']['deck']
-            current = Object.assign(current,card_set)
-        }else if(type == "union_commander"){
-            let card_set = command_decks['commanders']['union']['deck']
-            current = Object.assign(current,card_set)
-        }else if(type == "lostfleet_commander"){
-            let card_set = command_decks['commanders']['lostfleet']['deck']
-            current = Object.assign(current,card_set)
-        }
-        return current
     }
 
     // grammar: turn+;
@@ -240,10 +92,14 @@ class Visitor extends StarRealmsVisitor{
         let secondPlayer = this.visit(ctx.turn()[1].endPhase())
         let rounds = []
         let winner = ""
+        let winCondition = ""
         for(let i = 0; i < ctx.turn().length; i++){
             let nextRound = this.visit(ctx.turn()[i])
             if(nextRound['winner'] != ""){
                 winner = nextRound['winner']
+            }
+            if(nextRound['winCondition'] == "resignation"){
+                winCondition = nextRound['winCondition']
             }
             if(i % 2 == 0){
                 nextRound['player'] = firstPlayer
@@ -255,7 +111,8 @@ class Visitor extends StarRealmsVisitor{
         return {
             firstPlayer: firstPlayer,
             winner: winner,
-            rounds: rounds
+            rounds: rounds,
+            winCondition: winCondition
         }
     }
 
@@ -281,6 +138,7 @@ class Visitor extends StarRealmsVisitor{
             discardedCards: [],
             destroyedBases: [],
             winner: "",
+            winCondition: "",
             drawCount: 0,
             authority: {},
         }
@@ -430,6 +288,7 @@ class Visitor extends StarRealmsVisitor{
             }else if(ctx.action()[i].concede()){
                 let summary = this.visit(ctx.action()[i])
                 turnData['authority'] = this.updateAuthorityObj(turnData['authority'], summary['authority'])
+                turnData['winCondition'] = "resignation"
             }
         }
         if(ctx.winStatus()){
@@ -1356,36 +1215,6 @@ export function findErrors(battlelog) {
     parser.buildParseTrees = true;
     parser.battle() //this is really slow
     return parser._syntaxErrors == 0
-}
-
-function getBattleS3(id){
-    const client = new S3Client({ 
-        region: "eu-central-1" ,
-        credentials: {
-          accessKeyId: process.env.SR_STATS_AWS_ACCESS_KEY_ID,
-          secretAccessKey: process.env.SR_STATS_AWS_SECRET_ACCESS_KEY,
-        }
-    });
-    const downloadParams = {
-        Bucket: 'star-realms-games',
-        Key: 'games/' + id,
-    };
-    const streamToString = (stream) =>
-      new Promise((resolve, reject) => {
-        const chunks = [];
-        stream.on("data", (chunk) => chunks.push(chunk));
-        stream.on("error", reject);
-        stream.on("end", () => resolve(Buffer.concat(chunks).toString("utf8")));
-    });
-    let promise = new Promise((resolve,reject) => {
-        client.send(new GetObjectCommand(downloadParams))
-        .then((data) => {
-            streamToString(data.Body).then(bodyContents => {
-                return resolve(parseBattle(bodyContents))
-            });
-        })
-    })
-    return promise
 }
 
 export async function fetchBattle(id) {

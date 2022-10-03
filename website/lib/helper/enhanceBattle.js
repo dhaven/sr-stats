@@ -57,7 +57,7 @@ function enhance(rounds){
     }
     players[rounds[1]['player']] = {
         startAuthority: secondPlayerInit['startAuthority'],
-        finalAuthority: firstPlayerInit['startAuthority'],
+        finalAuthority: secondPlayerInit['startAuthority'],
         deck: secondPlayerInit['deck'],
         completedMissions: []
     }
@@ -71,6 +71,7 @@ function enhance(rounds){
         for(let j = 0; j < nextRound['purchasedCards'].length; j++){
             let nextCard = nextRound['purchasedCards'][j].replace('tothetopofthedeck', '');
             let nextFaction = ""
+            //console.log(players[activePlayer])
             players[activePlayer]['deck']['count'] += 1
             console.log(nextCard)
             players[activePlayer]['deck']['cost'] += card_list[nextCard]['cost']
@@ -94,6 +95,7 @@ function enhance(rounds){
                     cost: card_list[nextCard]['cost'],
                     faction: card_list[nextCard]['faction'],
                     type: card_list[nextCard]['type'],
+                    metadata: card_list[nextCard]['metadata'],
                     count: 1,
                     discardCount: 0
                 }
@@ -129,6 +131,7 @@ function enhance(rounds){
 
 //find the first occurence of each player taking damage. Based on that we can
 //infer their initial authority and this their starting deck
+// ! events can affect this
 function initializeAuthorityAndDecks(rounds, player){
         let nextRound = {}
     for(let i = 0; i < rounds.length; i++){
@@ -166,6 +169,14 @@ function getInitialDeck(startAuthority){
                     cost: core_set['cards']['scout']['cost'],
                     faction: core_set['cards']['scout']['faction'],
                     type: core_set['cards']['scout']['type'],
+                    metadata: {
+                        extension: "core_set",
+                        image: {
+                            width: "x",
+                            height: "y",
+                            filename: "x.jpg"
+                        }
+                    },
                     count: 8,
                     discardCount: 0
                 },
@@ -174,6 +185,14 @@ function getInitialDeck(startAuthority){
                     cost: core_set['cards']['viper']['cost'],
                     faction: core_set['cards']['viper']['faction'],
                     type: core_set['cards']['viper']['type'],
+                    metadata: {
+                        extension: "core_set",
+                        image: {
+                            width: "x",
+                            height: "y",
+                            filename: "x.jpg"
+                        }
+                    },
                     count: 2,
                     discardCount: 0
                 }

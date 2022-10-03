@@ -35,7 +35,7 @@ export default function Layout({ children }) {
         </p>
         {
           pathname == "/game/[id]" &&
-          <button onClick={openAddGameModal} className="hidden md:block absolute top-0 right-0 m-3 bg-scifi3 text-white font-medium bg-white text-sm px-2 py-2 border border-scifi4 ring-scifi-2 drop-shadow-md hover:ring rounded-lg" type="button">
+          <button onClick={openAddGameModal} className="hidden md:block absolute top-0 right-0 m-3 bg-white text-scifi5 font-medium bg-white text-sm px-2 sm:px-4 py-2 border border-scifi4 ring-scifi2 drop-shadow-md hover:ring rounded-lg" type="button">
             New Game
           </button>
         }

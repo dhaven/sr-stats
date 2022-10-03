@@ -10,7 +10,7 @@ function DeckDetailV2({cards}){
                             cards[card]['type'] == 'ship' ?
                                 <CardShip key={index} file={card} card={cards[card]}></CardShip>
                                 :
-                                <CardBase key={index} card={cards[card]}></CardBase>
+                                <CardBase key={index} file={card} card={cards[card]}></CardBase>
                         )
                         
                 })

@@ -2,9 +2,9 @@ import SRLogo from '../public/svg/star_realms_logo.svg'
 import { useState } from 'react'
 import SRCard from './SRCard.js'
 
-function EventCard({mission}) {
+function EventCard({event}) {
     let [isOpen, setIsOpen] = useState(false)
-    let filename = "/images/events/" + mission + ".jpg"
+    let filename = "/images/events/" + event.toLowerCase().replace(/\s/g, "") + ".jpg"
     return (
         <div>
             <div onClick={() => setIsOpen(true)} className="relative w-16 h-24 bg-white hover:ring ring-scifi2">
@@ -15,7 +15,7 @@ function EventCard({mission}) {
                     <p className="z-10 font-bold bg-white/70 text-sm text-center m-2">Event</p>
                 </div>
             </div>
-            <SRCard filename={filename} isOpen={isOpen} setIsOpen={setIsOpen}></SRCard>
+            <SRCard type="ship" filename={filename} isOpen={isOpen} setIsOpen={setIsOpen}></SRCard>
         </div>
     )
   }

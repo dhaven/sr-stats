@@ -4,7 +4,7 @@ import SRCard from './SRCard.js'
 
 function MissionCard({mission}) {
     let [isOpen, setIsOpen] = useState(false)
-    let filename = "/images/missions/" + mission + ".jpg"
+    let filename = "/images/missions/" + mission.toLowerCase() + ".jpg"
     return (
         <>
             <div onClick={() => setIsOpen(true)} className="relative w-11 h-16 sm:w-16 sm:h-24 bg-white hover:ring ring-scifi2">
@@ -15,7 +15,7 @@ function MissionCard({mission}) {
                     <p className="z-10 font-bold bg-white/70 text-sm text-center">mission</p>
                 </div>
             </div>
-            <SRCard filename={filename} isOpen={isOpen} setIsOpen={setIsOpen}></SRCard>
+            <SRCard type="ship" filename={filename} isOpen={isOpen} setIsOpen={setIsOpen}></SRCard>
         </>
     )
   }

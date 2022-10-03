@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment} from 'react'
 
-function SRCard({filename, isOpen, setIsOpen}) {
+function SRCard({type, filename, isOpen, setIsOpen}) {
     function closeModal() {
         setIsOpen(false)
       }
@@ -44,7 +44,7 @@ function SRCard({filename, isOpen, setIsOpen}) {
                         leaveFrom="opacity-100 scale-100"
                         leaveTo="opacity-0 scale-95"
                         >
-                            <div className="inline-block relative w-full max-w-md p-6 my-8 overflow-hidden align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+                            <div className="inline-block relative p-6 my-8 overflow-hidden align-middle transition-all transform bg-white shadow-xl rounded-2xl">
                                 <div className="z-10 absolute top-0 right-0 m-2">
                                     <button
                                         type="button"
@@ -59,8 +59,9 @@ function SRCard({filename, isOpen, setIsOpen}) {
                                 <div className="border-4 border-black">
                                     <Image
                                         src= {filename}
-                                        height={950}
-                                        width={666}
+                                        height={type == "ship" ? 481 : 336}
+                                        width={type == "ship" ? 336: 481}
+                                        layout="fixed"
                                 />
                                 </div>
                             </div>

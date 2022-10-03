@@ -7,6 +7,7 @@ import SRCard from './SRCard.js'
 import { useState } from 'react'
 
 function CardShip({file, card}) {
+    console.log(card)
     let [isOpen, setIsOpen] = useState(false)
     let factionIcon = function(card){
         if(card['faction'][0] == "Blob"){
@@ -19,10 +20,10 @@ function CardShip({file, card}) {
             return <MachineCult className="bg-machinecult border-2 border-black rounded-full m-1 p-0.5 w-7 h-7"/>
         }
     }
-    let filename = "/images/"+ "core" + "/" + file + ".jpg"
+    let filename = "/images/"+ card['metadata']['extension'] + "/" + file + ".jpg"
     return (
         <div>
-        <div onClick={() => setIsOpen(true)} className="relative flex flex-col w-16 h-24 sm:w-24 sm:h-32 m-2 border-2 border-scifi4 border-double bg-gradient-to-t from-scifi2 to-scifi3 hover:ring ring-scifi2">
+        <div onClick={() => setIsOpen(true)} className="relative flex flex-col w-16 h-24 sm:w-24 sm:h-32 m-2 border-2 border-scifi4 border-double hover:ring ring-scifi2">
             <p className="z-10 bg-white/70 text-md text-center rounded-t-sm leading-snug">{card['name']}</p>
             <div className="absolute inset-0 flex items-center justify-center">
                 <Rocket/>
@@ -33,7 +34,7 @@ function CardShip({file, card}) {
                 }
             </div>
         </div>
-        <SRCard filename={filename} isOpen={isOpen} setIsOpen={setIsOpen}></SRCard>
+        <SRCard type="ship" filename={filename} isOpen={isOpen} setIsOpen={setIsOpen}></SRCard>
         </div>
     )
   }
