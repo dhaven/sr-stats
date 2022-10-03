@@ -61,7 +61,6 @@ function SRCard({type, filename, isOpen, setIsOpen}) {
                                         src= {filename}
                                         height={type == "ship" ? 481 : 336}
                                         width={type == "ship" ? 336: 481}
-                                        layout="fixed"
                                 />
                                 </div>
                             </div>
