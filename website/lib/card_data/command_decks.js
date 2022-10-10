@@ -134,7 +134,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "imperialviper": {
                     "name": "Imperial Viper",
@@ -147,7 +155,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "ranger": {
                     "name": "Ranger",
@@ -160,7 +176,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "salvagedrone": {
                     "name": "Salvage Drone",
@@ -173,7 +197,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "scout": {
                     "name": "Scout",
@@ -186,7 +218,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "scoutbot": {
                     "name": "Scout Bot",
@@ -199,7 +239,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "stellarfalcon": {
                     "name": "Stellar Falcon",
@@ -212,7 +260,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "viper": {
                     "name": "Viper",
@@ -225,7 +281,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "welderdrone": {
                     "name": "Welder Drone",
@@ -238,7 +302,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
             }
         },
@@ -255,7 +327,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "diplomaticshuttle": {
                     "name": "Diplomatic Shuttle",
@@ -268,7 +348,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "federationscout": {
                     "name": "Federation Scout",
@@ -281,7 +369,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "imperialviper": {
                     "name": "Imperial Viper",
@@ -294,7 +390,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "scout": {
                     "name": "Scout",
@@ -307,7 +411,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "stellarfalcon": {
                     "name": "Stellar Falcon",
@@ -320,7 +432,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "tributetransport": {
                     "name": "Tribute Transport",
@@ -333,7 +453,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "viper": {
                     "name": "Viper",
@@ -346,7 +474,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
             }
         },
@@ -363,7 +499,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "federationscout": {
                     "name": "Federation Scout",
@@ -376,7 +520,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "frontiertug": {
                     "name": "Frontier Tug",
@@ -389,7 +541,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "laserdrone": {
                     "name": "Laser Drone",
@@ -402,7 +562,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "ranger": {
                     "name": "Ranger",
@@ -415,7 +583,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "salvagedrone": {
                     "name": "Salvage Drone",
@@ -428,7 +604,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "scout": {
                     "name": "Scout",
@@ -441,7 +625,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "viper": {
                     "name": "Viper",
@@ -454,7 +646,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "viperbot": {
                     "name": "Viper Bot",
@@ -467,7 +667,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "coalitionstronghold": {
                     "name": "Coalition Stronghold",
@@ -481,7 +689,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 }
             }
         },
@@ -498,7 +714,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "diplomaticshuttle": {
                     "name": "Diplomatic Shuttle",
@@ -511,7 +735,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "escortviper": {
                     "name": "Escort Viper",
@@ -524,7 +756,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "frontiertug": {
                     "name": "Frontier Tug",
@@ -537,7 +777,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "ranger": {
                     "name": "Ranger",
@@ -550,7 +798,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "ripper": {
                     "name": "Ripper",
@@ -563,7 +819,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "scout": {
                     "name": "Scout",
@@ -576,7 +840,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "swarmling": {
                     "name": "Swarmling",
@@ -589,7 +861,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "viper": {
                     "name": "Viper",
@@ -602,7 +882,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 
             }
@@ -620,7 +908,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "laserdrone": {
                     "name": "Laser Drone",
@@ -633,7 +929,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "protopod": {
                     "name": "Protopod",
@@ -646,7 +950,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "ranger": {
                     "name": "Ranger",
@@ -659,7 +971,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "scout": {
                     "name": "Scout",
@@ -672,7 +992,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "scoutbot": {
                     "name": "Scout Bot",
@@ -685,7 +1013,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "swarmling": {
                     "name": "Swarmling",
@@ -698,7 +1034,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "viper": {
                     "name": "Viper",
@@ -711,7 +1055,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "welderdrone": {
                     "name": "Welder Drone",
@@ -724,7 +1076,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
             }
         },
@@ -741,7 +1101,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "imperialscout": {
                     "name": "Imperial Scout",
@@ -754,7 +1122,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "imperialtalon": {
                     "name": "Imperial Talon",
@@ -767,7 +1143,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "protopod": {
                     "name": "Protopod",
@@ -780,7 +1164,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "ranger": {
                     "name": "Ranger",
@@ -793,7 +1185,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "ripper": {
                     "name": "Ripper",
@@ -806,7 +1206,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "scout": {
                     "name": "Scout",
@@ -819,7 +1227,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "tributetransport": {
                     "name": "Tribute Transport",
@@ -832,7 +1248,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "viper": {
                     "name": "Viper",
@@ -845,7 +1269,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 }
             }
         },
@@ -862,7 +1294,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "commandshard": {
                     "name": "Command Shard",
@@ -875,7 +1315,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "reconshard": {
                     "name": "Recon Shard",
@@ -888,7 +1336,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "salvageshard": {
                     "name": "Salvage Shard",
@@ -901,7 +1357,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 },
                 "transportshard": {
                     "name": "Transport Shard",
@@ -914,7 +1378,15 @@ export const command_decks = {
                     "scrapCount": 0,
                     "discardCount": 0,
                     "destroyedCount": 0,
-                    "playedCount": 0
+                    "playedCount": 0,
+                    "metadata": {
+                        "extension": "command_decks",
+                        "image": {
+                            "width": "x",
+                            "height": "y",
+                            "filename": "x.jpg"
+                        }
+                    }
                 }
             }
         }
