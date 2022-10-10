@@ -7,7 +7,15 @@ export const crisis_heroes = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "hero"
+            "type": "hero",
+            "metadata": {
+                "extension": "crisis_heroes",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "bloboverlord": {
             "name": "Blob Overlord",
@@ -15,7 +23,15 @@ export const crisis_heroes = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "hero"
+            "type": "hero",
+            "metadata": {
+                "extension": "crisis_heroes",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "ceotorres": {
             "name": "CEO Torres",
@@ -23,7 +39,15 @@ export const crisis_heroes = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "hero"
+            "type": "hero",
+            "metadata": {
+                "extension": "crisis_heroes",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "cunningcaptain": {
             "name": "Cunning Captain",
@@ -31,7 +55,15 @@ export const crisis_heroes = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "hero"
+            "type": "hero",
+            "metadata": {
+                "extension": "crisis_heroes",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "highpriestlyle": {
             "name": "High Priest Lyle",
@@ -39,7 +71,15 @@ export const crisis_heroes = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "hero"
+            "type": "hero",
+            "metadata": {
+                "extension": "crisis_heroes",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "rampilot": {
             "name": "Ram Pilot",
@@ -47,7 +87,15 @@ export const crisis_heroes = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "hero"
+            "type": "hero",
+            "metadata": {
+                "extension": "crisis_heroes",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "specialopsdirector": {
             "name": "Special Ops Director",
@@ -55,7 +103,15 @@ export const crisis_heroes = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "hero"
+            "type": "hero",
+            "metadata": {
+                "extension": "crisis_heroes",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "warelder": {
             "name": "War Elder",
@@ -63,7 +119,15 @@ export const crisis_heroes = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "hero"
+            "type": "hero",
+            "metadata": {
+                "extension": "crisis_heroes",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         }
     }
 }

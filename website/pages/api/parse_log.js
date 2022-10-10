@@ -1,99 +1,62 @@
 const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
-import { findErrors } from '../../lib/visitor'
+const { MongoClient } = require('mongodb');
+import { findErrors, parseBattle } from '../../lib/visitor'
+import enhance from '../../lib/helper/enhanceBattle'
 
-//returns a JSON object representing a battle with format:
-// {
-//     firstPlayer: "normalAI",
-//     winner: "Player",
-//     rounds: [
-//         {
-//             players: [ //represents the status of the player at the end of the turn
-//                 {
-//                     name: "normalPlayer"
-//                     authority: 50,
-//                     deck: {
-//                         'blobFighter' : {
-//                             faction: 'blob'
-//                             cost: 4 
-//                             name: 'Blob Fighter'
-//                             count: 2 //total amount of time purchased
-//                             playedCount: 4
-//                             scrapCount: 1
-//                             discardCount: 0
-//                             destroyedCount: 0
-
-//                         }
-
-//                     }
-//                 }
-//             ],
-//             purchasedCards: [
-//                 {
-//                     <card-data>
-//                 }
-//             ],
-//             playedCards: [
-//                 {
-//                     <card-data>
-//                 }
-//             ],
-//             scrappedCards: [
-//                 {
-//                     <card-data>
-//                 }
-//             ],
-//             discardedCards: [
-//                 {
-//                     <card-data>
-//                 }
-//             ],
-//             destroyedBases: [
-//                 {
-//                     <card-data>
-//                 }
-//             ],
-//             tradePool: 5,
-//             combatPool: 2,
-//             usedTrade: 5, //sometimes < tradePool
-//             usedCombat: 2 //sometimes < combatPool
-//             selfAuthority: 0
-//             otherAuthority: -1 
-//         }
-
-//     ]
-// }
 export default async function handler(req, res) {
-  const client = new S3Client({ 
+  const S3client = new S3Client({ 
     region: "eu-central-1" ,
     credentials: {
       accessKeyId: process.env.SR_STATS_AWS_ACCESS_KEY_ID,
       secretAccessKey: process.env.SR_STATS_AWS_SECRET_ACCESS_KEY,
     }
   });
-  let battleID = makeid(10)
+  //check for errors. Store file in error folder if any
   let success = findErrors(req.body)
+  if(!success){
+    //store file in S3 for later debugging
+    let battleID = makeid(10)
+    const uploadParams = {
+      Bucket: 'star-realms-games',
+      Body: req.body,
+      Key: "errors/" +  battleID
+    }
+    await S3client.send(new PutObjectCommand(uploadParams))
+    .then(()=>{
+      res.status(200).json({
+        id: battleID,
+        status: "parsing error"
+      })
+    })
+    .catch(error => {
+      console.log(error)
+      res.status(500).json({
+        status: error
+      })
+    })
+  }
+  //if no errors build the battle object and store it in mongoDB
+  const DBclient = await new MongoClient(process.env.MONGODB_URI, { useNewUrlParser: true }).connect();
+  const db = DBclient.db("starrealms")
+  let battle = parseBattle(req.body)
+  let enhanced = enhance(battle['data']['rounds'])
+  battle['data']['players'] = enhanced['players']
+  battle['data']['extensions'] = enhanced['extensions']
+  battle['data']['events'] = enhanced['events']
+  await db.collection("battle").insertOne(battle);
+  DBclient.close();
+  let battleID = battle._id
   const uploadParams = {
 		Bucket: 'star-realms-games',
 		Body: req.body,
+    Key: 'games/' + battleID
 	}
-  if(success){
-    uploadParams['Key'] = 'games/' + battleID
-  }else{
-    uploadParams['Key'] = "errors/" +  battleID
-  }
-  await client.send(new PutObjectCommand(uploadParams))
+  await S3client.send(new PutObjectCommand(uploadParams))
     .then(()=>{
-      if(success){
-        res.status(200).json({
-          id: battleID,
-          status: "success"
-        })
-      }else{
-        res.status(200).json({
-          id: battleID,
-          status: "parsing error"
-        })
-      }
+      res.status(200).json({
+        id: battleID,
+        status: "success"
+      })
     })
     .catch(error => {
       console.log(error)

@@ -1,5 +1,10 @@
 export const core_set = {
     "name": "core_set",
+    "image": {
+        "width": "x",
+        "height": "y",
+        "filename": "x.jpg"
+    },
     "cards": {
         "scout": {
             "name": "Scout",
@@ -7,7 +12,15 @@ export const core_set = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "viper": {
             "name": "Viper",
@@ -15,7 +28,15 @@ export const core_set = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "explorer": {
             "name": "Explorer",
@@ -23,7 +44,15 @@ export const core_set = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "blobfighter":{
             "name": "Blob Fighter",
@@ -31,7 +60,15 @@ export const core_set = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "battlepod": {
             "name": "Battle Pod",
@@ -39,7 +76,15 @@ export const core_set = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "tradepod": {
             "name": "Trade Pod",
@@ -47,7 +92,15 @@ export const core_set = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "ram": {
             "name": "Ram",
@@ -55,7 +108,15 @@ export const core_set = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "blobdestroyer": {
             "name": "Blob Destroyer",
@@ -63,7 +124,15 @@ export const core_set = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "blobcarrier": {
             "name": "Blob Carrier",
@@ -71,7 +140,15 @@ export const core_set = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "battleblob": {
             "name": "Battle Blob",
@@ -79,7 +156,15 @@ export const core_set = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "mothership": {
             "name": "Mothership",
@@ -87,7 +172,15 @@ export const core_set = {
             "faction": [
                 "Blob"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "blobwheel": {
             "name": "Blob Wheel",
@@ -95,7 +188,15 @@ export const core_set = {
             "faction": [
                 "Blob"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "thehive": {
             "name": "The Hive",
@@ -103,7 +204,15 @@ export const core_set = {
             "faction": [
                 "Blob"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "blobworld": {
             "name": "Blob World",
@@ -111,7 +220,15 @@ export const core_set = {
             "faction": [
                 "Blob"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "federationshuttle": {
             "name": "Federation Shuttle",
@@ -119,7 +236,15 @@ export const core_set = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "cutter": {
             "name": "Cutter",
@@ -127,7 +252,15 @@ export const core_set = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "embassyyacht": {
             "name": "Embassy Yacht",
@@ -135,7 +268,15 @@ export const core_set = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "freighter": {
             "name": "Freighter",
@@ -143,7 +284,15 @@ export const core_set = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "tradeescort": {
             "name": "Trade Escort",
@@ -151,7 +300,15 @@ export const core_set = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "flagship": {
             "name": "Flagship",
@@ -159,7 +316,15 @@ export const core_set = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "commandship": {
             "name": "Command Ship",
@@ -167,7 +332,15 @@ export const core_set = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "tradingpost": {
             "name": "Trading Post",
@@ -175,7 +348,15 @@ export const core_set = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "barterworld": {
             "name": "Barter World",
@@ -183,7 +364,15 @@ export const core_set = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "defensecenter": {
             "name": "Defense Center",
@@ -191,7 +380,15 @@ export const core_set = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "portofcall": {
             "name": "Port of Call",
@@ -199,7 +396,15 @@ export const core_set = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "centraloffice": {
             "name": "Central Office",
@@ -207,7 +412,15 @@ export const core_set = {
             "faction": [
                 "Trade Federation"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "imperialfighter": {
             "name": "Imperial Fighter",
@@ -215,7 +428,15 @@ export const core_set = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "corvette": {
             "name": "Corvette",
@@ -223,7 +444,15 @@ export const core_set = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "surveyship": {
             "name": "Survey Ship",
@@ -231,7 +460,15 @@ export const core_set = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "imperialfrigate": {
             "name": "Imperial Frigate",
@@ -239,7 +476,15 @@ export const core_set = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "battlecruiser": {
             "name": "Battlecruiser",
@@ -247,7 +492,15 @@ export const core_set = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "dreadnaught": {
             "name": "Dreadnaught",
@@ -255,7 +508,15 @@ export const core_set = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "spacestation": {
             "name": "Space Station",
@@ -263,7 +524,15 @@ export const core_set = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "recyclingstation": {
             "name": "Recycling Station",
@@ -271,7 +540,15 @@ export const core_set = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "warworld": {
             "name": "War World",
@@ -279,7 +556,15 @@ export const core_set = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "royalredoubt": {
             "name": "Royal Redoubt",
@@ -287,7 +572,15 @@ export const core_set = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "fleethq": {
             "name": "Fleet HQ",
@@ -295,7 +588,15 @@ export const core_set = {
             "faction": [
                 "Star Empire"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "tradebot": {
             "name": "Trade Bot",
@@ -303,7 +604,15 @@ export const core_set = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "missilebot": {
             "name": "Missile Bot",
@@ -311,7 +620,15 @@ export const core_set = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "supplybot": {
             "name": "Supply Bot",
@@ -319,7 +636,15 @@ export const core_set = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "patrolmech": {
             "name": "Patrol Mech",
@@ -327,7 +652,15 @@ export const core_set = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "stealthneedle": {
             "name": "Stealth Needle",
@@ -335,7 +668,15 @@ export const core_set = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "battlemech": {
             "name": "Battle Mech",
@@ -343,7 +684,15 @@ export const core_set = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "missilemech": {
             "name": "Missile Mech",
@@ -351,7 +700,15 @@ export const core_set = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "battlestation": {
             "name": "Battle Station",
@@ -359,7 +716,15 @@ export const core_set = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "mechworld": {
             "name": "Mech World",
@@ -367,7 +732,15 @@ export const core_set = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "junkyard": {
             "name": "Junkyard",
@@ -375,7 +748,15 @@ export const core_set = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "machinebase": {
             "name": "Machine Base",
@@ -383,7 +764,15 @@ export const core_set = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "brainworld": {
             "name": "Brain World",
@@ -391,7 +780,15 @@ export const core_set = {
             "faction": [
                 "Machine Cult"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "core_set",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         }
     }
 }

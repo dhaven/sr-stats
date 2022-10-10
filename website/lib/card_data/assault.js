@@ -8,7 +8,15 @@ export const assault = {
                 "Star Empire",
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "assault",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "blobbot": {
             "name": "Blob Bot",
@@ -17,7 +25,15 @@ export const assault = {
                 "Blob",
                 "Machine Cult"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "assault",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "coalitionmessenger": {
             "name": "Coalition Messenger",
@@ -26,7 +42,15 @@ export const assault = {
                 "Machine Cult",
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "assault",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "embassybase": {
             "name": "Embassy Base",
@@ -35,7 +59,15 @@ export const assault = {
                 "Star Empire",
                 "Trade Federation"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "assault",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "exchangepoint": {
             "name": "Exchange Point",
@@ -44,7 +76,15 @@ export const assault = {
                 "Blob",
                 "Machine Cult"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "assault",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "lookoutpost": {
             "name": "Lookout Post",
@@ -53,7 +93,15 @@ export const assault = {
                 "Machine Cult",
                 "Trade Federation"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "assault",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "tradestar": {
             "name": "Trade Star",
@@ -62,7 +110,15 @@ export const assault = {
                 "Blob",
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "assault",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "unionstronghold": {
             "name": "Union Stronghold",
@@ -71,7 +127,15 @@ export const assault = {
                 "Blob",
                 "Star Empire"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "assault",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         }
     }
 }

@@ -1,36 +1,18 @@
-//accepts a Battle object as input
-// returns an object:
-// {
-//     "user1": [{"card1": x},{"card2": y},{"card3":z}, ...,{"cardN":w],
-//     "user2": [{"card1": x},{"card2": y},{"card3":z}, ...,{"cardN":w],
-// }
-export function getFinalDecks(battle){
-    let finalDecks = {}
-    let lastRound = battle['rounds'][battle['rounds'].length-1]
-    for(let i = 0; i < lastRound['players'].length; i++){
-        let player = lastRound['players'][i]
-        finalDecks[player['name']] = lastRound['players'][i]['deck']
-    }
-    return finalDecks
-}
-
-export function getFinalAuthority(lastRound){
-    let finalAuthority = {}
-    for(let i = 0; i < lastRound['players'].length; i++){
-        let player = lastRound['players'][i]
-        finalAuthority[player['name']] = player['authority']
-    }
-    return finalAuthority
-}
-
-export function getCompletedMissions(lastRound){
-    let completedMisions = {}
-    for(let i = 0; i < lastRound['players'].length; i++){
-        let player = lastRound['players'][i]
-        completedMisions[player['name']] = player['completedMissions'].length
-    }
-    return completedMisions
-}
+import { core_set } from './card_data/core_set.js';
+import { colony_wars } from './card_data/colony_wars.js';
+import { frontiers } from './card_data/frontiers.js';
+import { bases_battleships } from './card_data/bases_battleships.js';
+import { fleets_fortresses } from './card_data/fleets_fortresses.js';
+import { frontiers_promos } from './card_data/frontiers_promos.js';
+import { assault } from './card_data/assault.js';
+import { command } from './card_data/command.js';
+import { stellar_allies } from './card_data/stellar_allies.js';
+import { united_heroes } from './card_data/united_heroes.js';
+import { crisis_heroes } from './card_data/crisis_heroes.js';
+import { promo1 } from './card_data/promo1.js';
+import { promo2 } from './card_data/promo2.js';
+import { tech } from './card_data/tech.js';
+import { command_decks } from './card_data/command_decks.js'
 
 //returns the summary of a deck
 // -> number of cards of each faction after scrap
@@ -79,6 +61,48 @@ export function getDeckSummary(deck){
         unaligned_count : unaligned_count,
         total_ship_count: total_ship_count,
         total_base_count: total_base_count,
+    }
+}
+
+export function getAggrChartData(battle){
+    let firstPlayer = battle['firstPlayer']
+    let secondPlayer = ""
+    for(let i = 0; i < battle['rounds'][0]['players'].length; i++){
+        let player = battle['rounds'][0]['players'][i]
+        if(player['name'] != battle['firstPlayer']){
+            secondPlayer = player['name']
+        }
+    }
+    let combatData = {}
+    combatData[firstPlayer] = 0
+    combatData[secondPlayer] = 0
+    let tradeData =  {}
+    tradeData[firstPlayer] = 0
+    tradeData[secondPlayer] = 0
+    let discardData =  {}
+    discardData[firstPlayer] = 0
+    discardData[secondPlayer] = 0
+    let drawData =  {}
+    drawData[firstPlayer] = 0
+    drawData[secondPlayer] = 0
+    for(let i = 0; i < battle['rounds'].length; i++){
+        if(i % 2 == 0){
+            combatData[firstPlayer] += battle['rounds'][i]['combatPool']
+            tradeData[firstPlayer] += battle['rounds'][i]['tradePool']
+            discardData[firstPlayer] += battle['rounds'][i]['discardedCards'].length
+            drawData[firstPlayer] += battle['rounds'][i]['drawCount']
+        }else{
+            combatData[secondPlayer] += battle['rounds'][i]['combatPool']
+            tradeData[secondPlayer] += battle['rounds'][i]['tradePool']
+            discardData[secondPlayer] += battle['rounds'][i]['discardedCards'].length
+            drawData[secondPlayer] += battle['rounds'][i]['drawCount']
+        }
+    }
+    return {
+        combatData: combatData,
+        tradeData: tradeData,
+        discardData: discardData,
+        drawCount: drawData
     }
 }
 

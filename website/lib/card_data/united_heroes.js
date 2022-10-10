@@ -7,7 +7,15 @@ export const united_heroes = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "hero"
+            "type": "hero",
+            "metadata": {
+                "extension": "united_heroes",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "chairmanhaygan": {
             "name": "Chairman Haygan",
@@ -15,7 +23,15 @@ export const united_heroes = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "hero"
+            "type": "hero",
+            "metadata": {
+                "extension": "united_heroes",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "chancellorhartman": {
             "name": "Chancellor Hartman",
@@ -23,7 +39,15 @@ export const united_heroes = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "hero"
+            "type": "hero",
+            "metadata": {
+                "extension": "united_heroes",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "commanderklik": {
             "name": "Commander Klik",
@@ -31,7 +55,15 @@ export const united_heroes = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "hero"
+            "type": "hero",
+            "metadata": {
+                "extension": "united_heroes",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "commodorezhang": {
             "name": "Commodore Zhang",
@@ -39,7 +71,15 @@ export const united_heroes = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "hero"
+            "type": "hero",
+            "metadata": {
+                "extension": "united_heroes",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "confessormorris": {
             "name": "Confessor Morris",
@@ -47,7 +87,15 @@ export const united_heroes = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "hero"
+            "type": "hero",
+            "metadata": {
+                "extension": "united_heroes",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "hivelord": {
             "name": "Hive Lord",
@@ -55,7 +103,15 @@ export const united_heroes = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "hero"
+            "type": "hero",
+            "metadata": {
+                "extension": "united_heroes",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "screecher": {
             "name": "Screecher",
@@ -63,7 +119,15 @@ export const united_heroes = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "hero"
+            "type": "hero",
+            "metadata": {
+                "extension": "united_heroes",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         }
     }
 }

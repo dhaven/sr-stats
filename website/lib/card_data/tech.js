@@ -7,7 +7,15 @@ export const tech = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "tech"
+            "type": "tech",
+            "metadata": {
+                "extension": "tech",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "laser": {
             "name": "Laser",
@@ -15,7 +23,15 @@ export const tech = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "tech"
+            "type": "tech",
+            "metadata": {
+                "extension": "tech",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "processing": {
             "name": "Processing",
@@ -23,7 +39,15 @@ export const tech = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "tech"
+            "type": "tech",
+            "metadata": {
+                "extension": "tech",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "shield": {
             "name": "Shield",
@@ -31,7 +55,15 @@ export const tech = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "tech"
+            "type": "tech",
+            "metadata": {
+                "extension": "tech",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "stealth": {
             "name": "Stealth",
@@ -39,7 +71,15 @@ export const tech = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "tech"
+            "type": "tech",
+            "metadata": {
+                "extension": "tech",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "stellarlink": {
             "name": "Stellar Link",
@@ -47,7 +87,15 @@ export const tech = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "tech"
+            "type": "tech",
+            "metadata": {
+                "extension": "tech",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "tractorbeam": {
             "name": "Tractor Beam",
@@ -55,7 +103,15 @@ export const tech = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "tech"
+            "type": "tech",
+            "metadata": {
+                "extension": "tech",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "warp": {
             "name": "Warp",
@@ -63,7 +119,15 @@ export const tech = {
             "faction": [
                 "Unaligned"
             ],
-            "type": "tech"
+            "type": "tech",
+            "metadata": {
+                "extension": "tech",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         }
     }
 }

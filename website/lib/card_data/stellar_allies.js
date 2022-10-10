@@ -8,7 +8,15 @@ export const stellar_allies = {
                 "Machine Cult",
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "stellar_allies",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "missilesilo": {
             "name": "Missile Silo",
@@ -17,7 +25,15 @@ export const stellar_allies = {
                 "Machine Cult",
                 "Star Empire"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "stellar_allies",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "needlelancer": {
             "name": "Needle Lancer",
@@ -26,7 +42,15 @@ export const stellar_allies = {
                 "Machine Cult",
                 "Star Empire"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "stellar_allies",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "pactpod": {
             "name": "Pact Pod",
@@ -35,7 +59,15 @@ export const stellar_allies = {
                 "Blob",
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "stellar_allies",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "pactwarship": {
             "name": "Pact Warship",
@@ -44,7 +76,15 @@ export const stellar_allies = {
                 "Blob",
                 "Trade Federation"
             ],
-            "type": "ship"
+            "type": "ship",
+            "metadata": {
+                "extension": "stellar_allies",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "summitsite": {
             "name": "Summit Site",
@@ -53,7 +93,15 @@ export const stellar_allies = {
                 "Blob",
                 "Trade Federation"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "stellar_allies",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "thecitadel": {
             "name": "The Citadel",
@@ -62,7 +110,15 @@ export const stellar_allies = {
                 "Machine Cult",
                 "Star Empire"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "stellar_allies",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         },
         "tradehive": {
             "name": "Trade Hive",
@@ -71,7 +127,15 @@ export const stellar_allies = {
                 "Blob",
                 "Trade Federation"
             ],
-            "type": "base"
+            "type": "base",
+            "metadata": {
+                "extension": "stellar_allies",
+                "image": {
+                    "width": "x",
+                    "height": "y",
+                    "filename": "x.jpg"
+                }
+            }
         }
     }
 }
