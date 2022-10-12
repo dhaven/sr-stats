@@ -10,10 +10,12 @@ import { ChevronUpIcon } from '@heroicons/react/solid'
 import EventCard from '../../components/eventCard'
 import Tooltip from '../../components/tooltip.js'
 import GameSummaryV2 from '../../components/gameSummaryV2'
+import { useRouter } from 'next/router'
 
 const { MongoClient, ObjectId } = require('mongodb');
 
 export default function Game({winner, extensions, events, players, winCondition, authorityData, otherData, otherAggrData}) {
+    const router = useRouter()
     let [activePlayer, setActivePlayer] = useState(winner)
     let [open, setOpen] = useState(true)
     let updatVisibleDeck = function(player){
@@ -222,6 +224,8 @@ export async function getServerSideProps(context) {
                 drawAggrData[secondPlayer] += data['rounds'][i]['drawCount']
             }
         }
+        console.log(data['winner'])
+        console.log(data['players'])
         return {
             props: {
                 winner: data['winner'], 
