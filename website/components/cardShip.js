@@ -7,7 +7,6 @@ import SRCard from './SRCard.js'
 import { useState } from 'react'
 
 function CardShip({file, card}) {
-    console.log(card)
     let [isOpen, setIsOpen] = useState(false)
     let factionIcon = function(card){
         if(card['faction'][0] == "Blob"){
