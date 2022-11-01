@@ -1,111 +1,60 @@
-import { getDeckSummary, getFinalAuthority, getCompletedMissions } from '../lib/helper.js'
+import Image from 'next/image'
+import { visibility } from './ui/toast.js'
+import { atom, useAtom } from 'jotai'
 
-export default function GameSummary({winner, decksData, lastRound}) {
-    let finalAuthority = getFinalAuthority(lastRound)
-    let completedMissions = getCompletedMissions(lastRound)
-    let classNames = {}
-    let loser = ""
-    for(let key in decksData){
-        if(key == winner){
-            classNames[winner] = []
-        }else{
-            loser = key
-            classNames[loser] = []
-        }
-        let {blob_count, machine_cult_count, star_empire_count, trade_federation_count} = getDeckSummary(decksData[key])
-        let totalFactions = blob_count + machine_cult_count + star_empire_count + trade_federation_count
-        for(let i = 0; i < 4; i++){
-            classNames[key].push({})
-            if(i == 0 && blob_count != 0){
-                let normalizedVal = Math.round((blob_count/totalFactions)*100)
-                classNames[key][i]['background'] = "#46a24d"
-                classNames[key][i]["width"] = normalizedVal
-            }else if(i == 1 && machine_cult_count != 0){
-                let normalizedVal = Math.round((machine_cult_count/totalFactions)*100)
-                classNames[key][i]["background"] = "#ba2028"
-                classNames[key][i]["width"] = normalizedVal
-            }else if(i == 2 && star_empire_count != 0){
-                let normalizedVal = Math.round((star_empire_count/totalFactions)*100)
-                classNames[key][i]["background"] = "#f1c61a"
-                classNames[key][i]["width"] = normalizedVal
-            }else if(i == 3 && trade_federation_count != 0){
-                let normalizedVal = Math.round((trade_federation_count/totalFactions)*100)
-                classNames[key][i]["background"] = "#4850a2"
-                classNames[key][i]["width"] = normalizedVal
-            }
-        }
-    }
-    return (
-        <div className="flex w-full justify-between drop-shadow-scifi5 m-2">
-            <div className="w-1/2 p-2 sm:p-4 bg-gradient-to-r from-white rounded-lg">
-                <p className="p-2 text-xl text-scifi5 font-bold whitespace-nowrap">{winner} won 🥇</p>
-                <p className="p-2 text-scifi5">{completedMissions[winner]} completed mission(s)</p>
-                <div className="relative p-2 w-24 h-20">
-                    <svg className="absolute inset-x-0 drop-shadow-md" fill="#0f8942" stroke="#0f8942" viewBox="0 0 166.88282 104.205" xmlns="http://www.w3.org/2000/svg">
-                        <g transform="translate(-148.13691,-117.23627)">
-                            <g transform="translate(1224.9083,528.21529)" />
-                            <g>
-                                <path
-                                    transform="matrix(0.26458333,0,0,0.26458333,160.14083,138.06084)"
-                                    d="m -45.369141,-78.707031 c 32.720429,39.856441 58.503954,70.2305195 92.419922,107.966797 h 73.953129 v 6.910156 H 51.007812 C 121.00391,128.81055 100.08649,100.36084 121.00391,128.81055 V 214 l 152.02929,101.13867 146.53711,-101.25 v -84.72461 c 59.00402,-80.196532 64.76462,-87.929249 0,0 l 70.25387,-92.994138 c -23.41797,0 -46.83594,0 -70.25391,0 v -6.923828 h 73.70117 c 32.15905,-34.7174165 61.84268,-71.576972 92.09766,-107.9375 -215.81612,-0.0017 -438.68331,-0.01571 -630.738241,-0.01563 z m 464.939451,19.982422 h 123.20508 c -18.65041,23.388818 -38.47176,45.732458 -58.41992,68.0019528 h -64.78516 z m -422.1914038,0.01563 H 121.00391 V 9.2636719 H 55.96875 C 35.496826,-12.581544 16.552601,-35.737847 -2.6210938,-58.708984 Z m 143.6210938,0 H 399.57422 V 203.39258 L 272.81836,290.97852 141,203.28125 V -58.708984 Z M 88.396484,54.152344 H 120.0293 V 97.128906 C 109.08609,82.241914 99.896453,69.770297 88.396484,54.152344 Z m 332.414066,0 h 31.625 c -10.9795,14.911122 -22.6391,30.760425 -31.625,42.976562 z"/>
-                            </g>
-                        </g>
-                    </svg>
-                    <p className="font-bold text-scifi5 text-lg absolute text-center inset-x-2 inset-y-4">{finalAuthority[winner]}</p>
-                </div>
-                <div className="drop-shadow-md flex flex-row h-4 w-full sm:w-4/5">
-                    {
-                        classNames[winner].map((item, index)=>{
-                            return (
-                                <div key={index}>
-                                    <style jsx>{`
-                                        div {
-                                            background: ${item['background']};
-                                            width: ${item['width']}%;
-                                        }
-                                    `}</style>
-                                </div>
-                            )
-
-                        })
-                    }
-                </div>
-            </div>
-            <div className="w-1/2 flex flex-col items-end p-2 sm:p-4 bg-gradient-to-l from-white rounded-lg">
-                <p className="text-xl p-2 text-scifi5 font-bold">{loser}</p>
-                <p className="p-2 text-scifi5 text-right">{completedMissions[loser]} completed mission(s)</p>
-                <div className="relative p-2 w-24 h-20">
-                    <svg className="absolute inset-x-0 drop-shadow-md" fill="#0f8942" stroke="#0f8942" viewBox="0 0 166.88282 104.205" xmlns="http://www.w3.org/2000/svg">
-                        <g transform="translate(-148.13691,-117.23627)">
-                            <g transform="translate(1224.9083,528.21529)" />
-                            <g>
-                                <path
-                                    transform="matrix(0.26458333,0,0,0.26458333,160.14083,138.06084)"
-                                    d="m -45.369141,-78.707031 c 32.720429,39.856441 58.503954,70.2305195 92.419922,107.966797 h 73.953129 v 6.910156 H 51.007812 C 121.00391,128.81055 100.08649,100.36084 121.00391,128.81055 V 214 l 152.02929,101.13867 146.53711,-101.25 v -84.72461 c 59.00402,-80.196532 64.76462,-87.929249 0,0 l 70.25387,-92.994138 c -23.41797,0 -46.83594,0 -70.25391,0 v -6.923828 h 73.70117 c 32.15905,-34.7174165 61.84268,-71.576972 92.09766,-107.9375 -215.81612,-0.0017 -438.68331,-0.01571 -630.738241,-0.01563 z m 464.939451,19.982422 h 123.20508 c -18.65041,23.388818 -38.47176,45.732458 -58.41992,68.0019528 h -64.78516 z m -422.1914038,0.01563 H 121.00391 V 9.2636719 H 55.96875 C 35.496826,-12.581544 16.552601,-35.737847 -2.6210938,-58.708984 Z m 143.6210938,0 H 399.57422 V 203.39258 L 272.81836,290.97852 141,203.28125 V -58.708984 Z M 88.396484,54.152344 H 120.0293 V 97.128906 C 109.08609,82.241914 99.896453,69.770297 88.396484,54.152344 Z m 332.414066,0 h 31.625 c -10.9795,14.911122 -22.6391,30.760425 -31.625,42.976562 z"/>
-                            </g>
-                        </g>
-                    </svg>
-                    <p className="text-lg text-scifi5 font-bold absolute text-center inset-x-2 inset-y-4">{finalAuthority[loser]}</p>
-                </div>
-                <div className="drop-shadow-md flex flex-row h-4 w-full sm:w-4/5">
-                    {
-                        classNames[loser].map((item, index)=>{
-                            return (
-                                 <div key={index}>
-                                     <style jsx>{`
-                                        div {
-                                            background: ${item['background']};
-                                            width: ${item['width']}%;
-                                        }
-                                    `}</style>
-                                </div>
-                            )
-                        })
-                    }
-                </div>
-            </div>
-            <div>
+function GameSummary({winCondition, extensions}){
+    let width = 0
+    let height = 0
+    const [visi, setVisi] = useAtom(visibility)
+    return ( 
+        <div className="flex flex-col sm:flex-row sm:items-center gap-4 2xl:gap-8 m-4 p-4 bg-scifi1 rounded-md border-2 border-scifi4 drop-shadow-scifi5 outline outline-offset-2 outline-double outline-scifi1">
+            <button onClick={(e) => {navigator.clipboard.writeText(window.location.href).then(() => setVisi(true))}} className="inline-flex w-min font-medium bg-white text-scifi5 text-sm text-bold p-1 lg:px-4 lg:py-2 border items-center drop-shadow-md border-scifi4 ring-scifi-2 hover:ring rounded-lg active:bg-white/40" type="button">
+                <svg class="w-6 h-6 mr-2 -ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path>
+                </svg>
+                 Share
+            </button>
+            <p className="text-scifi5 text-lg md:text-3xl font-medium">{winCondition}</p>
+            <div className="flex flex-wrap items-center gap-2">
+                {
+                    extensions.map((value, index)=>{
+                        if(value == "core_set" || value == "promo1" || value == "promo2"){
+                            width = 107
+                            height = 107
+                        }else if(value == "colony_wars" || value == "command_decks" || value == "tech"){
+                            width = 110
+                            height = 110
+                        }else if(value == "frontiers"){
+                            width = 118
+                            height = 107
+                        }else if(value == "bases_battleships" || value == "fleets_fortresses" || value == "crisis_heroes" || value == "events"){
+                            width = 180
+                            height = 84
+                        }else if(value == "frontiers_promos" || value == "frontiers_events"){
+                            width = 98
+                            height = 107
+                        }else if(value == "assault" || value == "command" || value == "united_heroes" || value == "cosmic" || value == "gambits" || value == "missions"){
+                            width = 158
+                            height = 78
+                        }else if(value == "stellar_allies"){
+                            width = 114
+                            height = 107
+                        }
+                        return (
+                            <div key={index} className="w-10 group relative">
+                                <Image
+                                    src={"/images/extensions/" + value + ".png"} // Route of the image file
+                                    height={height} // Desired size with correct aspect ratio
+                                    width={width} // Desired size with correct aspect ratio
+                                    alt="Step 1"/>
+                                <span className="overflow-visible border-2 border-scifi4 my-1 w-max p-2 absolute bottom-full -translate-x-[calc(50%_+_1.25rem)] rounded text-center font-medium invisible group-hover:visible bg-slate-200/80 z-40 after:content-[' '] after:absolute after:left-1/2 after:top-full after:-ml-2 after:border-8 after:border-t-black after:border-l-transparent after:border-r-transparent after:border-b-transparent">{value}</span>
+                            </div>
+                        )
+                    })
+                }
             </div>
         </div>
     )
 }
+
+export default GameSummary

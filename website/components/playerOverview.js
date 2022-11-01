@@ -1,9 +1,9 @@
 import FinalAuthority from './finalAuthority'
 import FactionPie from './factionPie'
 import MissionCard from './missionCard'
-import Tooltip from './tooltip.js'
+import Tooltip from './ui/tooltip.js'
 
-function PlayerOverviewV2({name, deckData, authority, missions}) {
+function PlayerOverview({name, deckData, authority, missions}) {
     return (
         <div className="flex items-stretch justify-center 2xl:gap-4">
             <div className="flex flex-col">
@@ -33,4 +33,4 @@ function PlayerOverviewV2({name, deckData, authority, missions}) {
     )
   }
   
-  export default PlayerOverviewV2
+  export default PlayerOverview

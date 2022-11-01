@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic'
 const NewFeatureModal = dynamic(() => import('./newFeatureModal'),{ ssr: false })
 import { useState } from 'react'
 import { useRouter } from 'next/router'
-import Toast from './toast.js'
+import Toast from './ui/toast.js'
 
 export const siteTitle = 'Star Realms stats'
 export const appVersion = '0.5.0'

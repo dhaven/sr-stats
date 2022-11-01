@@ -6,11 +6,9 @@ import { atom, useAtom } from 'jotai'
 import { useState } from "react";
 
 const errorMessageAtom = atom("")
-const isLoadingAtom = atom(false)
 
 export default function AddGameModal({isOpen, setIsOpen}) {
   const [errorMessage, setErrorMessage] = useAtom(errorMessageAtom)
-  //const [isLoading, setIsLoading] = useAtom(isLoadingAtom)
   const [isLoading, setIsLoading] = useState(false);
   function closeModal() {
     setIsOpen(false)

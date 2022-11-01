@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import InputLog from './form.js'
+import SRLogInput from './SRLogInput.js'
 
 export default function LandingPage(){
     return (
@@ -59,7 +59,7 @@ export default function LandingPage(){
                 </p>
             </div>
             <div className="bg-white flex rounded-lg flex-col w-full h-full grow gap-1 drop-shadow-scifi5">
-                <InputLog></InputLog>
+                <SRLogInput></SRLogInput>
             </div>
         </div>
         </div>
