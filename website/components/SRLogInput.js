@@ -5,11 +5,9 @@ import { useRouter } from 'next/router'
 import { useState } from "react";
 
 const errorMessageAtom = atom("")
-//const isLoadingAtom = atom(false)
 
-export default function InputLog(){
+export default function SRLogInput(){
   const [errorMessage, setErrorMessage] = useAtom(errorMessageAtom)
-  //const [isLoading, setIsLoading] = useAtom(isLoadingAtom)
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter()
     return (

@@ -1,5 +1,5 @@
-import PlayerOverviewV2 from '../../components/playerOverviewV2'
-import DeckOverviewV2 from '../../components/deckOverviewV2'
+import PlayerOverview from '../../components/playerOverview'
+import DeckOverview from '../../components/deckOverview'
 import Head from 'next/head'
 import Layout, { siteTitle } from '../../components/layout'
 import { Tab } from '@headlessui/react'
@@ -8,8 +8,8 @@ import AuthorityChart from '../../components/authorityChart'
 import OtherCharts from '../../components/otherCharts'
 import { ChevronUpIcon } from '@heroicons/react/solid'
 import EventCard from '../../components/eventCard'
-import Tooltip from '../../components/tooltip.js'
-import GameSummaryV2 from '../../components/gameSummaryV2'
+import Tooltip from '../../components/ui/tooltip.js'
+import GameSummary from '../../components/gameSummary'
 import { useRouter } from 'next/router'
 
 const { MongoClient, ObjectId } = require('mongodb');
@@ -33,7 +33,7 @@ export default function Game({winner, extensions, events, players, winCondition,
                 <title>Game review | {siteTitle}</title>
             </Head>
             <div className="flex flex-col gap-2 w-screen sm:w-full lg:w-5/6 2xl:w-2/3">
-                <GameSummaryV2 winCondition={winCondition} extensions={extensions}></GameSummaryV2>
+                <GameSummary winCondition={winCondition} extensions={extensions}></GameSummary>
                 <Tab.Group>
                     <div className="flex flex-row">
                     <Tab.List className="flex space-x-2 px-4">
@@ -71,7 +71,7 @@ export default function Game({winner, extensions, events, players, winCondition,
                                         return (
                                             <div key={i} className={`${activePlayer == oneKey && open ? 'bg-scifi4 rounded-t-xl': ''} flex flex-col w-full`}>
                                                 <div  className="md:m-2 lg:m-4 flex flex-col justify-between p-2 sm:p-4 bg-scifi1 rounded-md border-2 border-scifi4 drop-shadow-scifi5 gap-4">
-                                                    <PlayerOverviewV2 name={oneKey} deckData={players[oneKey]['deck']} authority={players[oneKey]['finalAuthority']} missions={players[oneKey]['completedMissions']}></PlayerOverviewV2>
+                                                    <PlayerOverview name={oneKey} deckData={players[oneKey]['deck']} authority={players[oneKey]['finalAuthority']} missions={players[oneKey]['completedMissions']}></PlayerOverview>
                                                     <div className="flex justify-center px-2">
                                                         <button onClick={() => updatVisibleDeck(oneKey)} 
                                                             className={ activePlayer == oneKey && open ?
@@ -90,7 +90,7 @@ export default function Game({winner, extensions, events, players, winCondition,
                                                 {
                                                     activePlayer == oneKey && open && 
                                                     <div className="md:hidden bg-scifi4 rounded-b-xl">
-                                                        <DeckOverviewV2 deckData={players[activePlayer]['deck']} ></DeckOverviewV2>
+                                                        <DeckOverview deckData={players[activePlayer]['deck']} ></DeckOverview>
                                                     </div>
                                                 }
                                             </div>
@@ -102,7 +102,7 @@ export default function Game({winner, extensions, events, players, winCondition,
                             {
                                 open && 
                                 <div className="hidden md:flex bg-scifi4 sm:py-4 lg:py-6 sm:px-2 lg:px-4 sm:mx-4 lg:p-2 rounded-b-xl">
-                                    <DeckOverviewV2 deckData={players[activePlayer]['deck']} ></DeckOverviewV2>
+                                    <DeckOverview deckData={players[activePlayer]['deck']} ></DeckOverview>
                                 </div>
                             }
                         </Tab.Panel>
@@ -150,7 +150,6 @@ export async function getServerSideProps(context) {
             let playersNames = Object.keys(data['players'])
             playersNames.splice(playersNames.indexOf(data['winner']),1)
             let loserName = playersNames[0]
-            console.log(data['players'][loserName]['finalAuthority'] )
             if(data['winCondition'] == "resignation"){
                 winCondition = data['winner'] + " won by resignation"
             }else{
@@ -224,8 +223,6 @@ export async function getServerSideProps(context) {
                 drawAggrData[secondPlayer] += data['rounds'][i]['drawCount']
             }
         }
-        console.log(data['winner'])
-        console.log(data['players'])
         return {
             props: {
                 winner: data['winner'], 

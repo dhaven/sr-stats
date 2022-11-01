@@ -71,9 +71,7 @@ function enhance(rounds){
         for(let j = 0; j < nextRound['purchasedCards'].length; j++){
             let nextCard = nextRound['purchasedCards'][j].replace('tothetopofthedeck', '');
             let nextFaction = ""
-            //console.log(players[activePlayer])
             players[activePlayer]['deck']['count'] += 1
-            console.log(nextCard)
             players[activePlayer]['deck']['cost'] += card_list[nextCard]['cost']
             if(!(extensions.includes(card_list[nextCard]['metadata']['extension']))){
                 extensions.push(card_list[nextCard]['metadata']['extension'])

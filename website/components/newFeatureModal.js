@@ -12,7 +12,7 @@ export default function NewFeatureModal({isOpen, setIsOpen}) {
             return false
         }else{
             localStorage.setItem('appVersion',appVersion)
-            return true
+            return false //for now don't display the pop-up
         }
     }
   return (

@@ -1,7 +1,7 @@
 import CardShip from './cardShip'
 import CardBase from './cardBase'
 
-function DeckDetailV2({cards}){
+function DeckDetail({cards}){
     return ( 
         <div className="grid grid-cols-3 sm:grid-cols-5 p-4 justify-items-center">
             {
@@ -19,4 +19,4 @@ function DeckDetailV2({cards}){
     )
 }
 
-export default DeckDetailV2
+export default DeckDetail

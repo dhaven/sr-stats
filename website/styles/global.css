@@ -12,12 +12,3 @@ body {
 * {
   box-sizing: border-box;
 }
-
-#test {
-  border-image:
-      url("/images/frame.svg")  /* source */
-      30% /                    /* slice */
-      2.6rem /    /* width */
-      5       /* outset */
-      round;                  /* repeat */
-}
