@@ -27,7 +27,7 @@ export default function Layout({ children }) {
         />
         <meta name="og:title" content={siteTitle} />
       </Head>
-      <header className="bg-scifi1 flex flex-row drop-shadow-scifi5 justify-center p-4 gap-1">
+      <header className="bg-white flex flex-row drop-shadow-scifi5 justify-center p-4 gap-1">
         <p onClick={()=>{router.push('/')}} className="text-2xl text-scifi5 font-semibold tracking-widest hover:ring ring-scifi-2 rounded-md">
           <span className="bg-scifi5 text-white mx-2 text-2xl px-1">
             SR
@@ -41,14 +41,9 @@ export default function Layout({ children }) {
           </button>
         }
       </header>
-      <main className="bg-emoji-pattern bg-repeat grow flex flex-col justify-center items-center gap-3 md:py-10 sm:py-4">
+      <main className="bg-emoji-pattern bg-repeat grow flex flex-col items-center gap-3 md:py-10 sm:py-4">
         {children}
       </main>
-      <div className="md:hidden fixed bottom-0 right-0 z-40">
-        <button type="button" className="opacity-90 m-3 bg-scifi3 border border-scifi4 ring-scifi-2 drop-shadow-md hover:ring font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center" onClick={openAddGameModal}>
-            <svg className="w-8 h-8" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
-        </button>
-      </div>
       <NewFeatureModal isOpen={isNewFeatureOpen} setIsOpen={setIsNewFeatureOpen}></NewFeatureModal>
       <AddGameModal isOpen={isAddGameOpen} setIsOpen={setAddGameIsOpen}></AddGameModal>
       <Toast />

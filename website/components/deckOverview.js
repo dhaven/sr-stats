@@ -7,7 +7,7 @@ import Coin from '../public/svg/coin.svg'
 
 function DeckOverview({deckData}) {
     return (
-        <div className="flex flex-col bg-scifi1 rounded-md w-full">
+        <div className="flex flex-col bg-scifi1 sm:rounded-md w-full">
             <div className="flex flex-row justify-around gap-2">
                     <div className="group inline-block relative flex flex-col sm:flex-row m-4 gap-2 sm:gap-4 items-center">
                         <Coin className="w-8 h-8 sm:w-10 sm:h-10"/>

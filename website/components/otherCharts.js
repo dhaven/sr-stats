@@ -116,9 +116,9 @@ function OtherCharts({winner, otherData, otherAggrData}){
         },
     }
     return (
-        <div className="flex flex-col sm:flex-row w-full bg-scifi4 rounded-md border-2 border-scifi4 drop-shadow-scifi5 p-4">
+        <div className="flex flex-col sm:flex-row w-full bg-scifi4 md:rounded-md border-2 border-scifi4 drop-shadow-scifi5 p-2 sm:p-4">
             <Tab.Group defaultIndex={0}>
-                <Tab.List className="flex flex-row sm:flex-col flex-wrap p-2 sm:p-4 gap-2 sm:gap-4">
+                <Tab.List className="flex flex-row sm:flex-col flex-wrap sm:p-2 sm:p-4 gap-2 sm:gap-4">
                     <Tab as={Fragment}>
                         {({ selected }) =>
                             <button 
@@ -169,7 +169,7 @@ function OtherCharts({winner, otherData, otherAggrData}){
                     </Tab>
                 </Tab.List>
             </Tab.Group>
-            <div className="flex flex-col w-full p-4 gap-4">
+            <div className="flex flex-col w-full py-2 md:p-4 gap-4">
                 <div className="h-32 sm:h-60 bg-scifi1 rounded-md p-2 drop-shadow-scifi5">
                     <Bar
                         options={optionsAggrChart}
