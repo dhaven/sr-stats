@@ -5,10 +5,10 @@ import Tooltip from './ui/tooltip.js'
 
 function PlayerOverview({name, deckData, authority, missions}) {
     return (
-        <div className="flex items-stretch justify-center 2xl:gap-4">
+        <div className="flex items-stretch justify-between 2xl:gap-4">
             <div className="flex flex-col">
                 <div className="text-center">
-                    <p className="p-2 text-3xl text-scifi5 font-bold whitespace-nowrap">{name}</p>
+                    <p className="sm:p-2 text-3xl text-scifi5 font-bold whitespace-nowrap">{name}</p>
                 </div>
                 <div className="flex justify-center">
                     <FinalAuthority authority={authority}></FinalAuthority>

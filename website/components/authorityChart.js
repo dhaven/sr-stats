@@ -66,7 +66,7 @@ function AuthorityChart({winner, authorityData}){
         },
     }
     return (
-        <div className="bg-scifi1 rounded-lg drop-shadow-scifi5 w-full p-4">
+        <div className="bg-scifi1 md:rounded-lg md:drop-shadow-scifi5 w-full p-2 md:p-4">
             <Line
                 options={options}
                 data={data}
