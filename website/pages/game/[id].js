@@ -73,7 +73,7 @@ export default function Game({ winner, extensions, events, players, winCondition
                                     </div>
                                     {
                                         <div className="sm:hidden bg-scifi4 sm:rounded-b-xl">
-                                            <DeckOverview deckData={players[activePlayer]['deck']} ></DeckOverview>
+                                            <DeckOverview deckData={players[oneKey]['deck']} ></DeckOverview>
                                         </div>
                                     }
                                 </div>

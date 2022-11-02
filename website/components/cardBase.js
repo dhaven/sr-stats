@@ -21,15 +21,17 @@ function CardBase({file, card}) {
     }
     let filename = "/images/"+ card['metadata']['extension'] + "/" + file + ".jpg"
     return (
-        <div onClick={() => setIsOpen(true)} className="relative flex flex-col w-24 h-16 sm:w-32 sm:h-24 m-2 border-2 border-scifi4 border-double rounded-sm hover:ring ring-scifi2">
-            <p className="z-10 bg-white/70 text-md text-center rounded-t-sm leading-snug">{card['name']}</p>
-            <div className="absolute inset-0 flex items-center justify-center">
-                <Base/>
-            </div>
-            <div className="absolute inset-0 flex items-end justify-center">
-                {
-                    factionIcon(card)
-                }
+        <div>
+            <div onClick={() => setIsOpen(true)} className="relative flex flex-col w-24 h-16 sm:h-24 sm:w-32 m-2 border-2 border-scifi4 border-double rounded-sm hover:ring ring-scifi2">
+                <p className="z-10 bg-white/70 text-md text-center rounded-t-sm leading-snug">{card['name']}</p>
+                <div className="absolute inset-0 flex items-center justify-center">
+                    <Base/>
+                </div>
+                <div className="absolute inset-0 flex items-end justify-center">
+                    {
+                        factionIcon(card)
+                    }
+                </div>
             </div>
             <SRCard type="base" filename={filename} isOpen={isOpen} setIsOpen={setIsOpen}></SRCard>
         </div>
