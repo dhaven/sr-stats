@@ -117,11 +117,13 @@ export default function Game({ winner, extensions, events, players, winCondition
                     </div>
                 }
                 <div className="z-20 sm:hidden sticky bottom-0 left-0 right-0">
-                    <div className="flex justify-end">
-                        <button type="button" onClick={openAddGameModal} className="m-3 bg-scifi3 border border-scifi4 ring-scifi-2 drop-shadow-md hover:ring font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center">
-                            <svg className="w-8 h-8" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
-                        </button>
-                    </div>
+                    { !isAddGameOpen &&
+                        <div className="flex justify-end">
+                            <button type="button" onClick={openAddGameModal} className="m-3 bg-scifi3 border border-scifi4 ring-scifi-2 drop-shadow-md hover:ring font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center">
+                                <svg className="w-8 h-8" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+                            </button>
+                        </div>
+                    }
                     <div className="flex justify-around bg-white">
                         <button onClick={() => setStatsTab("player")} className={
                             statsTab == "player" ? "flex justify-center grow bg-scifi3 text-white text-md border-2 border-scifi4 font-medium py-2 px-6 m-1 sm:rounded-lg"
