@@ -2,10 +2,19 @@ import Image from 'next/image'
 import { visibility } from './ui/toast.js'
 import { atom, useAtom } from 'jotai'
 
-function GameSummary({winCondition, extensions}){
+function GameSummary({winner, loser, winCondition, extensions}){
     let width = 0
     let height = 0
     const [visi, setVisi] = useAtom(visibility)
+    let getSummaryMessage = function(winCondition, winner, loser){
+        if(winCondition == "completed missions"){
+            return winner + "won by completing 3 missions"
+        }else if(winCondition == "resignation"){
+            return winner + " won by resignation"
+        }else if(winCondition == "defeat"){
+            return winner + " won by defeating " + loser
+        }
+    }
     return ( 
         <div className="flex flex-col sm:flex-row sm:items-center gap-4 2xl:gap-8 my-2 p-2 sm:m-4 sm:p-4 bg-scifi1 sm:rounded-md border-2 border-scifi4 drop-shadow-scifi5 outline outline-offset-2 outline-double outline-scifi1">
             <button onClick={(e) => {navigator.clipboard.writeText(window.location.href).then(() => setVisi(true))}} className="hidden sm:inline-flex w-min font-medium bg-white text-scifi5 text-sm text-bold p-1 lg:px-4 lg:py-2 border items-center drop-shadow-md border-scifi4 ring-scifi-2 hover:ring rounded-lg active:bg-white/40" type="button">
@@ -14,7 +23,7 @@ function GameSummary({winCondition, extensions}){
                 </svg>
                  Share
             </button>
-            <p className="text-scifi5 text-xl md:text-3xl font-medium">{winCondition}</p>
+            <p className="text-scifi5 text-xl md:text-3xl font-medium">{getSummaryMessage(winCondition, winner, loser)}</p>
             <div className="sm:hidden flex justify-between">
                 <div className="flex items-center gap-1 sm:gap-2">
                     {
