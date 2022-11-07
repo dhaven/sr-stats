@@ -14,7 +14,7 @@ import { useRouter } from 'next/router'
 
 const { MongoClient, ObjectId } = require('mongodb');
 
-export default function Game({ winner, extensions, events, players, winCondition, authorityData, otherData, otherAggrData }) {
+export default function Game({ winner, loser, extensions, events, players, winCondition, authorityData, otherData, otherAggrData }) {
     const router = useRouter()
     let [activePlayer, setActivePlayer] = useState(winner)
     let [statsTab, setStatsTab] = useState("player") //can be either player or game
@@ -22,15 +22,16 @@ export default function Game({ winner, extensions, events, players, winCondition
     function openAddGameModal() {
         setAddGameIsOpen(true)
     }
-    let [open, setOpen] = useState(true)
-    let updatVisibleDeck = function (player) {
-        if (player == activePlayer) {
-            setOpen(!open)
+    let displayPlayerCard = function (isActive, player) {
+        if (player == winner && isActive) {
+            return 'sm:rounded-lg md:scale-110 md:border-4 md:border-winner'
+        } else if (player == winner && !isActive) {
+            return 'sm:rounded-lg md:border-4 md:border-winner'
+        } else if (player != winner && isActive) {
+            return 'sm:rounded-lg md:scale-110 md:border-4 md:border-loser'
+        } else if (player != winner && !isActive) {
+            return 'sm:rounded-lg md:border-4 md:border-loser'
         }
-        if (!open) {
-            setOpen(true)
-        }
-        setActivePlayer(player)
     }
     return (
         <Layout>
@@ -38,56 +39,44 @@ export default function Game({ winner, extensions, events, players, winCondition
                 <title>Game review | {siteTitle}</title>
             </Head>
             <div className="flex flex-col gap-2 w-screen sm:w-full lg:w-5/6 2xl:w-2/3">
-                <GameSummary winCondition={winCondition} extensions={extensions}></GameSummary>
-                <div className="hidden sm:flex flex-row">
-                    <button className={
+                <GameSummary winner={winner} loser={loser} winCondition={winCondition} extensions={extensions}></GameSummary>
+                <div className="hidden sm:flex flex-row ml-2 mb-2">
+                    <button onClick={() => setStatsTab("player")} className={
                         statsTab == "player" ?
-                            "bg-scifi3 text-white text-md border-2 border-scifi4 font-medium py-2 px-6 m-1 sm:rounded-lg" :
-                            "bg-white text-scifi5 hover:ring ring-scifi2 text-md font-medium px-6 py-2 m-1 border-2 border-scifi4 sm:rounded-lg"}
+                            "bg-scifi3 text-white text-md md:border-2 md:border-scifi4 font-medium py-2 px-6 m-1 sm:rounded-lg" :
+                            "bg-white text-scifi5 hover:ring ring-scifi2 text-md font-medium px-6 py-2 m-1 md:border-2 md:border-scifi4 sm:rounded-lg"}
                     >
                         Player stats
                     </button>
-                    <button className={
+                    <button onClick={() => setStatsTab("game")} className={
                         statsTab == "game" ?
-                            "bg-scifi3 text-white text-md border-2 border-scifi4 font-medium px-6 py-2 m-1 sm:rounded-lg" :
-                            "bg-white text-scifi5 hover:ring ring-scifi2 text-md font-medium px-6 py-2 m-1 border-2 border-scifi4 sm:rounded-lg"}
+                            "bg-scifi3 text-white text-md md:border-2 md:border-scifi4 font-medium px-6 py-2 m-1 sm:rounded-lg" :
+                            "bg-white text-scifi5 hover:ring ring-scifi2 text-md font-medium px-6 py-2 m-1 md:border-2 md:border-scifi4 sm:rounded-lg"}
                     >
                         Game stats
                     </button>
                 </div>
-                <div className="flex flex-row flex-wrap md:flex-nowrap sm:px-4 gap-4">
+                <div className="flex flex-row flex-wrap md:flex-nowrap sm:px-4 gap-2 md:gap-8">
                     {statsTab == "player" &&
                         Object.keys(players).map((oneKey, i) => {
                             return (
-                                <div key={i} className={`${activePlayer == oneKey && open ? 'bg-scifi4 sm:rounded-t-xl' : ''} flex flex-col w-full`}>
-                                    <div className="md:m-2 lg:m-4 flex flex-col justify-between p-2 sm:p-4 bg-scifi1 sm:rounded-md sm:drop-shadow-scifi5 gap-2 sm:gap-4">
+                                <div key={i}
+                                    onClick={() => setActivePlayer(oneKey)}
+                                    className={`${displayPlayerCard(oneKey == activePlayer, oneKey)} flex flex-col w-full`}>
+                                    <div className="md:p-2 flex flex-col justify-between p-2 sm:p-4 bg-scifi1 sm:rounded-md gap-2 sm:gap-4">
                                         <PlayerOverview name={oneKey} deckData={players[oneKey]['deck']} authority={players[oneKey]['finalAuthority']} missions={players[oneKey]['completedMissions']}></PlayerOverview>
-                                        <div className="hidden sm:flex justify-center px-2">
-                                            <button onClick={() => updatVisibleDeck(oneKey)}
-                                                className={activePlayer == oneKey && open ?
-                                                    "rounded-full bg-scifi3 ring-scifi2 text-white hover:ring border-2 border-scifi4 p-2 text-left text-sm font-medium" :
-                                                    "rounded-full bg-scifi1 ring-scifi2 hover:ring border-2 border-scifi4 p-2 text-left text-sm font-medium"
-                                                }
-                                            >
-                                                <ChevronUpIcon className={`${activePlayer == oneKey && open ? 'rotate-180 transform' : ''
-                                                    } h-5 w-5`}
-                                                />
-                                            </button>
-                                        </div>
                                     </div>
-                                    {
-                                        <div className="sm:hidden bg-scifi4 sm:rounded-b-xl">
-                                            <DeckOverview deckData={players[oneKey]['deck']} ></DeckOverview>
-                                        </div>
-                                    }
+                                    <div className="sm:hidden sm:rounded-b-xl">
+                                        <DeckOverview deckData={players[oneKey]['deck']} ></DeckOverview>
+                                    </div>
                                 </div>
                             )
                         })
                     }
                 </div>
-                {statsTab == "player" && open &&
-                    <div className="hidden sm:flex bg-scifi4 sm:py-4 lg:py-6 sm:px-2 lg:px-4 sm:mx-4 lg:p-2 rounded-b-xl">
-                        <DeckOverview deckData={players[activePlayer]['deck']} ></DeckOverview>
+                {statsTab == "player" &&
+                    <div className="hidden sm:flex sm:py-4 lg:py-6 sm:px-2 lg:px-4 sm:mx-4 lg:p-2 rounded-b-xl">
+                        <DeckOverview isWinner={activePlayer == winner} deckData={players[activePlayer]['deck']} ></DeckOverview>
                     </div>
                 }
                 {
@@ -117,7 +106,7 @@ export default function Game({ winner, extensions, events, players, winCondition
                     </div>
                 }
                 <div className="z-20 sm:hidden sticky bottom-0 left-0 right-0">
-                    { !isAddGameOpen &&
+                    {!isAddGameOpen &&
                         <div className="flex justify-end">
                             <button type="button" onClick={openAddGameModal} className="m-3 bg-scifi3 border border-scifi4 ring-scifi-2 drop-shadow-md hover:ring font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center">
                                 <svg className="w-8 h-8" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
@@ -154,16 +143,16 @@ export async function getServerSideProps(context) {
     if (await cursor.hasNext()) {
         let { data } = await cursor.next()
         let winCondition = ""
+        let playersNames = Object.keys(data['players'])
+        playersNames.splice(playersNames.indexOf(data['winner']), 1)
+        let loserName = playersNames[0] 
         if (data['players'][data['winner']]['completedMissions'].length == 3) {
-            winCondition = data['winner'] + "won by completing 3 missions"
+            winCondition = "completed missions" //data['winner'] + "won by completing 3 missions"
         } else {
-            let playersNames = Object.keys(data['players'])
-            playersNames.splice(playersNames.indexOf(data['winner']), 1)
-            let loserName = playersNames[0]
             if (data['winCondition'] == "resignation") {
-                winCondition = data['winner'] + " won by resignation"
+                winCondition = "resignation" //data['winner'] + " won by resignation"
             } else {
-                winCondition = data['winner'] + " won by defeating " + loserName
+                winCondition = "defeat" //data['winner'] + " won by defeating " + loserName
             }
         }
         let authorityData = {}
@@ -236,6 +225,7 @@ export async function getServerSideProps(context) {
         return {
             props: {
                 winner: data['winner'],
+                loser: loserName,
                 extensions: data['extensions'],
                 events: data['events'],
                 players: data['players'],

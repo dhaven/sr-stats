@@ -23,7 +23,7 @@ export default function AddGameModal({isOpen, setIsOpen}) {
           onClose={closeModal}
         >
           <Dialog.Overlay className="fixed inset-0 bg-black opacity-30" />
-          <div className="min-h-screen md:px-4 text-center">
+          <div className="md:px-4 text-center">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -38,7 +38,7 @@ export default function AddGameModal({isOpen, setIsOpen}) {
 
             {/* This element is to trick the browser into centering the modal contents. */}
             <span
-              className="inline-block h-screen align-middle"
+              className="inline-block align-middle"
               aria-hidden="true"
             >
               &#8203;
