@@ -6,7 +6,7 @@ import AddGameModal from '../../components/addGameModal.js'
 import { Fragment, useState } from 'react'
 import AuthorityChart from '../../components/authorityChart'
 import OtherCharts from '../../components/otherCharts'
-import { ChevronUpIcon } from '@heroicons/react/solid'
+import { ArrowDownIcon } from '@heroicons/react/solid'
 import EventCard from '../../components/eventCard'
 import Tooltip from '../../components/ui/tooltip.js'
 import GameSummary from '../../components/gameSummary'
@@ -65,6 +65,9 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                                     className={`${displayPlayerCard(oneKey == activePlayer, oneKey)} flex flex-col w-full`}>
                                     <div className="md:p-2 flex flex-col justify-between p-2 sm:p-4 bg-scifi1 sm:rounded-md gap-2 sm:gap-4">
                                         <PlayerOverview name={oneKey} deckData={players[oneKey]['deck']} authority={players[oneKey]['finalAuthority']} missions={players[oneKey]['completedMissions']}></PlayerOverview>
+                                        <div className="hidden sm:flex justify-center px-2">
+                                            <ArrowDownIcon className='h-5 w-5'/>
+                                        </div>
                                     </div>
                                     <div className="sm:hidden sm:rounded-b-xl">
                                         <DeckOverview deckData={players[oneKey]['deck']} ></DeckOverview>
