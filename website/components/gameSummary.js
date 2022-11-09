@@ -16,17 +16,12 @@ function GameSummary({winner, loser, winCondition, extensions}){
         }
     }
     let shareGame = async function(){
-        if(navigator.share){
+        if(true){
             navigator.share({
                 url: window.location.href,
                 title: "Share game"
             }).then(() =>{
                 return true
-            })
-        }else{
-            navigator.clipboard.writeText(window.location.href).then(() => {
-                setVisi(true)
-                return false
             })
         }
 
