@@ -16,8 +16,8 @@ function GameSummary({winner, loser, winCondition, extensions}){
         }
     }
     let shareGame = async function(){
-        if(navigator.canShare({'url': window.location.href})){
-            navigator.share({'url': window.location.href}).then(() =>{
+        if(navigator.canShare({url: window.location.href})){
+            navigator.share({url: window.location.href}).then(() =>{
                 return true
             })
         }else{
