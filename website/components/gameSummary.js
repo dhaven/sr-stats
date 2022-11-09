@@ -16,10 +16,7 @@ function GameSummary({winner, loser, winCondition, extensions}){
         }
     }
     let shareGame = async function(){
-        if(navigator.canShare({
-            url: window.location.href,
-            title: "Share game"
-        })){
+        if(navigator.share){
             navigator.share({
                 url: window.location.href,
                 title: "Share game"
