@@ -16,6 +16,7 @@ import { command_decks } from '../card_data/command_decks.js'
 import { missions } from '../card_data/missions.js'
 import { events } from '../card_data/events.js'
 import { frontiers_events } from '../card_data/frontiers_events.js'
+import { requisition } from '../card_data/requisition.js'
 
 var card_list = Object.assign(
     core_set['cards'], 
@@ -35,7 +36,8 @@ var card_list = Object.assign(
     command_decks['cards'],
     missions['cards'],
     events['cards'],
-    frontiers_events['cards']
+    frontiers_events['cards'],
+    requisition['cards']
 )
 
 // enhance battle object with deck data and extensions in use
