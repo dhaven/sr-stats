@@ -86,11 +86,11 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                     <div className="flex flex-col gap-4 md:mx-4">
                         {
                             events.length != 0 &&
-                            <div className="flex flex-row gap-2 md:p-2">
+                            <div className="flex flex-row overflow-auto gap-2 md:p-2">
                                 {
                                     events.map((value, index) => {
                                         return (
-                                            <div key={index} className="group relative">
+                                            <div key={index}>
                                                 <EventCard event={value}></EventCard>
                                             </div>
                                         )

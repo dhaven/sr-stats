@@ -75,7 +75,7 @@ function GameSummary({winner, loser, winCondition, extensions}){
                                     <Popup 
                                         content={value}
                                         className="bg-white p-2 rounded-md m-2 border-solid border-2 border-scifi4"
-                                        position='top center'
+                                        positionFixed
                                         trigger={
                                             <Image
                                                 src={"/images/extensions/" + value + ".png"} // Route of the image file
