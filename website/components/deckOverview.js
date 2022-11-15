@@ -1,7 +1,7 @@
 import 'chart.js/auto';
 import DeckDetail from './deckDetail'
 import Rocket from '../public/svg/rocket.svg'
-import Base from '../public/svg/base_station.svg'
+import Base from '../public/svg/base_new.svg'
 import CardStack from '../public/svg/card_stack.svg'
 import Coin from '../public/svg/coin.svg'
 
@@ -17,7 +17,7 @@ function DeckOverview({isWinner, deckData}) {
                         <div className="flex flex-row gap-1 items-center">
                                 <Rocket className="w-8 h-8 sm:w-10 sm:h-10"/>
                             /
-                                <Base className="w-8 h-8 sm:w-10 sm:h-10"/>
+                                <Base className="w-14 h-14 sm:w-16 sm:h-16"/>
                         </div>
                         <div className="text-lg sm:text-xl">{deckData['ships']} / {deckData['bases']}</div>
                     </div>

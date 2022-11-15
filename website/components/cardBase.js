@@ -1,4 +1,4 @@
-import Base from '../public/svg/base_station.svg'
+import Base from '../public/svg/base_new.svg'
 import StarEmpire from '../public/svg/star_empire.svg'
 import Blob from '../public/svg/blob.svg'
 import TradeFederation from '../public/svg/trade_federation.svg'
