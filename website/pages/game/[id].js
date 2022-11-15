@@ -8,7 +8,6 @@ import AuthorityChart from '../../components/authorityChart'
 import OtherCharts from '../../components/otherCharts'
 import { ArrowDownIcon } from '@heroicons/react/solid'
 import EventCard from '../../components/eventCard'
-import Tooltip from '../../components/ui/tooltip.js'
 import GameSummary from '../../components/gameSummary'
 import { useRouter } from 'next/router'
 
@@ -62,8 +61,8 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                             return (
                                 <div key={i}
                                     onClick={() => setActivePlayer(oneKey)}
-                                    className={`${displayPlayerCard(oneKey == activePlayer, oneKey)} flex flex-col w-full`}>
-                                    <div className="md:p-2 flex flex-col justify-between p-2 sm:p-4 bg-scifi1 sm:rounded-md gap-2 sm:gap-4">
+                                    className="flex flex-col w-full">
+                                    <div className={`${displayPlayerCard(oneKey == activePlayer, oneKey)} md:p-2 flex flex-col grow justify-between p-2 sm:p-4 bg-scifi1 sm:rounded-md gap-2 sm:gap-4`}>
                                         <PlayerOverview name={oneKey} deckData={players[oneKey]['deck']} authority={players[oneKey]['finalAuthority']} missions={players[oneKey]['completedMissions']}></PlayerOverview>
                                         <div className="hidden sm:flex justify-center px-2">
                                             <ArrowDownIcon className='h-5 w-5'/>
@@ -93,7 +92,6 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                                         return (
                                             <div key={index} className="group relative">
                                                 <EventCard event={value}></EventCard>
-                                                <Tooltip hint={value}></Tooltip>
                                             </div>
                                         )
                                     })

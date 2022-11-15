@@ -62,8 +62,6 @@ class Visitor extends StarRealmsVisitor{
     // }
     updateAuthorityObj(currentAuth, nextAuth){
         let newAuth = {}
-        console.log(currentAuth)
-        console.log(nextAuth)
         for(let key1 in currentAuth){
             newAuth[key1] = {}
             if(key1 in nextAuth){
@@ -81,8 +79,6 @@ class Visitor extends StarRealmsVisitor{
                 newAuth[key2]['new'] = nextAuth[key2]['new']
             }
         }
-        console.log(newAuth)
-        console.log("---")
         return newAuth
     }
 

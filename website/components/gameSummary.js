@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { visibility } from './ui/toast.js'
 import { atom, useAtom } from 'jotai'
+import { Popup } from 'semantic-ui-react'
 
 function GameSummary({winner, loser, winCondition, extensions}){
     let width = 0
@@ -71,12 +72,18 @@ function GameSummary({winner, loser, winCondition, extensions}){
                             }
                             return (
                                 <div key={index} className="w-5 sm:w-10 group relative">
-                                    <Image
-                                        src={"/images/extensions/" + value + ".png"} // Route of the image file
-                                        height={height} // Desired size with correct aspect ratio
-                                        width={width} // Desired size with correct aspect ratio
-                                        alt="Step 1"/>
-                                    <span className="overflow-visible border-2 border-scifi4 my-1 w-max p-2 absolute bottom-full -translate-x-[calc(50%_+_1.25rem)] rounded text-center font-medium invisible group-hover:visible bg-slate-200/80 z-40 after:content-[' '] after:absolute after:left-1/2 after:top-full after:-ml-2 after:border-8 after:border-t-black after:border-l-transparent after:border-r-transparent after:border-b-transparent">{value}</span>
+                                    <Popup 
+                                        content={value}
+                                        className="bg-white p-2 rounded-md m-2 border-solid border-2 border-scifi4"
+                                        position='top center'
+                                        trigger={
+                                            <Image
+                                                src={"/images/extensions/" + value + ".png"} // Route of the image file
+                                                height={height} // Desired size with correct aspect ratio
+                                                width={width} // Desired size with correct aspect ratio
+                                                alt="Step 1"/>
+                                        } 
+                                    />
                                 </div>
                             )
                         })
@@ -116,12 +123,18 @@ function GameSummary({winner, loser, winCondition, extensions}){
                         }
                         return (
                             <div key={index} className="w-5 sm:w-10 group relative">
-                                <Image
-                                    src={"/images/extensions/" + value + ".png"} // Route of the image file
-                                    height={height} // Desired size with correct aspect ratio
-                                    width={width} // Desired size with correct aspect ratio
-                                    alt="Step 1"/>
-                                <span className="overflow-visible border-2 border-scifi4 my-1 w-max p-2 absolute bottom-full -translate-x-[calc(50%_+_1.25rem)] rounded text-center font-medium invisible group-hover:visible bg-slate-200/80 z-40 after:content-[' '] after:absolute after:left-1/2 after:top-full after:-ml-2 after:border-8 after:border-t-black after:border-l-transparent after:border-r-transparent after:border-b-transparent">{value}</span>
+                                <Popup 
+                                    content={value}
+                                    className="bg-white p-2 rounded-md m-2 border-solid border-2 border-scifi4"
+                                    position='top center'
+                                    trigger={
+                                        <Image
+                                            src={"/images/extensions/" + value + ".png"} // Route of the image file
+                                            height={height} // Desired size with correct aspect ratio
+                                            width={width} // Desired size with correct aspect ratio
+                                            alt="Step 1"/>
+                                    } 
+                                />
                             </div>
                         )
                     })

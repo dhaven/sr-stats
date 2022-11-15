@@ -1,7 +1,6 @@
 import FinalAuthority from './finalAuthority'
 import FactionPie from './factionPie'
 import MissionCard from './missionCard'
-import Tooltip from './ui/tooltip.js'
 
 function PlayerOverview({name, deckData, authority, missions}) {
     return (
@@ -19,7 +18,6 @@ function PlayerOverview({name, deckData, authority, missions}) {
                             return (
                                 <div key={index} className="group relative">
                                     <MissionCard key={index} mission={value}></MissionCard>
-                                    <Tooltip hint={value}></Tooltip>
                                 </div>
                             )
                         })
