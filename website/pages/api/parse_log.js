@@ -36,14 +36,25 @@ export default async function handler(req, res) {
     })
   }
   //if no errors build the battle object and store it in mongoDB
-  const DBclient = await new MongoClient(process.env.MONGODB_URI, { useNewUrlParser: true }).connect();
+  const DBclient = await new MongoClient(process.env.MONGODB_URI, { useNewUrlParser: true }).connect().catch((err) =>{
+    res.status(500).json({
+      status: err
+    })
+  });
   const db = DBclient.db("starrealms")
   let battle = parseBattle(req.body)
   let enhanced = enhance(battle['data']['rounds'])
   battle['data']['players'] = enhanced['players']
   battle['data']['extensions'] = enhanced['extensions']
   battle['data']['events'] = enhanced['events']
-  await db.collection("battle").insertOne(battle);
+  try{
+    await db.collection("battle").insertOne(battle);
+  }catch(e){
+    res.status(500).json({
+      status: e
+    })
+  }
+  //check for failed insertion
   DBclient.close();
   let battleID = battle._id
   const uploadParams = {
@@ -59,7 +70,6 @@ export default async function handler(req, res) {
       })
     })
     .catch(error => {
-      console.log(error)
       res.status(500).json({
         status: error
       })

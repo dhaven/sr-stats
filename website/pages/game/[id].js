@@ -23,13 +23,13 @@ export default function Game({ winner, loser, extensions, events, players, winCo
     }
     let displayPlayerCard = function (isActive, player) {
         if (player == winner && isActive) {
-            return 'sm:rounded-lg md:scale-110 md:border-4 md:border-winner'
+            return 'md:rounded-lg md:scale-110 md:border-4 md:border-winner'
         } else if (player == winner && !isActive) {
-            return 'sm:rounded-lg md:border-4 md:border-winner'
+            return 'md:rounded-lg md:border-4 md:border-winner'
         } else if (player != winner && isActive) {
-            return 'sm:rounded-lg md:scale-110 md:border-4 md:border-loser'
+            return 'md:rounded-lg md:scale-110 md:border-4 md:border-loser'
         } else if (player != winner && !isActive) {
-            return 'sm:rounded-lg md:border-4 md:border-loser'
+            return 'md:rounded-lg md:border-4 md:border-loser'
         }
     }
     return (
@@ -37,38 +37,38 @@ export default function Game({ winner, loser, extensions, events, players, winCo
             <Head>
                 <title>Game review | {siteTitle}</title>
             </Head>
-            <div className="flex flex-col gap-2 w-screen sm:w-full lg:w-5/6 2xl:w-2/3">
+            <div className="flex flex-col gap-2 w-screen md:w-full lg:w-5/6 2xl:w-2/3">
                 <GameSummary winner={winner} loser={loser} winCondition={winCondition} extensions={extensions}></GameSummary>
-                <div className="hidden sm:flex flex-row ml-2 mb-2">
+                <div className="hidden md:flex flex-row ml-2 mb-2">
                     <button onClick={() => setStatsTab("player")} className={
                         statsTab == "player" ?
-                            "bg-scifi3 text-white text-md md:border-2 md:border-scifi4 font-medium py-2 px-6 m-1 sm:rounded-lg" :
-                            "bg-white text-scifi5 hover:ring ring-scifi2 text-md font-medium px-6 py-2 m-1 md:border-2 md:border-scifi4 sm:rounded-lg"}
+                            "bg-scifi3 text-white text-md md:border-2 md:border-scifi4 font-medium py-2 px-6 m-1 md:rounded-lg" :
+                            "bg-white text-scifi5 hover:ring ring-scifi2 text-md font-medium px-6 py-2 m-1 md:border-2 md:border-scifi4 md:rounded-lg"}
                     >
                         Player stats
                     </button>
                     <button onClick={() => setStatsTab("game")} className={
                         statsTab == "game" ?
-                            "bg-scifi3 text-white text-md md:border-2 md:border-scifi4 font-medium px-6 py-2 m-1 sm:rounded-lg" :
-                            "bg-white text-scifi5 hover:ring ring-scifi2 text-md font-medium px-6 py-2 m-1 md:border-2 md:border-scifi4 sm:rounded-lg"}
+                            "bg-scifi3 text-white text-md md:border-2 md:border-scifi4 font-medium px-6 py-2 m-1 md:rounded-lg" :
+                            "bg-white text-scifi5 hover:ring ring-scifi2 text-md font-medium px-6 py-2 m-1 md:border-2 md:border-scifi4 md:rounded-lg"}
                     >
                         Game stats
                     </button>
                 </div>
-                <div className="flex flex-row flex-wrap md:flex-nowrap sm:px-4 gap-2 md:gap-8">
+                <div className="flex flex-row flex-wrap md:flex-nowrap md:px-4 gap-2 md:gap-8">
                     {statsTab == "player" &&
                         Object.keys(players).map((oneKey, i) => {
                             return (
                                 <div key={i}
                                     onClick={() => setActivePlayer(oneKey)}
                                     className="flex flex-col w-full">
-                                    <div className={`${displayPlayerCard(oneKey == activePlayer, oneKey)} md:p-2 flex flex-col grow justify-between p-2 sm:p-4 bg-scifi1 sm:rounded-md gap-2 sm:gap-4`}>
+                                    <div className={`${displayPlayerCard(oneKey == activePlayer, oneKey)} md:p-2 flex flex-col grow justify-between p-2 md:p-4 bg-scifi1 md:rounded-md gap-2 md:gap-4`}>
                                         <PlayerOverview name={oneKey} deckData={players[oneKey]['deck']} authority={players[oneKey]['finalAuthority']} missions={players[oneKey]['completedMissions']}></PlayerOverview>
-                                        <div className="hidden sm:flex justify-center px-2">
+                                        <div className="hidden md:flex justify-center px-2">
                                             <ArrowDownIcon className='h-5 w-5'/>
                                         </div>
                                     </div>
-                                    <div className="sm:hidden sm:rounded-b-xl">
+                                    <div className="md:hidden md:rounded-b-xl">
                                         <DeckOverview deckData={players[oneKey]['deck']} ></DeckOverview>
                                     </div>
                                 </div>
@@ -77,7 +77,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                     }
                 </div>
                 {statsTab == "player" &&
-                    <div className="hidden sm:flex sm:py-4 lg:py-6 sm:px-2 lg:px-4 sm:mx-4 lg:p-2 rounded-b-xl">
+                    <div className="hidden md:flex md:py-4 lg:py-6 md:px-2 lg:px-4 md:mx-4 lg:p-2 rounded-b-xl">
                         <DeckOverview isWinner={activePlayer == winner} deckData={players[activePlayer]['deck']} ></DeckOverview>
                     </div>
                 }
@@ -98,7 +98,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                                 }
                             </div>
                         }
-                        <div className="flex h-40 sm:h-80 w-full">
+                        <div className="flex h-40 md:h-80 w-full">
                             <AuthorityChart winner={winner} authorityData={authorityData}></AuthorityChart>
                         </div>
                         <div className="flex w-full">
@@ -106,26 +106,26 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                         </div>
                     </div>
                 }
-                <div className="z-20 sm:hidden sticky bottom-0 left-0 right-0">
+                <div className="z-20 md:hidden sticky bottom-0 left-0 right-0">
                     {!isAddGameOpen &&
                         <div className="flex justify-end">
-                            <button type="button" onClick={openAddGameModal} className="m-3 bg-scifi3 border border-scifi4 ring-scifi-2 drop-shadow-md hover:ring font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center">
+                            <button type="button" onClick={openAddGameModal} className="m-3 bg-scifi3 border border-scifi4 ring-scifi-2 drop-shadow-md hover:ring font-medium rounded-full text-md p-2.5 text-center inline-flex items-center">
                                 <svg className="w-8 h-8" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
                             </button>
                         </div>
                     }
                     <div className="flex justify-around bg-white">
                         <button onClick={() => setStatsTab("player")} className={
-                            statsTab == "player" ? "flex justify-center grow bg-scifi3 text-white text-md border-2 border-scifi4 font-medium py-2 px-6 m-1 sm:rounded-lg"
-                                : "flex justify-center grow bg-scifi1 ring-scifi2 hover:ring border-2 border-scifi4 text-scifi4 text-md border-2 border-scifi4 font-medium py-2 px-6 m-1 sm:rounded-lg"
+                            statsTab == "player" ? "flex justify-center grow bg-scifi3 text-white text-md border-2 border-scifi4 font-medium py-2 px-6 m-1 md:rounded-lg"
+                                : "flex justify-center grow bg-scifi1 ring-scifi2 hover:ring border-2 border-scifi4 text-scifi4 text-md border-2 border-scifi4 font-medium py-2 px-6 m-1 md:rounded-lg"
                         }>
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
                         </button>
                         <button onClick={() => setStatsTab("game")} className={
-                            statsTab == "game" ? "flex justify-center grow bg-scifi3 text-white text-md border-2 border-scifi4 font-medium py-2 px-6 m-1 sm:rounded-lg"
-                                : "flex justify-center grow bg-scifi1 ring-scifi2 hover:ring border-2 border-scifi4 text-scifi4 text-md border-2 border-scifi4 font-medium py-2 px-6 m-1 sm:rounded-lg"
+                            statsTab == "game" ? "flex justify-center grow bg-scifi3 text-white text-md border-2 border-scifi4 font-medium py-2 px-6 m-1 md:rounded-lg"
+                                : "flex justify-center grow bg-scifi1 ring-scifi2 hover:ring border-2 border-scifi4 text-scifi4 text-md border-2 border-scifi4 font-medium py-2 px-6 m-1 md:rounded-lg"
                         }>
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
                         </button>
                     </div>
                 </div>
