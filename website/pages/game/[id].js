@@ -6,7 +6,7 @@ import AddGameModal from '../../components/addGameModal.js'
 import { Fragment, useState } from 'react'
 import AuthorityChart from '../../components/authorityChart'
 import OtherCharts from '../../components/otherCharts'
-import { ArrowDownIcon } from '@heroicons/react/solid'
+import { ArrowDownIcon } from '@heroicons/react/24/solid'
 import EventCard from '../../components/eventCard'
 import GameSummary from '../../components/gameSummary'
 import { useRouter } from 'next/router'
@@ -34,9 +34,6 @@ export default function Game({ winner, loser, extensions, events, players, winCo
     }
     return (
         <Layout>
-            <Head>
-                <title>Game review | {siteTitle}</title>
-            </Head>
             <div className="flex flex-col gap-2 w-screen md:w-full lg:w-5/6 2xl:w-2/3">
                 <GameSummary winner={winner} loser={loser} winCondition={winCondition} extensions={extensions}></GameSummary>
                 <div className="hidden md:flex flex-row ml-2 mb-2">
