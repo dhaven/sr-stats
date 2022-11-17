@@ -47,6 +47,7 @@ export default async function handler(req, res) {
   battle['data']['players'] = enhanced['players']
   battle['data']['extensions'] = enhanced['extensions']
   battle['data']['events'] = enhanced['events']
+  battle['createdAt'] = new Date()
   try{
     await db.collection("battle").insertOne(battle);
   }catch(e){
