@@ -14,7 +14,7 @@ export default async function handler(req) {
     const hasID = searchParams.has('id');
     const id = hasID ? searchParams.get('id') : 0;
     const res = await fetch(
-        `http://localhost:3000/api/image?id=${id}`
+        `${process.env.NEXT_PUBLIC_BASE_URL}/api/image?id=${id}`
     )
     const { data } = await res.json()
     return new ImageResponse(
@@ -34,7 +34,7 @@ export default async function handler(req) {
                                     <div key={i} tw={"flex m-2"}>
                                         <img
                                             width="80"
-                                            src={`http://localhost:3000/images/extensions/${value}.png`}
+                                            src={`${process.env.NEXT_PUBLIC_BASE_URL}/images/extensions/${value}.png`}
                                         />
                                     </div>
                                 )
