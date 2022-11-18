@@ -20,7 +20,7 @@ export default async function handler(req) {
     return new ImageResponse(
         (
             <div 
-                tw={"flex flex-col items-center h-full"}
+                tw={"flex flex-col items-center h-full bg-white"}
                 style={{
                     fontFamily: '"DeathStar"',
                   }}>
