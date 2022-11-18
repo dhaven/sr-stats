@@ -15,6 +15,7 @@ const { MongoClient, ObjectId } = require('mongodb');
 
 export default function Game({ winner, loser, extensions, events, players, winCondition, authorityData, otherData, otherAggrData }) {
     const router = useRouter()
+    const { id } = router.query
     let [activePlayer, setActivePlayer] = useState(winner)
     let [statsTab, setStatsTab] = useState("player") //can be either player or game
     let [isAddGameOpen, setAddGameIsOpen] = useState(false)
@@ -34,6 +35,9 @@ export default function Game({ winner, loser, extensions, events, players, winCo
     }
     return (
         <Layout>
+            <Head>
+                <meta name="og:image" content={`${process.env.NEXT_PUBLIC_BASE_URL}/api/og?id=${id}`} />
+            </Head>
             <div className="flex flex-col gap-2 w-screen md:w-full lg:w-5/6 2xl:w-2/3">
                 <GameSummary winner={winner} loser={loser} winCondition={winCondition} extensions={extensions}></GameSummary>
                 <div className="hidden md:flex flex-row ml-2 mb-2">
@@ -62,7 +66,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                                     <div className={`${displayPlayerCard(oneKey == activePlayer, oneKey)} md:p-2 flex flex-col grow justify-between p-2 md:p-4 bg-scifi1 md:rounded-md gap-2 md:gap-4`}>
                                         <PlayerOverview name={oneKey} deckData={players[oneKey]['deck']} authority={players[oneKey]['finalAuthority']} missions={players[oneKey]['completedMissions']}></PlayerOverview>
                                         <div className="hidden md:flex justify-center px-2">
-                                            <ArrowDownIcon className='h-5 w-5'/>
+                                            <ArrowDownIcon className='h-5 w-5' />
                                         </div>
                                     </div>
                                     <div className="md:hidden md:rounded-b-xl">
@@ -143,7 +147,7 @@ export async function getServerSideProps(context) {
         let winCondition = ""
         let playersNames = Object.keys(data['players'])
         playersNames.splice(playersNames.indexOf(data['winner']), 1)
-        let loserName = playersNames[0] 
+        let loserName = playersNames[0]
         if (data['players'][data['winner']]['completedMissions'].length == 3) {
             winCondition = "completed missions" //data['winner'] + "won by completing 3 missions"
         } else {
