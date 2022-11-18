@@ -20,11 +20,11 @@ export default async function handler(req) {
     return new ImageResponse(
         (
             <div 
-                tw={"flex flex-col items-center h-full bg-white"}
+                tw={"flex flex-col items-center h-full bg-white px-10"}
                 style={{
                     fontFamily: '"DeathStar"',
                   }}>
-                <div tw={"flex pt-4 px-4"}>
+                <div tw={"flex px-4"}>
                     <p tw={'text-8xl'}>{data['winner']['name']} won the game !</p>
                 </div>
                 <div tw={"flex flex-row w-1/2 justify-center overflow-hidden"}>
