@@ -25,7 +25,7 @@ export default async function handler(req) {
                     fontFamily: '"DeathStar"',
                   }}>
                 <div tw={"flex px-4"}>
-                    <p tw={'text-8xl'}>{data['winner']['name']} won the game !</p>
+                    <p tw={' text-center text-7xl'}>{data['winner']['name']} won the game !</p>
                 </div>
                 <div tw={"flex flex-row w-1/2 justify-center overflow-hidden"}>
                         {

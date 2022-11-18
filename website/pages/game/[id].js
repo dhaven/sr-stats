@@ -36,6 +36,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
     return (
         <Layout>
             <Head>
+                <meta name="og:title" content={`${winner} vs ${loser}}`} />
                 <meta name="og:image" content={`${process.env.NEXT_PUBLIC_BASE_URL}/api/og?id=${id}`} />
             </Head>
             <div className="flex flex-col gap-2 w-screen md:w-full lg:w-5/6 2xl:w-2/3">
