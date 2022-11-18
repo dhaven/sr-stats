@@ -27,7 +27,7 @@ export default async function handler(req) {
                 <div tw={"flex pt-4 px-4"}>
                     <p tw={'text-8xl'}>{data['winner']['name']} won the game !</p>
                 </div>
-                <div tw={"flex flex-col w-1/2 items-center overflow-hidden"}>
+                <div tw={"flex flex-row w-1/2 justify-center overflow-hidden"}>
                         {
                             data.extensions.map((value, i) => {
                                 return (
