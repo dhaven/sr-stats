@@ -1,5 +1,5 @@
 const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
-const { MongoClient } = require('mongodb');
+const { MongoClient, ServerApiVersion } = require('mongodb');
 import { findErrors, parseBattle } from '../../lib/visitor'
 import enhance from '../../lib/helper/enhanceBattle'
 
@@ -16,7 +16,7 @@ export default async function handler(req, res) {
   const cluster = process.env.MONGO_CLUSTER;
   const authSource = encodeURIComponent("$external");
   const authMechanism = "MONGODB-AWS";
-  const MONGODB_URI = `mongodb+srv://${username}:${password}@${cluster}/?authSource=${authSource}&authMechanism=${authMechanism}`;
+  const MONGODB_URI = `mongodb+srv://${username}:${password}@${cluster}/?authSource=${authSource}&authMechanism=${authMechanism}&retryWrites=true&w=majority`;
   console.log(MONGODB_URI)
   //check for errors. Store file in error folder if any
   let success = findErrors(req.body)
@@ -43,7 +43,7 @@ export default async function handler(req, res) {
     })
   }
   //if no errors build the battle object and store it in mongoDB
-  const DBclient = await new MongoClient(MONGODB_URI, { useNewUrlParser: true }).connect().catch((err) =>{
+  const DBclient = await new MongoClient(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 }).connect().catch((err) =>{
     console.log(err)
     res.status(500).json({
       status: err
