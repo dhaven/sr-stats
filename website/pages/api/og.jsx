@@ -4,7 +4,7 @@ export const config = {
     runtime: 'experimental-edge',
 };
 
-const font = fetch(new URL('../../assets/DeathStar.otf', import.meta.url)).then(
+const font = fetch(new URL('../../assets/Duracellio-Regular.otf', import.meta.url)).then(
     (res) => res.arrayBuffer(),
 );
 
@@ -22,7 +22,8 @@ export default async function handler(req) {
             <div 
                 tw={"flex flex-col items-center h-full bg-white px-10"}
                 style={{
-                    fontFamily: '"DeathStar"',
+                    fontFamily: '"Duracellio"',
+                    letterSpacing: '0.025em',
                   }}>
                 <div tw={"flex px-4"}>
                     <p tw={' text-center text-7xl'}>{data['winner']['name']} won the game !</p>
@@ -93,7 +94,7 @@ export default async function handler(req) {
             height: 600,
             fonts: [
                 {
-                    name: 'DeathStar',
+                    name: 'Duracellio',
                     data: fontData,
                     style: 'normal',
                 },
