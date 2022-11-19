@@ -12,7 +12,7 @@ export default async function handler(req, res) {
     }
   });
   const username = encodeURIComponent(process.env.SR_STATS_AWS_ACCESS_KEY_ID);
-  const password = encodeURIComponent(process.env.SR_STATS_AWS_SECRET_ACCESS_KEY);
+  const password = process.env.SR_STATS_AWS_SECRET_ACCESS_KEY;
   const cluster = process.env.MONGO_CLUSTER;
   const authSource = encodeURIComponent("$external");
   const authMechanism = "MONGODB-AWS";
