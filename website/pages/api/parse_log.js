@@ -5,19 +5,25 @@ import enhance from '../../lib/helper/enhanceBattle'
 
 export default async function handler(req, res) {
   const S3client = new S3Client({ 
-    region: "eu-central-1" ,
+    region: "eu-west-1" ,
     credentials: {
       accessKeyId: process.env.SR_STATS_AWS_ACCESS_KEY_ID,
       secretAccessKey: process.env.SR_STATS_AWS_SECRET_ACCESS_KEY,
     }
   });
+  const username = encodeURIComponent(process.env.SR_STATS_AWS_ACCESS_KEY_ID);
+  const password = encodeURIComponent(process.env.SR_STATS_AWS_SECRET_ACCESS_KEY);
+  const cluster = process.env.MONGO_CLUSTER;
+  const authSource = encodeURIComponent("$external");
+  const authMechanism = "MONGODB-AWS";
+  const MONGODB_URI = `mongodb+srv://${username}:${password}@${cluster}/?authSource=${authSource}&authMechanism=${authMechanism}`;
   //check for errors. Store file in error folder if any
   let success = findErrors(req.body)
   if(!success){
     //store file in S3 for later debugging
     let battleID = makeid(10)
     const uploadParams = {
-      Bucket: 'star-realms-games',
+      Bucket: process.env.S3_BUCKET,
       Body: req.body,
       Key: "errors/" +  battleID
     }
@@ -36,7 +42,8 @@ export default async function handler(req, res) {
     })
   }
   //if no errors build the battle object and store it in mongoDB
-  const DBclient = await new MongoClient(process.env.MONGODB_URI, { useNewUrlParser: true }).connect().catch((err) =>{
+  const DBclient = await new MongoClient(MONGODB_URI, { useNewUrlParser: true }).connect().catch((err) =>{
+    console.log(err)
     res.status(500).json({
       status: err
     })
@@ -51,6 +58,7 @@ export default async function handler(req, res) {
   try{
     await db.collection("battle").insertOne(battle);
   }catch(e){
+    console.log(e)
     res.status(500).json({
       status: e
     })
@@ -59,7 +67,7 @@ export default async function handler(req, res) {
   DBclient.close();
   let battleID = battle._id
   const uploadParams = {
-		Bucket: 'star-realms-games',
+		Bucket: process.env.S3_BUCKET,
 		Body: req.body,
     Key: 'games/' + battleID
 	}
@@ -71,6 +79,7 @@ export default async function handler(req, res) {
       })
     })
     .catch(error => {
+      console.log(error)
       res.status(500).json({
         status: error
       })

@@ -3,8 +3,6 @@ import StarRealmsLexer from './antlr4/StarRealmsLexer.js';
 import StarRealmsParser from './antlr4/StarRealmsParser.js';
 import StarRealmsVisitor from './antlr4/StarRealmsVisitor.js';
 
-const { MongoClient, ObjectId } = require('mongodb');
-
 class Visitor extends StarRealmsVisitor{
 
     // returns a standard balance object from the union of curentBalance and nextBalance
@@ -1211,16 +1209,4 @@ export function findErrors(battlelog) {
     parser.buildParseTrees = true;
     parser.battle() //this is really slow
     return parser._syntaxErrors == 0
-}
-
-export async function fetchBattle(id) {
-    const DBclient = await new MongoClient(process.env.MONGODB_URI, { useNewUrlParser: true }).connect();
-    const db = DBclient.db("starrealms")
-    const cursor = db.collection('battle').find({'_id': ObjectId(id)}).project({ data: 1});
-    if(await cursor.hasNext()){
-        return await cursor.next()
-    }else{
-        console.log("bug")
-        return null
-    }
 }

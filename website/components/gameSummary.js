@@ -43,7 +43,7 @@ function GameSummary({winner, loser, winCondition, extensions}){
                 </svg>
                  Share
             </button>
-            <p className="text-scifi5 text-xl md:text-3xl font-medium"> hello {getSummaryMessage(winCondition, winner, loser)}</p>
+            <p className="text-scifi5 text-xl md:text-3xl font-medium">{getSummaryMessage(winCondition, winner, loser)}</p>
             <div className="md:hidden flex justify-between">
                 <div className="flex items-center gap-1 md:gap-2">
                     {
