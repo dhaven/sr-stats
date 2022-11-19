@@ -17,6 +17,7 @@ export default async function handler(req, res) {
   const authSource = encodeURIComponent("$external");
   const authMechanism = "MONGODB-AWS";
   const MONGODB_URI = `mongodb+srv://${username}:${password}@${cluster}/?authSource=${authSource}&authMechanism=${authMechanism}`;
+  console.log(MONGODB_URI)
   //check for errors. Store file in error folder if any
   let success = findErrors(req.body)
   if(!success){
