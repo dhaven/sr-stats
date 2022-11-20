@@ -37,7 +37,7 @@ export default async function handler(req, res) {
     })
   }
   //if no errors build the battle object and store it in mongoDB
-  const DBclient = await new MongoClient(process.env.MONGODB_URI, 
+  const DBclient = new MongoClient(process.env.MONGODB_URI, 
     { 
       useNewUrlParser: true, 
       useUnifiedTopology: true, 
@@ -48,13 +48,6 @@ export default async function handler(req, res) {
       },
       authSource: '$external',
       authMechanism: 'MONGODB-AWS'
-    })
-    .connect()
-    .catch((err) =>{
-      console.log(err)
-      res.status(500).json({
-        status: err
-      })
     });
   const db = DBclient.db("starrealms")
   let battle = parseBattle(req.body)
