@@ -1,15 +1,17 @@
 const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
+import { STSClient, GetCallerIdentityCommand } from  "@aws-sdk/client-sts";
 const { MongoClient, ServerApiVersion } = require('mongodb');
 import { findErrors, parseBattle } from '../../lib/visitor'
 import enhance from '../../lib/helper/enhanceBattle'
 
 export default async function handler(req, res) {
+  const IAMCreds = {
+    accessKeyId: process.env.SR_STATS_AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.SR_STATS_AWS_SECRET_ACCESS_KEY
+  }
   const S3client = new S3Client({ 
-    region: "eu-west-1" ,
-    credentials: {
-      accessKeyId: process.env.SR_STATS_AWS_ACCESS_KEY_ID,
-      secretAccessKey: process.env.SR_STATS_AWS_SECRET_ACCESS_KEY,
-    }
+    region: "eu-central-1" ,
+    credentials: IAMCreds
   });
   const username = encodeURIComponent(process.env.SR_STATS_AWS_ACCESS_KEY_ID);
   const password = encodeURIComponent(process.env.SR_STATS_AWS_SECRET_ACCESS_KEY);
@@ -18,6 +20,19 @@ export default async function handler(req, res) {
   const authMechanism = "MONGODB-AWS";
   const MONGODB_URI = `mongodb+srv://${username}:${password}@${cluster}/?authSource=${authSource}&authMechanism=${authMechanism}&retryWrites=true&w=majority`;
   console.log(MONGODB_URI)
+  try {
+    const stsParams = { 
+      credentials: IAMCreds,
+      region: "eu-central-1"
+    };
+    const stsClient = new STSClient(stsParams);
+    const results = await stsClient.send(
+      new GetCallerIdentityCommand(IAMCreds)
+    );
+    console.log("Success", results);
+  } catch (err) {
+    console.log(err, err.stack);
+  }
   //check for errors. Store file in error folder if any
   let success = findErrors(req.body)
   if(!success){
