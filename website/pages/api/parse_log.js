@@ -39,9 +39,6 @@ export default async function handler(req, res) {
   //if no errors build the battle object and store it in mongoDB
   const DBclient = new MongoClient(process.env.MONGODB_URI, 
     { 
-      useNewUrlParser: true, 
-      useUnifiedTopology: true, 
-      serverApi: ServerApiVersion.v1,
       auth: {
         username: process.env.SR_STATS_AWS_ACCESS_KEY_ID,
         password: process.env.SR_STATS_AWS_SECRET_ACCESS_KEY
