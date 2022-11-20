@@ -1,5 +1,4 @@
 const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
-import { STSClient, GetCallerIdentityCommand } from  "@aws-sdk/client-sts";
 const { MongoClient, ServerApiVersion } = require('mongodb');
 import { findErrors, parseBattle } from '../../lib/visitor'
 import enhance from '../../lib/helper/enhanceBattle'
@@ -13,26 +12,6 @@ export default async function handler(req, res) {
     region: "eu-central-1" ,
     credentials: IAMCreds
   });
-  const username = encodeURIComponent(process.env.SR_STATS_AWS_ACCESS_KEY_ID);
-  const password = encodeURIComponent(process.env.SR_STATS_AWS_SECRET_ACCESS_KEY);
-  const cluster = process.env.MONGO_CLUSTER;
-  const authSource = encodeURIComponent("$external");
-  const authMechanism = "MONGODB-AWS";
-  const MONGODB_URI = `mongodb+srv://${username}:${password}@${cluster}/?authSource=${authSource}&authMechanism=${authMechanism}&retryWrites=true&w=majority`;
-  console.log(MONGODB_URI)
-  try {
-    const stsParams = { 
-      credentials: IAMCreds,
-      region: "eu-central-1"
-    };
-    const stsClient = new STSClient(stsParams);
-    const results = await stsClient.send(
-      new GetCallerIdentityCommand(IAMCreds)
-    );
-    console.log("Success", results);
-  } catch (err) {
-    console.log(err, err.stack);
-  }
   //check for errors. Store file in error folder if any
   let success = findErrors(req.body)
   if(!success){
@@ -58,12 +37,25 @@ export default async function handler(req, res) {
     })
   }
   //if no errors build the battle object and store it in mongoDB
-  const DBclient = await new MongoClient(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 }).connect().catch((err) =>{
-    console.log(err)
-    res.status(500).json({
-      status: err
+  const DBclient = await new MongoClient(process.env.MONGODB_URI, 
+    { 
+      useNewUrlParser: true, 
+      useUnifiedTopology: true, 
+      serverApi: ServerApiVersion.v1,
+      auth: {
+        username: process.env.SR_STATS_AWS_ACCESS_KEY_ID,
+        password: process.env.SR_STATS_AWS_SECRET_ACCESS_KEY
+      },
+      authSource: '$external',
+      authMechanism: 'MONGODB-AWS'
     })
-  });
+    .connect()
+    .catch((err) =>{
+      console.log(err)
+      res.status(500).json({
+        status: err
+      })
+    });
   const db = DBclient.db("starrealms")
   let battle = parseBattle(req.body)
   let enhanced = enhance(battle['data']['rounds'])
