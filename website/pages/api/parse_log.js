@@ -40,11 +40,11 @@ export default async function handler(req, res) {
   const DBclient = new MongoClient(process.env.MONGODB_URI, 
     { 
       auth: {
-        username: process.env.SR_STATS_AWS_ACCESS_KEY_ID,
-        password: process.env.SR_STATS_AWS_SECRET_ACCESS_KEY
+        username: process.env.MONGODB_USERNAME,
+        password: process.env.MONGODB_PASSWORD
       },
       authSource: '$external',
-      authMechanism: 'MONGODB-AWS'
+      authMechanism: 'SCRAM'
     });
   const db = DBclient.db("starrealms")
   let battle = parseBattle(req.body)
