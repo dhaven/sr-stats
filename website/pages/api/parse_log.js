@@ -1,5 +1,5 @@
 const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient } = require('mongodb');
 import { findErrors, parseBattle } from '../../lib/visitor'
 import enhance from '../../lib/helper/enhanceBattle'
 
