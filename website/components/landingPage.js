@@ -2,6 +2,9 @@ import Image from 'next/image'
 import SRLogInput from './SRLogInput.js'
 import AddGameModal from './addGameModal.js'
 import { useState } from 'react'
+import step1 from '../public/images/1.png'
+import step2 from '../public/images/2.png'
+import step3 from '../public/images/3.png'
 
 export default function LandingPage() {
     let [isAddGameOpen, setAddGameIsOpen] = useState(false)
@@ -10,7 +13,7 @@ export default function LandingPage() {
     }
     return (
         <div className="flex w-full h-full m-1 p-1 lg:p-4">
-            <div className="flex flex-col h-full w-full lg:w-3/5 gap-4 p-2">
+            <div className="flex flex-col h-full w-full gap-4 p-2">
                 <div className="bg-white lg:p-4 p-2 w-full rounded-lg drop-shadow-scifi5">
                     <p className="text-2xl md:text-4xl font-light text-scifi5 text-center">
                         Statistics for all your Star Realms games in just 3 steps
@@ -23,10 +26,8 @@ export default function LandingPage() {
                         </div>
                         <div className="relative w-full lg:w-1/2 h-full m-2 p-2">
                             <Image
-                                src="/images/1.png" // Route of the image file
+                                src={step1}
                                 alt="Step 1"
-                                layout="fill"
-                                objectFit="contain"
                             />
                         </div>
                     </div>
@@ -36,10 +37,8 @@ export default function LandingPage() {
                         </div>
                         <div className="relative w-full lg:w-1/2 h-full m-2 p-2">
                             <Image
-                                src="/images/2.png" // Route of the image file
-                                alt="Step 1"
-                                layout="fill"
-                                objectFit="contain"
+                                src={step2}
+                                alt="Step 2"
                             />
                         </div>
                     </div>
@@ -49,16 +48,14 @@ export default function LandingPage() {
                         </div>
                         <div className="relative w-full lg:w-1/2 h-full m-2 p-2">
                             <Image
-                                src="/images/3.png" // Route of the image file
-                                alt="Step 1"
-                                layout="fill"
-                                objectFit="contain"
+                                src={step3}
+                                alt="Step 3"
                             />
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="hidden md:flex md:flex-col w-full h-full w-1/2 gap-4 p-2">
+            <div className="hidden md:flex md:flex-col h-full w-1/2 gap-4 p-2">
                 <div className="bg-white rounded-lg lg:p-4 w-full drop-shadow-scifi5">
                     <p className="text-4xl font-light text-scifi5 text-center">
                         Add your game here 👇

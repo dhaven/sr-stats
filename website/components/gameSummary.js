@@ -9,7 +9,7 @@ function GameSummary({winner, loser, winCondition, extensions}){
     const [visi, setVisi] = useAtom(visibility)
     let getSummaryMessage = function(winCondition, winner, loser){
         if(winCondition == "completed missions"){
-            return winner + "won by completing 3 missions"
+            return winner + " won by completing 3 missions"
         }else if(winCondition == "resignation"){
             return winner + " won by resignation"
         }else if(winCondition == "defeat"){
