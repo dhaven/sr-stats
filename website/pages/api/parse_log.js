@@ -9,7 +9,7 @@ export default async function handler(req, res) {
     secretAccessKey: process.env.SR_STATS_AWS_SECRET_ACCESS_KEY
   }
   const S3client = new S3Client({ 
-    region: "eu-central-1" ,
+    region: "eu-west-1" ,
     credentials: IAMCreds
   });
   //check for errors. Store file in error folder if any
