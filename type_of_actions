@@ -1,0 +1,109 @@
+Gambit cards :
+Acceptable losses, Glorious return, Two-Pronged Attack, Exploration, Rapid Deployment, Gray Market, Veteran Pilots, Asteroid Mining, Hidden Base
+Unlikely Alliance, Salvage Operation, Surprise Assault, Political Maneuver, Rise to Power, Energy Shield, Bold Raid, Smuggling Run, Frontier Fleet
+
+mission card:
+Dominate, Monopolize, Colonize, Influence, Diversify, Unite, Ally, Exterminate, Rule, Convert, Defend, Armada
+
+heroes:
+ceo shaner, chairman Haygan, chancellor Hartman, commander klik, commodore zhang, confessor morris, hive lord, screecher
+
+heroes:
+admiral Rasmussen, CEO Torres, Cunning Captain, special ops director, war elder, blob overlord, High Priest Lyle, Ram Pilot
+
+
+##########################
+##########################
+
+what data does the frontend need to have?
+
+winner component
+-> winner name + loser name => get players list and get winner from game data
+-> type of victory (defeat, resignation, mission) => get victoryType from game data
+-> extensions in use => get extensions from game data
+
+player component
+-> player name => from player list
+-> final authority => from startAuthority and sum all the diffs
+-> factions in deck => from getDeck(player)
+-> completed missions
+
+deck summary component
+-> total cost of deck
+-> total number of ships in deck
+-> total number of bases in deck
+-> total number of cards in deck
+
+deck detail component
+-> cards in deck (name, faction, ship/base)
+
+game Summary component
+-> events triggered in game
+-> authority of each player at each turn
+
+other graphs component
+-> trade/combat/discard/draw overall
+-> trade/combat/discard/draw at each turn
+
+#compute the final deck representation for this player
+#return an object of format deck
+getDeck(player)
+
+winner: <string>
+players: [
+        <string>: {
+                startAuthority: <int>
+                finalAuthority: <int>
+                completedMissions: <list>
+                deck: <deck>
+        }
+]
+extensions: <list>
+victoryType: <string>
+events: <list>
+rounds: [
+        {
+                player: <string>
+                events: <string>
+                completedMissions: <list>
+                purchasedCards: <list>
+                discardedCards: <list>
+                drawCount: <int>
+                trade: {
+                        total: <int>
+                        used: <int>
+                }
+                combat: {
+                        total: <int>
+                        used: <int>
+                }
+                authority: {
+                        <player>: {
+                                diff: <int>
+                        }
+                }
+
+        }
+]
+
+deck: {
+        count: <int>
+        cost: <int>
+        ships: <int>
+        bases: <int>
+        factions: {
+                blob: <int>,
+                tradefederation: <int>,
+                starempire: <int>,
+                machinecult: <int>
+        }
+        cards: {
+                <string>: {
+                        name: <string>
+                        cost: <int>
+                        faction: <list>
+                        count: <int>
+                        type: <string>
+                }
+        }
+}
