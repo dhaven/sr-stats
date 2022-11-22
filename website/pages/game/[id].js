@@ -38,6 +38,8 @@ export default function Game({ winner, loser, extensions, events, players, winCo
             <Head>
                 <meta name="og:title" content={`${winner} vs ${loser}`} />
                 <meta name="og:image" content={`${process.env.NEXT_PUBLIC_BASE_URL}/api/og?id=${id}`} />
+                <meta name="og:image:width" content="1200" />
+                <meta name="og:image:height" content="600" />
             </Head>
             <div className="flex flex-col gap-2 w-screen md:w-full lg:w-5/6 2xl:w-2/3">
                 <GameSummary winner={winner} loser={loser} winCondition={winCondition} extensions={extensions}></GameSummary>
