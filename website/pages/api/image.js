@@ -1,14 +1,15 @@
 const { MongoClient, ObjectId } = require('mongodb');
 
 export default async function handler(req, res) {
-    const { id } = req.query
-    const username = encodeURIComponent(process.env.SR_STATS_AWS_ACCESS_KEY_ID);
-    const password = encodeURIComponent(process.env.SR_STATS_AWS_SECRET_ACCESS_KEY);
-    const cluster = process.env.MONGO_CLUSTER;
-    const authSource = encodeURIComponent("$external");
-    const authMechanism = "MONGODB-AWS";
-    const MONGODB_URI = `mongodb+srv://${username}:${password}@${cluster}/?authSource=${authSource}&authMechanism=${authMechanism}`;
-    const DBclient = await new MongoClient(MONGODB_URI, { useNewUrlParser: true }).connect();
+    const DBclient = new MongoClient(process.env.MONGODB_URI, 
+        { 
+          auth: {
+            username: process.env.MONGODB_USERNAME,
+            password: process.env.MONGODB_PASSWORD
+          },
+          authSource: '$external',
+          authMechanism: 'SCRAM'
+        });
     const db = DBclient.db("starrealms")
     const cursor = db.collection('battle')
         .find({ _id: ObjectId(id) })
