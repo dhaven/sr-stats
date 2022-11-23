@@ -55,7 +55,7 @@ export default function LandingPage() {
                     </div>
                 </div>
             </div>
-            <div className="hidden md:flex md:flex-col h-full w-1/2 gap-4 p-2">
+            <div className="hidden md:flex md:flex-col h-1/2 w-1/2 gap-4 p-2">
                 <div className="bg-white rounded-lg lg:p-4 w-full drop-shadow-scifi5">
                     <p className="text-4xl font-light text-scifi5 text-center">
                         Add your game here 👇

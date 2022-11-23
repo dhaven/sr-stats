@@ -66,7 +66,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                                 <div key={i}
                                     onClick={() => setActivePlayer(oneKey)}
                                     className="flex flex-col w-full">
-                                    <div className={`${displayPlayerCard(oneKey == activePlayer, oneKey)} md:p-2 flex flex-col grow justify-between p-2 md:p-4 bg-scifi1 md:rounded-md gap-2 md:gap-4`}>
+                                    <div className={`${displayPlayerCard(oneKey == activePlayer, oneKey)} md:p-2 flex flex-col grow justify-between hover:bg-slate-300 p-2 md:p-4 bg-scifi1 md:rounded-md gap-2 md:gap-4`}>
                                         <PlayerOverview name={oneKey} deckData={players[oneKey]['deck']} authority={players[oneKey]['finalAuthority']} missions={players[oneKey]['completedMissions']}></PlayerOverview>
                                         <div className="hidden md:flex justify-center px-2">
                                             <ArrowDownIcon className='h-5 w-5' />

@@ -79,7 +79,7 @@ export default function SRLogInput(){
                 {
                   errorMessage != "" && (
                     <div className="p-2 text-sm w-full text-red-700 bg-red-100 rounded-lg" role="alert">
-                      <span className="font-medium">Error : Unable to parse input data. Sorry about that :(</span>
+                      <span className="font-medium">Error : Unable to parse input data. Arena matches are not supported</span>
                     </div>
                   )
                 }
