@@ -12,7 +12,7 @@ export default function LandingPage() {
         setAddGameIsOpen(true)
     }
     return (
-        <div className="flex w-full h-full m-1 p-1 lg:p-4">
+        <div className="flex w-full h-full m-1 p-1 lg:px-2">
             <div className="flex flex-col h-full w-full gap-4 p-2">
                 <div className="bg-white lg:p-4 p-2 w-full rounded-lg drop-shadow-scifi5">
                     <p className="text-2xl md:text-4xl font-light text-scifi5 text-center">
@@ -55,7 +55,7 @@ export default function LandingPage() {
                     </div>
                 </div>
             </div>
-            <div className="hidden md:flex md:flex-col h-1/2 w-1/2 gap-4 p-2">
+            <div className="hidden md:flex md:flex-col w-1/2 gap-4 p-2">
                 <div className="bg-white rounded-lg lg:p-4 w-full drop-shadow-scifi5">
                     <p className="text-4xl font-light text-scifi5 text-center">
                         Add your game here 👇
