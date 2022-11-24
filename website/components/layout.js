@@ -20,7 +20,7 @@ export default function Layout({ children }) {
   const { pathname } = useRouter()
   const router = useRouter()
   return (
-    <div className="bg-emoji-pattern flex flex-col bg-repeat-y bg-center">
+    <div className="bg-scifi flex flex-col h-max bg-repeat-y bg-center">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -43,13 +43,13 @@ export default function Layout({ children }) {
           </button>
         }
       </header>
-      <main className="bg-repeat grow flex flex-col items-center gap-3 md:py-5 sm:py-2">
+      <main className="grow flex flex-col h-full items-center gap-3 md:py-5 sm:py-2">
         {children}
       </main>
       <NewFeatureModal isOpen={isNewFeatureOpen} setIsOpen={setIsNewFeatureOpen}></NewFeatureModal>
       <AddGameModal isOpen={isAddGameOpen} setIsOpen={setAddGameIsOpen}></AddGameModal>
       <Toast />
-      <footer>
+      <footer className="hidden md:flex">
         <div className="flex justify-center gap-2 m-2">
           <a href="https://discord.gg/q4kqH775FA" target="_blank">
             <div className="flex bg-white rounded-lg py-2 px-1 border-black border">

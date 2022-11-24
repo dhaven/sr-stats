@@ -5,6 +5,7 @@ import { useState } from 'react'
 import step1 from '../public/images/1.png'
 import step2 from '../public/images/2.png'
 import step3 from '../public/images/3.png'
+import discord_img from '../public/images/discord.png'
 
 export default function LandingPage() {
     let [isAddGameOpen, setAddGameIsOpen] = useState(false)
@@ -54,6 +55,20 @@ export default function LandingPage() {
                         </div>
                     </div>
                 </div>
+                <div className="flex md:hidden">
+                    <a href="https://discord.gg/q4kqH775FA" target="_blank">
+                        <div className="flex bg-white rounded-lg py-2 px-1 border-black border">
+                            <div className="flex items-center mx-2">
+                                <Image
+                                    src={discord_img}
+                                    height="24"
+                                    width="24"
+                                />
+                            </div>
+                            <p>Join the community! </p>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div className="hidden md:flex md:flex-col w-1/2 gap-4 p-2">
                 <div className="bg-white rounded-lg lg:p-4 w-full drop-shadow-scifi5">
@@ -65,16 +80,18 @@ export default function LandingPage() {
                     <SRLogInput></SRLogInput>
                 </div>
             </div>
-            { !isAddGameOpen &&
-                <div className="z-20 md:hidden fixed bottom-0 left-0 right-0">
-                    <div className="flex justify-end">
-                        <button type="button" onClick={openAddGameModal} className="m-3 bg-scifi3 border border-scifi4 ring-scifi-2 drop-shadow-md hover:ring font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center">
-                            <svg className="w-8 h-8" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
-                        </button>
+            {!isAddGameOpen &&
+                <div className="md:hidden">
+                    <div className="z-20 fixed bottom-0 left-0 right-0">
+                        <div className="flex justify-end">
+                            <button type="button" onClick={openAddGameModal} className="m-3 bg-scifi3 border border-scifi4 ring-scifi-2 drop-shadow-md hover:ring font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center">
+                                <svg className="w-8 h-8" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
             }
             <AddGameModal isOpen={isAddGameOpen} setIsOpen={setAddGameIsOpen}></AddGameModal>
-        </div>
+        </div >
     )
 }

@@ -10,6 +10,8 @@ import { ArrowDownIcon } from '@heroicons/react/24/solid'
 import EventCard from '../../components/eventCard'
 import GameSummary from '../../components/gameSummary'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
+import discord_img from '../../public/images/discord.png'
 
 const { MongoClient, ObjectId } = require('mongodb');
 
@@ -110,6 +112,20 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                         </div>
                     </div>
                 }
+                <div className="flex sm:hidden justify-start mx-2">
+                    <a href="https://discord.gg/q4kqH775FA" target="_blank">
+                        <div className="flex bg-white rounded-lg py-2 px-1 border-black border">
+                            <div className="flex items-center mx-2">
+                                <Image
+                                    src={discord_img}
+                                    height="24"
+                                    width="24"
+                                />
+                            </div>
+                            <p>Join the community! </p>
+                        </div>
+                    </a>
+                </div>
                 <div className="z-20 md:hidden sticky bottom-0 left-0 right-0">
                     {!isAddGameOpen &&
                         <div className="flex justify-end">
@@ -140,14 +156,14 @@ export default function Game({ winner, loser, extensions, events, players, winCo
 }
 
 export async function getServerSideProps(context) {
-    const DBclient = new MongoClient(process.env.MONGODB_URI, 
-        { 
-          auth: {
-            username: process.env.MONGODB_USERNAME,
-            password: process.env.MONGODB_PASSWORD
-          },
-          authSource: '$external',
-          authMechanism: 'SCRAM'
+    const DBclient = new MongoClient(process.env.MONGODB_URI,
+        {
+            auth: {
+                username: process.env.MONGODB_USERNAME,
+                password: process.env.MONGODB_PASSWORD
+            },
+            authSource: '$external',
+            authMechanism: 'SCRAM'
         });
     const db = DBclient.db("starrealms")
     const cursor = db.collection('battle')

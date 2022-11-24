@@ -29,7 +29,7 @@ module.exports = {
         'white' : '0 12px 10px rgba(250, 250, 250, 0.8)'
       },
       backgroundImage: {
-        'emoji-pattern': "linear-gradient(rgba(228, 239, 240, 0.4), rgba(228, 239, 240, 0.4)), url('/images/star-sky.jpg')",
+        'scifi': "linear-gradient(rgba(228, 239, 240, 0.4), rgba(228, 239, 240, 0.4)), url('/images/star-sky.jpg')",
       }
     },
   },
