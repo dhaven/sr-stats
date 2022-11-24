@@ -78,6 +78,7 @@ for(let i = 0; i < test_input.length; i++){
         tree_error_count += 1
         console.log(`Error: The tree structure has changed for file ${test_input[i]}`)
         if(myArgs.length == 1 && myArgs[0] == "--override"){
+          console.log("overriding")
           fs.writeFileSync(treefile, JSON.stringify(tree_output, null, 2), 'utf8');
         }else{
           fs.writeFileSync(treefile + "_error", JSON.stringify(tree_output, null, 2), 'utf8');
@@ -105,6 +106,7 @@ for(let i = 0; i < test_input.length; i++){
             battle_error_count += 1
             console.log(`Error: The battle object has changed for file ${test_input[i]}`)
             if(myArgs.length == 1 && myArgs[0] == "--override"){
+              console.log("overriding")
               fs.writeFileSync(battlefile, JSON.stringify(res.data, null, 2), 'utf8');
             }else{
               fs.writeFileSync(battlefile + "_error", JSON.stringify(res.data, null, 2), 'utf8');
