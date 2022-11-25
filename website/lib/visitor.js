@@ -192,6 +192,7 @@ class Visitor extends StarRealmsVisitor{
             else if(ctx.action()[i].purchaseHero()){
                 let purchaseHeroDetail = this.visit(ctx.action()[i])
                 turnData['purchasedCards'].push(purchaseHeroDetail['card'])
+                turnData['events'] = turnData['events'].concat(purchaseHeroDetail['events'])
                 turnData['tradePool'] += purchaseHeroDetail['balance']['tradePool']
                 turnData['combatPool'] += purchaseHeroDetail['balance']['combatPool']
                 turnData['usedTrade'] += purchaseHeroDetail['balance']['usedTrade']
@@ -199,6 +200,7 @@ class Visitor extends StarRealmsVisitor{
                 //console.log(purchaseHeroDetail['balance']['authority'])
                 turnData['authority'] = this.updateAuthorityObj(turnData['authority'], purchaseHeroDetail['balance']['authority'])
                 turnData['scrappedCards'] = turnData['scrappedCards'].concat(purchaseHeroDetail['scrappedCards'])
+                turnData['discardedCards'] = turnData['discardedCards'].concat(purchaseHeroDetail['discardedCards'])
                 turnData['drawCount'] += purchaseHeroDetail['drawCount']
             }
             else if(ctx.action()[i].play()){
@@ -397,7 +399,9 @@ class Visitor extends StarRealmsVisitor{
     visitPurchaseHero(ctx) {
         let purchase = {
             card : '',
+            events: [],
             scrappedCards: [],
+            discardedCards: [],
             drawCount : 0,
             balance: {
                 tradePool: 0,
@@ -422,9 +426,24 @@ class Visitor extends StarRealmsVisitor{
             }else if(ctx.playHero()[i].simpleScrap()){
                 let playHeroDetail = this.visit(ctx.playHero()[i])
                 purchase['scrappedCards'].push(playHeroDetail)
+            }else if(ctx.playHero()[i].discarding()){
+                let playHeroDetail = this.visit(ctx.playHero()[i])
+                purchase['discardedCards'].push(playHeroDetail)
+            }else if(ctx.playHero()[i].triggeredEvent()){
+                let playHeroDetail = this.visit(ctx.playHero()[i])
+                purchase['events'].push(playHeroDetail['event'])
+                purchase['balance']['tradePool'] += playHeroDetail['balance']['tradePool']
+                purchase['balance']['combatPool'] += playHeroDetail['balance']['combatPool']
+                purchase['balance']['usedTrade'] += playHeroDetail['balance']['usedTrade']
+                purchase['balance']['usedCombat'] += playHeroDetail['balance']['usedCombat']
+                //console.log(triggeredEventDetail['balance']['authority'])
+                purchase['balance']['authority'] = this.updateAuthorityObj(purchase['balance']['authority'], playHeroDetail['balance']['authority'])
+                purchase['scrappedCards'] = purchase['scrappedCards'].concat(playHeroDetail['scrappedCards'])
+                purchase['discardedCards'] = purchase['discardedCards'].concat(playHeroDetail['discardedCards'])
+                purchase['drawCount'] += playHeroDetail['drawCount']
             }
         }
-        //console.log(purchase)
+        console.log(purchase)
         return purchase
     }
 
@@ -433,7 +452,7 @@ class Visitor extends StarRealmsVisitor{
         return this.visit(ctx.negativeBalance())
     }
 
-    // grammar: tradeRowScrap | resolveFreeAcquire | resolveSelfScrap | multiScrapSummary | positiveBalance | drawCardsWithShuffle | multiScrapDetail | simpleScrap;
+    // grammar: triggeredEvent | tradeRowScrap | resolveFreeAcquire | resolveSelfScrap | multiScrapSummary | positiveBalance | drawCardsWithShuffle | multiScrapDetail | simpleScrap | discarding;
     visitPlayHero(ctx) {
         if(ctx.positiveBalance()){
             return this.visit(ctx.positiveBalance())
@@ -443,8 +462,10 @@ class Visitor extends StarRealmsVisitor{
             return this.visit(ctx.multiScrapDetail())
         }else if(ctx.simpleScrap()){
             return this.visit(ctx.simpleScrap())
-        }else{
-            console.log("error")
+        }else if(ctx.triggeredEvent()){
+            return this.visit(ctx.triggeredEvent())
+        }else if(ctx.discarding()){
+            return this.visit(ctx.discarding())
         }
       }
 

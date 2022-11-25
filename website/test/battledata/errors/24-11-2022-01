@@ -1,0 +1,1258 @@
+{
+  "status": "success",
+  "data": {
+    "firstPlayer": "YL5943",
+    "winner": "gouda55",
+    "rounds": [
+      {
+        "tradePool": 2,
+        "combatPool": 1,
+        "usedTrade": -2,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "blobminer"
+        ],
+        "completedMissions": [],
+        "events": [
+          "patiencerewarded"
+        ],
+        "playedCards": [],
+        "scrappedCards": [
+          "farmship"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "gouda55": {
+            "diff": -1,
+            "new": 49
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 0,
+        "usedTrade": -5,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "lightcruiser",
+          "explorer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "scout",
+          "scout",
+          "scout"
+        ],
+        "scrappedCards": [
+          "unioncluster"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {},
+        "player": "gouda55"
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 1,
+        "usedTrade": -3,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "corsair"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "gouda55": {
+            "diff": -1,
+            "new": 48
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 2,
+        "usedTrade": -3,
+        "usedCombat": -2,
+        "purchasedCards": [
+          "coalitionmessenger"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "scout",
+          "scout",
+          "scout"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "YL5943": {
+            "diff": -2,
+            "new": 48
+          }
+        },
+        "player": "gouda55"
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 1,
+        "usedTrade": -4,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "defensesystem"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "gouda55": {
+            "diff": -1,
+            "new": 47
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 1,
+        "usedTrade": -5,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "cargorocket",
+          "repairmech"
+        ],
+        "completedMissions": [],
+        "events": [
+          "bombardment"
+        ],
+        "playedCards": [
+          "coalitionmessenger",
+          "scout",
+          "scout",
+          "scout"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "gouda55": {
+            "diff": -6,
+            "new": 41
+          },
+          "YL5943": {
+            "diff": -1,
+            "new": 47
+          }
+        },
+        "player": "gouda55"
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 1,
+        "usedTrade": -6,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "destroyerbot",
+          "freightraft"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "YL5943": {
+            "diff": -6,
+            "new": 41
+          },
+          "gouda55": {
+            "diff": -1,
+            "new": 40
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 9,
+        "usedTrade": -5,
+        "usedCombat": -9,
+        "purchasedCards": [
+          "hivelord"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "explorer"
+        ],
+        "scrappedCards": [
+          "nestingground",
+          "blobalpha",
+          "pulverizer",
+          "tradehive",
+          "cunningcaptain"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "YL5943": {
+            "diff": -9,
+            "new": 32
+          }
+        },
+        "player": "gouda55"
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 2,
+        "usedTrade": -6,
+        "usedCombat": -2,
+        "purchasedCards": [
+          "pactwarship",
+          "pactpod"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "blobminer"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "YL5943": {
+            "diff": 4,
+            "new": 36
+          },
+          "gouda55": {
+            "diff": -2,
+            "new": 38
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 10,
+        "combatPool": 9,
+        "usedTrade": -10,
+        "usedCombat": -9,
+        "purchasedCards": [
+          "commanderklik",
+          "alliancetransport",
+          "orbitalgunplatform"
+        ],
+        "completedMissions": [],
+        "events": [
+          "warpjump",
+          "quasar"
+        ],
+        "playedCards": [
+          "scout",
+          "scout",
+          "scout",
+          "scout",
+          "coalitionmessenger",
+          "explorer",
+          "lightcruiser",
+          "scout",
+          "scout"
+        ],
+        "scrappedCards": [
+          "explorer",
+          "hivelord",
+          "commanderklik"
+        ],
+        "discardedCards": [
+          "viper"
+        ],
+        "destroyedBases": [
+          "defensesystem"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 9,
+        "authority": {
+          "YL5943": {
+            "diff": -4,
+            "new": 32
+          }
+        },
+        "player": "gouda55"
+      },
+      {
+        "tradePool": 8,
+        "combatPool": 1,
+        "usedTrade": -8,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "tradeenvoy",
+          "frontierhawk"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "viper"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "authority": {
+          "gouda55": {
+            "diff": -1,
+            "new": 37
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 8,
+        "combatPool": 2,
+        "usedTrade": -5,
+        "usedCombat": -2,
+        "purchasedCards": [
+          "midgatestation"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "alliancetransport",
+          "coalitionmessenger",
+          "cargorocket",
+          "repairmech"
+        ],
+        "scrappedCards": [
+          "scout"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "gouda55": {
+            "diff": 7,
+            "new": 44
+          },
+          "YL5943": {
+            "diff": -2,
+            "new": 30
+          }
+        },
+        "player": "gouda55"
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 5,
+        "usedTrade": -5,
+        "usedCombat": -5,
+        "purchasedCards": [
+          "enforcermech"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "destroyerbot"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "gouda55": {
+            "diff": -5,
+            "new": 39
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 2,
+        "usedTrade": -3,
+        "usedCombat": -2,
+        "purchasedCards": [
+          "outlandstation"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "scout",
+          "scout",
+          "scout",
+          "midgatestation"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "YL5943": {
+            "diff": -2,
+            "new": 28
+          }
+        },
+        "player": "gouda55"
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 6,
+        "usedTrade": -6,
+        "usedCombat": -6,
+        "purchasedCards": [
+          "gateship"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "tradeenvoy"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [
+          "midgatestation"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 1,
+        "authority": {
+          "YL5943": {
+            "diff": 10,
+            "new": 38
+          },
+          "gouda55": {
+            "diff": -1,
+            "new": 38
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 3,
+        "usedTrade": -4,
+        "usedCombat": -3,
+        "purchasedCards": [
+          "chancellorhartman"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "orbitalgunplatform",
+          "scout"
+        ],
+        "scrappedCards": [
+          "orbitalgunplatform",
+          "viper",
+          "chancellorhartman",
+          "viper"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "YL5943": {
+            "diff": -3,
+            "new": 35
+          }
+        },
+        "player": "gouda55"
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 3,
+        "usedTrade": -5,
+        "usedCombat": -3,
+        "purchasedCards": [
+          "alliancelanding"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "gouda55": {
+            "diff": -3,
+            "new": 35
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 6,
+        "usedTrade": -4,
+        "usedCombat": -6,
+        "purchasedCards": [
+          "spikecluster",
+          "cargocraft"
+        ],
+        "completedMissions": [],
+        "events": [
+          "supplyrun"
+        ],
+        "playedCards": [
+          "lightcruiser",
+          "cargorocket",
+          "scout"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [
+          "defensesystem"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "gouda55": {
+            "diff": 3,
+            "new": 38
+          },
+          "YL5943": {
+            "diff": -1,
+            "new": 34
+          }
+        },
+        "player": "gouda55"
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 5,
+        "usedTrade": -4,
+        "usedCombat": -5,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "frontierhawk",
+          "blobminer"
+        ],
+        "scrappedCards": [
+          "traderowslot"
+        ],
+        "discardedCards": [
+          "enforcermech",
+          "pactpod"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 1,
+        "authority": {
+          "YL5943": {
+            "diff": 4,
+            "new": 38
+          },
+          "gouda55": {
+            "diff": -5,
+            "new": 33
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 5,
+        "usedTrade": -2,
+        "usedCombat": -5,
+        "purchasedCards": [
+          "spikecluster"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "spikecluster",
+          "alliancetransport",
+          "outlandstation",
+          "midgatestation"
+        ],
+        "scrappedCards": [
+          "outlandstation"
+        ],
+        "discardedCards": [
+          "scout",
+          "scout"
+        ],
+        "destroyedBases": [
+          "defensesystem"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 1,
+        "authority": {
+          "gouda55": {
+            "diff": 4,
+            "new": 37
+          }
+        },
+        "player": "gouda55"
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 9,
+        "usedTrade": -3,
+        "usedCombat": -9,
+        "purchasedCards": [
+          "outlandstation"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "viper",
+          "scout"
+        ],
+        "destroyedBases": [
+          "midgatestation",
+          "spikecluster"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "YL5943": {
+            "diff": 5,
+            "new": 43
+          },
+          "gouda55": {
+            "diff": -1,
+            "new": 36
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 0,
+        "usedTrade": -4,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "frontierrunner",
+          "integrationport"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "repairmech",
+          "coalitionmessenger",
+          "scout",
+          "scout"
+        ],
+        "scrappedCards": [
+          "scout"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {},
+        "player": "gouda55"
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 5,
+        "usedTrade": -3,
+        "usedCombat": -5,
+        "purchasedCards": [
+          "plasmabot",
+          "cargorocket"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "destroyerbot",
+          "alliancelanding"
+        ],
+        "scrappedCards": [
+          "viper"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "gouda55": {
+            "diff": -5,
+            "new": 31
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 2,
+        "combatPool": 5,
+        "usedTrade": 0,
+        "usedCombat": -5,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "integrationport",
+          "midgatestation",
+          "cargorocket"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [
+          "scout",
+          "scout"
+        ],
+        "destroyedBases": [
+          "alliancelanding"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "gouda55": {
+            "diff": 3,
+            "new": 34
+          }
+        },
+        "player": "gouda55"
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 4,
+        "usedTrade": -3,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "patrolboat",
+          "stinger"
+        ],
+        "completedMissions": [
+          "eventwormhole"
+        ],
+        "events": [],
+        "playedCards": [
+          "scout",
+          "scout",
+          "scout",
+          "gateship"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 1,
+        "authority": {},
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 15,
+        "combatPool": 12,
+        "usedTrade": -15,
+        "usedCombat": -12,
+        "purchasedCards": [
+          "imperialflagship",
+          "needlelancer",
+          "farmship"
+        ],
+        "completedMissions": [],
+        "events": [
+          "tacticalmaneuver",
+          "tacticalmaneuver"
+        ],
+        "playedCards": [
+          "spikecluster",
+          "alliancetransport",
+          "cargocraft",
+          "lightcruiser",
+          "coalitionmessenger",
+          "scout"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [
+          "scout",
+          "scout"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 3,
+        "authority": {
+          "gouda55": {
+            "diff": 4,
+            "new": 38
+          },
+          "YL5943": {
+            "diff": -12,
+            "new": 31
+          }
+        },
+        "player": "gouda55"
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 5,
+        "usedTrade": -4,
+        "usedCombat": -5,
+        "purchasedCards": [
+          "freightraft",
+          "plaguepod"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "enforcermech"
+        ],
+        "scrappedCards": [
+          "scout"
+        ],
+        "discardedCards": [
+          "plasmabot",
+          "scout",
+          "scout",
+          "scout"
+        ],
+        "destroyedBases": [
+          "midgatestation"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 2,
+        "authority": {
+          "YL5943": {
+            "diff": 11,
+            "new": 42
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 11,
+        "usedTrade": -7,
+        "usedCombat": -11,
+        "purchasedCards": [
+          "hivequeen"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "needlelancer",
+          "spikecluster",
+          "cargorocket",
+          "scout",
+          "scout"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "gouda55": {
+            "diff": 3,
+            "new": 41
+          },
+          "YL5943": {
+            "diff": -11,
+            "new": 31
+          }
+        },
+        "player": "gouda55"
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 15,
+        "usedTrade": -4,
+        "usedCombat": -15,
+        "purchasedCards": [
+          "repairmech"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "defensesystem",
+          "destroyerbot",
+          "patrolboat",
+          "cargorocket",
+          "blobminer"
+        ],
+        "scrappedCards": [
+          "scout"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "integrationport",
+          "spikecluster",
+          "spikecluster"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "YL5943": {
+            "diff": 8,
+            "new": 39
+          },
+          "gouda55": {
+            "diff": -4,
+            "new": 37
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 0,
+        "usedTrade": -6,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "thearmory"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "alliancetransport",
+          "frontierrunner",
+          "scout",
+          "scout",
+          "repairmech"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "gouda55": {
+            "diff": 6,
+            "new": 43
+          }
+        },
+        "player": "gouda55"
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 10,
+        "usedTrade": -5,
+        "usedCombat": -10,
+        "purchasedCards": [
+          "federationcruiser"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "frontierhawk",
+          "alliancelanding",
+          "outlandstation",
+          "scout",
+          "stinger"
+        ],
+        "scrappedCards": [
+          "stinger"
+        ],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 1,
+        "authority": {
+          "gouda55": {
+            "diff": -10,
+            "new": 33
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 9,
+        "combatPool": 29,
+        "usedTrade": -9,
+        "usedCombat": -29,
+        "purchasedCards": [
+          "thecolossus"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "imperialflagship",
+          "thearmory",
+          "cargocraft",
+          "lightcruiser",
+          "farmship",
+          "hivequeen",
+          "needlelancer",
+          "scout"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [
+          "defensesystem",
+          "alliancelanding",
+          "outlandstation"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "authority": {
+          "YL5943": {
+            "diff": -15,
+            "new": 24
+          }
+        },
+        "player": "gouda55"
+      },
+      {
+        "tradePool": 0,
+        "combatPool": 0,
+        "usedTrade": 0,
+        "usedCombat": 0,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "corsair",
+          "freightraft",
+          "scout",
+          "viper",
+          "pactpod"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {},
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 4,
+        "usedTrade": -6,
+        "usedCombat": -4,
+        "purchasedCards": [
+          "cargocraft",
+          "needlelancer",
+          "alignmentbot"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "midgatestation",
+          "cargorocket",
+          "coalitionmessenger",
+          "scout"
+        ],
+        "scrappedCards": [
+          "cargorocket"
+        ],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "gouda55": {
+            "diff": 3,
+            "new": 36
+          },
+          "YL5943": {
+            "diff": -4,
+            "new": 20
+          }
+        },
+        "player": "gouda55"
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 5,
+        "usedTrade": 0,
+        "usedCombat": -5,
+        "purchasedCards": [
+          "warpgatecruiser"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "farmship",
+          "gateship"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [
+          "corsair",
+          "scout",
+          "plasmabot"
+        ],
+        "destroyedBases": [
+          "midgatestation"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 1,
+        "authority": {
+          "YL5943": {
+            "diff": 10,
+            "new": 30
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 9,
+        "combatPool": 16,
+        "usedTrade": -9,
+        "usedCombat": -16,
+        "purchasedCards": [
+          "blockaderunner"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "hivequeen",
+          "alliancetransport",
+          "cargocraft",
+          "needlelancer",
+          "scout",
+          "scout"
+        ],
+        "scrappedCards": [
+          "traderowslot"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 1,
+        "authority": {
+          "YL5943": {
+            "diff": -16,
+            "new": 14
+          }
+        },
+        "player": "gouda55"
+      },
+      {
+        "tradePool": 0,
+        "combatPool": 4,
+        "usedTrade": 0,
+        "usedCombat": 0,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "patrolboat"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [
+          "scout",
+          "viper",
+          "warpgatecruiser",
+          "freightraft"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "YL5943": {
+            "diff": 3,
+            "new": 17
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 22,
+        "usedTrade": 0,
+        "usedCombat": -22,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "imperialflagship",
+          "cargocraft",
+          "needlelancer",
+          "lightcruiser"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "gouda55",
+        "winCondition": "",
+        "drawCount": 3,
+        "authority": {
+          "YL5943": {
+            "diff": -22,
+            "new": -5
+          }
+        },
+        "player": "gouda55"
+      }
+    ],
+    "winCondition": ""
+  }
+}

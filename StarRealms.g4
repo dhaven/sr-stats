@@ -14,10 +14,11 @@ purchaseHero       : purchaseSummary purchaseHeroDetail playHero*;
 //purchaseHeroSummary : ACQUIRED heroes  NEWLINE;
 purchaseHeroDetail : negativeBalance acquireHeroToTable refreshIndicators;
 acquireHeroToTable : CHANGED card TO ON SEPARATOR TABLE IMAGE NEWLINE;
-playHero           : tradeRowScrap | resolveFreeAcquire | resolveSelfScrap | multiScrapSummary | positiveBalance | drawCardsWithShuffle | multiScrapDetail | simpleScrap;
+playHero           : triggeredEvent | tradeRowScrap | resolveFreeAcquire | resolveSelfScrap | resolveDiscardAndDraw | multiScrapSummary | positiveBalance | drawCardsWithShuffle | multiScrapDetail | simpleScrap | discarding;
 tradeRowScrap      : RESOLVING SCRAP ((UP TO INT CARDS)|(WORD CARD)) IN THE TRADE ROW NEWLINE;
 resolveFreeAcquire : RESOLVING ACQUIRE ANY SHIP OR BASE OF COST INT OR LESS TO DECK NEWLINE;
 resolveSelfScrap   : RESOLVING SCRAP WORD CARD FROM YOUR HAND OR DISCARD PILE NEWLINE ;
+resolveDiscardAndDraw : RESOLVING DISCARD AND REDRAW UP TO INT CARD'(s)' NEWLINE selectCard;
 
 //describes a purchase action
 purchase        : purchaseSummary purchaseDetail*;
@@ -87,7 +88,7 @@ attackBaseDetail  : negativeBalance | destroyBase | scrapAction;
 scrapCard        : scrappingSummary scrappingDetail;
 scrappingSummary : SCRAPPING card NEWLINE;
 scrappingDetail  : scrapEffect+;
-scrapEffect      : scrapAction | drawCardsWithShuffle | (freePurchase scrapAction) | destroyBase | newBalanceDetail | replaceGambit | scrapSummary | moveDiscardToDeck | refreshIndicators;
+scrapEffect      : scrapAction | drawCardsWithShuffle | (freePurchase scrapAction) | destroyBase | newBalanceDetail | replaceGambit | scrapSummary | moveDiscardToDeck | refreshIndicators | discarding;
 scrapAction      : SCRAPPED card NEWLINE;
 freePurchase     : (ACQUIRED card TO HAND NEWLINE) | ( ACQUIRED card TO THE TOP OF THE DECK NEWLINE) | (ACQUIRED card NEWLINE) ;
 moveDiscardToDeck : name IS SELECTING card NEWLINE;

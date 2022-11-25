@@ -122,6 +122,15 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#resolveDiscardAndDraw.
+	enterResolveDiscardAndDraw(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#resolveDiscardAndDraw.
+	exitResolveDiscardAndDraw(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#purchase.
 	enterPurchase(ctx) {
 	}
