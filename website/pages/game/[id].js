@@ -180,6 +180,8 @@ export async function getServerSideProps(context) {
         } else {
             if (data['winCondition'] == "resignation") {
                 winCondition = "resignation" //data['winner'] + " won by resignation"
+            } else if(data['winCondition'] == "timeout"){
+                winCondition = "timeout"
             } else {
                 winCondition = "defeat" //data['winner'] + " won by defeating " + loserName
             }

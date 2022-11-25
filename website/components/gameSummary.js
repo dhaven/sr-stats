@@ -14,6 +14,8 @@ function GameSummary({winner, loser, winCondition, extensions}){
             return winner + " won by resignation"
         }else if(winCondition == "defeat"){
             return winner + " won by defeating " + loser
+        }else if(winCondition == "timeout"){
+            return winner + " won by timeout"
         }
     }
     let shareGame = async function(){

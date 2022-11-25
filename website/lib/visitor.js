@@ -95,6 +95,9 @@ class Visitor extends StarRealmsVisitor{
             if(nextRound['winCondition'] == "resignation"){
                 winCondition = nextRound['winCondition']
             }
+            if(nextRound['winCondition'] == "timeout"){
+                winCondition = nextRound['winCondition']
+            }
             if(i % 2 == 0){
                 nextRound['player'] = firstPlayer
             }else{
@@ -287,6 +290,8 @@ class Visitor extends StarRealmsVisitor{
                 let summary = this.visit(ctx.action()[i])
                 turnData['authority'] = this.updateAuthorityObj(turnData['authority'], summary['authority'])
                 turnData['winCondition'] = "resignation"
+            }else if(ctx.action()[i].timeout()){
+                turnData['winCondition'] = "timeout"
             }
         }
         if(ctx.winStatus()){

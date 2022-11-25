@@ -1,0 +1,230 @@
+{
+  "status": "success",
+  "data": {
+    "firstPlayer": "MAX1478",
+    "winner": "YL5943",
+    "rounds": [
+      {
+        "tradePool": 2,
+        "combatPool": 4,
+        "usedTrade": -2,
+        "usedCombat": -4,
+        "purchasedCards": [
+          "traderaft",
+          "stinger"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "YL5943": {
+            "diff": -4,
+            "new": 46
+          }
+        },
+        "player": "MAX1478"
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 1,
+        "usedTrade": -4,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "orbitalgunplatform"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "MAX1478": {
+            "diff": -1,
+            "new": 49
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 4,
+        "usedTrade": -4,
+        "usedCombat": -4,
+        "purchasedCards": [
+          "fortressoblivion",
+          "swarmer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "YL5943": {
+            "diff": -4,
+            "new": 42
+          }
+        },
+        "player": "MAX1478"
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 1,
+        "usedTrade": -4,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "blobminer",
+          "missilebot"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "MAX1478": {
+            "diff": -1,
+            "new": 48
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 1,
+        "usedTrade": -4,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "miningmech"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {},
+        "player": "MAX1478"
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 2,
+        "usedTrade": -7,
+        "usedCombat": -2,
+        "purchasedCards": [
+          "securitycraft",
+          "tradingpost"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "blobminer",
+          "scout",
+          "scout",
+          "missilebot"
+        ],
+        "scrappedCards": [
+          "politicalmaneuver",
+          "scout"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "MAX1478": {
+            "diff": -2,
+            "new": 46
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 0,
+        "combatPool": 1,
+        "usedTrade": 0,
+        "usedCombat": 0,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {},
+        "player": "MAX1478"
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 4,
+        "usedTrade": -2,
+        "usedCombat": -4,
+        "purchasedCards": [
+          "explorer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "orbitalgunplatform"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "MAX1478": {
+            "diff": -4,
+            "new": 42
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 0,
+        "combatPool": 1,
+        "usedTrade": 0,
+        "usedCombat": 0,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "YL5943",
+        "winCondition": "timeout",
+        "drawCount": 0,
+        "authority": {},
+        "player": "MAX1478"
+      }
+    ],
+    "winCondition": "timeout"
+  }
+}

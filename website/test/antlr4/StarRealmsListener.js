@@ -50,6 +50,15 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#timeout.
+	enterTimeout(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#timeout.
+	exitTimeout(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#startTurnEffect.
 	enterStartTurnEffect(ctx) {
 	}

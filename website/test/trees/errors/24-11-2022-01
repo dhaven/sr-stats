@@ -20893,75 +20893,75 @@
                   ]
                 },
                 {
-                  "completeMission": [
+                  "playDetail": [
                     {
-                      "completeMissionSummary": [
-                        "Revealed",
+                      "triggeredEvent": [
                         {
-                          "card": [
+                          "triggeredEventSummary": [
+                            "Revealed",
+                            "event",
                             {
-                              "wordPlus": [
-                                "event"
+                              "card": [
+                                {
+                                  "wordPlus": [
+                                    "Wormhole"
+                                  ]
+                                }
                               ]
                             },
+                            "\n"
+                          ]
+                        },
+                        {
+                          "triggeredEventDetail": [
                             {
-                              "wordPlus": [
-                                "Wormhole"
+                              "resolveEvent": [
+                                {
+                                  "resolveEventSummary": [
+                                    {
+                                      "resolveWormhole": [
+                                        "Resolving",
+                                        "Put",
+                                        {
+                                          "wordPlus": [
+                                            "a"
+                                          ]
+                                        },
+                                        "card",
+                                        "from",
+                                        "the",
+                                        "discard",
+                                        "pile",
+                                        "into",
+                                        "the",
+                                        "hand",
+                                        "or",
+                                        "Draw",
+                                        "1",
+                                        "Cards",
+                                        "\n"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "resolveEventDetail": [
+                                    {
+                                      "drawCardsWithShuffle": [
+                                        {
+                                          "drawCards": [
+                                            "Drew",
+                                            "1",
+                                            "cards",
+                                            "\n"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
                               ]
                             }
-                          ]
-                        },
-                        "\n"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "action": [
-            {
-              "resolveEvent": [
-                {
-                  "resolveEventSummary": [
-                    {
-                      "resolveWormhole": [
-                        "Resolving",
-                        "Put",
-                        {
-                          "wordPlus": [
-                            "a"
-                          ]
-                        },
-                        "card",
-                        "from",
-                        "the",
-                        "discard",
-                        "pile",
-                        "into",
-                        "the",
-                        "hand",
-                        "or",
-                        "Draw",
-                        "1",
-                        "Cards",
-                        "\n"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "resolveEventDetail": [
-                    {
-                      "drawCardsWithShuffle": [
-                        {
-                          "drawCards": [
-                            "Drew",
-                            "1",
-                            "cards",
-                            "\n"
                           ]
                         }
                       ]

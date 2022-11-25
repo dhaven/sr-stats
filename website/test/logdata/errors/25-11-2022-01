@@ -1,0 +1,136 @@
+        MAX1478  >  <color=#800080>Frontier Fleet</color> +1 Combat (Combat:1)
+Play all
+        MAX1478  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        MAX1478  >  <color=#800080>Viper</color> +1 Combat (Combat:2)
+        MAX1478  >  <color=#800080>Veteran Pilots</color> +2 Combat (Combat:4)
+        MAX1478  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Acquired <color=#1589FF>Trade Raft</color>
+        MAX1478 - -1 Trade (Trade:1)
+Acquired <color=#4CC417>Stinger</color>
+        MAX1478 - -1 Trade (Trade:0)
+Attacked YL5943 for 4 (New Authority:46)
+        MAX1478 - -4 Combat (Combat:0)
+        YL5943 - -4 Authority (Authority:46)
+MAX1478 ends turn 1
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 2
+Play all
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        YL5943  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Acquired <color=#FFFF00>Orbital Gun Platform</color>
+        YL5943 - -4 Trade (Trade:0)
+Attacked MAX1478 for 1 (New Authority:49)
+        YL5943 - -1 Combat (Combat:0)
+        MAX1478 - -1 Authority (Authority:49)
+YL5943 ends turn 2
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now MAX1478's turn 3
+        MAX1478  >  <color=#800080>Frontier Fleet</color> +1 Combat (Combat:1)
+Play all
+        MAX1478  >  <color=#800080>Viper</color> +1 Combat (Combat:2)
+        MAX1478  >  <color=#800080>Veteran Pilots</color> +2 Combat (Combat:4)
+        MAX1478  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        MAX1478  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        MAX1478  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        MAX1478  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FF0000>Fortress Oblivion</color>
+        MAX1478 - -3 Trade (Trade:1)
+Acquired <color=#4CC417>Swarmer</color>
+        MAX1478 - -1 Trade (Trade:0)
+Attacked YL5943 for 4 (New Authority:42)
+        MAX1478 - -4 Combat (Combat:0)
+        YL5943 - -4 Authority (Authority:42)
+MAX1478 ends turn 3
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 4
+Play all
+        YL5943  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#4CC417>Blob Miner</color>
+        YL5943 - -2 Trade (Trade:2)
+Acquired <color=#FF0000>Missile Bot</color>
+        YL5943 - -2 Trade (Trade:0)
+Attacked MAX1478 for 1 (New Authority:48)
+        YL5943 - -1 Combat (Combat:0)
+        MAX1478 - -1 Authority (Authority:48)
+YL5943 ends turn 4
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now MAX1478's turn 5
+        MAX1478  >  <color=#800080>Frontier Fleet</color> +1 Combat (Combat:1)
+Play all
+        MAX1478  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        MAX1478  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        MAX1478  >  <color=#1589FF>Trade Raft</color> +1 Trade (Trade:3)
+        MAX1478  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        MAX1478  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#FF0000>Mining Mech</color>
+        MAX1478 - -4 Trade (Trade:1)
+MAX1478 ends turn 5
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 6
+Played <color=#4CC417>Blob Miner</color>
+        YL5943  >  <color=#4CC417>Blob Miner</color> +3 Trade (Trade:3)
+Played <color=#800080>Scout</color>
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#1589FF>Security Craft</color>
+        YL5943 - -4 Trade (Trade:0)
+Scrapping Political Maneuver
+        Scrapped <color=#800080>Political Maneuver</color>
+        YL5943  >  <color=#800080>Political Maneuver</color> +2 Trade (Trade:2)
+Played <color=#800080>Scout</color>
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#1589FF>Trading Post</color>
+        YL5943 - -3 Trade (Trade:0)
+Played <color=#FF0000>Missile Bot</color>
+YL5943 is scrapping: Scout
+        YL5943  >  <color=#FF0000>Missile Bot</color> +2 Combat (Combat:2)
+        Scrapped <color=#800080>Scout</color>
+Attacked MAX1478 for 2 (New Authority:46)
+        YL5943 - -2 Combat (Combat:0)
+        MAX1478 - -2 Authority (Authority:46)
+YL5943 ends turn 6
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now MAX1478's turn 7
+        MAX1478  >  <color=#800080>Frontier Fleet</color> +1 Combat (Combat:1)
+MAX1478 ends turn 7
+        Drew 4 cards.
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+        Refresh ally indicators
+        It is now YL5943's turn 8
+Played <color=#FFFF00>Orbital Gun Platform</color>
+        YL5943  >  <color=#FFFF00>Orbital Gun Platform</color> +3 Combat (Combat:3)
+Play all
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        YL5943  >  <color=#800080>Viper</color> +1 Combat (Combat:4)
+        YL5943  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Attacked MAX1478 for 4 (New Authority:42)
+        YL5943 - -4 Combat (Combat:0)
+        MAX1478 - -4 Authority (Authority:42)
+Acquired <color=#800080>Explorer</color>
+        YL5943 - -2 Trade (Trade:1)
+YL5943 ends turn 8
+        Drew 3 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now MAX1478's turn 9
+        MAX1478  >  <color=#800080>Frontier Fleet</color> +1 Combat (Combat:1)
+YL5943 wins the game
+        === YL5943 has won the game. ===
