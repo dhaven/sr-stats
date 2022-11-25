@@ -780,10 +780,10 @@
           "patrolboat",
           "stinger"
         ],
-        "completedMissions": [
-          "eventwormhole"
+        "completedMissions": [],
+        "events": [
+          "wormhole"
         ],
-        "events": [],
         "playedCards": [
           "scout",
           "scout",

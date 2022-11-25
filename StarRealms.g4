@@ -31,7 +31,7 @@ acquireToDeck   : ACQUIRED card TO THE TOP OF THE DECK NEWLINE;
 play                  : playSummary playDetail* completeMission?;
 playSummary           : (PLAY ALL NEWLINE) | playSingle;
 playSingle            : PLAYED card NEWLINE;
-playDetail            : positiveBalance | newAbility | drawCardsWithShuffle | scrapCardEffect | discardForPool | discarding | multiScrap | noScrap | simpleScrap | destroyBase | moveBaseToDeck | freeAcquire | copyCardSummary | copyCardEffect | refreshCost;
+playDetail            : positiveBalance | newAbility | drawCardsWithShuffle | scrapCardEffect | discardForPool | discarding | multiScrap | noScrap | simpleScrap | destroyBase | moveBaseToDeck | freeAcquire | copyCardSummary | copyCardEffect | refreshCost | triggeredEvent;
 newAbility            : name SEPARATOR card ABILITY AVAILABLE NEWLINE;
 multiScrap            : multiScrapSummary multiScrapDetail;
 multiScrapSummary     : RESOLVING SCRAP UP TO INT CARDS FROM YOUR HAND OR DISCARD PILE NEWLINE;
@@ -42,6 +42,11 @@ moveBaseToDeck        : name IS SELECTING card NEWLINE;
 freeAcquire           : ACQUIRED card  NEWLINE (acquireToHand|acquireToDeck);
 refreshCost           : REFRESH TRADE ROW DISCOUNTS NEWLINE ;
 
+//describe an event being triggered
+triggeredEvent        : triggeredEventSummary triggeredEventDetail* ;
+triggeredEventSummary : REVEALED EVENT card NEWLINE ;
+triggeredEventDetail  : positiveBalance | acquireToHand | negativeBalance | scrapAction | drawCardsWithShuffle | resolveEvent | refreshIndicators;
+
 //describe rewards of missions
 completeMission       : completeMissionSummary  completeMissionsDetail*;
 completeMissionSummary : REVEALED card NEWLINE;
@@ -51,11 +56,6 @@ resolveAllyReward    : RESOLVING ACQUIRE ANY SHIP OR BASE OF COST INT OR LESS TO
 resolveRuleReward    : RESOLVING ACQUIRE ANY CARD OF COST INT OR LESS TO HAND NEWLINE ;
 resolveDefendReward  : RESOLVING RETURN TARGET BASE NEWLINE;
 resolveConvertReward : RESOLVING RETURN INT CARD TO THE TOP OF YOUR DECK NEWLINE name IS RETURNING card NEWLINE discard ;
-
-//describe an event being triggered
-triggeredEvent        : triggeredEventSummary triggeredEventDetail* ;
-triggeredEventSummary : REVEALED EVENT card NEWLINE ;
-triggeredEventDetail  : positiveBalance | acquireToHand | negativeBalance | scrapAction | drawCardsWithShuffle | resolveEvent | refreshIndicators;
 
 //when the event effects needs to be resolved b the user
 resolveEvent          : resolveEventSummary resolveEventDetail*;

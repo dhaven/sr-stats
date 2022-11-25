@@ -205,9 +205,11 @@ class Visitor extends StarRealmsVisitor{
             }
             else if(ctx.action()[i].play()){
                 let playActionDetail = this.visit(ctx.action()[i])
+                turnData['events'] = turnData['events'].concat(playActionDetail['events'])
                 turnData['purchasedCards'] = turnData['purchasedCards'].concat(playActionDetail['acquiredCards'])
                 turnData['playedCards'] = turnData['playedCards'].concat(playActionDetail['playedCards'])
                 turnData['scrappedCards'] = turnData['scrappedCards'].concat(playActionDetail['scrappedCards'])
+                turnData['discardedCards'] = turnData['discardedCards'].concat(playActionDetail['discardedCards'])
                 turnData['drawCount'] += playActionDetail['drawCount']
                 turnData['tradePool'] += playActionDetail['balance']['tradePool']
                 turnData['combatPool'] += playActionDetail['balance']['combatPool']
@@ -473,10 +475,12 @@ class Visitor extends StarRealmsVisitor{
     // returns info about the cards played and associated effects
     visitPlay(ctx){
         let playSummary =  {
+            events: [],
             acquiredCards: [],
             playedCards: [],
             scrappedCards: [],
             destroyedBases: [],
+            discardedCards: [],
             drawCount: 0,
             winner: "",
             mission: "",
@@ -515,6 +519,17 @@ class Visitor extends StarRealmsVisitor{
             else if(ctx.playDetail()[i].freeAcquire()){
                 let acquiredCard = this.visit(ctx.playDetail()[i])
                 playSummary['acquiredCards'].push(acquiredCard)
+            }else if(ctx.playDetail()[i].triggeredEvent()){
+                let triggeredEventInfo = this.visit(ctx.playDetail()[i])
+                playSummary['events'].push(triggeredEventInfo['event'])
+                playSummary['balance']['tradePool'] += triggeredEventInfo['balance']['tradePool']
+                playSummary['balance']['combatPool'] += triggeredEventInfo['balance']['combatPool']
+                playSummary['balance']['usedTrade'] += triggeredEventInfo['balance']['usedTrade']
+                playSummary['balance']['usedCombat'] += triggeredEventInfo['balance']['usedCombat']
+                playSummary['balance']['authority'] = this.updateAuthorityObj(playSummary['balance']['authority'], triggeredEventInfo['balance']['authority'])
+                playSummary['scrappedCards'] = playSummary['scrappedCards'].concat(triggeredEventInfo['scrappedCards'])
+                playSummary['discardedCards'] = playSummary['discardedCards'].concat(triggeredEventInfo['discardedCards'])
+                playSummary['drawCount'] += triggeredEventInfo['drawCount']
             }
         }
         if(ctx.completeMission()){
@@ -552,6 +567,8 @@ class Visitor extends StarRealmsVisitor{
             return this.visit(ctx.destroyBase())
         }else if(ctx.freeAcquire()){
             return this.visit(ctx.freeAcquire())
+        }else if(ctx.triggeredEvent()){
+            return this.visit(ctx.triggeredEvent())
         }
     }
 
