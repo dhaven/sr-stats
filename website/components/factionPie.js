@@ -20,7 +20,6 @@ function FactionPie({factions}) {
           'Unaligned'
         ],
         datasets: [{
-          label: 'My First Dataset',
           data: [
             factions['Machine Cult'],
             factions['Trade Federation'],
