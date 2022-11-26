@@ -47,7 +47,7 @@ function GameSummary({winner, loser, winCondition, extensions}){
             </button>
             <p className="text-scifi5 text-xl md:text-3xl font-medium">{getSummaryMessage(winCondition, winner, loser)}</p>
             <div className="md:hidden flex justify-between">
-                <div className="flex items-center gap-1 md:gap-2">
+                <div className="flex flex-wrap items-center gap-1 md:gap-2">
                     {
                         extensions.map((value, index)=>{
                             if(value == "core_set" || value == "promo1" || value == "promo2"){
