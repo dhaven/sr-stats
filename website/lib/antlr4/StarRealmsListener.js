@@ -329,6 +329,33 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#selectMission.
+	enterSelectMission(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#selectMission.
+	exitSelectMission(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#resolveSelectMission.
+	enterResolveSelectMission(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#resolveSelectMission.
+	exitResolveSelectMission(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#actionSelectMission.
+	enterActionSelectMission(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#actionSelectMission.
+	exitActionSelectMission(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#completeMission.
 	enterCompleteMission(ctx) {
 	}

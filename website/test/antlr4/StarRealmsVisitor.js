@@ -222,6 +222,24 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
+	// Visit a parse tree produced by StarRealmsParser#selectMission.
+	visitSelectMission(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#resolveSelectMission.
+	visitResolveSelectMission(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#actionSelectMission.
+	visitActionSelectMission(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
 	// Visit a parse tree produced by StarRealmsParser#completeMission.
 	visitCompleteMission(ctx) {
 	  return this.visitChildren(ctx);

@@ -48,8 +48,13 @@ triggeredEvent        : triggeredEventSummary triggeredEventDetail* ;
 triggeredEventSummary : REVEALED EVENT card NEWLINE ;
 triggeredEventDetail  : positiveBalance | acquireToHand | negativeBalance | scrapAction | drawCardsWithShuffle | resolveEvent | refreshIndicators;
 
+// if multiple missions are completed at once the user needs to choose one of them
+selectMission: resolveSelectMission actionSelectMission;
+resolveSelectMission: RESOLVING SELECT MISSION TO COMPLETE NEWLINE;
+actionSelectMission: SELECTED MISSION ':' card NEWLINE;
+
 //describe rewards of missions
-completeMission       : completeMissionSummary  completeMissionsDetail*;
+completeMission       : selectMission? completeMissionSummary  completeMissionsDetail*;
 completeMissionSummary : REVEALED card NEWLINE;
 completeMissionsDetail : positiveBalance | drawCardsWithShuffle | acquireToHand | selectMissionsReward | winStatus | freeAcquire | resolveAllyReward | resolveRuleReward | resolveDefendReward | resolveConvertReward;
 selectMissionsReward : RESOLVING ADD INT TRADE OR ADD INT COMBAT OR ADD INT AUTHORITY NEWLINE;
@@ -100,7 +105,7 @@ discardSummary   : RESOLVING DISCARD INT CARDS NEWLINE ;
 discardDetail    : discardAction | discardEnd | discarding | eventRefuseDiscard | negativeBalance | refreshTradeRow;
 discardAction    : name IS DISCARDING card NEWLINE ;
 discardEnd       : NO MORE2 CARDS TO DISCARD NEWLINE ;
-eventRefuseDiscard : name IS NOT DISCARDING ANY CARDS NEWLINE ;
+eventRefuseDiscard : name ('('INT ')')? IS NOT DISCARDING (ANY CARDS)? NEWLINE ;
 
 //describe  a log line that starts with 'Chose ...'
 //applies to ships and bases where the user can chose between one or more effects
@@ -124,9 +129,9 @@ changeHiddenBaseToFaction : CHANGED SECRET OUTPOST TO wordPlus+ NEWLINE;
 
 //describes a log line that start with 'Activating ...'
 //applies to bases and ships where the user can chose when the effect is activated
-activatingEffect        : activatingSummary activatingDetail*;
+activatingEffect        : activatingSummary activatingDetail*  completeMission?;
 activatingSummary       : ACTIVATING card NEWLINE;
-activatingDetail        : resolveHandScrap | drawCardsWithShuffle | scrapSummary | noScrap | freeAcquireToTop | destroyBase | scrapDetail | noCopy | noCopyBases | copyCard | copyBase | discardAndDraw | positiveBalance | negativeBalance | resolveStealth | copyStealth | selectCard | discarding;
+activatingDetail        : resolveHandScrap | drawCardsWithShuffle | scrapSummary | noScrap | freeAcquireToTop | destroyBase | scrapDetail | noCopy | noCopyBases | copyCard | copyBase | discardAndDraw | positiveBalance | negativeBalance | resolveStealth | copyStealth | selectCard | discarding | discardEnd | eventRefuseDiscard;
 scrap                   : scrapSummary+ scrapDetail+;
 resolveHandScrap        : resolveHandScrapSummary scrapDetail;
 freeAcquireToTop        : ACQUIRED card NEWLINE purchaseToTop;
@@ -181,7 +186,7 @@ card                  : ((wordPlus '\'s'?) | INT)+ ;
 // confessormorris       : CONFESSOR MORRIS;
 // hivelord              : HIVE LORD;
 // screecher             : SCREECHER;
-wordPlus              : WORD|COMBAT|AUTHORITY|TRADE|ALLIES|ACQUIRE|CONCEDED|OPPONENT|DISCARDS|FEDERATION|STAR|EXPLORER|PUT|EMPIRE|MACHINE|CULT|ACQUIRED|DISCOUNTS|CREATE|SECRET|OUTPOST|UNALIGNED|ACTIVATING|NEXT|ATTACKED|SCRAPPING|SCRAPPED|RETURNING|SCRAP|SELECTING|SHUFFLED|DISCARDED|DISCARD|REFRESH|REVEALED|DISCARDING|DESTROYED|RESOLVING|INDICATORS|MOVING|AVAILABLE|ABILITY|CHANGED|IMAGE|PLAYED|COPYING|COPIED|REPLACED|RECEIVE|REDRAW|COPY|RETURN|INTO|EVENT|TARGET|DRAW|EVERY|NUMBER|BLOB|CARDS|CHOSE|TURN|SHIP|SHIPS|BASE|TABLE|BASES|PILE|EACH|PLAY|COST|FORM|DECK|DREW|DESTROY|LOSE|ENDS|CARD|MORE2|FROM|YOUR|ALLY|THIS|HAND|GAME|LESS|ONE|NEW|ALL|NOW|ROW|THE|TOP|FOR|DID|AND|ADD|NOT|HAS|WON|WINS|ANY|IS|IT|IN|TO|OF|UP|OR|NO|ON;
+wordPlus              : WORD|COMBAT|AUTHORITY|TRADE|ALLIES|ACQUIRE|CONCEDED|OPPONENT|DISCARDS|FEDERATION|COMPLETE|SELECT|SELECTED|MISSION|STAR|EXPLORER|PUT|EMPIRE|MACHINE|CULT|ACQUIRED|DISCOUNTS|CREATE|SECRET|OUTPOST|UNALIGNED|ACTIVATING|NEXT|ATTACKED|SCRAPPING|SCRAPPED|RETURNING|SCRAP|SELECTING|SHUFFLED|DISCARDED|DISCARD|REFRESH|REVEALED|DISCARDING|DESTROYED|RESOLVING|INDICATORS|MOVING|AVAILABLE|ABILITY|CHANGED|IMAGE|PLAYED|COPYING|COPIED|REPLACED|RECEIVE|REDRAW|COPY|RETURN|INTO|EVENT|TARGET|DRAW|EVERY|NUMBER|BLOB|CARDS|CHOSE|TURN|SHIP|SHIPS|BASE|TABLE|BASES|PILE|EACH|PLAY|COST|FORM|DECK|DREW|DESTROY|LOSE|ENDS|CARD|MORE2|FROM|YOUR|ALLY|THIS|HAND|GAME|LESS|ONE|NEW|ALL|NOW|ROW|THE|TOP|FOR|DID|AND|ADD|NOT|HAS|WON|WINS|ANY|IS|IT|IN|TO|OF|UP|OR|NO|ON;
 
 fragment A : ('A'|'a');
 fragment B : ('B'|'b');
@@ -262,6 +267,7 @@ RETURNING           : R E T U R N I N G ;
 ABILITY             : A B I L I T Y ;
 CHANGED             : C H A N G E D ;
 REVEALED            : R E V E A L E D ;
+COMPLETE            : C O M P L E T E ;
 REPLACED            : R E P L A C E D ;
 COPYING             : C O P Y I N G ;
 COPIED              : C O P I E D ;
@@ -271,6 +277,9 @@ REDRAW              : R E D R A W ;
 TABLE               : T A B L E ;
 ALLIES              : A L L I E S ;
 EXPLORER            : E X P L O R E R ;
+SELECT              : S E L E C T ;
+SELECTED            : S E L E C T E D ;
+MISSION             : M I S S I O N ;
 PUT                 : P U T ;
 CREATE              : C R E A T E ;
 PLAYED              : P L A Y E D ;

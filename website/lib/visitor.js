@@ -286,6 +286,12 @@ class Visitor extends StarRealmsVisitor{
                 turnData['usedTrade'] += activatingEffectActionDetail['balance']['usedTrade']
                 turnData['usedCombat'] += activatingEffectActionDetail['balance']['usedCombat']
                 turnData['authority'] = this.updateAuthorityObj(turnData['authority'], activatingEffectActionDetail['balance']['authority'])
+                if(activatingEffectActionDetail['mission'] != ""){
+                    turnData['completedMissions'].push(activatingEffectActionDetail['mission'])
+                }
+                if(activatingEffectActionDetail['winner'] != ""){
+                    turnData['winner'] = activatingEffectActionDetail['winner']
+                }
             }else if(ctx.action()[i].concede()){
                 let summary = this.visit(ctx.action()[i])
                 turnData['authority'] = this.updateAuthorityObj(turnData['authority'], summary['authority'])
@@ -450,7 +456,6 @@ class Visitor extends StarRealmsVisitor{
                 purchase['drawCount'] += playHeroDetail['drawCount']
             }
         }
-        console.log(purchase)
         return purchase
     }
 
@@ -995,6 +1000,8 @@ class Visitor extends StarRealmsVisitor{
     // grammar: activatingSummary activatingDetail*;
     visitActivatingEffect(ctx) {
         let activatingEffectSummary = {
+            mission: "",
+            winner: "",
             acquiredCards: [],
             scrappedCards: [],
             discardedCards: [],
@@ -1036,6 +1043,18 @@ class Visitor extends StarRealmsVisitor{
                 let summary = this.visit(ctx.activatingDetail()[i])
                 activatingEffectSummary['discardedCards'].push(summary)
             }
+        }
+        if(ctx.completeMission()){
+            let missionSummary = this.visit(ctx.completeMission())
+            activatingEffectSummary['balance']['tradePool'] += missionSummary['balance']['tradePool']
+            activatingEffectSummary['balance']['combatPool'] += missionSummary['balance']['combatPool']
+            activatingEffectSummary['balance']['usedTrade'] += missionSummary['balance']['usedTrade']
+            activatingEffectSummary['balance']['usedCombat'] += missionSummary['balance']['usedCombat']
+            activatingEffectSummary['balance']['authority'] = this.updateAuthorityObj(activatingEffectSummary['balance']['authority'],  missionSummary['balance']['authority'])
+            activatingEffectSummary['acquiredCards'] = activatingEffectSummary['acquiredCards'].concat(missionSummary['purchasedCards'])
+            activatingEffectSummary['drawCount'] += missionSummary['drawCount']
+            activatingEffectSummary['mission'] = missionSummary['name']
+            activatingEffectSummary['winner'] = missionSummary['winner']
         }
         return activatingEffectSummary
     }
