@@ -1,7 +1,7 @@
 grammar StarRealms;
 
 battle            : turn+;
-turn              : action+ (endPhase | winStatus | EOF) ;
+turn              : endPhase | (action+ (endPhase | winStatus | EOF)) ;
 action            : startTurnEffect | triggeredEvent | resolveEvent | purchase | purchaseHero | play | attackPlayer | attackBase | scrapCard | discard | choseEffect | activatingEffect |  concede | timeout;
 winStatus         : name HAS WON THE GAME NEWLINE? ;
 concede           : name '('INT ')' CONCEDED NEWLINE negativeBalance;

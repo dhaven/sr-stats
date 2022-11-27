@@ -1,0 +1,563 @@
+{
+  "status": "success",
+  "data": {
+    "firstPlayer": "Anibalon",
+    "winner": "YL5943",
+    "rounds": [
+      {
+        "tradePool": 0,
+        "combatPool": 0,
+        "usedTrade": 0,
+        "usedCombat": 0,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {},
+        "player": "Anibalon"
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 1,
+        "usedTrade": -4,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "blobminer",
+          "plaguepod",
+          "swarmer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "Anibalon": {
+            "diff": -1,
+            "new": 49
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 1,
+        "usedTrade": -4,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "blockaderunner",
+          "imperialfrigate"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "YL5943": {
+            "diff": -1,
+            "new": 49
+          }
+        },
+        "player": "Anibalon"
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 1,
+        "usedTrade": -4,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "nestingground"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "Anibalon": {
+            "diff": -1,
+            "new": 48
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 5,
+        "usedTrade": -3,
+        "usedCombat": -5,
+        "purchasedCards": [
+          "battlestation"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "YL5943": {
+            "diff": -5,
+            "new": 44
+          }
+        },
+        "player": "Anibalon"
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 3,
+        "usedTrade": -2,
+        "usedCombat": -3,
+        "purchasedCards": [
+          "stellarreef"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "swarmer"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "Anibalon": {
+            "diff": -3,
+            "new": 45
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 1,
+        "usedTrade": -4,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "bioformer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "YL5943": {
+            "diff": -1,
+            "new": 43
+          }
+        },
+        "player": "Anibalon"
+      },
+      {
+        "tradePool": 8,
+        "combatPool": 0,
+        "usedTrade": -8,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "ram",
+          "patrolcutter",
+          "predator"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "blobminer",
+          "plaguepod"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {},
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 1,
+        "combatPool": 10,
+        "usedTrade": -1,
+        "usedCombat": -10,
+        "purchasedCards": [
+          "tradebot"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "blockaderunner",
+          "imperialfrigate",
+          "bioformer"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 2,
+        "authority": {
+          "YL5943": {
+            "diff": -10,
+            "new": 33
+          }
+        },
+        "player": "Anibalon"
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 1,
+        "usedTrade": -4,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "spikecluster",
+          "explorer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "viper"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "Anibalon": {
+            "diff": -1,
+            "new": 44
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 4,
+        "usedTrade": -7,
+        "usedCombat": -4,
+        "purchasedCards": [
+          "neuralnexus"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [
+          "bioformer"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "YL5943": {
+            "diff": -4,
+            "new": 29
+          }
+        },
+        "player": "Anibalon"
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 11,
+        "usedTrade": -7,
+        "usedCombat": -11,
+        "purchasedCards": [
+          "tradingpost",
+          "orbitalplatform",
+          "swarmer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "Anibalon": {
+            "diff": -11,
+            "new": 33
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 2,
+        "combatPool": 2,
+        "usedTrade": -2,
+        "usedCombat": -2,
+        "purchasedCards": [
+          "predator"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "YL5943": {
+            "diff": -2,
+            "new": 27
+          }
+        },
+        "player": "Anibalon"
+      },
+      {
+        "tradePool": 10,
+        "combatPool": 11,
+        "usedTrade": -10,
+        "usedCombat": -11,
+        "purchasedCards": [
+          "imperialpalace",
+          "imperialfrigate"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "predator",
+          "stellarreef",
+          "blobminer",
+          "patrolcutter"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [
+          "battlestation"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 1,
+        "authority": {
+          "Anibalon": {
+            "diff": -6,
+            "new": 27
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 8,
+        "usedTrade": -3,
+        "usedCombat": -8,
+        "purchasedCards": [
+          "cargopod"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "tradebot",
+          "blockaderunner",
+          "neuralnexus"
+        ],
+        "scrappedCards": [
+          "scout",
+          "scout"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "nestingground",
+          "stellarreef"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 3,
+        "authority": {},
+        "player": "Anibalon"
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 19,
+        "usedTrade": -4,
+        "usedCombat": -19,
+        "purchasedCards": [
+          "patrolboat",
+          "frontierrunner"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "swarmer",
+          "swarmer"
+        ],
+        "scrappedCards": [
+          "plaguepod"
+        ],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [
+          "neuralnexus"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "Anibalon": {
+            "diff": -13,
+            "new": 14
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 4,
+        "usedTrade": -2,
+        "usedCombat": -4,
+        "purchasedCards": [
+          "explorer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "battlestation",
+          "imperialfrigate"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "YL5943": {
+            "diff": -4,
+            "new": 23
+          }
+        },
+        "player": "Anibalon"
+      },
+      {
+        "tradePool": 2,
+        "combatPool": 11,
+        "usedTrade": 0,
+        "usedCombat": -11,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "imperialpalace",
+          "tradingpost",
+          "imperialfrigate",
+          "viper"
+        ],
+        "scrappedCards": [
+          "imperialfrigate"
+        ],
+        "discardedCards": [
+          "viper"
+        ],
+        "destroyedBases": [
+          "battlestation"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 2,
+        "authority": {
+          "YL5943": {
+            "diff": 1,
+            "new": 24
+          },
+          "Anibalon": {
+            "diff": -6,
+            "new": 8
+          }
+        },
+        "player": "YL5943"
+      },
+      {
+        "tradePool": 1,
+        "combatPool": 4,
+        "usedTrade": 0,
+        "usedCombat": -4,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "blockaderunner"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [
+          "scout",
+          "tradebot"
+        ],
+        "destroyedBases": [
+          "tradingpost"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 1,
+        "authority": {},
+        "player": "Anibalon"
+      },
+      {
+        "tradePool": 1,
+        "combatPool": 20,
+        "usedTrade": 0,
+        "usedCombat": -20,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "orbitalplatform",
+          "spikecluster",
+          "predator",
+          "ram"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "YL5943",
+        "winCondition": "",
+        "drawCount": 2,
+        "authority": {
+          "Anibalon": {
+            "diff": -20,
+            "new": -12
+          }
+        },
+        "player": "YL5943"
+      }
+    ],
+    "winCondition": ""
+  }
+}
