@@ -73,8 +73,8 @@ function OtherCharts({winner, otherData, otherAggrData}){
         //   show the x and y scales
         scales: {
             x: {
-                beginAtZero: false,
-                offset: false,
+                beginAtZero: true,
+                offset: true,
                 display: false,
             },
             y: { 
