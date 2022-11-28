@@ -253,7 +253,6 @@ export async function getServerSideProps(context) {
                 drawAggrData[secondPlayer] += data['rounds'][i]['drawCount']
             }
         }
-        console.log(combatData)
         return {
             props: {
                 winner: data['winner'],
