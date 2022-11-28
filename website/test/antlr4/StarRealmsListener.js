@@ -851,6 +851,15 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#choseSupplyBot.
+	enterChoseSupplyBot(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#choseSupplyBot.
+	exitChoseSupplyBot(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#choseEffectDetail.
 	enterChoseEffectDetail(ctx) {
 	}
