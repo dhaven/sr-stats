@@ -770,6 +770,24 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarRealmsParser#choseScrapTradeRow.
+	enterChoseScrapTradeRow(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#choseScrapTradeRow.
+	exitChoseScrapTradeRow(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#chooseSelfScrap.
+	enterChooseSelfScrap(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#chooseSelfScrap.
+	exitChooseSelfScrap(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarRealmsParser#choseIncreasePool.
 	enterChoseIncreasePool(ctx) {
 	}
@@ -1040,21 +1058,21 @@ export default class StarRealmsListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
-	// Enter a parse tree produced by StarRealmsParser#resolveHandScrapSummary.
-	enterResolveHandScrapSummary(ctx) {
-	}
-
-	// Exit a parse tree produced by StarRealmsParser#resolveHandScrapSummary.
-	exitResolveHandScrapSummary(ctx) {
-	}
-
-
 	// Enter a parse tree produced by StarRealmsParser#resolveStealth.
 	enterResolveStealth(ctx) {
 	}
 
 	// Exit a parse tree produced by StarRealmsParser#resolveStealth.
 	exitResolveStealth(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarRealmsParser#resolveSplinter.
+	enterResolveSplinter(ctx) {
+	}
+
+	// Exit a parse tree produced by StarRealmsParser#resolveSplinter.
+	exitResolveSplinter(ctx) {
 	}
 
 

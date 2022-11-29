@@ -1,0 +1,512 @@
+Play all
+        Willydt  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Acquired <color=#FF0000>Battle Bot</color>
+        Willydt - -1 Trade (Trade:1)
+Acquired <color=#4CC417>Swarmer</color>
+        Willydt - -1 Trade (Trade:0)
+Attacked ZaZ333 for 1 (New Authority:49)
+        Willydt - -1 Combat (Combat:0)
+        ZaZ333 - -1 Authority (Authority:49)
+Willydt ends turn 1
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now ZaZ333's turn 2
+Play all
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        ZaZ333  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#4CC417>Cargo Pod</color>
+        ZaZ333 - -3 Trade (Trade:1)
+Attacked Willydt for 1 (New Authority:49)
+        ZaZ333 - -1 Combat (Combat:0)
+        Willydt - -1 Authority (Authority:49)
+ZaZ333 ends turn 2
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Willydt's turn 3
+Play all
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#FFFF00>Command Center</color>
+        Willydt - -4 Trade (Trade:1)
+Willydt ends turn 3
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now ZaZ333's turn 4
+Play all
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        ZaZ333  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FFFF00>Orbital Platform</color>
+        ZaZ333 - -3 Trade (Trade:1)
+Attacked Willydt for 1 (New Authority:48)
+        ZaZ333 - -1 Combat (Combat:0)
+        Willydt - -1 Authority (Authority:48)
+ZaZ333 ends turn 4
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Willydt's turn 5
+Play all
+        Willydt  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FFFF00>Lancer</color>
+        Willydt - -2 Trade (Trade:2)
+Acquired <color=#800080>Explorer</color>
+        Willydt - -2 Trade (Trade:0)
+Attacked ZaZ333 for 1 (New Authority:48)
+        Willydt - -1 Combat (Combat:0)
+        ZaZ333 - -1 Authority (Authority:48)
+Willydt ends turn 5
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now ZaZ333's turn 6
+Played <color=#FFFF00>Orbital Platform</color>
+Activating Orbital Platform
+ZaZ333 is selecting Scout
+        Discarded <color=#800080>Scout</color>
+        Drew 1 cards.
+Play all
+        ZaZ333  >  <color=#4CC417>Cargo Pod</color> +3 Trade (Trade:3)
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        ZaZ333  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Acquired <color=#4CC417>Ravager</color>
+        ZaZ333 - -3 Trade (Trade:2)
+Acquired <color=#1589FF>Solar Skiff</color>
+        ZaZ333 - -1 Trade (Trade:1)
+Attacked Willydt for 1 (New Authority:47)
+        ZaZ333 - -1 Combat (Combat:0)
+        Willydt - -1 Authority (Authority:47)
+ZaZ333 ends turn 6
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Willydt's turn 7
+Played <color=#FFFF00>Command Center</color>
+        Willydt  >  <color=#FFFF00>Command Center</color> +2 Trade (Trade:2)
+Played <color=#800080>Scout</color>
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#4CC417>Cargo Pod</color>
+        Willydt - -3 Trade (Trade:0)
+Played <color=#4CC417>Swarmer</color>
+        Willydt  >  <color=#4CC417>Swarmer</color> +3 Combat (Combat:3)
+        Scrapped <color=#1589FF>Patrol Cutter</color>
+Play all
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Willydt  >  <color=#800080>Viper</color> +1 Combat (Combat:4)
+Acquired <color=#FF0000>Battle Bot</color>
+        Willydt - -1 Trade (Trade:0)
+Attacked Orbital Platform
+        Willydt - -4 Combat (Combat:0)
+        Destroyed <color=#FFFF00>Orbital Platform</color>
+Willydt ends turn 7
+        Drew 3 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now ZaZ333's turn 8
+Play all
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        ZaZ333  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FF0000>Repair Bot</color>
+        ZaZ333 - -2 Trade (Trade:2)
+Acquired <color=#1589FF>Solar Skiff</color>
+        ZaZ333 - -1 Trade (Trade:1)
+ZaZ333 ends turn 8
+        Drew 1 cards.
+        Shuffled discard pile to form new deck
+        Drew 4 cards.
+        Refresh ally indicators
+        It is now Willydt's turn 9
+        Willydt  >  <color=#FFFF00>Command Center</color> +2 Trade (Trade:2)
+Played <color=#FF0000>Battle Bot</color>
+        Willydt  >  <color=#FF0000>Battle Bot</color> +2 Combat (Combat:2)
+        Scrapped <color=#800080>Scout</color>
+Played <color=#800080>Explorer</color>
+        Willydt  >  <color=#800080>Explorer</color> +2 Trade (Trade:4)
+Acquired <color=#FFFF00>Gunship</color>
+        Willydt - -4 Trade (Trade:0)
+Played <color=#4CC417>Swarmer</color>
+        Willydt  >  <color=#4CC417>Swarmer</color> +3 Combat (Combat:5)
+        Scrapped <color=#1589FF>Peacekeeper</color>
+Played <color=#800080>Scout</color>
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+Acquired <color=#FFFF00>Star Barge</color>
+        Willydt - -1 Trade (Trade:0)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        Willydt  >  <color=#800080>Explorer</color> +2 Combat (Combat:7)
+Attacked ZaZ333 for 7 (New Authority:41)
+        Willydt - -7 Combat (Combat:0)
+        ZaZ333 - -7 Authority (Authority:41)
+Willydt ends turn 9
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now ZaZ333's turn 10
+Play all
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        ZaZ333  >  <color=#1589FF>Solar Skiff</color> +2 Trade (Trade:3)
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+Acquired <color=#FFFF00>Lancer</color>
+        ZaZ333 - -2 Trade (Trade:4)
+Acquired <color=#FF0000>Battle Bot</color>
+        ZaZ333 - -1 Trade (Trade:3)
+Acquired <color=#4CC417>Stellar Reef</color>
+        ZaZ333 - -2 Trade (Trade:1)
+ZaZ333 ends turn 10
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Willydt's turn 11
+        Willydt  >  <color=#FFFF00>Command Center</color> +2 Trade (Trade:2)
+Played <color=#4CC417>Cargo Pod</color>
+        Willydt  >  <color=#4CC417>Cargo Pod</color> +3 Trade (Trade:5)
+Played <color=#FF0000>Battle Bot</color>
+        Willydt  >  <color=#FF0000>Battle Bot</color> +2 Combat (Combat:2)
+        Scrapped <color=#800080>Viper</color>
+Play all
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:7)
+Acquired <color=#FFFF00>Supply Depot</color>
+        Willydt - -6 Trade (Trade:1)
+Attacked ZaZ333 for 2 (New Authority:39)
+        Willydt - -2 Combat (Combat:0)
+        ZaZ333 - -2 Authority (Authority:39)
+Willydt ends turn 11
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now ZaZ333's turn 12
+Played <color=#FFFF00>Orbital Platform</color>
+Activating Orbital Platform
+ZaZ333 is selecting Scout
+        Discarded <color=#800080>Scout</color>
+        Drew 1 cards.
+Played <color=#4CC417>Cargo Pod</color>
+        ZaZ333  >  <color=#4CC417>Cargo Pod</color> +3 Trade (Trade:3)
+Played <color=#4CC417>Ravager</color>
+        ZaZ333  >  <color=#4CC417>Ravager</color> ability available
+        ZaZ333  >  <color=#4CC417>Ravager</color> +6 Combat (Combat:6)
+        Scrapped <color=#1589FF>Federation Shipyard</color>
+        Scrapped <color=#FF0000>Frontier Station</color>
+        ZaZ333  >  <color=#4CC417>Cargo Pod</color> +3 Combat (Combat:9)
+Play all
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#FFFF00>Gunship</color>
+        ZaZ333 - -4 Trade (Trade:1)
+Attacked Command Center
+        ZaZ333 - -4 Combat (Combat:5)
+        Destroyed <color=#FFFF00>Command Center</color>
+Attacked Willydt for 5 (New Authority:42)
+        ZaZ333 - -5 Combat (Combat:0)
+        Willydt - -5 Authority (Authority:42)
+ZaZ333 ends turn 12
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Willydt's turn 13
+Played <color=#FFFF00>Lancer</color>
+        Willydt  >  <color=#FFFF00>Lancer</color> +4 Combat (Combat:4)
+        Willydt  >  <color=#FFFF00>Lancer</color> +2 Combat (Combat:6)
+Played <color=#800080>Viper</color>
+        Willydt  >  <color=#800080>Viper</color> +1 Combat (Combat:7)
+Play all
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#1589FF>Patrol Cutter</color>
+        Willydt - -3 Trade (Trade:0)
+Attacked Orbital Platform
+        Willydt - -4 Combat (Combat:3)
+        Destroyed <color=#FFFF00>Orbital Platform</color>
+Attacked ZaZ333 for 3 (New Authority:36)
+        Willydt - -3 Combat (Combat:0)
+        ZaZ333 - -3 Authority (Authority:36)
+Willydt ends turn 13
+        Drew 1 cards.
+        Shuffled discard pile to form new deck
+        Drew 4 cards.
+        Refresh ally indicators
+        It is now ZaZ333's turn 14
+Played <color=#FF0000>Repair Bot</color>
+ZaZ333 is scrapping: Scout
+        ZaZ333  >  <color=#FF0000>Repair Bot</color> +2 Trade (Trade:2)
+        Scrapped <color=#800080>Scout</color>
+Play all
+        ZaZ333  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        ZaZ333  >  <color=#1589FF>Solar Skiff</color> +2 Trade (Trade:5)
+        ZaZ333  >  <color=#800080>Viper</color> +1 Combat (Combat:2)
+Acquired <color=#FF0000>The Oracle</color>
+        ZaZ333 - -4 Trade (Trade:1)
+Attacked Willydt for 2 (New Authority:40)
+        ZaZ333 - -2 Combat (Combat:0)
+        Willydt - -2 Authority (Authority:40)
+ZaZ333 ends turn 14
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Willydt's turn 15
+Play all
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Willydt  >  <color=#4CC417>Cargo Pod</color> +3 Trade (Trade:4)
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+        Willydt  >  <color=#FFFF00>Gunship</color> +5 Combat (Combat:5)
+        ZaZ333  <  <color=#FFFF00>Gunship</color> +1 Discard (Discarding: 1)
+Scrapping Gunship
+        Scrapped <color=#FFFF00>Gunship</color>
+        Willydt  >  <color=#FFFF00>Gunship</color> +4 Trade (Trade:10)
+Acquired <color=#1589FF>Factory World</color>
+        Willydt - -8 Trade (Trade:2)
+Attacked ZaZ333 for 5 (New Authority:31)
+        Willydt - -5 Combat (Combat:0)
+        ZaZ333 - -5 Authority (Authority:31)
+Scrapping Cargo Pod
+        Scrapped <color=#4CC417>Cargo Pod</color>
+        Willydt  >  <color=#4CC417>Cargo Pod</color> +3 Combat (Combat:3)
+Attacked ZaZ333 for 3 (New Authority:28)
+        Willydt - -3 Combat (Combat:0)
+        ZaZ333 - -3 Authority (Authority:28)
+Willydt ends turn 15
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now ZaZ333's turn 16
+Resolving Discard 1 cards
+ZaZ333 is discarding Viper
+        no more cards to discard
+        Discarded <color=#800080>Viper</color>
+Played <color=#FFFF00>Orbital Platform</color>
+Played <color=#FFFF00>Lancer</color>
+        ZaZ333  >  <color=#FFFF00>Lancer</color> +4 Combat (Combat:4)
+        Willydt  <  <color=#FFFF00>Lancer</color> +1 Discard (Discarding: 1)
+        ZaZ333  >  <color=#FFFF00>Orbital Platform</color> +3 Combat (Combat:7)
+Activating Orbital Platform
+ZaZ333 is selecting Scout
+        Discarded <color=#800080>Scout</color>
+        Drew 1 cards.
+Play all
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Acquired <color=#1589FF>Trade Hauler</color>
+        ZaZ333 - -2 Trade (Trade:0)
+Attacked Willydt for 7 (New Authority:33)
+        ZaZ333 - -7 Combat (Combat:0)
+        Willydt - -7 Authority (Authority:33)
+ZaZ333 ends turn 16
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Willydt's turn 17
+Resolving Discard 1 cards
+Willydt is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Played <color=#FF0000>Battle Bot</color>
+        Willydt  >  <color=#FF0000>Battle Bot</color> +2 Combat (Combat:2)
+        Scrapped <color=#800080>Viper</color>
+Played <color=#FF0000>Battle Bot</color>
+        Willydt  >  <color=#FF0000>Battle Bot</color> +2 Combat (Combat:4)
+        Willydt  >  <color=#FF0000>Battle Bot</color> +2 Combat (Combat:6)
+        Willydt  >  <color=#FF0000>Battle Bot</color> +2 Combat (Combat:8)
+Played <color=#FFFF00>Star Barge</color>
+        Willydt  >  <color=#FFFF00>Star Barge</color> +2 Trade (Trade:2)
+Attacked Orbital Platform
+        Willydt - -4 Combat (Combat:4)
+        Destroyed <color=#FFFF00>Orbital Platform</color>
+Attacked ZaZ333 for 4 (New Authority:24)
+        Willydt - -4 Combat (Combat:0)
+        ZaZ333 - -4 Authority (Authority:24)
+Willydt ends turn 17
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now ZaZ333's turn 18
+Played <color=#FF0000>The Oracle</color>
+Activating The Oracle
+        Scrapped <color=#800080>Scout</color>
+Play all
+        ZaZ333  >  <color=#1589FF>Solar Skiff</color> +2 Trade (Trade:2)
+        ZaZ333  >  <color=#4CC417>Cargo Pod</color> +3 Trade (Trade:5)
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+Acquired <color=#FFFF00>Aging Battleship</color>
+        ZaZ333 - -5 Trade (Trade:1)
+ZaZ333 ends turn 18
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Willydt's turn 19
+Played <color=#FFFF00>Supply Depot</color>
+Played <color=#FFFF00>Lancer</color>
+        Willydt  >  <color=#FFFF00>Lancer</color> +4 Combat (Combat:4)
+        Willydt  >  <color=#FFFF00>Lancer</color> +2 Combat (Combat:6)
+        ZaZ333  <  <color=#FFFF00>Lancer</color> +1 Discard (Discarding: 1)
+        Drew 1 cards.
+Played <color=#1589FF>Patrol Cutter</color>
+        Willydt  >  <color=#1589FF>Patrol Cutter</color> +2 Trade (Trade:2)
+        Willydt  >  <color=#1589FF>Patrol Cutter</color> +3 Combat (Combat:9)
+Acquired <color=#FFFF00>Lancer</color>
+        Willydt - -2 Trade (Trade:0)
+Played <color=#4CC417>Swarmer</color>
+        Willydt  >  <color=#4CC417>Swarmer</color> +3 Combat (Combat:12)
+        Scrapped <color=#FF0000>The Incinerator</color>
+Attacked The Oracle
+        Willydt - -5 Combat (Combat:7)
+        Destroyed <color=#FF0000>The Oracle</color>
+Chose You must discard 2 cards; receive 2 combat and 2 trade
+Willydt is discarding for trade and combat.
+        Willydt  >  <color=#FFFF00>Supply Depot</color> +2 Trade (Trade:2)
+        Willydt  >  <color=#FFFF00>Supply Depot</color> +2 Combat (Combat:9)
+        Discarded <color=#800080>Scout</color>
+        Discarded <color=#800080>Scout</color>
+Acquired <color=#FF0000>Warning Beacon</color>
+        Willydt - -2 Trade (Trade:0)
+Attacked ZaZ333 for 9 (New Authority:15)
+        Willydt - -9 Combat (Combat:0)
+        ZaZ333 - -9 Authority (Authority:15)
+Willydt ends turn 19
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now ZaZ333's turn 20
+Resolving Discard 1 cards
+ZaZ333 is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Played <color=#FF0000>Repair Bot</color>
+ZaZ333 is scrapping: Viper
+        ZaZ333  >  <color=#FF0000>Repair Bot</color> +2 Trade (Trade:2)
+        Scrapped <color=#800080>Viper</color>
+Play all
+        ZaZ333  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        ZaZ333  >  <color=#1589FF>Solar Skiff</color> +2 Trade (Trade:5)
+Acquired <color=#FF0000>Mining Mech</color>
+        ZaZ333 - -4 Trade (Trade:1)
+Played <color=#4CC417>Ravager</color>
+        ZaZ333  >  <color=#4CC417>Ravager</color> ability available
+        ZaZ333  >  <color=#4CC417>Ravager</color> +6 Combat (Combat:6)
+        Scrapped <color=#1589FF>Central Station</color>
+        Scrapped <color=#FFFF00>Command Center</color>
+Attacked Supply Depot
+        ZaZ333 - -5 Combat (Combat:1)
+        Destroyed <color=#FFFF00>Supply Depot</color>
+Attacked Willydt for 1 (New Authority:32)
+        ZaZ333 - -1 Combat (Combat:0)
+        Willydt - -1 Authority (Authority:32)
+ZaZ333 ends turn 20
+        Drew 4 cards.
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+        Refresh ally indicators
+        It is now Willydt's turn 21
+Played <color=#FFFF00>Command Center</color>
+        Willydt  >  <color=#FFFF00>Command Center</color> +2 Trade (Trade:2)
+Played <color=#FFFF00>Star Barge</color>
+        Willydt  >  <color=#FFFF00>Star Barge</color> +2 Trade (Trade:4)
+        Willydt  >  <color=#FFFF00>Command Center</color> +2 Combat (Combat:2)
+        Willydt  >  <color=#FFFF00>Star Barge</color> +2 Combat (Combat:4)
+        ZaZ333  <  <color=#FFFF00>Star Barge</color> +1 Discard (Discarding: 1)
+Played <color=#1589FF>Patrol Cutter</color>
+        Willydt  >  <color=#1589FF>Patrol Cutter</color> +2 Trade (Trade:6)
+        Willydt  >  <color=#1589FF>Patrol Cutter</color> +3 Combat (Combat:7)
+Play all
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:7)
+        Willydt  >  <color=#800080>Scout</color> +1 Trade (Trade:8)
+Acquired <color=#FFFF00>Imperial Palace</color>
+        Willydt - -7 Trade (Trade:1)
+Attacked ZaZ333 for 7 (New Authority:8)
+        Willydt - -7 Combat (Combat:0)
+        ZaZ333 - -7 Authority (Authority:8)
+Willydt ends turn 21
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now ZaZ333's turn 22
+Resolving Discard 1 cards
+ZaZ333 is discarding Stellar Reef
+        no more cards to discard
+        Discarded <color=#4CC417>Stellar Reef</color>
+Played <color=#FF0000>Battle Bot</color>
+        ZaZ333  >  <color=#FF0000>Battle Bot</color> +2 Combat (Combat:2)
+        Scrapped <color=#800080>Viper</color>
+Played <color=#FFFF00>Gunship</color>
+        ZaZ333  >  <color=#FFFF00>Gunship</color> +5 Combat (Combat:7)
+        Willydt  <  <color=#FFFF00>Gunship</color> +1 Discard (Discarding: 1)
+Played <color=#FFFF00>Aging Battleship</color>
+        ZaZ333  >  <color=#FFFF00>Aging Battleship</color> +5 Combat (Combat:12)
+        Drew 1 cards.
+Scrapping Aging Battleship
+        Scrapped <color=#FFFF00>Aging Battleship</color>
+        ZaZ333  >  <color=#FFFF00>Aging Battleship</color> +2 Combat (Combat:14)
+        Drew 1 cards.
+        Drew 1 cards.
+Played <color=#FF0000>Mining Mech</color>
+ZaZ333 is scrapping: Scout
+        ZaZ333  >  <color=#FF0000>Mining Mech</color> +3 Trade (Trade:3)
+        Scrapped <color=#800080>Scout</color>
+        ZaZ333  >  <color=#FF0000>Battle Bot</color> +2 Combat (Combat:16)
+        ZaZ333  >  <color=#FF0000>Mining Mech</color> +3 Combat (Combat:19)
+Acquired <color=#FF0000>Warning Beacon</color>
+        ZaZ333 - -2 Trade (Trade:1)
+        Acquired <color=#FF0000>Warning Beacon</color> to hand.
+Played <color=#FF0000>Warning Beacon</color>
+        ZaZ333  >  <color=#FF0000>Warning Beacon</color> +2 Combat (Combat:21)
+Played <color=#4CC417>Ravager</color>
+        ZaZ333  >  <color=#4CC417>Ravager</color> ability available
+        ZaZ333  >  <color=#4CC417>Ravager</color> +6 Combat (Combat:27)
+        Scrapped <color=#FF0000>Convoy Bot</color>
+Scrapping Gunship
+        Scrapped <color=#FFFF00>Gunship</color>
+        ZaZ333  >  <color=#FFFF00>Gunship</color> +4 Trade (Trade:5)
+Acquired <color=#1589FF>Frontier Ferry</color>
+        ZaZ333 - -4 Trade (Trade:1)
+Attacked Command Center
+        ZaZ333 - -4 Combat (Combat:23)
+        Destroyed <color=#FFFF00>Command Center</color>
+Attacked Willydt for 23 (New Authority:9)
+        ZaZ333 - -23 Combat (Combat:0)
+        Willydt - -23 Authority (Authority:9)
+ZaZ333 ends turn 22
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Willydt's turn 23
+Resolving Discard 1 cards
+Willydt is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Played <color=#1589FF>Factory World</color>
+        Willydt  >  <color=#1589FF>Factory World</color> +3 Trade (Trade:3)
+Acquired <color=#1589FF>Patrol Cutter</color>
+        Willydt - -3 Trade (Trade:0)
+        Acquired <color=#1589FF>Patrol Cutter</color> to hand.
+Played <color=#1589FF>Patrol Cutter</color>
+        Willydt  >  <color=#1589FF>Patrol Cutter</color> +2 Trade (Trade:2)
+        Willydt  >  <color=#1589FF>Patrol Cutter</color> +3 Combat (Combat:3)
+        Willydt  >  <color=#1589FF>Patrol Cutter</color> +4 Authority (Authority:13)
+Played <color=#FFFF00>Lancer</color>
+        Willydt  >  <color=#FFFF00>Lancer</color> +4 Combat (Combat:7)
+        Willydt  >  <color=#FFFF00>Lancer</color> +2 Combat (Combat:9)
+Attacked Warning Beacon
+        Willydt - -2 Combat (Combat:7)
+        Destroyed <color=#FF0000>Warning Beacon</color>
+Played <color=#FF0000>Battle Bot</color>
+        Willydt  >  <color=#FF0000>Battle Bot</color> +2 Combat (Combat:9)
+        Scrapped <color=#800080>Scout</color>
+Attacked ZaZ333 for 9 (New Authority:-1)
+        Willydt - -9 Combat (Combat:0)
+        ZaZ333 - -9 Authority (Authority:-1)
+        === Willydt has won the game. ===

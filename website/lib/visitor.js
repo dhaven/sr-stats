@@ -1015,10 +1015,7 @@ class Visitor extends StarRealmsVisitor{
             }
         }
         for(let i = 0; i < ctx.activatingDetail().length; i++){
-            if(ctx.activatingDetail()[i].resolveHandScrap()){
-                let summary = this.visit(ctx.activatingDetail()[i])
-                activatingEffectSummary['scrappedCards'].push(summary)
-            }else if(ctx.activatingDetail()[i].drawCardsWithShuffle()){
+            if(ctx.activatingDetail()[i].drawCardsWithShuffle()){
                 activatingEffectSummary['drawCount'] += this.visit(ctx.activatingDetail()[i])
             }else if(ctx.activatingDetail()[i].freeAcquireToTop()){
                 let summary = this.visit(ctx.activatingDetail()[i])

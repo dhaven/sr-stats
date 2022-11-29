@@ -1,0 +1,609 @@
+{
+  "status": "success",
+  "data": {
+    "firstPlayer": "Scottopia",
+    "winner": "Scottopia",
+    "rounds": [
+      {
+        "tradePool": 2,
+        "combatPool": 2,
+        "usedTrade": -1,
+        "usedCombat": -2,
+        "purchasedCards": [
+          "builderbot"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "Av3nger": {
+            "diff": -2,
+            "new": 64
+          }
+        },
+        "player": "Scottopia"
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 11,
+        "usedTrade": -6,
+        "usedCombat": -11,
+        "purchasedCards": [
+          "destroyerbot",
+          "admiralrasmusson",
+          "warriorpod"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "diplomaticshuttle",
+          "ranger",
+          "frontiertug",
+          "viper"
+        ],
+        "scrappedCards": [
+          "admiralrasmusson",
+          "newburg'sgame",
+          "alliancefrigate"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 2,
+        "authority": {
+          "Scottopia": {
+            "diff": -11,
+            "new": 61
+          },
+          "Av3nger": {
+            "diff": 4
+          }
+        },
+        "player": "Av3nger"
+      },
+      {
+        "tradePool": 8,
+        "combatPool": 0,
+        "usedTrade": -7,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "hammerhead",
+          "highpriestlyle"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "commandshard",
+          "salvageshard",
+          "salvageshard",
+          "reconshard",
+          "reconshard",
+          "builderbot",
+          "transportshard"
+        ],
+        "scrappedCards": [
+          "assaultshard",
+          "jochum'sgranddesign",
+          "assaultshard",
+          "highpriestlyle",
+          "assaultshard"
+        ],
+        "discardedCards": [
+          "salvageshard",
+          "salvageshard",
+          "commandshard"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {},
+        "player": "Scottopia"
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 4,
+        "usedTrade": -5,
+        "usedCombat": -4,
+        "purchasedCards": [
+          "alliancelanding"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "ranger"
+        ],
+        "scrappedCards": [
+          "commodorezhang"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "Scottopia": {
+            "diff": -4,
+            "new": 57
+          }
+        },
+        "player": "Av3nger"
+      },
+      {
+        "tradePool": 8,
+        "combatPool": 0,
+        "usedTrade": -8,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "lightcruiser",
+          "needlelancer",
+          "blobminer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "commandshard",
+          "transportshard",
+          "transportshard",
+          "builderbot",
+          "commandshard",
+          "salvageshard",
+          "salvageshard"
+        ],
+        "scrappedCards": [
+          "transportshard",
+          "transportshard"
+        ],
+        "discardedCards": [
+          "transportshard",
+          "transportshard",
+          "commandshard",
+          "reconshard",
+          "salvageshard",
+          "salvageshard",
+          "commandshard"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 1,
+        "authority": {},
+        "player": "Scottopia"
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 15,
+        "usedTrade": -4,
+        "usedCombat": -15,
+        "purchasedCards": [
+          "mobilemarket"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "frontiertug",
+          "destroyerbot",
+          "scout",
+          "diplomaticshuttle"
+        ],
+        "scrappedCards": [
+          "ripper",
+          "screecher"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "Scottopia": {
+            "diff": -15,
+            "new": 42
+          }
+        },
+        "player": "Av3nger"
+      },
+      {
+        "tradePool": 8,
+        "combatPool": 9,
+        "usedTrade": -8,
+        "usedCombat": -9,
+        "purchasedCards": [
+          "unioncluster"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "hammerhead",
+          "reconshard",
+          "reconshard",
+          "reconshard",
+          "lightcruiser",
+          "builderbot"
+        ],
+        "scrappedCards": [
+          "transportshard",
+          "reconshard"
+        ],
+        "discardedCards": [
+          "reconshard",
+          "reconshard",
+          "reconshard",
+          "transportshard",
+          "salvageshard",
+          "salvageshard",
+          "salvageshard"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 3,
+        "authority": {
+          "Scottopia": {
+            "diff": 5,
+            "new": 47
+          },
+          "Av3nger": {
+            "diff": -9,
+            "new": 59
+          }
+        },
+        "player": "Scottopia"
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 3,
+        "usedTrade": -6,
+        "usedCombat": -3,
+        "purchasedCards": [
+          "missilesilo"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "scout",
+          "viper"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "Scottopia": {
+            "diff": -3,
+            "new": 44
+          }
+        },
+        "player": "Av3nger"
+      },
+      {
+        "tradePool": 9,
+        "combatPool": 15,
+        "usedTrade": -9,
+        "usedCombat": -15,
+        "purchasedCards": [
+          "federationbattleship",
+          "frontierrunner",
+          "alignmentbot"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "commandshard",
+          "salvageshard",
+          "salvageshard",
+          "needlelancer",
+          "lightcruiser",
+          "unioncluster",
+          "blobminer",
+          "commandshard"
+        ],
+        "scrappedCards": [
+          "salvageshard",
+          "embassybase"
+        ],
+        "discardedCards": [
+          "salvageshard",
+          "salvageshard",
+          "commandshard"
+        ],
+        "destroyedBases": [
+          "mobilemarket",
+          "alliancelanding"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 3,
+        "authority": {
+          "Av3nger": {
+            "diff": -6,
+            "new": 53
+          }
+        },
+        "player": "Scottopia"
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 15,
+        "usedTrade": -3,
+        "usedCombat": -15,
+        "purchasedCards": [
+          "blobbot"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "destroyerbot",
+          "ranger"
+        ],
+        "scrappedCards": [
+          "scout",
+          "destroyerbot"
+        ],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [
+          "unioncluster"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "Scottopia": {
+            "diff": -7,
+            "new": 37
+          }
+        },
+        "player": "Av3nger"
+      },
+      {
+        "tradePool": 9,
+        "combatPool": 13,
+        "usedTrade": -9,
+        "usedCombat": -13,
+        "purchasedCards": [
+          "burrower",
+          "burrower",
+          "crusher"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "hammerhead",
+          "frontierrunner",
+          "commandshard",
+          "reconshard",
+          "reconshard",
+          "needlelancer",
+          "blobminer",
+          "federationbattleship",
+          "commandshard"
+        ],
+        "scrappedCards": [
+          "tradeenvoy"
+        ],
+        "discardedCards": [
+          "alignmentbot",
+          "builderbot",
+          "reconshard",
+          "reconshard",
+          "commandshard"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 4,
+        "authority": {
+          "Scottopia": {
+            "diff": 12,
+            "new": 49
+          },
+          "Av3nger": {
+            "diff": -13,
+            "new": 40
+          }
+        },
+        "player": "Scottopia"
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 5,
+        "usedTrade": -5,
+        "usedCombat": -5,
+        "purchasedCards": [
+          "pulverizer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "diplomaticshuttle"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [
+          "warriorpod"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "Av3nger": {
+            "diff": 5,
+            "new": 45
+          },
+          "Scottopia": {
+            "diff": -5,
+            "new": 44
+          }
+        },
+        "player": "Av3nger"
+      },
+      {
+        "tradePool": 8,
+        "combatPool": 11,
+        "usedTrade": -8,
+        "usedCombat": -11,
+        "purchasedCards": [
+          "stinger",
+          "stinger",
+          "chairmanhaygan",
+          "freightraft"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "lightcruiser",
+          "needlelancer",
+          "commandshard",
+          "salvageshard",
+          "salvageshard",
+          "commandshard",
+          "reconshard",
+          "reconshard",
+          "frontierrunner"
+        ],
+        "scrappedCards": [
+          "salvageshard"
+        ],
+        "discardedCards": [
+          "salvageshard",
+          "salvageshard",
+          "commandshard",
+          "reconshard",
+          "reconshard",
+          "commandshard"
+        ],
+        "destroyedBases": [
+          "alliancelanding"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 2,
+        "authority": {
+          "Scottopia": {
+            "diff": 11,
+            "new": 55
+          },
+          "Av3nger": {
+            "diff": -6,
+            "new": 39
+          }
+        },
+        "player": "Scottopia"
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 19,
+        "usedTrade": -5,
+        "usedCombat": -19,
+        "purchasedCards": [
+          "jammingterminal"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "missilesilo",
+          "mobilemarket",
+          "destroyerbot",
+          "blobbot",
+          "swarmling",
+          "ranger"
+        ],
+        "scrappedCards": [
+          "scout",
+          "scout",
+          "mobilemarket",
+          "thecolossus"
+        ],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 1,
+        "authority": {
+          "Scottopia": {
+            "diff": -19,
+            "new": 36
+          },
+          "Av3nger": {
+            "diff": 2
+          }
+        },
+        "player": "Av3nger"
+      },
+      {
+        "tradePool": 14,
+        "combatPool": 44,
+        "usedTrade": -14,
+        "usedCombat": -44,
+        "purchasedCards": [
+          "pactpod",
+          "commanderklik",
+          "lunarlanding",
+          "cunningcaptain",
+          "builderbot"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "burrower",
+          "builderbot",
+          "alignmentbot",
+          "burrower",
+          "unioncluster",
+          "federationbattleship",
+          "lightcruiser",
+          "hammerhead",
+          "freightraft",
+          "crusher",
+          "blobminer",
+          "frontierrunner",
+          "stinger"
+        ],
+        "scrappedCards": [
+          "salvageshard",
+          "alignmentbot",
+          "reconshard",
+          "commanderklik",
+          "cunningcaptain",
+          "blobminer",
+          "builderbot",
+          "chairmanhaygan",
+          "federationbattleship",
+          "stinger"
+        ],
+        "discardedCards": [
+          "commandshard",
+          "commandshard"
+        ],
+        "destroyedBases": [],
+        "winner": "Scottopia",
+        "winCondition": "",
+        "drawCount": 8,
+        "authority": {
+          "Scottopia": {
+            "diff": 25
+          },
+          "Av3nger": {
+            "diff": -44,
+            "new": -3
+          }
+        },
+        "player": "Scottopia"
+      }
+    ],
+    "winCondition": ""
+  }
+}

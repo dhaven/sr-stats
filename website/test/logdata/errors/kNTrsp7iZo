@@ -1,0 +1,524 @@
+Play all
+        Pistol  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Acquired <color=#4CC417>Blob Fighter</color>
+        Pistol - -1 Trade (Trade:1)
+Acquired <color=#FF0000>Trade Bot</color>
+        Pistol - -1 Trade (Trade:0)
+Attacked benjouille for 1 (New Authority:49)
+        Pistol - -1 Combat (Combat:0)
+        benjouille - -1 Authority (Authority:49)
+Pistol ends turn 1
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now benjouille's turn 2
+Play all
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        benjouille  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#1589FF>Freighter</color>
+        benjouille - -4 Trade (Trade:0)
+Attacked Pistol for 1 (New Authority:49)
+        benjouille - -1 Combat (Combat:0)
+        Pistol - -1 Authority (Authority:49)
+benjouille ends turn 2
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Pistol's turn 3
+Play all
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Pistol  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FFFF00>Imperial Fighter</color>
+        Pistol - -1 Trade (Trade:3)
+Acquired <color=#4CC417>Battle Pod</color>
+        Pistol - -2 Trade (Trade:1)
+Attacked benjouille for 1 (New Authority:48)
+        Pistol - -1 Combat (Combat:0)
+        benjouille - -1 Authority (Authority:48)
+Pistol ends turn 3
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now benjouille's turn 4
+Play all
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        benjouille  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#1589FF>Trading Post</color>
+        benjouille - -3 Trade (Trade:1)
+Attacked Pistol for 1 (New Authority:48)
+        benjouille - -1 Combat (Combat:0)
+        Pistol - -1 Authority (Authority:48)
+benjouille ends turn 4
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Pistol's turn 5
+Played <color=#4CC417>Battle Pod</color>
+        Pistol  >  <color=#4CC417>Battle Pod</color> +4 Combat (Combat:4)
+        Scrapped <color=#FF0000>Missile Mech</color>
+Play all
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Pistol  >  <color=#FFFF00>Imperial Fighter</color> +2 Combat (Combat:6)
+        benjouille  <  <color=#FFFF00>Imperial Fighter</color> +1 Discard (Discarding: 1)
+Acquired <color=#FFFF00>Survey Ship</color>
+        Pistol - -3 Trade (Trade:0)
+Attacked benjouille for 6 (New Authority:42)
+        Pistol - -6 Combat (Combat:0)
+        benjouille - -6 Authority (Authority:42)
+Pistol ends turn 5
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now benjouille's turn 6
+Resolving Discard 1 cards
+benjouille is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Play all
+        benjouille  >  <color=#1589FF>Freighter</color> +4 Trade (Trade:4)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:7)
+Acquired <color=#1589FF>Barter World</color>
+        benjouille - -4 Trade (Trade:3)
+Acquired <color=#FFFF00>Imperial Frigate</color>
+        benjouille - -3 Trade (Trade:0)
+benjouille ends turn 6
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Pistol's turn 7
+Played <color=#4CC417>Blob Fighter</color>
+        Pistol  >  <color=#4CC417>Blob Fighter</color> +3 Combat (Combat:3)
+Play all
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Pistol  >  <color=#800080>Viper</color> +1 Combat (Combat:4)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#4CC417>Battle Pod</color>
+        Pistol - -2 Trade (Trade:1)
+Attacked benjouille for 4 (New Authority:38)
+        Pistol - -4 Combat (Combat:0)
+        benjouille - -4 Authority (Authority:38)
+Pistol ends turn 7
+        Drew 4 cards.
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+        Refresh ally indicators
+        It is now benjouille's turn 8
+Play all
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        benjouille  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FF0000>Patrol Mech</color>
+        benjouille - -4 Trade (Trade:0)
+Attacked Pistol for 1 (New Authority:47)
+        benjouille - -1 Combat (Combat:0)
+        Pistol - -1 Authority (Authority:47)
+benjouille ends turn 8
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now Pistol's turn 9
+Played <color=#800080>Scout</color>
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+Played <color=#800080>Scout</color>
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Acquired <color=#4CC417>Trade Pod</color>
+        Pistol - -2 Trade (Trade:0)
+Played <color=#FF0000>Trade Bot</color>
+Pistol is scrapping: Viper
+        Pistol  >  <color=#FF0000>Trade Bot</color> +1 Trade (Trade:1)
+        Scrapped <color=#800080>Viper</color>
+Play all
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Acquired <color=#800080>Explorer</color>
+        Pistol - -2 Trade (Trade:0)
+Pistol ends turn 9
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now benjouille's turn 10
+Played <color=#FF0000>Patrol Mech</color>
+        benjouille  >  <color=#FF0000>Patrol Mech</color> ability available
+        benjouille  >  <color=#FF0000>Patrol Mech</color> +3 Trade (Trade:3)
+Play all
+        benjouille  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        benjouille  >  <color=#800080>Viper</color> +1 Combat (Combat:2)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FFFF00>Recycling Station</color>
+        benjouille - -4 Trade (Trade:0)
+Chose Add 1 Authority
+        benjouille  >  <color=#1589FF>Trading Post</color> +1 Authority (Authority:39)
+Attacked Pistol for 2 (New Authority:45)
+        benjouille - -2 Combat (Combat:0)
+        Pistol - -2 Authority (Authority:45)
+benjouille ends turn 10
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Pistol's turn 11
+Played <color=#4CC417>Battle Pod</color>
+        Pistol  >  <color=#4CC417>Battle Pod</color> +4 Combat (Combat:4)
+        Scrapped <color=#1589FF>Defense Center</color>
+Play all
+        Pistol  >  <color=#800080>Viper</color> +1 Combat (Combat:5)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#FFFF00>Imperial Frigate</color>
+        Pistol - -3 Trade (Trade:0)
+Attacked Trading Post
+        Pistol - -4 Combat (Combat:1)
+        Destroyed <color=#1589FF>Trading Post</color>
+Attacked benjouille for 1 (New Authority:38)
+        Pistol - -1 Combat (Combat:0)
+        benjouille - -1 Authority (Authority:38)
+Pistol ends turn 11
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now benjouille's turn 12
+Play all
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        benjouille  >  <color=#1589FF>Freighter</color> +4 Trade (Trade:5)
+        benjouille  >  <color=#FFFF00>Imperial Frigate</color> +4 Combat (Combat:4)
+        Pistol  <  <color=#FFFF00>Imperial Frigate</color> +1 Discard (Discarding: 1)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:7)
+Acquired <color=#FFFF00>Battlecruiser</color>
+        benjouille - -6 Trade (Trade:1)
+Attacked Pistol for 4 (New Authority:41)
+        benjouille - -4 Combat (Combat:0)
+        Pistol - -4 Authority (Authority:41)
+benjouille ends turn 12
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Pistol's turn 13
+Resolving Discard 1 cards
+Pistol is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Played <color=#FFFF00>Survey Ship</color>
+        Drew 1 cards.
+        Pistol  >  <color=#FFFF00>Survey Ship</color> +1 Trade (Trade:1)
+Played <color=#FFFF00>Imperial Fighter</color>
+        Pistol  >  <color=#FFFF00>Imperial Fighter</color> +2 Combat (Combat:2)
+        benjouille  <  <color=#FFFF00>Imperial Fighter</color> +1 Discard (Discarding: 1)
+        Pistol  >  <color=#FFFF00>Imperial Fighter</color> +2 Combat (Combat:4)
+Played <color=#4CC417>Battle Pod</color>
+        Pistol  >  <color=#4CC417>Battle Pod</color> +4 Combat (Combat:8)
+        Scrapped <color=#FF0000>Mech World</color>
+Played <color=#4CC417>Blob Fighter</color>
+        Pistol  >  <color=#4CC417>Blob Fighter</color> +3 Combat (Combat:11)
+        Pistol  >  <color=#4CC417>Battle Pod</color> +2 Combat (Combat:13)
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+Play all
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#4CC417>Blob Wheel</color>
+        Pistol - -3 Trade (Trade:0)
+Attacked benjouille for 13 (New Authority:25)
+        Pistol - -13 Combat (Combat:0)
+        benjouille - -13 Authority (Authority:25)
+Pistol ends turn 13
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now benjouille's turn 14
+Resolving Discard 1 cards
+benjouille is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Play all
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#1589FF>Federation Shuttle</color>
+        benjouille - -1 Trade (Trade:2)
+Acquired <color=#800080>Explorer</color>
+        benjouille - -2 Trade (Trade:0)
+Chose Add 2 Authority
+        benjouille  >  <color=#1589FF>Barter World</color> +2 Authority (Authority:27)
+benjouille ends turn 14
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Pistol's turn 15
+Play all
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Pistol  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FF0000>Battle Station</color>
+        Pistol - -3 Trade (Trade:1)
+Attacked benjouille for 1 (New Authority:26)
+        Pistol - -1 Combat (Combat:0)
+        benjouille - -1 Authority (Authority:26)
+Pistol ends turn 15
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now benjouille's turn 16
+Played <color=#FFFF00>Battlecruiser</color>
+        benjouille  >  <color=#FFFF00>Battlecruiser</color> +5 Combat (Combat:5)
+        Drew 1 cards.
+Play all
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#4CC417>Ram</color>
+        benjouille - -3 Trade (Trade:1)
+Acquired <color=#FF0000>Trade Bot</color>
+        benjouille - -1 Trade (Trade:0)
+Attacked Pistol for 5 (New Authority:36)
+        benjouille - -5 Combat (Combat:0)
+        Pistol - -5 Authority (Authority:36)
+Chose Add 2 Authority
+        benjouille  >  <color=#1589FF>Barter World</color> +2 Authority (Authority:28)
+Chose Add 1 Authority
+        benjouille  >  <color=#1589FF>Trading Post</color> +1 Authority (Authority:29)
+benjouille ends turn 16
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Pistol's turn 17
+Played <color=#FF0000>Trade Bot</color>
+Pistol is scrapping: Scout
+        Pistol  >  <color=#FF0000>Trade Bot</color> +1 Trade (Trade:1)
+        Scrapped <color=#800080>Scout</color>
+Played <color=#FFFF00>Imperial Frigate</color>
+        Pistol  >  <color=#FFFF00>Imperial Frigate</color> +4 Combat (Combat:4)
+        benjouille  <  <color=#FFFF00>Imperial Frigate</color> +1 Discard (Discarding: 1)
+Played <color=#4CC417>Battle Pod</color>
+        Pistol  >  <color=#4CC417>Battle Pod</color> +4 Combat (Combat:8)
+        Scrapped <color=#4CC417>Blob World</color>
+Play all
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#FF0000>Supply Bot</color>
+        Pistol - -3 Trade (Trade:0)
+Attacked Trading Post
+        Pistol - -4 Combat (Combat:4)
+        Destroyed <color=#1589FF>Trading Post</color>
+Attacked Barter World
+        Pistol - -4 Combat (Combat:0)
+        Destroyed <color=#1589FF>Barter World</color>
+Pistol ends turn 17
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now benjouille's turn 18
+Resolving Discard 1 cards
+benjouille is discarding Viper
+        no more cards to discard
+        Discarded <color=#800080>Viper</color>
+Played <color=#FF0000>Patrol Mech</color>
+        benjouille  >  <color=#FF0000>Patrol Mech</color> ability available
+        benjouille  >  <color=#FF0000>Patrol Mech</color> +5 Combat (Combat:5)
+Play all
+        benjouille  >  <color=#800080>Viper</color> +1 Combat (Combat:6)
+        benjouille  >  <color=#FFFF00>Imperial Frigate</color> +4 Combat (Combat:10)
+        Pistol  <  <color=#FFFF00>Imperial Frigate</color> +1 Discard (Discarding: 1)
+        benjouille  >  <color=#1589FF>Federation Shuttle</color> +2 Trade (Trade:2)
+Attacked Pistol for 10 (New Authority:26)
+        benjouille - -10 Combat (Combat:0)
+        Pistol - -10 Authority (Authority:26)
+Acquired <color=#4CC417>Trade Pod</color>
+        benjouille - -2 Trade (Trade:0)
+benjouille ends turn 18
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Pistol's turn 19
+Resolving Discard 1 cards
+Pistol is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Played <color=#FF0000>Supply Bot</color>
+Pistol is scrapping: Scout
+        Pistol  >  <color=#FF0000>Supply Bot</color> +2 Trade (Trade:2)
+        Scrapped <color=#800080>Scout</color>
+Played <color=#4CC417>Trade Pod</color>
+        Pistol  >  <color=#4CC417>Trade Pod</color> +3 Trade (Trade:5)
+Acquired <color=#FF0000>Stealth Needle</color>
+        Pistol - -4 Trade (Trade:1)
+Play all
+        Pistol  >  <color=#800080>Explorer</color> +2 Trade (Trade:3)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        Pistol  >  <color=#800080>Explorer</color> +2 Combat (Combat:2)
+Attacked benjouille for 2 (New Authority:27)
+        Pistol - -2 Combat (Combat:0)
+        benjouille - -2 Authority (Authority:27)
+Acquired <color=#4CC417>Blob Destroyer</color>
+        Pistol - -4 Trade (Trade:0)
+Pistol ends turn 19
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now benjouille's turn 20
+Played <color=#FFFF00>Recycling Station</color>
+        benjouille  >  <color=#FFFF00>Recycling Station</color> ability available
+Chose Add 1 Trade
+        benjouille  >  <color=#FFFF00>Recycling Station</color> +1 Trade (Trade:1)
+Play all
+        benjouille  >  <color=#800080>Explorer</color> +2 Trade (Trade:3)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+Acquired <color=#1589FF>Flagship</color>
+        benjouille - -6 Trade (Trade:0)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        benjouille  >  <color=#800080>Explorer</color> +2 Combat (Combat:2)
+Attacked Pistol for 2 (New Authority:24)
+        benjouille - -2 Combat (Combat:0)
+        Pistol - -2 Authority (Authority:24)
+benjouille ends turn 20
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now Pistol's turn 21
+Played <color=#FF0000>Battle Station</color>
+Played <color=#4CC417>Battle Pod</color>
+        Pistol  >  <color=#4CC417>Battle Pod</color> +4 Combat (Combat:4)
+        Scrapped <color=#4CC417>The Hive</color>
+Play all
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Pistol  >  <color=#800080>Viper</color> +1 Combat (Combat:5)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Acquired <color=#4CC417>Blob Fighter</color>
+        Pistol - -1 Trade (Trade:1)
+Attacked Recycling Station
+        Pistol - -4 Combat (Combat:1)
+        Destroyed <color=#FFFF00>Recycling Station</color>
+Attacked benjouille for 1 (New Authority:26)
+        Pistol - -1 Combat (Combat:0)
+        benjouille - -1 Authority (Authority:26)
+Pistol ends turn 21
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now benjouille's turn 22
+Played <color=#FFFF00>Battlecruiser</color>
+        benjouille  >  <color=#FFFF00>Battlecruiser</color> +5 Combat (Combat:5)
+        Drew 1 cards.
+Played <color=#1589FF>Barter World</color>
+Played <color=#1589FF>Freighter</color>
+        benjouille  >  <color=#1589FF>Freighter</color> +4 Trade (Trade:4)
+Play all
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+        benjouille  >  <color=#800080>Scout</color> +1 Trade (Trade:7)
+Acquired <color=#FF0000>Battle Station</color>
+        benjouille - -3 Trade (Trade:4)
+Attacked Battle Station
+        benjouille - -5 Combat (Combat:0)
+        Destroyed <color=#FF0000>Battle Station</color>
+Acquired <color=#FFFF00>Survey Ship</color>
+        benjouille - -3 Trade (Trade:1)
+        Acquired <color=#FFFF00>Survey Ship</color> to the top of the deck.
+Chose Add 2 Authority
+        benjouille  >  <color=#1589FF>Barter World</color> +2 Authority (Authority:28)
+benjouille ends turn 22
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Pistol's turn 23
+Played <color=#FFFF00>Survey Ship</color>
+        Drew 1 cards.
+        Pistol  >  <color=#FFFF00>Survey Ship</color> +1 Trade (Trade:1)
+Played <color=#FF0000>Trade Bot</color>
+Pistol is scrapping: Scout
+        Pistol  >  <color=#FF0000>Trade Bot</color> +1 Trade (Trade:2)
+        Scrapped <color=#800080>Scout</color>
+Played <color=#4CC417>Blob Wheel</color>
+        Pistol  >  <color=#4CC417>Blob Wheel</color> +1 Combat (Combat:1)
+Played <color=#4CC417>Battle Pod</color>
+        Pistol  >  <color=#4CC417>Battle Pod</color> +4 Combat (Combat:5)
+        Scrapped <color=#FFFF00>Dreadnaught</color>
+        Pistol  >  <color=#4CC417>Battle Pod</color> +2 Combat (Combat:7)
+Played <color=#FFFF00>Imperial Fighter</color>
+        Pistol  >  <color=#FFFF00>Imperial Fighter</color> +2 Combat (Combat:9)
+        benjouille  <  <color=#FFFF00>Imperial Fighter</color> +1 Discard (Discarding: 1)
+        Pistol  >  <color=#FFFF00>Imperial Fighter</color> +2 Combat (Combat:11)
+Played <color=#FFFF00>Imperial Frigate</color>
+        Pistol  >  <color=#FFFF00>Imperial Frigate</color> +4 Combat (Combat:15)
+        benjouille  <  <color=#FFFF00>Imperial Frigate</color> +1 Discard (Discarding: 2)
+        Pistol  >  <color=#FFFF00>Imperial Frigate</color> +2 Combat (Combat:17)
+Attacked Barter World
+        Pistol - -4 Combat (Combat:13)
+        Destroyed <color=#1589FF>Barter World</color>
+Attacked benjouille for 13 (New Authority:15)
+        Pistol - -13 Combat (Combat:0)
+        benjouille - -13 Authority (Authority:15)
+Acquired <color=#FFFF00>Corvette</color>
+        Pistol - -2 Trade (Trade:0)
+Scrapping Survey Ship
+        Scrapped <color=#FFFF00>Survey Ship</color>
+        benjouille  <  <color=#FFFF00>Survey Ship</color> +1 Discard (Discarding: 3)
+Pistol ends turn 23
+        Drew 4 cards.
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+        Refresh ally indicators
+        It is now benjouille's turn 24
+benjouille ends turn 24
+benjouille is discarding Trading Post
+benjouille is discarding Trade Bot
+benjouille is discarding Imperial Frigate
+        no more cards to discard
+        Discarded <color=#1589FF>Trading Post</color>
+        Discarded <color=#FF0000>Trade Bot</color>
+        Discarded <color=#FFFF00>Imperial Frigate</color>
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Pistol's turn 25
+        Pistol  >  <color=#4CC417>Blob Wheel</color> +1 Combat (Combat:1)
+Played <color=#4CC417>Blob Fighter</color>
+        Pistol  >  <color=#4CC417>Blob Fighter</color> +3 Combat (Combat:4)
+        Drew 1 cards.
+Played <color=#FF0000>Trade Bot</color>
+Pistol is scrapping: Scout
+        Pistol  >  <color=#FF0000>Trade Bot</color> +1 Trade (Trade:1)
+        Scrapped <color=#800080>Scout</color>
+Play all
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Attacked benjouille for 4 (New Authority:11)
+        Pistol - -4 Combat (Combat:0)
+        benjouille - -4 Authority (Authority:11)
+Acquired <color=#FF0000>Patrol Mech</color>
+        Pistol - -4 Trade (Trade:0)
+Pistol ends turn 25
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now benjouille's turn 26
+benjouille ends turn 26
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Pistol's turn 27
+        Pistol  >  <color=#4CC417>Blob Wheel</color> +1 Combat (Combat:1)
+Played <color=#FFFF00>Imperial Frigate</color>
+        Pistol  >  <color=#FFFF00>Imperial Frigate</color> +4 Combat (Combat:5)
+        benjouille  <  <color=#FFFF00>Imperial Frigate</color> +1 Discard (Discarding: 1)
+Played <color=#FFFF00>Imperial Fighter</color>
+        Pistol  >  <color=#FFFF00>Imperial Fighter</color> +2 Combat (Combat:7)
+        benjouille  <  <color=#FFFF00>Imperial Fighter</color> +1 Discard (Discarding: 2)
+        Pistol  >  <color=#FFFF00>Imperial Frigate</color> +2 Combat (Combat:9)
+        Pistol  >  <color=#FFFF00>Imperial Fighter</color> +2 Combat (Combat:11)
+Attacked benjouille for 11 (New Authority:0)
+        Pistol - -11 Combat (Combat:0)
+        benjouille - -11 Authority (Authority:0)
+        === Pistol has won the game. ===

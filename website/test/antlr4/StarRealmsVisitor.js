@@ -516,6 +516,18 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
+	// Visit a parse tree produced by StarRealmsParser#choseScrapTradeRow.
+	visitChoseScrapTradeRow(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarRealmsParser#chooseSelfScrap.
+	visitChooseSelfScrap(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
 	// Visit a parse tree produced by StarRealmsParser#choseIncreasePool.
 	visitChoseIncreasePool(ctx) {
 	  return this.visitChildren(ctx);
@@ -696,14 +708,14 @@ export default class StarRealmsVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
-	// Visit a parse tree produced by StarRealmsParser#resolveHandScrapSummary.
-	visitResolveHandScrapSummary(ctx) {
+	// Visit a parse tree produced by StarRealmsParser#resolveStealth.
+	visitResolveStealth(ctx) {
 	  return this.visitChildren(ctx);
 	}
 
 
-	// Visit a parse tree produced by StarRealmsParser#resolveStealth.
-	visitResolveStealth(ctx) {
+	// Visit a parse tree produced by StarRealmsParser#resolveSplinter.
+	visitResolveSplinter(ctx) {
 	  return this.visitChildren(ctx);
 	}
 

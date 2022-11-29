@@ -14078,38 +14078,38 @@
                   "activatingDetail": [
                     {
                       "resolveHandScrap": [
+                        "Resolving",
+                        "Scrap",
+                        "a",
+                        "card",
+                        "from",
+                        "your",
+                        "hand",
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
                         {
-                          "resolveHandScrapSummary": [
-                            "Resolving",
-                            "Scrap",
-                            "a",
-                            "card",
-                            "from",
-                            "your",
-                            "hand",
-                            "\n"
-                          ]
-                        },
-                        {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Cargo"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Boat"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Cargo"
                               ]
                             },
-                            "\n"
+                            {
+                              "wordPlus": [
+                                "Boat"
+                              ]
+                            }
                           ]
-                        }
+                        },
+                        "\n"
                       ]
                     }
                   ]
@@ -15566,38 +15566,38 @@
                   "activatingDetail": [
                     {
                       "resolveHandScrap": [
+                        "Resolving",
+                        "Scrap",
+                        "a",
+                        "card",
+                        "from",
+                        "your",
+                        "hand",
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
                         {
-                          "resolveHandScrapSummary": [
-                            "Resolving",
-                            "Scrap",
-                            "a",
-                            "card",
-                            "from",
-                            "your",
-                            "hand",
-                            "\n"
-                          ]
-                        },
-                        {
-                          "scrapDetail": [
-                            "Scrapped",
+                          "card": [
                             {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Tribute"
-                                  ]
-                                },
-                                {
-                                  "wordPlus": [
-                                    "Transport"
-                                  ]
-                                }
+                              "wordPlus": [
+                                "Tribute"
                               ]
                             },
-                            "\n"
+                            {
+                              "wordPlus": [
+                                "Transport"
+                              ]
+                            }
                           ]
-                        }
+                        },
+                        "\n"
                       ]
                     }
                   ]

@@ -16305,33 +16305,33 @@
                   "activatingDetail": [
                     {
                       "resolveHandScrap": [
+                        "Resolving",
+                        "Scrap",
+                        "a",
+                        "card",
+                        "from",
+                        "your",
+                        "hand",
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "activatingDetail": [
+                    {
+                      "scrapDetail": [
+                        "Scrapped",
                         {
-                          "resolveHandScrapSummary": [
-                            "Resolving",
-                            "Scrap",
-                            "a",
-                            "card",
-                            "from",
-                            "your",
-                            "hand",
-                            "\n"
+                          "card": [
+                            {
+                              "wordPlus": [
+                                "Scout"
+                              ]
+                            }
                           ]
                         },
-                        {
-                          "scrapDetail": [
-                            "Scrapped",
-                            {
-                              "card": [
-                                {
-                                  "wordPlus": [
-                                    "Scout"
-                                  ]
-                                }
-                              ]
-                            },
-                            "\n"
-                          ]
-                        }
+                        "\n"
                       ]
                     }
                   ]

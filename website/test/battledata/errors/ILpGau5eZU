@@ -1,0 +1,423 @@
+{
+  "status": "success",
+  "data": {
+    "firstPlayer": "George21",
+    "winner": "George21",
+    "rounds": [
+      {
+        "tradePool": 5,
+        "combatPool": 5,
+        "usedTrade": -5,
+        "usedCombat": -5,
+        "purchasedCards": [
+          "stinger",
+          "commandcenter"
+        ],
+        "completedMissions": [],
+        "events": [
+          "tacticalmaneuver"
+        ],
+        "playedCards": [
+          "protopod",
+          "scout",
+          "ripper"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "Scottopia": {
+            "diff": -5,
+            "new": 67
+          }
+        },
+        "player": "George21"
+      },
+      {
+        "tradePool": 9,
+        "combatPool": 4,
+        "usedTrade": -9,
+        "usedCombat": -4,
+        "purchasedCards": [
+          "blobminer",
+          "plasmavent",
+          "battlebot"
+        ],
+        "completedMissions": [],
+        "events": [
+          "mobilization"
+        ],
+        "playedCards": [
+          "commandshard",
+          "salvageshard",
+          "salvageshard",
+          "blobminer",
+          "plasmavent"
+        ],
+        "scrappedCards": [
+          "assaultshard",
+          "jochum'sgranddesign",
+          "patrolboat"
+        ],
+        "discardedCards": [
+          "salvageshard",
+          "salvageshard",
+          "commandshard",
+          "assaultshard"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 4,
+        "authority": {
+          "Scottopia": {
+            "diff": 6,
+            "new": 73
+          },
+          "George21": {
+            "diff": -4,
+            "new": 56
+          }
+        },
+        "player": "Scottopia"
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 20,
+        "usedTrade": -7,
+        "usedCombat": -20,
+        "purchasedCards": [
+          "convoybot",
+          "ravager",
+          "unityfighter"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "imperialscout",
+          "scout",
+          "scout",
+          "commandcenter",
+          "tributetransport"
+        ],
+        "scrappedCards": [
+          "mccready'smaneuver"
+        ],
+        "discardedCards": [
+          "scout",
+          "ranger",
+          "viper"
+        ],
+        "destroyedBases": [
+          "plasmavent"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "authority": {
+          "Scottopia": {
+            "diff": -15,
+            "new": 58
+          }
+        },
+        "player": "George21"
+      },
+      {
+        "tradePool": 8,
+        "combatPool": 1,
+        "usedTrade": -8,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "imperialflagship"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "reconshard",
+          "reconshard",
+          "salvageshard",
+          "transportshard",
+          "transportshard",
+          "blobminer",
+          "assaultshard"
+        ],
+        "scrappedCards": [
+          "operationsplatform"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {},
+        "player": "Scottopia"
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 16,
+        "usedTrade": -5,
+        "usedCombat": -16,
+        "purchasedCards": [
+          "pulverizer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "stinger",
+          "ripper",
+          "protopod",
+          "convoybot",
+          "ranger"
+        ],
+        "scrappedCards": [
+          "scout"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "Scottopia": {
+            "diff": -16,
+            "new": 42
+          }
+        },
+        "player": "George21"
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 1,
+        "usedTrade": -6,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "destroyerbot",
+          "tradehauler",
+          "recyclebot"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "commandshard",
+          "salvageshard",
+          "salvageshard",
+          "transportshard",
+          "commandshard"
+        ],
+        "scrappedCards": [
+          "assaultshard"
+        ],
+        "discardedCards": [
+          "salvageshard",
+          "salvageshard",
+          "commandshard"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {},
+        "player": "Scottopia"
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 20,
+        "usedTrade": -2,
+        "usedCombat": -20,
+        "purchasedCards": [
+          "plasmabot"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "ravager",
+          "clusterviper",
+          "imperialtalon",
+          "tributetransport"
+        ],
+        "scrappedCards": [
+          "hivequeen",
+          "swarmcluster"
+        ],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 1,
+        "authority": {
+          "Scottopia": {
+            "diff": -20,
+            "new": 22
+          }
+        },
+        "player": "George21"
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 4,
+        "usedTrade": -5,
+        "usedCombat": -4,
+        "purchasedCards": [
+          "mechcruiser"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "battlebot",
+          "transportshard",
+          "salvageshard",
+          "commandshard",
+          "reconshard",
+          "recyclebot"
+        ],
+        "scrappedCards": [
+          "assaultshard"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "commandcenter"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {},
+        "player": "Scottopia"
+      },
+      {
+        "tradePool": 2,
+        "combatPool": 15,
+        "usedTrade": -2,
+        "usedCombat": -15,
+        "purchasedCards": [
+          "cargocraft"
+        ],
+        "completedMissions": [],
+        "events": [
+          "supernova"
+        ],
+        "playedCards": [
+          "plasmabot",
+          "unityfighter"
+        ],
+        "scrappedCards": [
+          "scout",
+          "coalitionfortress",
+          "commandcenter",
+          "ionstation",
+          "nestingground",
+          "corsair"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "authority": {
+          "George21": {
+            "diff": -5,
+            "new": 51
+          },
+          "Scottopia": {
+            "diff": -20,
+            "new": 2
+          }
+        },
+        "player": "George21"
+      },
+      {
+        "tradePool": 10,
+        "combatPool": 22,
+        "usedTrade": -9,
+        "usedCombat": -22,
+        "purchasedCards": [
+          "assaultpod",
+          "screecher",
+          "crusher",
+          "builderbot"
+        ],
+        "completedMissions": [],
+        "events": [
+          "comet"
+        ],
+        "playedCards": [
+          "imperialflagship",
+          "tradehauler",
+          "plasmavent",
+          "destroyerbot",
+          "blobminer",
+          "commandshard",
+          "reconshard",
+          "reconshard",
+          "transportshard"
+        ],
+        "scrappedCards": [
+          "salvageshard",
+          "demolisher",
+          "falcon",
+          "screecher",
+          "corsair",
+          "blobminer",
+          "transportshard",
+          "reconshard"
+        ],
+        "discardedCards": [
+          "reconshard",
+          "reconshard",
+          "commandshard"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 2,
+        "authority": {
+          "Scottopia": {
+            "diff": 8,
+            "new": 10
+          },
+          "George21": {
+            "diff": -22,
+            "new": 29
+          }
+        },
+        "player": "Scottopia"
+      },
+      {
+        "tradePool": 2,
+        "combatPool": 15,
+        "usedTrade": 0,
+        "usedCombat": -15,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "playedCards": [
+          "tributetransport",
+          "ranger"
+        ],
+        "scrappedCards": [
+          "scout",
+          "imperialscout"
+        ],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [],
+        "winner": "George21",
+        "winCondition": "",
+        "drawCount": 1,
+        "authority": {
+          "Scottopia": {
+            "diff": -15,
+            "new": -5
+          }
+        },
+        "player": "George21"
+      }
+    ],
+    "winCondition": ""
+  }
+}

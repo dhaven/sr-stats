@@ -102,7 +102,7 @@ moveDiscardToDeck : name IS SELECTING card NEWLINE;
 //describes a discard card action
 discard          : discardSummary discardDetail* ;
 discardSummary   : RESOLVING DISCARD INT CARDS NEWLINE ;
-discardDetail    : discardAction | discardEnd | discarding | eventRefuseDiscard | negativeBalance | refreshTradeRow;
+discardDetail    : discardAction | discardEnd | discarding | eventRefuseDiscard | negativeBalance | refreshTradeRow | resolveSplinter | copyStealth;
 discardAction    : name IS DISCARDING card NEWLINE ;
 discardEnd       : NO MORE2 CARDS TO DISCARD NEWLINE ;
 eventRefuseDiscard : name ('('INT ')')? IS NOT DISCARDING (ANY CARDS)? NEWLINE ;
@@ -110,9 +110,11 @@ eventRefuseDiscard : name ('('INT ')')? IS NOT DISCARDING (ANY CARDS)? NEWLINE ;
 //describe  a log line that starts with 'Chose ...'
 //applies to ships and bases where the user can chose between one or more effects
 choseEffect           : choseEffectSummary choseEffectDetail*;
-choseEffectSummary    : discardAndDrawSummary | choseIncreasePool | choseScrapFromDiscard | choseDiscardAndIncreasePool | choseIngenuityGambit | discountFactionGambit | hiddenBaseGambit | choseBlobDraw | midGateEffect | choseAddToDeck | alignBotEffect | choseSupplyBot;
+choseEffectSummary    : discardAndDrawSummary | choseIncreasePool | choseScrapFromDiscard | choseDiscardAndIncreasePool | choseIngenuityGambit | discountFactionGambit | hiddenBaseGambit | choseBlobDraw | midGateEffect | choseAddToDeck | alignBotEffect | choseSupplyBot | choseScrapTradeRow | chooseSelfScrap;
 discountFactionGambit : CHOSE ACQUIRE wordPlus+ CARDS AT ONE LESS TRADE NEWLINE;
 discardAndDrawSummary : CHOSE DISCARD AND REDRAW UP TO INT CARD'(s)' NEWLINE ;
+choseScrapTradeRow    : CHOSE SCRAP wordPlus CARD IN THE TRADE ROW NEWLINE;
+chooseSelfScrap       : CHOSE SCRAP WORD CARD FROM YOUR HAND OR DISCARD PILE NEWLINE ;
 choseIncreasePool     : CHOSE ADD INT wordPlus NEWLINE;
 choseAddToDeck        : CHOSE NEXT CARD TO TOP OF DECK NEWLINE;
 choseScrapFromDiscard : CHOSE SCRAP WORD CARD FROM YOUR DISCARD PILE NEWLINE;
@@ -132,9 +134,9 @@ changeHiddenBaseToFaction : CHANGED SECRET OUTPOST TO wordPlus+ NEWLINE;
 //applies to bases and ships where the user can chose when the effect is activated
 activatingEffect        : activatingSummary activatingDetail*  completeMission?;
 activatingSummary       : ACTIVATING card NEWLINE;
-activatingDetail        : resolveHandScrap | drawCardsWithShuffle | scrapSummary | noScrap | freeAcquireToTop | destroyBase | scrapDetail | noCopy | noCopyBases | copyCard | copyBase | discardAndDraw | positiveBalance | negativeBalance | resolveStealth | copyStealth | selectCard | discarding | discardEnd | eventRefuseDiscard;
+activatingDetail        : resolveHandScrap | drawCardsWithShuffle | scrapSummary | resolveSelfScrap | noScrap | freeAcquireToTop | destroyBase | scrapDetail | noCopy | noCopyBases | copyCard | copyBase | discardAndDraw | positiveBalance | negativeBalance | resolveStealth | copyStealth | selectCard | discarding | discardEnd | eventRefuseDiscard | resolveSplinter;
 scrap                   : scrapSummary+ scrapDetail+;
-resolveHandScrap        : resolveHandScrapSummary scrapDetail;
+resolveHandScrap        : RESOLVING SCRAP WORD CARD FROM YOUR HAND NEWLINE;
 freeAcquireToTop        : ACQUIRED card NEWLINE purchaseToTop;
 copyBase                : copyBaseSummary copyBaseDetail;
 copyBaseSummary         : name COPIED BASE name NEWLINE ;
@@ -147,15 +149,15 @@ copyCardEffect          : CHANGED card TO card NEWLINE;
 purchaseToTop           : ACQUIRED card TO THE TOP OF THE DECK NEWLINE;
 scrapSummary            : name IS SCRAPPING (':')? card NEWLINE;
 scrapDetail             : SCRAPPED card NEWLINE;
-resolveHandScrapSummary : RESOLVING SCRAP WORD CARD FROM YOUR HAND NEWLINE;
 resolveStealth          : RESOLVING FEDERATION OR STAR EMPIRE OR MACHINE CULT OR BLOB NEWLINE;
+resolveSplinter         : RESOLVING CREATE FEDERATION card OR CREATE STAR EMPIRE card OR CREATE MACHINE CULT card OR CREATE BLOB card NEWLINE;
 copyStealth             : CHANGED card TO wordPlus+ NEWLINE;
 discardAndDraw          :  selectDiscard+ discarding+ drawCardsWithShuffle;
 
 //stuff that happens at the end of the turn
 endPhase          : endTurn drawPhaseDetail* newTurn;
 endTurn           : name ENDS TURN INT NEWLINE;
-drawPhaseDetail   : resetCopiedCards | drawCardsWithShuffle | refreshIndicators | eventRefuseDiscard;
+drawPhaseDetail   : resetCopiedCards | drawCardsWithShuffle | refreshIndicators | eventRefuseDiscard | scrapAction | discardAction | discarding | discardEnd;
 resetCopiedCards  : CHANGED card TO UNALIGNED NEWLINE;
 refreshIndicators : REFRESH ALLY INDICATORS NEWLINE;
 newTurn           : IT IS NOW name '\'s' TURN INT NEWLINE;
@@ -187,7 +189,7 @@ card                  : ((wordPlus '\'s'?) | INT)+ ;
 // confessormorris       : CONFESSOR MORRIS;
 // hivelord              : HIVE LORD;
 // screecher             : SCREECHER;
-wordPlus              : WORD|COMBAT|AUTHORITY|TRADE|ALLIES|ACQUIRE|CONCEDED|OPPONENT|DISCARDS|FEDERATION|COMPLETE|SELECT|SELECTED|MISSION|STAR|EXPLORER|PUT|EMPIRE|MACHINE|CULT|ACQUIRED|DISCOUNTS|CREATE|SECRET|OUTPOST|UNALIGNED|ACTIVATING|NEXT|ATTACKED|SCRAPPING|SCRAPPED|RETURNING|SCRAP|SELECTING|SHUFFLED|DISCARDED|DISCARD|REFRESH|REVEALED|DISCARDING|DESTROYED|RESOLVING|INDICATORS|MOVING|AVAILABLE|ABILITY|CHANGED|IMAGE|PLAYED|COPYING|COPIED|REPLACED|RECEIVE|REDRAW|COPY|RETURN|INTO|EVENT|TARGET|DRAW|EVERY|NUMBER|BLOB|CARDS|CHOSE|TURN|SHIP|SHIPS|BASE|TABLE|BASES|PILE|EACH|PLAY|COST|FORM|DECK|DREW|DESTROY|LOSE|ENDS|CARD|MORE2|FROM|YOUR|ALLY|THIS|HAND|GAME|LESS|ONE|NEW|ALL|NOW|ROW|THE|TOP|FOR|DID|AND|ADD|NOT|HAS|WON|YOU|MUST|WINS|ANY|IS|IT|IN|TO|OF|UP|OR|NO|ON;
+wordPlus              : WORD|COMBAT|AUTHORITY|TRADE|ALLIES|ACQUIRE|CONCEDED|OPPONENT|DISCARDS|FEDERATION|COMPLETE|SPLINTER|TECH|SELECT|SELECTED|MISSION|STAR|EXPLORER|PUT|EMPIRE|MACHINE|CULT|ACQUIRED|DISCOUNTS|CREATE|SECRET|OUTPOST|UNALIGNED|ACTIVATING|NEXT|ATTACKED|SCRAPPING|SCRAPPED|RETURNING|SCRAP|SELECTING|SHUFFLED|DISCARDED|DISCARD|REFRESH|REVEALED|DISCARDING|DESTROYED|RESOLVING|INDICATORS|MOVING|AVAILABLE|ABILITY|CHANGED|IMAGE|PLAYED|COPYING|COPIED|REPLACED|RECEIVE|REDRAW|COPY|RETURN|INTO|EVENT|TARGET|DRAW|EVERY|NUMBER|BLOB|CARDS|CHOSE|TURN|SHIP|SHIPS|BASE|TABLE|BASES|PILE|EACH|PLAY|COST|FORM|DECK|DREW|DESTROY|LOSE|ENDS|CARD|MORE2|FROM|YOUR|ALLY|THIS|HAND|GAME|LESS|ONE|NEW|ALL|NOW|ROW|THE|TOP|FOR|DID|AND|ADD|NOT|HAS|WON|YOU|MUST|WINS|ANY|IS|IT|IN|TO|OF|UP|OR|NO|ON;
 
 fragment A : ('A'|'a');
 fragment B : ('B'|'b');
@@ -251,6 +253,7 @@ SCRAPPED            : S C R A P P E D ;
 OPPONENT            : O P P O N E N T ; 
 DISCARDS            : D I S C A R D S ;
 SCRAP               : S C R A P ;
+SPLINTER            : S P L I N T E R ;
 SELECTING           : S E L E C T I N G ;
 SHUFFLED            : S H U F F L E D ;
 DISCARDED           : D I S C A R D E D ;
@@ -309,6 +312,7 @@ FORM                : F O R M ;
 COST                : C O S T ;
 DECK                : D E C K ;
 DREW                : D R E W ;
+TECH                : T E C H ;
 ENDS                : E N D S ;
 CARD                : C A R D ;
 MUST                : M U S T ;
