@@ -2,7 +2,7 @@ grammar StarRealms;
 
 battle            : turn+;
 turn              : endPhase | (action+ (endPhase | winStatus | EOF)) ;
-action            : startTurnEffect | triggeredEvent | resolveEvent | purchase | purchaseHero | play | attackPlayer | attackBase | scrapCard | discard | choseEffect | activatingEffect |  concede | timeout;
+action            : startTurnEffect | triggeredEvent | resolveEvent | purchase | purchaseHero | play | attackPlayer | attackBase | scrapCard | discard | choseEffect | activatingEffect |  concede | timeout | completeMission;
 winStatus         : name HAS WON THE GAME NEWLINE? ;
 concede           : name '('INT ')' CONCEDED NEWLINE negativeBalance;
 timeout           : name WINS THE GAME NEWLINE;
@@ -49,9 +49,9 @@ triggeredEventSummary : REVEALED EVENT card NEWLINE ;
 triggeredEventDetail  : positiveBalance | acquireToHand | negativeBalance | scrapAction | drawCardsWithShuffle | resolveEvent | refreshIndicators;
 
 // if multiple missions are completed at once the user needs to choose one of them
-selectMission: resolveSelectMission actionSelectMission;
-resolveSelectMission: RESOLVING SELECT MISSION TO COMPLETE NEWLINE;
-actionSelectMission: SELECTED MISSION ':' card NEWLINE;
+selectMission         : resolveSelectMission actionSelectMission;
+resolveSelectMission  : RESOLVING SELECT MISSION TO COMPLETE NEWLINE;
+actionSelectMission   : SELECTED MISSION ':' card NEWLINE;
 
 //describe rewards of missions
 completeMission       : selectMission? completeMissionSummary  completeMissionsDetail*;

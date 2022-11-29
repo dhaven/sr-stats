@@ -1,0 +1,348 @@
+Play all
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#FF0000>Battle Station</color>
+        Pistol - -3 Trade (Trade:0)
+Pistol ends turn 1
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now KakXBOCT's turn 2
+Play all
+        KakXBOCT  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        KakXBOCT  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        KakXBOCT  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        KakXBOCT  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        KakXBOCT  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#FF0000>Conversion Yard</color>
+        KakXBOCT - -5 Trade (Trade:0)
+KakXBOCT ends turn 2
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Pistol's turn 3
+Play all
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Pistol  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Pistol  >  <color=#800080>Viper</color> +1 Combat (Combat:2)
+Acquired <color=#FFFF00>Captured Outpost</color>
+        Pistol - -3 Trade (Trade:0)
+Attacked KakXBOCT for 2 (New Authority:48)
+        Pistol - -2 Combat (Combat:0)
+        KakXBOCT - -2 Authority (Authority:48)
+Pistol ends turn 3
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now KakXBOCT's turn 4
+Play all
+        KakXBOCT  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        KakXBOCT  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        KakXBOCT  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        KakXBOCT  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        KakXBOCT  >  <color=#800080>Viper</color> +1 Combat (Combat:2)
+Acquired <color=#1589FF>Federation Shuttle</color>
+        KakXBOCT - -1 Trade (Trade:2)
+Acquired <color=#FF0000>Missile Bot</color>
+        KakXBOCT - -2 Trade (Trade:0)
+Attacked Pistol for 2 (New Authority:48)
+        KakXBOCT - -2 Combat (Combat:0)
+        Pistol - -2 Authority (Authority:48)
+KakXBOCT ends turn 4
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Pistol's turn 5
+Play all
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#1589FF>Barter World</color>
+        Pistol - -4 Trade (Trade:0)
+Pistol ends turn 5
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now KakXBOCT's turn 6
+Play all
+        KakXBOCT  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        KakXBOCT  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        KakXBOCT  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        KakXBOCT  >  <color=#1589FF>Federation Shuttle</color> +2 Trade (Trade:4)
+        KakXBOCT  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#FFFF00>Farm Ship</color>
+        KakXBOCT - -4 Trade (Trade:1)
+KakXBOCT ends turn 6
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Pistol's turn 7
+Played <color=#FFFF00>Captured Outpost</color>
+        Pistol  >  <color=#FFFF00>Captured Outpost</color> ability available
+Resolving Select Mission to Complete
+Selected Mission: <color=#800080>Rule</color>
+        Revealed Rule
+Resolving Acquire any card of cost 3 or less to hand
+Acquired <color=#FF0000>Integration Port</color>
+        Acquired <color=#FF0000>Integration Port</color> to hand.
+Played <color=#FF0000>Integration Port</color>
+        Pistol  >  <color=#FF0000>Integration Port</color> +1 Trade (Trade:1)
+Activating Captured Outpost
+        Drew 1 cards.
+Resolving Discard 1 cards
+Pistol is discarding Viper
+        no more cards to discard
+        Discarded <color=#800080>Viper</color>
+Play all
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Pistol  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#1589FF>Outland Station</color>
+        Pistol - -3 Trade (Trade:1)
+Attacked KakXBOCT for 1 (New Authority:47)
+        Pistol - -1 Combat (Combat:0)
+        KakXBOCT - -1 Authority (Authority:47)
+Acquired <color=#FF0000>Trade Bot</color>
+        Pistol - -1 Trade (Trade:0)
+Pistol ends turn 7
+        Drew 1 cards.
+        Shuffled discard pile to form new deck
+        Drew 4 cards.
+        Refresh ally indicators
+        It is now KakXBOCT's turn 8
+Played <color=#FF0000>Missile Bot</color>
+KakXBOCT is scrapping: Viper
+        KakXBOCT  >  <color=#FF0000>Missile Bot</color> +2 Combat (Combat:2)
+        Scrapped <color=#800080>Viper</color>
+Play all
+        KakXBOCT  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        KakXBOCT  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        KakXBOCT  >  <color=#800080>Viper</color> +1 Combat (Combat:3)
+        KakXBOCT  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Attacked Captured Outpost
+        KakXBOCT - -3 Combat (Combat:0)
+        Destroyed <color=#FFFF00>Captured Outpost</color>
+Acquired <color=#FFFF00>Corvette</color>
+        KakXBOCT - -2 Trade (Trade:1)
+Acquired <color=#1589FF>Frontier Runner</color>
+        KakXBOCT - -1 Trade (Trade:0)
+KakXBOCT ends turn 8
+        Drew 3 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now Pistol's turn 9
+        Pistol  >  <color=#FF0000>Integration Port</color> +1 Trade (Trade:1)
+Resolving Select Mission to Complete
+Selected Mission: <color=#800080>Colonize</color>
+        Revealed Colonize
+        Drew 1 cards.
+        Drew 1 cards.
+Played <color=#1589FF>Outland Station</color>
+Play all
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        Pistol  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+Acquired <color=#4CC417>Blob Alpha</color>
+        Pistol - -6 Trade (Trade:0)
+Chose Add 3 Authority
+        Pistol  >  <color=#1589FF>Outland Station</color> +3 Authority (Authority:51)
+Attacked KakXBOCT for 1 (New Authority:46)
+        Pistol - -1 Combat (Combat:0)
+        KakXBOCT - -1 Authority (Authority:46)
+Pistol ends turn 9
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now KakXBOCT's turn 10
+Played <color=#FF0000>Conversion Yard</color>
+        KakXBOCT  >  <color=#FF0000>Conversion Yard</color> ability available
+Played <color=#FFFF00>Farm Ship</color>
+        KakXBOCT  >  <color=#FFFF00>Farm Ship</color> +3 Trade (Trade:3)
+        Drew 1 cards.
+Resolving Discard 1 cards
+KakXBOCT is discarding Viper
+        no more cards to discard
+        Discarded <color=#800080>Viper</color>
+Played <color=#1589FF>Federation Shuttle</color>
+        KakXBOCT  >  <color=#1589FF>Federation Shuttle</color> +2 Trade (Trade:5)
+Activating Conversion Yard
+KakXBOCT is scrapping Scout
+        Scrapped <color=#800080>Scout</color>
+        KakXBOCT  >  <color=#FF0000>Conversion Yard</color> +4 Combat (Combat:4)
+Acquired <color=#FF0000>Repair Mech</color>
+        KakXBOCT - -4 Trade (Trade:1)
+Played <color=#800080>Scout</color>
+        KakXBOCT  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Acquired <color=#FFFF00>Cargo Craft</color>
+        KakXBOCT - -2 Trade (Trade:0)
+Scrapping Farm Ship
+        Scrapped <color=#FFFF00>Farm Ship</color>
+        KakXBOCT  >  <color=#FFFF00>Farm Ship</color> +4 Combat (Combat:8)
+Attacked Battle Station
+        KakXBOCT - -5 Combat (Combat:3)
+        Destroyed <color=#FF0000>Battle Station</color>
+KakXBOCT ends turn 10
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Pistol's turn 11
+        Pistol  >  <color=#FF0000>Integration Port</color> +1 Trade (Trade:1)
+Played <color=#FF0000>Trade Bot</color>
+Pistol is scrapping: Viper
+        Pistol  >  <color=#FF0000>Trade Bot</color> +1 Trade (Trade:2)
+        Scrapped <color=#800080>Viper</color>
+        Pistol  >  <color=#FF0000>Trade Bot</color> +2 Combat (Combat:2)
+Play all
+        Pistol  >  <color=#800080>Viper</color> +1 Combat (Combat:3)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#FF0000>Destroyer Bot</color>
+        Pistol - -3 Trade (Trade:2)
+Acquired <color=#4CC417>Blob Miner</color>
+        Pistol - -2 Trade (Trade:0)
+Chose Add 3 Authority
+        Pistol  >  <color=#1589FF>Outland Station</color> +3 Authority (Authority:54)
+Pistol ends turn 11
+        Drew 1 cards.
+        Shuffled discard pile to form new deck
+        Drew 4 cards.
+        Refresh ally indicators
+        It is now KakXBOCT's turn 12
+Played <color=#FFFF00>Corvette</color>
+        KakXBOCT  >  <color=#FFFF00>Corvette</color> +1 Combat (Combat:1)
+        Drew 1 cards.
+Activating Conversion Yard
+KakXBOCT is scrapping Scout
+        Scrapped <color=#800080>Scout</color>
+        KakXBOCT  >  <color=#FF0000>Conversion Yard</color> +4 Combat (Combat:5)
+Attacked Integration Port
+        KakXBOCT - -5 Combat (Combat:0)
+        Destroyed <color=#FF0000>Integration Port</color>
+Played <color=#1589FF>Frontier Runner</color>
+        KakXBOCT  >  <color=#1589FF>Frontier Runner</color> +2 Trade (Trade:2)
+        KakXBOCT  >  <color=#1589FF>Frontier Runner</color> +2 Authority (Authority:48)
+Play all
+        KakXBOCT  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        KakXBOCT  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        KakXBOCT  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#FFFF00>Frontier Hawk</color>
+        KakXBOCT - -1 Trade (Trade:4)
+Acquired <color=#4CC417>Moonwurm Hatchling</color>
+        KakXBOCT - -4 Trade (Trade:0)
+KakXBOCT ends turn 12
+        Drew 3 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now Pistol's turn 13
+Play all
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Pistol  >  <color=#4CC417>Blob Alpha</color> +10 Combat (Combat:10)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Pistol  >  <color=#800080>Viper</color> +1 Combat (Combat:11)
+Chose Add 2 Trade
+        Pistol  >  <color=#1589FF>Barter World</color> +2 Trade (Trade:4)
+Acquired <color=#FF0000>Defense System</color>
+        Pistol - -4 Trade (Trade:0)
+Chose Add 3 Authority
+        Pistol  >  <color=#1589FF>Outland Station</color> +3 Authority (Authority:57)
+Attacked Conversion Yard
+        Pistol - -4 Combat (Combat:7)
+        Destroyed <color=#FF0000>Conversion Yard</color>
+Attacked KakXBOCT for 7 (New Authority:41)
+        Pistol - -7 Combat (Combat:0)
+        KakXBOCT - -7 Authority (Authority:41)
+Pistol ends turn 13
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now KakXBOCT's turn 14
+Played <color=#FFFF00>Cargo Craft</color>
+        KakXBOCT  >  <color=#FFFF00>Cargo Craft</color> +2 Trade (Trade:2)
+        Pistol  <  <color=#FFFF00>Cargo Craft</color> +1 Discard (Discarding: 1)
+Played <color=#FF0000>Missile Bot</color>
+KakXBOCT is scrapping: Scout
+        KakXBOCT  >  <color=#FF0000>Missile Bot</color> +2 Combat (Combat:2)
+        Scrapped <color=#800080>Scout</color>
+Played <color=#4CC417>Moonwurm Hatchling</color>
+        Destroyed <color=#1589FF>Outland Station</color>
+        Revealed Unite
+        KakXBOCT - +5 Authority (Authority:46)
+        Drew 1 cards.
+Played <color=#800080>Scout</color>
+        KakXBOCT  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Played <color=#800080>Scout</color>
+        KakXBOCT  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Attacked Pistol for 2 (New Authority:55)
+        KakXBOCT - -2 Combat (Combat:0)
+        Pistol - -2 Authority (Authority:55)
+KakXBOCT ends turn 14
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Pistol's turn 15
+Resolving Discard 1 cards
+Pistol is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Played <color=#FF0000>Destroyer Bot</color>
+Pistol is scrapping: Scout
+        Pistol  >  <color=#FF0000>Destroyer Bot</color> ability available
+        Pistol  >  <color=#FF0000>Destroyer Bot</color> +5 Combat (Combat:5)
+        Scrapped <color=#800080>Scout</color>
+Play all
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Pistol  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#1589FF>Cutter</color>
+        Pistol - -2 Trade (Trade:1)
+Chose Add 2 Authority
+        Pistol  >  <color=#1589FF>Barter World</color> +2 Authority (Authority:57)
+Attacked KakXBOCT for 5 (New Authority:41)
+        Pistol - -5 Combat (Combat:0)
+        KakXBOCT - -5 Authority (Authority:41)
+Pistol ends turn 15
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now KakXBOCT's turn 16
+Played <color=#FF0000>Repair Mech</color>
+KakXBOCT is selecting Conversion Yard
+        KakXBOCT  >  <color=#FF0000>Repair Mech</color> ability available
+Played <color=#FFFF00>Corvette</color>
+        KakXBOCT  >  <color=#FFFF00>Corvette</color> +1 Combat (Combat:1)
+        Drew 1 cards.
+Played <color=#FF0000>Conversion Yard</color>
+        KakXBOCT  >  <color=#FF0000>Conversion Yard</color> ability available
+Activating Repair Mech
+KakXBOCT is scrapping: Scout
+        Scrapped <color=#800080>Scout</color>
+Activating Conversion Yard
+KakXBOCT is scrapping Scout
+        Scrapped <color=#800080>Scout</color>
+        KakXBOCT  >  <color=#FF0000>Conversion Yard</color> +4 Combat (Combat:5)
+Attacked Barter World
+        KakXBOCT - -4 Combat (Combat:1)
+        Destroyed <color=#1589FF>Barter World</color>
+Play all
+        KakXBOCT  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        KakXBOCT  >  <color=#1589FF>Federation Shuttle</color> +2 Trade (Trade:3)
+Acquired <color=#4CC417>Blob Wheel</color>
+        KakXBOCT - -3 Trade (Trade:0)
+Attacked Pistol for 1 (New Authority:56)
+        KakXBOCT - -1 Combat (Combat:0)
+        Pistol - -1 Authority (Authority:56)
+KakXBOCT ends turn 16
+        Drew 4 cards.
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+        Refresh ally indicators
+        It is now Pistol's turn 17
+Played <color=#FF0000>Battle Station</color>
+Played <color=#FFFF00>Captured Outpost</color>
+        Pistol  >  <color=#FFFF00>Captured Outpost</color> ability available
+        Revealed Defend
+        === Pistol has won the game. ===
+        Drew 1 cards.
