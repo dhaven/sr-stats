@@ -15,7 +15,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "smugglingrun"
         ],
@@ -43,7 +42,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -68,7 +66,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -86,7 +83,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "gloriousreturn"
         ],
@@ -114,9 +110,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "mobilemarket"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -141,7 +134,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -161,7 +153,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -186,10 +177,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlebot",
-          "warningbeacon"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -219,9 +206,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "bioformer"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -248,9 +232,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlebot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -279,10 +260,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "infestedmoon",
-          "blobminer"
-        ],
         "scrappedCards": [
           "imperialpalace"
         ],
@@ -310,7 +287,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -337,12 +313,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "spikecluster",
-          "thewrecker",
-          "blobminer",
-          "plasmavent"
-        ],
         "scrappedCards": [
           "scout",
           "scout",
@@ -371,9 +341,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlebot"
-        ],
         "scrappedCards": [
           "scout",
           "energyshield"
@@ -405,9 +372,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "bioformer"
-        ],
         "scrappedCards": [
           "rapiddeployment"
         ],
@@ -434,9 +398,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "plasmabot"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -464,24 +425,22 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "mobilemarket",
-          "plasmavent",
-          "thewrecker"
-        ],
         "scrappedCards": [
           "plasmavent",
           "federationbattleship",
           "mobilemarket"
         ],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "warningbeacon"
+        ],
         "winner": "HardAI",
         "winCondition": "",
-        "drawCount": 3,
+        "drawCount": -2,
         "authority": {
           "HardAI": {
-            "diff": 17
+            "diff": 17,
+            "new": 36
           },
           "Player": {
             "diff": -21,

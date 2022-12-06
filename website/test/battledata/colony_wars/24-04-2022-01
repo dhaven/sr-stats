@@ -438,7 +438,9 @@
           "viper"
         ],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "orbitalplatform"
+        ],
         "winner": "",
         "winCondition": "",
         "drawCount": 1,
@@ -628,7 +630,7 @@
         ],
         "winner": "Player",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": -4,
         "authority": {
           "Player": {
             "diff": 7,

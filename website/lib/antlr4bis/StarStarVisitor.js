@@ -102,6 +102,18 @@ export default class StarStarVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
+	// Visit a parse tree produced by StarStarParser#acquireToHand.
+	visitAcquireToHand(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarStarParser#acquireToDeck.
+	visitAcquireToDeck(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
 	// Visit a parse tree produced by StarStarParser#playSingle.
 	visitPlaySingle(ctx) {
 	  return this.visitChildren(ctx);

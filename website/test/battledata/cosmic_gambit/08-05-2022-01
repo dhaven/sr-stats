@@ -14,7 +14,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "asteroidmining2"
         ],
@@ -41,7 +40,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -61,7 +59,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -86,7 +83,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "acceptablelosses",
           "viper",
@@ -111,7 +107,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -136,7 +131,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -157,7 +151,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -183,10 +176,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "nestingground",
-          "bioformer"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -215,9 +204,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "repairbot"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -242,9 +228,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "builderbot"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -270,7 +253,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -301,9 +283,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "theoracle"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -332,9 +311,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobminer"
-        ],
         "scrappedCards": [
           "blobminer",
           "gunship"
@@ -365,10 +341,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "siegefortress",
-          "nestingground"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -395,9 +367,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplydepot"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -428,9 +397,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "convoybot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -460,7 +426,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -483,10 +448,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "convoybot",
-          "builderbot"
-        ],
         "scrappedCards": [
           "scout",
           "builderbot",
@@ -498,7 +459,7 @@
         "destroyedBases": [],
         "winner": "HardAI",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": -5,
         "authority": {
           "Player": {
             "diff": -15,

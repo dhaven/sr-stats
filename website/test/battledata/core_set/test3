@@ -626,7 +626,7 @@
         ],
         "winner": "Player",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": -5,
         "authority": {
           "HardAI": {
             "diff": -2,

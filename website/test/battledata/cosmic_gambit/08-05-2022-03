@@ -15,7 +15,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -35,7 +34,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "acceptablelosses",
           "viper",
@@ -60,7 +58,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -85,7 +82,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -111,10 +107,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "builderbot",
-          "solarskiff"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -135,7 +127,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -155,7 +146,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -180,9 +170,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalgunplatform"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -208,7 +195,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -228,9 +214,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "swarmer"
-        ],
         "scrappedCards": [
           "outlandstation"
         ],
@@ -253,7 +236,7 @@
         "usedTrade": -7,
         "usedCombat": -10,
         "purchasedCards": [
-          "explorertothetopofthedeck",
+          "explorer",
           "patrolcutter",
           "tradehauler",
           "frontierhawk",
@@ -261,12 +244,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "federationcruiser",
-          "solarskiff",
-          "explorer",
-          "builderbot"
-        ],
         "scrappedCards": [
           "exploration",
           "viper",
@@ -304,7 +281,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -335,11 +311,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "plasmabot",
-          "farmship",
-          "warningbeacon"
-        ],
         "scrappedCards": [
           "scout",
           "explorer",
@@ -370,7 +341,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -401,11 +371,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "builderbot",
-          "federationcruiser",
-          "tradehauler"
-        ],
         "scrappedCards": [
           "scout",
           "builderbot"
@@ -439,9 +404,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "swarmer"
-        ],
         "scrappedCards": [
           "transitnexus"
         ],
@@ -470,14 +432,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "frontierhawk",
-          "destroyerbot",
-          "solarskiff",
-          "longhauler",
-          "lancer",
-          "scout"
-        ],
         "scrappedCards": [
           "scout",
           "longhauler"
@@ -508,11 +462,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandcenter",
-          "orbitalgunplatform",
-          "neuralnexus"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -542,16 +491,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "storagesilo",
-          "solarskiff",
-          "frontierhawk",
-          "patrolcutter",
-          "frontierrunner",
-          "plasmabot",
-          "emperor'sdreadnaught",
-          "scout"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -586,9 +525,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlebot"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -615,13 +551,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "emperor'sdreadnaught",
-          "frontierhawk",
-          "federationcruiser",
-          "solarskiff",
-          "viper"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -631,7 +560,7 @@
         "destroyedBases": [],
         "winner": "Player",
         "winCondition": "",
-        "drawCount": 3,
+        "drawCount": -2,
         "authority": {
           "Player": {
             "diff": 6,

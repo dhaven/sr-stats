@@ -72,7 +72,9 @@ class Visitor extends StarStarVisitor {
         for (let i = 0; i < ctx.action().length; i++) {
             let action = this.visit(ctx.action()[i])
             if ("cardAcquisition" in action) {
-                turnData["purchasedCards"].push(action["cardAcquisition"])
+                if(!(action["cardAcquisition"].match("tothetopofthedeck") || action["cardAcquisition"].match("tohand"))){
+                    turnData["purchasedCards"].push(action["cardAcquisition"])
+                }
             }
             if ("discardedCard" in action) {
                 turnData["discardedCards"].push(action["discardedCard"])
@@ -110,6 +112,7 @@ class Visitor extends StarStarVisitor {
                 }
                 turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
                 turnData["drawCount"] += action["cardAction"]["cardEffect"]["drawCount"]
+                turnData["purchasedCards"] = turnData["purchasedCards"].concat(action["cardAction"]["cardEffect"]["acquiredCards"])
             }
             if ("balanceUpdate" in action) {
                 let playerName = action["balanceUpdate"]["target"]
@@ -138,6 +141,9 @@ class Visitor extends StarStarVisitor {
             }
             if ("winner" in action) {
                 turnData["winner"] = action["winner"]
+            }
+            if("scrapped" in action) {
+                turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["scrapped"])
             }
         }
         //console.log(turnData)
@@ -184,6 +190,10 @@ class Visitor extends StarStarVisitor {
             return {
                 winner: this.visit(ctx.winStatus())
             }
+        } else if(ctx.scrapped()){
+            return {
+                scrapped: this.visit(ctx.scrapped())
+            }
         } else {
             return {}
         }
@@ -195,7 +205,8 @@ class Visitor extends StarStarVisitor {
             cardEffect: {
                 scrap: [],
                 drawCount: 0,
-                players: []
+                players: [],
+                acquiredCards: []
             }
         }
         //console.log(`Card triggering effect is ${this.visit(ctx.cardTrigger())}`)
@@ -225,6 +236,9 @@ class Visitor extends StarStarVisitor {
             if("drawCount" in cardEffect){
                 cardAction["cardEffect"]["drawCount"] += cardEffect["drawCount"]
             }
+            if("acquiredCard" in cardEffect){
+                cardAction["cardEffect"]["acquiredCards"].push(cardEffect["acquiredCard"])
+            }
         }
         return cardAction
     }
@@ -251,6 +265,10 @@ class Visitor extends StarStarVisitor {
             cardEffect["scrapSummary"] = this.visit(ctx.scrapSummary())
         } else if(ctx.drawCards()){
             cardEffect["drawCount"] = this.visit(ctx.drawCards())
+        }else if(ctx.acquireToHand()){
+            cardEffect["acquiredCard"] = this.visit(ctx.acquireToHand())
+        }else if(ctx.acquireToDeck()){
+            cardEffect["acquiredCard"] = this.visit(ctx.acquireToDeck())
         }
         return cardEffect
     }
@@ -296,6 +314,14 @@ class Visitor extends StarStarVisitor {
         return this.visit(ctx.card())
     }
 
+    visitAcquireToDeck(ctx){
+        return this.visit(ctx.card())
+    }
+
+    visitAcquireToHand(ctx){
+        return this.visit(ctx.card())
+    }
+
     visitPlaySingle(ctx) {
         return this.visit(ctx.card())
     }
@@ -319,7 +345,7 @@ class Visitor extends StarStarVisitor {
         } else if (ctx.DECREASE()) {
             val = 0 - Number(ctx.DECREASE().getText().replace('-', ''))
         } else {
-            val = Nummber(ctx.INT())
+            val = Number(ctx.INT())
         }
         let category = ctx.customWord().getText()
         if (category == "Trade" && val >= 0) {

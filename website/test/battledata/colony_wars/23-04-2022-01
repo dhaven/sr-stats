@@ -550,7 +550,7 @@
         "destroyedBases": [],
         "winner": "Player",
         "winCondition": "",
-        "drawCount": 7,
+        "drawCount": 2,
         "authority": {
           "Player": {
             "diff": 10,

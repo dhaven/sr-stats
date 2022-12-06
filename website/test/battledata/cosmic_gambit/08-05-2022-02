@@ -14,7 +14,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -39,7 +38,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -65,7 +63,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -90,7 +87,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -117,9 +113,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobminer"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -139,9 +132,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "capturedoutpost"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -164,7 +154,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -192,9 +181,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "miningmech"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -223,9 +209,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "destroyerbot"
-        ],
         "scrappedCards": [
           "rapiddeployment"
         ],
@@ -254,9 +237,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandcenter"
-        ],
         "scrappedCards": [
           "graymarket"
         ],
@@ -283,15 +263,13 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "moonwurmhatchling",
-          "explorer"
-        ],
         "scrappedCards": [
           "explorer"
         ],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "commandcenter"
+        ],
         "winner": "",
         "winCondition": "",
         "drawCount": 1,
@@ -317,9 +295,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "miningmech"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -352,11 +327,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "crusher",
-          "predator",
-          "blobminer"
-        ],
         "scrappedCards": [
           "blobminer"
         ],
@@ -383,10 +353,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "capturedoutpost",
-          "miningmech"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -419,14 +385,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "factoryworld",
-          "solarskiff",
-          "cargocraft",
-          "scout",
-          "defensesystem",
-          "warningbeacon"
-        ],
         "scrappedCards": [
           "twoprongedattack2"
         ],
@@ -458,11 +416,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalplatform",
-          "outlandstation",
-          "loyalcolony"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -492,14 +445,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "destroyerbot",
-          "predator",
-          "starbarge",
-          "predator",
-          "crusher",
-          "moonwurmhatchling"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -530,9 +475,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandcenter"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -555,11 +497,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "falcon",
-          "centralstation",
-          "tradehauler"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -593,9 +530,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "outlandstation"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -624,12 +558,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "neuralnexus",
-          "orbitalplatform",
-          "warningbeacon",
-          "predator"
-        ],
         "scrappedCards": [
           "defensesystem"
         ],
@@ -665,11 +593,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "capturedoutpost",
-          "orbitalplatform",
-          "theoracle"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -707,10 +630,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "moonwurmhatchling",
-          "starbarge"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -718,6 +637,7 @@
           "builderbot"
         ],
         "destroyedBases": [
+          "theoracle",
           "capturedoutpost"
         ],
         "winner": "",
@@ -742,12 +662,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "loyalcolony",
-          "miningmech",
-          "swarmer",
-          "commandcenter"
-        ],
         "scrappedCards": [
           "starbarge",
           "gateship",
@@ -783,19 +697,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "falcon",
-          "crusher",
-          "predator",
-          "convoybot",
-          "factoryworld",
-          "scout",
-          "infestedmoon",
-          "outlandstation",
-          "destroyerbot",
-          "tradehauler",
-          "scout"
-        ],
         "scrappedCards": [
           "scout",
           "outlandstation",
@@ -811,7 +712,7 @@
         ],
         "winner": "Player",
         "winCondition": "",
-        "drawCount": 6,
+        "drawCount": 1,
         "authority": {
           "Player": {
             "diff": 6,

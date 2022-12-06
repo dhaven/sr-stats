@@ -2,11 +2,11 @@ grammar StarStar;
 
 battle            : turn+ EOF;
 turn              : action+ startTurn?;
-action            : cardAcquisition | discarded | destroyBase | cardAction | balanceUpdate | drawCards | shuffleCards | endTurn | winStatus |(skipText NEWLINE);
+action            : cardAcquisition | discarded | destroyBase | cardAction | balanceUpdate | drawCards | shuffleCards | endTurn | winStatus | scrapped | (skipText NEWLINE);
 
 cardAction        : cardTrigger cardEffect*;
 cardTrigger       : playSingle | activate | scrapSelf ;
-cardEffect        : balanceUpdate | scrapped | scrapSummary | drawCards | shuffleCards | resolving | otherEffect;
+cardEffect        : balanceUpdate | scrapped | scrapSummary | drawCards | shuffleCards | resolving | otherEffect | acquireToHand | acquireToDeck;
 skipText          : (customWord | INT | DECREASE | SEPARATOR | '(' | ':' | ')')+ ;
 balanceUpdate     : name SEPARATOR card? effect '('customWord':'(INT | DECREASE)')' NEWLINE;
 otherEffect       : name SEPARATOR card? customWord+ NEWLINE ;
@@ -17,7 +17,9 @@ winStatus         : name HAS WON THE GAME NEWLINE? ;
 
 scrapped          : SCRAPPED card NEWLINE;
 destroyBase       : DESTROYED card NEWLINE;
-cardAcquisition   : ACQUIRED card  (TO THE TOP OF DECK)? NEWLINE;
+cardAcquisition   : ACQUIRED card NEWLINE;
+acquireToHand     : ACQUIRED card TO HAND NEWLINE;
+acquireToDeck     :ACQUIRED card TO THE TOP OF THE DECK NEWLINE;
 playSingle        : PLAYED card NEWLINE;
 activate          : ACTIVATING card NEWLINE;
 scrapSelf         : SCRAPPING card NEWLINE;
@@ -32,7 +34,7 @@ drawCards         : DREW INT CARDS NEWLINE;
 
 card              : ((customWord '\'s'?) | INT)+ ;
 name              : customWord+ ;
-customWord        : WORD|ACQUIRED|ACTIVATING|ALL|ALLY|CARDS|DECK|DESTROYED|DISCARD|DISCARDING|DREW|ENDS|FORM|GAME|HAS|INDICATORS|IS|IT|NEW|NOW|OF|PILE|PLAY|PLAYED|REFRESH|RESOLVING|SCRAPPED|SCRAPPING|SHUFFLED|THE|TO|TOP|TURN|WON;
+customWord        : WORD|ACQUIRED|ACTIVATING|ALL|ALLY|CARDS|DECK|DESTROYED|DISCARD|DISCARDING|DREW|ENDS|FORM|GAME|HAND|HAS|INDICATORS|IS|IT|NEW|NOW|OF|PILE|PLAY|PLAYED|REFRESH|RESOLVING|SCRAPPED|SCRAPPING|SHUFFLED|THE|TO|TOP|TURN|WON;
 
 fragment A : ('A'|'a');
 fragment B : ('B'|'b');
@@ -75,6 +77,7 @@ DREW                : D R E W ;
 ENDS                : E N D S ;
 FORM                : F O R M ;
 GAME                : G A M E ;
+HAND                : H A N D ;
 HAS                 : H A S ;
 INDICATORS          : I N D I C A T O R S ;
 IS                  : I S ;

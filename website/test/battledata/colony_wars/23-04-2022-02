@@ -489,7 +489,7 @@
         "player": "HardAI"
       },
       {
-        "tradePool": 6,
+        "tradePool": 8,
         "combatPool": 0,
         "usedTrade": -8,
         "usedCombat": 0,
@@ -775,6 +775,7 @@
         ],
         "discardedCards": [],
         "destroyedBases": [
+          "factoryworld",
           "commandcenter",
           "loyalcolony",
           "centralstation"
@@ -864,7 +865,7 @@
         "destroyedBases": [],
         "winner": "Player",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": -3,
         "authority": {
           "HardAI": {
             "diff": -17,

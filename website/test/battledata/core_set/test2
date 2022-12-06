@@ -420,7 +420,7 @@
         "destroyedBases": [],
         "winner": "HardAI",
         "winCondition": "",
-        "drawCount": 9,
+        "drawCount": 4,
         "authority": {
           "HardAI": {
             "diff": 10,

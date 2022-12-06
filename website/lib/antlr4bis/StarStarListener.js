@@ -149,6 +149,24 @@ export default class StarStarListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarStarParser#acquireToHand.
+	enterAcquireToHand(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#acquireToHand.
+	exitAcquireToHand(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarStarParser#acquireToDeck.
+	enterAcquireToDeck(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#acquireToDeck.
+	exitAcquireToDeck(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarStarParser#playSingle.
 	enterPlaySingle(ctx) {
 	}

@@ -163,13 +163,13 @@
         "winCondition": "",
         "drawCount": 0,
         "authority": {
-          "HardAI": {
-            "diff": -5,
-            "new": 43
-          },
           "Player": {
             "diff": 1,
             "new": 50
+          },
+          "HardAI": {
+            "diff": -5,
+            "new": 43
           }
         },
         "player": "Player"
@@ -208,13 +208,13 @@
         "winCondition": "",
         "drawCount": 0,
         "authority": {
-          "HardAI": {
-            "diff": -8,
-            "new": 35
-          },
           "Player": {
             "diff": 1,
             "new": 51
+          },
+          "HardAI": {
+            "diff": -8,
+            "new": 35
           }
         },
         "player": "Player"
@@ -303,13 +303,13 @@
         "winCondition": "",
         "drawCount": 0,
         "authority": {
-          "HardAI": {
-            "diff": -2,
-            "new": 29
-          },
           "Player": {
             "diff": 1,
             "new": 52
+          },
+          "HardAI": {
+            "diff": -2,
+            "new": 29
           }
         },
         "player": "Player"
@@ -592,7 +592,7 @@
         "destroyedBases": [],
         "winner": "HardAI",
         "winCondition": "",
-        "drawCount": 9,
+        "drawCount": 4,
         "authority": {
           "HardAI": {
             "diff": 13,
