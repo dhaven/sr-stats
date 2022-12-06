@@ -77,6 +77,15 @@ export default class StarStarListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarStarParser#otherEffect.
+	enterOtherEffect(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#otherEffect.
+	exitOtherEffect(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarStarParser#cardActivation.
 	enterCardActivation(ctx) {
 	}

@@ -15,7 +15,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -35,7 +34,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -61,7 +59,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -86,7 +83,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -112,9 +108,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "swarmer"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -143,9 +136,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "bioformer"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -170,9 +160,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlebot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -199,7 +186,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -224,7 +210,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -251,9 +236,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "miningmech"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -285,12 +267,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "falcon",
-          "tradehauler",
-          "tradehauler",
-          "battlebot"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -318,7 +294,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -345,12 +320,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "swarmer",
-          "parasite",
-          "frontierstation",
-          "solarskiff"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -376,9 +345,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "stellarreef"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -398,11 +364,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalplatform",
-          "falcon",
-          "battlebot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -434,10 +395,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "loyalcolony",
-          "repairbot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -465,12 +422,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandcenter",
-          "theoracle",
-          "tradehauler",
-          "tradehauler"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -506,10 +457,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "bioformer",
-          "miningmech"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -538,11 +485,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "solarskiff",
-          "patrolcutter",
-          "colonyseedship"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -577,10 +519,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "stellarreef",
-          "plasmavent"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -605,17 +543,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "falcon",
-          "heavycruiser",
-          "predator",
-          "swarmer",
-          "tradehauler",
-          "patrolcutter",
-          "tradehauler",
-          "parasite",
-          "solarskiff"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"

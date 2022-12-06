@@ -1,13 +1,15 @@
 grammar StarStar;
+
 battle            : turn+ EOF;
 turn              : action+ startTurn?;
 action            : cardAcquisition | discarded | destroyBase | cardAction | balanceUpdate | drawCards | shuffleCards | endTurn | winStatus |(skipText NEWLINE);
 
 cardAction        : cardTrigger cardEffect*;
 cardTrigger       : playSingle | activate | scrapSelf ;
-cardEffect        : balanceUpdate | scrapped | scrapSummary | drawCards | shuffleCards | resolving;
+cardEffect        : balanceUpdate | scrapped | scrapSummary | drawCards | shuffleCards | resolving | otherEffect;
 skipText          : (customWord | INT | DECREASE | SEPARATOR | '(' | ':' | ')')+ ;
 balanceUpdate     : name SEPARATOR card? effect '('customWord':'(INT | DECREASE)')' NEWLINE;
+otherEffect       : name SEPARATOR card? customWord+ NEWLINE ;
 cardActivation    : ACTIVATING card NEWLINE ;
 scrapSummary      : name IS SCRAPPING (':')? card NEWLINE;
 discarded         : DISCARDED card NEWLINE ;

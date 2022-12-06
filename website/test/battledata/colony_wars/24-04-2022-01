@@ -12,7 +12,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -37,7 +36,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -62,7 +60,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -83,7 +80,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -103,7 +99,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -129,7 +124,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -155,9 +149,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "miningmech"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -179,7 +170,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -204,9 +194,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "convoybot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -233,7 +220,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -254,9 +240,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "miningmech"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -279,10 +262,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "storagesilo",
-          "convoybot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -313,10 +292,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "bioformer",
-          "swarmer"
-        ],
         "scrappedCards": [
           "theincinerator"
         ],
@@ -349,11 +324,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "falcon",
-          "lancer",
-          "patrolcutter"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -381,11 +351,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "federationshipyard",
-          "orbitalplatform",
-          "miningmech"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -410,13 +375,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "ravager",
-          "commandcenter",
-          "lancer",
-          "storagesilo",
-          "viper"
-        ],
         "scrappedCards": [
           "cargopod",
           "orbitalplatform"
@@ -450,9 +408,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "convoybot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -479,11 +434,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "falcon",
-          "mechcruiser",
-          "warningbeacon"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -515,12 +465,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "bioformer",
-          "miningmech",
-          "swarmer",
-          "plasmavent"
-        ],
         "scrappedCards": [
           "scout",
           "gunship"
@@ -556,11 +500,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "lancer",
-          "patrolcutter",
-          "tradehauler"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -592,11 +531,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "centralstation",
-          "miningmech",
-          "swarmer"
-        ],
         "scrappedCards": [
           "scout",
           "repairbot"
@@ -626,10 +560,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "lancer",
-          "convoybot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -657,13 +587,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "federationshipyard",
-          "orbitalplatform",
-          "convoybot",
-          "convoybot",
-          "miningmech"
-        ],
         "scrappedCards": [
           "scout",
           "starbarge",
@@ -696,13 +619,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "falcon",
-          "mechcruiser",
-          "tradehauler",
-          "patrolcutter",
-          "predator"
-        ],
         "scrappedCards": [
           "scout"
         ],

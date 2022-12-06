@@ -81,6 +81,7 @@ class Visitor extends StarStarVisitor {
                 turnData["destroyedBases"].push(action["baseDestroy"])
             }
             if ("cardAction" in action) {
+                //console.log(action["cardAction"]["cardEffect"]["players"])
                 let listPlayers = Object.keys(action["cardAction"]["cardEffect"]["players"])
                 for (let i = 0; i < listPlayers.length; i++) {
                     let playerName = listPlayers[i]
@@ -101,9 +102,10 @@ class Visitor extends StarStarVisitor {
                         turnData["players"][playerName]["usedCombat"] += player["usedCombat"]
                         turnData["players"][playerName]["Authority"] += player["Authority"]
                         turnData["players"][playerName]["Discard"] += player["Discard"]
-                        if ("newAuthority" in player) {
-                            turnData["players"][playerName]["newAuthority"] = player["newAuthority"]
-                        }
+                    }
+                    if ("newAuthority" in player) {
+                        //console.log(player)
+                        turnData["players"][playerName]["newAuthority"] = player["newAuthority"]
                     }
                 }
                 turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
@@ -124,6 +126,7 @@ class Visitor extends StarStarVisitor {
                 let category = action["balanceUpdate"]["effect"]["category"]
                 turnData["players"][playerName][category] += action["balanceUpdate"]["effect"]["value"]
                 if (category == "Authority") {
+                    //console.log(action["balanceUpdate"])
                     turnData["players"][playerName]["newAuthority"] = action["balanceUpdate"]["newValue"]
                 }
             }
@@ -137,6 +140,7 @@ class Visitor extends StarStarVisitor {
                 turnData["winner"] = action["winner"]
             }
         }
+        //console.log(turnData)
         return turnData
     }
 
@@ -264,6 +268,7 @@ class Visitor extends StarStarVisitor {
         } else {
             balanceUpdate["newValue"] = 0 - Number(ctx.DECREASE().getText().replace('-', ''))
         }
+        //console.log(balanceUpdate)
         return balanceUpdate
     }
 
