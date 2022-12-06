@@ -198,7 +198,7 @@ class Visitor extends StarStarVisitor {
             return {
                 scrapped: this.visit(ctx.scrapped())
             }
-        } else {
+        }else {
             return {}
         }
     }
@@ -260,10 +260,12 @@ class Visitor extends StarStarVisitor {
             return {
                 "scrapSelf": this.visit(ctx.scrapSelf())
             }
-        }else{
+        }else if(ctx.event()){
             return {
                 "event": this.visit(ctx.event())
             }
+        }else{
+            return {}
         }
     }
 

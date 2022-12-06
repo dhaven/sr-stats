@@ -10,6 +10,8 @@
         "usedTrade": -4,
         "usedCombat": -1,
         "purchasedCards": [
+          "explorer",
+          "explorer",
           "battlepod"
         ],
         "completedMissions": [],
@@ -17,7 +19,6 @@
           "reconmission",
           "patiencerewarded"
         ],
-        "playedCards": [],
         "scrappedCards": [
           "cutter",
           "traderowslot"
@@ -46,7 +47,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "supplybot"
         ],
@@ -73,7 +73,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -98,7 +97,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -127,7 +125,6 @@
         "events": [
           "supplyrun"
         ],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -162,7 +159,6 @@
           "supplyrun",
           "tacticalmaneuver"
         ],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -190,7 +186,6 @@
         "events": [
           "mobilization"
         ],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -219,13 +214,14 @@
         "usedCombat": -1,
         "purchasedCards": [
           "thehive",
+          "explorer",
+          "explorer",
           "surveyship"
         ],
         "completedMissions": [],
         "events": [
           "reconmission"
         ],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -255,9 +251,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlepod"
-        ],
         "scrappedCards": [
           "ram",
           "explorer"
@@ -290,7 +283,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer",
           "explorer"
@@ -321,9 +313,6 @@
         "events": [
           "powerfulbacking"
         ],
-        "playedCards": [
-          "imperialfighter"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -350,7 +339,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer"
         ],
@@ -380,7 +368,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer",
           "explorer"
@@ -408,15 +395,14 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "thehive"
-        ],
         "scrappedCards": [
           "battlecruiser",
           "explorer"
         ],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "warworld"
+        ],
         "winner": "",
         "winCondition": "",
         "drawCount": 1,
@@ -438,7 +424,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -458,9 +443,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradebot"
-        ],
         "scrappedCards": [
           "viper",
           "flagship",
@@ -468,7 +450,9 @@
           "traderowslot"
         ],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "battlestation"
+        ],
         "winner": "",
         "winCondition": "",
         "drawCount": 2,
@@ -490,7 +474,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -513,10 +496,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobworld",
-          "supplybot"
-        ],
         "scrappedCards": [
           "scout",
           "surveyship",
@@ -527,7 +506,7 @@
         "destroyedBases": [],
         "winner": "HardAI",
         "winCondition": "",
-        "drawCount": 6,
+        "drawCount": 1,
         "authority": {
           "Player": {
             "diff": -21,

@@ -5,8 +5,8 @@ turn              : action+ startTurn?;
 action            : cardAcquisition | discarded | destroyBase | cardAction | balanceUpdate | drawCards | shuffleCards | endTurn | winStatus | scrapped | (skipText NEWLINE);
 
 cardAction        : cardTrigger cardEffect*;
-cardTrigger       : playSingle | activate | scrapSelf | event;
-cardEffect        : balanceUpdate | scrapped | scrapSummary | drawCards | shuffleCards | resolving | otherEffect | acquireToHand | acquireToDeck;
+cardTrigger       : playSingle | activate | scrapSelf | event | resolving;
+cardEffect        : balanceUpdate | scrapped | scrapSummary | drawCards | shuffleCards | otherEffect | acquireToHand | acquireToDeck;
 skipText          : (customWord | INT | DECREASE | SEPARATOR | '(' | ':' | ')')+ ;
 balanceUpdate     : name SEPARATOR card? effect '('customWord':'(INT | DECREASE)')' NEWLINE;
 otherEffect       : name SEPARATOR card? customWord+ NEWLINE ;
@@ -26,7 +26,7 @@ activate          : ACTIVATING card NEWLINE;
 scrapSelf         : SCRAPPING card NEWLINE;
 endTurn           : name ENDS TURN INT NEWLINE;
 startTurn         : IT IS NOW name '\'s' TURN INT NEWLINE;
-resolving         : RESOLVING customWord+ NEWLINE;
+resolving         : RESOLVING (customWord | INT)+ NEWLINE;
 
 // atomic rules
 shuffleCards      : SHUFFLED DISCARD PILE TO FORM NEW DECK NEWLINE;
