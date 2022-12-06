@@ -15,7 +15,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -35,7 +34,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -55,7 +53,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -80,7 +77,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -105,7 +101,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -126,7 +121,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -151,9 +145,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradebot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -181,9 +172,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "patrolmech"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -211,9 +199,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlemech"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -240,7 +225,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -265,9 +249,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradebot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -294,7 +275,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -320,7 +300,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer"
         ],
@@ -350,9 +329,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "patrolmech"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -377,9 +353,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlemech"
-        ],
         "scrappedCards": [
           "viper",
           "explorer"
@@ -415,13 +388,6 @@
           "armada"
         ],
         "events": [],
-        "playedCards": [
-          "mothership",
-          "blobdestroyer",
-          "patrolmech",
-          "explorer",
-          "explorer"
-        ],
         "scrappedCards": [
           "explorer",
           "explorer"
@@ -449,10 +415,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "warworld",
-          "tradebot"
-        ],
         "scrappedCards": [
           "viper",
           "explorer"
@@ -480,9 +442,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlepod"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -511,9 +470,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradebot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -538,9 +494,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "patrolmech"
-        ],
         "scrappedCards": [
           "imperialfrigate"
         ],
@@ -548,7 +501,7 @@
         "destroyedBases": [],
         "winner": "Player",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": -4,
         "authority": {
           "HardAI": {
             "diff": -16,

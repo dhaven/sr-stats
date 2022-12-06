@@ -15,7 +15,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -40,7 +39,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -62,7 +60,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -82,7 +79,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -107,7 +103,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -132,9 +127,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "stealthtower"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -160,9 +152,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "builderbot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -184,7 +173,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -212,10 +200,6 @@
           "diversify"
         ],
         "events": [],
-        "playedCards": [
-          "stinger",
-          "swarmer"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -246,10 +230,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalplatform",
-          "miningmech"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -274,7 +254,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -299,7 +278,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -328,9 +306,6 @@
           "unite"
         ],
         "events": [],
-        "playedCards": [
-          "builderbot"
-        ],
         "scrappedCards": [
           "viper",
           "builderbot"
@@ -366,9 +341,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "stealthtower"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -388,9 +360,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "swarmer"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -418,9 +387,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "miningmech"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -447,9 +413,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "swarmer"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -474,10 +437,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalplatform",
-          "battlebot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -506,7 +465,6 @@
           "monopolize"
         ],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -514,7 +472,7 @@
         "destroyedBases": [],
         "winner": "Player",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": -5,
         "authority": {
           "Player": {
             "diff": 12,

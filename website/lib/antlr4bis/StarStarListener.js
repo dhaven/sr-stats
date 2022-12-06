@@ -131,6 +131,15 @@ export default class StarStarListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarStarParser#mission.
+	enterMission(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#mission.
+	exitMission(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarStarParser#scrapped.
 	enterScrapped(ctx) {
 	}

@@ -8,7 +8,7 @@ class Visitor extends StarStarVisitor {
         let rounds = []
         for (let i = 0; i < ctx.turn().length; i++) {
             let turn = this.visit(ctx.turn()[i])
-            let currentPlayer = turn["currentPlayer"] || turn["winner"]
+            console.log(turn)
             let formattedRound = {
                 tradePool: 0,
                 combatPool: 0,
@@ -25,13 +25,24 @@ class Visitor extends StarStarVisitor {
                 drawCount: 0,
                 authority: {},
             }
-            //format to match our legacy visitor so that we can easily compare
-            formattedRound["tradePool"] = turn["players"][currentPlayer]["tradePool"]
-            formattedRound["combatPool"] = turn["players"][currentPlayer]["combatPool"]
-            formattedRound["usedTrade"] = turn["players"][currentPlayer]["usedTrade"]
-            formattedRound["usedCombat"] = turn["players"][currentPlayer]["usedCombat"]
+            let currentPlayer = turn["currentPlayer"] == '' ? turn["winner"] : turn["currentPlayer"];
+            formattedRound["player"] = currentPlayer
+            if (Object.keys(turn["players"]).length != 0) {
+                formattedRound["tradePool"] = turn["players"][currentPlayer]["tradePool"]
+                formattedRound["combatPool"] = turn["players"][currentPlayer]["combatPool"]
+                formattedRound["usedTrade"] = turn["players"][currentPlayer]["usedTrade"]
+                formattedRound["usedCombat"] = turn["players"][currentPlayer]["usedCombat"]
+                for (let player in turn["players"]) {
+                    if ("newAuthority" in turn["players"][player]) {
+                        formattedRound["authority"][player] = {
+                            diff: turn["players"][player]["Authority"],
+                            new: turn["players"][player]["newAuthority"]
+                        }
+                    }
+                }
+            }
             formattedRound["purchasedCards"] = turn["purchasedCards"]
-            formattedRound["completedMissions"] = []
+            formattedRound["completedMissions"] = turn["missions"]
             formattedRound["events"] = turn["events"]
             formattedRound["scrappedCards"] = turn["scrappedCards"]
             formattedRound["discardedCards"] = turn["discardedCards"]
@@ -39,20 +50,11 @@ class Visitor extends StarStarVisitor {
             formattedRound["winner"] = turn["winner"]
             formattedRound["winCondition"] = ""
             formattedRound["drawCount"] = turn["drawCount"] - 5
-            for (let player in turn["players"]) {
-                if ("newAuthority" in turn["players"][player]) {
-                    formattedRound["authority"][player] = {
-                        diff: turn["players"][player]["Authority"],
-                        new: turn["players"][player]["newAuthority"]
-                    }
-                }
-            }
-            formattedRound["player"] = currentPlayer
             rounds.push(formattedRound)
         }
         return {
             firstPlayer: rounds[0]["player"],
-            winner: rounds[rounds.length-1]["winner"],
+            winner: rounds[rounds.length - 1]["winner"],
             rounds: rounds,
             winCondition: ""
         }
@@ -65,6 +67,7 @@ class Visitor extends StarStarVisitor {
             discardedCards: [],
             destroyedBases: [],
             events: [],
+            missions: [],
             winner: "",
             drawCount: 0,
             currentPlayer: "",
@@ -73,7 +76,7 @@ class Visitor extends StarStarVisitor {
         for (let i = 0; i < ctx.action().length; i++) {
             let action = this.visit(ctx.action()[i])
             if ("cardAcquisition" in action) {
-                if(!(action["cardAcquisition"].match("tothetopofthedeck") || action["cardAcquisition"].match("tohand"))){
+                if (!(action["cardAcquisition"].match("tothetopofthedeck") || action["cardAcquisition"].match("tohand"))) {
                     turnData["purchasedCards"].push(action["cardAcquisition"])
                 }
             }
@@ -114,8 +117,11 @@ class Visitor extends StarStarVisitor {
                 turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
                 turnData["drawCount"] += action["cardAction"]["cardEffect"]["drawCount"]
                 turnData["purchasedCards"] = turnData["purchasedCards"].concat(action["cardAction"]["cardEffect"]["acquiredCards"])
-                if("event" in action["cardAction"]["trigger"]){
+                if ("event" in action["cardAction"]["trigger"]) {
                     turnData["events"] = turnData["events"].concat(action["cardAction"]["trigger"]["event"])
+                }
+                if ("mission" in action["cardAction"]["trigger"]) {
+                    turnData["missions"] = turnData["missions"].concat(action["cardAction"]["trigger"]["mission"])
                 }
             }
             if ("balanceUpdate" in action) {
@@ -146,7 +152,7 @@ class Visitor extends StarStarVisitor {
             if ("winner" in action) {
                 turnData["winner"] = action["winner"]
             }
-            if("scrapped" in action) {
+            if ("scrapped" in action) {
                 turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["scrapped"])
             }
         }
@@ -194,11 +200,11 @@ class Visitor extends StarStarVisitor {
             return {
                 winner: this.visit(ctx.winStatus())
             }
-        } else if(ctx.scrapped()){
+        } else if (ctx.scrapped()) {
             return {
                 scrapped: this.visit(ctx.scrapped())
             }
-        }else {
+        } else {
             return {}
         }
     }
@@ -237,10 +243,10 @@ class Visitor extends StarStarVisitor {
             if ("scrapped" in cardEffect) {
                 cardAction["cardEffect"]["scrap"].push(cardEffect["scrapped"])
             }
-            if("drawCount" in cardEffect){
+            if ("drawCount" in cardEffect) {
                 cardAction["cardEffect"]["drawCount"] += cardEffect["drawCount"]
             }
-            if("acquiredCard" in cardEffect){
+            if ("acquiredCard" in cardEffect) {
                 cardAction["cardEffect"]["acquiredCards"].push(cardEffect["acquiredCard"])
             }
         }
@@ -256,15 +262,19 @@ class Visitor extends StarStarVisitor {
             return {
                 "activate": this.visit(ctx.activate())
             }
-        } else if(ctx.scrapSelf()){
+        } else if (ctx.scrapSelf()) {
             return {
                 "scrapSelf": this.visit(ctx.scrapSelf())
             }
-        }else if(ctx.event()){
+        } else if (ctx.event()) {
             return {
                 "event": this.visit(ctx.event())
             }
-        }else{
+        } else if (ctx.mission()) {
+            return {
+                "mission": this.visit(ctx.mission())
+            }
+        } else {
             return {}
         }
     }
@@ -279,11 +289,11 @@ class Visitor extends StarStarVisitor {
         } else if (ctx.scrapSummary()) {
             //console.log(`Card: ${this.visit(ctx.scrapSummary())} has been scrapped`)
             cardEffect["scrapSummary"] = this.visit(ctx.scrapSummary())
-        } else if(ctx.drawCards()){
+        } else if (ctx.drawCards()) {
             cardEffect["drawCount"] = this.visit(ctx.drawCards())
-        }else if(ctx.acquireToHand()){
+        } else if (ctx.acquireToHand()) {
             cardEffect["acquiredCard"] = this.visit(ctx.acquireToHand())
-        }else if(ctx.acquireToDeck()){
+        } else if (ctx.acquireToDeck()) {
             cardEffect["acquiredCard"] = this.visit(ctx.acquireToDeck())
         }
         return cardEffect
@@ -318,7 +328,11 @@ class Visitor extends StarStarVisitor {
         return this.visit(ctx.name())
     }
 
-    visitEvent(ctx){
+    visitEvent(ctx) {
+        return this.visit(ctx.card())
+    }
+
+    visitMission(ctx) {
         return this.visit(ctx.card())
     }
 
@@ -334,11 +348,11 @@ class Visitor extends StarStarVisitor {
         return this.visit(ctx.card())
     }
 
-    visitAcquireToDeck(ctx){
+    visitAcquireToDeck(ctx) {
         return this.visit(ctx.card())
     }
 
-    visitAcquireToHand(ctx){
+    visitAcquireToHand(ctx) {
         return this.visit(ctx.card())
     }
 

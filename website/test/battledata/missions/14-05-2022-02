@@ -14,7 +14,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -39,7 +38,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -65,7 +63,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -90,7 +87,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -115,7 +111,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -140,9 +135,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "bioformer"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -167,9 +159,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "swarmer"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -194,7 +183,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -219,7 +207,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer"
         ],
@@ -246,10 +233,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "centralstation",
-          "plasmabot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -277,9 +260,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "swarmer"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -302,9 +282,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "ravager"
-        ],
         "scrappedCards": [
           "siegefortress",
           "federationshipyard"
@@ -337,10 +314,6 @@
           "monopolize"
         ],
         "events": [],
-        "playedCards": [
-          "mobilemarket",
-          "colonyseedship"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -373,9 +346,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "bioformer"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -397,7 +367,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -419,10 +388,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "builderbot",
-          "ravager"
-        ],
         "scrappedCards": [
           "viper",
           "hivequeen",
@@ -457,11 +422,6 @@
           "colonize"
         ],
         "events": [],
-        "playedCards": [
-          "colonyseedship",
-          "swarmer",
-          "scout"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -492,11 +452,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "bioformer",
-          "plasmabot",
-          "warningbeacon"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -526,7 +481,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -550,11 +504,6 @@
           "influence"
         ],
         "events": [],
-        "playedCards": [
-          "centralstation",
-          "bioformer",
-          "plasmabot"
-        ],
         "scrappedCards": [
           "scout",
           "falcon"
@@ -586,10 +535,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "storagesilo",
-          "lightcruiser"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -625,10 +570,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "builderbot",
-          "ravager"
-        ],
         "scrappedCards": [
           "scout",
           "farmship",
@@ -666,7 +607,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -684,9 +624,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "warningbeacon"
-        ],
         "scrappedCards": [
           "bioformer",
           "bioformer"
@@ -697,7 +634,7 @@
         ],
         "winner": "HardAI",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": -4,
         "authority": {
           "HardAI": {
             "diff": 4,

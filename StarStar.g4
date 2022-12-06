@@ -5,7 +5,7 @@ turn              : action+ startTurn?;
 action            : cardAcquisition | discarded | destroyBase | cardAction | balanceUpdate | drawCards | shuffleCards | endTurn | winStatus | scrapped | (skipText NEWLINE);
 
 cardAction        : cardTrigger cardEffect*;
-cardTrigger       : playSingle | activate | scrapSelf | event | resolving;
+cardTrigger       : playSingle | activate | scrapSelf | event | mission | resolving;
 cardEffect        : balanceUpdate | scrapped | scrapSummary | drawCards | shuffleCards | otherEffect | acquireToHand | acquireToDeck;
 skipText          : (customWord | INT | DECREASE | SEPARATOR | '(' | ':' | ')')+ ;
 balanceUpdate     : name SEPARATOR card? effect '('customWord':'(INT | DECREASE)')' NEWLINE;
@@ -15,7 +15,7 @@ scrapSummary      : name IS SCRAPPING (':')? card NEWLINE;
 discarded         : DISCARDED card NEWLINE ;
 winStatus         : name HAS WON THE GAME NEWLINE? ;
 event             : REVEALED EVENT card NEWLINE;
-
+mission           : REVEALED card NEWLINE ;
 scrapped          : SCRAPPED card NEWLINE;
 destroyBase       : DESTROYED card NEWLINE;
 cardAcquisition   : ACQUIRED card NEWLINE;
