@@ -17,7 +17,6 @@
         "events": [
           "warpjump"
         ],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -38,7 +37,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -65,7 +63,6 @@
         "events": [
           "comet"
         ],
-        "playedCards": [],
         "scrappedCards": [
           "scout",
           "scout"
@@ -93,7 +90,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -115,10 +111,6 @@
         "completedMissions": [],
         "events": [
           "quasar"
-        ],
-        "playedCards": [
-          "frontierhawk",
-          "destroyerbot"
         ],
         "scrappedCards": [
           "scout"
@@ -148,9 +140,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "builderbot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -183,7 +172,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -208,9 +196,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "patrolboat"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -237,11 +222,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "frontierhawk",
-          "frontierhawk",
-          "destroyerbot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -272,9 +252,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "builderbot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -298,7 +275,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer"
         ],
@@ -320,7 +296,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -345,9 +320,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "repairmech"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -369,9 +341,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "builderbot"
-        ],
         "scrappedCards": [
           "scout",
           "builderbot"
@@ -401,11 +370,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "destroyerbot",
-          "frontierhawk",
-          "frontierhawk"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -437,9 +401,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "hammerhead"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -473,11 +434,6 @@
         "events": [
           "bombardment"
         ],
-        "playedCards": [
-          "neuralnexus",
-          "repairmech",
-          "destroyerbot"
-        ],
         "scrappedCards": [
           "frontierhawk",
           "scout"
@@ -506,7 +462,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "scout"
         ],
@@ -537,7 +492,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer"
         ],
@@ -561,9 +515,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "gateship"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -594,10 +545,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "frontierhawk",
-          "destroyerbot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -626,12 +573,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "hammerhead",
-          "mobilemarket",
-          "pulverizer",
-          "integrationport"
-        ],
         "scrappedCards": [
           "mobilemarket",
           "transitnexus"
@@ -642,10 +583,11 @@
         "destroyedBases": [],
         "winner": "Player",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": -3,
         "authority": {
           "Player": {
-            "diff": 2
+            "diff": 2,
+            "new": 7
           },
           "HardAI": {
             "diff": -11,

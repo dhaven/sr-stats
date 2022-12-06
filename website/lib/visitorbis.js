@@ -32,7 +32,7 @@ class Visitor extends StarStarVisitor {
             formattedRound["usedCombat"] = turn["players"][currentPlayer]["usedCombat"]
             formattedRound["purchasedCards"] = turn["purchasedCards"]
             formattedRound["completedMissions"] = []
-            formattedRound["events"] = []
+            formattedRound["events"] = turn["events"]
             formattedRound["scrappedCards"] = turn["scrappedCards"]
             formattedRound["discardedCards"] = turn["discardedCards"]
             formattedRound["destroyedBases"] = turn["destroyedBases"]
@@ -64,6 +64,7 @@ class Visitor extends StarStarVisitor {
             scrappedCards: [],
             discardedCards: [],
             destroyedBases: [],
+            events: [],
             winner: "",
             drawCount: 0,
             currentPlayer: "",
@@ -113,6 +114,9 @@ class Visitor extends StarStarVisitor {
                 turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
                 turnData["drawCount"] += action["cardAction"]["cardEffect"]["drawCount"]
                 turnData["purchasedCards"] = turnData["purchasedCards"].concat(action["cardAction"]["cardEffect"]["acquiredCards"])
+                if("event" in action["cardAction"]["trigger"]){
+                    turnData["events"] = turnData["events"].concat(action["cardAction"]["trigger"]["event"])
+                }
             }
             if ("balanceUpdate" in action) {
                 let playerName = action["balanceUpdate"]["target"]
@@ -245,11 +249,21 @@ class Visitor extends StarStarVisitor {
 
     visitCardTrigger(ctx) {
         if (ctx.playSingle()) {
-            return this.visit(ctx.playSingle())
+            return {
+                "play": this.visit(ctx.playSingle())
+            }
         } else if (ctx.activate()) {
-            return this.visit(ctx.activate())
-        } else {
-            return this.visit(ctx.scrapSelf())
+            return {
+                "activate": this.visit(ctx.activate())
+            }
+        } else if(ctx.scrapSelf()){
+            return {
+                "scrapSelf": this.visit(ctx.scrapSelf())
+            }
+        }else{
+            return {
+                "event": this.visit(ctx.event())
+            }
         }
     }
 
@@ -300,6 +314,10 @@ class Visitor extends StarStarVisitor {
 
     visitWinStatus(ctx) {
         return this.visit(ctx.name())
+    }
+
+    visitEvent(ctx){
+        return this.visit(ctx.card())
     }
 
     visitScrapped(ctx) {

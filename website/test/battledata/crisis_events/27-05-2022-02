@@ -16,7 +16,6 @@
         "events": [
           "supernova"
         ],
-        "playedCards": [],
         "scrappedCards": [
           "moonwurmhatchling",
           "warpgatecruiser",
@@ -54,7 +53,6 @@
         "events": [
           "comet"
         ],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -80,7 +78,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "scout",
           "scout"
@@ -107,7 +104,6 @@
         "events": [
           "trademission"
         ],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -132,9 +128,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "plasmabot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -162,10 +155,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "frontierhawk",
-          "blobminer"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -194,9 +183,6 @@
         "events": [
           "bombardment"
         ],
-        "playedCards": [
-          "capturedoutpost"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -224,9 +210,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "builderbot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -238,6 +221,10 @@
         "winCondition": "",
         "drawCount": 0,
         "authority": {
+          "Player": {
+            "diff": -6,
+            "new": 29
+          },
           "HardAI": {
             "diff": -1,
             "new": 39
@@ -255,9 +242,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "plasmabot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -286,7 +270,6 @@
         "events": [
           "blackhole"
         ],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -317,10 +300,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "capturedoutpost",
-          "integrationport"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -344,9 +323,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "destroyerbot"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -371,10 +347,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "plasmabot",
-          "plasmabot"
-        ],
         "scrappedCards": [
           "scout",
           "scout"
@@ -405,10 +377,6 @@
         "completedMissions": [],
         "events": [
           "comet"
-        ],
-        "playedCards": [
-          "builderbot",
-          "blobminer"
         ],
         "scrappedCards": [
           "viper",
@@ -445,9 +413,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "integrationport"
-        ],
         "scrappedCards": [
           "scout",
           "scout"
@@ -475,12 +440,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "frontierhawk",
-          "ionstation",
-          "patrolboat",
-          "integrationport"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -512,10 +471,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "plasmabot",
-          "plasmabot"
-        ],
         "scrappedCards": [
           "scout",
           "explorer"
@@ -546,13 +501,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "frontierhawk",
-          "pulverizer",
-          "burrower",
-          "patrolboat",
-          "frontierrunner"
-        ],
         "scrappedCards": [
           "neuralnexus"
         ],
@@ -584,11 +532,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "capturedoutpost",
-          "plasmabot",
-          "plasmabot"
-        ],
         "scrappedCards": [
           "stinger"
         ],
@@ -598,7 +541,7 @@
         "destroyedBases": [],
         "winner": "HardAI",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": -4,
         "authority": {
           "Player": {
             "diff": -16,

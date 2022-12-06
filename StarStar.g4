@@ -5,7 +5,7 @@ turn              : action+ startTurn?;
 action            : cardAcquisition | discarded | destroyBase | cardAction | balanceUpdate | drawCards | shuffleCards | endTurn | winStatus | scrapped | (skipText NEWLINE);
 
 cardAction        : cardTrigger cardEffect*;
-cardTrigger       : playSingle | activate | scrapSelf ;
+cardTrigger       : playSingle | activate | scrapSelf | event;
 cardEffect        : balanceUpdate | scrapped | scrapSummary | drawCards | shuffleCards | resolving | otherEffect | acquireToHand | acquireToDeck;
 skipText          : (customWord | INT | DECREASE | SEPARATOR | '(' | ':' | ')')+ ;
 balanceUpdate     : name SEPARATOR card? effect '('customWord':'(INT | DECREASE)')' NEWLINE;
@@ -14,6 +14,7 @@ cardActivation    : ACTIVATING card NEWLINE ;
 scrapSummary      : name IS SCRAPPING (':')? card NEWLINE;
 discarded         : DISCARDED card NEWLINE ;
 winStatus         : name HAS WON THE GAME NEWLINE? ;
+event             : REVEALED EVENT card NEWLINE;
 
 scrapped          : SCRAPPED card NEWLINE;
 destroyBase       : DESTROYED card NEWLINE;
@@ -34,7 +35,7 @@ drawCards         : DREW INT CARDS NEWLINE;
 
 card              : ((customWord '\'s'?) | INT)+ ;
 name              : customWord+ ;
-customWord        : WORD|ACQUIRED|ACTIVATING|ALL|ALLY|CARDS|DECK|DESTROYED|DISCARD|DISCARDING|DREW|ENDS|FORM|GAME|HAND|HAS|INDICATORS|IS|IT|NEW|NOW|OF|PILE|PLAY|PLAYED|REFRESH|RESOLVING|SCRAPPED|SCRAPPING|SHUFFLED|THE|TO|TOP|TURN|WON;
+customWord        : WORD|ACQUIRED|ACTIVATING|ALL|ALLY|CARDS|DECK|DESTROYED|DISCARD|DISCARDING|DREW|ENDS|EVENT|FORM|GAME|HAND|HAS|INDICATORS|IS|IT|NEW|NOW|OF|PILE|PLAY|PLAYED|REFRESH|RESOLVING|REVEALED|SCRAPPED|SCRAPPING|SHUFFLED|THE|TO|TOP|TURN|WON;
 
 fragment A : ('A'|'a');
 fragment B : ('B'|'b');
@@ -75,6 +76,7 @@ DISCARDED           : D I S C A R D E D ;
 DISCARDING          : D I S C A R D I N G ;
 DREW                : D R E W ;
 ENDS                : E N D S ;
+EVENT               : E V E N T ;
 FORM                : F O R M ;
 GAME                : G A M E ;
 HAND                : H A N D ;
@@ -89,6 +91,7 @@ PILE                : P I L E ;
 PLAY                : P L A Y ;
 PLAYED              : P L A Y E D ;
 REFRESH             : R E F R E S H ;
+REVEALED            : R E V E A L E D ;
 RESOLVING           : R E S O L V I N G ;
 SCRAPPED            : S C R A P P E D ;
 SCRAPPING           : S C R A P P I N G ;

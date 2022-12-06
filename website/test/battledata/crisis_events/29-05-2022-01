@@ -19,7 +19,6 @@
           "comet",
           "trademission"
         ],
-        "playedCards": [],
         "scrappedCards": [
           "scout"
         ],
@@ -48,7 +47,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "viper",
           "viper"
@@ -76,7 +74,6 @@
         "events": [
           "warpjump"
         ],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -104,7 +101,6 @@
         "events": [
           "warpjump"
         ],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -134,9 +130,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlepod"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -161,9 +154,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "defensecenter"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -188,7 +178,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -220,7 +209,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -246,7 +234,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "ram",
           "explorer"
@@ -274,10 +261,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "defensecenter",
-          "supplybot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -306,12 +289,11 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlepod"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "defensecenter"
+        ],
         "winner": "",
         "winCondition": "",
         "drawCount": 0,
@@ -336,9 +318,6 @@
         "completedMissions": [],
         "events": [
           "quasar"
-        ],
-        "playedCards": [
-          "tradebot"
         ],
         "scrappedCards": [
           "scout"
@@ -367,10 +346,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplybot",
-          "battlepod"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -399,9 +374,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "recyclingstation"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -434,10 +406,11 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "recyclingstation"
+        ],
         "winner": "",
         "winCondition": "",
         "drawCount": 0,
@@ -459,10 +432,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "defensecenter",
-          "tradebot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -493,14 +462,15 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "flagship"
         ],
         "discardedCards": [
           "viper"
         ],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "defensecenter"
+        ],
         "winner": "",
         "winCondition": "",
         "drawCount": 1,
@@ -522,10 +492,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplybot",
-          "tradebot"
-        ],
         "scrappedCards": [
           "scout",
           "scout",
@@ -553,10 +519,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplybot",
-          "battlepod"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -567,7 +529,7 @@
         "destroyedBases": [],
         "winner": "Player",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": -5,
         "authority": {
           "HardAI": {
             "diff": -12,
