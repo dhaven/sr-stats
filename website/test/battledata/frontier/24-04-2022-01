@@ -14,7 +14,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -40,7 +39,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -61,7 +59,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -81,7 +78,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -106,9 +102,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobminer"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -128,9 +121,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "repairmech"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -156,7 +146,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -186,7 +175,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -212,7 +200,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -237,9 +224,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "repairmech"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -265,9 +249,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "gateship"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -296,9 +277,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "reclamationstation"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -329,9 +307,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "plasmabot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -364,7 +339,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -391,9 +365,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobminer"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -422,7 +393,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -449,12 +419,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "builderbot",
-          "farmship",
-          "plasmabot",
-          "gateship"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -485,10 +449,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "repairmech",
-          "enforcermech"
-        ],
         "scrappedCards": [
           "viper",
           "scout"
@@ -523,10 +483,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "mobilemarket",
-          "frontierrunner"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -551,10 +507,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "reclamationstation",
-          "nestingground"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -587,11 +539,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "integrationport",
-          "builderbot",
-          "lightcruiser"
-        ],
         "scrappedCards": [
           "viper",
           "builderbot"
@@ -616,10 +563,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "mobilemarket",
-          "enforcermech"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -651,12 +594,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalgunplatform",
-          "lightcruiser",
-          "frontierrunner",
-          "gateship"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -689,10 +626,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "outlandstation",
-          "repairmech"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -722,12 +655,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "defensesystem",
-          "integrationport",
-          "orbitalshuttle",
-          "patrolboat"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -759,9 +686,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "destroyerbot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -791,11 +715,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "plasmabot",
-          "mobilemarket",
-          "blobminer"
-        ],
         "scrappedCards": [
           "scout",
           "swarmcluster"
@@ -825,13 +744,11 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "enforcermech",
-          "destroyerbot"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "mobilemarket"
+        ],
         "winner": "",
         "winCondition": "",
         "drawCount": 0,
@@ -855,12 +772,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "spikecluster",
-          "frontierhawk",
-          "builderbot",
-          "frontierrunner"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -894,12 +805,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "builderbot",
-          "pulverizer",
-          "reclamationstation",
-          "repairmech"
-        ],
         "scrappedCards": [
           "blobminer",
           "scout"
@@ -929,13 +834,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "imperialflagship",
-          "plasmabot",
-          "farmship",
-          "moonwurmhatchling",
-          "patrolboat"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -943,7 +841,9 @@
           "scout",
           "scout"
         ],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "reclamationstation"
+        ],
         "winner": "",
         "winCondition": "",
         "drawCount": 3,
@@ -969,11 +869,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "outlandstation",
-          "frontierhawk",
-          "outlandstation"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -1005,13 +900,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "integrationport",
-          "frontierhawk",
-          "lightcruiser",
-          "gateship",
-          "frontierrunner"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -1046,11 +934,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "nestingground",
-          "mobilemarket",
-          "builderbot"
-        ],
         "scrappedCards": [
           "mobilemarket",
           "scout",
@@ -1068,7 +951,8 @@
         "drawCount": 2,
         "authority": {
           "HardAI": {
-            "diff": 4
+            "diff": 4,
+            "new": 33
           },
           "Player": {
             "diff": -6,
@@ -1087,20 +971,14 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "moonwurmhatchling",
-          "defensesystem",
-          "integrationport",
-          "orbitalshuttle",
-          "frontierrunner",
-          "builderbot"
-        ],
         "scrappedCards": [
           "scout",
           "builderbot"
         ],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "nestingground"
+        ],
         "winner": "",
         "winCondition": "",
         "drawCount": 1,
@@ -1127,10 +1005,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "reclamationstation",
-          "repairmech"
-        ],
         "scrappedCards": [
           "scout",
           "frontierrunner"
@@ -1160,13 +1034,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalgunplatform",
-          "repairmech",
-          "plasmabot",
-          "blobminer",
-          "stinger"
-        ],
         "scrappedCards": [
           "scout",
           "blobminer",
@@ -1197,17 +1064,13 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "enforcermech",
-          "destroyerbot",
-          "pulverizer"
-        ],
         "scrappedCards": [
           "frontierhawk",
           "neuralnexus"
         ],
         "discardedCards": [],
         "destroyedBases": [
+          "integrationport",
           "orbitalgunplatform"
         ],
         "winner": "",
@@ -1231,13 +1094,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "transitnexus",
-          "mobilemarket",
-          "defensesystem",
-          "plasmabot",
-          "conversionyard"
-        ],
         "scrappedCards": [
           "scout",
           "mobilemarket"
@@ -1249,7 +1105,8 @@
         "drawCount": 1,
         "authority": {
           "Player": {
-            "diff": 7
+            "diff": 7,
+            "new": 19
           },
           "HardAI": {
             "diff": -12,
@@ -1268,16 +1125,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "ionstation",
-          "mobilemarket",
-          "pulverizer",
-          "reclamationstation",
-          "destroyerbot",
-          "enforcermech",
-          "nestingground",
-          "capturedoutpost"
-        ],
         "scrappedCards": [
           "cargocraft",
           "scout",
@@ -1292,14 +1139,16 @@
           "patrolboat"
         ],
         "destroyedBases": [
+          "defensesystem",
           "conversionyard"
         ],
         "winner": "HardAI",
         "winCondition": "",
-        "drawCount": 11,
+        "drawCount": 6,
         "authority": {
           "HardAI": {
-            "diff": 6
+            "diff": 6,
+            "new": 16
           },
           "Player": {
             "diff": -47,

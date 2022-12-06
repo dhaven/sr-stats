@@ -14,7 +14,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -39,7 +38,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -64,7 +62,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -89,7 +86,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -110,7 +106,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -135,7 +130,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -160,7 +154,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -185,9 +178,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "conversionyard"
-        ],
         "scrappedCards": [
           "patrolboat"
         ],
@@ -209,7 +199,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -229,7 +218,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "scout"
         ],
@@ -252,9 +240,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "outlandstation"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -277,9 +262,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "destroyerbot"
-        ],
         "scrappedCards": [
           "scout",
           "scout"
@@ -310,10 +292,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "mobilemarket",
-          "frontierrunner"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -338,9 +316,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "mobilemarket"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -369,11 +344,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "destroyerbot",
-          "repairmech",
-          "plasmabot"
-        ],
         "scrappedCards": [
           "scout",
           "scout"
@@ -404,9 +374,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "destroyerbot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -433,7 +400,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -458,10 +424,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "mobilemarket",
-          "orbitalgunplatform"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -487,10 +449,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "neuralnexus",
-          "explorer"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -510,9 +468,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "destroyerbot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -539,13 +494,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "integrationport",
-          "destroyerbot",
-          "capturedoutpost",
-          "outlandstation",
-          "plasmabot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -577,11 +525,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "conversionyard",
-          "jammingterminal",
-          "destroyerbot"
-        ],
         "scrappedCards": [
           "hammerhead"
         ],
@@ -607,12 +550,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "capturedoutpost",
-          "mobilemarket",
-          "repairmech",
-          "frontierrunner"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "viper",
@@ -640,7 +577,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "scout"
         ],
@@ -668,10 +604,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "destroyerbot",
-          "plasmabot"
-        ],
         "scrappedCards": [
           "scout",
           "scout"
@@ -700,10 +632,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalgunplatform",
-          "mobilemarket"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -728,13 +656,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "outlandstation",
-          "builderbot",
-          "farmship",
-          "repairmech",
-          "scout"
-        ],
         "scrappedCards": [
           "scout",
           "viper"
@@ -765,11 +686,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "outlandstation",
-          "jammingterminal",
-          "destroyerbot"
-        ],
         "scrappedCards": [
           "orbitalgunplatform",
           "mobilemarket",
@@ -783,7 +699,8 @@
         "drawCount": 2,
         "authority": {
           "HardAI": {
-            "diff": 2
+            "diff": 2,
+            "new": 42
           },
           "Player": {
             "diff": -13,
@@ -800,14 +717,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "integrationport",
-          "capturedoutpost",
-          "neuralnexus",
-          "siegefortress",
-          "viper",
-          "scout"
-        ],
         "scrappedCards": [
           "mobilemarket",
           "outlandstation"
@@ -823,13 +732,13 @@
         "winCondition": "",
         "drawCount": 3,
         "authority": {
-          "HardAI": {
-            "diff": -8,
-            "new": 34
-          },
           "Player": {
             "diff": 3,
             "new": 5
+          },
+          "HardAI": {
+            "diff": -8,
+            "new": 34
           }
         },
         "player": "Player"
@@ -842,10 +751,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "conversionyard",
-          "plasmabot"
-        ],
         "scrappedCards": [
           "scout",
           "blobminer"
@@ -870,13 +775,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "capturedoutpost",
-          "repairmech",
-          "siegefortress",
-          "plasmabot",
-          "builderbot"
-        ],
         "scrappedCards": [
           "viper",
           "scout",
@@ -909,10 +807,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "destroyerbot",
-          "mobilemarket"
-        ],
         "scrappedCards": [
           "plasmabot",
           "viper",
@@ -943,12 +837,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "infestedmoon",
-          "destroyerbot",
-          "frontierrunner",
-          "explorer"
-        ],
         "scrappedCards": [
           "scout",
           "explorer"
@@ -982,10 +870,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "jammingterminal",
-          "conversionyard"
-        ],
         "scrappedCards": [
           "destroyerbot"
         ],
@@ -993,7 +877,7 @@
         "destroyedBases": [],
         "winner": "HardAI",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": -5,
         "authority": {
           "Player": {
             "diff": -16,
