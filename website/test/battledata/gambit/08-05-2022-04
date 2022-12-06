@@ -14,7 +14,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -39,7 +38,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -64,7 +62,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -90,7 +87,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -115,7 +111,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -140,9 +135,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "frontierhawk"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -169,9 +161,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "plasmabot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -196,7 +185,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -223,9 +211,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "outlandstation"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -246,9 +231,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "reclamationstation"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -277,10 +259,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "plasmabot",
-          "warningbeacon"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -310,9 +288,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "frontierhawk"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -341,10 +316,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "repairbot",
-          "builderbot"
-        ],
         "scrappedCards": [
           "unlikelyalliance",
           "warningbeacon"
@@ -373,7 +344,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -398,10 +368,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "outlandstation",
-          "plasmabot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -429,9 +395,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "frontierhawk"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -462,10 +425,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "swarmcluster",
-          "builderbot"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -490,9 +449,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "reclamationstation"
-        ],
         "scrappedCards": [
           "viper",
           "boldraid"
@@ -522,10 +478,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "plasmabot",
-          "warningbeacon"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -555,10 +507,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalgunplatform",
-          "builderbot"
-        ],
         "scrappedCards": [
           "viper",
           "builderbot"
@@ -588,11 +536,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "plasmabot",
-          "builderbot",
-          "repairbot"
-        ],
         "scrappedCards": [
           "scout",
           "scout",
@@ -624,7 +567,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer"
         ],
@@ -651,13 +593,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "outlandstation",
-          "warningbeacon",
-          "swarmcluster",
-          "plasmabot",
-          "plasmabot"
-        ],
         "scrappedCards": [
           "scout",
           "energyshield",
@@ -668,7 +603,7 @@
         "destroyedBases": [],
         "winner": "HardAI",
         "winCondition": "",
-        "drawCount": 3,
+        "drawCount": -2,
         "authority": {
           "HardAI": {
             "diff": 3,

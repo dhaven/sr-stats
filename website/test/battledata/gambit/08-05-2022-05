@@ -14,7 +14,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -35,7 +34,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -60,7 +58,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -86,7 +83,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -112,9 +108,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "ravager"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -139,9 +132,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "plasmabot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -168,7 +158,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -193,9 +182,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "convoybot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -222,7 +208,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -247,7 +232,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "salvageoperation"
         ],
@@ -277,11 +261,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "stellarreef",
-          "pulverizer",
-          "ravager"
-        ],
         "scrappedCards": [
           "transitnexus",
           "emperor'sdreadnaught",
@@ -311,10 +290,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandcenter",
-          "convoybot"
-        ],
         "scrappedCards": [
           "scout",
           "explorer"
@@ -345,9 +320,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlebot"
-        ],
         "scrappedCards": [
           "boldraid",
           "explorer"
@@ -377,10 +349,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "spikecluster",
-          "plasmabot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -407,11 +375,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "ravager",
-          "pulverizer",
-          "orbitalshuttle"
-        ],
         "scrappedCards": [
           "theincinerator",
           "warningbeacon",
@@ -441,9 +404,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandcenter"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -469,11 +429,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "mobilemarket",
-          "patrolcutter",
-          "burrower"
-        ],
         "scrappedCards": [
           "burrower"
         ],
@@ -509,10 +464,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "convoybot",
-          "plasmabot"
-        ],
         "scrappedCards": [
           "scout",
           "scout"
@@ -540,13 +491,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalplatform",
-          "ravager",
-          "pulverizer",
-          "starbarge",
-          "orbitalshuttle"
-        ],
         "scrappedCards": [
           "imperialflagship"
         ],
@@ -558,7 +502,7 @@
         ],
         "winner": "Player",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": -3,
         "authority": {
           "HardAI": {
             "diff": -16,

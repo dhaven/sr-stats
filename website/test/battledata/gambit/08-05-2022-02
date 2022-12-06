@@ -14,7 +14,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "risetopower"
         ],
@@ -25,7 +24,8 @@
         "drawCount": 1,
         "authority": {
           "HardAI": {
-            "diff": 8
+            "diff": 8,
+            "new": 58
           }
         },
         "player": "HardAI"
@@ -41,7 +41,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -66,7 +65,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -92,7 +90,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "energyshield"
         ],
@@ -119,9 +116,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "farmship"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -150,7 +144,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -175,9 +168,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalgunplatform"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -203,7 +193,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer"
         ],
@@ -232,11 +221,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "convoybot",
-          "farmship",
-          "infestedmoon"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -266,9 +250,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "frontierhawk"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -295,7 +276,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -312,7 +292,7 @@
       },
       {
         "tradePool": 4,
-        "combatPool": 1,
+        "combatPool": 5,
         "usedTrade": -4,
         "usedCombat": -5,
         "purchasedCards": [
@@ -321,9 +301,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "stealthtower"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -350,9 +327,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandcenter"
-        ],
         "scrappedCards": [
           "boldraid"
         ],
@@ -382,7 +356,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer",
           "gunship"
@@ -413,9 +386,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalgunplatform"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -442,7 +412,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "stinger"
         ],
@@ -472,10 +441,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "convoybot",
-          "farmship"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -505,14 +470,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "falcon",
-          "frontierhawk",
-          "cargopod",
-          "blobminer",
-          "emperor'sdreadnaught",
-          "explorer"
-        ],
         "scrappedCards": [
           "explorer",
           "falcon",
@@ -545,10 +502,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "infestedmoon",
-          "commandcenter"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "viper",
@@ -577,7 +530,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -603,9 +555,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "gateship"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -626,20 +575,12 @@
       },
       {
         "tradePool": 4,
-        "combatPool": 21,
+        "combatPool": 25,
         "usedTrade": 0,
         "usedCombat": -25,
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "stealthtower",
-          "plasmavent",
-          "swarmer",
-          "jammingterminal",
-          "emperor'sdreadnaught",
-          "starbarge"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -648,7 +589,7 @@
         ],
         "winner": "Player",
         "winCondition": "",
-        "drawCount": 3,
+        "drawCount": -2,
         "authority": {
           "HardAI": {
             "diff": -16,
