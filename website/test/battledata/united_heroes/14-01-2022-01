@@ -15,7 +15,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -35,7 +34,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -60,7 +58,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -85,7 +82,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "viper",
           "viper"
@@ -108,7 +104,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -133,7 +128,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -159,7 +153,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -184,7 +177,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -205,7 +197,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -230,9 +221,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "moonwurmhatchling"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -257,10 +245,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "scout",
-          "ravager"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -290,7 +274,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -317,7 +300,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -339,13 +321,11 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "outlandstation",
-          "moonwurmhatchling"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "orbitalplatform"
+        ],
         "winner": "",
         "winCondition": "",
         "drawCount": 2,
@@ -373,9 +353,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "repairbot"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -400,9 +377,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "federationshipyard"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -432,11 +406,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "ravager",
-          "solarskiff",
-          "scout"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -470,10 +439,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "infestedmoon",
-          "moonwurmhatchling"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -499,7 +464,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -532,10 +496,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "federationshipyard",
-          "outlandstation"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -564,10 +524,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "builderbot",
-          "orbitalplatform"
-        ],
         "scrappedCards": [
           "chairmanhaygan"
         ],
@@ -580,7 +536,8 @@
         "drawCount": 1,
         "authority": {
           "Player": {
-            "diff": 4
+            "diff": 4,
+            "new": 19
           }
         },
         "player": "Player"
@@ -595,11 +552,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "conversionyard",
-          "moonwurmhatchling",
-          "infestedmoon"
-        ],
         "scrappedCards": [
           "scout",
           "burrower",
@@ -609,13 +561,16 @@
           "outlandstation"
         ],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "orbitalplatform"
+        ],
         "winner": "HardAI",
         "winCondition": "",
-        "drawCount": 6,
+        "drawCount": 1,
         "authority": {
           "HardAI": {
-            "diff": 15
+            "diff": 15,
+            "new": 54
           },
           "Player": {
             "diff": -24,
