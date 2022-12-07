@@ -14,7 +14,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -34,7 +33,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -59,7 +57,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -84,7 +81,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -109,7 +105,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -139,9 +134,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplybot"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -161,7 +153,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -186,7 +177,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -212,7 +202,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -238,7 +227,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -263,12 +251,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "viper",
-          "sentinel",
-          "embassyyacht",
-          "viper"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -300,7 +282,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -325,7 +306,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -351,11 +331,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplybot",
-          "barterworld",
-          "fleethq"
-        ],
         "scrappedCards": [
           "viper",
           "explorer",
@@ -388,9 +363,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "defensecenter"
-        ],
         "scrappedCards": [
           "cargorocket"
         ],
@@ -425,7 +397,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -453,12 +424,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "missilebot",
-          "viper",
-          "scout",
-          "freightraft"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -492,7 +457,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -512,12 +476,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "scout",
-          "scout",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -537,11 +495,11 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blockaderunner"
-        ],
         "scrappedCards": [],
-        "discardedCards": [],
+        "discardedCards": [
+          "viper",
+          "scout"
+        ],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
@@ -565,12 +523,10 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "missilemech"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
+          "battlestation",
           "barterworld"
         ],
         "winner": "",
@@ -594,10 +550,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "royalredoubt",
-          "supplybot"
-        ],
         "scrappedCards": [
           "viper",
           "explorer"
@@ -626,10 +578,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "defensecenter",
-          "supplybot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -656,13 +604,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "fleethq",
-          "spacestation",
-          "imperialfighter",
-          "cargorocket",
-          "templeguardian"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -693,9 +634,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "missilebot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -728,10 +666,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "freighter",
-          "blobdestroyer"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -756,10 +690,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplybot",
-          "recyclebot"
-        ],
         "scrappedCards": [
           "blobfighter",
           "scout",
@@ -786,11 +716,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplybot",
-          "cargorocket",
-          "imperialfighter"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -821,20 +746,16 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "thehive",
-          "missilemech",
-          "imperialfrigate",
-          "missilemech",
-          "blockaderunner"
-        ],
         "scrappedCards": [
           "blockaderunner"
         ],
         "discardedCards": [
           "scout"
         ],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "spacestation",
+          "fleethq"
+        ],
         "winner": "",
         "winCondition": "",
         "drawCount": 3,
@@ -860,11 +781,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlestation",
-          "templeguardian",
-          "supplybot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -896,10 +812,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "defensecenter",
-          "blobwheel"
-        ],
         "scrappedCards": [
           "blobwheel",
           "explorer"
@@ -925,37 +837,28 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blockaderunner",
-          "fleethq",
-          "barterworld",
-          "portofcall",
-          "templeguardian",
-          "templeguardian",
-          "royalredoubt",
-          "tradeescort",
-          "scout"
-        ],
         "scrappedCards": [
           "portofcall",
           "battlestation",
           "blockaderunner"
         ],
-        "discardedCards": [],
+        "discardedCards": [
+          "scout"
+        ],
         "destroyedBases": [
           "defensecenter"
         ],
         "winner": "Player",
         "winCondition": "",
-        "drawCount": 4,
+        "drawCount": -1,
         "authority": {
-          "HardAI": {
-            "diff": -24,
-            "new": 0
-          },
           "Player": {
             "diff": 4,
             "new": 21
+          },
+          "HardAI": {
+            "diff": -24,
+            "new": 0
           }
         },
         "player": "Player"
