@@ -14,9 +14,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "ranger"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -43,10 +40,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "ranger",
-          "tributetransport"
-        ],
         "scrappedCards": [
           "nandi'sonslaught"
         ],
@@ -76,7 +69,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -103,9 +95,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "diplomaticshuttle"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -133,10 +122,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tributetransport",
-          "diplomaticshuttle"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -167,7 +152,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -194,9 +178,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "ranger"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -204,13 +185,13 @@
         "winCondition": "",
         "drawCount": 0,
         "authority": {
-          "HardAI": {
-            "diff": -1,
-            "new": 65
-          },
           "Player": {
             "diff": 1,
             "new": 66
+          },
+          "HardAI": {
+            "diff": -1,
+            "new": 65
           }
         },
         "player": "Player"
@@ -226,9 +207,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "diplomaticshuttle"
-        ],
         "scrappedCards": [
           "ram"
         ],
@@ -262,7 +240,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer",
           "explorer"
@@ -292,10 +269,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tributetransport",
-          "ranger"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -320,10 +293,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradebot",
-          "tributetransport"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -353,10 +322,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "recyclingstation",
-          "tributetransport"
-        ],
         "scrappedCards": [
           "surveyship"
         ],
@@ -386,12 +351,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradingpost",
-          "cutter",
-          "corvette",
-          "viper"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -425,9 +384,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "barterworld"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -456,7 +412,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -485,11 +440,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "royalredoubt",
-          "ranger",
-          "diplomaticshuttle"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -510,11 +460,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "imperialfrigate",
-          "explorer",
-          "diplomaticshuttle"
-        ],
         "scrappedCards": [
           "surveyship",
           "imperialfrigate",
@@ -550,9 +495,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "recyclingstation"
-        ],
         "scrappedCards": [
           "ram"
         ],
@@ -586,15 +528,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "recyclingstation",
-          "corvette",
-          "mechworld",
-          "tradebot",
-          "tradingpost",
-          "cutter",
-          "battlepod"
-        ],
         "scrappedCards": [
           "nandi'sonslaught",
           "viper"
@@ -611,13 +544,13 @@
         "winCondition": "",
         "drawCount": 5,
         "authority": {
-          "Player": {
-            "diff": 4,
-            "new": 62
-          },
           "HardAI": {
             "diff": -11,
             "new": 37
+          },
+          "Player": {
+            "diff": 4,
+            "new": 62
           }
         },
         "player": "Player"
@@ -633,10 +566,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplybot",
-          "tributetransport"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -663,13 +592,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "corvette",
-          "tributetransport",
-          "imperialfighter",
-          "blobdestroyer",
-          "tradepod"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -698,9 +620,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "diplomaticshuttle"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -733,13 +652,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradebot",
-          "cargoboat",
-          "imperialfrigate",
-          "tradebot",
-          "imperialfighter"
-        ],
         "scrappedCards": [
           "scout",
           "imperialfrigate"
@@ -770,9 +682,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlemech"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -803,11 +712,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplybot",
-          "tributetransport",
-          "battlepod"
-        ],
         "scrappedCards": [
           "tradebot"
         ],
@@ -838,12 +742,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "royalredoubt",
-          "tradingpost",
-          "tradebot",
-          "diplomaticshuttle"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -874,9 +772,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "ranger"
-        ],
         "scrappedCards": [
           "barterworld"
         ],
@@ -911,11 +806,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "barterworld",
-          "centraloffice",
-          "thehive"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -944,9 +834,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "diplomaticshuttle"
-        ],
         "scrappedCards": [
           "spacestation"
         ],
@@ -982,13 +869,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "portofcall",
-          "battlemech",
-          "recyclingstation",
-          "supplybot",
-          "tributetransport"
-        ],
         "scrappedCards": [
           "stellarfalcon",
           "scout"
@@ -1022,18 +902,13 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "corvette",
-          "blobdestroyer",
-          "blobdestroyer",
-          "mechworld",
-          "tradepod"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "battlestation"
         ],
         "destroyedBases": [
+          "portofcall",
+          "recyclingstation",
           "centraloffice",
           "barterworld",
           "thehive"
@@ -1060,9 +935,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "ranger"
-        ],
         "scrappedCards": [
           "explorer",
           "surveyship"
@@ -1097,13 +969,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "corvette",
-          "tradebot",
-          "tradingpost",
-          "defensecenter",
-          "cutter"
-        ],
         "scrappedCards": [
           "tradepod"
         ],
@@ -1136,13 +1001,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "recyclingstation",
-          "tradingpost",
-          "missilebot",
-          "fleethq",
-          "thehive"
-        ],
         "scrappedCards": [
           "imperialviper",
           "tradingpost",
@@ -1179,12 +1037,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "cargoboat",
-          "cutter",
-          "supplybot",
-          "battlestation"
-        ],
         "scrappedCards": [
           "ranger"
         ],
@@ -1217,13 +1069,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "portofcall",
-          "blobworld",
-          "barterworld",
-          "supplybot",
-          "tributetransport"
-        ],
         "scrappedCards": [
           "ranger",
           "barterworld",
@@ -1235,7 +1080,7 @@
         ],
         "winner": "HardAI",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": -3,
         "authority": {
           "HardAI": {
             "diff": 6,

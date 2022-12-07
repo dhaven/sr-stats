@@ -15,18 +15,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "transportshard",
-          "reconshard",
-          "reconshard",
-          "assaultshard"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 2,
         "authority": {
           "Player": {
             "diff": -1,
@@ -46,13 +40,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 2,
         "authority": {
           "HardAI": {
             "diff": -1,
@@ -73,15 +66,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "transportshard",
-          "commandshard",
-          "transportshard",
-          "commandshard",
-          "salvageshard",
-          "salvageshard",
-          "reconshard"
-        ],
         "scrappedCards": [
           "transportshard"
         ],
@@ -97,7 +81,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 3,
         "authority": {},
         "player": "HardAI"
       },
@@ -113,7 +97,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "reconshard",
@@ -123,7 +106,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 2,
         "authority": {
           "Player": {
             "diff": 5,
@@ -147,14 +130,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandshard",
-          "salvageshard",
-          "salvageshard",
-          "assaultshard",
-          "assaultshard",
-          "warworld"
-        ],
         "scrappedCards": [
           "salvageshard",
           "jochum'sgranddesign"
@@ -167,7 +142,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 2,
         "authority": {
           "HardAI": {
             "diff": 8,
@@ -190,7 +165,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "reconshard",
@@ -200,7 +174,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 2,
         "authority": {
           "Player": {
             "diff": 5,
@@ -219,15 +193,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplybot",
-          "transportshard",
-          "transportshard",
-          "salvageshard",
-          "reconshard",
-          "reconshard",
-          "reconshard"
-        ],
         "scrappedCards": [
           "assaultshard"
         ],
@@ -239,7 +204,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 2,
         "authority": {
           "HardAI": {
             "diff": 5,
@@ -262,10 +227,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlepod",
-          "blobfighter"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "salvageshard",
@@ -277,7 +238,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 3,
         "authority": {
           "HardAI": {
             "diff": -7,
@@ -298,12 +259,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplybot",
-          "commandshard",
-          "salvageshard",
-          "reconshard"
-        ],
         "scrappedCards": [
           "assaultshard"
         ],
@@ -311,7 +266,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 2,
         "authority": {
           "HardAI": {
             "diff": 8,
@@ -332,17 +287,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "freighter",
-          "cutter",
-          "tradepod"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 2,
         "authority": {
           "Player": {
             "diff": 4,
@@ -366,15 +316,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "missilebot",
-          "transportshard",
-          "transportshard",
-          "salvageshard",
-          "reconshard",
-          "reconshard",
-          "assaultshard"
-        ],
         "scrappedCards": [
           "salvageshard"
         ],
@@ -382,7 +323,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 2,
         "authority": {},
         "player": "HardAI"
       },
@@ -396,10 +337,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandship",
-          "battlepod"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "transportshard",
@@ -413,7 +350,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 3,
+        "drawCount": 5,
         "authority": {
           "Player": {
             "diff": 4,
@@ -438,11 +375,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplybot",
-          "commandshard",
-          "reconshard"
-        ],
         "scrappedCards": [
           "commandshard"
         ],
@@ -455,7 +387,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 4,
         "authority": {
           "HardAI": {
             "diff": 11,
@@ -479,16 +411,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobfighter",
-          "blobfighter"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 4,
         "authority": {
           "HardAI": {
             "diff": -8,
@@ -508,14 +436,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "mechworld",
-          "supplybot",
-          "supplybot",
-          "salvageshard",
-          "reconshard",
-          "assaultshard"
-        ],
         "scrappedCards": [
           "reconshard",
           "commandshard"
@@ -524,7 +444,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 2,
         "authority": {
           "HardAI": {
             "diff": 4,
@@ -548,14 +468,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "reconshard",
-          "reconshard",
-          "commandshard",
-          "freighter",
-          "corvette",
-          "flagship"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "reconshard",
@@ -567,7 +479,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 4,
         "authority": {
           "Player": {
             "diff": 10,
@@ -586,13 +498,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "warworld",
-          "missilebot",
-          "tradebot",
-          "salvageshard",
-          "reconshard"
-        ],
         "scrappedCards": [
           "transportshard",
           "transportshard"
@@ -601,7 +506,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 2,
         "authority": {
           "Player": {
             "diff": -9,
@@ -620,17 +525,14 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandship",
-          "cutter",
-          "battlepod"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "warworld"
+        ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 4,
         "authority": {
           "Player": {
             "diff": 8,
@@ -658,16 +560,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobworld",
-          "blobwheel",
-          "supplybot",
-          "supplybot",
-          "supplybot",
-          "missilebot",
-          "reconshard",
-          "assaultshard"
-        ],
         "scrappedCards": [
           "salvageshard",
           "reconshard",
@@ -683,7 +575,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 10,
+        "drawCount": 12,
         "authority": {
           "HardAI": {
             "diff": 15,
@@ -707,17 +599,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "reconshard",
-          "reconshard",
-          "commandshard",
-          "flagship",
-          "corvette",
-          "spacestation",
-          "commandship",
-          "royalredoubt",
-          "commandshard"
-        ],
         "scrappedCards": [
           "jochum'sgranddesign"
         ],
@@ -732,7 +613,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 4,
+        "drawCount": 6,
         "authority": {
           "Player": {
             "diff": 14,
@@ -758,14 +639,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "thehive",
-          "warworld",
-          "junkyard",
-          "supplybot",
-          "defensecenter",
-          "recyclingstation"
-        ],
         "scrappedCards": [
           "assaultshard",
           "cutter"
@@ -779,7 +652,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 6,
+        "drawCount": 8,
         "authority": {
           "HardAI": {
             "diff": 7,
@@ -803,21 +676,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobfighter",
-          "blobfighter",
-          "freighter",
-          "freighter",
-          "battleblob",
-          "tradeescort",
-          "commandship",
-          "blobwheel"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "transportshard"
         ],
         "destroyedBases": [
+          "defensecenter",
           "junkyard",
           "warworld",
           "recyclingstation",
@@ -825,7 +689,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 6,
+        "drawCount": 8,
         "authority": {
           "Player": {
             "diff": 8,
@@ -849,13 +713,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobwheel",
-          "mechworld",
-          "missilebot",
-          "battlepod",
-          "reconshard"
-        ],
         "scrappedCards": [
           "tradebot",
           "fleethq",
@@ -867,7 +724,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 2,
         "authority": {
           "HardAI": {
             "diff": 8,
@@ -890,10 +747,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradingpost",
-          "royalredoubt"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "assaultshard",
@@ -905,7 +758,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 2,
         "authority": {
           "Player": {
             "diff": 1,
@@ -929,13 +782,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "recyclingstation",
-          "missilebot",
-          "supplybot",
-          "supplybot",
-          "supplybot"
-        ],
         "scrappedCards": [
           "tradepod"
         ],
@@ -946,7 +792,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 2,
         "authority": {
           "HardAI": {
             "diff": 3,
@@ -965,11 +811,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "barterworld",
-          "flagship",
-          "battlepod"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -977,7 +818,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 3,
         "authority": {
           "Player": {
             "diff": 11,
@@ -1000,13 +841,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobworld",
-          "patrolmech",
-          "junkyard",
-          "missilebot",
-          "defensecenter"
-        ],
         "scrappedCards": [
           "imperialfighter",
           "missilebot",
@@ -1016,10 +850,12 @@
           "dreadnaught"
         ],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "barterworld"
+        ],
         "winner": "HardAI",
         "winCondition": "",
-        "drawCount": 9,
+        "drawCount": 4,
         "authority": {
           "HardAI": {
             "diff": 12,
