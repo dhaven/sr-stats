@@ -1,6 +1,6 @@
 const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
 const { MongoClient } = require('mongodb');
-import { findErrors, parseBattle } from '../../lib/visitor'
+import { findErrors, parseBattle } from '../../lib/visitorbis'
 import enhance from '../../lib/helper/enhanceBattle'
 
 export default async function handler(req, res) {

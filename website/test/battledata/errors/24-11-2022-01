@@ -16,7 +16,6 @@
         "events": [
           "patiencerewarded"
         ],
-        "playedCards": [],
         "scrappedCards": [
           "farmship"
         ],
@@ -24,7 +23,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "gouda55": {
             "diff": -1,
@@ -44,11 +43,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "scout",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [
           "unioncluster"
         ],
@@ -56,7 +50,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "gouda55"
       },
@@ -70,13 +64,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "gouda55": {
             "diff": -1,
@@ -95,17 +88,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "scout",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -2,
@@ -124,13 +112,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "gouda55": {
             "diff": -1,
@@ -152,18 +139,12 @@
         "events": [
           "bombardment"
         ],
-        "playedCards": [
-          "coalitionmessenger",
-          "scout",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "gouda55": {
             "diff": -6,
@@ -187,13 +168,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -6,
@@ -216,9 +196,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "explorer"
-        ],
         "scrappedCards": [
           "nestingground",
           "blobalpha",
@@ -230,7 +207,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -9,
@@ -250,9 +227,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobminer"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -260,7 +234,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": 4,
@@ -288,31 +262,21 @@
           "warpjump",
           "quasar"
         ],
-        "playedCards": [
-          "scout",
-          "scout",
-          "scout",
-          "scout",
-          "coalitionmessenger",
-          "explorer",
-          "lightcruiser",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [
           "explorer",
           "hivelord",
           "commanderklik"
         ],
         "discardedCards": [
-          "viper"
+          "viper",
+          "scout"
         ],
         "destroyedBases": [
           "defensesystem"
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 9,
+        "drawCount": 14,
         "authority": {
           "YL5943": {
             "diff": -4,
@@ -332,7 +296,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -340,7 +303,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 5,
+        "drawCount": 10,
         "authority": {
           "gouda55": {
             "diff": -1,
@@ -359,12 +322,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "alliancetransport",
-          "coalitionmessenger",
-          "cargorocket",
-          "repairmech"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -372,7 +329,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "gouda55": {
             "diff": 7,
@@ -395,15 +352,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "destroyerbot"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "gouda55": {
             "diff": -5,
@@ -422,12 +376,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "scout",
-          "scout",
-          "scout",
-          "midgatestation"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -435,7 +383,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -2,
@@ -454,9 +402,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradeenvoy"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -464,7 +409,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "YL5943": {
             "diff": 10,
@@ -487,10 +432,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalgunplatform",
-          "scout"
-        ],
         "scrappedCards": [
           "orbitalgunplatform",
           "viper",
@@ -501,7 +442,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -3,
@@ -520,13 +461,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "gouda55": {
             "diff": -3,
@@ -548,11 +488,6 @@
         "events": [
           "supplyrun"
         ],
-        "playedCards": [
-          "lightcruiser",
-          "cargorocket",
-          "scout"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -560,7 +495,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "gouda55": {
             "diff": 3,
@@ -581,10 +516,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "frontierhawk",
-          "blobminer"
-        ],
         "scrappedCards": [
           "traderowslot"
         ],
@@ -595,7 +526,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "YL5943": {
             "diff": 4,
@@ -618,12 +549,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "spikecluster",
-          "alliancetransport",
-          "outlandstation",
-          "midgatestation"
-        ],
         "scrappedCards": [
           "outlandstation"
         ],
@@ -636,7 +561,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "gouda55": {
             "diff": 4,
@@ -655,7 +580,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "viper",
@@ -667,7 +591,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": 5,
@@ -691,12 +615,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "repairmech",
-          "coalitionmessenger",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -704,7 +622,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "gouda55"
       },
@@ -719,10 +637,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "destroyerbot",
-          "alliancelanding"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -730,7 +644,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "gouda55": {
             "diff": -5,
@@ -747,11 +661,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "integrationport",
-          "midgatestation",
-          "cargorocket"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -762,7 +671,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "gouda55": {
             "diff": 3,
@@ -784,18 +693,12 @@
         "events": [
           "wormhole"
         ],
-        "playedCards": [
-          "scout",
-          "scout",
-          "scout",
-          "gateship"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {},
         "player": "YL5943"
       },
@@ -814,14 +717,6 @@
           "tacticalmaneuver",
           "tacticalmaneuver"
         ],
-        "playedCards": [
-          "spikecluster",
-          "alliancetransport",
-          "cargocraft",
-          "lightcruiser",
-          "coalitionmessenger",
-          "scout"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -830,7 +725,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 3,
+        "drawCount": 8,
         "authority": {
           "gouda55": {
             "diff": 4,
@@ -854,9 +749,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "enforcermech"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -871,7 +763,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 7,
         "authority": {
           "YL5943": {
             "diff": 11,
@@ -890,19 +782,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "needlelancer",
-          "spikecluster",
-          "cargorocket",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "gouda55": {
             "diff": 3,
@@ -925,13 +810,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "defensesystem",
-          "destroyerbot",
-          "patrolboat",
-          "cargorocket",
-          "blobminer"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -943,7 +821,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": 8,
@@ -966,19 +844,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "alliancetransport",
-          "frontierrunner",
-          "scout",
-          "scout",
-          "repairmech"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "gouda55": {
             "diff": 6,
@@ -997,13 +868,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "frontierhawk",
-          "alliancelanding",
-          "outlandstation",
-          "scout",
-          "stinger"
-        ],
         "scrappedCards": [
           "stinger"
         ],
@@ -1013,7 +877,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "gouda55": {
             "diff": -10,
@@ -1032,16 +896,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "imperialflagship",
-          "thearmory",
-          "cargocraft",
-          "lightcruiser",
-          "farmship",
-          "hivequeen",
-          "needlelancer",
-          "scout"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -1053,7 +907,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 5,
+        "drawCount": 10,
         "authority": {
           "YL5943": {
             "diff": -15,
@@ -1070,7 +924,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "corsair",
@@ -1082,7 +935,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "YL5943"
       },
@@ -1098,12 +951,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "midgatestation",
-          "cargorocket",
-          "coalitionmessenger",
-          "scout"
-        ],
         "scrappedCards": [
           "cargorocket"
         ],
@@ -1113,7 +960,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "gouda55": {
             "diff": 3,
@@ -1136,10 +983,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "farmship",
-          "gateship"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "corsair",
@@ -1151,7 +994,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "YL5943": {
             "diff": 10,
@@ -1170,14 +1013,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "hivequeen",
-          "alliancetransport",
-          "cargocraft",
-          "needlelancer",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [
           "traderowslot"
         ],
@@ -1185,7 +1020,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "YL5943": {
             "diff": -16,
@@ -1202,9 +1037,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "patrolboat"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -1215,7 +1047,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": 3,
@@ -1232,12 +1064,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "imperialflagship",
-          "cargocraft",
-          "needlelancer",
-          "lightcruiser"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],

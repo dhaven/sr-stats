@@ -12,13 +12,12 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "Anibalon"
       },
@@ -34,13 +33,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Anibalon": {
             "diff": -1,
@@ -60,13 +58,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -1,
@@ -85,13 +82,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Anibalon": {
             "diff": -1,
@@ -110,13 +106,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -5,
@@ -135,9 +130,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "swarmer"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -145,7 +137,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Anibalon": {
             "diff": -3,
@@ -164,13 +156,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -1,
@@ -191,16 +182,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobminer",
-          "plaguepod"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "YL5943"
       },
@@ -214,17 +201,15 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blockaderunner",
-          "imperialfrigate",
-          "bioformer"
-        ],
         "scrappedCards": [],
-        "discardedCards": [],
+        "discardedCards": [
+          "scout",
+          "scout"
+        ],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 7,
         "authority": {
           "YL5943": {
             "diff": -10,
@@ -244,7 +229,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -252,7 +236,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Anibalon": {
             "diff": -1,
@@ -271,7 +255,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "bioformer"
         ],
@@ -279,7 +262,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -4,
@@ -300,13 +283,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Anibalon": {
             "diff": -11,
@@ -325,13 +307,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -2,
@@ -351,12 +332,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "predator",
-          "stellarreef",
-          "blobminer",
-          "patrolcutter"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -364,7 +339,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Anibalon": {
             "diff": -6,
@@ -383,23 +358,21 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradebot",
-          "blockaderunner",
-          "neuralnexus"
-        ],
         "scrappedCards": [
           "scout",
           "scout"
         ],
-        "discardedCards": [],
+        "discardedCards": [
+          "scout",
+          "scout"
+        ],
         "destroyedBases": [
           "nestingground",
           "stellarreef"
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 3,
+        "drawCount": 8,
         "authority": {},
         "player": "Anibalon"
       },
@@ -414,10 +387,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "swarmer",
-          "swarmer"
-        ],
         "scrappedCards": [
           "plaguepod"
         ],
@@ -429,7 +398,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Anibalon": {
             "diff": -13,
@@ -448,16 +417,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlestation",
-          "imperialfrigate"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -4,
@@ -474,12 +439,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "imperialpalace",
-          "tradingpost",
-          "imperialfrigate",
-          "viper"
-        ],
         "scrappedCards": [
           "imperialfrigate"
         ],
@@ -491,15 +450,15 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 7,
         "authority": {
-          "YL5943": {
-            "diff": 1,
-            "new": 24
-          },
           "Anibalon": {
             "diff": -6,
             "new": 8
+          },
+          "YL5943": {
+            "diff": 1,
+            "new": 24
           }
         },
         "player": "YL5943"
@@ -512,20 +471,18 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blockaderunner"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
-          "tradebot"
+          "tradebot",
+          "viper"
         ],
         "destroyedBases": [
           "tradingpost"
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {},
         "player": "Anibalon"
       },
@@ -537,12 +494,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalplatform",
-          "spikecluster",
-          "predator",
-          "ram"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],

@@ -15,13 +15,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Rosty": {
             "diff": -1,
@@ -41,13 +40,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "astrojw": {
             "diff": -1,
@@ -67,13 +65,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Rosty": {
             "diff": -1,
@@ -92,17 +89,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "scout",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "astrojw": {
             "diff": -1,
@@ -122,13 +114,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "astrojw"
       },
@@ -142,16 +133,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "astrojw": {
             "diff": -5,
@@ -170,7 +157,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -178,7 +164,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "astrojw"
       },
@@ -194,12 +180,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "federationshuttle",
-          "coalitionmessenger",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -207,7 +187,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Rosty": {
             "diff": 4,
@@ -226,13 +206,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Rosty": {
             "diff": -2,
@@ -251,11 +230,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "coalitionmessenger",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [
           "ceotorres"
         ],
@@ -263,10 +237,11 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Rosty": {
-            "diff": 7
+            "diff": 7,
+            "new": 57
           },
           "astrojw": {
             "diff": -5,
@@ -286,7 +261,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -294,7 +268,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "astrojw"
       },
@@ -309,13 +283,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "federationshuttle",
-          "alignmentbot",
-          "patrolmech",
-          "scout",
-          "operationsplatform"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -323,7 +290,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "astrojw": {
             "diff": -1,
@@ -342,13 +309,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "imperialfrigate",
-          "exchangepoint",
-          "alliancetransport",
-          "cutter",
-          "scout"
-        ],
         "scrappedCards": [
           "cunningcaptain",
           "cunningcaptain"
@@ -359,7 +319,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "astrojw": {
             "diff": 8,
@@ -382,9 +342,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "explorer"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -397,7 +354,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "astrojw": {
             "diff": -2,
@@ -416,13 +373,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "astrojw": {
             "diff": 3,
@@ -445,7 +401,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -453,7 +408,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "Rosty"
       },
@@ -468,7 +423,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer"
         ],
@@ -478,7 +432,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "astrojw": {
             "diff": 7,
@@ -501,13 +455,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "missilebot",
-          "patrolmech",
-          "coalitionmessenger",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [
           "scout",
           "scout"
@@ -518,7 +465,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "astrojw": {
             "diff": -4,
@@ -537,9 +484,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradestar"
-        ],
         "scrappedCards": [
           "scout",
           "explorer"
@@ -548,7 +492,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "astrojw": {
             "diff": 4,
@@ -571,14 +515,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "lookoutpost",
-          "alignmentbot",
-          "pactwarship",
-          "operationsplatform",
-          "scout",
-          "viper"
-        ],
         "scrappedCards": [
           "alignmentbot"
         ],
@@ -588,7 +524,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Rosty": {
             "diff": 5,
@@ -611,10 +547,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "fleethq",
-          "battlestation"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -622,7 +554,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "astrojw"
       },
@@ -636,18 +568,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "alignmentbot",
-          "scout",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {},
         "player": "Rosty"
       },
@@ -662,11 +588,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "cutter",
-          "alliancetransport",
-          "imperialfrigate"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -675,7 +596,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "astrojw": {
             "diff": 8,
@@ -698,11 +619,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "missilebot",
-          "patrolmech",
-          "coalitionmessenger"
-        ],
         "scrappedCards": [
           "scout",
           "scout"
@@ -716,7 +632,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "astrojw": {
             "diff": -4,
@@ -735,9 +651,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradebot"
-        ],
         "scrappedCards": [
           "scout",
           "explorer"
@@ -746,7 +659,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Rosty": {
             "diff": -8,
@@ -766,23 +679,17 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "imperialfrigate",
-          "pactwarship",
-          "blobbot",
-          "operationsplatform",
-          "federationshuttle",
-          "scout"
-        ],
         "scrappedCards": [
           "imperialfrigate",
           "scout"
         ],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "fleethq"
+        ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Rosty": {
             "diff": 9,
@@ -805,7 +712,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer"
         ],
@@ -817,7 +723,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "astrojw": {
             "diff": 7,
@@ -836,22 +742,17 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "missilesilo",
-          "assaultpod",
-          "missilebot",
-          "stealthneedle",
-          "blobbot"
-        ],
         "scrappedCards": [
           "scout",
           "scout"
         ],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "defensecenter"
+        ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 7,
         "authority": {
           "astrojw": {
             "diff": -18,
@@ -868,7 +769,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -878,7 +778,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "astrojw": {
             "diff": 8,
@@ -901,12 +801,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "lookoutpost",
-          "barterworld",
-          "patrolmech",
-          "pactwarship"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "alignmentbot",
@@ -915,7 +809,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Rosty": {
             "diff": 5,
@@ -938,10 +832,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradebot",
-          "junkyard"
-        ],
         "scrappedCards": [
           "scout",
           "scout"
@@ -950,7 +840,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "astrojw"
       },
@@ -964,13 +854,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "pactwarship",
-          "coalitionmessenger",
-          "federationshuttle",
-          "explorer",
-          "viper"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -982,7 +865,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Rosty": {
             "diff": 9,
@@ -1005,11 +888,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "exchangepoint",
-          "battlestation",
-          "coalitionmessenger"
-        ],
         "scrappedCards": [
           "scout",
           "battlestation"
@@ -1020,7 +898,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Rosty": {
             "diff": -1,
@@ -1039,24 +917,17 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "missilesilo",
-          "assaultpod",
-          "blobbot",
-          "patrolmech",
-          "operationsplatform",
-          "stealthneedle",
-          "mechworld"
-        ],
         "scrappedCards": [
           "viper",
           "viper"
         ],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "exchangepoint"
+        ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 7,
         "authority": {
           "astrojw": {
             "diff": -14,
@@ -1073,12 +944,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "recyclingstation",
-          "fleethq",
-          "defensecenter",
-          "viper"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -1088,7 +953,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 7,
         "authority": {
           "astrojw": {
             "diff": 3,
@@ -1108,11 +973,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "missilebot",
-          "assaultpod",
-          "patrolmech"
-        ],
         "scrappedCards": [
           "explorer",
           "alignmentbot",
@@ -1121,11 +981,12 @@
         "discardedCards": [],
         "destroyedBases": [
           "defensecenter",
-          "recyclingstation"
+          "recyclingstation",
+          "fleethq"
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Rosty": {
             "diff": 2,
@@ -1149,12 +1010,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "cutter",
-          "coalitionmessenger",
-          "imperialfrigate",
-          "defensecenter"
-        ],
         "scrappedCards": [
           "imperialfrigate"
         ],
@@ -1168,7 +1023,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "astrojw": {
             "diff": 7,
@@ -1185,16 +1040,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "lookoutpost",
-          "battlestation",
-          "commandship",
-          "stealthneedle",
-          "mothership",
-          "missilebot",
-          "patrolmech",
-          "operationsplatform"
-        ],
         "scrappedCards": [
           "spacestation",
           "battlestation"
@@ -1202,7 +1047,9 @@
         "discardedCards": [
           "federationshuttle"
         ],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "defensecenter"
+        ],
         "winner": "Rosty",
         "winCondition": "",
         "drawCount": 7,

@@ -14,13 +14,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "HardAI": {
             "diff": -1,
@@ -39,13 +38,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Player": {
             "diff": -1,
@@ -67,13 +65,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "HardAI": {
             "diff": -1,
@@ -92,13 +89,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Player": {
             "diff": -1,
@@ -117,13 +113,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "Player"
       },
@@ -137,13 +132,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Player": {
             "diff": -2,
@@ -163,13 +157,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Player": {
             "diff": 5,
@@ -194,9 +187,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "spacestation"
-        ],
         "scrappedCards": [
           "spacestation"
         ],
@@ -204,7 +194,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Player": {
             "diff": -2,
@@ -224,13 +214,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "recyclebot",
-          "plaguepod",
-          "blobfighter",
-          "imperialfighter",
-          "scout"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -238,7 +221,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "HardAI": {
             "diff": -5,
@@ -257,7 +240,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -265,7 +247,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "HardAI": {
             "diff": 3,
@@ -284,13 +266,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Player": {
             "diff": 9,
@@ -315,10 +296,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradebot",
-          "battlescreecher"
-        ],
         "scrappedCards": [
           "scout",
           "blobcarrier",
@@ -328,7 +305,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "HardAI": {
             "diff": 5,
@@ -351,13 +328,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "Player"
       },
@@ -372,9 +348,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "probebot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -382,7 +355,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "HardAI"
       },
@@ -397,9 +370,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "defensecenter"
-        ],
         "scrappedCards": [
           "ram"
         ],
@@ -407,7 +377,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Player": {
             "diff": 8,
@@ -431,12 +401,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "mechworld",
-          "probebot",
-          "patrolmech",
-          "battlescreecher"
-        ],
         "scrappedCards": [
           "viper",
           "cargorocket",
@@ -450,7 +414,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {},
         "player": "HardAI"
       },
@@ -464,10 +428,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "demolisher",
-          "recyclebot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -477,7 +437,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {},
         "player": "Player"
       },
@@ -492,13 +452,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Player": {
             "diff": -5,
@@ -518,9 +477,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "surveyship"
-        ],
         "scrappedCards": [
           "surveyship"
         ],
@@ -528,7 +484,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "HardAI": {
             "diff": -8,
@@ -547,9 +503,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradebot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -560,7 +513,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "HardAI": {
             "diff": 3,
@@ -579,13 +532,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "HardAI": {
             "diff": -5,
@@ -605,9 +557,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "probebot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -619,7 +568,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "HardAI": {
             "diff": 5,
@@ -638,16 +587,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "defensecenter",
-          "battlecruiser"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Player": {
             "diff": 11,
@@ -671,13 +616,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradebot",
-          "patrolmech",
-          "battlescreecher",
-          "imperialfrigate",
-          "battlescreecher"
-        ],
         "scrappedCards": [
           "scout",
           "scout",
@@ -692,7 +630,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Player": {
             "diff": -16,
@@ -709,13 +647,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobfighter",
-          "battlepod",
-          "recyclebot",
-          "merccruiser",
-          "imperialfighter"
-        ],
         "scrappedCards": [
           "recyclebot",
           "viper"
@@ -726,7 +657,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "HardAI": {
             "diff": -16,
@@ -745,11 +676,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "mechworld",
-          "patrolmech",
-          "battlescreecher"
-        ],
         "scrappedCards": [
           "scout",
           "dreadnaught",
@@ -761,7 +687,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "HardAI": {
             "diff": 3,
@@ -786,11 +712,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "demolisher",
-          "cargorocket",
-          "federationshuttle"
-        ],
         "scrappedCards": [
           "cargorocket"
         ],
@@ -800,7 +721,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Player": {
             "diff": 7,
@@ -823,9 +744,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "probebot"
-        ],
         "scrappedCards": [
           "tradebot"
         ],
@@ -833,7 +751,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Player": {
             "diff": -1,
@@ -850,15 +768,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "defensecenter",
-          "demolisher",
-          "machinebase",
-          "merccruiser",
-          "federationshuttle",
-          "battlepod",
-          "merccruiser"
-        ],
         "scrappedCards": [
           "scout",
           "demolisher"

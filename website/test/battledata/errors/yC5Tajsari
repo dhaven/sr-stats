@@ -12,7 +12,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "freightraft"
         ],
@@ -20,7 +19,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 6,
         "authority": {
           "Scottopia": {
             "diff": -4,
@@ -41,16 +40,9 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandshard",
-          "salvageshard",
-          "salvageshard",
-          "reconshard",
-          "transportshard",
-          "assaultshard",
-          "assaultshard"
+        "scrappedCards": [
+          "secretsplintertech"
         ],
-        "scrappedCards": [],
         "discardedCards": [
           "assaultshard",
           "assaultshard",
@@ -59,7 +51,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 7,
         "authority": {
           "TwinGodhead": {
             "diff": -6,
@@ -78,15 +70,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "ranger"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 6,
         "authority": {
           "Scottopia": {
             "diff": -4,
@@ -106,16 +95,9 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandshard",
-          "reconshard",
-          "reconshard",
-          "transportshard",
-          "salvageshard",
-          "transportshard",
-          "assaultshard"
+        "scrappedCards": [
+          "secretsplintertech"
         ],
-        "scrappedCards": [],
         "discardedCards": [
           "reconshard",
           "reconshard",
@@ -124,7 +106,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 7,
         "authority": {
           "Scottopia": {
             "diff": 5,
@@ -147,11 +129,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "diplomaticshuttle",
-          "ranger",
-          "scout"
-        ],
         "scrappedCards": [
           "newburg'sgame",
           "missilesilo"
@@ -160,10 +137,11 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 7,
         "authority": {
           "TwinGodhead": {
-            "diff": 4
+            "diff": 4,
+            "new": 63
           },
           "Scottopia": {
             "diff": -9,
@@ -182,16 +160,9 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "hellfire",
-          "commandshard",
-          "assaultshard",
-          "assaultshard",
-          "cargorocket",
-          "explorer",
-          "reconshard"
+        "scrappedCards": [
+          "secretsplintertech"
         ],
-        "scrappedCards": [],
         "discardedCards": [
           "assaultshard",
           "assaultshard",
@@ -201,7 +172,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 8,
         "authority": {
           "Scottopia": {
             "diff": 3,
@@ -225,7 +196,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "lightcruiser",
           "ceotorres"
@@ -236,10 +206,11 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 6,
         "authority": {
           "TwinGodhead": {
-            "diff": 7
+            "diff": 7,
+            "new": 57
           },
           "Scottopia": {
             "diff": -8,
@@ -259,17 +230,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "sentinel",
-          "reconshard",
-          "transportshard",
-          "salvageshard",
-          "salvageshard",
-          "tradehive",
-          "reconshard",
-          "explorer",
-          "assaultshard"
-        ],
         "scrappedCards": [
           "jochum'sgranddesign"
         ],
@@ -279,7 +239,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 8,
         "authority": {
           "TwinGodhead": {
             "diff": -2,
@@ -299,14 +259,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "diplomaticshuttle",
-          "lunarlanding",
-          "frontiertug",
-          "scout",
-          "scout",
-          "ranger"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -314,7 +266,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 8,
         "authority": {
           "TwinGodhead": {
             "diff": 7,
@@ -334,18 +286,9 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandshard",
-          "transportshard",
-          "transportshard",
-          "explorer",
-          "sentinel",
-          "assaultshard",
-          "assaultshard",
-          "salvageshard"
-        ],
         "scrappedCards": [
-          "explorer"
+          "explorer",
+          "secretsplintertech"
         ],
         "discardedCards": [
           "assaultshard",
@@ -357,7 +300,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 7,
         "authority": {
           "TwinGodhead": {
             "diff": -8,
@@ -376,11 +319,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "mobilemarket",
-          "orbitalshuttle",
-          "escortviper"
-        ],
         "scrappedCards": [
           "mobilemarket",
           "unitystation"
@@ -389,10 +327,11 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 7,
         "authority": {
           "TwinGodhead": {
-            "diff": 2
+            "diff": 2,
+            "new": 56
           },
           "Scottopia": {
             "diff": -10,
@@ -412,15 +351,9 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "cargorocket",
-          "commandshard",
-          "reconshard",
-          "reconshard",
-          "explorer"
-        ],
         "scrappedCards": [
-          "cargorocket"
+          "cargorocket",
+          "secretsplintertech"
         ],
         "discardedCards": [
           "reconshard",
@@ -430,7 +363,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 7,
         "authority": {
           "Scottopia": {
             "diff": 8,
@@ -453,15 +386,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "diplomaticshuttle"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 6,
         "authority": {
           "TwinGodhead": {
             "diff": 8,
@@ -485,13 +415,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "thearmory",
-          "hammerhead",
-          "hellfire",
-          "sentinel",
-          "explorer"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -504,7 +427,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 3,
+        "drawCount": 10,
         "authority": {
           "TwinGodhead": {
             "diff": -11,
@@ -525,12 +448,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "lunarlanding",
-          "frontiertug",
-          "ranger",
-          "scout"
-        ],
         "scrappedCards": [
           "longhauler",
           "plasmabot",
@@ -550,7 +467,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 6,
+        "drawCount": 12,
         "authority": {
           "TwinGodhead": {
             "diff": 3,
@@ -575,15 +492,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "defensesystem",
-          "tradehive",
-          "frontierrunner",
-          "alignmentbot",
-          "salvageshard",
-          "transportshard",
-          "assaultshard"
-        ],
         "scrappedCards": [
           "bloboverlord",
           "alignmentbot",
@@ -597,7 +505,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 9,
         "authority": {
           "Scottopia": {
             "diff": 2,
@@ -620,9 +528,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "diplomaticshuttle"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "ripper"
@@ -633,7 +538,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 6,
         "authority": {
           "Scottopia": {
             "diff": -3,
@@ -654,15 +559,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "crusher",
-          "sentinel",
-          "commandshard",
-          "reconshard",
-          "salvageshard",
-          "transportshard",
-          "assaultshard"
-        ],
         "scrappedCards": [
           "specialopsdirector"
         ],
@@ -672,14 +568,15 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 7,
         "authority": {
+          "Scottopia": {
+            "diff": 4,
+            "new": 36
+          },
           "TwinGodhead": {
             "diff": -7,
             "new": 44
-          },
-          "Scottopia": {
-            "diff": 4
           }
         },
         "player": "Scottopia"
@@ -695,20 +592,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "mobilemarket",
-          "outlandstation",
-          "orbitalshuttle",
-          "warriorpod",
-          "summitsite",
-          "lunarlanding",
-          "unionstronghold",
-          "ripper",
-          "frontiertug",
-          "scout",
-          "clusterscout",
-          "warriorpod"
-        ],
         "scrappedCards": [
           "mobilemarket",
           "lightcruiser",
@@ -718,7 +601,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 9,
+        "drawCount": 15,
         "authority": {
           "TwinGodhead": {
             "diff": 13,
@@ -742,11 +625,9 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "swarmingpoint",
-          "hammerhead"
+        "scrappedCards": [
+          "secretsplintertech"
         ],
-        "scrappedCards": [],
         "discardedCards": [
           "reconshard",
           "commandshard",
@@ -758,7 +639,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 8,
         "authority": {
           "Scottopia": {
             "diff": 7,
@@ -775,18 +656,13 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "nestingground",
-          "warriorpod",
-          "blockaderunner",
-          "lunarlanding",
-          "diplomaticshuttle"
-        ],
         "scrappedCards": [
           "infestedmoon"
         ],
         "discardedCards": [
-          "scout"
+          "scout",
+          "swarmling",
+          "ranger"
         ],
         "destroyedBases": [],
         "winner": "TwinGodhead",

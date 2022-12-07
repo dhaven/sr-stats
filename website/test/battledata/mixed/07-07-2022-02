@@ -14,13 +14,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "TyO": {
             "diff": -1,
@@ -41,7 +40,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "politicalmaneuver"
         ],
@@ -49,7 +47,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -1,
@@ -64,13 +62,12 @@
         "usedTrade": -4,
         "usedCombat": -1,
         "purchasedCards": [
-          "explorertothetopofthedeck",
+          "explorer",
           "crusher",
           "stinger"
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "exploration",
           "viper"
@@ -79,7 +76,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "TyO": {
             "diff": -1,
@@ -98,13 +95,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -1,
@@ -124,7 +120,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer"
         ],
@@ -132,7 +127,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "TyO": {
             "diff": -9,
@@ -151,9 +146,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "capturedoutpost"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -161,7 +153,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "TyO": {
             "diff": 2,
@@ -180,7 +172,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -188,7 +179,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "YL5943"
       },
@@ -202,13 +193,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -1,
@@ -228,13 +218,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": 4,
@@ -258,13 +247,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "TyO": {
             "diff": 7,
@@ -288,7 +276,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -296,7 +283,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "TyO": {
             "diff": -8,
@@ -315,13 +302,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "pactwarship",
-          "coalitionfreighter",
-          "scout",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [
           "asteroidmining2"
         ],
@@ -331,7 +311,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "TyO": {
             "diff": 5,
@@ -355,7 +335,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "salvageoperation"
         ],
@@ -363,7 +342,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "TyO": {
             "diff": -12,
@@ -382,9 +361,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "capturedoutpost"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -392,7 +368,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "YL5943": {
             "diff": -2,
@@ -411,7 +387,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -419,7 +394,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "YL5943"
       },
@@ -431,10 +406,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "reclamationstation",
-          "defensesystem"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -446,7 +417,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "TyO": {
             "diff": 7,
@@ -469,9 +440,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradingpost"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -479,7 +447,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "YL5943"
       },
@@ -494,7 +462,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "ram"
         ],
@@ -505,7 +472,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "TyO"
       },
@@ -519,13 +486,14 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "defensesystem"
+        ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "TyO": {
             "diff": -12,
@@ -542,9 +510,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "enforcermech"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -552,7 +517,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "TyO": {
             "diff": 3,
@@ -575,9 +540,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "unityfighter"
-        ],
         "scrappedCards": [
           "unityfighter",
           "viper"
@@ -588,7 +550,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": 4,
@@ -609,9 +571,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "missilebot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -619,7 +578,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -3,
@@ -638,9 +597,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "conversionyard"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -648,7 +604,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "TyO": {
             "diff": -4,
@@ -665,9 +621,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "capturedoutpost"
-        ],
         "scrappedCards": [
           "alignmentbot",
           "scout"
@@ -679,7 +632,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "TyO": {
             "diff": 2,
@@ -696,11 +649,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "assaultpod",
-          "alliancefrigate",
-          "spikecluster"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -710,7 +658,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "TyO": {
             "diff": -13,
@@ -727,13 +675,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "defensesystem",
-          "coalitionfreighter",
-          "pactwarship",
-          "reclamationstation",
-          "viper"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -742,7 +683,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "TyO": {
             "diff": 5,
@@ -763,16 +704,12 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "defensesystem",
-          "centraloffice"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "YL5943"
       },
@@ -784,13 +721,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "missilebot",
-          "enforcermech",
-          "cargocraft",
-          "viper",
-          "scout"
-        ],
         "scrappedCards": [
           "viper",
           "scout",
@@ -798,11 +728,12 @@
         ],
         "discardedCards": [],
         "destroyedBases": [
-          "defensesystem"
+          "defensesystem",
+          "centraloffice"
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "YL5943": {
             "diff": -9,
@@ -819,12 +750,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobdestroyer",
-          "crusher",
-          "tradingpost",
-          "cutter"
-        ],
         "scrappedCards": [
           "tradingpost"
         ],
@@ -832,6 +757,7 @@
           "scout"
         ],
         "destroyedBases": [
+          "reclamationstation",
           "defensesystem"
         ],
         "winner": "YL5943",

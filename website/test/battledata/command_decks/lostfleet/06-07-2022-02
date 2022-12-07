@@ -15,13 +15,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 7,
         "authority": {
           "HardAI": {
             "diff": -1,
@@ -41,16 +40,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "transportshard",
-          "transportshard",
-          "transportshard",
-          "salvageshard",
-          "salvageshard",
-          "reconshard",
-          "reconshard",
-          "salvageshard"
-        ],
         "scrappedCards": [
           "jochum'sgranddesign",
           "transportshard"
@@ -67,7 +56,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 9,
         "authority": {
           "Player": {
             "diff": -8,
@@ -86,7 +75,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "reconshard",
@@ -99,7 +87,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 7,
         "authority": {
           "Player": {
             "diff": 5,
@@ -122,15 +110,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandshard",
-          "commandshard",
-          "salvageshard",
-          "reconshard",
-          "assaultshard",
-          "assaultshard",
-          "assaultshard"
-        ],
         "scrappedCards": [
           "salvageshard"
         ],
@@ -145,7 +124,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 7,
         "authority": {
           "Player": {
             "diff": -7,
@@ -164,9 +143,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlemech"
-        ],
         "scrappedCards": [
           "transportshard"
         ],
@@ -179,7 +155,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 8,
         "authority": {
           "HardAI": {
             "diff": -4,
@@ -199,19 +175,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "transportshard",
-          "transportshard",
-          "salvageshard",
-          "reconshard",
-          "reconshard"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 7,
         "authority": {
           "Player": {
             "diff": -8,
@@ -230,7 +199,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "assaultshard",
@@ -240,7 +208,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 7,
         "authority": {
           "HardAI": {
             "diff": -11,
@@ -259,13 +227,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandshard",
-          "salvageshard",
-          "reconshard",
-          "reconshard",
-          "assaultshard"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "assaultshard",
@@ -276,7 +237,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 8,
         "authority": {
           "HardAI": {
             "diff": 5,
@@ -300,9 +261,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "surveyship"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "reconshard",
@@ -312,7 +270,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 8,
         "authority": {
           "Player": {
             "diff": 8,
@@ -335,22 +293,17 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "barterworld",
-          "commandshard",
-          "transportshard",
-          "salvageshard",
-          "assaultshard"
-        ],
         "scrappedCards": [
           "brainworld",
           "ram"
         ],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "defensecenter"
+        ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 7,
         "authority": {
           "Player": {
             "diff": -14,
@@ -370,11 +323,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "salvageshard",
-          "salvageshard",
-          "battlemech"
-        ],
         "scrappedCards": [
           "transportshard"
         ],
@@ -384,7 +332,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 7,
         "authority": {
           "HardAI": {
             "diff": -2,
@@ -403,14 +351,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "junkyard",
-          "transportshard",
-          "salvageshard",
-          "reconshard",
-          "reconshard",
-          "assaultshard"
-        ],
         "scrappedCards": [
           "transportshard"
         ],
@@ -418,7 +358,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 7,
         "authority": {
           "Player": {
             "diff": -1,
@@ -438,13 +378,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 7,
         "authority": {},
         "player": "Player"
       },
@@ -458,12 +397,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandshard",
-          "salvageshard",
-          "reconshard",
-          "assaultshard"
-        ],
         "scrappedCards": [
           "transportshard",
           "fleethq"
@@ -474,7 +407,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 8,
         "authority": {
           "Player": {
             "diff": -15,
@@ -495,16 +428,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "surveyship",
-          "recyclingstation",
-          "battlemech",
-          "defensecenter",
-          "cutter",
-          "warworld",
-          "blobfighter",
-          "tradepod"
-        ],
         "scrappedCards": [
           "transportshard",
           "jochum'sgranddesign"
@@ -518,7 +441,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 5,
+        "drawCount": 12,
         "authority": {
           "Player": {
             "diff": 7,
@@ -544,15 +467,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobworld",
-          "patrolmech",
-          "barterworld",
-          "commandshard",
-          "salvageshard",
-          "assaultshard",
-          "assaultshard"
-        ],
         "scrappedCards": [
           "surveyship",
           "assaultshard"
@@ -563,12 +477,13 @@
           "commandshard"
         ],
         "destroyedBases": [
+          "defensecenter",
           "recyclingstation",
           "warworld"
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 3,
+        "drawCount": 10,
         "authority": {
           "Player": {
             "diff": -12,
@@ -588,12 +503,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "imperialfighter",
-          "assaultshard",
-          "assaultshard",
-          "commandshard"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "assaultshard",
@@ -606,7 +515,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 7,
         "authority": {
           "Player": {
             "diff": 8,
@@ -630,13 +539,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "patrolmech",
-          "commandshard",
-          "salvageshard",
-          "reconshard",
-          "reconshard"
-        ],
         "scrappedCards": [
           "assaultshard"
         ],
@@ -649,7 +551,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 7,
         "authority": {
           "HardAI": {
             "diff": 5,
@@ -674,13 +576,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "corvette",
-          "surveyship",
-          "reconshard",
-          "reconshard",
-          "commandshard"
-        ],
         "scrappedCards": [
           "salvageshard",
           "surveyship"
@@ -696,7 +591,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 9,
         "authority": {
           "Player": {
             "diff": 5,
@@ -717,17 +612,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "junkyard",
-          "blobworld",
-          "barterworld",
-          "commandshard",
-          "commandshard",
-          "reconshard",
-          "reconshard",
-          "patrolmech",
-          "battlepod"
-        ],
         "scrappedCards": [
           "assaultshard",
           "reconshard",

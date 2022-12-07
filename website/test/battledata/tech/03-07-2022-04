@@ -14,13 +14,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "HardAI": {
             "diff": -1,
@@ -39,13 +38,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Player": {
             "diff": -2,
@@ -66,13 +64,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "Player"
       },
@@ -87,13 +84,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "HardAI"
       },
@@ -107,13 +103,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "HardAI": {
             "diff": -2,
@@ -132,15 +127,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobwheel"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Player": {
             "diff": -2,
@@ -160,13 +152,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Player": {
             "diff": 4,
@@ -189,7 +180,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "blobwheel"
         ],
@@ -197,7 +187,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Player": {
             "diff": -2,
@@ -216,13 +206,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Player": {
             "diff": 1,
@@ -242,15 +231,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradingpost"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "HardAI"
       },
@@ -265,7 +251,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -273,7 +258,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Player": {
             "diff": 4,
@@ -293,10 +278,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "fleethq",
-          "supplybot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -306,7 +287,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "HardAI"
       },
@@ -320,7 +301,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer"
         ],
@@ -330,15 +310,15 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 7,
         "authority": {
-          "HardAI": {
-            "diff": -3,
-            "new": 43
-          },
           "Player": {
             "diff": 1,
             "new": 54
+          },
+          "HardAI": {
+            "diff": -3,
+            "new": 43
           }
         },
         "player": "Player"
@@ -354,13 +334,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Player": {
             "diff": -1,
@@ -380,11 +359,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "surveyship",
-          "freighter",
-          "stealthneedle"
-        ],
         "scrappedCards": [
           "surveyship"
         ],
@@ -392,7 +366,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {},
         "player": "Player"
       },
@@ -406,7 +380,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -414,7 +387,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Player": {
             "diff": -2,
@@ -433,12 +406,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "dreadnaught",
-          "cutter",
-          "tradeescort",
-          "battlestation"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -447,7 +414,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 4,
+        "drawCount": 9,
         "authority": {
           "Player": {
             "diff": 8,
@@ -470,11 +437,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobwheel",
-          "tradingpost",
-          "supplybot"
-        ],
         "scrappedCards": [
           "viper",
           "blobwheel",
@@ -484,7 +446,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "HardAI": {
             "diff": 1,
@@ -503,7 +465,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "corvette"
@@ -513,7 +474,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 3,
+        "drawCount": 8,
         "authority": {
           "HardAI": {
             "diff": -2,
@@ -532,7 +493,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -540,7 +500,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "HardAI": {
             "diff": 8,
@@ -564,18 +524,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "corvette",
-          "cutter",
-          "freighter",
-          "stealthneedle"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Player": {
             "diff": 4,
@@ -598,11 +552,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "brainworld",
-          "fleethq",
-          "barterworld"
-        ],
         "scrappedCards": [
           "scout",
           "scout",
@@ -612,7 +561,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 7,
         "authority": {
           "HardAI": {
             "diff": 2,
@@ -635,11 +584,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "surveyship",
-          "battlecruiser",
-          "tradepod"
-        ],
         "scrappedCards": [
           "battlecruiser",
           "surveyship"
@@ -652,7 +596,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 5,
+        "drawCount": 10,
         "authority": {
           "HardAI": {
             "diff": -5,
@@ -671,9 +615,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplybot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -684,7 +625,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "HardAI": {
             "diff": 2,
@@ -705,10 +646,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "dreadnaught",
-          "mothership"
-        ],
         "scrappedCards": [
           "dreadnaught"
         ],
@@ -721,7 +658,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 7,
         "authority": {
           "Player": {
             "diff": 4,
@@ -744,11 +681,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradingpost",
-          "brainworld",
-          "supplybot"
-        ],
         "scrappedCards": [
           "scout",
           "cutter",
@@ -758,7 +690,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 7,
         "authority": {
           "HardAI": {
             "diff": 1,
@@ -781,10 +713,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlestation",
-          "machinebase"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -792,7 +720,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Player": {
             "diff": 1,
@@ -811,10 +739,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "barterworld",
-          "tradingpost"
-        ],
         "scrappedCards": [
           "explorer",
           "scout"
@@ -825,7 +749,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 7,
         "authority": {
           "HardAI": {
             "diff": 4,
@@ -845,12 +769,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "cutter",
-          "stealthneedle",
-          "freighter",
-          "scout"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -861,7 +779,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Player": {
             "diff": 8,
@@ -880,10 +798,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "barterworld",
-          "fleethq"
-        ],
         "scrappedCards": [
           "scout",
           "cutter",
@@ -891,10 +805,12 @@
           "explorer"
         ],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "battlestation"
+        ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 3,
+        "drawCount": 8,
         "authority": {
           "HardAI": {
             "diff": 4,
@@ -917,14 +833,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "recyclingstation",
-          "corvette",
-          "ram",
-          "tradepod",
-          "tradeescort",
-          "scout"
-        ],
         "scrappedCards": [
           "ram"
         ],
@@ -940,7 +848,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 5,
+        "drawCount": 10,
         "authority": {
           "Player": {
             "diff": 4,
@@ -961,10 +869,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplybot",
-          "tradingpost"
-        ],
         "scrappedCards": [
           "scout",
           "freighter",
@@ -972,7 +876,9 @@
           "tradingpost"
         ],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "recyclingstation"
+        ],
         "winner": "HardAI",
         "winCondition": "",
         "drawCount": 1,

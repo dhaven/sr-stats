@@ -14,13 +14,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -1,
@@ -40,13 +39,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Aharon75": {
             "diff": -1,
@@ -66,13 +64,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -1,
@@ -91,13 +88,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Aharon75": {
             "diff": -1,
@@ -116,13 +112,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "Aharon75"
       },
@@ -137,13 +132,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Aharon75": {
             "diff": -1,
@@ -162,13 +156,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -2,
@@ -187,9 +180,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplybot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -197,7 +187,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Aharon75": {
             "diff": -3,
@@ -216,9 +206,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlepod"
-        ],
         "scrappedCards": [
           "thehive"
         ],
@@ -228,7 +215,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -7,
@@ -248,13 +235,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "YL5943"
       },
@@ -268,16 +254,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "scout",
-          "stealthneedle"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -2,
@@ -296,9 +278,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplybot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -306,7 +285,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Aharon75": {
             "diff": -1,
@@ -326,16 +305,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "barterworld",
-          "pactpod"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "Aharon75"
       },
@@ -349,12 +324,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "surveyship",
-          "spacestation",
-          "imperialfighter",
-          "supplybot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -364,7 +333,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Aharon75": {
             "diff": -4,
@@ -384,7 +353,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -392,7 +360,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "Aharon75"
       },
@@ -406,10 +374,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "warworld",
-          "supplybot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -417,7 +381,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Aharon75": {
             "diff": -11,
@@ -436,14 +400,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradehive",
-          "blobwheel",
-          "thecitadel",
-          "battlepod",
-          "stealthneedle",
-          "scout"
-        ],
         "scrappedCards": [
           "viper",
           "missilemech",
@@ -457,7 +413,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "YL5943": {
             "diff": -5,
@@ -476,12 +432,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "federationshuttle",
-          "embassyyacht",
-          "needlelancer",
-          "viper"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -489,7 +439,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": 7,
@@ -509,14 +459,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "pactpod",
-          "scout",
-          "scout",
-          "alignmentbot",
-          "scout",
-          "viper"
-        ],
         "scrappedCards": [
           "scout",
           "alignmentbot"
@@ -525,7 +467,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "YL5943": {
             "diff": -8,
@@ -542,11 +484,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "warworld",
-          "imperialfighter",
-          "needlelancer"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -558,7 +495,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Aharon75": {
             "diff": -9,
@@ -578,12 +515,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "pactpod",
-          "battlepod",
-          "stealthneedle",
-          "ram"
-        ],
         "scrappedCards": [
           "mechworld",
           "ram"
@@ -596,7 +527,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -19,
@@ -617,13 +548,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlestation",
-          "supplybot",
-          "barterworld",
-          "federationshuttle",
-          "scout"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -631,7 +555,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": 6,
@@ -655,11 +579,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobwheel",
-          "battlecruiser",
-          "tradepod"
-        ],
         "scrappedCards": [
           "battlecruiser"
         ],
@@ -670,7 +589,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 7,
         "authority": {
           "YL5943": {
             "diff": -4,
@@ -687,12 +606,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "surveyship",
-          "pactwarship",
-          "embassyyacht",
-          "supplybot"
-        ],
         "scrappedCards": [
           "surveyship",
           "scout"
@@ -701,7 +614,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "YL5943": {
             "diff": 8,
@@ -725,13 +638,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "centraloffice",
-          "pactpod",
-          "barterworld",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [
           "blobwheel"
         ],
@@ -741,7 +647,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "YL5943": {
             "diff": -6,
@@ -758,7 +664,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],

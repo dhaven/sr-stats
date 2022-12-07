@@ -130,7 +130,6 @@ class Visitor extends StarRealmsVisitor {
             purchasedCards: [],
             completedMissions: [],
             events: [],
-            playedCards: [],
             scrappedCards: [],
             discardedCards: [],
             destroyedBases: [],
@@ -210,7 +209,7 @@ class Visitor extends StarRealmsVisitor {
                 let playActionDetail = this.visit(ctx.action()[i])
                 turnData['events'] = turnData['events'].concat(playActionDetail['events'])
                 turnData['purchasedCards'] = turnData['purchasedCards'].concat(playActionDetail['acquiredCards'])
-                turnData['playedCards'] = turnData['playedCards'].concat(playActionDetail['playedCards'])
+                //turnData['playedCards'] = turnData['playedCards'].concat(playActionDetail['playedCards'])
                 turnData['scrappedCards'] = turnData['scrappedCards'].concat(playActionDetail['scrappedCards'])
                 turnData['discardedCards'] = turnData['discardedCards'].concat(playActionDetail['discardedCards'])
                 turnData['drawCount'] += playActionDetail['drawCount']

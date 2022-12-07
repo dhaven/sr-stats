@@ -14,13 +14,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "GASmokeDiver"
       },
@@ -35,13 +34,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "GASmokeDiver": {
             "diff": -1,
@@ -60,13 +58,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "UmmActually": {
             "diff": -2,
@@ -85,13 +82,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "GASmokeDiver": {
             "diff": -1,
@@ -110,19 +106,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "scout",
-          "scout",
-          "scout",
-          "scout",
-          "needlelancer"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "UmmActually": {
             "diff": -5,
@@ -142,13 +131,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "UmmActually": {
             "diff": 4,
@@ -172,15 +160,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "imperialfrigate"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "UmmActually": {
             "diff": -5,
@@ -199,7 +184,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -207,7 +191,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "GASmokeDiver": {
             "diff": -6,
@@ -224,15 +208,12 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "imperialfrigate"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "UmmActually": {
             "diff": -9,
@@ -251,9 +232,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "scout"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -261,7 +239,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "GASmokeDiver": {
             "diff": -5,
@@ -280,13 +258,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "GASmokeDiver"
       },
@@ -302,15 +279,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "viper"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "UmmActually": {
             "diff": 4,
@@ -333,11 +307,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "pactwarship",
-          "needlelancer",
-          "viper"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -345,7 +314,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "UmmActually": {
             "diff": -13,
@@ -364,13 +333,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "GASmokeDiver": {
             "diff": -6,
@@ -389,9 +357,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "scout"
-        ],
         "scrappedCards": [
           "imperialfrigate"
         ],
@@ -399,15 +364,15 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
-          "UmmActually": {
-            "diff": -4,
-            "new": 20
-          },
           "GASmokeDiver": {
             "diff": 3,
             "new": 30
+          },
+          "UmmActually": {
+            "diff": -4,
+            "new": 20
           }
         },
         "player": "GASmokeDiver"
@@ -424,11 +389,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "surveyship",
-          "cutter",
-          "viper"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -438,7 +398,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 3,
+        "drawCount": 8,
         "authority": {
           "UmmActually": {
             "diff": 13,
@@ -461,13 +421,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "UmmActually": {
             "diff": -4,
@@ -486,13 +445,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "GASmokeDiver": {
             "diff": -1,
@@ -511,19 +469,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "needlelancer",
-          "stealthneedle",
-          "blobfighter",
-          "viper",
-          "scout"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "UmmActually": {
             "diff": -14,
@@ -544,9 +495,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradepod"
-        ],
         "scrappedCards": [
           "missilemech",
           "warworld",
@@ -556,7 +504,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "GASmokeDiver": {
             "diff": -11,
@@ -575,11 +523,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "operationsplatform",
-          "imperialfrigate",
-          "scout"
-        ],
         "scrappedCards": [
           "imperialfrigate"
         ],
@@ -587,7 +530,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "UmmActually": {
             "diff": -5,
@@ -604,7 +547,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout"

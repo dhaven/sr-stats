@@ -15,13 +15,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "ZaZ333": {
             "diff": -1,
@@ -40,13 +39,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Willydt": {
             "diff": -1,
@@ -65,13 +63,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "Willydt"
       },
@@ -85,13 +82,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Willydt": {
             "diff": -1,
@@ -111,13 +107,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "ZaZ333": {
             "diff": -1,
@@ -137,9 +132,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalplatform"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -147,7 +139,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Willydt": {
             "diff": -1,
@@ -167,11 +159,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandcenter",
-          "scout",
-          "swarmer"
-        ],
         "scrappedCards": [
           "patrolcutter"
         ],
@@ -181,7 +168,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "Willydt"
       },
@@ -196,13 +183,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "ZaZ333"
       },
@@ -217,12 +203,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlebot",
-          "explorer",
-          "swarmer",
-          "scout"
-        ],
         "scrappedCards": [
           "scout",
           "peacekeeper",
@@ -232,7 +212,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "ZaZ333": {
             "diff": -7,
@@ -253,13 +233,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "ZaZ333"
       },
@@ -273,10 +252,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "cargopod",
-          "battlebot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -284,7 +259,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "ZaZ333": {
             "diff": -2,
@@ -303,11 +278,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalplatform",
-          "cargopod",
-          "ravager"
-        ],
         "scrappedCards": [
           "federationshipyard",
           "frontierstation"
@@ -320,7 +290,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Willydt": {
             "diff": -5,
@@ -339,10 +309,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "lancer",
-          "viper"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -350,7 +316,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "ZaZ333": {
             "diff": -3,
@@ -369,9 +335,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "repairbot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -379,7 +342,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Willydt": {
             "diff": -2,
@@ -398,7 +361,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "gunship",
           "cargopod"
@@ -407,7 +369,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "ZaZ333": {
             "diff": -8,
@@ -426,10 +388,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalplatform",
-          "lancer"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "viper",
@@ -438,7 +396,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Willydt": {
             "diff": -7,
@@ -455,11 +413,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlebot",
-          "battlebot",
-          "starbarge"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -471,7 +424,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "ZaZ333": {
             "diff": -4,
@@ -490,9 +443,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "theoracle"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -500,7 +450,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "ZaZ333"
       },
@@ -515,12 +465,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplydepot",
-          "lancer",
-          "patrolcutter",
-          "swarmer"
-        ],
         "scrappedCards": [
           "theincinerator"
         ],
@@ -533,7 +477,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "ZaZ333": {
             "diff": -9,
@@ -552,10 +496,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "repairbot",
-          "ravager"
-        ],
         "scrappedCards": [
           "viper",
           "centralstation",
@@ -569,7 +509,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Willydt": {
             "diff": -1,
@@ -588,17 +528,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandcenter",
-          "starbarge",
-          "patrolcutter"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "ZaZ333": {
             "diff": -7,
@@ -618,14 +553,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlebot",
-          "gunship",
-          "agingbattleship",
-          "miningmech",
-          "warningbeacon",
-          "ravager"
-        ],
         "scrappedCards": [
           "viper",
           "agingbattleship",
@@ -641,7 +568,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 3,
+        "drawCount": 8,
         "authority": {
           "Willydt": {
             "diff": -23,
@@ -660,12 +587,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "factoryworld",
-          "patrolcutter",
-          "lancer",
-          "battlebot"
-        ],
         "scrappedCards": [
           "scout"
         ],

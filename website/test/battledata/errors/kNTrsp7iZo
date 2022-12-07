@@ -15,13 +15,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "benjouille": {
             "diff": -1,
@@ -40,13 +39,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Pistol": {
             "diff": -1,
@@ -66,13 +64,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "benjouille": {
             "diff": -1,
@@ -91,13 +88,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Pistol": {
             "diff": -1,
@@ -116,9 +112,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlepod"
-        ],
         "scrappedCards": [
           "missilemech"
         ],
@@ -126,7 +119,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "benjouille": {
             "diff": -6,
@@ -146,7 +139,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -154,7 +146,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "benjouille"
       },
@@ -168,15 +160,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobfighter"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "benjouille": {
             "diff": -4,
@@ -195,13 +184,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Pistol": {
             "diff": -1,
@@ -221,11 +209,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "scout",
-          "scout",
-          "tradebot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -233,7 +216,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "Pistol"
       },
@@ -247,15 +230,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "patrolmech"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "benjouille": {
             "diff": 1,
@@ -278,9 +258,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlepod"
-        ],
         "scrappedCards": [
           "defensecenter"
         ],
@@ -290,7 +267,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "benjouille": {
             "diff": -1,
@@ -309,13 +286,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Pistol": {
             "diff": -4,
@@ -334,12 +310,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "surveyship",
-          "imperialfighter",
-          "battlepod",
-          "blobfighter"
-        ],
         "scrappedCards": [
           "mechworld"
         ],
@@ -349,7 +319,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 7,
         "authority": {
           "benjouille": {
             "diff": -13,
@@ -369,7 +339,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -377,7 +346,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "benjouille": {
             "diff": 2,
@@ -396,13 +365,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "benjouille": {
             "diff": -1,
@@ -422,23 +390,20 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlecruiser"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
-          "Pistol": {
-            "diff": -5,
-            "new": 36
-          },
           "benjouille": {
             "diff": 3,
             "new": 29
+          },
+          "Pistol": {
+            "diff": -5,
+            "new": 36
           }
         },
         "player": "benjouille"
@@ -453,11 +418,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradebot",
-          "imperialfrigate",
-          "battlepod"
-        ],
         "scrappedCards": [
           "scout",
           "blobworld"
@@ -469,7 +429,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "Pistol"
       },
@@ -483,9 +443,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "patrolmech"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -493,7 +450,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Pistol": {
             "diff": -10,
@@ -513,10 +470,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplybot",
-          "tradepod"
-        ],
         "scrappedCards": [
           "scout",
           "explorer"
@@ -527,7 +480,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "benjouille": {
             "diff": -2,
@@ -546,9 +499,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "recyclingstation"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -556,7 +506,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Pistol": {
             "diff": -2,
@@ -575,10 +525,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlestation",
-          "battlepod"
-        ],
         "scrappedCards": [
           "thehive"
         ],
@@ -588,7 +534,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "benjouille": {
             "diff": -1,
@@ -608,11 +554,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlecruiser",
-          "barterworld",
-          "freighter"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -620,7 +561,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "benjouille": {
             "diff": 2,
@@ -639,14 +580,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "surveyship",
-          "tradebot",
-          "blobwheel",
-          "battlepod",
-          "imperialfighter",
-          "imperialfrigate"
-        ],
         "scrappedCards": [
           "scout",
           "dreadnaught",
@@ -658,7 +591,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "benjouille": {
             "diff": -13,
@@ -675,13 +608,16 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
-        "discardedCards": [],
+        "discardedCards": [
+          "tradingpost",
+          "tradebot",
+          "imperialfrigate"
+        ],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "benjouille"
       },
@@ -695,10 +631,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobfighter",
-          "tradebot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -706,7 +638,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "benjouille": {
             "diff": -4,
@@ -723,13 +655,12 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "benjouille"
       },
@@ -741,10 +672,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "imperialfrigate",
-          "imperialfighter"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],

@@ -14,7 +14,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "politicalmaneuver"
         ],
@@ -22,7 +21,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "HardAI"
       },
@@ -37,13 +36,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "HardAI": {
             "diff": -1,
@@ -63,13 +61,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Player": {
             "diff": -2,
@@ -88,13 +85,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "HardAI": {
             "diff": -1,
@@ -113,15 +109,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "stellarreef"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Player": {
             "diff": -1,
@@ -141,7 +134,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -149,7 +141,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "HardAI": {
             "diff": -3,
@@ -168,10 +160,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "stealthtower",
-          "battlebot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -181,7 +169,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Player": {
             "diff": -4,
@@ -202,9 +190,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "capturedoutpost"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -212,7 +197,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {},
         "player": "Player"
       },
@@ -226,9 +211,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlebot"
-        ],
         "scrappedCards": [
           "scout",
           "boldraid"
@@ -241,7 +223,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 7,
         "authority": {
           "Player": {
             "diff": -5,
@@ -261,21 +243,18 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "repairbot"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "Player"
       },
       {
-        "tradePool": 4,
-        "combatPool": 10,
+        "tradePool": 6,
+        "combatPool": 14,
         "usedTrade": -5,
         "usedCombat": -14,
         "purchasedCards": [
@@ -283,11 +262,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "nestingground",
-          "stellarreef",
-          "swarmer"
-        ],
         "scrappedCards": [
           "bioformer"
         ],
@@ -295,7 +269,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Player": {
             "diff": -14,
@@ -314,10 +288,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "builderbot",
-          "swarmer"
-        ],
         "scrappedCards": [
           "scout",
           "builderbot"
@@ -328,7 +298,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "HardAI": {
             "diff": -1,
@@ -348,10 +318,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "enforcermech",
-          "battlebot"
-        ],
         "scrappedCards": [
           "scout",
           "scout"
@@ -360,7 +326,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Player": {
             "diff": -13,
@@ -381,7 +347,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer",
           "unlikelyalliance",
@@ -394,7 +359,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 7,
         "authority": {
           "HardAI": {
             "diff": -2,
@@ -413,9 +378,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "swarmer"
-        ],
         "scrappedCards": [
           "theincinerator"
         ],
@@ -425,7 +387,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Player": {
             "diff": -3,
@@ -442,11 +404,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "defensesystem",
-          "orbitalplatform",
-          "plasmabot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -456,7 +413,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "HardAI": {
             "diff": -10,
@@ -467,22 +424,20 @@
       },
       {
         "tradePool": 2,
-        "combatPool": 6,
+        "combatPool": 10,
         "usedTrade": 0,
         "usedCombat": -10,
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "stealthtower",
-          "enforcermech"
-        ],
         "scrappedCards": [
           "viper",
           "enforcermech"
         ],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "defensesystem"
+        ],
         "winner": "HardAI",
         "winCondition": "",
         "drawCount": 1,

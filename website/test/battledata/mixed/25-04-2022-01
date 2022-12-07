@@ -14,13 +14,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "Scorpusss"
       },
@@ -34,13 +33,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "YL5943"
       },
@@ -54,13 +52,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -1,
@@ -79,13 +76,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Scorpusss": {
             "diff": -2,
@@ -105,13 +101,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -1,
@@ -131,15 +126,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "plasmabot"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Scorpusss": {
             "diff": -3,
@@ -158,13 +150,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "Scorpusss"
       },
@@ -179,13 +170,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Scorpusss": {
             "diff": -1,
@@ -204,9 +194,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "neuralnexus"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -214,7 +201,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "Scorpusss"
       },
@@ -229,13 +216,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "YL5943"
       },
@@ -250,13 +236,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "barterworld",
-          "longhauler",
-          "scout",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -264,7 +243,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "Scorpusss"
       },
@@ -279,13 +258,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": 2,
@@ -306,9 +284,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "plasmavent"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -316,7 +291,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Scorpusss": {
             "diff": 4,
@@ -339,11 +314,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradebot",
-          "imperialfrigate",
-          "plasmabot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -354,7 +324,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "YL5943"
       },
@@ -368,11 +338,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "longhauler",
-          "blobwheel",
-          "battlebot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -382,7 +347,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "YL5943": {
             "diff": -3,
@@ -402,16 +367,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradebot",
-          "freighter"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Scorpusss": {
             "diff": -2,
@@ -433,18 +394,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalshuttle",
-          "tradehauler",
-          "cutter",
-          "commandship"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 3,
+        "drawCount": 8,
         "authority": {
           "Scorpusss": {
             "diff": 15,
@@ -467,11 +422,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "falcon",
-          "frontierrunner",
-          "battlebot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -481,7 +431,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "YL5943": {
             "diff": 2,
@@ -501,14 +451,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandship",
-          "cutter",
-          "battlebot",
-          "tradepod",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -516,7 +458,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 7,
         "authority": {
           "Scorpusss": {
             "diff": 8,
@@ -537,12 +479,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "destroyerbot",
-          "plasmabot",
-          "warningbeacon",
-          "imperialfrigate"
-        ],
         "scrappedCards": [
           "scout",
           "scout"
@@ -553,7 +489,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Scorpusss": {
             "diff": -11,
@@ -572,13 +508,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "centraloffice",
-          "plasmavent",
-          "moonwurm",
-          "storagesilo",
-          "lancer"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"

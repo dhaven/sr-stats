@@ -14,13 +14,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "Pistol"
       },
@@ -34,13 +33,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "KakXBOCT"
       },
@@ -54,13 +52,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "KakXBOCT": {
             "diff": -2,
@@ -80,13 +77,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Pistol": {
             "diff": -2,
@@ -105,13 +101,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "Pistol"
       },
@@ -125,13 +120,12 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "KakXBOCT"
       },
@@ -149,10 +143,6 @@
           "rule"
         ],
         "events": [],
-        "playedCards": [
-          "capturedoutpost",
-          "integrationport"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -160,7 +150,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "KakXBOCT": {
             "diff": -1,
@@ -180,9 +170,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "missilebot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -192,7 +179,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "KakXBOCT"
       },
@@ -208,15 +195,12 @@
           "colonize"
         ],
         "events": [],
-        "playedCards": [
-          "outlandstation"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 7,
         "authority": {
           "Pistol": {
             "diff": 3,
@@ -227,7 +211,6 @@
             "new": 46
           }
         },
-        "acquiredCards": [],
         "player": "Pistol"
       },
       {
@@ -241,12 +224,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "conversionyard",
-          "farmship",
-          "federationshuttle",
-          "scout"
-        ],
         "scrappedCards": [
           "scout",
           "farmship"
@@ -259,7 +236,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {},
         "player": "KakXBOCT"
       },
@@ -274,9 +251,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradebot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -284,7 +258,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Pistol": {
             "diff": 3,
@@ -304,10 +278,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "corvette",
-          "frontierrunner"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -317,7 +287,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "KakXBOCT": {
             "diff": 2,
@@ -336,7 +306,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -344,7 +313,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Pistol": {
             "diff": 3,
@@ -367,21 +336,16 @@
           "unite"
         ],
         "events": [],
-        "playedCards": [
-          "cargocraft",
-          "missilebot",
-          "moonwurmhatchling",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [
           "scout"
         ],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "outlandstation"
+        ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "KakXBOCT": {
             "diff": 5,
@@ -404,9 +368,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "destroyerbot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -416,7 +377,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Pistol": {
             "diff": 2,
@@ -439,11 +400,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "repairmech",
-          "corvette",
-          "conversionyard"
-        ],
         "scrappedCards": [
           "scout",
           "scout"
@@ -454,7 +410,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Pistol": {
             "diff": -1,
@@ -473,10 +429,6 @@
           "defend"
         ],
         "events": [],
-        "playedCards": [
-          "battlestation",
-          "capturedoutpost"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
