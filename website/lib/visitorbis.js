@@ -8,7 +8,7 @@ class Visitor extends StarStarVisitor {
         let rounds = []
         for (let i = 0; i < ctx.turn().length; i++) {
             let turn = this.visit(ctx.turn()[i])
-            console.log(turn)
+            //console.log(turn)
             let formattedRound = {
                 tradePool: 0,
                 combatPool: 0,
@@ -48,7 +48,7 @@ class Visitor extends StarStarVisitor {
             formattedRound["discardedCards"] = turn["discardedCards"]
             formattedRound["destroyedBases"] = turn["destroyedBases"]
             formattedRound["winner"] = turn["winner"]
-            formattedRound["winCondition"] = ""
+            formattedRound["winCondition"] = turn["winCondition"]
             formattedRound["drawCount"] = turn["drawCount"] - 5
             rounds.push(formattedRound)
         }
@@ -56,7 +56,7 @@ class Visitor extends StarStarVisitor {
             firstPlayer: rounds[0]["player"],
             winner: rounds[rounds.length - 1]["winner"],
             rounds: rounds,
-            winCondition: ""
+            winCondition: rounds[rounds.length - 1]["winCondition"]
         }
     }
 
@@ -69,6 +69,7 @@ class Visitor extends StarStarVisitor {
             events: [],
             missions: [],
             winner: "",
+            winCondition: "",
             drawCount: 0,
             currentPlayer: "",
             players: {}
@@ -80,13 +81,13 @@ class Visitor extends StarStarVisitor {
                     turnData["purchasedCards"].push(action["cardAcquisition"])
                 }
             }
-            if ("discardedCard" in action) {
+            else if ("discardedCard" in action) {
                 turnData["discardedCards"].push(action["discardedCard"])
             }
-            if ("baseDestroy" in action) {
+            else if ("baseDestroy" in action) {
                 turnData["destroyedBases"].push(action["baseDestroy"])
             }
-            if ("cardAction" in action) {
+            else if ("cardAction" in action) {
                 //console.log(action["cardAction"]["cardEffect"]["players"])
                 let listPlayers = Object.keys(action["cardAction"]["cardEffect"]["players"])
                 for (let i = 0; i < listPlayers.length; i++) {
@@ -124,7 +125,7 @@ class Visitor extends StarStarVisitor {
                     turnData["missions"] = turnData["missions"].concat(action["cardAction"]["trigger"]["mission"])
                 }
             }
-            if ("balanceUpdate" in action) {
+            else if ("balanceUpdate" in action) {
                 let playerName = action["balanceUpdate"]["target"]
                 if (!(playerName in turnData["players"])) {
                     turnData["players"][playerName] = {
@@ -143,17 +144,20 @@ class Visitor extends StarStarVisitor {
                     turnData["players"][playerName]["newAuthority"] = action["balanceUpdate"]["newValue"]
                 }
             }
-            if ("drawCount" in action) {
+            else if ("drawCount" in action) {
                 turnData["drawCount"] += action["drawCount"]
             }
-            if ("currentPlayer" in action) {
+            else if ("currentPlayer" in action) {
                 turnData["currentPlayer"] = action["currentPlayer"]
             }
-            if ("winner" in action) {
+            else if ("winner" in action) {
                 turnData["winner"] = action["winner"]
             }
-            if ("scrapped" in action) {
+            else if ("scrapped" in action) {
                 turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["scrapped"])
+            }
+            else if("concede" in action){
+                turnData["winCondition"] = "resignation"
             }
         }
         //console.log(turnData)
@@ -204,7 +208,11 @@ class Visitor extends StarStarVisitor {
             return {
                 scrapped: this.visit(ctx.scrapped())
             }
-        } else {
+        } else if(ctx.concede()){
+            return {
+                concede: this.visit(ctx.concede())
+            }
+        }else {
             return {}
         }
     }
@@ -369,6 +377,10 @@ class Visitor extends StarStarVisitor {
     }
 
     visitEndTurn(ctx) {
+        return this.visit(ctx.name())
+    }
+
+    visitConcede(ctx){
         return this.visit(ctx.name())
     }
 

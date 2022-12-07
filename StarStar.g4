@@ -2,7 +2,7 @@ grammar StarStar;
 
 battle            : turn+ EOF;
 turn              : action+ startTurn?;
-action            : cardAcquisition | discarded | destroyBase | cardAction | balanceUpdate | drawCards | shuffleCards | endTurn | winStatus | scrapped | (skipText NEWLINE);
+action            : cardAcquisition | discarded | destroyBase | cardAction | balanceUpdate | drawCards | shuffleCards | endTurn | winStatus | scrapped | concede | (skipText NEWLINE);
 
 cardAction        : cardTrigger cardEffect*;
 cardTrigger       : playSingle | activate | scrapSelf | event | mission | resolving;
@@ -27,6 +27,7 @@ scrapSelf         : SCRAPPING card NEWLINE;
 endTurn           : name ENDS TURN INT NEWLINE;
 startTurn         : IT IS NOW name '\'s' TURN INT NEWLINE;
 resolving         : RESOLVING (customWord | INT)+ NEWLINE;
+concede           : name '('INT ')' CONCEDED NEWLINE;
 
 // atomic rules
 shuffleCards      : SHUFFLED DISCARD PILE TO FORM NEW DECK NEWLINE;
@@ -35,7 +36,7 @@ drawCards         : DREW INT CARDS NEWLINE;
 
 card              : ((customWord '\'s'?) | INT)+ ;
 name              : customWord+ ;
-customWord        : WORD|ACQUIRED|ACTIVATING|ALL|ALLY|CARDS|DECK|DESTROYED|DISCARD|DISCARDING|DREW|ENDS|EVENT|FORM|GAME|HAND|HAS|INDICATORS|IS|IT|NEW|NOW|OF|PILE|PLAY|PLAYED|REFRESH|RESOLVING|REVEALED|SCRAPPED|SCRAPPING|SHUFFLED|THE|TO|TOP|TURN|WON;
+customWord        : WORD|ACQUIRED|ACTIVATING|ALL|ALLY|CARDS|CONCEDED|DECK|DESTROYED|DISCARD|DISCARDING|DREW|ENDS|EVENT|FORM|GAME|HAND|HAS|INDICATORS|IS|IT|NEW|NOW|OF|PILE|PLAY|PLAYED|REFRESH|RESOLVING|REVEALED|SCRAPPED|SCRAPPING|SHUFFLED|THE|TO|TOP|TURN|WON;
 
 fragment A : ('A'|'a');
 fragment B : ('B'|'b');
@@ -69,6 +70,7 @@ ACTIVATING          : A C T I V A T I N G ;
 ALL                 : A L L ;
 ALLY                : A L L Y ;
 CARDS               : C A R D S ;
+CONCEDED            : C O N C E D E D ;
 DECK                : D E C K ;
 DESTROYED           : D E S T R O Y E D ;
 DISCARD             : D I S C A R D ;

@@ -14,7 +14,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -34,7 +33,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -54,7 +52,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -79,7 +76,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -105,7 +101,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -131,9 +126,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "plasmabot"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -158,7 +150,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -179,7 +170,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -204,9 +194,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "neuralnexus"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -229,7 +216,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -250,13 +236,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "barterworld",
-          "longhauler",
-          "scout",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -279,7 +258,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -306,9 +284,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "plasmavent"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -339,11 +314,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradebot",
-          "imperialfrigate",
-          "plasmabot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -368,11 +338,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "longhauler",
-          "blobwheel",
-          "battlebot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -402,10 +367,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradebot",
-          "freighter"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -433,12 +394,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalshuttle",
-          "tradehauler",
-          "cutter",
-          "commandship"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -467,11 +422,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "falcon",
-          "frontierrunner",
-          "battlebot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -501,14 +451,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandship",
-          "cutter",
-          "battlebot",
-          "tradepod",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -537,12 +479,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "destroyerbot",
-          "plasmabot",
-          "warningbeacon",
-          "imperialfrigate"
-        ],
         "scrappedCards": [
           "scout",
           "scout"
@@ -572,13 +508,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "centraloffice",
-          "plasmavent",
-          "moonwurm",
-          "storagesilo",
-          "lancer"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -588,7 +517,7 @@
         ],
         "winner": "Scorpusss",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": -3,
         "authority": {
           "Scorpusss": {
             "diff": 2,

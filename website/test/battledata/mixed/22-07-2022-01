@@ -14,7 +14,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -40,7 +39,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -66,7 +64,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -91,7 +88,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -116,7 +112,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -137,7 +132,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -162,7 +156,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -187,9 +180,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplybot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -216,9 +206,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlepod"
-        ],
         "scrappedCards": [
           "thehive"
         ],
@@ -248,7 +235,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -268,10 +254,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "scout",
-          "stealthneedle"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -296,9 +278,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplybot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -326,10 +305,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "barterworld",
-          "pactpod"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -349,12 +324,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "surveyship",
-          "spacestation",
-          "imperialfighter",
-          "supplybot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -384,7 +353,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -406,10 +374,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "warworld",
-          "supplybot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -436,14 +400,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradehive",
-          "blobwheel",
-          "thecitadel",
-          "battlepod",
-          "stealthneedle",
-          "scout"
-        ],
         "scrappedCards": [
           "viper",
           "missilemech",
@@ -476,12 +432,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "federationshuttle",
-          "embassyyacht",
-          "needlelancer",
-          "viper"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -509,14 +459,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "pactpod",
-          "scout",
-          "scout",
-          "alignmentbot",
-          "scout",
-          "viper"
-        ],
         "scrappedCards": [
           "scout",
           "alignmentbot"
@@ -542,11 +484,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "warworld",
-          "imperialfighter",
-          "needlelancer"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -578,12 +515,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "pactpod",
-          "battlepod",
-          "stealthneedle",
-          "ram"
-        ],
         "scrappedCards": [
           "mechworld",
           "ram"
@@ -617,13 +548,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlestation",
-          "supplybot",
-          "barterworld",
-          "federationshuttle",
-          "scout"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -655,11 +579,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobwheel",
-          "battlecruiser",
-          "tradepod"
-        ],
         "scrappedCards": [
           "battlecruiser"
         ],
@@ -687,12 +606,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "surveyship",
-          "pactwarship",
-          "embassyyacht",
-          "supplybot"
-        ],
         "scrappedCards": [
           "surveyship",
           "scout"
@@ -725,13 +638,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "centraloffice",
-          "pactpod",
-          "barterworld",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [
           "blobwheel"
         ],
@@ -758,13 +664,12 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "YL5943",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": -5,
         "authority": {
           "Aharon75": {
             "diff": -12,

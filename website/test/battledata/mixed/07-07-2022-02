@@ -14,7 +14,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -41,7 +40,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "politicalmaneuver"
         ],
@@ -64,13 +62,12 @@
         "usedTrade": -4,
         "usedCombat": -1,
         "purchasedCards": [
-          "explorertothetopofthedeck",
+          "explorer",
           "crusher",
           "stinger"
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "exploration",
           "viper"
@@ -98,7 +95,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -124,7 +120,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer"
         ],
@@ -151,9 +146,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "capturedoutpost"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -180,7 +172,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -202,7 +193,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -228,7 +218,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -258,7 +247,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -288,7 +276,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -315,13 +302,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "pactwarship",
-          "coalitionfreighter",
-          "scout",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [
           "asteroidmining2"
         ],
@@ -355,7 +335,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "salvageoperation"
         ],
@@ -382,9 +361,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "capturedoutpost"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -411,7 +387,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -431,10 +406,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "reclamationstation",
-          "defensesystem"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -469,9 +440,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradingpost"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -494,7 +462,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "ram"
         ],
@@ -519,10 +486,11 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "defensesystem"
+        ],
         "winner": "",
         "winCondition": "",
         "drawCount": 0,
@@ -542,9 +510,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "enforcermech"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -575,9 +540,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "unityfighter"
-        ],
         "scrappedCards": [
           "unityfighter",
           "viper"
@@ -609,9 +571,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "missilebot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -638,9 +597,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "conversionyard"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -665,9 +621,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "capturedoutpost"
-        ],
         "scrappedCards": [
           "alignmentbot",
           "scout"
@@ -696,11 +649,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "assaultpod",
-          "alliancefrigate",
-          "spikecluster"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -727,13 +675,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "defensesystem",
-          "coalitionfreighter",
-          "pactwarship",
-          "reclamationstation",
-          "viper"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -763,10 +704,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "defensesystem",
-          "centraloffice"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -784,13 +721,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "missilebot",
-          "enforcermech",
-          "cargocraft",
-          "viper",
-          "scout"
-        ],
         "scrappedCards": [
           "viper",
           "scout",
@@ -798,7 +728,8 @@
         ],
         "discardedCards": [],
         "destroyedBases": [
-          "defensesystem"
+          "defensesystem",
+          "centraloffice"
         ],
         "winner": "",
         "winCondition": "",
@@ -819,12 +750,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobdestroyer",
-          "crusher",
-          "tradingpost",
-          "cutter"
-        ],
         "scrappedCards": [
           "tradingpost"
         ],
@@ -832,11 +757,12 @@
           "scout"
         ],
         "destroyedBases": [
+          "reclamationstation",
           "defensesystem"
         ],
         "winner": "YL5943",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": -5,
         "authority": {
           "YL5943": {
             "diff": 5,

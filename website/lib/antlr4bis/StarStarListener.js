@@ -239,6 +239,15 @@ export default class StarStarListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarStarParser#concede.
+	enterConcede(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#concede.
+	exitConcede(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarStarParser#shuffleCards.
 	enterShuffleCards(ctx) {
 	}
