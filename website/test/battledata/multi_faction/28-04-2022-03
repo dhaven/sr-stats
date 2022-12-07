@@ -14,7 +14,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -40,7 +39,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -60,7 +58,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -80,7 +77,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -105,7 +101,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -130,7 +125,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -157,7 +151,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -183,7 +176,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -209,9 +201,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "coalitionfreighter"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -236,7 +225,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer"
         ],
@@ -264,7 +252,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -289,7 +276,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -311,9 +297,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "barterworld"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -338,7 +321,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -365,10 +347,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "recyclingstation",
-          "coalitionfreighter"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -391,7 +369,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer"
         ],
@@ -420,7 +397,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer"
         ],
@@ -449,7 +425,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -475,9 +450,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "embassybase"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -507,10 +479,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "pactwarship",
-          "commandship"
-        ],
         "scrappedCards": [
           "explorer",
           "explorer"
@@ -518,7 +486,9 @@
         "discardedCards": [
           "scout"
         ],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "embassybase"
+        ],
         "winner": "",
         "winCondition": "",
         "drawCount": 2,
@@ -544,10 +514,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "barterworld",
-          "coalitionfreighter"
-        ],
         "scrappedCards": [
           "explorer",
           "explorer"
@@ -580,7 +546,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer"
         ],
@@ -608,9 +573,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "thehive"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -640,11 +602,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandship",
-          "blobfighter",
-          "battlepod"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -676,11 +633,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "alliancelanding",
-          "recyclingstation",
-          "coalitionfreighter"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -713,7 +665,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer",
           "explorer"
@@ -749,7 +700,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer"
         ],
@@ -777,7 +727,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -806,10 +755,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobworld",
-          "embassybase"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -836,10 +781,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradepod",
-          "tradebot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -850,7 +791,7 @@
         ],
         "winner": "Player",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": -3,
         "authority": {
           "HardAI": {
             "diff": -7,

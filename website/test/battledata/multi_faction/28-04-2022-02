@@ -14,7 +14,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -40,7 +39,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -66,7 +64,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -86,7 +83,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -111,7 +107,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -137,7 +132,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -162,9 +156,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "unityfighter"
-        ],
         "scrappedCards": [
           "coalitionfortress"
         ],
@@ -195,7 +186,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -221,7 +211,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -246,10 +235,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobbot",
-          "stealthneedle"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -274,9 +259,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "unityfighter"
-        ],
         "scrappedCards": [
           "junkyard"
         ],
@@ -304,9 +286,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "missilebot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -335,7 +314,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -365,7 +343,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer"
         ],
@@ -390,9 +367,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobbot"
-        ],
         "scrappedCards": [
           "imperialfrigate"
         ],
@@ -400,7 +374,7 @@
         "destroyedBases": [],
         "winner": "HardAI",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": -4,
         "authority": {
           "Player": {
             "diff": -15,
