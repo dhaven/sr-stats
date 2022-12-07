@@ -19,7 +19,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "GASmokeDiver"
       },
@@ -39,7 +39,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "GASmokeDiver": {
             "diff": -1,
@@ -63,7 +63,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "UmmActually": {
             "diff": -2,
@@ -87,7 +87,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "GASmokeDiver": {
             "diff": -1,
@@ -111,7 +111,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "UmmActually": {
             "diff": -5,
@@ -136,7 +136,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "UmmActually": {
             "diff": 4,
@@ -165,7 +165,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "UmmActually": {
             "diff": -5,
@@ -191,7 +191,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "GASmokeDiver": {
             "diff": -6,
@@ -213,7 +213,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "UmmActually": {
             "diff": -9,
@@ -239,7 +239,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "GASmokeDiver": {
             "diff": -5,
@@ -263,7 +263,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "GASmokeDiver"
       },
@@ -284,7 +284,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "UmmActually": {
             "diff": 4,
@@ -314,7 +314,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "UmmActually": {
             "diff": -13,
@@ -338,7 +338,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "GASmokeDiver": {
             "diff": -6,
@@ -364,7 +364,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "GASmokeDiver": {
             "diff": 3,
@@ -398,7 +398,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 3,
+        "drawCount": 8,
         "authority": {
           "UmmActually": {
             "diff": 13,
@@ -426,7 +426,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "UmmActually": {
             "diff": -4,
@@ -450,7 +450,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "GASmokeDiver": {
             "diff": -1,
@@ -474,7 +474,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "UmmActually": {
             "diff": -14,
@@ -504,7 +504,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "GASmokeDiver": {
             "diff": -11,
@@ -530,7 +530,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "UmmActually": {
             "diff": -5,
@@ -554,7 +554,7 @@
         "destroyedBases": [],
         "winner": "UmmActually",
         "winCondition": "resignation",
-        "drawCount": -5,
+        "drawCount": 0,
         "authority": {
           "GASmokeDiver": {
             "diff": -6,

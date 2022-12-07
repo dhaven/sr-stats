@@ -19,7 +19,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "Pistol"
       },
@@ -38,7 +38,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "KakXBOCT"
       },
@@ -57,7 +57,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "KakXBOCT": {
             "diff": -2,
@@ -82,7 +82,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Pistol": {
             "diff": -2,
@@ -106,7 +106,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "Pistol"
       },
@@ -125,7 +125,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "KakXBOCT"
       },
@@ -150,7 +150,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "KakXBOCT": {
             "diff": -1,
@@ -179,7 +179,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {},
         "player": "KakXBOCT"
       },
@@ -200,7 +200,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 7,
         "authority": {
           "Pistol": {
             "diff": 3,
@@ -236,7 +236,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {},
         "player": "KakXBOCT"
       },
@@ -258,7 +258,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Pistol": {
             "diff": 3,
@@ -287,7 +287,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "KakXBOCT": {
             "diff": 2,
@@ -313,7 +313,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Pistol": {
             "diff": 3,
@@ -345,7 +345,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "KakXBOCT": {
             "diff": 5,
@@ -377,7 +377,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 5,
         "authority": {
           "Pistol": {
             "diff": 2,
@@ -410,7 +410,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Pistol": {
             "diff": -1,
@@ -434,7 +434,7 @@
         "destroyedBases": [],
         "winner": "Pistol",
         "winCondition": "",
-        "drawCount": -4,
+        "drawCount": 1,
         "authority": {},
         "player": "Pistol"
       }

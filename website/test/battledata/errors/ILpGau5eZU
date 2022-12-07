@@ -22,7 +22,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Scottopia": {
             "diff": -5,
@@ -60,7 +60,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 6,
+        "drawCount": 11,
         "authority": {
           "Scottopia": {
             "diff": 6,
@@ -98,7 +98,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 6,
+        "drawCount": 11,
         "authority": {
           "Scottopia": {
             "diff": -15,
@@ -124,7 +124,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 7,
         "authority": {},
         "player": "Scottopia"
       },
@@ -145,7 +145,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "Scottopia": {
             "diff": -16,
@@ -178,7 +178,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 7,
         "authority": {},
         "player": "Scottopia"
       },
@@ -202,7 +202,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 7,
         "authority": {
           "Scottopia": {
             "diff": -20,
@@ -230,7 +230,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 7,
         "authority": {},
         "player": "Scottopia"
       },
@@ -258,7 +258,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 6,
         "authority": {
           "George21": {
             "diff": -5,
@@ -305,7 +305,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 4,
+        "drawCount": 9,
         "authority": {
           "Scottopia": {
             "diff": 8,
@@ -336,7 +336,7 @@
         "destroyedBases": [],
         "winner": "George21",
         "winCondition": "",
-        "drawCount": -4,
+        "drawCount": 1,
         "authority": {
           "Scottopia": {
             "diff": -15,

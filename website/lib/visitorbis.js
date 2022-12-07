@@ -64,7 +64,7 @@ class Visitor extends StarStarVisitor {
             formattedRound["destroyedBases"] = turn["destroyedBases"]
             formattedRound["winner"] = turn["winner"]
             formattedRound["winCondition"] = turn["winCondition"]
-            formattedRound["drawCount"] = turn["drawCount"] - 5
+            formattedRound["drawCount"] = turn["drawCount"]
             rounds.push(formattedRound)
         }
         return {
@@ -479,4 +479,15 @@ export function parseBattle(battlelog) {
             data: error.message
         }
     }
+}
+
+//identify if there are any syntax errors in the file
+export function findErrors(battlelog) {
+    const chars = new antlr4.InputStream(battlelog);
+    const lexer = new StarStarLexer(chars);
+    const tokens = new antlr4.CommonTokenStream(lexer);
+    const parser = new StarStarParser(tokens);
+    parser.buildParseTrees = true;
+    parser.battle() //this is really slow
+    return parser._syntaxErrors == 0
 }
