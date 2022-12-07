@@ -14,7 +14,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -39,7 +38,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -65,7 +63,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -90,7 +87,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -115,9 +111,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "missilebot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -149,7 +142,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -175,7 +167,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -200,7 +191,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -225,10 +215,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "fortressoblivion",
-          "missilebot"
-        ],
         "scrappedCards": [
           "viper",
           "scout"
@@ -256,7 +242,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer"
         ],
@@ -285,7 +270,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -313,7 +297,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -333,7 +316,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "explorer",
           "explorer"
@@ -367,9 +349,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "megahauler"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -400,9 +379,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "fortressoblivion"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -431,10 +407,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "megahauler",
-          "machinebase"
-        ],
         "scrappedCards": [
           "tradeenvoy",
           "scout"
@@ -466,10 +438,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "missilebot",
-          "flagship"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -503,9 +471,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "centraloffice"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -533,7 +498,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "cargorocket"
         ],
@@ -562,10 +526,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "probebot",
-          "fleethq"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -590,12 +550,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "corvette",
-          "fortressoblivion",
-          "warworld",
-          "blobdestroyer"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -627,11 +581,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "machinebase",
-          "spacestation",
-          "megahauler"
-        ],
         "scrappedCards": [
           "scout",
           "spacestation"
@@ -664,13 +613,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "corvette",
-          "missilebot",
-          "flagship",
-          "tradingpost",
-          "blobfighter"
-        ],
         "scrappedCards": [
           "scout",
           "tradingpost"
@@ -705,17 +647,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "scout",
-          "imperialfighter",
-          "blobdestroyer",
-          "scout",
-          "imperialdefender",
-          "tradepod",
-          "thecolossus",
-          "centraloffice",
-          "machinebase"
-        ],
         "scrappedCards": [
           "patrolmech",
           "imperialfrigate",
@@ -742,7 +673,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -772,10 +702,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlepod",
-          "probebot"
-        ],
         "scrappedCards": [
           "spawningwurm",
           "viper",
@@ -787,7 +713,7 @@
         ],
         "winner": "HardAI",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": -3,
         "authority": {
           "Player": {
             "diff": -22,

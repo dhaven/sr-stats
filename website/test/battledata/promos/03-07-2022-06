@@ -14,7 +14,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -39,7 +38,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -64,7 +62,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -90,7 +87,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -116,7 +112,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -141,9 +136,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "stealthneedle"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -168,7 +160,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -194,7 +185,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -219,13 +209,13 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blockaderunner"
-        ],
         "scrappedCards": [
           "blockaderunner"
         ],
-        "discardedCards": [],
+        "discardedCards": [
+          "viper",
+          "scout"
+        ],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
@@ -248,7 +238,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -270,7 +259,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -295,10 +283,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "fortressoblivion",
-          "stealthneedle"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -326,7 +310,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -348,9 +331,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplybot"
-        ],
         "scrappedCards": [
           "viper",
           "explorer"
@@ -378,9 +358,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "templeguardian"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -407,11 +384,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "midgatestation",
-          "tradepod",
-          "explorer"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -441,9 +413,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobwheel"
-        ],
         "scrappedCards": [
           "blobwheel"
         ],
@@ -465,9 +434,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "explorer"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -500,9 +466,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "missilebot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -525,10 +488,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplybot",
-          "stealthneedle"
-        ],
         "scrappedCards": [
           "viper",
           "explorer",
@@ -559,9 +518,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "templeguardian"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -591,10 +547,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "fortressoblivion",
-          "megahauler"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -625,11 +577,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "templeguardian",
-          "blockaderunner",
-          "recyclingstation"
-        ],
         "scrappedCards": [
           "blockaderunner",
           "imperialfrigate"
@@ -663,12 +610,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "brainworld",
-          "spawningwurm",
-          "stealthneedle",
-          "mercbattlecruiser"
-        ],
         "scrappedCards": [
           "scout",
           "imperialfighter",
@@ -679,10 +620,12 @@
           "scout",
           "supplybot"
         ],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "recyclingstation"
+        ],
         "winner": "Player",
         "winCondition": "",
-        "drawCount": 3,
+        "drawCount": -2,
         "authority": {
           "HardAI": {
             "diff": -38,

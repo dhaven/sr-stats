@@ -14,7 +14,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -34,7 +33,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -59,7 +57,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -84,7 +81,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -105,7 +101,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -131,7 +126,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -153,7 +147,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "surveyship"
         ],
@@ -180,9 +173,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "cargomech"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -211,11 +201,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "barterworld",
-          "federaltransport",
-          "imperialsmuggler"
-        ],
         "scrappedCards": [
           "imperialsmuggler"
         ],
@@ -248,16 +233,14 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplybot",
-          "cargomech"
-        ],
         "scrappedCards": [
           "scout",
           "scout"
         ],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "barterworld"
+        ],
         "winner": "",
         "winCondition": "",
         "drawCount": 0,
@@ -281,7 +264,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -302,9 +284,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "recyclebot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -330,9 +309,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradebot"
-        ],
         "scrappedCards": [
           "viper",
           "explorer"
@@ -361,9 +337,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "breedingsite"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -390,11 +363,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "plaguepod",
-          "tradebot",
-          "recyclebot"
-        ],
         "scrappedCards": [
           "scout",
           "scout"
@@ -425,15 +393,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "recyclebot",
-          "supplybot",
-          "demolisher",
-          "scout",
-          "thecolossus",
-          "probebot",
-          "cargomech"
-        ],
         "scrappedCards": [
           "explorer",
           "viper",
@@ -467,7 +426,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "viper",
@@ -495,21 +453,19 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "spawningwurm",
-          "blockaderunner",
-          "probebot"
-        ],
         "scrappedCards": [
           "spawningwurm",
           "scout",
           "probebot"
         ],
-        "discardedCards": [],
+        "discardedCards": [
+          "scout",
+          "scout"
+        ],
         "destroyedBases": [],
         "winner": "HardAI",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": -3,
         "authority": {
           "HardAI": {
             "diff": 4,
