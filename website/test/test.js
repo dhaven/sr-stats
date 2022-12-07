@@ -62,7 +62,13 @@ const argv = yargs(process.argv.slice(2))
 
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 
-let test_input = getFolderFiles("logdata/" + argv.argv.folder) || getFolderFiles("logdata")
+let test_input = ""
+if(argv.argv.folder){
+  test_input = getFolderFiles("logdata/" + argv.argv.folder)
+}else{
+  test_input = getFolderFiles("logdata")
+}
+
 let parsing_error = 0
 let tree_error_count = 0
 let battle_error_count = 0

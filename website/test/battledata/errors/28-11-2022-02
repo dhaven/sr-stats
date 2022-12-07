@@ -15,7 +15,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -40,7 +39,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -65,7 +63,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -85,7 +82,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -111,7 +107,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -137,9 +132,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalplatform"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -167,11 +159,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandcenter",
-          "scout",
-          "swarmer"
-        ],
         "scrappedCards": [
           "patrolcutter"
         ],
@@ -196,7 +183,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -217,12 +203,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlebot",
-          "explorer",
-          "swarmer",
-          "scout"
-        ],
         "scrappedCards": [
           "scout",
           "peacekeeper",
@@ -253,7 +233,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -273,10 +252,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "cargopod",
-          "battlebot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -303,11 +278,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalplatform",
-          "cargopod",
-          "ravager"
-        ],
         "scrappedCards": [
           "federationshipyard",
           "frontierstation"
@@ -339,10 +309,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "lancer",
-          "viper"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -369,9 +335,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "repairbot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -398,7 +361,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "gunship",
           "cargopod"
@@ -426,10 +388,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalplatform",
-          "lancer"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "viper",
@@ -455,11 +413,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlebot",
-          "battlebot",
-          "starbarge"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -490,9 +443,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "theoracle"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -515,12 +465,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "supplydepot",
-          "lancer",
-          "patrolcutter",
-          "swarmer"
-        ],
         "scrappedCards": [
           "theincinerator"
         ],
@@ -552,10 +496,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "repairbot",
-          "ravager"
-        ],
         "scrappedCards": [
           "viper",
           "centralstation",
@@ -588,11 +528,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandcenter",
-          "starbarge",
-          "patrolcutter"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -618,14 +553,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlebot",
-          "gunship",
-          "agingbattleship",
-          "miningmech",
-          "warningbeacon",
-          "ravager"
-        ],
         "scrappedCards": [
           "viper",
           "agingbattleship",
@@ -660,12 +587,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "factoryworld",
-          "patrolcutter",
-          "lancer",
-          "battlebot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -677,7 +598,7 @@
         ],
         "winner": "Willydt",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": -5,
         "authority": {
           "Willydt": {
             "diff": 4,

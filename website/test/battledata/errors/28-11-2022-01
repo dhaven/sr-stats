@@ -19,10 +19,6 @@
         "events": [
           "quasar"
         ],
-        "playedCards": [
-          "scout",
-          "viper"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -48,7 +44,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -74,7 +69,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "smugglingrun"
         ],
@@ -101,7 +95,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -127,10 +120,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "builderbot",
-          "warningbeacon"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -160,9 +149,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "unityfighter"
-        ],
         "scrappedCards": [
           "imperialflagship",
           "boldraid"
@@ -196,9 +182,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "ravager"
-        ],
         "scrappedCards": [
           "commanderklik"
         ],
@@ -226,7 +209,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -257,10 +239,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "frontierrunner",
-          "stealthneedle"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -290,10 +268,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "cargomech",
-          "destroyerbot"
-        ],
         "scrappedCards": [
           "viper",
           "scout"
@@ -321,11 +295,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "spikecluster",
-          "builderbot",
-          "stealthneedle"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -351,9 +320,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "unityfighter"
-        ],
         "scrappedCards": [
           "deathworld",
           "plaguepod"
@@ -387,10 +353,6 @@
           "diversify"
         ],
         "events": [],
-        "playedCards": [
-          "orbitalplatform",
-          "hellfire"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -425,10 +387,6 @@
           "ally"
         ],
         "events": [],
-        "playedCards": [
-          "patrolmech",
-          "unityfighter"
-        ],
         "scrappedCards": [
           "thecitadel",
           "scout"
@@ -457,15 +415,13 @@
         "usedCombat": -4,
         "purchasedCards": [
           "rampilot",
+          "explorer",
+          "explorer",
           "traderaft"
         ],
         "completedMissions": [],
         "events": [
           "reconmission"
-        ],
-        "playedCards": [
-          "warningbeacon",
-          "explorer"
         ],
         "scrappedCards": [
           "explorer"
@@ -495,10 +451,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "defensecenter",
-          "destroyerbot"
-        ],
         "scrappedCards": [
           "scout",
           "explorer",
@@ -534,14 +486,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "assaultpod",
-          "ravager",
-          "frontierrunner",
-          "frontierrunner",
-          "repairbot",
-          "scout"
-        ],
         "scrappedCards": [
           "stellarlink",
           "repairbot"
@@ -578,9 +522,6 @@
         "events": [
           "bombardment"
         ],
-        "playedCards": [
-          "cargomech"
-        ],
         "scrappedCards": [
           "scout",
           "explorer",
@@ -609,10 +550,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "warningbeacon",
-          "stealthneedle"
-        ],
         "scrappedCards": [
           "rampilot"
         ],
@@ -646,10 +583,6 @@
           "rule"
         ],
         "events": [],
-        "playedCards": [
-          "fortressoblivion",
-          "fighterbase"
-        ],
         "scrappedCards": [
           "viper",
           "explorer",
@@ -665,7 +598,8 @@
         "drawCount": 0,
         "authority": {
           "HardAI": {
-            "diff": 8
+            "diff": 8,
+            "new": 26
           },
           "Player": {
             "diff": -4,
@@ -682,11 +616,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "builderbot",
-          "spikecluster",
-          "federationshuttle"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -711,11 +640,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "defensecenter",
-          "unityfighter",
-          "patrolmech"
-        ],
         "scrappedCards": [
           "constructionhauler",
           "scout",
@@ -742,7 +666,7 @@
       },
       {
         "tradePool": 7,
-        "combatPool": 4,
+        "combatPool": 10,
         "usedTrade": -7,
         "usedCombat": -10,
         "purchasedCards": [
@@ -754,12 +678,6 @@
           "influence"
         ],
         "events": [],
-        "playedCards": [
-          "orbitalplatform",
-          "stealthtower",
-          "fighterbase",
-          "traderaft"
-        ],
         "scrappedCards": [
           "explorer",
           "traderaft"
@@ -788,10 +706,6 @@
           "unite"
         ],
         "events": [],
-        "playedCards": [
-          "cargomech",
-          "destroyerbot"
-        ],
         "scrappedCards": [
           "scout",
           "scout"
@@ -799,10 +713,12 @@
         "discardedCards": [
           "assaultpod"
         ],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "stealthtower"
+        ],
         "winner": "HardAI",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": -3,
         "authority": {
           "HardAI": {
             "diff": 9,

@@ -16,7 +16,6 @@
         "events": [
           "patiencerewarded"
         ],
-        "playedCards": [],
         "scrappedCards": [
           "farmship"
         ],
@@ -44,11 +43,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "scout",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [
           "unioncluster"
         ],
@@ -70,7 +64,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -95,11 +88,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "scout",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -124,7 +112,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -151,12 +138,6 @@
         "completedMissions": [],
         "events": [
           "bombardment"
-        ],
-        "playedCards": [
-          "coalitionmessenger",
-          "scout",
-          "scout",
-          "scout"
         ],
         "scrappedCards": [],
         "discardedCards": [],
@@ -187,7 +168,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -216,9 +196,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "explorer"
-        ],
         "scrappedCards": [
           "nestingground",
           "blobalpha",
@@ -250,9 +227,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "blobminer"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -288,24 +262,14 @@
           "warpjump",
           "quasar"
         ],
-        "playedCards": [
-          "scout",
-          "scout",
-          "scout",
-          "scout",
-          "coalitionmessenger",
-          "explorer",
-          "lightcruiser",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [
           "explorer",
           "hivelord",
           "commanderklik"
         ],
         "discardedCards": [
-          "viper"
+          "viper",
+          "scout"
         ],
         "destroyedBases": [
           "defensesystem"
@@ -332,7 +296,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -359,12 +322,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "alliancetransport",
-          "coalitionmessenger",
-          "cargorocket",
-          "repairmech"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -395,9 +352,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "destroyerbot"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -422,12 +376,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "scout",
-          "scout",
-          "scout",
-          "midgatestation"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -454,9 +402,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradeenvoy"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -487,10 +432,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "orbitalgunplatform",
-          "scout"
-        ],
         "scrappedCards": [
           "orbitalgunplatform",
           "viper",
@@ -520,7 +461,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -547,11 +487,6 @@
         "completedMissions": [],
         "events": [
           "supplyrun"
-        ],
-        "playedCards": [
-          "lightcruiser",
-          "cargorocket",
-          "scout"
         ],
         "scrappedCards": [],
         "discardedCards": [],
@@ -581,10 +516,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "frontierhawk",
-          "blobminer"
-        ],
         "scrappedCards": [
           "traderowslot"
         ],
@@ -618,12 +549,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "spikecluster",
-          "alliancetransport",
-          "outlandstation",
-          "midgatestation"
-        ],
         "scrappedCards": [
           "outlandstation"
         ],
@@ -655,7 +580,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "viper",
@@ -691,12 +615,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "repairmech",
-          "coalitionmessenger",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -719,10 +637,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "destroyerbot",
-          "alliancelanding"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -747,11 +661,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "integrationport",
-          "midgatestation",
-          "cargorocket"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -784,12 +693,6 @@
         "events": [
           "wormhole"
         ],
-        "playedCards": [
-          "scout",
-          "scout",
-          "scout",
-          "gateship"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -813,14 +716,6 @@
         "events": [
           "tacticalmaneuver",
           "tacticalmaneuver"
-        ],
-        "playedCards": [
-          "spikecluster",
-          "alliancetransport",
-          "cargocraft",
-          "lightcruiser",
-          "coalitionmessenger",
-          "scout"
         ],
         "scrappedCards": [],
         "discardedCards": [
@@ -854,9 +749,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "enforcermech"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -890,13 +782,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "needlelancer",
-          "spikecluster",
-          "cargorocket",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -925,13 +810,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "defensesystem",
-          "destroyerbot",
-          "patrolboat",
-          "cargorocket",
-          "blobminer"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -966,13 +844,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "alliancetransport",
-          "frontierrunner",
-          "scout",
-          "scout",
-          "repairmech"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -997,13 +868,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "frontierhawk",
-          "alliancelanding",
-          "outlandstation",
-          "scout",
-          "stinger"
-        ],
         "scrappedCards": [
           "stinger"
         ],
@@ -1032,16 +896,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "imperialflagship",
-          "thearmory",
-          "cargocraft",
-          "lightcruiser",
-          "farmship",
-          "hivequeen",
-          "needlelancer",
-          "scout"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -1070,7 +924,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "corsair",
@@ -1098,12 +951,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "midgatestation",
-          "cargorocket",
-          "coalitionmessenger",
-          "scout"
-        ],
         "scrappedCards": [
           "cargorocket"
         ],
@@ -1136,10 +983,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "farmship",
-          "gateship"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "corsair",
@@ -1170,14 +1013,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "hivequeen",
-          "alliancetransport",
-          "cargocraft",
-          "needlelancer",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [
           "traderowslot"
         ],
@@ -1202,9 +1037,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "patrolboat"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout",
@@ -1232,18 +1064,12 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "imperialflagship",
-          "cargocraft",
-          "needlelancer",
-          "lightcruiser"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "gouda55",
         "winCondition": "",
-        "drawCount": 3,
+        "drawCount": -2,
         "authority": {
           "YL5943": {
             "diff": -22,

@@ -17,17 +17,12 @@
         "events": [
           "tacticalmaneuver"
         ],
-        "playedCards": [
-          "protopod",
-          "scout",
-          "ripper"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 1,
         "authority": {
           "Scottopia": {
             "diff": -5,
@@ -50,17 +45,11 @@
         "events": [
           "mobilization"
         ],
-        "playedCards": [
-          "commandshard",
-          "salvageshard",
-          "salvageshard",
-          "blobminer",
-          "plasmavent"
-        ],
         "scrappedCards": [
           "assaultshard",
           "jochum'sgranddesign",
-          "patrolboat"
+          "patrolboat",
+          "secretsplintertech"
         ],
         "discardedCards": [
           "salvageshard",
@@ -71,7 +60,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 4,
+        "drawCount": 6,
         "authority": {
           "Scottopia": {
             "diff": 6,
@@ -96,13 +85,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "imperialscout",
-          "scout",
-          "scout",
-          "commandcenter",
-          "tributetransport"
-        ],
         "scrappedCards": [
           "mccready'smaneuver"
         ],
@@ -116,7 +98,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 5,
+        "drawCount": 6,
         "authority": {
           "Scottopia": {
             "diff": -15,
@@ -135,15 +117,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "reconshard",
-          "reconshard",
-          "salvageshard",
-          "transportshard",
-          "transportshard",
-          "blobminer",
-          "assaultshard"
-        ],
         "scrappedCards": [
           "operationsplatform"
         ],
@@ -151,7 +124,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 2,
         "authority": {},
         "player": "Scottopia"
       },
@@ -165,13 +138,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "stinger",
-          "ripper",
-          "protopod",
-          "convoybot",
-          "ranger"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -179,7 +145,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 1,
         "authority": {
           "Scottopia": {
             "diff": -16,
@@ -200,15 +166,9 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "commandshard",
-          "salvageshard",
-          "salvageshard",
-          "transportshard",
-          "commandshard"
-        ],
         "scrappedCards": [
-          "assaultshard"
+          "assaultshard",
+          "secretsplintertech"
         ],
         "discardedCards": [
           "salvageshard",
@@ -218,7 +178,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 2,
         "authority": {},
         "player": "Scottopia"
       },
@@ -232,12 +192,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "ravager",
-          "clusterviper",
-          "imperialtalon",
-          "tributetransport"
-        ],
         "scrappedCards": [
           "hivequeen",
           "swarmcluster"
@@ -248,7 +202,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": 2,
         "authority": {
           "Scottopia": {
             "diff": -20,
@@ -267,14 +221,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlebot",
-          "transportshard",
-          "salvageshard",
-          "commandshard",
-          "reconshard",
-          "recyclebot"
-        ],
         "scrappedCards": [
           "assaultshard"
         ],
@@ -284,7 +230,7 @@
         ],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 2,
         "authority": {},
         "player": "Scottopia"
       },
@@ -300,10 +246,6 @@
         "events": [
           "supernova"
         ],
-        "playedCards": [
-          "plasmabot",
-          "unityfighter"
-        ],
         "scrappedCards": [
           "scout",
           "coalitionfortress",
@@ -316,7 +258,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 0,
+        "drawCount": 1,
         "authority": {
           "George21": {
             "diff": -5,
@@ -344,17 +286,6 @@
         "events": [
           "comet"
         ],
-        "playedCards": [
-          "imperialflagship",
-          "tradehauler",
-          "plasmavent",
-          "destroyerbot",
-          "blobminer",
-          "commandshard",
-          "reconshard",
-          "reconshard",
-          "transportshard"
-        ],
         "scrappedCards": [
           "salvageshard",
           "demolisher",
@@ -363,7 +294,8 @@
           "corsair",
           "blobminer",
           "transportshard",
-          "reconshard"
+          "reconshard",
+          "secretsplintertech"
         ],
         "discardedCards": [
           "reconshard",
@@ -373,7 +305,7 @@
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
-        "drawCount": 2,
+        "drawCount": 4,
         "authority": {
           "Scottopia": {
             "diff": 8,
@@ -394,10 +326,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tributetransport",
-          "ranger"
-        ],
         "scrappedCards": [
           "scout",
           "imperialscout"
@@ -408,7 +336,7 @@
         "destroyedBases": [],
         "winner": "George21",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": -4,
         "authority": {
           "Scottopia": {
             "diff": -15,

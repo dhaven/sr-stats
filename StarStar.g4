@@ -2,7 +2,7 @@ grammar StarStar;
 
 battle            : turn+ EOF;
 turn              : action+ startTurn?;
-action            : cardAcquisition | discarded | destroyBase | cardAction | balanceUpdate | drawCards | shuffleCards | endTurn | winStatus | scrapped | concede | (skipText NEWLINE);
+action            : cardAcquisition | discarded | destroyBase | cardAction | balanceUpdate | drawCards | shuffleCards | endTurn | winStatus | scrapped | concede | timeout | (skipText NEWLINE);
 
 cardAction        : cardTrigger cardEffect*;
 cardTrigger       : playSingle | activate | scrapSelf | event | mission | resolving;
@@ -20,7 +20,7 @@ scrapped          : SCRAPPED card NEWLINE;
 destroyBase       : DESTROYED card NEWLINE;
 cardAcquisition   : ACQUIRED card NEWLINE;
 acquireToHand     : ACQUIRED card TO HAND NEWLINE;
-acquireToDeck     :ACQUIRED card TO THE TOP OF THE DECK NEWLINE;
+acquireToDeck     : ACQUIRED card TO THE TOP OF THE DECK NEWLINE;
 playSingle        : PLAYED card NEWLINE;
 activate          : ACTIVATING card NEWLINE;
 scrapSelf         : SCRAPPING card NEWLINE;
@@ -28,6 +28,7 @@ endTurn           : name ENDS TURN INT NEWLINE;
 startTurn         : IT IS NOW name '\'s' TURN INT NEWLINE;
 resolving         : RESOLVING (customWord | INT)+ NEWLINE;
 concede           : name '('INT ')' CONCEDED NEWLINE;
+timeout           : name WINS THE GAME NEWLINE;
 
 // atomic rules
 shuffleCards      : SHUFFLED DISCARD PILE TO FORM NEW DECK NEWLINE;
@@ -36,7 +37,7 @@ drawCards         : DREW INT CARDS NEWLINE;
 
 card              : ((customWord '\'s'?) | INT)+ ;
 name              : customWord+ ;
-customWord        : WORD|ACQUIRED|ACTIVATING|ALL|ALLY|CARDS|CONCEDED|DECK|DESTROYED|DISCARD|DISCARDING|DREW|ENDS|EVENT|FORM|GAME|HAND|HAS|INDICATORS|IS|IT|NEW|NOW|OF|PILE|PLAY|PLAYED|REFRESH|RESOLVING|REVEALED|SCRAPPED|SCRAPPING|SHUFFLED|THE|TO|TOP|TURN|WON;
+customWord        : WORD|ACQUIRED|ACTIVATING|ALL|ALLY|CARDS|CONCEDED|DECK|DESTROYED|DISCARD|DISCARDING|DREW|ENDS|EVENT|FORM|GAME|HAND|HAS|INDICATORS|IS|IT|NEW|NOW|OF|PILE|PLAY|PLAYED|REFRESH|RESOLVING|REVEALED|SCRAPPED|SCRAPPING|SHUFFLED|THE|TO|TOP|TURN|WINS|WON;
 
 fragment A : ('A'|'a');
 fragment B : ('B'|'b');
@@ -102,6 +103,7 @@ THE                 : T H E ;
 TO                  : T O ;
 TOP                 : T O P ;
 TURN                : T U R N ;
+WINS                : W I N S ;
 WON                 : W O N ;
 
 

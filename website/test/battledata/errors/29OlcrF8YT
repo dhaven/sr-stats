@@ -14,7 +14,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -34,7 +33,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -54,7 +52,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -80,7 +77,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -105,7 +101,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -125,7 +120,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -149,10 +143,6 @@
           "rule"
         ],
         "events": [],
-        "playedCards": [
-          "capturedoutpost",
-          "integrationport"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "viper"
@@ -180,9 +170,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "missilebot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -208,9 +195,6 @@
           "colonize"
         ],
         "events": [],
-        "playedCards": [
-          "outlandstation"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -227,7 +211,6 @@
             "new": 46
           }
         },
-        "acquiredCards": [],
         "player": "Pistol"
       },
       {
@@ -241,12 +224,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "conversionyard",
-          "farmship",
-          "federationshuttle",
-          "scout"
-        ],
         "scrappedCards": [
           "scout",
           "farmship"
@@ -274,9 +251,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradebot"
-        ],
         "scrappedCards": [
           "viper"
         ],
@@ -304,10 +278,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "corvette",
-          "frontierrunner"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -336,7 +306,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
@@ -367,18 +336,13 @@
           "unite"
         ],
         "events": [],
-        "playedCards": [
-          "cargocraft",
-          "missilebot",
-          "moonwurmhatchling",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [
           "scout"
         ],
         "discardedCards": [],
-        "destroyedBases": [],
+        "destroyedBases": [
+          "outlandstation"
+        ],
         "winner": "",
         "winCondition": "",
         "drawCount": 1,
@@ -404,9 +368,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "destroyerbot"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -439,11 +400,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "repairmech",
-          "corvette",
-          "conversionyard"
-        ],
         "scrappedCards": [
           "scout",
           "scout"
@@ -473,16 +429,12 @@
           "defend"
         ],
         "events": [],
-        "playedCards": [
-          "battlestation",
-          "capturedoutpost"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "Pistol",
         "winCondition": "",
-        "drawCount": 1,
+        "drawCount": -4,
         "authority": {},
         "player": "Pistol"
       }

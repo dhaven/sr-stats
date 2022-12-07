@@ -14,7 +14,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -35,7 +34,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -60,7 +58,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -85,7 +82,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -110,13 +106,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "scout",
-          "scout",
-          "scout",
-          "scout",
-          "needlelancer"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -142,7 +131,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -172,9 +160,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "imperialfrigate"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -199,7 +184,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -224,9 +208,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "imperialfrigate"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -251,9 +232,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "scout"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -280,7 +258,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -302,9 +279,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "viper"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -333,11 +307,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "pactwarship",
-          "needlelancer",
-          "viper"
-        ],
         "scrappedCards": [
           "explorer"
         ],
@@ -364,7 +333,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -389,9 +357,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "scout"
-        ],
         "scrappedCards": [
           "imperialfrigate"
         ],
@@ -401,13 +366,13 @@
         "winCondition": "",
         "drawCount": 1,
         "authority": {
-          "UmmActually": {
-            "diff": -4,
-            "new": 20
-          },
           "GASmokeDiver": {
             "diff": 3,
             "new": 30
+          },
+          "UmmActually": {
+            "diff": -4,
+            "new": 20
           }
         },
         "player": "GASmokeDiver"
@@ -424,11 +389,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "surveyship",
-          "cutter",
-          "viper"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -461,7 +421,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -486,7 +445,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -511,13 +469,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "needlelancer",
-          "stealthneedle",
-          "blobfighter",
-          "viper",
-          "scout"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -544,9 +495,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "tradepod"
-        ],
         "scrappedCards": [
           "missilemech",
           "warworld",
@@ -575,11 +523,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "operationsplatform",
-          "imperialfrigate",
-          "scout"
-        ],
         "scrappedCards": [
           "imperialfrigate"
         ],
@@ -604,7 +547,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [
           "scout"
@@ -612,7 +554,7 @@
         "destroyedBases": [],
         "winner": "UmmActually",
         "winCondition": "resignation",
-        "drawCount": 0,
+        "drawCount": -5,
         "authority": {
           "GASmokeDiver": {
             "diff": -6,

@@ -6,9 +6,17 @@ import StarStarVisitor from './antlr4bis/StarStarVisitor.js';
 class Visitor extends StarStarVisitor {
     visitBattle(ctx) {
         let rounds = []
+        let firstPlayer = ""
+        let secondPlayer = ""
         for (let i = 0; i < ctx.turn().length; i++) {
             let turn = this.visit(ctx.turn()[i])
             //console.log(turn)
+            if(i == 0){
+                firstPlayer = turn["currentPlayer"]
+            }
+            if(i == 1){
+                secondPlayer = turn["currentPlayer"]
+            }
             let formattedRound = {
                 tradePool: 0,
                 combatPool: 0,
@@ -25,7 +33,14 @@ class Visitor extends StarStarVisitor {
                 drawCount: 0,
                 authority: {},
             }
-            let currentPlayer = turn["currentPlayer"] == '' ? turn["winner"] : turn["currentPlayer"];
+            let currentPlayer = turn["currentPlayer"];
+            if(currentPlayer == ''){
+                if(i % 2 == 0){
+                    currentPlayer = firstPlayer
+                }else{
+                    currentPlayer = secondPlayer
+                }
+            }
             formattedRound["player"] = currentPlayer
             if (Object.keys(turn["players"]).length != 0) {
                 formattedRound["tradePool"] = turn["players"][currentPlayer]["tradePool"]
@@ -53,7 +68,7 @@ class Visitor extends StarStarVisitor {
             rounds.push(formattedRound)
         }
         return {
-            firstPlayer: rounds[0]["player"],
+            firstPlayer: firstPlayer,
             winner: rounds[rounds.length - 1]["winner"],
             rounds: rounds,
             winCondition: rounds[rounds.length - 1]["winCondition"]
@@ -159,6 +174,9 @@ class Visitor extends StarStarVisitor {
             else if("concede" in action){
                 turnData["winCondition"] = "resignation"
             }
+            else if("timeout" in action){
+                turnData["winCondition"] = "timeout"
+            }
         }
         //console.log(turnData)
         return turnData
@@ -212,7 +230,11 @@ class Visitor extends StarStarVisitor {
             return {
                 concede: this.visit(ctx.concede())
             }
-        }else {
+        }else if (ctx.timeout()){
+            return {
+                timeout: this.visit(ctx.timeout())
+            }
+        } else {
             return {}
         }
     }
@@ -381,6 +403,10 @@ class Visitor extends StarStarVisitor {
     }
 
     visitConcede(ctx){
+        return this.visit(ctx.name())
+    }
+
+    visitTimeout(ctx){
         return this.visit(ctx.name())
     }
 

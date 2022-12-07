@@ -248,6 +248,15 @@ export default class StarStarListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarStarParser#timeout.
+	enterTimeout(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#timeout.
+	exitTimeout(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarStarParser#shuffleCards.
 	enterShuffleCards(ctx) {
 	}

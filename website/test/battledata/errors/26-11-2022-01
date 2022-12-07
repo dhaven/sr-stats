@@ -14,7 +14,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "graymarket"
         ],
@@ -38,7 +37,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -63,7 +61,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -85,11 +82,10 @@
         "usedCombat": -1,
         "purchasedCards": [
           "blobdestroyer",
-          "explorertothetopofthedeck"
+          "explorer"
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "exploration",
           "viper"
@@ -117,7 +113,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -138,7 +133,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -163,9 +157,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlestation"
-        ],
         "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
@@ -191,12 +182,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "explorer",
-          "recyclebot",
-          "scout",
-          "scout"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -220,15 +205,13 @@
           "convert"
         ],
         "events": [],
-        "playedCards": [
-          "converter",
-          "coalitionfreighter"
-        ],
         "scrappedCards": [
           "viper",
           "scout"
         ],
-        "discardedCards": [],
+        "discardedCards": [
+          "scout"
+        ],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
@@ -254,9 +237,6 @@
         "completedMissions": [],
         "events": [
           "patiencerewarded"
-        ],
-        "playedCards": [
-          "patrolbot"
         ],
         "scrappedCards": [
           "dreadnaught",
@@ -290,7 +270,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "defensesystem"
         ],
@@ -310,12 +289,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "missilebot",
-          "recyclebot",
-          "imperialfrigate",
-          "blobdestroyer"
-        ],
         "scrappedCards": [
           "viper",
           "scout"
@@ -341,9 +314,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlestation"
-        ],
         "scrappedCards": [],
         "discardedCards": [
           "viper",
@@ -371,7 +341,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [],
         "scrappedCards": [
           "tradestar",
           "explorer",
@@ -405,9 +374,6 @@
         "events": [
           "trademission"
         ],
-        "playedCards": [
-          "coalitionfreighter"
-        ],
         "scrappedCards": [
           "chancellorhartman",
           "viper",
@@ -433,13 +399,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "stellarreef",
-          "blobdestroyer",
-          "missilebot",
-          "patrolbot",
-          "explorer"
-        ],
         "scrappedCards": [
           "scout",
           "scout",
@@ -466,10 +425,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlestation",
-          "unityfighter"
-        ],
         "scrappedCards": [
           "thewrecker"
         ],
@@ -493,12 +448,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "starfortress",
-          "missilebot",
-          "imperialfrigate",
-          "recyclebot"
-        ],
         "scrappedCards": [
           "scout",
           "scout",
@@ -529,17 +478,13 @@
         "usedTrade": -6,
         "usedCombat": -12,
         "purchasedCards": [
+          "battlebarge",
           "battlebarge"
         ],
         "completedMissions": [
           "diversify"
         ],
         "events": [],
-        "playedCards": [
-          "coalitionfreighter",
-          "converter",
-          "battlebarge"
-        ],
         "scrappedCards": [
           "scout",
           "scout",
@@ -575,12 +520,6 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "missilebot",
-          "missilebot",
-          "patrolbot",
-          "stellarreef"
-        ],
         "scrappedCards": [
           "scout"
         ],
@@ -611,11 +550,6 @@
         ],
         "completedMissions": [],
         "events": [],
-        "playedCards": [
-          "battlestation",
-          "unityfighter",
-          "farmship"
-        ],
         "scrappedCards": [
           "gunship"
         ],
@@ -644,16 +578,6 @@
           "colonize"
         ],
         "events": [],
-        "playedCards": [
-          "spacestation",
-          "imperialfrigate",
-          "blobdestroyer",
-          "missilebot",
-          "missilebot",
-          "starfortress",
-          "stellarreef",
-          "patrolbot"
-        ],
         "scrappedCards": [
           "imperialfrigate",
           "stellarreef",
@@ -665,7 +589,7 @@
         ],
         "winner": "Player",
         "winCondition": "",
-        "drawCount": 3,
+        "drawCount": -2,
         "authority": {
           "HardAI": {
             "diff": -28,
