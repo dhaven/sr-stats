@@ -262,9 +262,6 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "transitnexus",
-          "emperor'sdreadnaught",
-          "federationbattleship",
           "smugglingrun"
         ],
         "discardedCards": [],
@@ -375,11 +372,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "theincinerator",
-          "warningbeacon",
-          "commandcenter"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
@@ -491,9 +484,7 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "imperialflagship"
-        ],
+        "scrappedCards": [],
         "discardedCards": [
           "scout"
         ],

@@ -228,7 +228,6 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "secretoutpost",
           "explorer"
         ],
         "discardedCards": [],
@@ -385,6 +384,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
+          "asteroidmining",
           "asteroidmining2",
           "smugglingrun"
         ],

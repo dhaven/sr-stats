@@ -3,6 +3,56 @@ import StarStarLexer from './antlr4bis/StarStarLexer.js';
 import StarStarParser from './antlr4bis/StarStarParser.js';
 import StarStarVisitor from './antlr4bis/StarStarVisitor.js';
 
+const cardsWithDeckScrapAbility = [
+    "acceptablelosses",
+    "assimilator",
+    "battlebot",
+    "battlemech",
+    "blobbot",
+    "borderfort",
+    "builderbot",
+    "brainworld",
+    "cargomech",
+    "chancellorhartman",
+    "coalitionfreighter",
+    "confessormorris",
+    "conversionyard",
+    "converter",
+    "convoybot",
+    "deathworld",
+    "defensebot",
+    "destroyerbot",
+    "enforcermech",
+    "exploration",
+    "fortressoblivion",
+    "junkyard",
+    "lesforay",
+    "machinebase",
+    "mechcommandship",
+    "mechcruiser",
+    "mechwurm",
+    "miningmech",
+    "missilebot",
+    "nanobotswarm",
+    "neuralnexus",
+    "patrolbot",
+    "patrolmech",
+    "plasmabot",
+    "probebot",
+    "reclamationstation",
+    "recyclebot",
+    "repairbot",
+    "repairmech",
+    "salvagedrone",
+    "supplybot",
+    "tankermech",
+    "theark",
+    "thecitadel",
+    "theincinerator",
+    "theoracle",
+    "thewrecker",
+    "tradebot"
+]
 class Visitor extends StarStarVisitor {
     visitBattle(ctx) {
         let rounds = []
@@ -130,14 +180,46 @@ class Visitor extends StarStarVisitor {
                         turnData["players"][playerName]["newAuthority"] = player["newAuthority"]
                     }
                 }
-                turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
+                //turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
                 turnData["drawCount"] += action["cardAction"]["cardEffect"]["drawCount"]
                 turnData["purchasedCards"] = turnData["purchasedCards"].concat(action["cardAction"]["cardEffect"]["acquiredCards"])
                 if ("event" in action["cardAction"]["trigger"]) {
                     turnData["events"] = turnData["events"].concat(action["cardAction"]["trigger"]["event"])
                 }
-                if ("mission" in action["cardAction"]["trigger"]) {
+                else if ("mission" in action["cardAction"]["trigger"]) {
                     turnData["missions"] = turnData["missions"].concat(action["cardAction"]["trigger"]["mission"])
+                }
+                else if("scrapSelf" in action["cardAction"]["trigger"]){
+                    turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["trigger"]["scrapSelf"])
+                    //in some cases self-scrap can trigger the scrap of deck cards
+                    //console.log(action["cardAction"]["trigger"]["scrapSelf"])
+                    //console.log(action["cardAction"]["cardEffect"])
+                    if(cardsWithDeckScrapAbility.includes(action["cardAction"]["trigger"]["scrapSelf"])){
+                        turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrapSummary"])
+                    }
+                    if(action["cardAction"]["trigger"]["scrapSelf"] == "acceptablelosses"){
+                        //scrapping this card does not result in a "player is scrapping X" so we need to check the scrapped cards
+                        for(let i = 0; i < action["cardAction"]["cardEffect"]["scrap"].length; i++){
+                            if(action["cardAction"]["cardEffect"]["scrap"][i] != "acceptablelosses"){
+                                turnData["scrappedCards"].push(action["cardAction"]["cardEffect"]["scrap"][i])
+                            }
+                        }
+                    }
+                }
+                else if("play" in action["cardAction"]["trigger"]){
+                    if(cardsWithDeckScrapAbility.includes(action["cardAction"]["trigger"]["play"])){
+                        if(action["cardAction"]["cardEffect"]["scrapSummary"].length != 0){
+                            turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrapSummary"])
+                        }else{
+                            //for some cards (battle bot) the instant effect doesn't result in a "player is scrapping  X"
+                            turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
+                        }
+                    }
+                }
+                else if("activate" in action["cardAction"]["trigger"]){
+                    if(cardsWithDeckScrapAbility.includes(action["cardAction"]["trigger"]["activate"])){
+                        turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
+                    }
                 }
             }
             else if ("balanceUpdate" in action) {
@@ -169,7 +251,9 @@ class Visitor extends StarStarVisitor {
                 turnData["winner"] = action["winner"]
             }
             else if ("scrapped" in action) {
-                turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["scrapped"])
+                if(action["scrapped"] == "graymarket"){
+                    turnData["scrappedCards"].push(action["scrapped"])
+                }
             }
             else if("concede" in action){
                 turnData["winCondition"] = "resignation"
@@ -244,6 +328,7 @@ class Visitor extends StarStarVisitor {
             trigger: this.visit(ctx.cardTrigger()),
             cardEffect: {
                 scrap: [],
+                scrapSummary: [],
                 drawCount: 0,
                 players: [],
                 acquiredCards: []
@@ -278,6 +363,9 @@ class Visitor extends StarStarVisitor {
             }
             if ("acquiredCard" in cardEffect) {
                 cardAction["cardEffect"]["acquiredCards"].push(cardEffect["acquiredCard"])
+            }
+            if("scrapSummary" in cardEffect){
+                cardAction["cardEffect"]["scrapSummary"].push(cardEffect["scrapSummary"])
             }
         }
         return cardAction
@@ -314,10 +402,8 @@ class Visitor extends StarStarVisitor {
         if (ctx.balanceUpdate()) {
             cardEffect["balanceUpdate"] = this.visit(ctx.balanceUpdate())
         } else if (ctx.scrapped()) {
-            //console.log(`Card: ${this.visit(ctx.scrapped())} has been scrapped`)
             cardEffect["scrapped"] = this.visit(ctx.scrapped())
         } else if (ctx.scrapSummary()) {
-            //console.log(`Card: ${this.visit(ctx.scrapSummary())} has been scrapped`)
             cardEffect["scrapSummary"] = this.visit(ctx.scrapSummary())
         } else if (ctx.drawCards()) {
             cardEffect["drawCount"] = this.visit(ctx.drawCards())
@@ -453,7 +539,7 @@ class Visitor extends StarStarVisitor {
     }
 
     visitCard(ctx) {
-        return ctx.getText().toLowerCase()
+        return ctx.getText().toLowerCase().replace("\'", "")
     }
 
     visitName(ctx) {

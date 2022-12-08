@@ -262,9 +262,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "bioformer"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
@@ -378,9 +376,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "theincinerator"
-        ],
+        "scrappedCards": [],
         "discardedCards": [
           "viper"
         ],

@@ -10,7 +10,6 @@ cardEffect        : balanceUpdate | scrapped | scrapSummary | drawCards | shuffl
 skipText          : (customWord | INT | DECREASE | SEPARATOR | '(' | ':' | ')')+ ;
 balanceUpdate     : name SEPARATOR card? effect '('customWord':'(INT | DECREASE)')' NEWLINE;
 otherEffect       : name SEPARATOR card? customWord+ NEWLINE ;
-cardActivation    : ACTIVATING card NEWLINE ;
 scrapSummary      : name IS SCRAPPING (':')? card NEWLINE;
 discarded         : DISCARDED card NEWLINE ;
 winStatus         : name HAS WON THE GAME NEWLINE? ;

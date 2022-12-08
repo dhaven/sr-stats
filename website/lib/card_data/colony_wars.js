@@ -129,8 +129,8 @@ export const colony_wars = {
                 }
             }
         },
-        "emperor'sdreadnaught": {
-            "name": "Emperor's Dreadnaught",
+        "emperorsdreadnaught": {
+            "name": "Emperors Dreadnaught",
             "cost": 8,
             "faction": [
                 "Star Empire"

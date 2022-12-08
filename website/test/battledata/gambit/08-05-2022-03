@@ -135,10 +135,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "emperor'sdreadnaught",
-          "storagesilo"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
@@ -295,9 +292,6 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "transitnexus",
-          "destroyerbot",
-          "solarskiff",
           "blobminer"
         ],
         "discardedCards": [],
@@ -476,10 +470,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "federationbattleship",
-          "frontierferry"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
