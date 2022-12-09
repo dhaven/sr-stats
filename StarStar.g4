@@ -25,7 +25,9 @@ activate          : ACTIVATING card NEWLINE;
 scrapSelf         : SCRAPPING card NEWLINE;
 endTurn           : name ENDS TURN INT NEWLINE;
 startTurn         : IT IS NOW name '\'s' TURN INT NEWLINE;
-resolving         : RESOLVING (customWord | INT)+ NEWLINE;
+resolving         : resolveScrapHand | resolveOthers;
+resolveScrapHand  : RESOLVING SCRAP WORD CARD FROM YOUR HAND NEWLINE;
+resolveOthers     : RESOLVING (customWord | INT)+ NEWLINE;
 concede           : name '('INT ')' CONCEDED NEWLINE;
 timeout           : name WINS THE GAME NEWLINE;
 
@@ -36,7 +38,7 @@ drawCards         : DREW INT CARDS NEWLINE;
 
 card              : ((customWord '\'s'?) | INT)+ ;
 name              : customWord+ ;
-customWord        : WORD|ACQUIRED|ACTIVATING|ALL|ALLY|CARDS|CONCEDED|DECK|DESTROYED|DISCARD|DISCARDING|DREW|ENDS|EVENT|FORM|GAME|HAND|HAS|INDICATORS|IS|IT|NEW|NOW|OF|PILE|PLAY|PLAYED|REFRESH|RESOLVING|REVEALED|SCRAPPED|SCRAPPING|SHUFFLED|THE|TO|TOP|TURN|WINS|WON;
+customWord        : WORD|ACQUIRED|ACTIVATING|ALL|ALLY|CARD|CARDS|CONCEDED|DECK|DESTROYED|DISCARD|DISCARDING|DREW|ENDS|EVENT|FORM|FROM|GAME|HAND|HAS|INDICATORS|IS|IT|NEW|NOW|OF|PILE|PLAY|PLAYED|REFRESH|RESOLVING|REVEALED|SCRAP|SCRAPPED|SCRAPPING|SHUFFLED|THE|TO|TOP|TURN|WINS|WON|YOUR;
 
 fragment A : ('A'|'a');
 fragment B : ('B'|'b');
@@ -69,6 +71,7 @@ ACQUIRED            : A C Q U I R E D ;
 ACTIVATING          : A C T I V A T I N G ;
 ALL                 : A L L ;
 ALLY                : A L L Y ;
+CARD                : C A R D ;
 CARDS               : C A R D S ;
 CONCEDED            : C O N C E D E D ;
 DECK                : D E C K ;
@@ -80,6 +83,7 @@ DREW                : D R E W ;
 ENDS                : E N D S ;
 EVENT               : E V E N T ;
 FORM                : F O R M ;
+FROM                : F R O M ;
 GAME                : G A M E ;
 HAND                : H A N D ;
 HAS                 : H A S ;
@@ -95,6 +99,7 @@ PLAYED              : P L A Y E D ;
 REFRESH             : R E F R E S H ;
 REVEALED            : R E V E A L E D ;
 RESOLVING           : R E S O L V I N G ;
+SCRAP               : S C R A P ;
 SCRAPPED            : S C R A P P E D ;
 SCRAPPING           : S C R A P P I N G ;
 SHUFFLED            : S H U F F L E D ;
@@ -104,6 +109,7 @@ TOP                 : T O P ;
 TURN                : T U R N ;
 WINS                : W I N S ;
 WON                 : W O N ;
+YOUR                : Y O U R ;
 
 
 WHITESPACE          : (' ' | '\t') -> skip ;

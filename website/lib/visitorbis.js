@@ -190,10 +190,13 @@ class Visitor extends StarStarVisitor {
                     turnData["missions"] = turnData["missions"].concat(action["cardAction"]["trigger"]["mission"])
                 }
                 else if("scrapSelf" in action["cardAction"]["trigger"]){
-                    turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["trigger"]["scrapSelf"])
+                    //check if we are scrapping a stealthneedle
+                    if(action["cardAction"]["cardEffect"]["scrap"].includes("stealthneedle")){
+                        turnData["scrappedCards"].push("stealthneedle")
+                    }else{
+                        turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["trigger"]["scrapSelf"])
+                    }
                     //in some cases self-scrap can trigger the scrap of deck cards
-                    //console.log(action["cardAction"]["trigger"]["scrapSelf"])
-                    //console.log(action["cardAction"]["cardEffect"])
                     if(cardsWithDeckScrapAbility.includes(action["cardAction"]["trigger"]["scrapSelf"])){
                         turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrapSummary"])
                     }
@@ -220,6 +223,8 @@ class Visitor extends StarStarVisitor {
                     if(cardsWithDeckScrapAbility.includes(action["cardAction"]["trigger"]["activate"])){
                         turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
                     }
+                }else if("resolve" in action["cardAction"]["trigger"]){
+                    turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
                 }
             }
             else if ("balanceUpdate" in action) {
@@ -391,6 +396,10 @@ class Visitor extends StarStarVisitor {
         } else if (ctx.mission()) {
             return {
                 "mission": this.visit(ctx.mission())
+            }
+        } else if(ctx.resolving().resolveScrapHand()){
+            return {
+                "resolve": true
             }
         } else {
             return {}

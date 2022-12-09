@@ -86,15 +86,6 @@ export default class StarStarListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
-	// Enter a parse tree produced by StarStarParser#cardActivation.
-	enterCardActivation(ctx) {
-	}
-
-	// Exit a parse tree produced by StarStarParser#cardActivation.
-	exitCardActivation(ctx) {
-	}
-
-
 	// Enter a parse tree produced by StarStarParser#scrapSummary.
 	enterScrapSummary(ctx) {
 	}
@@ -236,6 +227,24 @@ export default class StarStarListener extends antlr4.tree.ParseTreeListener {
 
 	// Exit a parse tree produced by StarStarParser#resolving.
 	exitResolving(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarStarParser#resolveScrapHand.
+	enterResolveScrapHand(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#resolveScrapHand.
+	exitResolveScrapHand(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarStarParser#resolveOthers.
+	enterResolveOthers(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#resolveOthers.
+	exitResolveOthers(ctx) {
 	}
 
 

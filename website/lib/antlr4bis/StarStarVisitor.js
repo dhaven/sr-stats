@@ -60,12 +60,6 @@ export default class StarStarVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
-	// Visit a parse tree produced by StarStarParser#cardActivation.
-	visitCardActivation(ctx) {
-	  return this.visitChildren(ctx);
-	}
-
-
 	// Visit a parse tree produced by StarStarParser#scrapSummary.
 	visitScrapSummary(ctx) {
 	  return this.visitChildren(ctx);
@@ -158,6 +152,18 @@ export default class StarStarVisitor extends antlr4.tree.ParseTreeVisitor {
 
 	// Visit a parse tree produced by StarStarParser#resolving.
 	visitResolving(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarStarParser#resolveScrapHand.
+	visitResolveScrapHand(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarStarParser#resolveOthers.
+	visitResolveOthers(ctx) {
 	  return this.visitChildren(ctx);
 	}
 
