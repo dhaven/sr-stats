@@ -20,7 +20,6 @@
           "patiencerewarded"
         ],
         "scrappedCards": [
-          "cutter",
           "traderowslot"
         ],
         "discardedCards": [],
@@ -34,7 +33,10 @@
             "new": 49
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": [
+          "cutter"
+        ]
       },
       {
         "tradePool": 6,
@@ -47,9 +49,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "supplybot"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
@@ -61,7 +61,10 @@
             "new": 49
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": [
+          "supplybot"
+        ]
       },
       {
         "tradePool": 4,
@@ -396,7 +399,6 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "battlecruiser",
           "explorer"
         ],
         "discardedCards": [],
@@ -445,7 +447,6 @@
         "events": [],
         "scrappedCards": [
           "viper",
-          "flagship",
           "explorer",
           "traderowslot"
         ],

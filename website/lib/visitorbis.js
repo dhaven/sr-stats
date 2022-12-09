@@ -115,6 +115,7 @@ class Visitor extends StarStarVisitor {
             formattedRound["winner"] = turn["winner"]
             formattedRound["winCondition"] = turn["winCondition"]
             formattedRound["drawCount"] = turn["drawCount"]
+            formattedRound["tradeRowSlot"] = turn["traderowslot"]
             rounds.push(formattedRound)
         }
         return {
@@ -133,6 +134,7 @@ class Visitor extends StarStarVisitor {
             destroyedBases: [],
             events: [],
             missions: [],
+            tradeRowSlot: [],
             winner: "",
             winCondition: "",
             drawCount: 0,
@@ -225,6 +227,8 @@ class Visitor extends StarStarVisitor {
                     }
                 }else if("resolve" in action["cardAction"]["trigger"]){
                     turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
+                }else if("traderowslot" in action["cardAction"]["trigger"]){
+                    turnData["traderowslot"] = action["cardAction"]["cardEffect"]["scrap"]
                 }
             }
             else if ("balanceUpdate" in action) {
@@ -507,6 +511,10 @@ class Visitor extends StarStarVisitor {
         }else if(ctx.resolveScrapMultiple()){
             return {
                 "resolve": true
+            }
+        }else if(ctx.resolvePatience()){
+            return {
+                "traderowslot": true
             }
         }else {
             return {}

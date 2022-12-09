@@ -257,6 +257,15 @@ export default class StarStarListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarStarParser#resolvePatience.
+	enterResolvePatience(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#resolvePatience.
+	exitResolvePatience(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarStarParser#resolveOthers.
 	enterResolveOthers(ctx) {
 	}
