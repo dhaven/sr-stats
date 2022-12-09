@@ -175,10 +175,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "deathworld",
-          "thehive"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
@@ -280,9 +277,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "machinebase"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
           "tradingpost"
@@ -334,10 +329,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "flagship",
-          "blobcarrier"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
@@ -415,8 +407,6 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "defensecenter",
-          "cargorocket",
           "explorer"
         ],
         "discardedCards": [],
@@ -556,8 +546,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "battleblob",
-          "plaguepod"
+          "battleblob"
         ],
         "discardedCards": [],
         "destroyedBases": [],

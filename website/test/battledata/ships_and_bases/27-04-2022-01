@@ -333,8 +333,7 @@
         "events": [],
         "scrappedCards": [
           "viper",
-          "explorer",
-          "tradeenvoy"
+          "explorer"
         ],
         "discardedCards": [],
         "destroyedBases": [],
@@ -363,9 +362,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "cargorocket"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
           "fleethq",

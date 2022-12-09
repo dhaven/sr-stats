@@ -205,9 +205,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "swarmingpoint"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
@@ -310,9 +308,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "fleethq"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
           "warworld"
@@ -357,9 +353,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "demolisher"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
@@ -460,7 +454,6 @@
         "events": [],
         "scrappedCards": [
           "viper",
-          "blobworld",
           "explorer",
           "explorer"
         ],
