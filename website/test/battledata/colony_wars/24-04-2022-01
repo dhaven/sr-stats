@@ -292,9 +292,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "theincinerator"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
           "storagesilo"
@@ -375,10 +373,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "cargopod",
-          "orbitalplatform"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
           "federationshipyard"
@@ -468,8 +463,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "scout",
-          "gunship"
+          "scout"
         ],
         "discardedCards": [],
         "destroyedBases": [
@@ -534,8 +528,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "scout",
-          "repairbot"
+          "scout"
         ],
         "discardedCards": [],
         "destroyedBases": [],
