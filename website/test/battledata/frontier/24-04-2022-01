@@ -716,8 +716,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "scout",
-          "swarmcluster"
+          "scout"
         ],
         "discardedCards": [
           "scout"
@@ -806,7 +805,6 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "blobminer",
           "scout"
         ],
         "discardedCards": [],
@@ -1065,8 +1063,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "frontierhawk",
-          "neuralnexus"
+          "frontierhawk"
         ],
         "discardedCards": [],
         "destroyedBases": [
@@ -1126,7 +1123,6 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "cargocraft",
           "scout",
           "reclamationstation",
           "longhauler",

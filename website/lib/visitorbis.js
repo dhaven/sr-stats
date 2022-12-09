@@ -504,6 +504,10 @@ class Visitor extends StarStarVisitor {
             return {
                 "resolve": true
             }
+        }else if(ctx.resolveScrapMultiple()){
+            return {
+                "resolve": true
+            }
         }else {
             return {}
         }

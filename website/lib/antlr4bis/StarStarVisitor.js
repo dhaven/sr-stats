@@ -168,6 +168,12 @@ export default class StarStarVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
+	// Visit a parse tree produced by StarStarParser#resolveScrapMultiple.
+	visitResolveScrapMultiple(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
 	// Visit a parse tree produced by StarStarParser#resolveOthers.
 	visitResolveOthers(ctx) {
 	  return this.visitChildren(ctx);
