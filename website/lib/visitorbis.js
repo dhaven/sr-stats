@@ -14,6 +14,7 @@ const cardsWithDeckScrapAbility = [
     "builderbot",
     "brainworld",
     "cargomech",
+    "cargorocket",
     "chancellorhartman",
     "coalitionfreighter",
     "confessormorris",
@@ -22,6 +23,7 @@ const cardsWithDeckScrapAbility = [
     "convoybot",
     "deathworld",
     "defensebot",
+    "demolisher",
     "destroyerbot",
     "enforcermech",
     "exploration",
@@ -39,6 +41,7 @@ const cardsWithDeckScrapAbility = [
     "neuralnexus",
     "patrolbot",
     "patrolmech",
+    "plaguepod",
     "plasmabot",
     "probebot",
     "reclamationstation",
@@ -54,7 +57,8 @@ const cardsWithDeckScrapAbility = [
     "theincinerator",
     "theoracle",
     "thewrecker",
-    "tradebot"
+    "tradebot",
+    "tradeenvoy"
 ]
 class Visitor extends StarStarVisitor {
     visitBattle(ctx) {
