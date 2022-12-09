@@ -745,10 +745,8 @@
         "events": [],
         "scrappedCards": [
           "explorer",
-          "royalredoubt",
           "chairmanhaygan",
-          "screecher",
-          "spacestation"
+          "screecher"
         ],
         "discardedCards": [],
         "destroyedBases": [

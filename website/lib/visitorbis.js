@@ -25,6 +25,7 @@ const cardsWithDeckScrapAbility = [
     "enforcermech",
     "exploration",
     "fortressoblivion",
+    "highpriestlyle",
     "junkyard",
     "lesforay",
     "machinebase",
