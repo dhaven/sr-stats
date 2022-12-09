@@ -134,8 +134,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "walsh'sstratagem",
-          "commandship"
+          "walshsstratagem"
         ],
         "discardedCards": [],
         "destroyedBases": [],
@@ -269,7 +268,7 @@
         "scrappedCards": [
           "viper",
           "blobwheel",
-          "walsh'sstratagem"
+          "walshsstratagem"
         ],
         "discardedCards": [],
         "destroyedBases": [
@@ -355,9 +354,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "mechwurm"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
           "blobworld"
@@ -593,7 +590,6 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "missilemech",
           "explorer"
         ],
         "discardedCards": [],

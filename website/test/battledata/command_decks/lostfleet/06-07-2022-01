@@ -132,7 +132,7 @@
         "events": [],
         "scrappedCards": [
           "salvageshard",
-          "jochum'sgranddesign"
+          "jochumsgranddesign"
         ],
         "discardedCards": [
           "salvageshard",
@@ -600,7 +600,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "jochum'sgranddesign"
+          "jochumsgranddesign"
         ],
         "discardedCards": [
           "salvageshard",
@@ -715,7 +715,6 @@
         "events": [],
         "scrappedCards": [
           "tradebot",
-          "fleethq",
           "blobwheel"
         ],
         "discardedCards": [],
@@ -845,7 +844,6 @@
           "imperialfighter",
           "missilebot",
           "reconshard",
-          "mothership",
           "battlecruiser",
           "dreadnaught"
         ],

@@ -39,7 +39,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "le'sforay",
+          "lesforay",
           "viper"
         ],
         "discardedCards": [
@@ -119,7 +119,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "le'sforay",
+          "lesforay",
           "explorer",
           "tradingpost"
         ],
@@ -542,8 +542,7 @@
         "scrappedCards": [
           "scout",
           "stellarfalcon",
-          "scoutbot",
-          "supplybot"
+          "scoutbot"
         ],
         "discardedCards": [
           "scout"

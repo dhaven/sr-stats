@@ -228,7 +228,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "valken'senterprise"
+          "valkensenterprise"
         ],
         "discardedCards": [],
         "destroyedBases": [
@@ -260,9 +260,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "coalitionstronghold"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
           "coalitionstronghold"
@@ -319,7 +317,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "valken'senterprise"
+          "valkensenterprise"
         ],
         "discardedCards": [],
         "destroyedBases": [
@@ -367,8 +365,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "federationscout",
-          "battleblob"
+          "federationscout"
         ],
         "discardedCards": [],
         "destroyedBases": [
@@ -456,8 +453,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "scout",
-          "coalitionstronghold"
+          "scout"
         ],
         "discardedCards": [],
         "destroyedBases": [
@@ -606,10 +602,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "fleethq",
-          "barterworld"
-        ],
+        "scrappedCards": [],
         "discardedCards": [
           "scout"
         ],
@@ -744,8 +737,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "scout",
-          "dreadnaught"
+          "scout"
         ],
         "discardedCards": [
           "scout"

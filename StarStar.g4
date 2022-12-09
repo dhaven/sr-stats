@@ -25,8 +25,9 @@ activate          : ACTIVATING card NEWLINE;
 scrapSelf         : SCRAPPING card NEWLINE;
 endTurn           : name ENDS TURN INT NEWLINE;
 startTurn         : IT IS NOW name '\'s' TURN INT NEWLINE;
-resolving         : resolveScrapHand | resolveOthers;
+resolving         : resolveScrapHand | resolveScrapHandOrDiscard | resolveOthers;
 resolveScrapHand  : RESOLVING SCRAP WORD CARD FROM YOUR HAND NEWLINE;
+resolveScrapHandOrDiscard : RESOLVING SCRAP WORD CARD FROM YOUR HAND OR DISCARD PILE NEWLINE;
 resolveOthers     : RESOLVING (customWord | INT)+ NEWLINE;
 concede           : name '('INT ')' CONCEDED NEWLINE;
 timeout           : name WINS THE GAME NEWLINE;
@@ -38,7 +39,7 @@ drawCards         : DREW INT CARDS NEWLINE;
 
 card              : ((customWord '\'s'?) | INT)+ ;
 name              : customWord+ ;
-customWord        : WORD|ACQUIRED|ACTIVATING|ALL|ALLY|CARD|CARDS|CONCEDED|DECK|DESTROYED|DISCARD|DISCARDING|DREW|ENDS|EVENT|FORM|FROM|GAME|HAND|HAS|INDICATORS|IS|IT|NEW|NOW|OF|PILE|PLAY|PLAYED|REFRESH|RESOLVING|REVEALED|SCRAP|SCRAPPED|SCRAPPING|SHUFFLED|THE|TO|TOP|TURN|WINS|WON|YOUR;
+customWord        : WORD|ACQUIRED|ACTIVATING|ALL|ALLY|CARD|CARDS|CONCEDED|DECK|DESTROYED|DISCARD|DISCARDING|DREW|ENDS|EVENT|FORM|FROM|GAME|HAND|HAS|INDICATORS|IS|IT|NEW|NOW|OF|OR|PILE|PLAY|PLAYED|REFRESH|RESOLVING|REVEALED|SCRAP|SCRAPPED|SCRAPPING|SHUFFLED|THE|TO|TOP|TURN|WINS|WON|YOUR;
 
 fragment A : ('A'|'a');
 fragment B : ('B'|'b');
@@ -93,6 +94,7 @@ IT                  : I T ;
 NEW                 : N E W ;
 NOW                 : N O W ;
 OF                  : O F ;
+OR                  : O R ;
 PILE                : P I L E ;
 PLAY                : P L A Y ;
 PLAYED              : P L A Y E D ;

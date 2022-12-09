@@ -397,10 +397,8 @@ class Visitor extends StarStarVisitor {
             return {
                 "mission": this.visit(ctx.mission())
             }
-        } else if(ctx.resolving().resolveScrapHand()){
-            return {
-                "resolve": true
-            }
+        } else if(ctx.resolving()){
+            return this.visit(ctx.resolving())
         } else {
             return {}
         }
@@ -495,6 +493,20 @@ class Visitor extends StarStarVisitor {
 
     visitEndTurn(ctx) {
         return this.visit(ctx.name())
+    }
+
+    visitResolving(ctx){
+        if(ctx.resolveScrapHand()){
+            return {
+                "resolve": true
+            }
+        }else if(ctx.resolveScrapHandOrDiscard()){
+            return {
+                "resolve": true
+            }
+        }else {
+            return {}
+        }
     }
 
     visitConcede(ctx){

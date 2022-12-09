@@ -41,7 +41,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "jochum'sgranddesign",
+          "jochumsgranddesign",
           "transportshard"
         ],
         "discardedCards": [
@@ -294,7 +294,6 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "brainworld",
           "ram"
         ],
         "discardedCards": [],
@@ -398,8 +397,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "transportshard",
-          "fleethq"
+          "transportshard"
         ],
         "discardedCards": [
           "assaultshard"
@@ -430,7 +428,7 @@
         "events": [],
         "scrappedCards": [
           "transportshard",
-          "jochum'sgranddesign"
+          "jochumsgranddesign"
         ],
         "discardedCards": [
           "assaultshard",
@@ -468,7 +466,6 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "surveyship",
           "assaultshard"
         ],
         "discardedCards": [
@@ -615,7 +612,6 @@
         "scrappedCards": [
           "assaultshard",
           "reconshard",
-          "centraloffice",
           "barterworld",
           "battleblob"
         ],
