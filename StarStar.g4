@@ -5,7 +5,7 @@ turn              : action+ startTurn?;
 action            : cardAcquisition | discarded | destroyBase | cardAction | balanceUpdate | drawCards | shuffleCards | endTurn | winStatus | scrapped | concede | timeout | resolveAlignmentBotScrap | (skipText NEWLINE);
 
 cardAction        : cardTrigger cardEffect*;
-cardTrigger       : playSingle | activate | scrapSelf | event | mission | resolving;
+cardTrigger       : playSingle | activate | scrapSelf | event | mission | resolving | choseScrapHandOrDiscard;
 cardEffect        : balanceUpdate | scrapped | scrapSummary | drawCards | shuffleCards | otherEffect | acquireToHand | acquireToDeck;
 skipText          : (customWord | INT | DECREASE | SEPARATOR | '(' | ':' | ')')+ ;
 balanceUpdate     : name SEPARATOR card? effect '('customWord':'(INT | DECREASE)')' NEWLINE;
@@ -31,6 +31,7 @@ resolveScrapHandOrDiscard : RESOLVING SCRAP WORD CARD FROM YOUR HAND OR DISCARD 
 resolveScrapMultiple : RESOLVING SCRAP UP TO INT CARDS FROM YOUR HAND OR DISCARD PILE NEWLINE;
 resolvePatience   : RESOLVING CHOOSE WORD CARD TO SET ASIDE NEWLINE;
 resolveOthers     : RESOLVING (customWord | INT)+ NEWLINE;
+choseScrapHandOrDiscard : CHOSE SCRAP WORD CARD FROM YOUR HAND OR DISCARD PILE NEWLINE ;
 
 // specific rule for alignment bot scrap ability
 resolveAlignmentBotScrap : choseScrapType alignBotScrap+ ;
@@ -49,7 +50,7 @@ drawCards         : DREW INT CARDS NEWLINE;
 
 card              : ((customWord '\'s'?) | INT)+ ;
 name              : customWord+ ;
-customWord        : WORD|ACQUIRED|ACTIVATING|ADD|ALL|ALLY|ANY|ASIDE|CARD|CARDS|CHOOSE|CHOSE|COMBAT|CONCEDED|DECK|DESTROYED|DISCARD|DISCARDING|DISCARDS|DREW|ENDS|EVENT|FORM|FROM|GAME|HAND|HAS|INDICATORS|IS|IT|NEW|NOW|OF|OPPONENT|OR|PILE|PLAY|PLAYED|REFRESH|RESOLVING|REVEALED|SCRAP|SCRAPPED|SCRAPPING|SET|SHUFFLED|THE|TO|TOP|TURN|UP|WINS|WON|YOUR;
+customWord        : WORD|ACQUIRED|ACTIVATING|ADD|ALL|ALLY|ANY|ASIDE|CARD|CARDS|CHOOSE|CHOSE|COMBAT|CONCEDED|DECK|DESTROYED|DISCARD|DISCARDING|DISCARDS|DREW|ENDS|EVENT|FORM|FROM|GAME|HAND|HAS|INDICATORS|IS|IT|NEW|NOT|NOW|OF|OPPONENT|OR|PILE|PLAY|PLAYED|REFRESH|RESOLVING|REVEALED|SCRAP|SCRAPPED|SCRAPPING|SET|SHUFFLED|THE|TO|TOP|TURN|UP|WINS|WON|YOUR;
 
 fragment A : ('A'|'a');
 fragment B : ('B'|'b');

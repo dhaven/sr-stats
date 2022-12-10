@@ -275,6 +275,15 @@ export default class StarStarListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarStarParser#choseScrapHandOrDiscard.
+	enterChoseScrapHandOrDiscard(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#choseScrapHandOrDiscard.
+	exitChoseScrapHandOrDiscard(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarStarParser#resolveAlignmentBotScrap.
 	enterResolveAlignmentBotScrap(ctx) {
 	}

@@ -4,7 +4,6 @@ import StarStarParser from './antlr4bis/StarStarParser.js';
 import StarStarVisitor from './antlr4bis/StarStarVisitor.js';
 
 const cardsWithDeckScrapAbility = [
-    "acceptablelosses",
     "assimilator",
     "battlebot",
     "battlemech",
@@ -26,11 +25,8 @@ const cardsWithDeckScrapAbility = [
     "demolisher",
     "destroyerbot",
     "enforcermech",
-    "exploration",
     "fortressoblivion",
-    "highpriestlyle",
     "junkyard",
-    "lesforay",
     "machinebase",
     "mechcommandship",
     "mechcruiser",
@@ -60,6 +56,15 @@ const cardsWithDeckScrapAbility = [
     "tradebot",
     "tradeenvoy"
 ]
+
+const selfScrapToDeckScrapCards = [
+    "acceptablelosses",
+    "chancellorhartman",
+    "exploration",
+    "highpriestlyle",
+    "lesforay",
+    "unityfighter"
+]
 class Visitor extends StarStarVisitor {
     visitBattle(ctx) {
         let rounds = []
@@ -67,7 +72,6 @@ class Visitor extends StarStarVisitor {
         let secondPlayer = ""
         for (let i = 0; i < ctx.turn().length; i++) {
             let turn = this.visit(ctx.turn()[i])
-            //console.log(turn)
             if(i == 0){
                 firstPlayer = turn["currentPlayer"]
             }
@@ -206,7 +210,7 @@ class Visitor extends StarStarVisitor {
                         turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["trigger"]["scrapSelf"])
                     }
                     //in some cases self-scrap can trigger the scrap of deck cards
-                    if(cardsWithDeckScrapAbility.includes(action["cardAction"]["trigger"]["scrapSelf"])){
+                    if(selfScrapToDeckScrapCards.includes(action["cardAction"]["trigger"]["scrapSelf"])){
                         turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrapSummary"])
                     }
                     if(action["cardAction"]["trigger"]["scrapSelf"] == "acceptablelosses"){
@@ -232,10 +236,15 @@ class Visitor extends StarStarVisitor {
                     if(cardsWithDeckScrapAbility.includes(action["cardAction"]["trigger"]["activate"])){
                         turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
                     }
-                }else if("resolve" in action["cardAction"]["trigger"]){
+                }
+                else if("resolve" in action["cardAction"]["trigger"]){
                     turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
-                }else if("traderowslot" in action["cardAction"]["trigger"]){
+                }
+                else if("traderowslot" in action["cardAction"]["trigger"]){
                     turnData["traderowslot"] = action["cardAction"]["cardEffect"]["scrap"]
+                }
+                else if("chose" in action["cardAction"]["trigger"]){
+                    turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
                 }
             }
             else if ("balanceUpdate" in action) {
@@ -443,7 +452,11 @@ class Visitor extends StarStarVisitor {
             }
         } else if(ctx.resolving()){
             return this.visit(ctx.resolving())
-        } else {
+        } else if(ctx.choseScrapHandOrDiscard()){
+            return {
+                "chose": true
+            }
+        }else {
             return {}
         }
     }

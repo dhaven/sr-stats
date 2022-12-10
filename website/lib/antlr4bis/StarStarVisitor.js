@@ -186,6 +186,12 @@ export default class StarStarVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
+	// Visit a parse tree produced by StarStarParser#choseScrapHandOrDiscard.
+	visitChoseScrapHandOrDiscard(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
 	// Visit a parse tree produced by StarStarParser#resolveAlignmentBotScrap.
 	visitResolveAlignmentBotScrap(ctx) {
 	  return this.visitChildren(ctx);
