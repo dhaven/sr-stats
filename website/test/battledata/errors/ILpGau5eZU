@@ -47,9 +47,7 @@
         ],
         "scrappedCards": [
           "assaultshard",
-          "jochum'sgranddesign",
-          "patrolboat",
-          "secretsplintertech"
+          "jochumsgranddesign"
         ],
         "discardedCards": [
           "salvageshard",
@@ -86,7 +84,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "mccready'smaneuver"
+          "mccreadysmaneuver"
         ],
         "discardedCards": [
           "scout",
@@ -117,9 +115,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "operationsplatform"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
@@ -167,8 +163,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "assaultshard",
-          "secretsplintertech"
+          "assaultshard"
         ],
         "discardedCards": [
           "salvageshard",
@@ -192,10 +187,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "hivequeen",
-          "swarmcluster"
-        ],
+        "scrappedCards": [],
         "discardedCards": [
           "scout"
         ],
@@ -247,12 +239,7 @@
           "supernova"
         ],
         "scrappedCards": [
-          "scout",
-          "coalitionfortress",
-          "commandcenter",
-          "ionstation",
-          "nestingground",
-          "corsair"
+          "scout"
         ],
         "discardedCards": [],
         "destroyedBases": [],
@@ -288,14 +275,10 @@
         ],
         "scrappedCards": [
           "salvageshard",
-          "demolisher",
-          "falcon",
           "screecher",
-          "corsair",
           "blobminer",
           "transportshard",
-          "reconshard",
-          "secretsplintertech"
+          "reconshard"
         ],
         "discardedCards": [
           "reconshard",

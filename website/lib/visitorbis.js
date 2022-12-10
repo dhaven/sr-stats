@@ -63,7 +63,8 @@ const selfScrapToDeckScrapCards = [
     "exploration",
     "highpriestlyle",
     "lesforay",
-    "unityfighter"
+    "unityfighter",
+    "warelder"
 ]
 class Visitor extends StarStarVisitor {
     visitBattle(ctx) {

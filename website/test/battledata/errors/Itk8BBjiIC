@@ -42,8 +42,7 @@
         "events": [],
         "scrappedCards": [
           "admiralrasmusson",
-          "newburg'sgame",
-          "alliancefrigate"
+          "newburgsgame"
         ],
         "discardedCards": [],
         "destroyedBases": [],
@@ -75,11 +74,10 @@
         "events": [],
         "scrappedCards": [
           "assaultshard",
-          "jochum'sgranddesign",
+          "jochumsgranddesign",
           "assaultshard",
           "highpriestlyle",
-          "assaultshard",
-          "secretsplintertech"
+          "assaultshard"
         ],
         "discardedCards": [
           "salvageshard",
@@ -103,9 +101,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "commodorezhang"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
@@ -133,9 +129,7 @@
         "events": [],
         "scrappedCards": [
           "transportshard",
-          "transportshard",
-          "secretsplintertech",
-          "secretsplintertech"
+          "transportshard"
         ],
         "discardedCards": [
           "transportshard",
@@ -164,8 +158,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "ripper",
-          "screecher"
+          "ripper"
         ],
         "discardedCards": [],
         "destroyedBases": [],
@@ -192,9 +185,7 @@
         "events": [],
         "scrappedCards": [
           "transportshard",
-          "reconshard",
-          "secretsplintertech",
-          "secretsplintertech"
+          "reconshard"
         ],
         "discardedCards": [
           "reconshard",
@@ -261,9 +252,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "salvageshard",
-          "embassybase",
-          "secretsplintertech"
+          "salvageshard"
         ],
         "discardedCards": [
           "salvageshard",
@@ -296,8 +285,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "scout",
-          "destroyerbot"
+          "scout"
         ],
         "discardedCards": [
           "scout"
@@ -328,10 +316,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "tradeenvoy",
-          "secretsplintertech"
-        ],
+        "scrappedCards": [],
         "discardedCards": [
           "alignmentbot",
           "builderbot",
@@ -399,9 +384,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "salvageshard",
-          "secretsplintertech",
-          "secretsplintertech"
+          "salvageshard"
         ],
         "discardedCards": [
           "salvageshard",
@@ -442,8 +425,7 @@
         "scrappedCards": [
           "scout",
           "scout",
-          "mobilemarket",
-          "thecolossus"
+          "mobilemarket"
         ],
         "discardedCards": [
           "scout"
@@ -482,7 +464,6 @@
           "salvageshard",
           "alignmentbot",
           "reconshard",
-          "commanderklik",
           "cunningcaptain",
           "blobminer",
           "builderbot",

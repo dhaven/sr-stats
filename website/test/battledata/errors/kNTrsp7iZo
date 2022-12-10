@@ -112,9 +112,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "missilemech"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
@@ -258,9 +256,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "defensecenter"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
           "tradingpost"
@@ -310,9 +306,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "mechworld"
-        ],
+        "scrappedCards": [],
         "discardedCards": [
           "scout"
         ],
@@ -419,8 +413,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "scout",
-          "blobworld"
+          "scout"
         ],
         "discardedCards": [],
         "destroyedBases": [
@@ -525,9 +518,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "thehive"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
           "recyclingstation"
@@ -582,7 +573,6 @@
         "events": [],
         "scrappedCards": [
           "scout",
-          "dreadnaught",
           "surveyship"
         ],
         "discardedCards": [],
