@@ -275,6 +275,60 @@ export default class StarStarListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarStarParser#resolveAlignmentBotScrap.
+	enterResolveAlignmentBotScrap(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#resolveAlignmentBotScrap.
+	exitResolveAlignmentBotScrap(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarStarParser#choseScrapType.
+	enterChoseScrapType(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#choseScrapType.
+	exitChoseScrapType(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarStarParser#choseScrapDiscard.
+	enterChoseScrapDiscard(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#choseScrapDiscard.
+	exitChoseScrapDiscard(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarStarParser#choseBattleAndDiscard.
+	enterChoseBattleAndDiscard(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#choseBattleAndDiscard.
+	exitChoseBattleAndDiscard(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarStarParser#alignBotScrap.
+	enterAlignBotScrap(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#alignBotScrap.
+	exitAlignBotScrap(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarStarParser#noscrap.
+	enterNoscrap(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#noscrap.
+	exitNoscrap(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarStarParser#concede.
 	enterConcede(ctx) {
 	}

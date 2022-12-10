@@ -156,9 +156,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "coalitionfortress"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
@@ -259,9 +257,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "junkyard"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",

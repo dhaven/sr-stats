@@ -186,6 +186,42 @@ export default class StarStarVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
+	// Visit a parse tree produced by StarStarParser#resolveAlignmentBotScrap.
+	visitResolveAlignmentBotScrap(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarStarParser#choseScrapType.
+	visitChoseScrapType(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarStarParser#choseScrapDiscard.
+	visitChoseScrapDiscard(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarStarParser#choseBattleAndDiscard.
+	visitChoseBattleAndDiscard(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarStarParser#alignBotScrap.
+	visitAlignBotScrap(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarStarParser#noscrap.
+	visitNoscrap(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
 	// Visit a parse tree produced by StarStarParser#concede.
 	visitConcede(ctx) {
 	  return this.visitChildren(ctx);

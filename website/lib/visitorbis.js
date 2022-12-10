@@ -277,6 +277,35 @@ class Visitor extends StarStarVisitor {
             else if("timeout" in action){
                 turnData["winCondition"] = "timeout"
             }
+            else if("alignBotScrap" in action){
+                turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["alignBotScrap"]["scrap"])
+                let listPlayers = Object.keys(action["alignBotScrap"]["players"])
+                for (let i = 0; i < listPlayers.length; i++) {
+                    let playerName = listPlayers[i]
+                    let player = action["alignBotScrap"]["players"][playerName]
+                    if (!(playerName in turnData["players"])) {
+                        turnData["players"][playerName] = {
+                            tradePool: player["tradePool"],
+                            usedTrade: player["usedTrade"],
+                            combatPool: player["combatPool"],
+                            usedCombat: player["usedCombat"],
+                            Authority: player["Authority"],
+                            Discard: player["Discard"],
+                        }
+                    } else {
+                        turnData["players"][playerName]["tradePool"] += player["tradePool"]
+                        turnData["players"][playerName]["usedTrade"] += player["usedTrade"]
+                        turnData["players"][playerName]["combatPool"] += player["combatPool"]
+                        turnData["players"][playerName]["usedCombat"] += player["usedCombat"]
+                        turnData["players"][playerName]["Authority"] += player["Authority"]
+                        turnData["players"][playerName]["Discard"] += player["Discard"]
+                    }
+                    if ("newAuthority" in player) {
+                        //console.log(player)
+                        turnData["players"][playerName]["newAuthority"] = player["newAuthority"]
+                    }
+                }
+            }
         }
         //console.log(turnData)
         return turnData
@@ -333,6 +362,10 @@ class Visitor extends StarStarVisitor {
         }else if (ctx.timeout()){
             return {
                 timeout: this.visit(ctx.timeout())
+            }
+        }else if(ctx.resolveAlignmentBotScrap()){
+            return {
+                alignBotScrap: this.visit(ctx.resolveAlignmentBotScrap())
             }
         } else {
             return {}
@@ -524,6 +557,52 @@ class Visitor extends StarStarVisitor {
                 "traderowslot": true
             }
         }else {
+            return {}
+        }
+    }
+
+    visitResolveAlignmentBotScrap(ctx){
+        let summary = {
+            scrap: [],
+            players: []
+        }
+        for(let i = 0; i < ctx.alignBotScrap().length; i++){
+            let result = this.visit(ctx.alignBotScrap()[i])
+            if("scrap" in result){
+                summary["scrap"].push(result["scrap"])
+            }
+            if("balanceUpdate" in result){
+                let target = result["balanceUpdate"]["target"]
+                if (!(target in summary["players"])) {
+                    summary["players"][target] = {
+                        tradePool: 0,
+                        usedTrade: 0,
+                        combatPool: 0,
+                        usedCombat: 0,
+                        Authority: 0,
+                        Discard: 0
+                    }
+                }
+                let category = result["balanceUpdate"]["effect"]["category"]
+                summary["players"][target][category] += result["balanceUpdate"]["effect"]["value"]
+                if (category == "Authority") {
+                    summary["players"][target]["newAuthority"] = result["balanceUpdate"]["newValue"]
+                }
+            }
+        }
+        return summary
+    }
+
+    visitAlignBotScrap(ctx){
+        if(ctx.scrapped()){
+            return  {
+                "scrap": this.visit(ctx.scrapped())
+            }
+        }else if(ctx.balanceUpdate()){
+            return {
+                "balanceUpdate": this.visit(ctx.balanceUpdate())
+            }
+        }else{
             return {}
         }
     }

@@ -2,7 +2,7 @@ grammar StarStar;
 
 battle            : turn+ EOF;
 turn              : action+ startTurn?;
-action            : cardAcquisition | discarded | destroyBase | cardAction | balanceUpdate | drawCards | shuffleCards | endTurn | winStatus | scrapped | concede | timeout | (skipText NEWLINE);
+action            : cardAcquisition | discarded | destroyBase | cardAction | balanceUpdate | drawCards | shuffleCards | endTurn | winStatus | scrapped | concede | timeout | resolveAlignmentBotScrap | (skipText NEWLINE);
 
 cardAction        : cardTrigger cardEffect*;
 cardTrigger       : playSingle | activate | scrapSelf | event | mission | resolving;
@@ -31,17 +31,25 @@ resolveScrapHandOrDiscard : RESOLVING SCRAP WORD CARD FROM YOUR HAND OR DISCARD 
 resolveScrapMultiple : RESOLVING SCRAP UP TO INT CARDS FROM YOUR HAND OR DISCARD PILE NEWLINE;
 resolvePatience   : RESOLVING CHOOSE WORD CARD TO SET ASIDE NEWLINE;
 resolveOthers     : RESOLVING (customWord | INT)+ NEWLINE;
+
+// specific rule for alignment bot scrap ability
+resolveAlignmentBotScrap : choseScrapType alignBotScrap+ ;
+choseScrapType    : choseScrapDiscard | choseBattleAndDiscard ;
+choseScrapDiscard : CHOSE SCRAP WORD CARD FROM YOUR DISCARD PILE NEWLINE ;
+choseBattleAndDiscard : CHOSE ADD INT COMBAT OPPONENT DISCARDS INT CARDS NEWLINE ;
+alignBotScrap     : scrapped | balanceUpdate | scrapSummary | noscrap;
+
+
+noscrap           : name IS NOT SCRAPPING ANY CARDS NEWLINE ;
 concede           : name '('INT ')' CONCEDED NEWLINE;
 timeout           : name WINS THE GAME NEWLINE;
-
-// atomic rules
 shuffleCards      : SHUFFLED DISCARD PILE TO FORM NEW DECK NEWLINE;
 effect            : (INCREMENT | DECREASE | INT) customWord ;
 drawCards         : DREW INT CARDS NEWLINE;
 
 card              : ((customWord '\'s'?) | INT)+ ;
 name              : customWord+ ;
-customWord        : WORD|ACQUIRED|ACTIVATING|ALL|ALLY|ASIDE|CARD|CARDS|CHOOSE|CONCEDED|DECK|DESTROYED|DISCARD|DISCARDING|DREW|ENDS|EVENT|FORM|FROM|GAME|HAND|HAS|INDICATORS|IS|IT|NEW|NOW|OF|OR|PILE|PLAY|PLAYED|REFRESH|RESOLVING|REVEALED|SCRAP|SCRAPPED|SCRAPPING|SET|SHUFFLED|THE|TO|TOP|TURN|UP|WINS|WON|YOUR;
+customWord        : WORD|ACQUIRED|ACTIVATING|ADD|ALL|ALLY|ANY|ASIDE|CARD|CARDS|CHOOSE|CHOSE|COMBAT|CONCEDED|DECK|DESTROYED|DISCARD|DISCARDING|DISCARDS|DREW|ENDS|EVENT|FORM|FROM|GAME|HAND|HAS|INDICATORS|IS|IT|NEW|NOW|OF|OPPONENT|OR|PILE|PLAY|PLAYED|REFRESH|RESOLVING|REVEALED|SCRAP|SCRAPPED|SCRAPPING|SET|SHUFFLED|THE|TO|TOP|TURN|UP|WINS|WON|YOUR;
 
 fragment A : ('A'|'a');
 fragment B : ('B'|'b');
@@ -72,18 +80,23 @@ fragment Z : ('Z'|'z');
 
 ACQUIRED            : A C Q U I R E D ;
 ACTIVATING          : A C T I V A T I N G ;
+ADD                 : A D D ;
 ALL                 : A L L ;
 ALLY                : A L L Y ;
+ANY                 : A N Y ;
 ASIDE               : A S I D E ;
 CARD                : C A R D ;
 CARDS               : C A R D S ;
 CHOOSE              : C H O O S E ;
+CHOSE               : C H O S E ;
+COMBAT              : C O M B A T ;
 CONCEDED            : C O N C E D E D ;
 DECK                : D E C K ;
 DESTROYED           : D E S T R O Y E D ;
 DISCARD             : D I S C A R D ;
 DISCARDED           : D I S C A R D E D ;
 DISCARDING          : D I S C A R D I N G ;
+DISCARDS            : D I S C A R D S ;
 DREW                : D R E W ;
 ENDS                : E N D S ;
 EVENT               : E V E N T ;
@@ -96,8 +109,10 @@ INDICATORS          : I N D I C A T O R S ;
 IS                  : I S ;
 IT                  : I T ;
 NEW                 : N E W ;
+NOT                 : N O T ;
 NOW                 : N O W ;
 OF                  : O F ;
+OPPONENT            : O P P O N E N T ;
 OR                  : O R ;
 PILE                : P I L E ;
 PLAY                : P L A Y ;
