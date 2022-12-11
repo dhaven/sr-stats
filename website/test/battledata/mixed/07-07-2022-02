@@ -247,7 +247,9 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [],
+        "scrappedCards": [
+          "asteroidmining"
+        ],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",

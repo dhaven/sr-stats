@@ -282,10 +282,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "siegefortress",
-          "federationshipyard"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
           "centralstation"
@@ -389,9 +386,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "viper",
-          "hivequeen",
-          "nanobotswarm"
+          "viper"
         ],
         "discardedCards": [
           "scout"
@@ -571,9 +566,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "scout",
-          "farmship",
-          "warningbeacon"
+          "scout"
         ],
         "discardedCards": [
           "scout"

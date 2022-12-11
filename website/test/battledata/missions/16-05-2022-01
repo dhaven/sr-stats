@@ -581,7 +581,6 @@
         "scrappedCards": [
           "viper",
           "scout",
-          "mothership",
           "explorer"
         ],
         "discardedCards": [],
@@ -764,8 +763,7 @@
         "scrappedCards": [
           "tradebot",
           "scout",
-          "scout",
-          "freighter"
+          "scout"
         ],
         "discardedCards": [],
         "destroyedBases": [
@@ -831,9 +829,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "battlemech"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
           "junkyard",

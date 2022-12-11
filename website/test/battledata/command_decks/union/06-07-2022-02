@@ -170,7 +170,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "mccready'smaneuver"
+          "mccreadysmaneuver"
         ],
         "discardedCards": [],
         "destroyedBases": [],
@@ -201,7 +201,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "mccready'smaneuver",
+          "mccreadysmaneuver",
           "imperialscout"
         ],
         "discardedCards": [],
@@ -314,8 +314,7 @@
         "events": [],
         "scrappedCards": [
           "scout",
-          "scout",
-          "meganaut"
+          "scout"
         ],
         "discardedCards": [],
         "destroyedBases": [],

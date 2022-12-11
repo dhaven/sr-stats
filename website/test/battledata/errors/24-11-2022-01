@@ -16,9 +16,7 @@
         "events": [
           "patiencerewarded"
         ],
-        "scrappedCards": [
-          "farmship"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
@@ -30,7 +28,10 @@
             "new": 49
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": [
+          "farmship"
+        ]
       },
       {
         "tradePool": 5,
@@ -43,16 +44,17 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "unioncluster"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
         "authority": {},
-        "player": "gouda55"
+        "player": "gouda55",
+        "tradeRowSlot": [
+          "unioncluster"
+        ]
       },
       {
         "tradePool": 4,
@@ -196,13 +198,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "nestingground",
-          "blobalpha",
-          "pulverizer",
-          "tradehive",
-          "cunningcaptain"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",

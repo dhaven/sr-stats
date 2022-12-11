@@ -253,9 +253,7 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "commandship"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",

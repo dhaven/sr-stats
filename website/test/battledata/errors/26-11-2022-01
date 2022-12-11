@@ -239,7 +239,6 @@
           "patiencerewarded"
         ],
         "scrappedCards": [
-          "dreadnaught",
           "explorer",
           "boldraid"
         ],
@@ -257,7 +256,10 @@
             "new": 44
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": [
+          "dreadnaught"
+        ]
       },
       {
         "tradePool": 5,
@@ -270,16 +272,17 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "defensesystem"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
         "authority": {},
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": [
+          "defensesystem"
+        ]
       },
       {
         "tradePool": 1,
@@ -425,9 +428,7 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "thewrecker"
-        ],
+        "scrappedCards": [],
         "discardedCards": [
           "scout"
         ],
@@ -550,9 +551,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "gunship"
-        ],
+        "scrappedCards": [],
         "discardedCards": [
           "scout",
           "scout"

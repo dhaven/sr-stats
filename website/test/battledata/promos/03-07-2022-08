@@ -648,7 +648,6 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "patrolmech",
           "imperialfrigate",
           "mothership"
         ],
@@ -703,7 +702,6 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "spawningwurm",
           "viper",
           "probebot"
         ],

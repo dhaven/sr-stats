@@ -16,12 +16,7 @@
         "events": [
           "supernova"
         ],
-        "scrappedCards": [
-          "moonwurmhatchling",
-          "warpgatecruiser",
-          "mobilemarket",
-          "repairmech"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
@@ -501,9 +496,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "neuralnexus"
-        ],
+        "scrappedCards": [],
         "discardedCards": [
           "scout",
           "scout"

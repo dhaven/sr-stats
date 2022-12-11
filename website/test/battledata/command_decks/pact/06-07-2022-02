@@ -14,9 +14,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "mechworld"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
@@ -40,9 +38,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "blobcarrier"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
@@ -226,7 +222,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "newburg'sgame"
+          "newburgsgame"
         ],
         "discardedCards": [],
         "destroyedBases": [],
@@ -323,8 +319,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "newburg'sgame",
-          "supercarrier",
+          "newburgsgame",
           "spacestation"
         ],
         "discardedCards": [],
@@ -434,9 +429,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "supercarrier"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
           "battlestation"
@@ -552,9 +545,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "scout",
-          "barterworld",
-          "blobdestroyer"
+          "scout"
         ],
         "discardedCards": [],
         "destroyedBases": [],

@@ -64,7 +64,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "walsh'sstratagem",
+          "walshsstratagem",
           "scout",
           "ranger"
         ],
@@ -92,7 +92,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "walsh'sstratagem"
+          "walshsstratagem"
         ],
         "discardedCards": [],
         "destroyedBases": [],
@@ -321,9 +321,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "battleblob"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
           "tradingpost"
@@ -413,8 +411,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "viper",
-          "mothership"
+          "viper"
         ],
         "discardedCards": [],
         "destroyedBases": [

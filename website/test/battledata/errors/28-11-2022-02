@@ -159,9 +159,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "patrolcutter"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
           "orbitalplatform"
@@ -205,7 +203,6 @@
         "events": [],
         "scrappedCards": [
           "scout",
-          "peacekeeper",
           "explorer"
         ],
         "discardedCards": [],
@@ -278,10 +275,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "federationshipyard",
-          "frontierstation"
-        ],
+        "scrappedCards": [],
         "discardedCards": [
           "scout"
         ],
@@ -465,9 +459,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "theincinerator"
-        ],
+        "scrappedCards": [],
         "discardedCards": [
           "scout",
           "scout"
@@ -497,9 +489,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "viper",
-          "centralstation",
-          "commandcenter"
+          "viper"
         ],
         "discardedCards": [
           "scout"
@@ -557,7 +547,6 @@
           "viper",
           "agingbattleship",
           "scout",
-          "convoybot",
           "gunship"
         ],
         "discardedCards": [

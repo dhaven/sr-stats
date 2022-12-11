@@ -433,7 +433,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "valken'senterprise",
+          "valkensenterprise",
           "scout",
           "viperbot",
           "ranger"
@@ -466,9 +466,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "coalitionstronghold"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
           "coalitionstronghold",
@@ -784,7 +782,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "valken'senterprise",
+          "valkensenterprise",
           "surveyship",
           "surveyship"
         ],
@@ -813,9 +811,7 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "coalitionstronghold"
-        ],
+        "scrappedCards": [],
         "discardedCards": [
           "freighter",
           "laserdrone",

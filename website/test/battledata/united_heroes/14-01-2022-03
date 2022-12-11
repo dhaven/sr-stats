@@ -260,9 +260,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "destroyerbot"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
           "orbitalgunplatform"
@@ -368,7 +366,6 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "warningbeacon",
           "commanderklik"
         ],
         "discardedCards": [],
@@ -584,9 +581,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "federationcruiser"
-        ],
+        "scrappedCards": [],
         "discardedCards": [
           "scout"
         ],

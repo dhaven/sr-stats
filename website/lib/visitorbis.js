@@ -3,6 +3,69 @@ import StarStarLexer from './antlr4bis/StarStarLexer.js';
 import StarStarParser from './antlr4bis/StarStarParser.js';
 import StarStarVisitor from './antlr4bis/StarStarVisitor.js';
 
+const cardsWithDeckScrapAbility = [
+    "assimilator",
+    "battlebot",
+    "battlemech",
+    "blobbot",
+    "blockaderunner",
+    "borderfort",
+    "builderbot",
+    "brainworld",
+    "cargomech",
+    "cargorocket",
+    "chancellorhartman",
+    "coalitionfreighter",
+    "confessormorris",
+    "conversionyard",
+    "converter",
+    "convoybot",
+    "deathworld",
+    "defensebot",
+    "demolisher",
+    "destroyerbot",
+    "enforcermech",
+    "fortressoblivion",
+    "junkyard",
+    "machinebase",
+    "mechcommandship",
+    "mechcruiser",
+    "mechwurm",
+    "miningmech",
+    "missilebot",
+    "nanobotswarm",
+    "neuralnexus",
+    "patrolbot",
+    "patrolmech",
+    "plaguepod",
+    "plasmabot",
+    "probebot",
+    "reclamationstation",
+    "recyclebot",
+    "repairbot",
+    "repairmech",
+    "salvagedrone",
+    "spawningwurm",
+    "supplybot",
+    "tankermech",
+    "theark",
+    "thecitadel",
+    "theincinerator",
+    "theoracle",
+    "thewrecker",
+    "tradebot",
+    "tradeenvoy"
+]
+
+const selfScrapToDeckScrapCards = [
+    "acceptablelosses",
+    "chancellorhartman",
+    "exploration",
+    "highpriestlyle",
+    "lesforay",
+    "unityfighter",
+    "warelder"
+]
 class Visitor extends StarStarVisitor {
     visitBattle(ctx) {
         let rounds = []
@@ -10,7 +73,6 @@ class Visitor extends StarStarVisitor {
         let secondPlayer = ""
         for (let i = 0; i < ctx.turn().length; i++) {
             let turn = this.visit(ctx.turn()[i])
-            //console.log(turn)
             if(i == 0){
                 firstPlayer = turn["currentPlayer"]
             }
@@ -65,6 +127,7 @@ class Visitor extends StarStarVisitor {
             formattedRound["winner"] = turn["winner"]
             formattedRound["winCondition"] = turn["winCondition"]
             formattedRound["drawCount"] = turn["drawCount"]
+            formattedRound["tradeRowSlot"] = turn["traderowslot"]
             rounds.push(formattedRound)
         }
         return {
@@ -83,6 +146,7 @@ class Visitor extends StarStarVisitor {
             destroyedBases: [],
             events: [],
             missions: [],
+            tradeRowSlot: [],
             winner: "",
             winCondition: "",
             drawCount: 0,
@@ -130,14 +194,58 @@ class Visitor extends StarStarVisitor {
                         turnData["players"][playerName]["newAuthority"] = player["newAuthority"]
                     }
                 }
-                turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
+                //turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
                 turnData["drawCount"] += action["cardAction"]["cardEffect"]["drawCount"]
                 turnData["purchasedCards"] = turnData["purchasedCards"].concat(action["cardAction"]["cardEffect"]["acquiredCards"])
                 if ("event" in action["cardAction"]["trigger"]) {
                     turnData["events"] = turnData["events"].concat(action["cardAction"]["trigger"]["event"])
                 }
-                if ("mission" in action["cardAction"]["trigger"]) {
+                else if ("mission" in action["cardAction"]["trigger"]) {
                     turnData["missions"] = turnData["missions"].concat(action["cardAction"]["trigger"]["mission"])
+                }
+                else if("scrapSelf" in action["cardAction"]["trigger"]){
+                    //check if we are scrapping a stealthneedle
+                    if(action["cardAction"]["cardEffect"]["scrap"].includes("stealthneedle")){
+                        turnData["scrappedCards"].push("stealthneedle")
+                    }else{
+                        turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["trigger"]["scrapSelf"])
+                    }
+                    //in some cases self-scrap can trigger the scrap of deck cards
+                    if(selfScrapToDeckScrapCards.includes(action["cardAction"]["trigger"]["scrapSelf"])){
+                        turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrapSummary"])
+                    }
+                    if(action["cardAction"]["trigger"]["scrapSelf"] == "acceptablelosses"){
+                        //scrapping this card does not result in a "player is scrapping X" so we need to check the scrapped cards
+                        for(let i = 0; i < action["cardAction"]["cardEffect"]["scrap"].length; i++){
+                            if(action["cardAction"]["cardEffect"]["scrap"][i] != "acceptablelosses"){
+                                turnData["scrappedCards"].push(action["cardAction"]["cardEffect"]["scrap"][i])
+                            }
+                        }
+                    }
+                }
+                else if("play" in action["cardAction"]["trigger"]){
+                    if(cardsWithDeckScrapAbility.includes(action["cardAction"]["trigger"]["play"])){
+                        if(action["cardAction"]["cardEffect"]["scrapSummary"].length != 0){
+                            turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrapSummary"])
+                        }else{
+                            //for some cards (battle bot) the instant effect doesn't result in a "player is scrapping  X"
+                            turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
+                        }
+                    }
+                }
+                else if("activate" in action["cardAction"]["trigger"]){
+                    if(cardsWithDeckScrapAbility.includes(action["cardAction"]["trigger"]["activate"])){
+                        turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
+                    }
+                }
+                else if("resolve" in action["cardAction"]["trigger"]){
+                    turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
+                }
+                else if("traderowslot" in action["cardAction"]["trigger"]){
+                    turnData["traderowslot"] = action["cardAction"]["cardEffect"]["scrap"]
+                }
+                else if("chose" in action["cardAction"]["trigger"]){
+                    turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
                 }
             }
             else if ("balanceUpdate" in action) {
@@ -169,13 +277,44 @@ class Visitor extends StarStarVisitor {
                 turnData["winner"] = action["winner"]
             }
             else if ("scrapped" in action) {
-                turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["scrapped"])
+                if(action["scrapped"] == "graymarket"){
+                    turnData["scrappedCards"].push(action["scrapped"])
+                }
             }
             else if("concede" in action){
                 turnData["winCondition"] = "resignation"
             }
             else if("timeout" in action){
                 turnData["winCondition"] = "timeout"
+            }
+            else if("alignBotScrap" in action){
+                turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["alignBotScrap"]["scrap"])
+                let listPlayers = Object.keys(action["alignBotScrap"]["players"])
+                for (let i = 0; i < listPlayers.length; i++) {
+                    let playerName = listPlayers[i]
+                    let player = action["alignBotScrap"]["players"][playerName]
+                    if (!(playerName in turnData["players"])) {
+                        turnData["players"][playerName] = {
+                            tradePool: player["tradePool"],
+                            usedTrade: player["usedTrade"],
+                            combatPool: player["combatPool"],
+                            usedCombat: player["usedCombat"],
+                            Authority: player["Authority"],
+                            Discard: player["Discard"],
+                        }
+                    } else {
+                        turnData["players"][playerName]["tradePool"] += player["tradePool"]
+                        turnData["players"][playerName]["usedTrade"] += player["usedTrade"]
+                        turnData["players"][playerName]["combatPool"] += player["combatPool"]
+                        turnData["players"][playerName]["usedCombat"] += player["usedCombat"]
+                        turnData["players"][playerName]["Authority"] += player["Authority"]
+                        turnData["players"][playerName]["Discard"] += player["Discard"]
+                    }
+                    if ("newAuthority" in player) {
+                        //console.log(player)
+                        turnData["players"][playerName]["newAuthority"] = player["newAuthority"]
+                    }
+                }
             }
         }
         //console.log(turnData)
@@ -234,6 +373,10 @@ class Visitor extends StarStarVisitor {
             return {
                 timeout: this.visit(ctx.timeout())
             }
+        }else if(ctx.resolveAlignmentBotScrap()){
+            return {
+                alignBotScrap: this.visit(ctx.resolveAlignmentBotScrap())
+            }
         } else {
             return {}
         }
@@ -244,6 +387,7 @@ class Visitor extends StarStarVisitor {
             trigger: this.visit(ctx.cardTrigger()),
             cardEffect: {
                 scrap: [],
+                scrapSummary: [],
                 drawCount: 0,
                 players: [],
                 acquiredCards: []
@@ -279,6 +423,9 @@ class Visitor extends StarStarVisitor {
             if ("acquiredCard" in cardEffect) {
                 cardAction["cardEffect"]["acquiredCards"].push(cardEffect["acquiredCard"])
             }
+            if("scrapSummary" in cardEffect){
+                cardAction["cardEffect"]["scrapSummary"].push(cardEffect["scrapSummary"])
+            }
         }
         return cardAction
     }
@@ -304,7 +451,13 @@ class Visitor extends StarStarVisitor {
             return {
                 "mission": this.visit(ctx.mission())
             }
-        } else {
+        } else if(ctx.resolving()){
+            return this.visit(ctx.resolving())
+        } else if(ctx.choseScrapHandOrDiscard()){
+            return {
+                "chose": true
+            }
+        }else {
             return {}
         }
     }
@@ -314,10 +467,8 @@ class Visitor extends StarStarVisitor {
         if (ctx.balanceUpdate()) {
             cardEffect["balanceUpdate"] = this.visit(ctx.balanceUpdate())
         } else if (ctx.scrapped()) {
-            //console.log(`Card: ${this.visit(ctx.scrapped())} has been scrapped`)
             cardEffect["scrapped"] = this.visit(ctx.scrapped())
         } else if (ctx.scrapSummary()) {
-            //console.log(`Card: ${this.visit(ctx.scrapSummary())} has been scrapped`)
             cardEffect["scrapSummary"] = this.visit(ctx.scrapSummary())
         } else if (ctx.drawCards()) {
             cardEffect["drawCount"] = this.visit(ctx.drawCards())
@@ -402,6 +553,74 @@ class Visitor extends StarStarVisitor {
         return this.visit(ctx.name())
     }
 
+    visitResolving(ctx){
+        if(ctx.resolveScrapHand()){
+            return {
+                "resolve": true
+            }
+        }else if(ctx.resolveScrapHandOrDiscard()){
+            return {
+                "resolve": true
+            }
+        }else if(ctx.resolveScrapMultiple()){
+            return {
+                "resolve": true
+            }
+        }else if(ctx.resolvePatience()){
+            return {
+                "traderowslot": true
+            }
+        }else {
+            return {}
+        }
+    }
+
+    visitResolveAlignmentBotScrap(ctx){
+        let summary = {
+            scrap: [],
+            players: []
+        }
+        for(let i = 0; i < ctx.alignBotScrap().length; i++){
+            let result = this.visit(ctx.alignBotScrap()[i])
+            if("scrap" in result){
+                summary["scrap"].push(result["scrap"])
+            }
+            if("balanceUpdate" in result){
+                let target = result["balanceUpdate"]["target"]
+                if (!(target in summary["players"])) {
+                    summary["players"][target] = {
+                        tradePool: 0,
+                        usedTrade: 0,
+                        combatPool: 0,
+                        usedCombat: 0,
+                        Authority: 0,
+                        Discard: 0
+                    }
+                }
+                let category = result["balanceUpdate"]["effect"]["category"]
+                summary["players"][target][category] += result["balanceUpdate"]["effect"]["value"]
+                if (category == "Authority") {
+                    summary["players"][target]["newAuthority"] = result["balanceUpdate"]["newValue"]
+                }
+            }
+        }
+        return summary
+    }
+
+    visitAlignBotScrap(ctx){
+        if(ctx.scrapped()){
+            return  {
+                "scrap": this.visit(ctx.scrapped())
+            }
+        }else if(ctx.balanceUpdate()){
+            return {
+                "balanceUpdate": this.visit(ctx.balanceUpdate())
+            }
+        }else{
+            return {}
+        }
+    }
+
     visitConcede(ctx){
         return this.visit(ctx.name())
     }
@@ -453,7 +672,7 @@ class Visitor extends StarStarVisitor {
     }
 
     visitCard(ctx) {
-        return ctx.getText().toLowerCase()
+        return ctx.getText().toLowerCase().replace("\'", "")
     }
 
     visitName(ctx) {

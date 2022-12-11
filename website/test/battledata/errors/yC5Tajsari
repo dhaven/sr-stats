@@ -12,9 +12,7 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "freightraft"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
@@ -40,9 +38,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "secretsplintertech"
-        ],
+        "scrappedCards": [],
         "discardedCards": [
           "assaultshard",
           "assaultshard",
@@ -95,9 +91,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "secretsplintertech"
-        ],
+        "scrappedCards": [],
         "discardedCards": [
           "reconshard",
           "reconshard",
@@ -130,8 +124,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "newburg'sgame",
-          "missilesilo"
+          "newburgsgame"
         ],
         "discardedCards": [],
         "destroyedBases": [],
@@ -160,9 +153,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "secretsplintertech"
-        ],
+        "scrappedCards": [],
         "discardedCards": [
           "assaultshard",
           "assaultshard",
@@ -197,7 +188,6 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "lightcruiser",
           "ceotorres"
         ],
         "discardedCards": [
@@ -231,7 +221,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "jochum'sgranddesign"
+          "jochumsgranddesign"
         ],
         "discardedCards": [],
         "destroyedBases": [
@@ -287,8 +277,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "explorer",
-          "secretsplintertech"
+          "explorer"
         ],
         "discardedCards": [
           "assaultshard",
@@ -320,8 +309,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "mobilemarket",
-          "unitystation"
+          "mobilemarket"
         ],
         "discardedCards": [],
         "destroyedBases": [],
@@ -352,8 +340,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "cargorocket",
-          "secretsplintertech"
+          "cargorocket"
         ],
         "discardedCards": [
           "reconshard",
@@ -449,13 +436,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "longhauler",
-          "plasmabot",
-          "screecher",
-          "outlandstation",
-          "frontierhawk",
-          "hivelord",
-          "confessormorris"
+          "hivelord"
         ],
         "discardedCards": [
           "viper",
@@ -594,7 +575,6 @@
         "events": [],
         "scrappedCards": [
           "mobilemarket",
-          "lightcruiser",
           "outlandstation"
         ],
         "discardedCards": [],
@@ -625,9 +605,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "secretsplintertech"
-        ],
+        "scrappedCards": [],
         "discardedCards": [
           "reconshard",
           "commandshard",
@@ -656,9 +634,7 @@
         "purchasedCards": [],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "infestedmoon"
-        ],
+        "scrappedCards": [],
         "discardedCards": [
           "scout",
           "swarmling",

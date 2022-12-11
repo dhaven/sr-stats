@@ -60,12 +60,6 @@ export default class StarStarVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
-	// Visit a parse tree produced by StarStarParser#cardActivation.
-	visitCardActivation(ctx) {
-	  return this.visitChildren(ctx);
-	}
-
-
 	// Visit a parse tree produced by StarStarParser#scrapSummary.
 	visitScrapSummary(ctx) {
 	  return this.visitChildren(ctx);
@@ -158,6 +152,78 @@ export default class StarStarVisitor extends antlr4.tree.ParseTreeVisitor {
 
 	// Visit a parse tree produced by StarStarParser#resolving.
 	visitResolving(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarStarParser#resolveScrapHand.
+	visitResolveScrapHand(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarStarParser#resolveScrapHandOrDiscard.
+	visitResolveScrapHandOrDiscard(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarStarParser#resolveScrapMultiple.
+	visitResolveScrapMultiple(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarStarParser#resolvePatience.
+	visitResolvePatience(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarStarParser#resolveOthers.
+	visitResolveOthers(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarStarParser#choseScrapHandOrDiscard.
+	visitChoseScrapHandOrDiscard(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarStarParser#resolveAlignmentBotScrap.
+	visitResolveAlignmentBotScrap(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarStarParser#choseScrapType.
+	visitChoseScrapType(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarStarParser#choseScrapDiscard.
+	visitChoseScrapDiscard(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarStarParser#choseBattleAndDiscard.
+	visitChoseBattleAndDiscard(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarStarParser#alignBotScrap.
+	visitAlignBotScrap(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarStarParser#noscrap.
+	visitNoscrap(ctx) {
 	  return this.visitChildren(ctx);
 	}
 

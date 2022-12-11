@@ -22,9 +22,7 @@
           "patiencerewarded",
           "reconmission"
         ],
-        "scrappedCards": [
-          "federationshuttle"
-        ],
+        "scrappedCards": [],
         "discardedCards": [
           "scout",
           "scout",
@@ -36,7 +34,10 @@
         "winCondition": "",
         "drawCount": 9,
         "authority": {},
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": [
+          "federationshuttle"
+        ]
       },
       {
         "tradePool": 5,
@@ -49,9 +50,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "flagship"
-        ],
+        "scrappedCards": [],
         "discardedCards": [
           "scout",
           "scout",
@@ -68,7 +67,10 @@
             "new": 48
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": [
+          "flagship"
+        ]
       },
       {
         "tradePool": 4,
@@ -580,7 +582,6 @@
         "scrappedCards": [
           "scout",
           "explorer",
-          "battlecruiser",
           "blobwheel"
         ],
         "discardedCards": [],

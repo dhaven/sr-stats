@@ -390,7 +390,6 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "battleblob",
           "plaguepod",
           "surveyship"
         ],
@@ -714,8 +713,7 @@
         "events": [],
         "scrappedCards": [
           "scout",
-          "scout",
-          "tradeescort"
+          "scout"
         ],
         "discardedCards": [],
         "destroyedBases": [],

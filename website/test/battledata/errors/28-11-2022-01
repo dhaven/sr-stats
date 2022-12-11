@@ -150,7 +150,6 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "imperialflagship",
           "boldraid"
         ],
         "discardedCards": [],
@@ -182,9 +181,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "commanderklik"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
@@ -321,7 +318,6 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "deathworld",
           "plaguepod"
         ],
         "discardedCards": [],
@@ -388,7 +384,6 @@
         ],
         "events": [],
         "scrappedCards": [
-          "thecitadel",
           "scout"
         ],
         "discardedCards": [
@@ -487,7 +482,6 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "stellarlink",
           "repairbot"
         ],
         "discardedCards": [],
@@ -524,8 +518,7 @@
         ],
         "scrappedCards": [
           "scout",
-          "explorer",
-          "secretoutpost"
+          "explorer"
         ],
         "discardedCards": [
           "secretoutpost"
@@ -641,7 +634,6 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "constructionhauler",
           "scout",
           "imperialfighter",
           "unityfighter",

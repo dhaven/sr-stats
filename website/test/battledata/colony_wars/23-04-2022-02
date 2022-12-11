@@ -435,7 +435,7 @@
         "usedTrade": -8,
         "usedCombat": -14,
         "purchasedCards": [
-          "emperor'sdreadnaught"
+          "emperorsdreadnaught"
         ],
         "completedMissions": [],
         "events": [],
@@ -737,9 +737,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "agingbattleship",
-          "battlebot",
-          "cargopod"
+          "agingbattleship"
         ],
         "discardedCards": [],
         "destroyedBases": [

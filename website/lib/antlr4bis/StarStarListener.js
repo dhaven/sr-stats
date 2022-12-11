@@ -86,15 +86,6 @@ export default class StarStarListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
-	// Enter a parse tree produced by StarStarParser#cardActivation.
-	enterCardActivation(ctx) {
-	}
-
-	// Exit a parse tree produced by StarStarParser#cardActivation.
-	exitCardActivation(ctx) {
-	}
-
-
 	// Enter a parse tree produced by StarStarParser#scrapSummary.
 	enterScrapSummary(ctx) {
 	}
@@ -236,6 +227,114 @@ export default class StarStarListener extends antlr4.tree.ParseTreeListener {
 
 	// Exit a parse tree produced by StarStarParser#resolving.
 	exitResolving(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarStarParser#resolveScrapHand.
+	enterResolveScrapHand(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#resolveScrapHand.
+	exitResolveScrapHand(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarStarParser#resolveScrapHandOrDiscard.
+	enterResolveScrapHandOrDiscard(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#resolveScrapHandOrDiscard.
+	exitResolveScrapHandOrDiscard(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarStarParser#resolveScrapMultiple.
+	enterResolveScrapMultiple(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#resolveScrapMultiple.
+	exitResolveScrapMultiple(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarStarParser#resolvePatience.
+	enterResolvePatience(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#resolvePatience.
+	exitResolvePatience(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarStarParser#resolveOthers.
+	enterResolveOthers(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#resolveOthers.
+	exitResolveOthers(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarStarParser#choseScrapHandOrDiscard.
+	enterChoseScrapHandOrDiscard(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#choseScrapHandOrDiscard.
+	exitChoseScrapHandOrDiscard(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarStarParser#resolveAlignmentBotScrap.
+	enterResolveAlignmentBotScrap(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#resolveAlignmentBotScrap.
+	exitResolveAlignmentBotScrap(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarStarParser#choseScrapType.
+	enterChoseScrapType(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#choseScrapType.
+	exitChoseScrapType(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarStarParser#choseScrapDiscard.
+	enterChoseScrapDiscard(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#choseScrapDiscard.
+	exitChoseScrapDiscard(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarStarParser#choseBattleAndDiscard.
+	enterChoseBattleAndDiscard(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#choseBattleAndDiscard.
+	exitChoseBattleAndDiscard(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarStarParser#alignBotScrap.
+	enterAlignBotScrap(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#alignBotScrap.
+	exitAlignBotScrap(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarStarParser#noscrap.
+	enterNoscrap(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#noscrap.
+	exitNoscrap(ctx) {
 	}
 
 

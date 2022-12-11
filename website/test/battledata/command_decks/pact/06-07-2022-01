@@ -111,9 +111,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "battlecruiser"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
@@ -218,7 +216,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "newburg'sgame"
+          "newburgsgame"
         ],
         "discardedCards": [],
         "destroyedBases": [],
@@ -278,10 +276,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "supercarrier",
-          "tradebot"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
           "centraloffice"
@@ -367,8 +362,7 @@
         "events": [],
         "scrappedCards": [
           "scout",
-          "scout",
-          "junkyard"
+          "scout"
         ],
         "discardedCards": [],
         "destroyedBases": [],
@@ -429,7 +423,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "newburg'sgame",
+          "newburgsgame",
           "battlestation",
           "tradingpost"
         ],

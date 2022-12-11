@@ -214,9 +214,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "outlandstation"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
@@ -404,9 +402,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "transitnexus"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
@@ -486,7 +482,7 @@
         "usedTrade": -9,
         "usedCombat": -17,
         "purchasedCards": [
-          "emperor'sdreadnaught",
+          "emperorsdreadnaught",
           "frontierhawk"
         ],
         "completedMissions": [],

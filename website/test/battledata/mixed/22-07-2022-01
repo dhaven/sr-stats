@@ -206,9 +206,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "thehive"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
           "spacestation"
@@ -402,8 +400,6 @@
         "events": [],
         "scrappedCards": [
           "viper",
-          "missilemech",
-          "fleethq",
           "blobwheel"
         ],
         "discardedCards": [],
@@ -516,7 +512,6 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "mechworld",
           "ram"
         ],
         "discardedCards": [

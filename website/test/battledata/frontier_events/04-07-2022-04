@@ -538,8 +538,7 @@
           "patiencerewarded"
         ],
         "scrappedCards": [
-          "explorer",
-          "blobdestroyer"
+          "explorer"
         ],
         "discardedCards": [
           "scout"
@@ -557,7 +556,10 @@
             "new": 26
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": [
+          "blobdestroyer"
+        ]
       },
       {
         "tradePool": 5,
@@ -568,7 +570,6 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "commandship",
           "scout",
           "battlestation"
         ],
@@ -587,7 +588,10 @@
             "new": -1
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": [
+          "commandship"
+        ]
       }
     ],
     "winCondition": ""

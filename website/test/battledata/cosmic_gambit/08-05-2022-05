@@ -260,9 +260,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "imperialpalace"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
@@ -315,8 +313,7 @@
         "events": [],
         "scrappedCards": [
           "scout",
-          "scout",
-          "swarmcluster"
+          "scout"
         ],
         "discardedCards": [],
         "destroyedBases": [],

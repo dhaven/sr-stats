@@ -606,9 +606,7 @@
         ],
         "completedMissions": [],
         "events": [],
-        "scrappedCards": [
-          "missilemech"
-        ],
+        "scrappedCards": [],
         "discardedCards": [],
         "destroyedBases": [
           "barterworld"

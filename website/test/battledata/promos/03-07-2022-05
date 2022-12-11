@@ -297,9 +297,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "scout",
-          "blobcarrier",
-          "converter"
+          "scout"
         ],
         "discardedCards": [],
         "destroyedBases": [],
@@ -403,10 +401,7 @@
         "events": [],
         "scrappedCards": [
           "viper",
-          "cargorocket",
-          "imperialfrigate",
-          "blockaderunner",
-          "blockaderunner"
+          "cargorocket"
         ],
         "discardedCards": [],
         "destroyedBases": [
@@ -618,11 +613,7 @@
         "events": [],
         "scrappedCards": [
           "scout",
-          "scout",
-          "blobworld",
-          "battlepod",
-          "commandship",
-          "starmarket"
+          "scout"
         ],
         "discardedCards": [],
         "destroyedBases": [
@@ -677,9 +668,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "scout",
-          "dreadnaught",
-          "cutter"
+          "scout"
         ],
         "discardedCards": [
           "scout"
