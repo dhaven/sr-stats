@@ -48,7 +48,7 @@ export default async function handler(req, res) {
     });
   const db = DBclient.db("starrealms")
   let battle = parseBattle(req.body)
-  let enhanced = enhance(battle['data']['rounds'])
+  let enhanced = enhance(battle['data']['rounds']) //do this client side so that less data is transfered
   battle['data']['players'] = enhanced['players']
   battle['data']['extensions'] = enhanced['extensions']
   battle['data']['events'] = enhanced['events']

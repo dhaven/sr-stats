@@ -13,16 +13,72 @@ import { useRouter } from 'next/router'
 import Image from 'next/image'
 import discord_img from '../../public/images/discord.png'
 
+// import dynamic method from next
+import dynamic from 'next/dynamic';
+// import your component with dynamic and disable SSR
+const ReactSlider = dynamic(
+    () => import('react-slider'),
+    { ssr: false }
+);
+
 const { MongoClient, ObjectId } = require('mongodb');
 
-export default function Game({ winner, loser, extensions, events, players, winCondition, authorityData, otherData, otherAggrData }) {
+function initializeDecks(rounds, player) {
+    let nextRound = {}
+    for (let i = 0; i < rounds.length; i++) {
+        nextRound = rounds[i]
+        if (player in nextRound['authority']) {
+            let startAuthority = nextRound['authority'][player]['new'] - nextRound['authority'][player]['diff']
+            return {
+                deck: getInitialDeck(startAuthority)
+            }
+        }
+    }
+}
+
+function getInitialDeck(startAuthority) {
+    if (startAuthority == 50) {
+        //initialize deck with standard game
+        return {
+            scout: {
+                purchaseCount: 8,
+                scrapCount: 0
+            },
+            viper: {
+                purchaseCount: 2,
+                scrapCount: 0
+            }
+        }
+    }
+}
+
+export default function Game({ winner, loser, extensions, events, players, winCondition, authorityData, decks, otherData, otherAggrData }) {
     const router = useRouter()
     const { id } = router.query
     let [activePlayer, setActivePlayer] = useState(winner)
     let [statsTab, setStatsTab] = useState("player") //can be either player or game
     let [isAddGameOpen, setAddGameIsOpen] = useState(false)
+    let [turnA, setTurnA] = useState(decks.length - 1)
+    let [turnB, setTurnB] = useState(decks.length - 1)
     function openAddGameModal() {
         setAddGameIsOpen(true)
+    }
+    function updateTurn(i, value) {
+        if (i == 0) {
+            setTurnA(value)
+        } else if (i == 1) {
+            setTurnB(value)
+        } else {
+            setTurnA(value)
+            setTurnB(value)
+        }
+    }
+    function getTurnState(i) {
+        if (i == 0) {
+            return turnA
+        } else {
+            return turnB
+        }
     }
     let displayPlayerCard = function (isActive, player) {
         if (player == winner && isActive) {
@@ -69,22 +125,51 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                                     onClick={() => setActivePlayer(oneKey)}
                                     className="flex flex-col w-full">
                                     <div className={`${displayPlayerCard(oneKey == activePlayer, oneKey)} md:p-2 flex flex-col grow justify-between hover:bg-slate-300 p-2 md:p-4 bg-scifi1 md:rounded-md gap-2 md:gap-4`}>
-                                        <PlayerOverview name={oneKey} deckData={players[oneKey]['deck']} authority={players[oneKey]['finalAuthority']} missions={players[oneKey]['completedMissions']}></PlayerOverview>
+                                        <PlayerOverview name={oneKey} deck={decks[getTurnState(i)]['players'][oneKey]['deck']} authority={authorityData[oneKey][getTurnState(i)]} missions={players[oneKey]['completedMissions']}></PlayerOverview>
                                         <div className="hidden md:flex justify-center px-2">
                                             <ArrowDownIcon className='h-5 w-5' />
                                         </div>
+                                        <div className="flex md:hidden">
+                                            <ReactSlider
+                                                className="horizontal-slider w-full h-6"
+                                                thumbClassName="example-thumb-mobile rounded-xl text-sm"
+                                                trackClassName="example-track-mobile"
+                                                max={decks.length - 1}
+                                                defaultValue={decks.length - 1}
+                                                onChange={(value, index) => {
+                                                    updateTurn(i, value)
+                                                }}
+                                                renderThumb={(props, state) => <div {...props}>turn {state.valueNow}</div>}
+                                            />
+                                        </div>
                                     </div>
                                     <div className="md:hidden md:rounded-b-xl">
-                                        <DeckOverview deckData={players[oneKey]['deck']} ></DeckOverview>
+                                        <DeckOverview deck={decks[getTurnState(i)]['players'][activePlayer]['deck']}></DeckOverview>
                                     </div>
                                 </div>
                             )
                         })
                     }
                 </div>
+
                 {statsTab == "player" &&
-                    <div className="hidden md:flex md:py-4 lg:py-6 md:px-2 lg:px-4 md:mx-4 lg:p-2 rounded-b-xl">
-                        <DeckOverview isWinner={activePlayer == winner} deckData={players[activePlayer]['deck']} ></DeckOverview>
+                    <div>
+                        <div className="hidden md:flex flex-row justify-center mt-6 p-2 rounded-md border-2 mx-12 border-scifi4 bg-scifi1">
+                            <ReactSlider
+                                className="horizontal-slider w-50 w-1/2 h-12"
+                                thumbClassName="example-thumb rounded-xl text-lg"
+                                trackClassName="example-track"
+                                max={decks.length - 1}
+                                defaultValue={decks.length - 1}
+                                onChange={(value, index) => {
+                                    updateTurn(-1,value)
+                                }}
+                                renderThumb={(props, state) => <div {...props}>turn {state.valueNow}</div>}
+                            />
+                        </div>
+                        <div className="hidden md:flex md:py-4 lg:py-6 md:px-2 lg:px-4 md:mx-4 lg:p-2 rounded-b-xl">
+                            <DeckOverview isWinner={activePlayer == winner} deck={decks[getTurnState(-1)]['players'][activePlayer]['deck']}></DeckOverview>
+                        </div>
                     </div>
                 }
                 {
@@ -180,7 +265,7 @@ export async function getServerSideProps(context) {
         } else {
             if (data['winCondition'] == "resignation") {
                 winCondition = "resignation" //data['winner'] + " won by resignation"
-            } else if(data['winCondition'] == "timeout"){
+            } else if (data['winCondition'] == "timeout") {
                 winCondition = "timeout"
             } else {
                 winCondition = "defeat" //data['winner'] + " won by defeating " + loserName
@@ -253,6 +338,49 @@ export async function getServerSideProps(context) {
                 drawAggrData[secondPlayer] += data['rounds'][i]['drawCount']
             }
         }
+
+        let firstPlayerInit = initializeDecks(data['rounds'], data['rounds'][0]['player'])
+        let secondPlayerInit = initializeDecks(data['rounds'], data['rounds'][1]['player'])
+        let turnDecks = []
+        let lastTurnDeck = {
+            players: {}
+        }
+        lastTurnDeck['players'][firstPlayer] = firstPlayerInit
+        lastTurnDeck['players'][secondPlayer] = secondPlayerInit
+        for (let i = 0; i < data['rounds'].length; i++) {
+            let currentRound = data['rounds'][i]
+            let nextTurnDecks = JSON.parse(JSON.stringify(lastTurnDeck));
+            let currentPlayer = ""
+            if (i % 2 == 0) {
+                currentPlayer = firstPlayer
+            } else {
+                currentPlayer = secondPlayer
+            }
+            for (let j = 0; j < currentRound['purchasedCards'].length; j++) {
+                let purchasedCard = currentRound['purchasedCards'][j]
+                if (!(purchasedCard in nextTurnDecks['players'][currentPlayer]['deck'])) {
+                    nextTurnDecks['players'][currentPlayer]['deck'][purchasedCard] = {
+                        purchaseCount: 1,
+                        scrapCount: 0
+                    }
+                } else {
+                    nextTurnDecks['players'][currentPlayer]['deck'][purchasedCard]['purchaseCount'] += 1
+                }
+            }
+            for (let j = 0; j < currentRound['scrappedCards'].length; j++) {
+                let scrappedCard = currentRound['scrappedCards'][j]
+                //check if scrapped card is a gambit
+                if (!(scrappedCard in nextTurnDecks['players'][currentPlayer]['deck'])) {
+                    //normally this should not happen because all scrapped cards
+                    //were previously purchased
+                    console.log(`found a scrapped card ${scrappedCard} not in deck`)
+                } else {
+                    nextTurnDecks['players'][currentPlayer]['deck'][scrappedCard]['scrapCount'] += 1
+                }
+            }
+            lastTurnDeck = nextTurnDecks
+            turnDecks.push(nextTurnDecks)
+        }
         return {
             props: {
                 winner: data['winner'],
@@ -262,6 +390,7 @@ export async function getServerSideProps(context) {
                 players: data['players'],
                 winCondition: winCondition,
                 authorityData: authorityData,
+                decks: turnDecks,
                 otherData: {
                     combatData: combatData,
                     tradeData: tradeData,
