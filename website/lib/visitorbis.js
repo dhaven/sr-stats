@@ -127,7 +127,7 @@ class Visitor extends StarStarVisitor {
             formattedRound["winner"] = turn["winner"]
             formattedRound["winCondition"] = turn["winCondition"]
             formattedRound["drawCount"] = turn["drawCount"]
-            formattedRound["tradeRowSlot"] = turn["traderowslot"]
+            formattedRound["tradeRowSlot"] = turn["tradeRowSlot"]
             rounds.push(formattedRound)
         }
         return {
@@ -242,7 +242,7 @@ class Visitor extends StarStarVisitor {
                     turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
                 }
                 else if("traderowslot" in action["cardAction"]["trigger"]){
-                    turnData["traderowslot"] = action["cardAction"]["cardEffect"]["scrap"]
+                    turnData["tradeRowSlot"] = action["cardAction"]["cardEffect"]["scrap"]
                 }
                 else if("chose" in action["cardAction"]["trigger"]){
                     turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])

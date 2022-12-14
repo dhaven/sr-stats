@@ -17,6 +17,8 @@ import { missions } from './missions.js'
 import { events } from './events.js'
 import { frontiers_events } from './frontiers_events.js'
 import { requisition } from './requisition.js'
+import { cosmic } from './cosmic.js'
+import { gambit } from './gambit.js'
 
 export default Object.assign(
     core_set['cards'],
@@ -37,5 +39,7 @@ export default Object.assign(
     missions['cards'],
     events['cards'],
     frontiers_events['cards'],
-    requisition['cards']
+    requisition['cards'],
+    gambit['cards'],
+    cosmic['cards']
 )

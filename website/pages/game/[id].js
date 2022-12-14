@@ -12,6 +12,7 @@ import GameSummary from '../../components/gameSummary'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import discord_img from '../../public/images/discord.png'
+import card_list from '../../lib/card_data/cards.js'
 
 // import dynamic method from next
 import dynamic from 'next/dynamic';
@@ -30,7 +31,9 @@ function initializeDecks(rounds, player) {
         if (player in nextRound['authority']) {
             let startAuthority = nextRound['authority'][player]['new'] - nextRound['authority'][player]['diff']
             return {
-                deck: getInitialDeck(startAuthority)
+                deck: getInitialDeck(startAuthority),
+                gambit: {},
+                missions: []
             }
         }
     }
@@ -60,6 +63,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
     let [isAddGameOpen, setAddGameIsOpen] = useState(false)
     let [turnA, setTurnA] = useState(decks.length - 1)
     let [turnB, setTurnB] = useState(decks.length - 1)
+    console.log(decks)
     function openAddGameModal() {
         setAddGameIsOpen(true)
     }
@@ -125,7 +129,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                                     onClick={() => setActivePlayer(oneKey)}
                                     className="flex flex-col w-full">
                                     <div className={`${displayPlayerCard(oneKey == activePlayer, oneKey)} md:p-2 flex flex-col grow justify-between hover:bg-slate-300 p-2 md:p-4 bg-scifi1 md:rounded-md gap-2 md:gap-4`}>
-                                        <PlayerOverview name={oneKey} deck={decks[getTurnState(i)]['players'][oneKey]['deck']} authority={authorityData[oneKey][getTurnState(i)]} missions={players[oneKey]['completedMissions']}></PlayerOverview>
+                                        <PlayerOverview name={oneKey} deck={decks[getTurnState(i)]['players'][oneKey]['deck']} authority={authorityData[oneKey][getTurnState(i)]} missions={decks[getTurnState(i)]['players'][oneKey]['missions']}></PlayerOverview>
                                         <div className="hidden md:flex justify-center px-2">
                                             <ArrowDownIcon className='h-5 w-5' />
                                         </div>
@@ -162,9 +166,9 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                                 max={decks.length - 1}
                                 defaultValue={decks.length - 1}
                                 onChange={(value, index) => {
-                                    updateTurn(-1,value)
+                                    updateTurn(-1, value)
                                 }}
-                                renderThumb={(props, state) => <div {...props}>turn {state.valueNow}</div>}
+                                renderThumb={(props, state) => <div {...props}>turn {state.valueNow + 1}</div>}
                             />
                         </div>
                         <div className="hidden md:flex md:py-4 lg:py-6 md:px-2 lg:px-4 md:mx-4 lg:p-2 rounded-b-xl">
@@ -341,6 +345,9 @@ export async function getServerSideProps(context) {
 
         let firstPlayerInit = initializeDecks(data['rounds'], data['rounds'][0]['player'])
         let secondPlayerInit = initializeDecks(data['rounds'], data['rounds'][1]['player'])
+        let tradeRowSlots = {}
+        tradeRowSlots[firstPlayer] = ""
+        tradeRowSlots[secondPlayer] = ""
         let turnDecks = []
         let lastTurnDeck = {
             players: {}
@@ -356,6 +363,14 @@ export async function getServerSideProps(context) {
             } else {
                 currentPlayer = secondPlayer
             }
+            //this is the effect of patience rewarded event
+            if (currentRound["tradeRowSlot"].length == 1) {
+                tradeRowSlots[currentPlayer] = currentRound["tradeRowSlot"][0]
+            }
+            //update completed missions
+            if(currentRound["completedMissions"].length != 0){
+                nextTurnDecks['players'][currentPlayer]['missions'] = nextTurnDecks['players'][currentPlayer]['missions'].concat(currentRound["completedMissions"])
+            }
             for (let j = 0; j < currentRound['purchasedCards'].length; j++) {
                 let purchasedCard = currentRound['purchasedCards'][j]
                 if (!(purchasedCard in nextTurnDecks['players'][currentPlayer]['deck'])) {
@@ -369,13 +384,49 @@ export async function getServerSideProps(context) {
             }
             for (let j = 0; j < currentRound['scrappedCards'].length; j++) {
                 let scrappedCard = currentRound['scrappedCards'][j]
-                //check if scrapped card is a gambit
-                if (!(scrappedCard in nextTurnDecks['players'][currentPlayer]['deck'])) {
-                    //normally this should not happen because all scrapped cards
-                    //were previously purchased
-                    console.log(`found a scrapped card ${scrappedCard} not in deck`)
-                } else {
-                    nextTurnDecks['players'][currentPlayer]['deck'][scrappedCard]['scrapCount'] += 1
+                let gambitCard = ""
+                //check if the card is a traderowslot
+                if (scrappedCard == "traderowslot") {
+                    let tradeRowSlot = tradeRowSlots[currentPlayer]
+                    if(!(tradeRowSlot in nextTurnDecks['players'][currentPlayer]['deck'])){
+                        nextTurnDecks['players'][currentPlayer]['deck'][tradeRowSlot] = {
+                            purchaseCount: 1,
+                            scrapCount: 0
+                        }
+                    }else{
+                        nextTurnDecks['players'][currentPlayer]['deck'][tradeRowSlot]['purchaseCount'] += 1
+                    }
+                }else if(scrappedCard.endsWith("2")){
+                    gambitCard = scrappedCard.substring(0, scrappedCard.length - 1)
+                    if (gambitCard in card_list && card_list[gambitCard]["metadata"]["extension"] == "gambit") {
+                        if (!(gambitCard in nextTurnDecks['players'][currentPlayer]['gambit'])) {
+                            nextTurnDecks['players'][currentPlayer]["gambit"][gambitCard] = {
+                                scrapCount: 1
+                            }
+                        } else {
+                            nextTurnDecks['players'][currentPlayer]["gambit"][gambitCard]['scrapCount'] += 1
+                        }
+                    }else{
+                        console.log(`found a scrapped card ${scrappedCard} not in card list`)
+                    }
+                }
+                else if(scrappedCard in card_list){
+                    if(card_list[scrappedCard]["metadata"]["extension"] == "gambit"){
+                        if (!(scrappedCard in nextTurnDecks['players'][currentPlayer]['gambit'])) {
+                            nextTurnDecks['players'][currentPlayer]["gambit"][scrappedCard] = {
+                                scrapCount: 1
+                            }
+                        } else {
+                            nextTurnDecks['players'][currentPlayer]["gambit"][scrappedCard] += 1
+                        }
+                    }
+                    else if(scrappedCard in nextTurnDecks['players'][currentPlayer]['deck']){
+                        nextTurnDecks['players'][currentPlayer]['deck'][scrappedCard]['scrapCount'] += 1
+                    }else{
+                        console.log(`found a scrapped card ${scrappedCard} not in deck`)
+                    }
+                }else{
+                    console.log(`found a scrapped card ${scrappedCard} not in card list`)
                 }
             }
             lastTurnDeck = nextTurnDecks
