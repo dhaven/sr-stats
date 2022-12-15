@@ -10,12 +10,77 @@ export const command_decks = {
             ],
             "type": "ship",
             "metadata": {
-                "extension": "command_decks",
-                "image": {
-                    "width": "x",
-                    "height": "y",
-                    "filename": "x.jpg"
-                }
+                "extension": "command_decks"
+            }
+        },
+        "imperialtalon": {
+            "name": "Imperial Talon",
+            "faction": [
+                "Star Empire",
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "imperialviper": {
+            "name": "Imperial Viper",
+            "faction": [
+                "Unaligned",
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "ranger": {
+            "name": "Ranger",
+            "faction": [
+                "Unaligned",
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "salvagedrone": {
+            "name": "Salvage Drone",
+            "faction": [
+                "Machine Cult"
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "scoutbot": {
+            "name": "Scout Bot",
+            "faction": [
+                "Unaligned"
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "stellarfalcon": {
+            "name": "Stellar Falcon",
+            "faction": [
+                "Star Empire"
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "welderdrone": {
+            "name": "Welder Drone",
+            "faction": [
+                "Machine Cult"
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
             }
         },
         "superfreighter": {
@@ -27,12 +92,47 @@ export const command_decks = {
             ],
             "type": "ship",
             "metadata": {
-                "extension": "command_decks",
-                "image": {
-                    "width": "x",
-                    "height": "y",
-                    "filename": "x.jpg"
-                }
+                "extension": "command_decks"
+            }
+        },
+        "cargoboat": {
+            "name": "Cargo Boat",
+            "faction": [
+                "Trade Federation"
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "diplomaticshuttle": {
+            "name": "Diplomatic Shuttle",
+            "faction": [
+                "Trade Federation"
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "federationscout": {
+            "name": "Federation Scout",
+            "faction": [
+                "Unaligned"
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "tributetransport": {
+            "name": "Tribute Transport",
+            "faction": [
+                "Star Empire"
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
             }
         },
         "mechcommandship": {
@@ -44,12 +144,48 @@ export const command_decks = {
             ],
             "type": "ship",
             "metadata": {
-                "extension": "command_decks",
-                "image": {
-                    "width": "x",
-                    "height": "y",
-                    "filename": "x.jpg"
-                }
+                "extension": "command_decks"
+            }
+        },
+        "frontiertug": {
+            "name": "Frontier Tug",
+            "faction": [
+                "Trade Federation"
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "laserdrone": {
+            "name": "Laser Drone",
+            "faction": [
+                "Machine Cult"
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "viperbot": {
+            "name": "Viper Bot",
+            "faction": [
+                "Unaligned"
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "coalitionstronghold": {
+            "name": "Coalition Stronghold",
+            "faction": [
+                "Machine Cult",
+                "Trade Federation"
+            ],
+            "type": "base",
+            "metadata": {
+                "extension": "command_decks"
             }
         },
         "supercarrier": {
@@ -61,12 +197,58 @@ export const command_decks = {
             ],
             "type": "ship",
             "metadata": {
-                "extension": "command_decks",
-                "image": {
-                    "width": "x",
-                    "height": "y",
-                    "filename": "x.jpg"
-                }
+                "extension": "command_decks"
+            }
+        },
+        "clusterscout": {
+            "name": "Cluster Scout",
+            "faction": [
+                "Unaligned"
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "diplomaticshuttle": {
+            "name": "Diplomatic Shuttle",
+            "faction": [
+                "Trade Federation"
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "escortviper": {
+            "name": "Escort Viper",
+            "faction": [
+                "Unaligned"
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "ripper": {
+            "name": "Ripper",
+            "faction": [
+                "Blob"
+            ],
+            "type": "ship",
+            "cost": 0,
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "swarmling": {
+            "name": "Swarmling",
+            "faction": [
+                "Blob"
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
             }
         },
         "mechwurm": {
@@ -78,12 +260,38 @@ export const command_decks = {
             ],
             "type": "ship",
             "metadata": {
-                "extension": "command_decks",
-                "image": {
-                    "width": "x",
-                    "height": "y",
-                    "filename": "x.jpg"
-                }
+                "extension": "command_decks"
+            }
+        },
+        "clusterviper": {
+            "name": "Cluster Viper",
+            "faction": [
+                "Unaligned"
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "protopod": {
+            "name": "Protopod",
+            "faction": [
+                "Blob"
+            ],
+            "type": "ship",
+            "cost": 0,
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "scoutbot": {
+            "name": "Scout Bot",
+            "faction": [
+                "Unaligned"
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
             }
         },
         "meganaut": {
@@ -95,12 +303,17 @@ export const command_decks = {
             ],
             "type": "ship",
             "metadata": {
-                "extension": "command_decks",
-                "image": {
-                    "width": "x",
-                    "height": "y",
-                    "filename": "x.jpg"
-                }
+                "extension": "command_decks"
+            }
+        },
+        "imperialscout": {
+            "name": "Imperial Scout",
+            "faction": [
+                "Unaligned"
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
             }
         },
         "lostdreadnaught": {
@@ -111,1283 +324,145 @@ export const command_decks = {
             ],
             "type": "ship",
             "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "assaultshard": {
+            "name": "Assault Shard",
+            "faction": [
+                "Unaligned"
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "commandshard": {
+            "name": "Command Shard",
+            "faction": [
+                "Unaligned"
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "reconshard": {
+            "name": "Recon Shard",
+            "faction": [
+                "Unaligned"
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "salvageshard": {
+            "name": "Salvage Shard",
+            "faction": [
+                "Unaligned"
+            ],
+            "type": "ship",
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "transportshard": {
+            "name": "Transport Shard",
+            "faction": [
+                "Unaligned"
+            ],
+            "type": "ship",
+            "metadata": {
                 "extension": "command_decks",
-                "image": {
-                    "width": "x",
-                    "height": "y",
-                    "filename": "x.jpg"
-                }
             }
         },
-    },
-    "commanders": {
-        "alignment": {
-            "deck": {
-                "imperialtalon": {
-                    "name": "Imperial Talon",
-                    "faction": [
-                        "Star Empire",
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "imperialviper": {
-                    "name": "Imperial Viper",
-                    "faction": [
-                        "Unaligned",
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "ranger": {
-                    "name": "Ranger",
-                    "faction": [
-                        "Unaligned",
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "salvagedrone": {
-                    "name": "Salvage Drone",
-                    "faction": [
-                        "Machine Cult"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "scout": {
-                    "name": "Scout",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 4,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "scoutbot": {
-                    "name": "Scout Bot",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "stellarfalcon": {
-                    "name": "Stellar Falcon",
-                    "faction": [
-                        "Star Empire"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "viper": {
-                    "name": "Viper",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "welderdrone": {
-                    "name": "Welder Drone",
-                    "faction": [
-                        "Machine Cult"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
+        "lesforay": {
+            "name": "Le's Foray",
+            "type": "gambit",
+            "scrapCount": 1,
+            "metadata": {
+                "extension": "command_decks"
             }
         },
-        "alliance": {
-            "deck": {
-                "cargoboat": {
-                    "name": "Cargo Boat",
-                    "faction": [
-                        "Trade Federation"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "diplomaticshuttle": {
-                    "name": "Diplomatic Shuttle",
-                    "faction": [
-                        "Trade Federation"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "federationscout": {
-                    "name": "Federation Scout",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "imperialviper": {
-                    "name": "Imperial Viper",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "scout": {
-                    "name": "Scout",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 4,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "stellarfalcon": {
-                    "name": "Stellar Falcon",
-                    "faction": [
-                        "Star Empire"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "tributetransport": {
-                    "name": "Tribute Transport",
-                    "faction": [
-                        "Star Empire"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "viper": {
-                    "name": "Viper",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
+        "alignmentingenuity": {
+            "name": "Alignment Ingenuity",
+            "type": "gambit",
+            "scrapCount": 0,
+            "metadata": {
+                "extension": "command_decks"
             }
         },
-        "coalition": {
-            "deck": {
-                "cargoboat": {
-                    "name": "Cargo Boat",
-                    "faction": [
-                        "Trade Federation"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "federationscout": {
-                    "name": "Federation Scout",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "frontiertug": {
-                    "name": "Frontier Tug",
-                    "faction": [
-                        "Trade Federation"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "laserdrone": {
-                    "name": "Laser Drone",
-                    "faction": [
-                        "Machine Cult"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "ranger": {
-                    "name": "Ranger",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "salvagedrone": {
-                    "name": "Salvage Drone",
-                    "faction": [
-                        "Machine Cult"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "scout": {
-                    "name": "Scout",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 4,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "viper": {
-                    "name": "Viper",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "viperbot": {
-                    "name": "Viper Bot",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "coalitionstronghold": {
-                    "name": "Coalition Stronghold",
-                    "faction": [
-                        "Machine Cult",
-                        "Trade Federation"
-                    ],
-                    "type": "base",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                }
+        "coalitionefficiency": {
+            "name": "Coalition Efficiency",
+            "type": "gambit",
+            "scrapCount": 0,
+            "metadata": {
+                "extension": "command_decks"
             }
         },
-        "pact": {
-            "deck": {
-                "clusterscout": {
-                    "name": "Cluster Scout",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "diplomaticshuttle": {
-                    "name": "Diplomatic Shuttle",
-                    "faction": [
-                        "Trade Federation"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "escortviper": {
-                    "name": "Escort Viper",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "frontiertug": {
-                    "name": "Frontier Tug",
-                    "faction": [
-                        "Trade Federation"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "ranger": {
-                    "name": "Ranger",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "ripper": {
-                    "name": "Ripper",
-                    "faction": [
-                        "Blob"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "scout": {
-                    "name": "Scout",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 4,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "swarmling": {
-                    "name": "Swarmling",
-                    "faction": [
-                        "Blob"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "viper": {
-                    "name": "Viper",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                
+        "valkensenterprise": {
+            "name": "Valken's Enterprise",
+            "type": "gambit",
+            "scrapCount": 1,
+            "metadata": {
+                "extension": "command_decks"
             }
         },
-        "unity": {
-            "deck": {
-                "clusterviper": {
-                    "name": "Cluster Viper",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "laserdrone": {
-                    "name": "Laser Drone",
-                    "faction": [
-                        "Machine Cult"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "protopod": {
-                    "name": "Protopod",
-                    "faction": [
-                        "Blob"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "ranger": {
-                    "name": "Ranger",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "scout": {
-                    "name": "Scout",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 4,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "scoutbot": {
-                    "name": "Scout Bot",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "swarmling": {
-                    "name": "Swarmling",
-                    "faction": [
-                        "Blob"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "viper": {
-                    "name": "Viper",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "welderdrone": {
-                    "name": "Welder Drone",
-                    "faction": [
-                        "Machine Cult"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
+        "newburgsgame": {
+            "name": "Newburg's Game",
+            "type": "gambit",
+            "scrapCount": 1,
+            "metadata": {
+                "extension": "command_decks"
             }
         },
-        "union": {
-            "deck": {
-                "clusterviper": {
-                    "name": "Cluster Viper",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "imperialscout": {
-                    "name": "Imperial Scout",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "imperialtalon": {
-                    "name": "Imperial Talon",
-                    "faction": [
-                        "Star Empire"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "protopod": {
-                    "name": "Protopod",
-                    "faction": [
-                        "Blob"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "ranger": {
-                    "name": "Ranger",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "ripper": {
-                    "name": "Ripper",
-                    "faction": [
-                        "Blob"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "scout": {
-                    "name": "Scout",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 4,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "tributetransport": {
-                    "name": "Tribute Transport",
-                    "faction": [
-                        "Star Empire"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "viper": {
-                    "name": "Viper",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 1,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                }
+        "pactdomination": {
+            "name": "Pact Domination",
+            "type": "gambit",
+            "scrapCount": 0,
+            "metadata": {
+                "extension": "command_decks"
             }
         },
-        "lostfleet": {
-            "deck": {
-                "assaultshard": {
-                    "name": "Assault Shard",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 3,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "commandshard": {
-                    "name": "Command Shard",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 2,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "reconshard": {
-                    "name": "Recon Shard",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 3,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "salvageshard": {
-                    "name": "Salvage Shard",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 3,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                },
-                "transportshard": {
-                    "name": "Transport Shard",
-                    "faction": [
-                        "Unaligned"
-                    ],
-                    "type": "ship",
-                    "cost": 0,
-                    "count": 3,
-                    "scrapCount": 0,
-                    "discardCount": 0,
-                    "destroyedCount": 0,
-                    "playedCount": 0,
-                    "metadata": {
-                        "extension": "command_decks",
-                        "image": {
-                            "width": "x",
-                            "height": "y",
-                            "filename": "x.jpg"
-                        }
-                    }
-                }
+        "walshsstratagem": {
+            "name": "Walsh's Stratagem",
+            "type": "gambit",
+            "scrapCount": 1,
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "unitywarcraft": {
+            "name": "Unity Warcraft",
+            "type": "gambit",
+            "scrapCount": 0,
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "mccreadysmaneuver": {
+            "name": "McCready's Maneuver",
+            "type": "gambit",
+            "scrapCount": 1,
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "unionblitz": {
+            "name": "Union Blitz",
+            "type": "gambit",
+            "scrapCount": 0,
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "splintertech": {
+            "name": "Splinter Tech",
+            "type": "gambit",
+            "scrapCount": 0,
+            "metadata": {
+                "extension": "command_decks"
             }
         }
     }

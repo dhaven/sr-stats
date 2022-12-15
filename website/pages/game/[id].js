@@ -12,7 +12,13 @@ import GameSummary from '../../components/gameSummary'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import discord_img from '../../public/images/discord.png'
-import card_list from '../../lib/card_data/cards.js'
+import { getExtensionsAndEvents } from '../../lib/helper/enhanceBattle'
+import { getAuthorityChart } from '../../lib/helper/enhanceBattle'
+import { getChart } from '../../lib/helper/enhanceBattle'
+import { getAggregateChart } from '../../lib/helper/enhanceBattle'
+import { getDiscardChart } from '../../lib/helper/enhanceBattle'
+import { getAggrDiscardChart } from '../../lib/helper/enhanceBattle'
+import { getTemporalDeck } from '../../lib/helper/enhanceBattle'
 
 // import dynamic method from next
 import dynamic from 'next/dynamic';
@@ -24,37 +30,6 @@ const ReactSlider = dynamic(
 
 const { MongoClient, ObjectId } = require('mongodb');
 
-function initializeDecks(rounds, player) {
-    let nextRound = {}
-    for (let i = 0; i < rounds.length; i++) {
-        nextRound = rounds[i]
-        if (player in nextRound['authority']) {
-            let startAuthority = nextRound['authority'][player]['new'] - nextRound['authority'][player]['diff']
-            return {
-                deck: getInitialDeck(startAuthority),
-                gambit: {},
-                missions: []
-            }
-        }
-    }
-}
-
-function getInitialDeck(startAuthority) {
-    if (startAuthority == 50) {
-        //initialize deck with standard game
-        return {
-            scout: {
-                purchaseCount: 8,
-                scrapCount: 0
-            },
-            viper: {
-                purchaseCount: 2,
-                scrapCount: 0
-            }
-        }
-    }
-}
-
 export default function Game({ winner, loser, extensions, events, players, winCondition, authorityData, decks, otherData, otherAggrData }) {
     const router = useRouter()
     const { id } = router.query
@@ -63,7 +38,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
     let [isAddGameOpen, setAddGameIsOpen] = useState(false)
     let [turnA, setTurnA] = useState(decks.length - 1)
     let [turnB, setTurnB] = useState(decks.length - 1)
-    console.log(decks)
+    console.log(authorityData)
     function openAddGameModal() {
         setAddGameIsOpen(true)
     }
@@ -123,7 +98,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                 </div>
                 <div className="flex flex-row flex-wrap md:flex-nowrap md:px-4 gap-2 md:gap-8">
                     {statsTab == "player" &&
-                        Object.keys(players).map((oneKey, i) => {
+                        players.map((oneKey, i) => {
                             return (
                                 <div key={i}
                                     onClick={() => setActivePlayer(oneKey)}
@@ -164,7 +139,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                                 thumbClassName="example-thumb rounded-xl text-lg"
                                 trackClassName="example-track"
                                 max={decks.length - 1}
-                                defaultValue={decks.length - 1}
+                                defaultValue={getTurnState(-1)}
                                 onChange={(value, index) => {
                                     updateTurn(-1, value)
                                 }}
@@ -257,14 +232,28 @@ export async function getServerSideProps(context) {
     const db = DBclient.db("starrealms")
     const cursor = db.collection('battle')
         .find({ _id: ObjectId(context.params['id']) })
-        .project({ 'data.winner': 1, 'data.winCondition': 1, 'data.extensions': 1, 'data.events': 1, 'data.players': 1, 'data.rounds': 1 })
+        .project({ 'data.winner': 1, 'data.winCondition': 1, 'data.rounds': 1 })
     if (await cursor.hasNext()) {
         let { data } = await cursor.next()
         let winCondition = ""
-        let playersNames = Object.keys(data['players'])
+        let playersNames = []
+        playersNames[0] = data['rounds'][0]['player']
+        playersNames[1] = data['rounds'][1]['player']
         playersNames.splice(playersNames.indexOf(data['winner']), 1)
         let loserName = playersNames[0]
-        if (data['players'][data['winner']]['completedMissions'].length == 3) {
+        let authorityData = getAuthorityChart(data['rounds'])
+        let combatData = getChart(data['rounds'],'combatPool')
+        let combatAggrData = getAggregateChart(data['rounds'], 'combatPool')
+        let tradeData = getChart(data['rounds'],'tradePool')
+        let tradeAggrData = getAggregateChart(data['rounds'], 'tradePool')
+        let discardData = getDiscardChart(data['rounds'])
+        let discardAggrData = getAggrDiscardChart(data['rounds'])
+        let drawData = getChart(data['rounds'],'drawCount')
+        let drawAggrData = getAggregateChart(data['rounds'],'drawCount')
+
+        let turnDecks = getTemporalDeck(data['rounds'])
+        let { extensions, events } = getExtensionsAndEvents(data['rounds'])
+        if (turnDecks[turnDecks.length -1]['players'][data['winner']]['missions'].length == 3) {
             winCondition = "completed missions" //data['winner'] + "won by completing 3 missions"
         } else {
             if (data['winCondition'] == "resignation") {
@@ -275,170 +264,16 @@ export async function getServerSideProps(context) {
                 winCondition = "defeat" //data['winner'] + " won by defeating " + loserName
             }
         }
-        let authorityData = {}
-        let combatData = {}
-        let combatAggrData = {}
-        let tradeData = {}
-        let tradeAggrData = {}
-        let discardData = {}
-        let discardAggrData = {}
-        let drawData = {}
-        let drawAggrData = {}
-        let firstPlayer = data['rounds'][0]['player']
-        let secondPlayer = data['rounds'][1]['player']
-        let indivTurns = Math.ceil(data['rounds'].length / 2)
-        authorityData[firstPlayer] = Array(indivTurns).fill(0)
-        authorityData[secondPlayer] = Array(indivTurns).fill(0)
-        combatData[firstPlayer] = Array(indivTurns).fill(0)
-        combatData[secondPlayer] = Array(indivTurns).fill(0)
-        combatAggrData[firstPlayer] = 0
-        combatAggrData[secondPlayer] = 0
-        tradeData[firstPlayer] = Array(indivTurns).fill(0)
-        tradeData[secondPlayer] = Array(indivTurns).fill(0)
-        tradeAggrData[firstPlayer] = 0
-        tradeAggrData[secondPlayer] = 0
-        discardData[firstPlayer] = Array(indivTurns).fill(0)
-        discardData[secondPlayer] = Array(indivTurns).fill(0)
-        discardAggrData[firstPlayer] = 0
-        discardAggrData[secondPlayer] = 0
-        drawData[firstPlayer] = Array(indivTurns).fill(0)
-        drawData[secondPlayer] = Array(indivTurns).fill(0)
-        drawAggrData[firstPlayer] = 0
-        drawAggrData[secondPlayer] = 0
-        authorityData[firstPlayer][0] = data['players'][firstPlayer]['startAuthority']
-        authorityData[secondPlayer][0] = data['players'][secondPlayer]['startAuthority']
-        for (let i = 0; i < data['rounds'].length; i++) {
-            if (i > 0) {
-                if (firstPlayer in data['rounds'][i]['authority']) {
-                    authorityData[firstPlayer][i] = authorityData[firstPlayer][i - 1] + parseInt(data['rounds'][i]['authority'][firstPlayer]['diff'])
-                } else {
-                    authorityData[firstPlayer][i] = authorityData[firstPlayer][i - 1]
-                }
-                if (secondPlayer in data['rounds'][i]['authority']) {
-                    authorityData[secondPlayer][i] = authorityData[secondPlayer][i - 1] + parseInt(data['rounds'][i]['authority'][secondPlayer]['diff'])
-                } else {
-                    authorityData[secondPlayer][i] = authorityData[secondPlayer][i - 1]
-                }
-            }
-            if (i % 2 == 0) {
-                combatData[firstPlayer][i / 2] = data['rounds'][i]['combatPool']
-                tradeData[firstPlayer][i / 2] = data['rounds'][i]['tradePool']
-                discardData[firstPlayer][i / 2] = data['rounds'][i]['discardedCards'].length
-                drawData[firstPlayer][i / 2] = data['rounds'][i]['drawCount']
-
-                combatAggrData[firstPlayer] += data['rounds'][i]['combatPool']
-                tradeAggrData[firstPlayer] += data['rounds'][i]['tradePool']
-                discardAggrData[firstPlayer] += data['rounds'][i]['discardedCards'].length
-                drawAggrData[firstPlayer] += data['rounds'][i]['drawCount']
-            } else {
-                combatData[secondPlayer][parseInt(i / 2)] = data['rounds'][i]['combatPool']
-                tradeData[secondPlayer][parseInt(i / 2)] = data['rounds'][i]['tradePool']
-                discardData[secondPlayer][parseInt(i / 2)] = data['rounds'][i]['discardedCards'].length
-                drawData[secondPlayer][parseInt(i / 2)] = data['rounds'][i]['drawCount']
-
-                combatAggrData[secondPlayer] += data['rounds'][i]['combatPool']
-                tradeAggrData[secondPlayer] += data['rounds'][i]['tradePool']
-                discardAggrData[secondPlayer] += data['rounds'][i]['discardedCards'].length
-                drawAggrData[secondPlayer] += data['rounds'][i]['drawCount']
-            }
-        }
-
-        let firstPlayerInit = initializeDecks(data['rounds'], data['rounds'][0]['player'])
-        let secondPlayerInit = initializeDecks(data['rounds'], data['rounds'][1]['player'])
-        let tradeRowSlots = {}
-        tradeRowSlots[firstPlayer] = ""
-        tradeRowSlots[secondPlayer] = ""
-        let turnDecks = []
-        let lastTurnDeck = {
-            players: {}
-        }
-        lastTurnDeck['players'][firstPlayer] = firstPlayerInit
-        lastTurnDeck['players'][secondPlayer] = secondPlayerInit
-        for (let i = 0; i < data['rounds'].length; i++) {
-            let currentRound = data['rounds'][i]
-            let nextTurnDecks = JSON.parse(JSON.stringify(lastTurnDeck));
-            let currentPlayer = ""
-            if (i % 2 == 0) {
-                currentPlayer = firstPlayer
-            } else {
-                currentPlayer = secondPlayer
-            }
-            //this is the effect of patience rewarded event
-            if (currentRound["tradeRowSlot"].length == 1) {
-                tradeRowSlots[currentPlayer] = currentRound["tradeRowSlot"][0]
-            }
-            //update completed missions
-            if(currentRound["completedMissions"].length != 0){
-                nextTurnDecks['players'][currentPlayer]['missions'] = nextTurnDecks['players'][currentPlayer]['missions'].concat(currentRound["completedMissions"])
-            }
-            for (let j = 0; j < currentRound['purchasedCards'].length; j++) {
-                let purchasedCard = currentRound['purchasedCards'][j]
-                if (!(purchasedCard in nextTurnDecks['players'][currentPlayer]['deck'])) {
-                    nextTurnDecks['players'][currentPlayer]['deck'][purchasedCard] = {
-                        purchaseCount: 1,
-                        scrapCount: 0
-                    }
-                } else {
-                    nextTurnDecks['players'][currentPlayer]['deck'][purchasedCard]['purchaseCount'] += 1
-                }
-            }
-            for (let j = 0; j < currentRound['scrappedCards'].length; j++) {
-                let scrappedCard = currentRound['scrappedCards'][j]
-                let gambitCard = ""
-                //check if the card is a traderowslot
-                if (scrappedCard == "traderowslot") {
-                    let tradeRowSlot = tradeRowSlots[currentPlayer]
-                    if(!(tradeRowSlot in nextTurnDecks['players'][currentPlayer]['deck'])){
-                        nextTurnDecks['players'][currentPlayer]['deck'][tradeRowSlot] = {
-                            purchaseCount: 1,
-                            scrapCount: 0
-                        }
-                    }else{
-                        nextTurnDecks['players'][currentPlayer]['deck'][tradeRowSlot]['purchaseCount'] += 1
-                    }
-                }else if(scrappedCard.endsWith("2")){
-                    gambitCard = scrappedCard.substring(0, scrappedCard.length - 1)
-                    if (gambitCard in card_list && card_list[gambitCard]["metadata"]["extension"] == "gambit") {
-                        if (!(gambitCard in nextTurnDecks['players'][currentPlayer]['gambit'])) {
-                            nextTurnDecks['players'][currentPlayer]["gambit"][gambitCard] = {
-                                scrapCount: 1
-                            }
-                        } else {
-                            nextTurnDecks['players'][currentPlayer]["gambit"][gambitCard]['scrapCount'] += 1
-                        }
-                    }else{
-                        console.log(`found a scrapped card ${scrappedCard} not in card list`)
-                    }
-                }
-                else if(scrappedCard in card_list){
-                    if(card_list[scrappedCard]["metadata"]["extension"] == "gambit"){
-                        if (!(scrappedCard in nextTurnDecks['players'][currentPlayer]['gambit'])) {
-                            nextTurnDecks['players'][currentPlayer]["gambit"][scrappedCard] = {
-                                scrapCount: 1
-                            }
-                        } else {
-                            nextTurnDecks['players'][currentPlayer]["gambit"][scrappedCard] += 1
-                        }
-                    }
-                    else if(scrappedCard in nextTurnDecks['players'][currentPlayer]['deck']){
-                        nextTurnDecks['players'][currentPlayer]['deck'][scrappedCard]['scrapCount'] += 1
-                    }else{
-                        console.log(`found a scrapped card ${scrappedCard} not in deck`)
-                    }
-                }else{
-                    console.log(`found a scrapped card ${scrappedCard} not in card list`)
-                }
-            }
-            lastTurnDeck = nextTurnDecks
-            turnDecks.push(nextTurnDecks)
-        }
         return {
             props: {
                 winner: data['winner'],
                 loser: loserName,
-                extensions: data['extensions'],
-                events: data['events'],
-                players: data['players'],
+                extensions: extensions,
+                events: events,
+                players: [
+                    data['rounds'][0]['player'],
+                    data['rounds'][1]['player']
+                ],
                 winCondition: winCondition,
                 authorityData: authorityData,
                 decks: turnDecks,

@@ -1,7 +1,6 @@
 const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
 const { MongoClient } = require('mongodb');
 import { findErrors, parseBattle } from '../../lib/visitorbis'
-import enhance from '../../lib/helper/enhanceBattle'
 
 export default async function handler(req, res) {
   const IAMCreds = {
@@ -48,10 +47,6 @@ export default async function handler(req, res) {
     });
   const db = DBclient.db("starrealms")
   let battle = parseBattle(req.body)
-  let enhanced = enhance(battle['data']['rounds']) //do this client side so that less data is transfered
-  battle['data']['players'] = enhanced['players']
-  battle['data']['extensions'] = enhanced['extensions']
-  battle['data']['events'] = enhanced['events']
   battle['createdAt'] = new Date()
   try{
     await db.collection("battle").insertOne(battle);

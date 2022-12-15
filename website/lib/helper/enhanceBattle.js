@@ -1,117 +1,18 @@
-import { core_set } from '../card_data/core_set.js';
-import { colony_wars } from '../card_data/colony_wars.js';
-import { frontiers } from '../card_data/frontiers.js';
-import { bases_battleships } from '../card_data/bases_battleships.js';
-import { fleets_fortresses } from '../card_data/fleets_fortresses.js';
-import { frontiers_promos } from '../card_data/frontiers_promos.js';
-import { assault } from '../card_data/assault.js';
-import { command } from '../card_data/command.js';
-import { stellar_allies } from '../card_data/stellar_allies.js';
-import { united_heroes } from '../card_data/united_heroes.js';
-import { crisis_heroes } from '../card_data/crisis_heroes.js';
-import { promo1 } from '../card_data/promo1.js';
-import { promo2 } from '../card_data/promo2.js';
-import { tech } from '../card_data/tech.js';
-import { command_decks } from '../card_data/command_decks.js'
-import { missions } from '../card_data/missions.js'
-import { events } from '../card_data/events.js'
-import { frontiers_events } from '../card_data/frontiers_events.js'
-import { requisition } from '../card_data/requisition.js'
+import card_list from '../card_data/cards.js'
 
-var card_list = Object.assign(
-    core_set['cards'],
-    frontiers['cards'],
-    colony_wars['cards'],
-    bases_battleships['cards'],
-    fleets_fortresses['cards'],
-    frontiers_promos['cards'],
-    assault['cards'],
-    command['cards'],
-    stellar_allies['cards'],
-    united_heroes['cards'],
-    crisis_heroes['cards'],
-    promo1['cards'],
-    promo2['cards'],
-    tech['cards'],
-    command_decks['cards'],
-    missions['cards'],
-    events['cards'],
-    frontiers_events['cards'],
-    requisition['cards']
-)
 
-// enhance battle object with deck data and extensions in use
-function enhance(rounds) {
-    let activePlayer = ""
-    let players = {}
-    let firstPlayerInit = initializeAuthorityAndDecks(rounds, rounds[0]['player'])
-    let secondPlayerInit = initializeAuthorityAndDecks(rounds, rounds[1]['player'])
+export function getExtensionsAndEvents(rounds) {
     // track extensions in use for this game
     let extensions = []
     // track events that are triggered for this game
     let events = []
-    players[rounds[0]['player']] = {
-        startAuthority: firstPlayerInit['startAuthority'],
-        finalAuthority: firstPlayerInit['startAuthority'],
-        deck: firstPlayerInit['deck'],
-        completedMissions: []
-
-    }
-    players[rounds[1]['player']] = {
-        startAuthority: secondPlayerInit['startAuthority'],
-        finalAuthority: secondPlayerInit['startAuthority'],
-        deck: secondPlayerInit['deck'],
-        completedMissions: []
-    }
     let nextRound = {}
     for (let i = 0; i < rounds.length; i++) {
         nextRound = rounds[i]
-        activePlayer = rounds[i]['player']
-        for (let player in nextRound['authority']) {
-            players[player]['finalAuthority'] += nextRound['authority'][player]['diff']
-        }
-        for (let j = 0; j < nextRound['purchasedCards'].length; j++) {
-            let nextCard = nextRound['purchasedCards'][j];
-            let nextFaction = ""
-            players[activePlayer]['deck']['count'] += 1
-            players[activePlayer]['deck']['cost'] += card_list[nextCard]['cost']
-            if (!(extensions.includes(card_list[nextCard]['metadata']['extension']))) {
+        for(let j = 0; j < nextRound['purchasedCards'].length; j++){
+            let nextCard = nextRound['purchasedCards'][j]
+            if(!(extensions.includes(card_list[nextCard]['metadata']['extension']))){
                 extensions.push(card_list[nextCard]['metadata']['extension'])
-            }
-            if (card_list[nextCard]['type'] == "ship") {
-                players[activePlayer]['deck']['ships'] += 1
-            } else if (card_list[nextCard]['type'] == "base") {
-                players[activePlayer]['deck']['bases'] += 1
-            }
-            for (let k = 0; k < card_list[nextCard]['faction'].length; k++) {
-                nextFaction = card_list[nextCard]['faction'][k]
-                players[activePlayer]['deck']['factions'][nextFaction] += 1
-            }
-            if (nextCard in players[activePlayer]['deck']['cards']) {
-                players[activePlayer]['deck']['cards'][nextCard]['count'] += 1
-            } else {
-                players[activePlayer]['deck']['cards'][nextCard] = {
-                    name: card_list[nextCard]['name'],
-                    cost: card_list[nextCard]['cost'],
-                    faction: card_list[nextCard]['faction'],
-                    type: card_list[nextCard]['type'],
-                    metadata: card_list[nextCard]['metadata'],
-                    count: 1,
-                    discardCount: 0
-                }
-            }
-        }
-        for (let j = 0; j < nextRound['discardedCards'].length; j++) {
-            let nextCard = nextRound['discardedCards'][j]
-            if (nextCard in players[activePlayer]['deck']['cards']) {
-                players[activePlayer]['deck']['cards'][nextCard]['discardCount'] += 1
-            }
-        }
-        for (let j = 0; j < nextRound['completedMissions'].length; j++) {
-            let mission = nextRound['completedMissions'][j]
-            players[activePlayer]['completedMissions'].push(card_list[mission]['name'])
-            if (!(extensions.includes(card_list[mission]['metadata']['extension']))) {
-                extensions.push(card_list[mission]['metadata']['extension'])
             }
         }
         for (let j = 0; j < nextRound['events'].length; j++) {
@@ -123,60 +24,225 @@ function enhance(rounds) {
         }
     }
     return {
-        players: players,
         extensions: extensions,
         events: events
     }
 }
 
-function initializeDecks(rounds, player) {
-    let nextRound = {}
+export function getAuthorityChart(rounds) {
+    let authorityData = {}
+    let firstPlayer = rounds[0]['player']
+    let secondPlayer = rounds[1]['player']
+    let indivTurns = Math.ceil(rounds.length / 2)
+    authorityData[firstPlayer] = Array(indivTurns).fill(0)
+    authorityData[secondPlayer] = Array(indivTurns).fill(0)
+    let startAuthority = getInitialAuthority(rounds)
+    authorityData[firstPlayer][0] = startAuthority[firstPlayer]
+    authorityData[secondPlayer][0] = startAuthority[secondPlayer]
+    for (let i = 1; i < rounds.length; i++) {
+        if (firstPlayer in rounds[i]['authority']) {
+            authorityData[firstPlayer][i] = authorityData[firstPlayer][i - 1] + parseInt(rounds[i]['authority'][firstPlayer]['diff'])
+        } else {
+            authorityData[firstPlayer][i] = authorityData[firstPlayer][i - 1]
+        }
+        if (secondPlayer in rounds[i]['authority']) {
+            authorityData[secondPlayer][i] = authorityData[secondPlayer][i - 1] + parseInt(rounds[i]['authority'][secondPlayer]['diff'])
+        } else {
+            authorityData[secondPlayer][i] = authorityData[secondPlayer][i - 1]
+        }
+    }
+    return authorityData
+}
+
+export function getChart(rounds, category) {
+    let data = {}
+    let firstPlayer = rounds[0]['player']
+    let secondPlayer = rounds[1]['player']
+    let indivTurns = Math.ceil(rounds.length / 2)
+    data[firstPlayer] = Array(indivTurns).fill(0)
+    data[secondPlayer] = Array(indivTurns).fill(0)
     for (let i = 0; i < rounds.length; i++) {
-        nextRound = rounds[i]
-        if (player in nextRound['authority']) {
-            let startAuthority = nextRound['authority'][player]['new'] - nextRound['authority'][player]['diff']
-            return {
-                deck: getInitialDeckBis(startAuthority)
+        if (i % 2 == 0) {
+            data[firstPlayer][i / 2] = rounds[i][category]
+        } else {
+            data[secondPlayer][parseInt(i / 2)] = rounds[i][category]
+        }
+    }
+    return data
+}
+
+export function getAggregateChart(rounds, category) {
+    let data = {}
+    let firstPlayer = rounds[0]['player']
+    let secondPlayer = rounds[1]['player']
+    data[firstPlayer] = 0
+    data[secondPlayer] = 0
+    for (let i = 0; i < rounds.length; i++) {
+        if (i % 2 == 0) {
+            data[firstPlayer] += rounds[i][category]
+        } else {
+            data[secondPlayer] += rounds[i][category]
+        }
+    }
+    return data
+}
+
+
+
+export function getDiscardChart(rounds) {
+    let discardData = {}
+    let firstPlayer = rounds[0]['player']
+    let secondPlayer = rounds[1]['player']
+    let indivTurns = Math.ceil(rounds.length / 2)
+    discardData[firstPlayer] = Array(indivTurns).fill(0)
+    discardData[secondPlayer] = Array(indivTurns).fill(0)
+    for (let i = 0; i < rounds.length; i++) {
+        if (i % 2 == 0) {
+            discardData[firstPlayer][i / 2] = rounds[i]['discardedCards'].length
+        } else {
+            discardData[secondPlayer][parseInt(i / 2)] = rounds[i]['discardedCards'].length
+        }
+    }
+    return discardData
+}
+
+export function getAggrDiscardChart(rounds) {
+    let discardData = {}
+    let firstPlayer = rounds[0]['player']
+    let secondPlayer = rounds[1]['player']
+    discardData[firstPlayer] = 0
+    discardData[secondPlayer] = 0
+    for (let i = 0; i < rounds.length; i++) {
+        if (i % 2 == 0) {
+            discardData[firstPlayer] += rounds[i]['discardedCards'].length
+        } else {
+            discardData[secondPlayer] += rounds[i]['discardedCards'].length
+        }
+    }
+    return discardData
+}
+
+export function getTemporalDeck(rounds) {
+    let firstPlayer = rounds[0]['player']
+    let secondPlayer = rounds[1]['player']
+    let firstPlayerInit = initializeDecks(rounds, firstPlayer)
+    let secondPlayerInit = initializeDecks(rounds, secondPlayer)
+    let tradeRowSlots = {}
+    tradeRowSlots[firstPlayer] = ""
+    tradeRowSlots[secondPlayer] = ""
+    let turnDecks = []
+    let lastTurnDeck = {
+        players: {}
+    }
+    lastTurnDeck['players'][firstPlayer] = firstPlayerInit
+    lastTurnDeck['players'][secondPlayer] = secondPlayerInit
+    for (let i = 0; i < rounds.length; i++) {
+        let currentRound = rounds[i]
+        let nextTurnDecks = JSON.parse(JSON.stringify(lastTurnDeck));
+        let currentPlayer = ""
+        if (i % 2 == 0) {
+            currentPlayer = firstPlayer
+        } else {
+            currentPlayer = secondPlayer
+        }
+        //this is the effect of patience rewarded event
+        if (currentRound["tradeRowSlot"].length == 1) {
+            tradeRowSlots[currentPlayer] = currentRound["tradeRowSlot"][0]
+        }
+        //update completed missions
+        if (currentRound["completedMissions"].length != 0) {
+            nextTurnDecks['players'][currentPlayer]['missions'] = nextTurnDecks['players'][currentPlayer]['missions'].concat(currentRound["completedMissions"])
+        }
+        for (let j = 0; j < currentRound['purchasedCards'].length; j++) {
+            let purchasedCard = currentRound['purchasedCards'][j]
+            console.log(nextTurnDecks['players'][currentPlayer])
+            if (!(purchasedCard in nextTurnDecks['players'][currentPlayer]['deck'])) {
+                nextTurnDecks['players'][currentPlayer]['deck'][purchasedCard] = {
+                    purchaseCount: 1,
+                    scrapCount: 0
+                }
+            } else {
+                nextTurnDecks['players'][currentPlayer]['deck'][purchasedCard]['purchaseCount'] += 1
             }
+        }
+        for (let j = 0; j < currentRound['scrappedCards'].length; j++) {
+            let scrappedCard = currentRound['scrappedCards'][j]
+            let gambitCard = ""
+            //check if the card is a traderowslot
+            if (scrappedCard == "traderowslot") {
+                let tradeRowSlot = tradeRowSlots[currentPlayer]
+                if (!(tradeRowSlot in nextTurnDecks['players'][currentPlayer]['deck'])) {
+                    nextTurnDecks['players'][currentPlayer]['deck'][tradeRowSlot] = {
+                        purchaseCount: 1,
+                        scrapCount: 0
+                    }
+                } else {
+                    nextTurnDecks['players'][currentPlayer]['deck'][tradeRowSlot]['purchaseCount'] += 1
+                }
+            } else if (scrappedCard.endsWith("2")) {
+                gambitCard = scrappedCard.substring(0, scrappedCard.length - 1)
+                if (gambitCard in card_list && card_list[gambitCard]["metadata"]["extension"] == "gambit") {
+                    if (!(gambitCard in nextTurnDecks['players'][currentPlayer]['gambit'])) {
+                        nextTurnDecks['players'][currentPlayer]["gambit"][gambitCard] = {
+                            scrapCount: 1
+                        }
+                    } else {
+                        nextTurnDecks['players'][currentPlayer]["gambit"][gambitCard]['scrapCount'] += 1
+                    }
+                } else {
+                    console.log(`found a scrapped card ${scrappedCard} not in card list`)
+                }
+            }
+            else if (scrappedCard in card_list) {
+                if (card_list[scrappedCard]["metadata"]["extension"] == "gambit") {
+                    if (!(scrappedCard in nextTurnDecks['players'][currentPlayer]['gambit'])) {
+                        nextTurnDecks['players'][currentPlayer]["gambit"][scrappedCard] = {
+                            scrapCount: 1
+                        }
+                    } else {
+                        nextTurnDecks['players'][currentPlayer]["gambit"][scrappedCard] += 1
+                    }
+                }
+                else if (scrappedCard in nextTurnDecks['players'][currentPlayer]['deck']) {
+                    nextTurnDecks['players'][currentPlayer]['deck'][scrappedCard]['scrapCount'] += 1
+                } else {
+                    console.log(`found a scrapped card ${scrappedCard} not in deck`)
+                }
+            } else {
+                console.log(`found a scrapped card ${scrappedCard} not in card list`)
+            }
+        }
+        lastTurnDeck = nextTurnDecks
+        turnDecks.push(nextTurnDecks)
+    }
+    return turnDecks
+}
+
+function getInitialAuthority(rounds) {
+    let players = {}
+    for (let i = 0; i < rounds.length; i++) {
+        let nextRound = rounds[i]
+        for (let player in nextRound['authority']) {
+            if (!(player in players)) {
+                players[player] = nextRound['authority'][player]['new']
+            }
+        }
+        if (Object.keys(players).length == 2) {
+            return players
         }
     }
 }
 
-function getInitialDeckBis(startAuthority) {
-    if (startAuthority == 50) {
-        //initialize deck with standard game
-        return {
-            scout: {
-                name: core_set['cards']['scout']['name'],
-                cost: core_set['cards']['scout']['cost'],
-                faction: core_set['cards']['scout']['faction'],
-                type: core_set['cards']['scout']['type'],
-                purchaseCount: 8,
-                scrapCount: 0
-            },
-            viper: {
-                name: core_set['cards']['viper']['name'],
-                cost: core_set['cards']['viper']['cost'],
-                faction: core_set['cards']['viper']['faction'],
-                type: core_set['cards']['viper']['type'],
-                purchaseCount: 2,
-                scrapCount: 0
-            }
-        }
-    }
-}
-//find the first occurence of each player taking damage. Based on that we can
-//infer their initial authority and this their starting deck
-// ! events can affect this
-function initializeAuthorityAndDecks(rounds, player) {
+export function initializeDecks(rounds, player) {
     let nextRound = {}
     for (let i = 0; i < rounds.length; i++) {
         nextRound = rounds[i]
         if (player in nextRound['authority']) {
             let startAuthority = nextRound['authority'][player]['new'] - nextRound['authority'][player]['diff']
             return {
-                startAuthority: startAuthority,
-                deck: getInitialDeck(startAuthority)
+                deck: getInitialDeck(startAuthority),
+                gambit: {},
+                missions: []
             }
         }
     }
@@ -188,164 +254,277 @@ function getInitialDeck(startAuthority) {
     if (startAuthority == 50) {
         //initialize deck with standard game
         return {
-            count: 10,
-            cost: 0,
-            ships: 10,
-            bases: 0,
-            factions: {
-                "Blob": 0,
-                "Trade Federation": 0,
-                "Star Empire": 0,
-                "Machine Cult": 0,
-                "Unaligned": 10
+            scout: {
+                purchaseCount: 8,
+                scrapCount: 0
             },
-            cards: {
-                scout: {
-                    name: core_set['cards']['scout']['name'],
-                    cost: core_set['cards']['scout']['cost'],
-                    faction: core_set['cards']['scout']['faction'],
-                    type: core_set['cards']['scout']['type'],
-                    metadata: {
-                        extension: "core_set",
-                        image: {
-                            width: "x",
-                            height: "y",
-                            filename: "x.jpg"
-                        }
-                    },
-                    purchaseCount: 8,
-                    discardCount: 0
-                },
-                viper: {
-                    name: core_set['cards']['viper']['name'],
-                    cost: core_set['cards']['viper']['cost'],
-                    faction: core_set['cards']['viper']['faction'],
-                    type: core_set['cards']['viper']['type'],
-                    metadata: {
-                        extension: "core_set",
-                        image: {
-                            width: "x",
-                            height: "y",
-                            filename: "x.jpg"
-                        }
-                    },
-                    purchaseCount: 2,
-                    discardCount: 0
-                }
+            viper: {
+                purchaseCount: 2,
+                scrapCount: 0
             }
         }
     } else if (startAuthority == 64) {
         return {
-            count: 12,
-            cost: 0,
-            ships: 12,
-            bases: 0,
-            factions: {
-                "Blob": 0,
-                "Trade Federation": 0,
-                "Star Empire": 2,
-                "Machine Cult": 2,
-                "Unaligned": 8
+            "imperialtalon": {
+                "purchaseCount": 1,
+                "scrapCount": 0
             },
-            cards: command_decks['commanders']['alignment']['deck']
+            "imperialviper": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "ranger": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "salvagedrone": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "scout": {
+                "purchaseCount": 4,
+                "scrapCount": 0
+            },
+            "scoutbot": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "stellarfalcon": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "viper": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "welderdrone": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            }
         }
     }
     else if (startAuthority == 68) {
         return {
-            count: 12,
-            cost: 0,
-            ships: 12,
-            bases: 0,
-            factions: {
-                "Blob": 0,
-                "Trade Federation": 2,
-                "Star Empire": 2,
-                "Machine Cult": 0,
-                "Unaligned": 8
+            "cargoboat": {
+                "purchaseCount": 1,
+                "scrapCount": 0
             },
-            cards: command_decks['commanders']['alliance']['deck']
+            "diplomaticshuttle": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "federationscout": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "imperialviper": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "scout": {
+                "purchaseCount": 4,
+                "scrapCount": 0
+            },
+            "stellarfalcon": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "tributetransport": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "viper": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
         }
     }
     else if (startAuthority == 62) {
         return {
-            count: 13,
-            cost: 0,
-            ships: 12,
-            bases: 1,
-            factions: {
-                "Blob": 0,
-                "Trade Federation": 3,
-                "Star Empire": 0,
-                "Machine Cult": 3,
-                "Unaligned": 8
+            "cargoboat": {
+                "purchaseCount": 1,
+                "scrapCount": 0
             },
-            cards: command_decks['commanders']['coalition']['deck']
+            "federationscout": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "frontiertug": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "laserdrone": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "ranger": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "salvagedrone": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "scout": {
+                "purchaseCount": 4,
+                "scrapCount": 0
+            },
+            "viper": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "viperbot": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "coalitionstronghold": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            }
         }
     }
     else if (startAuthority == 66) {
         return {
-            count: 12,
-            cost: 0,
-            ships: 12,
-            bases: 0,
-            factions: {
-                "Blob": 2,
-                "Trade Federation": 2,
-                "Star Empire": 0,
-                "Machine Cult": 0,
-                "Unaligned": 8
+            "clusterscout": {
+                "purchaseCount": 1,
+                "scrapCount": 0
             },
-            cards: command_decks['commanders']['pact']['deck']
+            "diplomaticshuttle": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "escortviper": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "frontiertug": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "ranger": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "ripper": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "scout": {
+                "purchaseCount": 4,
+                "scrapCount": 0
+            },
+            "swarmling": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "viper": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
         }
     }
     else if (startAuthority == 70) {
         return {
-            count: 12,
-            cost: 0,
-            ships: 12,
-            bases: 0,
-            factions: {
-                "Blob": 2,
-                "Trade Federation": 0,
-                "Star Empire": 0,
-                "Machine Cult": 2,
-                "Unaligned": 8
+            "clusterviper": {
+                "purchaseCount": 1,
+                "scrapCount": 0
             },
-            cards: command_decks['commanders']['unity']['deck']
+            "laserdrone": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "protopod": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "ranger": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "scout": {
+                "purchaseCount": 4,
+                "scrapCount": 0
+            },
+            "scoutbot": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "swarmling": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "viper": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "welderdrone": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            }
         }
     }
     else if (startAuthority == 60) {
         return {
-            count: 12,
-            cost: 0,
-            ships: 12,
-            bases: 0,
-            factions: {
-                "Blob": 2,
-                "Trade Federation": 0,
-                "Star Empire": 0,
-                "Machine Cult": 2,
-                "Unaligned": 8
+            "clusterviper": {
+                "purchaseCount": 1,
+                "scrapCount": 0
             },
-            cards: command_decks['commanders']['union']['deck']
+            "imperialscout": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "imperialtalon": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "protopod": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "ranger": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "ripper": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "scout": {
+                "purchaseCount": 4,
+                "scrapCount": 0
+            },
+            "tributetransport": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            },
+            "viper": {
+                "purchaseCount": 1,
+                "scrapCount": 0
+            }
         }
     }
     else if (startAuthority == 72) {
         return {
-            count: 12,
-            cost: 0,
-            ships: 12,
-            bases: 0,
-            factions: {
-                "Blob": 2,
-                "Trade Federation": 0,
-                "Star Empire": 2,
-                "Machine Cult": 0,
-                "Unaligned": 8
+            "assaultshard": {
+                "purchaseCount": 3,
+                "scrapCount": 0
             },
-            cards: command_decks['commanders']['lostfleet']['deck']
+            "commandshard": {
+                "purchaseCount": 2,
+                "scrapCount": 0
+            },
+            "reconshard": {
+                "purchaseCount": 3,
+                "scrapCount": 0
+            },
+            "salvageshard": {
+                "purchaseCount": 3,
+                "scrapCount": 0
+            },
+            "transportshard": {
+                "purchaseCount": 3,
+                "scrapCount": 0
+            }
         }
     }
 }
-
-export default enhance
