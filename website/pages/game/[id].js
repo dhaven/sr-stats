@@ -122,7 +122,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                                         </div>
                                     </div>
                                     <div className="md:hidden md:rounded-b-xl">
-                                        <DeckOverview deck={decks[getTurnState(i)]['players'][activePlayer]['deck']}></DeckOverview>
+                                        <DeckOverview deck={decks[getTurnState(i)]['players'][oneKey]['deck']}></DeckOverview>
                                     </div>
                                 </div>
                             )
