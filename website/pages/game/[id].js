@@ -38,7 +38,6 @@ export default function Game({ winner, loser, extensions, events, players, winCo
     let [isAddGameOpen, setAddGameIsOpen] = useState(false)
     let [turnA, setTurnA] = useState(decks.length - 1)
     let [turnB, setTurnB] = useState(decks.length - 1)
-    console.log(authorityData)
     function openAddGameModal() {
         setAddGameIsOpen(true)
     }
@@ -143,7 +142,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                                 onChange={(value, index) => {
                                     updateTurn(-1, value)
                                 }}
-                                renderThumb={(props, state) => <div {...props}>turn {state.valueNow + 1}</div>}
+                                renderThumb={(props, state) => <div {...props}>turn {state.valueNow}</div>}
                             />
                         </div>
                         <div className="hidden md:flex md:py-4 lg:py-6 md:px-2 lg:px-4 md:mx-4 lg:p-2 rounded-b-xl">

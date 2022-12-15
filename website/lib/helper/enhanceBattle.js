@@ -33,22 +33,21 @@ export function getAuthorityChart(rounds) {
     let authorityData = {}
     let firstPlayer = rounds[0]['player']
     let secondPlayer = rounds[1]['player']
-    let indivTurns = Math.ceil(rounds.length / 2)
-    authorityData[firstPlayer] = Array(indivTurns).fill(0)
-    authorityData[secondPlayer] = Array(indivTurns).fill(0)
+    authorityData[firstPlayer] = []
+    authorityData[secondPlayer] = []
     let startAuthority = getInitialAuthority(rounds)
     authorityData[firstPlayer][0] = startAuthority[firstPlayer]
     authorityData[secondPlayer][0] = startAuthority[secondPlayer]
-    for (let i = 1; i < rounds.length; i++) {
+    for (let i = 0; i < rounds.length; i++) {
         if (firstPlayer in rounds[i]['authority']) {
-            authorityData[firstPlayer][i] = authorityData[firstPlayer][i - 1] + parseInt(rounds[i]['authority'][firstPlayer]['diff'])
+            authorityData[firstPlayer][i+1] = authorityData[firstPlayer][i] + parseInt(rounds[i]['authority'][firstPlayer]['diff'])
         } else {
-            authorityData[firstPlayer][i] = authorityData[firstPlayer][i - 1]
+            authorityData[firstPlayer][i+1] = authorityData[firstPlayer][i]
         }
         if (secondPlayer in rounds[i]['authority']) {
-            authorityData[secondPlayer][i] = authorityData[secondPlayer][i - 1] + parseInt(rounds[i]['authority'][secondPlayer]['diff'])
+            authorityData[secondPlayer][i+1] = authorityData[secondPlayer][i] + parseInt(rounds[i]['authority'][secondPlayer]['diff'])
         } else {
-            authorityData[secondPlayer][i] = authorityData[secondPlayer][i - 1]
+            authorityData[secondPlayer][i+1] = authorityData[secondPlayer][i]
         }
     }
     return authorityData
@@ -136,6 +135,7 @@ export function getTemporalDeck(rounds) {
     }
     lastTurnDeck['players'][firstPlayer] = firstPlayerInit
     lastTurnDeck['players'][secondPlayer] = secondPlayerInit
+    turnDecks.push(lastTurnDeck)
     for (let i = 0; i < rounds.length; i++) {
         let currentRound = rounds[i]
         let nextTurnDecks = JSON.parse(JSON.stringify(lastTurnDeck));
@@ -155,7 +155,6 @@ export function getTemporalDeck(rounds) {
         }
         for (let j = 0; j < currentRound['purchasedCards'].length; j++) {
             let purchasedCard = currentRound['purchasedCards'][j]
-            console.log(nextTurnDecks['players'][currentPlayer])
             if (!(purchasedCard in nextTurnDecks['players'][currentPlayer]['deck'])) {
                 nextTurnDecks['players'][currentPlayer]['deck'][purchasedCard] = {
                     purchaseCount: 1,
@@ -224,7 +223,7 @@ function getInitialAuthority(rounds) {
         let nextRound = rounds[i]
         for (let player in nextRound['authority']) {
             if (!(player in players)) {
-                players[player] = nextRound['authority'][player]['new']
+                players[player] = nextRound['authority'][player]['new'] - nextRound['authority'][player]['diff']
             }
         }
         if (Object.keys(players).length == 2) {
