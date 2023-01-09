@@ -688,14 +688,15 @@ export function parseBattle(battlelog) {
     parser.buildParseTrees = true;
     try {
         const tree = parser.battle();
+        const data = tree.accept(new Visitor())
         return {
             status: "success",
-            data: tree.accept(new Visitor())
+            data: data
         }
     } catch (error) {
         return {
             status: "error",
-            data: error.message
+            data: "Input data contains errors"
         }
     }
 }
@@ -707,6 +708,10 @@ export function findErrors(battlelog) {
     const tokens = new antlr4.CommonTokenStream(lexer);
     const parser = new StarStarParser(tokens);
     parser.buildParseTrees = true;
-    parser.battle() //this is really slow
-    return parser._syntaxErrors == 0
+    try{
+        parser.battle() //this is really slow
+        return parser._syntaxErrors == 0
+    } catch(error){
+        return false
+    }
 }

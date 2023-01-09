@@ -1,0 +1,327 @@
+        Revealed event <color=#800080>Supply Run</color>
+Resolving Acquire 1 Explorer to deck or Put target card from your discard pile on top of your deck
+        Acquired <color=#800080>Explorer</color> to the top of the deck.
+Played <color=#800080>Scout</color>
+        MorFaDa  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+Played <color=#800080>Scout</color>
+        MorFaDa  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Acquired <color=#1589FF>Trade Hauler</color>
+        MorFaDa - -2 Trade (Trade:0)
+Played <color=#800080>Viper</color>
+        MorFaDa  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Attacked CCKinnison for 1 (New Authority:49)
+        MorFaDa - -1 Combat (Combat:0)
+        CCKinnison - -1 Authority (Authority:49)
+MorFaDa ends turn 1
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now CCKinnison's turn 2
+Resolving Acquire 1 Explorer to deck or Put target card from your discard pile on top of your deck
+        Acquired <color=#800080>Explorer</color> to the top of the deck.
+Chose Acquire Federation cards at one less trade
+        Scrapped <color=#800080>Gray Market</color>
+        Refresh Trade Row Discounts
+Scrapping Smuggling Run
+Acquired <color=#1589FF>Bounty Hunter</color>
+        Scrapped <color=#800080>Smuggling Run</color>
+Played <color=#800080>Scout</color>
+        CCKinnison  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+Played <color=#800080>Scout</color>
+        CCKinnison  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Played <color=#800080>Scout</color>
+        CCKinnison  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Played <color=#800080>Scout</color>
+        CCKinnison  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FFFF00>Gunship</color>
+        CCKinnison - -4 Trade (Trade:0)
+Played <color=#800080>Viper</color>
+        CCKinnison  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Attacked MorFaDa for 1 (New Authority:49)
+        CCKinnison - -1 Combat (Combat:0)
+        MorFaDa - -1 Authority (Authority:49)
+CCKinnison ends turn 2
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now MorFaDa's turn 3
+Played <color=#800080>Explorer</color>
+        MorFaDa  >  <color=#800080>Explorer</color> +2 Trade (Trade:2)
+Acquired <color=#4CC417>Plague Pod</color>
+        MorFaDa - -1 Trade (Trade:1)
+Played <color=#800080>Scout</color>
+        MorFaDa  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Acquired <color=#FF0000>Missile Bot</color>
+        MorFaDa - -2 Trade (Trade:0)
+Played <color=#800080>Scout</color>
+        MorFaDa  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+Played <color=#800080>Scout</color>
+        MorFaDa  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Acquired <color=#4CC417>War Kite</color>
+        MorFaDa - -2 Trade (Trade:0)
+Played <color=#800080>Viper</color>
+        MorFaDa  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Attacked CCKinnison for 1 (New Authority:48)
+        MorFaDa - -1 Combat (Combat:0)
+        CCKinnison - -1 Authority (Authority:48)
+MorFaDa ends turn 3
+        Drew 3 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now CCKinnison's turn 4
+Played <color=#800080>Explorer</color>
+        CCKinnison  >  <color=#800080>Explorer</color> +2 Trade (Trade:2)
+Acquired <color=#FFFF00>Lancer</color>
+        CCKinnison - -2 Trade (Trade:0)
+Played <color=#800080>Scout</color>
+        CCKinnison  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+Played <color=#800080>Scout</color>
+        CCKinnison  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Played <color=#800080>Scout</color>
+        CCKinnison  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#4CC417>Ravager</color>
+        CCKinnison - -3 Trade (Trade:0)
+Played <color=#800080>Viper</color>
+        CCKinnison  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Attacked MorFaDa for 1 (New Authority:48)
+        CCKinnison - -1 Combat (Combat:0)
+        MorFaDa - -1 Authority (Authority:48)
+CCKinnison ends turn 4
+        Drew 1 cards.
+        Shuffled discard pile to form new deck
+        Drew 4 cards.
+        Refresh ally indicators
+        It is now MorFaDa's turn 5
+Played <color=#4CC417>Plague Pod</color>
+        MorFaDa  >  <color=#4CC417>Plague Pod</color> +2 Trade (Trade:2)
+Played <color=#4CC417>War Kite</color>
+        MorFaDa  >  <color=#4CC417>War Kite</color> +5 Combat (Combat:5)
+Played <color=#800080>Scout</color>
+        MorFaDa  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#1589FF>Cargo Rocket</color>
+        MorFaDa - -1 Trade (Trade:2)
+Played <color=#800080>Scout</color>
+        MorFaDa  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Played <color=#800080>Scout</color>
+        MorFaDa  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#4CC417>Bioformer</color>
+        MorFaDa - -4 Trade (Trade:0)
+Activating Plague Pod
+        Scrapped <color=#4CC417>Plague Pod</color>
+        MorFaDa  >  <color=#4CC417>Plague Pod</color> +6 Combat (Combat:11)
+Attacked CCKinnison for 11 (New Authority:37)
+        MorFaDa - -11 Combat (Combat:0)
+        CCKinnison - -11 Authority (Authority:37)
+MorFaDa ends turn 5
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now CCKinnison's turn 6
+Played <color=#800080>Scout</color>
+        CCKinnison  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+Played <color=#800080>Scout</color>
+        CCKinnison  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Played <color=#800080>Scout</color>
+        CCKinnison  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Played <color=#FFFF00>Gunship</color>
+        CCKinnison  >  <color=#FFFF00>Gunship</color> +5 Combat (Combat:5)
+        MorFaDa  <  <color=#FFFF00>Gunship</color> +1 Discard (Discarding: 1)
+Played <color=#800080>Viper</color>
+        CCKinnison  >  <color=#800080>Viper</color> +1 Combat (Combat:6)
+Acquired <color=#4CC417>Trade Wheel</color>
+        CCKinnison - -3 Trade (Trade:0)
+        Revealed event <color=#800080>Trade Mission</color>
+        CCKinnison - +4 Trade (Trade:4)
+Acquired <color=#4CC417>Bioformer</color>
+        CCKinnison - -4 Trade (Trade:0)
+Attacked MorFaDa for 6 (New Authority:42)
+        CCKinnison - -6 Combat (Combat:0)
+        MorFaDa - -6 Authority (Authority:42)
+CCKinnison ends turn 6
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now MorFaDa's turn 7
+Resolving Discard 1 cards
+MorFaDa is discarding Viper
+        no more cards to discard
+        Discarded <color=#800080>Viper</color>
+        Drew 1 cards.
+        Drew 1 cards.
+Played <color=#FF0000>Missile Bot</color>
+MorFaDa is scrapping: Viper
+        MorFaDa  >  <color=#FF0000>Missile Bot</color> +2 Combat (Combat:2)
+        Scrapped <color=#800080>Viper</color>
+Play all
+        MorFaDa  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        MorFaDa  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        MorFaDa  >  <color=#800080>Explorer</color> +2 Trade (Trade:4)
+        MorFaDa  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        MorFaDa  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+Acquired <color=#4CC417>Obliterator</color>
+        MorFaDa - -6 Trade (Trade:0)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        MorFaDa  >  <color=#800080>Explorer</color> +2 Combat (Combat:4)
+Attacked CCKinnison for 4 (New Authority:33)
+        MorFaDa - -4 Combat (Combat:0)
+        CCKinnison - -4 Authority (Authority:33)
+MorFaDa ends turn 7
+        Drew 3 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now CCKinnison's turn 8
+Played <color=#800080>Explorer</color>
+        CCKinnison  >  <color=#800080>Explorer</color> +2 Trade (Trade:2)
+Played <color=#800080>Scout</color>
+        CCKinnison  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#800080>Merc Cruiser</color>
+        CCKinnison - -3 Trade (Trade:0)
+Play all
+        CCKinnison  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        CCKinnison  >  <color=#1589FF>Bounty Hunter</color> +7 Combat (Combat:7)
+        CCKinnison  >  <color=#FFFF00>Lancer</color> +4 Combat (Combat:11)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        CCKinnison  >  <color=#800080>Explorer</color> +2 Combat (Combat:13)
+Attacked MorFaDa for 13 (New Authority:29)
+        CCKinnison - -13 Combat (Combat:0)
+        MorFaDa - -13 Authority (Authority:29)
+CCKinnison ends turn 8
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now MorFaDa's turn 9
+Played <color=#1589FF>Trade Hauler</color>
+        MorFaDa  >  <color=#1589FF>Trade Hauler</color> +3 Trade (Trade:3)
+Played <color=#800080>Scout</color>
+        MorFaDa  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Played <color=#1589FF>Cargo Rocket</color>
+        MorFaDa  >  <color=#1589FF>Cargo Rocket</color> +3 Authority (Authority:32)
+        MorFaDa  >  <color=#1589FF>Cargo Rocket</color> +2 Combat (Combat:2)
+        MorFaDa  >  <color=#1589FF>Cargo Rocket</color> +1 Trade (Trade:5)
+        MorFaDa  >  <color=#1589FF>Trade Hauler</color> +3 Authority (Authority:35)
+Played <color=#800080>Scout</color>
+        MorFaDa  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+Activating Cargo Rocket
+        Scrapped <color=#1589FF>Cargo Rocket</color>
+Acquired <color=#FFFF00>Battlecruiser</color>
+        MorFaDa - -6 Trade (Trade:0)
+        Acquired <color=#FFFF00>Battlecruiser</color> to the top of the deck.
+Chose Create Federation Secret Outpost
+        Changed Secret Outpost to Federation
+        Revealed Monopolize
+        MorFaDa  >  <color=#800080>Monopolize</color> +10 Authority (Authority:45)
+        Replaced Hidden Base
+Played <color=#800080>Viper</color>
+        MorFaDa  >  <color=#800080>Viper</color> +1 Combat (Combat:3)
+Attacked CCKinnison for 3 (New Authority:30)
+        MorFaDa - -3 Combat (Combat:0)
+        CCKinnison - -3 Authority (Authority:30)
+MorFaDa ends turn 9
+        Drew 5 cards.
+        Changed Secret Outpost to Unaligned
+        Refresh ally indicators
+        It is now CCKinnison's turn 10
+Played <color=#800080>Scout</color>
+        CCKinnison  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+Played <color=#800080>Scout</color>
+        CCKinnison  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Played <color=#800080>Scout</color>
+        CCKinnison  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#FF0000>Convoy Bot</color>
+        CCKinnison - -3 Trade (Trade:0)
+Play all
+        CCKinnison  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Played <color=#4CC417>Ravager</color>
+        CCKinnison  >  <color=#4CC417>Ravager</color> ability available
+        CCKinnison  >  <color=#4CC417>Ravager</color> +6 Combat (Combat:7)
+        Scrapped <color=#1589FF>Trade Escort</color>
+        Scrapped <color=#800080>Mercenary Garrison</color>
+Attacked Secret Outpost
+        CCKinnison - -4 Combat (Combat:3)
+        Destroyed <color=#800080>Secret Outpost</color>
+        Scrapped <color=#800080>Secret Outpost</color>
+Attacked MorFaDa for 3 (New Authority:42)
+        CCKinnison - -3 Combat (Combat:0)
+        MorFaDa - -3 Authority (Authority:42)
+CCKinnison ends turn 10
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now MorFaDa's turn 11
+Played <color=#FFFF00>Battlecruiser</color>
+        MorFaDa  >  <color=#FFFF00>Battlecruiser</color> +5 Combat (Combat:5)
+        Drew 1 cards.
+Play all
+        MorFaDa  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        MorFaDa  >  <color=#4CC417>Bioformer</color> +3 Combat (Combat:8)
+        MorFaDa  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        MorFaDa  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        MorFaDa  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FFFF00>Command Center</color>
+        MorFaDa - -4 Trade (Trade:0)
+Scrapping Hidden Base 2
+        Scrapped <color=#800080>Hidden Base 2</color>
+        MorFaDa  >  <color=#800080>Hidden Base 2</color> +4 Authority (Authority:46)
+        Revealed Diversify
+Resolving Add 4 Trade or Add 5 Combat or Add 6 Authority
+        MorFaDa  >  <color=#800080>Diversify</color> +4 Trade (Trade:4)
+Acquired <color=#4CC417>Predator</color>
+        MorFaDa - -2 Trade (Trade:2)
+Acquired <color=#FF0000>Defense Bot</color>
+        MorFaDa - -2 Trade (Trade:0)
+Attacked CCKinnison for 8 (New Authority:22)
+        MorFaDa - -8 Combat (Combat:0)
+        CCKinnison - -8 Authority (Authority:22)
+MorFaDa ends turn 11
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now CCKinnison's turn 12
+Played <color=#4CC417>Bioformer</color>
+        CCKinnison  >  <color=#4CC417>Bioformer</color> +3 Combat (Combat:3)
+Played <color=#800080>Scout</color>
+        CCKinnison  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+Played <color=#800080>Scout</color>
+        CCKinnison  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Played <color=#800080>Scout</color>
+        CCKinnison  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#FFFF00>Imperial Frigate</color>
+        CCKinnison - -3 Trade (Trade:0)
+Played <color=#800080>Merc Cruiser</color>
+        CCKinnison  >  <color=#800080>Merc Cruiser</color> ability available
+        CCKinnison  >  <color=#800080>Merc Cruiser</color> +5 Combat (Combat:8)
+        Changed Merc Cruiser to Blob
+Attacked Bioformer
+        CCKinnison - -4 Combat (Combat:4)
+        Destroyed <color=#4CC417>Bioformer</color>
+Attacked MorFaDa for 4 (New Authority:42)
+        CCKinnison - -4 Combat (Combat:0)
+        MorFaDa - -4 Authority (Authority:42)
+Scrapping Bioformer
+        Scrapped <color=#4CC417>Bioformer</color>
+        CCKinnison  >  <color=#4CC417>Bioformer</color> +3 Trade (Trade:3)
+Acquired <color=#FFFF00>Imperial Frigate</color>
+        CCKinnison - -3 Trade (Trade:0)
+CCKinnison ends turn 12
+        Changed Merc Cruiser to Unaligned
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now MorFaDa's turn 13
+Played <color=#FF0000>Missile Bot</color>
+MorFaDa is scrapping: Scout
+        MorFaDa  >  <color=#FF0000>Missile Bot</color> +2 Combat (Combat:2)
+        Scrapped <color=#800080>Scout</color>
+Played <color=#4CC417>War Kite</color>
+        MorFaDa  >  <color=#4CC417>War Kite</color> +5 Combat (Combat:7)
+Played <color=#4CC417>Obliterator</color>
+        MorFaDa  >  <color=#4CC417>Obliterator</color> +7 Combat (Combat:14)
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+Scrapping Bold Raid
+        Scrapped <color=#800080>Bold Raid</color>
+        Drew 1 cards.
+Play all
+        MorFaDa  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        MorFaDa  >  <color=#FFFF00>Command Center</color> +2 Trade (Trade:3)
+        MorFaDa  >  <color=#4CC417>Bioformer</color> +3 Combat (Combat:17)
+        MorFaDa  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Revealed Rule
+        === MorFaDa has won the game. ===
