@@ -1,41 +1,38 @@
 import { Chart as ChartJS } from 'chart.js/auto';
-import { Line } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
 
-function AuthorityChart({winner, authorityData}){
-    //construct our dataset array
+function BarChartTemporal({ winner, description, chartData }) {
     let datasets = []
     let numTurns = 0
-    for(let player in authorityData){
+    for (let player in chartData) {
         let borderColor = ""
-        if(player == winner){
+        if (player == winner) {
             borderColor = "#3d5a80"
-        }else{
+        } else {
             borderColor = "#ee6c4d"
         }
         datasets.push({
             label: player,
             fill: false,
-            data: authorityData[player],
-            borderColor: borderColor,
+            data: chartData[player],
             backgroundColor: borderColor,
+            categoryPercentage: 0.75
         })
-        numTurns = authorityData[player].length
+        numTurns = chartData[player].length
     }
     const data = {
-        labels: Array(numTurns).fill().map((x,i)=>i),
-        datasets: datasets,
+        labels: Array(numTurns).fill().map((x, i) => i),
+        datasets: datasets
     };
-    let options = {
+    const options = {
         plugins: {
             title: {
                 display: true,
-                text: "Authority",
-                font: {
-                    size: 16
-                }
+                text: description
             },
             legend: {
-                display: false,
+                display: true,
+                position: "bottom"
             },
         },
         interaction: {
@@ -51,14 +48,12 @@ function AuthorityChart({winner, authorityData}){
         //   show the x and y scales
         scales: {
             x: {
-                beginAtZero: false,
+                beginAtZero: true,
                 offset: true,
                 display: false,
             },
-            y: { 
+            y: {
                 beginAtZero: true,
-                display: true,
-                offset: true,
                 grid: {
                     display: false
                 }
@@ -66,14 +61,13 @@ function AuthorityChart({winner, authorityData}){
         },
     }
     return (
-        <div className="bg-scifi1 md:rounded-lg md:drop-shadow-scifi5 w-full p-2 md:p-4">
-            <Line
+        <div className="h-40 sm:h-80 w-full bg-scifi1 rounded-md p-2 drop-shadow-scifi5">
+            <Bar
                 options={options}
                 data={data}
             />
         </div>
     )
-    
 }
 
-export default AuthorityChart
+export default BarChartTemporal

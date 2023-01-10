@@ -93,6 +93,7 @@ class Visitor extends StarStarVisitor {
                 winner: "",
                 winCondition: "",
                 drawCount: 0,
+                shuffleCount: 0,
                 authority: {},
             }
             let currentPlayer = turn["currentPlayer"];
@@ -128,6 +129,7 @@ class Visitor extends StarStarVisitor {
             formattedRound["winCondition"] = turn["winCondition"]
             formattedRound["drawCount"] = turn["drawCount"]
             formattedRound["tradeRowSlot"] = turn["tradeRowSlot"]
+            formattedRound["shuffleCount"] = turn["shuffleCount"]
             rounds.push(formattedRound)
         }
         return {
@@ -150,6 +152,7 @@ class Visitor extends StarStarVisitor {
             winner: "",
             winCondition: "",
             drawCount: 0,
+            shuffleCount: 0,
             currentPlayer: "",
             players: {}
         }
@@ -196,6 +199,7 @@ class Visitor extends StarStarVisitor {
                 }
                 //turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
                 turnData["drawCount"] += action["cardAction"]["cardEffect"]["drawCount"]
+                turnData["shuffleCount"] += action["cardAction"]["cardEffect"]["shuffleCount"]
                 turnData["purchasedCards"] = turnData["purchasedCards"].concat(action["cardAction"]["cardEffect"]["acquiredCards"])
                 if ("event" in action["cardAction"]["trigger"]) {
                     turnData["events"] = turnData["events"].concat(action["cardAction"]["trigger"]["event"])
@@ -315,6 +319,8 @@ class Visitor extends StarStarVisitor {
                         turnData["players"][playerName]["newAuthority"] = player["newAuthority"]
                     }
                 }
+            }else if("shuffled" in action){
+                turnData["shuffleCount"] += 1
             }
         }
         //console.log(turnData)
@@ -351,7 +357,9 @@ class Visitor extends StarStarVisitor {
                 drawCount: this.visit(ctx.drawCards())
             }
         } else if (ctx.shuffleCards()) {
-            return {}
+            return {
+                shuffled: true
+            }
         } else if (ctx.endTurn()) {
             return {
                 currentPlayer: this.visit(ctx.endTurn())
@@ -390,7 +398,8 @@ class Visitor extends StarStarVisitor {
                 scrapSummary: [],
                 drawCount: 0,
                 players: [],
-                acquiredCards: []
+                acquiredCards: [],
+                shuffleCount: 0
             }
         }
         //console.log(`Card triggering effect is ${this.visit(ctx.cardTrigger())}`)
@@ -425,6 +434,9 @@ class Visitor extends StarStarVisitor {
             }
             if("scrapSummary" in cardEffect){
                 cardAction["cardEffect"]["scrapSummary"].push(cardEffect["scrapSummary"])
+            }
+            if("shuffled" in cardEffect){
+                cardAction["cardEffect"]["shuffleCount"] += 1
             }
         }
         return cardAction
@@ -476,6 +488,8 @@ class Visitor extends StarStarVisitor {
             cardEffect["acquiredCard"] = this.visit(ctx.acquireToHand())
         } else if (ctx.acquireToDeck()) {
             cardEffect["acquiredCard"] = this.visit(ctx.acquireToDeck())
+        }else if(ctx.shuffleCards()){
+            cardEffect["shuffled"] = true
         }
         return cardEffect
     }

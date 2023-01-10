@@ -4,21 +4,19 @@ import Head from 'next/head'
 import Layout from '../../components/layout'
 import AddGameModal from '../../components/addGameModal.js'
 import { useState } from 'react'
-import AuthorityChart from '../../components/authorityChart'
-import OtherCharts from '../../components/otherCharts'
 import { ArrowDownIcon } from '@heroicons/react/24/solid'
 import EventCard from '../../components/eventCard'
 import GameSummary from '../../components/gameSummary'
+import GameStats from '../../components/gameStats'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import discord_img from '../../public/images/discord.png'
 import { getExtensionsAndEvents } from '../../lib/helper/enhanceBattle'
 import { getAuthorityChart } from '../../lib/helper/enhanceBattle'
 import { getChart } from '../../lib/helper/enhanceBattle'
-import { getAggregateChart } from '../../lib/helper/enhanceBattle'
 import { getDiscardChart } from '../../lib/helper/enhanceBattle'
-import { getAggrDiscardChart } from '../../lib/helper/enhanceBattle'
 import { getTemporalDeck } from '../../lib/helper/enhanceBattle'
+import { getDeckSizeChart } from '../../lib/helper/enhanceBattle'
 
 // import dynamic method from next
 import dynamic from 'next/dynamic';
@@ -30,9 +28,10 @@ const ReactSlider = dynamic(
 
 const { MongoClient, ObjectId } = require('mongodb');
 
-export default function Game({ winner, loser, extensions, events, players, winCondition, authorityData, decks, otherData, otherAggrData }) {
+export default function Game({ winner, loser, extensions, events, players, winCondition, decks, chartData }) {
     const router = useRouter()
     const { id } = router.query
+    console.log(decks)
     let [activePlayer, setActivePlayer] = useState(winner)
     let [statsTab, setStatsTab] = useState("player") //can be either player or game
     let [isAddGameOpen, setAddGameIsOpen] = useState(false)
@@ -103,7 +102,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                                     onClick={() => setActivePlayer(oneKey)}
                                     className="flex flex-col w-full">
                                     <div className={`${displayPlayerCard(oneKey == activePlayer, oneKey)} md:p-2 flex flex-col grow justify-between hover:bg-slate-300 p-2 md:p-4 bg-scifi1 md:rounded-md gap-2 md:gap-4`}>
-                                        <PlayerOverview name={oneKey} deck={decks[getTurnState(i)]['players'][oneKey]['deck']} authority={authorityData[oneKey][getTurnState(i)]} missions={decks[getTurnState(i)]['players'][oneKey]['missions']}></PlayerOverview>
+                                        <PlayerOverview name={oneKey} deck={decks[getTurnState(i)]['players'][oneKey]['deck']} authority={chartData["authorityData"][oneKey][getTurnState(i)]} missions={decks[getTurnState(i)]['players'][oneKey]['missions']}></PlayerOverview>
                                         <div className="hidden md:flex justify-center px-2">
                                             <ArrowDownIcon className='h-5 w-5' />
                                         </div>
@@ -167,11 +166,8 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                                 }
                             </div>
                         }
-                        <div className="flex h-40 md:h-80 w-full">
-                            <AuthorityChart winner={winner} authorityData={authorityData}></AuthorityChart>
-                        </div>
-                        <div className="flex w-full">
-                            <OtherCharts winner={winner} otherData={otherData} otherAggrData={otherAggrData}></OtherCharts>
+                        <div className="flex w-full h-full">
+                            <GameStats winner={winner} chartData={chartData} turnDecks={decks} events={events}></GameStats>
                         </div>
                     </div>
                 }
@@ -242,13 +238,10 @@ export async function getServerSideProps(context) {
         let loserName = playersNames[0]
         let authorityData = getAuthorityChart(data['rounds'])
         let combatData = getChart(data['rounds'],'combatPool')
-        let combatAggrData = getAggregateChart(data['rounds'], 'combatPool')
         let tradeData = getChart(data['rounds'],'tradePool')
-        let tradeAggrData = getAggregateChart(data['rounds'], 'tradePool')
         let discardData = getDiscardChart(data['rounds'])
-        let discardAggrData = getAggrDiscardChart(data['rounds'])
         let drawData = getChart(data['rounds'],'drawCount')
-        let drawAggrData = getAggregateChart(data['rounds'],'drawCount')
+        let shuffleData = getChart(data['rounds'], 'shuffleCount')
 
         let turnDecks = getTemporalDeck(data['rounds'])
         let { extensions, events } = getExtensionsAndEvents(data['rounds'])
@@ -263,6 +256,7 @@ export async function getServerSideProps(context) {
                 winCondition = "defeat" //data['winner'] + " won by defeating " + loserName
             }
         }
+        let deckSizeData  = getDeckSizeChart(turnDecks)
         return {
             props: {
                 winner: data['winner'],
@@ -274,19 +268,15 @@ export async function getServerSideProps(context) {
                     data['rounds'][1]['player']
                 ],
                 winCondition: winCondition,
-                authorityData: authorityData,
                 decks: turnDecks,
-                otherData: {
+                chartData: {
                     combatData: combatData,
                     tradeData: tradeData,
                     discardData: discardData,
                     drawData: drawData,
-                },
-                otherAggrData: {
-                    combatData: combatAggrData,
-                    tradeData: tradeAggrData,
-                    discardData: discardAggrData,
-                    drawData: drawAggrData
+                    deckSizeData: deckSizeData,
+                    shuffleData: shuffleData,
+                    authorityData: authorityData,
                 }
             }
         }

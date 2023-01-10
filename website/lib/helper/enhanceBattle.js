@@ -29,6 +29,23 @@ export function getExtensionsAndEvents(rounds) {
     }
 }
 
+export function getDeckSizeChart(playersDeck){
+    let deckSizeData = {}
+    for(let i = 0; i < playersDeck.length; i++){
+        Object.keys(playersDeck[i]['players']).forEach(player => {
+            let deckSize = 0
+            if(!(player in deckSizeData)){
+                deckSizeData[player] = []
+            }
+            Object.keys(playersDeck[i]['players'][player]['deck']).forEach(card => {
+                deckSize += playersDeck[i]['players'][player]['deck'][card]["purchaseCount"] - playersDeck[i]['players'][player]['deck'][card]["scrapCount"]
+            })
+            deckSizeData[player].push(deckSize)
+        })
+    }
+    return deckSizeData
+}
+
 export function getAuthorityChart(rounds) {
     let authorityData = {}
     let firstPlayer = rounds[0]['player']
