@@ -175,7 +175,8 @@ export function getTemporalDeck(rounds) {
             if (!(purchasedCard in nextTurnDecks['players'][currentPlayer]['deck'])) {
                 nextTurnDecks['players'][currentPlayer]['deck'][purchasedCard] = {
                     purchaseCount: 1,
-                    scrapCount: 0
+                    scrapCount: 0,
+                    purchaseTurn: i+1
                 }
             } else {
                 nextTurnDecks['players'][currentPlayer]['deck'][purchasedCard]['purchaseCount'] += 1
@@ -190,7 +191,8 @@ export function getTemporalDeck(rounds) {
                 if (!(tradeRowSlot in nextTurnDecks['players'][currentPlayer]['deck'])) {
                     nextTurnDecks['players'][currentPlayer]['deck'][tradeRowSlot] = {
                         purchaseCount: 1,
-                        scrapCount: 0
+                        scrapCount: 0,
+                        purchaseTurn: i+1
                     }
                 } else {
                     nextTurnDecks['players'][currentPlayer]['deck'][tradeRowSlot]['purchaseCount'] += 1
@@ -272,50 +274,61 @@ function getInitialDeck(startAuthority) {
         return {
             scout: {
                 purchaseCount: 8,
-                scrapCount: 0
+                scrapCount: 0,
+                purchaseTurn: 0
             },
             viper: {
                 purchaseCount: 2,
-                scrapCount: 0
+                scrapCount: 0,
+                purchaseTurn: 0
             }
         }
     } else if (startAuthority == 64) {
         return {
             "imperialtalon": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "imperialviper": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "ranger": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "salvagedrone": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "scout": {
                 "purchaseCount": 4,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "scoutbot": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "stellarfalcon": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "viper": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "welderdrone": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             }
         }
     }
@@ -323,35 +336,43 @@ function getInitialDeck(startAuthority) {
         return {
             "cargoboat": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "diplomaticshuttle": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "federationscout": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "imperialviper": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "scout": {
                 "purchaseCount": 4,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "stellarfalcon": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "tributetransport": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "viper": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
         }
     }
@@ -359,43 +380,53 @@ function getInitialDeck(startAuthority) {
         return {
             "cargoboat": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "federationscout": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "frontiertug": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "laserdrone": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "ranger": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "salvagedrone": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "scout": {
                 "purchaseCount": 4,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "viper": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "viperbot": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "coalitionstronghold": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             }
         }
     }
@@ -403,39 +434,48 @@ function getInitialDeck(startAuthority) {
         return {
             "clusterscout": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "diplomaticshuttle": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "escortviper": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "frontiertug": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "ranger": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "ripper": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "scout": {
                 "purchaseCount": 4,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "swarmling": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "viper": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
         }
     }
@@ -443,39 +483,48 @@ function getInitialDeck(startAuthority) {
         return {
             "clusterviper": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "laserdrone": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "protopod": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "ranger": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "scout": {
                 "purchaseCount": 4,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "scoutbot": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "swarmling": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "viper": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "welderdrone": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             }
         }
     }
@@ -483,39 +532,48 @@ function getInitialDeck(startAuthority) {
         return {
             "clusterviper": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "imperialscout": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "imperialtalon": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "protopod": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "ranger": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "ripper": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "scout": {
                 "purchaseCount": 4,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "tributetransport": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "viper": {
                 "purchaseCount": 1,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             }
         }
     }
@@ -523,23 +581,28 @@ function getInitialDeck(startAuthority) {
         return {
             "assaultshard": {
                 "purchaseCount": 3,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "commandshard": {
                 "purchaseCount": 2,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "reconshard": {
                 "purchaseCount": 3,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "salvageshard": {
                 "purchaseCount": 3,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             },
             "transportshard": {
                 "purchaseCount": 3,
-                "scrapCount": 0
+                "scrapCount": 0,
+                "purchaseTurn": 0
             }
         }
     }

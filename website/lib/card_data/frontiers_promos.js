@@ -67,7 +67,7 @@ export const frontiers_promos = {
         },
         "converter": {
             "name": "Converter",
-            "cost": 50,
+            "cost": 5,
             "faction": [
                 "Machine Cult"
             ],

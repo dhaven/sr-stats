@@ -21,7 +21,7 @@ function BarChartTemporal({ winner, description, chartData }) {
         numTurns = chartData[player].length
     }
     const data = {
-        labels: Array(numTurns).fill().map((x, i) => i),
+        labels: Array(numTurns).fill().map((x, i) => i+1),
         datasets: datasets
     };
     const options = {
@@ -50,7 +50,7 @@ function BarChartTemporal({ winner, description, chartData }) {
             x: {
                 beginAtZero: true,
                 offset: true,
-                display: false,
+                display: true,
             },
             y: {
                 beginAtZero: true,
