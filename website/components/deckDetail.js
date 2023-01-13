@@ -3,7 +3,6 @@ import CardBase from './cardBase'
 import card_list from '../lib/card_data/cards.js'
 
 function DeckDetail({ deck, filters, sorting, hideScrappedCards}) {
-    console.log(deck)
     function filterDeck(deck, filters) {
         let filteredDeck = {}
         for (let card in deck) {
@@ -42,8 +41,6 @@ function DeckDetail({ deck, filters, sorting, hideScrappedCards}) {
                 return 0;
             })
         }
-        console.log(sorting)
-        console.log(cardNames)
         return cardNames
     }
     return (
@@ -51,6 +48,9 @@ function DeckDetail({ deck, filters, sorting, hideScrappedCards}) {
             {
                 sortDeck(Object.keys(filterDeck(deck, filters)), sorting).map((card, index) => {
                     let count = deck[card]["purchaseCount"] - deck[card]["scrapCount"]
+                    if(card == "mobilemarket"){ //when this card is scrapped it goes to the discard pile
+                        return <CardBase key={index} file={card} card={card_list[card]} count={deck[card]["purchaseCount"]} isScrapped={false}></CardBase>
+                    }
                     if (count > 0) {
                         return (
                             card_list[card]['type'] == 'ship' ?

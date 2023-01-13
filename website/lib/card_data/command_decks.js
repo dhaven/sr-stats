@@ -393,6 +393,22 @@ export const command_decks = {
                 "extension": "command_decks"
             }
         },
+        "nandisonslaught": {
+            "name": "Nandi's Onslaught",
+            "type": "gambit",
+            "scrapCount": 0,
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "allianceprocurement": {
+            "name": "Alliance Procurement",
+            "type": "gambit",
+            "scrapCount": 0,
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
         "coalitionefficiency": {
             "name": "Coalition Efficiency",
             "type": "gambit",
@@ -459,6 +475,14 @@ export const command_decks = {
         },
         "splintertech": {
             "name": "Splinter Tech",
+            "type": "gambit",
+            "scrapCount": 0,
+            "metadata": {
+                "extension": "command_decks"
+            }
+        },
+        "jochumsgranddesign": {
+            "name": "Jochum's Grand Design",
             "type": "gambit",
             "scrapCount": 0,
             "metadata": {

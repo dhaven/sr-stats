@@ -31,12 +31,12 @@ const { MongoClient, ObjectId } = require('mongodb');
 export default function Game({ winner, loser, extensions, events, players, winCondition, decks, chartData }) {
     const router = useRouter()
     const { id } = router.query
-    console.log(decks)
     let [activePlayer, setActivePlayer] = useState(winner)
     let [statsTab, setStatsTab] = useState("player") //can be either player or game
     let [isAddGameOpen, setAddGameIsOpen] = useState(false)
     let [turnA, setTurnA] = useState(decks.length - 1)
     let [turnB, setTurnB] = useState(decks.length - 1)
+    console.log(decks)
     function openAddGameModal() {
         setAddGameIsOpen(true)
     }

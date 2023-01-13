@@ -199,7 +199,7 @@ export function getTemporalDeck(rounds) {
                 }
             } else if (scrappedCard.endsWith("2")) {
                 gambitCard = scrappedCard.substring(0, scrappedCard.length - 1)
-                if (gambitCard in card_list && card_list[gambitCard]["metadata"]["extension"] == "gambit") {
+                if (gambitCard in card_list && card_list[gambitCard]["type"] == "gambit") {
                     if (!(gambitCard in nextTurnDecks['players'][currentPlayer]['gambit'])) {
                         nextTurnDecks['players'][currentPlayer]["gambit"][gambitCard] = {
                             scrapCount: 1
@@ -212,13 +212,13 @@ export function getTemporalDeck(rounds) {
                 }
             }
             else if (scrappedCard in card_list) {
-                if (card_list[scrappedCard]["metadata"]["extension"] == "gambit") {
+                if (card_list[scrappedCard]["type"] == "gambit") {
                     if (!(scrappedCard in nextTurnDecks['players'][currentPlayer]['gambit'])) {
                         nextTurnDecks['players'][currentPlayer]["gambit"][scrappedCard] = {
                             scrapCount: 1
                         }
                     } else {
-                        nextTurnDecks['players'][currentPlayer]["gambit"][scrappedCard] += 1
+                        nextTurnDecks['players'][currentPlayer]["gambit"][scrappedCard]['scrapCount'] += 1
                     }
                 }
                 else if (scrappedCard in nextTurnDecks['players'][currentPlayer]['deck']) {
@@ -257,11 +257,7 @@ export function initializeDecks(rounds, player) {
         nextRound = rounds[i]
         if (player in nextRound['authority']) {
             let startAuthority = nextRound['authority'][player]['new'] - nextRound['authority'][player]['diff']
-            return {
-                deck: getInitialDeck(startAuthority),
-                gambit: {},
-                missions: []
-            }
+            return getInitialDeck(startAuthority)
         }
     }
 }
@@ -272,338 +268,419 @@ function getInitialDeck(startAuthority) {
     if (startAuthority == 50) {
         //initialize deck with standard game
         return {
-            scout: {
-                purchaseCount: 8,
-                scrapCount: 0,
-                purchaseTurn: 0
+            deck: {
+                scout: {
+                    purchaseCount: 8,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                viper: {
+                    purchaseCount: 2,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                }
             },
-            viper: {
-                purchaseCount: 2,
-                scrapCount: 0,
-                purchaseTurn: 0
-            }
+            gambit: {},
+            missions: []
         }
     } else if (startAuthority == 64) {
         return {
-            "imperialtalon": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
+            deck: {
+                imperialtalon: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                imperialviper: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                ranger: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                salvagedrone: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                scout: {
+                    purchaseCount: 4,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                scoutbot: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                stellarfalcon: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                viper: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                welderdrone: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                }
             },
-            "imperialviper": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
+            gambit: {
+                lesforay: {
+                    scrapCount: 0
+                },
+                alignmentingenuity: {
+                    scrapCount: 0
+                }
             },
-            "ranger": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "salvagedrone": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "scout": {
-                "purchaseCount": 4,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "scoutbot": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "stellarfalcon": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "viper": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "welderdrone": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            }
+            missions: []
         }
     }
     else if (startAuthority == 68) {
         return {
-            "cargoboat": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
+            deck: {
+                cargoboat: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                diplomaticshuttle: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                federationscout: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                imperialviper: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                scout: {
+                    purchaseCount: 4,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                stellarfalcon: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                tributetransport: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                viper: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
             },
-            "diplomaticshuttle": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
+            gambit: {
+                nandisonslaught: {
+                    scrapCount: 0,
+                },
+                allianceprocurement: {
+                    scrapCount: 0,
+                },
             },
-            "federationscout": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "imperialviper": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "scout": {
-                "purchaseCount": 4,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "stellarfalcon": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "tributetransport": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "viper": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
+            missions: []
         }
     }
     else if (startAuthority == 62) {
         return {
-            "cargoboat": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
+            deck: {
+                cargoboat: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                federationscout: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                frontiertug: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                laserdrone: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                ranger: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                salvagedrone: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                scout: {
+                    purchaseCount: 4,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                viper: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                viperbot: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                coalitionstronghold: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                }
             },
-            "federationscout": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
+            gambit: {
+                coalitionefficiency: {
+                    scrapCount: 0,
+                },
+                valkensenterprise: {
+                    scrapCount: 0,
+                },
             },
-            "frontiertug": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "laserdrone": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "ranger": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "salvagedrone": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "scout": {
-                "purchaseCount": 4,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "viper": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "viperbot": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "coalitionstronghold": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            }
+            missions: []
         }
     }
     else if (startAuthority == 66) {
         return {
-            "clusterscout": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
+            deck: {
+                clusterscout: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                diplomaticshuttle: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                escortviper: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                frontiertug: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                ranger: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                ripper: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                scout: {
+                    purchaseCount: 4,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                swarmling: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                viper: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
             },
-            "diplomaticshuttle": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
+            gambit: {
+                newburgsgame: {
+                    scrapCount: 0,
+                },
+                pactdomination: {
+                    scrapCount: 0,
+                },
             },
-            "escortviper": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "frontiertug": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "ranger": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "ripper": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "scout": {
-                "purchaseCount": 4,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "swarmling": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "viper": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
+            missions: []
         }
     }
     else if (startAuthority == 70) {
         return {
-            "clusterviper": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
+            deck:{
+                clusterviper: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                laserdrone: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                protopod: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                ranger: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                scout: {
+                    purchaseCount: 4,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                scoutbot: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                swarmling: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                viper: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                welderdrone: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                }
             },
-            "laserdrone": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
+            gambit: {
+                walshsstratagem: {
+                    scrapCount: 0,
+                },
+                unitywarcraft: {
+                    scrapCount: 0,
+                },
             },
-            "protopod": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "ranger": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "scout": {
-                "purchaseCount": 4,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "scoutbot": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "swarmling": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "viper": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "welderdrone": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            }
+            missions: []
         }
     }
     else if (startAuthority == 60) {
         return {
-            "clusterviper": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
+            deck: {
+                clusterviper: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                imperialscout: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                imperialtalon: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                protopod: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                ranger: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                ripper: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                scout: {
+                    purchaseCount: 4,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                tributetransport: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                viper: {
+                    purchaseCount: 1,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                }
             },
-            "imperialscout": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
+            gambit: {
+                mccreadysmaneuver: {
+                    scrapCount: 0,
+                },
+                unionblitz: {
+                    scrapCount: 0,
+                },
             },
-            "imperialtalon": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "protopod": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "ranger": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "ripper": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "scout": {
-                "purchaseCount": 4,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "tributetransport": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "viper": {
-                "purchaseCount": 1,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            }
+            missions: []
         }
     }
     else if (startAuthority == 72) {
         return {
-            "assaultshard": {
-                "purchaseCount": 3,
-                "scrapCount": 0,
-                "purchaseTurn": 0
+            deck: {
+                assaultshard: {
+                    purchaseCount: 3,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                commandshard: {
+                    purchaseCount: 2,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                reconshard: {
+                    purchaseCount: 3,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                salvageshard: {
+                    purchaseCount: 3,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                },
+                transportshard: {
+                    purchaseCount: 3,
+                    scrapCount: 0,
+                    purchaseTurn: 0
+                }
             },
-            "commandshard": {
-                "purchaseCount": 2,
-                "scrapCount": 0,
-                "purchaseTurn": 0
+            gambit: {
+                splintertech: {
+                    scrapCount: 0,
+                },
+                jochumsgranddesign: {
+                    scrapCount: 0,
+                },
             },
-            "reconshard": {
-                "purchaseCount": 3,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "salvageshard": {
-                "purchaseCount": 3,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            },
-            "transportshard": {
-                "purchaseCount": 3,
-                "scrapCount": 0,
-                "purchaseTurn": 0
-            }
+            missions: []
         }
     }
 }
