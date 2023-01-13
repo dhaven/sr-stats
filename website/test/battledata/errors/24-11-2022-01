@@ -22,6 +22,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "gouda55": {
             "diff": -1,
@@ -50,6 +51,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
         "player": "gouda55",
         "tradeRowSlot": [
@@ -72,13 +74,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "gouda55": {
             "diff": -1,
             "new": 48
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -96,13 +100,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "YL5943": {
             "diff": -2,
             "new": 48
           }
         },
-        "player": "gouda55"
+        "player": "gouda55",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -120,13 +126,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "gouda55": {
             "diff": -1,
             "new": 47
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -147,6 +155,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "gouda55": {
             "diff": -6,
@@ -157,7 +166,8 @@
             "new": 47
           }
         },
-        "player": "gouda55"
+        "player": "gouda55",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -176,6 +186,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "YL5943": {
             "diff": -6,
@@ -186,7 +197,8 @@
             "new": 40
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -204,13 +216,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "YL5943": {
             "diff": -9,
             "new": 32
           }
         },
-        "player": "gouda55"
+        "player": "gouda55",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -231,6 +245,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "YL5943": {
             "diff": 4,
@@ -241,7 +256,8 @@
             "new": 38
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 10,
@@ -273,13 +289,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 14,
+        "shuffleCount": 1,
         "authority": {
           "YL5943": {
             "diff": -4,
             "new": 32
           }
         },
-        "player": "gouda55"
+        "player": "gouda55",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 8,
@@ -300,13 +318,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 10,
+        "shuffleCount": 1,
         "authority": {
           "gouda55": {
             "diff": -1,
             "new": 37
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 8,
@@ -326,6 +346,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "gouda55": {
             "diff": 7,
@@ -336,7 +357,8 @@
             "new": 30
           }
         },
-        "player": "gouda55"
+        "player": "gouda55",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -354,13 +376,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "gouda55": {
             "diff": -5,
             "new": 39
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -380,13 +404,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "YL5943": {
             "diff": -2,
             "new": 28
           }
         },
-        "player": "gouda55"
+        "player": "gouda55",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -406,6 +432,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "YL5943": {
             "diff": 10,
@@ -416,7 +443,8 @@
             "new": 38
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -439,13 +467,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "YL5943": {
             "diff": -3,
             "new": 35
           }
         },
-        "player": "gouda55"
+        "player": "gouda55",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -463,13 +493,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "gouda55": {
             "diff": -3,
             "new": 35
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -492,6 +524,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "gouda55": {
             "diff": 3,
@@ -502,7 +535,8 @@
             "new": 34
           }
         },
-        "player": "gouda55"
+        "player": "gouda55",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -523,6 +557,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "YL5943": {
             "diff": 4,
@@ -533,7 +568,8 @@
             "new": 33
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -558,13 +594,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 1,
         "authority": {
           "gouda55": {
             "diff": 4,
             "new": 37
           }
         },
-        "player": "gouda55"
+        "player": "gouda55",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -588,6 +626,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "YL5943": {
             "diff": 5,
@@ -598,7 +637,8 @@
             "new": 36
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -619,8 +659,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "gouda55"
+        "player": "gouda55",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -641,13 +683,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "gouda55": {
             "diff": -5,
             "new": 31
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 2,
@@ -668,13 +712,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "gouda55": {
             "diff": 3,
             "new": 34
           }
         },
-        "player": "gouda55"
+        "player": "gouda55",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -695,8 +741,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 15,
@@ -722,6 +770,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 8,
+        "shuffleCount": 1,
         "authority": {
           "gouda55": {
             "diff": 4,
@@ -732,7 +781,8 @@
             "new": 31
           }
         },
-        "player": "gouda55"
+        "player": "gouda55",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -760,13 +810,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 0,
         "authority": {
           "YL5943": {
             "diff": 11,
             "new": 42
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 7,
@@ -784,6 +836,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "gouda55": {
             "diff": 3,
@@ -794,7 +847,8 @@
             "new": 31
           }
         },
-        "player": "gouda55"
+        "player": "gouda55",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -818,6 +872,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "YL5943": {
             "diff": 8,
@@ -828,7 +883,8 @@
             "new": 37
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -846,13 +902,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "gouda55": {
             "diff": 6,
             "new": 43
           }
         },
-        "player": "gouda55"
+        "player": "gouda55",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -874,13 +932,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "gouda55": {
             "diff": -10,
             "new": 33
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 9,
@@ -904,13 +964,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 10,
+        "shuffleCount": 1,
         "authority": {
           "YL5943": {
             "diff": -15,
             "new": 24
           }
         },
-        "player": "gouda55"
+        "player": "gouda55",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 0,
@@ -932,8 +994,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 7,
@@ -957,6 +1021,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "gouda55": {
             "diff": 3,
@@ -967,7 +1032,8 @@
             "new": 20
           }
         },
-        "player": "gouda55"
+        "player": "gouda55",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -991,13 +1057,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "YL5943": {
             "diff": 10,
             "new": 30
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 9,
@@ -1017,13 +1085,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "YL5943": {
             "diff": -16,
             "new": 14
           }
         },
-        "player": "gouda55"
+        "player": "gouda55",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 0,
@@ -1044,13 +1114,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "YL5943": {
             "diff": 3,
             "new": 17
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -1066,13 +1138,15 @@
         "winner": "gouda55",
         "winCondition": "",
         "drawCount": 3,
+        "shuffleCount": 0,
         "authority": {
           "YL5943": {
             "diff": -22,
             "new": -5
           }
         },
-        "player": "gouda55"
+        "player": "gouda55",
+        "tradeRowSlot": []
       }
     ],
     "winCondition": ""

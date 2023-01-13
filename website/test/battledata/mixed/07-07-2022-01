@@ -21,8 +21,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -41,13 +43,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "YL5943": {
             "diff": -1,
             "new": 49
           }
         },
-        "player": "greg19"
+        "player": "greg19",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -66,8 +70,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -86,13 +92,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "YL5943": {
             "diff": -1,
             "new": 48
           }
         },
-        "player": "greg19"
+        "player": "greg19",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -112,13 +120,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "greg19": {
             "diff": -1,
             "new": 49
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -140,8 +150,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "greg19"
+        "player": "greg19",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 9,
@@ -159,8 +171,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -179,13 +193,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "YL5943": {
             "diff": -1,
             "new": 47
           }
         },
-        "player": "greg19"
+        "player": "greg19",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -203,8 +219,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -225,13 +243,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "YL5943": {
             "diff": -1,
             "new": 46
           }
         },
-        "player": "greg19"
+        "player": "greg19",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -252,13 +272,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "greg19": {
             "diff": -2,
             "new": 47
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -281,13 +303,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "YL5943": {
             "diff": -7,
             "new": 39
           }
         },
-        "player": "greg19"
+        "player": "greg19",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -308,13 +332,15 @@
         "winner": "YL5943",
         "winCondition": "resignation",
         "drawCount": 1,
+        "shuffleCount": 0,
         "authority": {
           "greg19": {
             "diff": -47,
             "new": 0
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       }
     ],
     "winCondition": "resignation"

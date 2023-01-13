@@ -20,13 +20,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "HardAI": {
             "diff": -1,
             "new": 49
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -44,13 +46,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "Player": {
             "diff": -2,
             "new": 48
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -70,8 +74,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -90,8 +96,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -109,13 +117,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "HardAI": {
             "diff": -2,
             "new": 47
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -133,13 +143,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "Player": {
             "diff": -2,
             "new": 46
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 7,
@@ -158,6 +170,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 1,
         "authority": {
           "Player": {
             "diff": 4,
@@ -168,7 +181,8 @@
             "new": 46
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 8,
@@ -188,13 +202,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "Player": {
             "diff": -2,
             "new": 48
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -212,13 +228,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "Player": {
             "diff": 1,
             "new": 49
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -237,8 +255,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 9,
@@ -259,13 +279,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "Player": {
             "diff": 4,
             "new": 53
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -288,8 +310,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -311,6 +335,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 1,
         "authority": {
           "Player": {
             "diff": 1,
@@ -321,7 +346,8 @@
             "new": 43
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -340,13 +366,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "Player": {
             "diff": -1,
             "new": 53
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 12,
@@ -367,8 +395,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -388,13 +418,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "Player": {
             "diff": -2,
             "new": 51
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -415,6 +447,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 9,
+        "shuffleCount": 1,
         "authority": {
           "Player": {
             "diff": 8,
@@ -425,7 +458,8 @@
             "new": 28
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 8,
@@ -447,13 +481,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "HardAI": {
             "diff": 1,
             "new": 29
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -475,13 +511,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 8,
+        "shuffleCount": 1,
         "authority": {
           "HardAI": {
             "diff": -2,
             "new": 27
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -501,6 +539,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "HardAI": {
             "diff": 8,
@@ -511,7 +550,8 @@
             "new": 50
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 10,
@@ -530,6 +570,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "Player": {
             "diff": 4,
@@ -540,7 +581,8 @@
             "new": 28
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -562,6 +604,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 0,
         "authority": {
           "HardAI": {
             "diff": 2,
@@ -572,7 +615,8 @@
             "new": 47
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 9,
@@ -597,13 +641,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 10,
+        "shuffleCount": 0,
         "authority": {
           "HardAI": {
             "diff": -5,
             "new": 25
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -626,6 +672,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "HardAI": {
             "diff": 2,
@@ -636,7 +683,8 @@
             "new": 40
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 1,
@@ -659,6 +707,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 1,
         "authority": {
           "Player": {
             "diff": 4,
@@ -669,7 +718,8 @@
             "new": 14
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 2,
@@ -691,6 +741,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 0,
         "authority": {
           "HardAI": {
             "diff": 1,
@@ -701,7 +752,8 @@
             "new": 34
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -721,13 +773,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "Player": {
             "diff": 1,
             "new": 35
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 2,
@@ -750,13 +804,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 1,
         "authority": {
           "HardAI": {
             "diff": 4,
             "new": 19
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 9,
@@ -780,13 +836,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "Player": {
             "diff": 8,
             "new": 43
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -801,7 +859,6 @@
         "scrappedCards": [
           "scout",
           "cutter",
-          "junkyard",
           "explorer"
         ],
         "discardedCards": [],
@@ -811,6 +868,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 8,
+        "shuffleCount": 1,
         "authority": {
           "HardAI": {
             "diff": 4,
@@ -821,7 +879,8 @@
             "new": 23
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 7,
@@ -849,6 +908,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 10,
+        "shuffleCount": 1,
         "authority": {
           "Player": {
             "diff": 4,
@@ -859,7 +919,8 @@
             "new": 21
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 2,
@@ -871,7 +932,6 @@
         "events": [],
         "scrappedCards": [
           "scout",
-          "freighter",
           "battleblob",
           "tradingpost"
         ],
@@ -882,6 +942,7 @@
         "winner": "HardAI",
         "winCondition": "",
         "drawCount": 1,
+        "shuffleCount": 0,
         "authority": {
           "HardAI": {
             "diff": 1,
@@ -892,7 +953,8 @@
             "new": -2
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       }
     ],
     "winCondition": ""

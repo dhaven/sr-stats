@@ -21,13 +21,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "ZaZ333": {
             "diff": -1,
             "new": 49
           }
         },
-        "player": "Willydt"
+        "player": "Willydt",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -45,13 +47,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "Willydt": {
             "diff": -1,
             "new": 49
           }
         },
-        "player": "ZaZ333"
+        "player": "ZaZ333",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -69,8 +73,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "Willydt"
+        "player": "Willydt",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -88,13 +94,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "Willydt": {
             "diff": -1,
             "new": 48
           }
         },
-        "player": "ZaZ333"
+        "player": "ZaZ333",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -113,13 +121,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "ZaZ333": {
             "diff": -1,
             "new": 48
           }
         },
-        "player": "Willydt"
+        "player": "Willydt",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -140,13 +150,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "Willydt": {
             "diff": -1,
             "new": 47
           }
         },
-        "player": "ZaZ333"
+        "player": "ZaZ333",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -167,8 +179,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "Willydt"
+        "player": "Willydt",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -187,8 +201,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "ZaZ333"
+        "player": "ZaZ333",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -210,13 +226,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "ZaZ333": {
             "diff": -7,
             "new": 41
           }
         },
-        "player": "Willydt"
+        "player": "Willydt",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -236,8 +254,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "ZaZ333"
+        "player": "ZaZ333",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 7,
@@ -257,13 +277,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "ZaZ333": {
             "diff": -2,
             "new": 39
           }
         },
-        "player": "Willydt"
+        "player": "Willydt",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -285,13 +307,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "Willydt": {
             "diff": -5,
             "new": 42
           }
         },
-        "player": "ZaZ333"
+        "player": "ZaZ333",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -311,13 +335,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "ZaZ333": {
             "diff": -3,
             "new": 36
           }
         },
-        "player": "Willydt"
+        "player": "Willydt",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -337,13 +363,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "Willydt": {
             "diff": -2,
             "new": 40
           }
         },
-        "player": "ZaZ333"
+        "player": "ZaZ333",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 10,
@@ -364,13 +392,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "ZaZ333": {
             "diff": -8,
             "new": 28
           }
         },
-        "player": "Willydt"
+        "player": "Willydt",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 2,
@@ -391,13 +421,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "Willydt": {
             "diff": -7,
             "new": 33
           }
         },
-        "player": "ZaZ333"
+        "player": "ZaZ333",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 2,
@@ -419,13 +451,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "ZaZ333": {
             "diff": -4,
             "new": 24
           }
         },
-        "player": "Willydt"
+        "player": "Willydt",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -445,8 +479,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "ZaZ333"
+        "player": "ZaZ333",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -470,13 +506,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 1,
         "authority": {
           "ZaZ333": {
             "diff": -9,
             "new": 15
           }
         },
-        "player": "Willydt"
+        "player": "Willydt",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -500,13 +538,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "Willydt": {
             "diff": -1,
             "new": 32
           }
         },
-        "player": "ZaZ333"
+        "player": "ZaZ333",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 8,
@@ -524,13 +564,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "ZaZ333": {
             "diff": -7,
             "new": 8
           }
         },
-        "player": "Willydt"
+        "player": "Willydt",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 7,
@@ -558,13 +600,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 8,
+        "shuffleCount": 0,
         "authority": {
           "Willydt": {
             "diff": -23,
             "new": 9
           }
         },
-        "player": "ZaZ333"
+        "player": "ZaZ333",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -588,6 +632,7 @@
         "winner": "Willydt",
         "winCondition": "",
         "drawCount": 0,
+        "shuffleCount": 0,
         "authority": {
           "Willydt": {
             "diff": 4,
@@ -598,7 +643,8 @@
             "new": -1
           }
         },
-        "player": "Willydt"
+        "player": "Willydt",
+        "tradeRowSlot": []
       }
     ],
     "winCondition": ""

@@ -18,13 +18,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "Scottopia": {
             "diff": -4,
             "new": 68
           }
         },
-        "player": "TwinGodhead"
+        "player": "TwinGodhead",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -48,13 +50,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 0,
         "authority": {
           "TwinGodhead": {
             "diff": -6,
             "new": 60
           }
         },
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -72,13 +76,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 1,
         "authority": {
           "Scottopia": {
             "diff": -4,
             "new": 64
           }
         },
-        "player": "TwinGodhead"
+        "player": "TwinGodhead",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -101,6 +107,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 1,
         "authority": {
           "Scottopia": {
             "diff": 5,
@@ -111,7 +118,8 @@
             "new": 59
           }
         },
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 7,
@@ -131,6 +139,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 0,
         "authority": {
           "TwinGodhead": {
             "diff": 4,
@@ -141,7 +150,8 @@
             "new": 60
           }
         },
-        "player": "TwinGodhead"
+        "player": "TwinGodhead",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -164,6 +174,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 8,
+        "shuffleCount": 0,
         "authority": {
           "Scottopia": {
             "diff": 3,
@@ -174,7 +185,8 @@
             "new": 50
           }
         },
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -197,6 +209,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 1,
         "authority": {
           "TwinGodhead": {
             "diff": 7,
@@ -207,7 +220,8 @@
             "new": 55
           }
         },
-        "player": "TwinGodhead"
+        "player": "TwinGodhead",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 9,
@@ -230,13 +244,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 8,
+        "shuffleCount": 1,
         "authority": {
           "TwinGodhead": {
             "diff": -2,
             "new": 55
           }
         },
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -257,13 +273,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 8,
+        "shuffleCount": 0,
         "authority": {
           "TwinGodhead": {
             "diff": 7,
             "new": 62
           }
         },
-        "player": "TwinGodhead"
+        "player": "TwinGodhead",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -290,13 +308,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 0,
         "authority": {
           "TwinGodhead": {
             "diff": -8,
             "new": 54
           }
         },
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 8,
@@ -316,6 +336,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 1,
         "authority": {
           "TwinGodhead": {
             "diff": 2,
@@ -326,7 +347,8 @@
             "new": 45
           }
         },
-        "player": "TwinGodhead"
+        "player": "TwinGodhead",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 7,
@@ -351,6 +373,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 1,
         "authority": {
           "Scottopia": {
             "diff": 8,
@@ -361,7 +384,8 @@
             "new": 53
           }
         },
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -379,6 +403,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "TwinGodhead": {
             "diff": 8,
@@ -389,7 +414,8 @@
             "new": 46
           }
         },
-        "player": "TwinGodhead"
+        "player": "TwinGodhead",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 8,
@@ -415,13 +441,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 10,
+        "shuffleCount": 0,
         "authority": {
           "TwinGodhead": {
             "diff": -11,
             "new": 50
           }
         },
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -449,6 +477,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 12,
+        "shuffleCount": 1,
         "authority": {
           "TwinGodhead": {
             "diff": 3,
@@ -459,7 +488,8 @@
             "new": 33
           }
         },
-        "player": "TwinGodhead"
+        "player": "TwinGodhead",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 10,
@@ -487,6 +517,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 9,
+        "shuffleCount": 1,
         "authority": {
           "Scottopia": {
             "diff": 2,
@@ -497,7 +528,8 @@
             "new": 51
           }
         },
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -520,13 +552,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 1,
         "authority": {
           "Scottopia": {
             "diff": -3,
             "new": 32
           }
         },
-        "player": "TwinGodhead"
+        "player": "TwinGodhead",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -550,6 +584,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 0,
         "authority": {
           "Scottopia": {
             "diff": 4,
@@ -560,7 +595,8 @@
             "new": 44
           }
         },
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 11,
@@ -582,6 +618,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 15,
+        "shuffleCount": 0,
         "authority": {
           "TwinGodhead": {
             "diff": 13,
@@ -592,7 +629,8 @@
             "new": 11
           }
         },
-        "player": "TwinGodhead"
+        "player": "TwinGodhead",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -618,13 +656,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 8,
+        "shuffleCount": 0,
         "authority": {
           "Scottopia": {
             "diff": 7,
             "new": 18
           }
         },
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -644,6 +684,7 @@
         "winner": "TwinGodhead",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 1,
         "authority": {
           "TwinGodhead": {
             "diff": 8,
@@ -654,7 +695,8 @@
             "new": -11
           }
         },
-        "player": "TwinGodhead"
+        "player": "TwinGodhead",
+        "tradeRowSlot": []
       }
     ],
     "winCondition": ""

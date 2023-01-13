@@ -21,13 +21,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "HardAI": {
             "diff": -1,
             "new": 49
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -45,13 +47,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "Player": {
             "diff": -1,
             "new": 49
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -69,8 +73,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -89,13 +95,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "Player": {
             "diff": -1,
             "new": 48
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -116,8 +124,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -137,13 +147,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "Player": {
             "diff": -2,
             "new": 46
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -162,6 +174,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "Player": {
             "diff": 4,
@@ -172,7 +185,8 @@
             "new": 44
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -191,8 +205,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -211,6 +227,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "Player": {
             "diff": 1,
@@ -221,7 +238,8 @@
             "new": 34
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -243,13 +261,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "HardAI": {
             "diff": 4,
             "new": 38
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -271,6 +291,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "Player": {
             "diff": 5,
@@ -281,7 +302,8 @@
             "new": 27
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -303,13 +325,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 1,
         "authority": {
           "Player": {
             "diff": -9,
             "new": 47
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -328,8 +352,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 8,
@@ -342,16 +368,17 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "scout",
-          "mothership"
+          "scout"
         ],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -371,6 +398,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "Player": {
             "diff": 8,
@@ -381,7 +409,8 @@
             "new": 17
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -395,8 +424,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "blobwheel",
-          "missilemech"
+          "blobwheel"
         ],
         "discardedCards": [
           "viper",
@@ -406,6 +434,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "HardAI": {
             "diff": 4,
@@ -416,7 +445,8 @@
             "new": 54
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 2,
@@ -435,6 +465,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "Player": {
             "diff": 4,
@@ -445,7 +476,8 @@
             "new": 14
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -459,9 +491,7 @@
         "events": [],
         "scrappedCards": [
           "viper",
-          "mechworld",
-          "surveyship",
-          "blobcarrier"
+          "surveyship"
         ],
         "discardedCards": [
           "scout"
@@ -470,6 +500,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 1,
         "authority": {
           "HardAI": {
             "diff": 3,
@@ -480,7 +511,8 @@
             "new": 47
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 1,
@@ -501,6 +533,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "Player": {
             "diff": 1,
@@ -511,7 +544,8 @@
             "new": 13
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -524,8 +558,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "scout",
-          "flagship"
+          "scout"
         ],
         "discardedCards": [],
         "destroyedBases": [
@@ -535,13 +568,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 1,
         "authority": {
           "HardAI": {
             "diff": 4,
             "new": 17
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 2,
@@ -559,6 +594,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "Player": {
             "diff": 1,
@@ -569,7 +605,8 @@
             "new": 12
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 8,
@@ -582,8 +619,7 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "scout",
-          "spacestation"
+          "scout"
         ],
         "discardedCards": [
           "scout"
@@ -592,8 +628,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -613,13 +651,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "HardAI": {
             "diff": -3,
             "new": 9
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -633,15 +673,14 @@
         "events": [],
         "scrappedCards": [
           "scout",
-          "scout",
-          "machinebase",
-          "thehive"
+          "scout"
         ],
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "HardAI": {
             "diff": 7,
@@ -652,7 +691,8 @@
             "new": 28
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -672,6 +712,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 1,
         "authority": {
           "Player": {
             "diff": 9,
@@ -682,7 +723,8 @@
             "new": 5
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 2,
@@ -693,11 +735,8 @@
         "completedMissions": [],
         "events": [],
         "scrappedCards": [
-          "battleblob",
-          "surveyship",
           "dreadnaught",
-          "imperialfrigate",
-          "tradepod"
+          "imperialfrigate"
         ],
         "discardedCards": [
           "scout",
@@ -709,6 +748,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 1,
         "authority": {
           "HardAI": {
             "diff": 3,
@@ -719,7 +759,8 @@
             "new": 7
           }
         },
-        "player": "HardAI"
+        "player": "HardAI",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 2,
@@ -739,13 +780,15 @@
         "winner": "Player",
         "winCondition": "",
         "drawCount": 3,
+        "shuffleCount": 0,
         "authority": {
           "HardAI": {
             "diff": -18,
             "new": -10
           }
         },
-        "player": "Player"
+        "player": "Player",
+        "tradeRowSlot": []
       }
     ],
     "winCondition": ""

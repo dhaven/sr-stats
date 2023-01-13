@@ -20,13 +20,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "TyO": {
             "diff": -1,
             "new": 49
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -48,13 +50,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "YL5943": {
             "diff": -1,
             "new": 49
           }
         },
-        "player": "TyO"
+        "player": "TyO",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -77,13 +81,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "TyO": {
             "diff": -1,
             "new": 48
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -101,13 +107,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "YL5943": {
             "diff": -1,
             "new": 48
           }
         },
-        "player": "TyO"
+        "player": "TyO",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -128,13 +136,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "TyO": {
             "diff": -9,
             "new": 39
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -154,13 +164,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "TyO": {
             "diff": 2,
             "new": 41
           }
         },
-        "player": "TyO"
+        "player": "TyO",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -180,8 +192,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -199,13 +213,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "YL5943": {
             "diff": -1,
             "new": 47
           }
         },
-        "player": "TyO"
+        "player": "TyO",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -224,6 +240,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "YL5943": {
             "diff": 4,
@@ -234,7 +251,8 @@
             "new": 40
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 7,
@@ -255,6 +273,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "TyO": {
             "diff": 7,
@@ -265,7 +284,8 @@
             "new": 47
           }
         },
-        "player": "TyO"
+        "player": "TyO",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -286,13 +306,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "TyO": {
             "diff": -8,
             "new": 39
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -314,6 +336,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "TyO": {
             "diff": 5,
@@ -324,7 +347,8 @@
             "new": 42
           }
         },
-        "player": "TyO"
+        "player": "TyO",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -345,13 +369,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "TyO": {
             "diff": -12,
             "new": 32
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 2,
@@ -371,13 +397,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 1,
         "authority": {
           "YL5943": {
             "diff": -2,
             "new": 40
           }
         },
-        "player": "TyO"
+        "player": "TyO",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -397,8 +425,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 2,
@@ -420,6 +450,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "TyO": {
             "diff": 7,
@@ -430,7 +461,8 @@
             "new": 36
           }
         },
-        "player": "TyO"
+        "player": "TyO",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -450,8 +482,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 7,
@@ -475,8 +509,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "TyO"
+        "player": "TyO",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 7,
@@ -496,13 +532,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "TyO": {
             "diff": -12,
             "new": 27
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -520,6 +558,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "TyO": {
             "diff": 3,
@@ -530,7 +569,8 @@
             "new": 27
           }
         },
-        "player": "TyO"
+        "player": "TyO",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -553,6 +593,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "YL5943": {
             "diff": 4,
@@ -563,7 +604,8 @@
             "new": 24
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -581,13 +623,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "YL5943": {
             "diff": -3,
             "new": 28
           }
         },
-        "player": "TyO"
+        "player": "TyO",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 8,
@@ -607,13 +651,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "TyO": {
             "diff": -4,
             "new": 20
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -635,13 +681,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 1,
         "authority": {
           "TyO": {
             "diff": 2,
             "new": 22
           }
         },
-        "player": "TyO"
+        "player": "TyO",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -661,13 +709,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "TyO": {
             "diff": -13,
             "new": 9
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -686,6 +736,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "TyO": {
             "diff": 5,
@@ -696,7 +747,8 @@
             "new": 25
           }
         },
-        "player": "TyO"
+        "player": "TyO",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -712,8 +764,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -736,13 +790,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 1,
         "authority": {
           "YL5943": {
             "diff": -9,
             "new": 16
           }
         },
-        "player": "TyO"
+        "player": "TyO",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -765,6 +821,7 @@
         "winner": "YL5943",
         "winCondition": "",
         "drawCount": 0,
+        "shuffleCount": 0,
         "authority": {
           "YL5943": {
             "diff": 5,
@@ -775,7 +832,8 @@
             "new": 0
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       }
     ],
     "winCondition": ""

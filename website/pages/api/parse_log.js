@@ -1,6 +1,6 @@
 const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
 const { MongoClient } = require('mongodb');
-import { findErrors, parseBattle } from '../../lib/visitorbis'
+import { findErrors, parseBattle } from '../../lib/visitor'
 
 export default async function handler(req, res) {
   const IAMCreds = {
@@ -48,41 +48,72 @@ export default async function handler(req, res) {
       });
     const db = DBclient.db("starrealms")
     let battle = parseBattle(req.body)
-    if(battle["status"] == "error"){
-      res.status(500).json({
-        status: battle["data"]
-      })
-    }else{
+    if (battle["status"] == "error") {
+      let battleID = makeid(10)
+      const uploadParams = {
+        Bucket: process.env.S3_BUCKET,
+        Body: req.body,
+        Key: "errors/" + battleID
+      }
+      await S3client.send(new PutObjectCommand(uploadParams))
+        .then(() => {
+          res.status(200).json({
+            id: battleID,
+            status: "parsing error: the input data contains errors"
+          })
+        })
+        .catch(error => {
+          console.log(error)
+          res.status(500).json({
+            status: error
+          })
+        })
+    } else {
       battle['createdAt'] = new Date()
-    try {
-      await db.collection("battle").insertOne(battle);
-    } catch (e) {
-      console.log(e)
-      res.status(500).json({
-        status: e
-      })
-    }
-    //check for failed insertion
-    DBclient.close();
-    let battleID = battle._id
-    const uploadParams = {
-      Bucket: process.env.S3_BUCKET,
-      Body: req.body,
-      Key: 'games/' + battleID
-    }
-    await S3client.send(new PutObjectCommand(uploadParams))
-      .then(() => {
-        res.status(200).json({
-          id: battleID,
-          status: "success"
+      try {
+        await db.collection("battle").insertOne(battle);
+      } catch (e) {
+        let battleID = makeid(10)
+        const uploadParams = {
+          Bucket: process.env.S3_BUCKET,
+          Body: req.body,
+          Key: "errors/" + battleID
+        }
+        await S3client.send(new PutObjectCommand(uploadParams))
+          .then(() => {
+            res.status(200).json({
+              id: battleID,
+              status: "enable to access mongoDB database"
+            })
+          })
+          .catch(error => {
+            console.log(error)
+            res.status(500).json({
+              status: error
+            })
+          })
+      }
+      //check for failed insertion
+      DBclient.close();
+      let battleID = battle._id
+      const uploadParams = {
+        Bucket: process.env.S3_BUCKET,
+        Body: req.body,
+        Key: 'games/' + battleID
+      }
+      await S3client.send(new PutObjectCommand(uploadParams))
+        .then(() => {
+          res.status(200).json({
+            id: battleID,
+            status: "success"
+          })
         })
-      })
-      .catch(error => {
-        console.log(error)
-        res.status(500).json({
-          status: error
+        .catch(error => {
+          console.log(error)
+          res.status(500).json({
+            status: error
+          })
         })
-      })
     }
   }
 }

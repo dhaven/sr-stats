@@ -1,0 +1,395 @@
+{
+  "status": "success",
+  "data": {
+    "firstPlayer": "MorFaDa",
+    "winner": "MorFaDa",
+    "rounds": [
+      {
+        "tradePool": 2,
+        "combatPool": 1,
+        "usedTrade": -2,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "explorer",
+          "tradehauler"
+        ],
+        "completedMissions": [],
+        "events": [
+          "supplyrun"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "CCKinnison": {
+            "diff": -1,
+            "new": 49
+          }
+        },
+        "player": "MorFaDa",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 1,
+        "usedTrade": -4,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "explorer",
+          "bountyhunter",
+          "gunship"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "graymarket",
+          "smugglingrun"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "MorFaDa": {
+            "diff": -1,
+            "new": 49
+          }
+        },
+        "player": "CCKinnison",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 1,
+        "usedTrade": -5,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "plaguepod",
+          "missilebot",
+          "warkite"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "CCKinnison": {
+            "diff": -1,
+            "new": 48
+          }
+        },
+        "player": "MorFaDa",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 1,
+        "usedTrade": -5,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "lancer",
+          "ravager"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "MorFaDa": {
+            "diff": -1,
+            "new": 48
+          }
+        },
+        "player": "CCKinnison",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 11,
+        "usedTrade": -5,
+        "usedCombat": -11,
+        "purchasedCards": [
+          "cargorocket",
+          "bioformer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "plaguepod"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "CCKinnison": {
+            "diff": -11,
+            "new": 37
+          }
+        },
+        "player": "MorFaDa",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 6,
+        "usedTrade": -7,
+        "usedCombat": -6,
+        "purchasedCards": [
+          "tradewheel",
+          "bioformer"
+        ],
+        "completedMissions": [],
+        "events": [
+          "trademission"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "MorFaDa": {
+            "diff": -6,
+            "new": 42
+          }
+        },
+        "player": "CCKinnison",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 4,
+        "usedTrade": -6,
+        "usedCombat": -4,
+        "purchasedCards": [
+          "obliterator"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "viper",
+          "explorer"
+        ],
+        "discardedCards": [
+          "viper"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 7,
+        "shuffleCount": 1,
+        "authority": {
+          "CCKinnison": {
+            "diff": -4,
+            "new": 33
+          }
+        },
+        "player": "MorFaDa",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 13,
+        "usedTrade": -3,
+        "usedCombat": -13,
+        "purchasedCards": [
+          "merccruiser"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "explorer"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "MorFaDa": {
+            "diff": -13,
+            "new": 29
+          }
+        },
+        "player": "CCKinnison",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 3,
+        "usedTrade": -6,
+        "usedCombat": -3,
+        "purchasedCards": [
+          "battlecruiser"
+        ],
+        "completedMissions": [
+          "monopolize"
+        ],
+        "events": [],
+        "scrappedCards": [
+          "cargorocket"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "MorFaDa": {
+            "diff": 16,
+            "new": 45
+          },
+          "CCKinnison": {
+            "diff": -3,
+            "new": 30
+          }
+        },
+        "player": "MorFaDa",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 7,
+        "usedTrade": -3,
+        "usedCombat": -7,
+        "purchasedCards": [
+          "convoybot"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [
+          "secretoutpost"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "MorFaDa": {
+            "diff": -3,
+            "new": 42
+          }
+        },
+        "player": "CCKinnison",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 8,
+        "combatPool": 8,
+        "usedTrade": -8,
+        "usedCombat": -8,
+        "purchasedCards": [
+          "commandcenter",
+          "predator",
+          "defensebot"
+        ],
+        "completedMissions": [
+          "diversify"
+        ],
+        "events": [],
+        "scrappedCards": [
+          "hiddenbase2"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 0,
+        "authority": {
+          "MorFaDa": {
+            "diff": 4,
+            "new": 46
+          },
+          "CCKinnison": {
+            "diff": -8,
+            "new": 22
+          }
+        },
+        "player": "MorFaDa",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 8,
+        "usedTrade": -6,
+        "usedCombat": -8,
+        "purchasedCards": [
+          "imperialfrigate",
+          "imperialfrigate"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "bioformer"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "bioformer"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "MorFaDa": {
+            "diff": -4,
+            "new": 42
+          }
+        },
+        "player": "CCKinnison",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 17,
+        "usedTrade": 0,
+        "usedCombat": 0,
+        "purchasedCards": [],
+        "completedMissions": [
+          "rule"
+        ],
+        "events": [],
+        "scrappedCards": [
+          "scout",
+          "boldraid"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "MorFaDa",
+        "winCondition": "",
+        "drawCount": 2,
+        "shuffleCount": 1,
+        "authority": {},
+        "player": "MorFaDa",
+        "tradeRowSlot": []
+      }
+    ],
+    "winCondition": ""
+  }
+}

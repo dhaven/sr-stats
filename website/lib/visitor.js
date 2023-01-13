@@ -1,1272 +1,716 @@
 import antlr4 from 'antlr4';
-import StarRealmsLexer from './antlr4/StarRealmsLexer.js';
-import StarRealmsParser from './antlr4/StarRealmsParser.js';
-import StarRealmsVisitor from './antlr4/StarRealmsVisitor.js';
+import StarStarLexer from './antlr4bis/StarStarLexer.js';
+import StarStarParser from './antlr4bis/StarStarParser.js';
+import StarStarVisitor from './antlr4bis/StarStarVisitor.js';
 
-class Visitor extends StarRealmsVisitor {
+const cardsWithDeckScrapAbility = [
+    "assimilator",
+    "battlebot",
+    "battlemech",
+    "blobbot",
+    "blockaderunner",
+    "borderfort",
+    "builderbot",
+    "brainworld",
+    "cargomech",
+    "cargorocket",
+    "chancellorhartman",
+    "coalitionfreighter",
+    "confessormorris",
+    "conversionyard",
+    "converter",
+    "convoybot",
+    "deathworld",
+    "defensebot",
+    "demolisher",
+    "destroyerbot",
+    "enforcermech",
+    "fortressoblivion",
+    "junkyard",
+    "machinebase",
+    "mechcommandship",
+    "mechcruiser",
+    "mechwurm",
+    "miningmech",
+    "missilebot",
+    "nanobotswarm",
+    "neuralnexus",
+    "patrolbot",
+    "patrolmech",
+    "plaguepod",
+    "plasmabot",
+    "probebot",
+    "reclamationstation",
+    "recyclebot",
+    "repairbot",
+    "repairmech",
+    "salvagedrone",
+    "spawningwurm",
+    "supplybot",
+    "tankermech",
+    "theark",
+    "thecitadel",
+    "theincinerator",
+    "theoracle",
+    "thewrecker",
+    "tradebot",
+    "tradeenvoy"
+]
 
-    // returns a standard balance object from the union of curentBalance and nextBalance
-    // nextBalance has format
-    // {
-    //     category: Trade/Combat/authority,
-    //     target: string
-    //     value: int
-    //     newBalance: int
-    // }
-    computeNewBalance(currentBalance, nextBalance) {
-        let newBalance = {}
-        //console.log(nextBalance)
-        if (Object.keys(currentBalance).length == 0) {
-            newBalance = {
+const selfScrapToDeckScrapCards = [
+    "acceptablelosses",
+    "chancellorhartman",
+    "exploration",
+    "highpriestlyle",
+    "lesforay",
+    "unityfighter",
+    "warelder"
+]
+class Visitor extends StarStarVisitor {
+    visitBattle(ctx) {
+        let rounds = []
+        let firstPlayer = ""
+        let secondPlayer = ""
+        for (let i = 0; i < ctx.turn().length; i++) {
+            let turn = this.visit(ctx.turn()[i])
+            if(i == 0){
+                firstPlayer = turn["currentPlayer"]
+            }
+            if(i == 1){
+                secondPlayer = turn["currentPlayer"]
+            }
+            let formattedRound = {
                 tradePool: 0,
                 combatPool: 0,
                 usedTrade: 0,
                 usedCombat: 0,
-                authority: {}
+                purchasedCards: [],
+                completedMissions: [],
+                events: [],
+                scrappedCards: [],
+                discardedCards: [],
+                destroyedBases: [],
+                winner: "",
+                winCondition: "",
+                drawCount: 0,
+                shuffleCount: 0,
+                authority: {},
             }
-        } else {
-            newBalance = JSON.parse(JSON.stringify(currentBalance))
-        }
-        if (nextBalance['category'] == 'Trade') {
-            if (nextBalance['value'] > 0) {
-                newBalance['tradePool'] += nextBalance['value']
-            } else {
-                newBalance['usedTrade'] += nextBalance['value']
+            let currentPlayer = turn["currentPlayer"];
+            if(currentPlayer == ''){
+                if(i % 2 == 0){
+                    currentPlayer = firstPlayer
+                }else{
+                    currentPlayer = secondPlayer
+                }
             }
-        }
-        else if (nextBalance['category'] == 'Combat') {
-            if (nextBalance['value'] > 0) {
-                newBalance['combatPool'] += nextBalance['value']
-            } else {
-                newBalance['usedCombat'] += nextBalance['value']
+            formattedRound["player"] = currentPlayer
+            if (Object.keys(turn["players"]).length != 0) {
+                formattedRound["tradePool"] = turn["players"][currentPlayer]["tradePool"]
+                formattedRound["combatPool"] = turn["players"][currentPlayer]["combatPool"]
+                formattedRound["usedTrade"] = turn["players"][currentPlayer]["usedTrade"]
+                formattedRound["usedCombat"] = turn["players"][currentPlayer]["usedCombat"]
+                for (let player in turn["players"]) {
+                    if ("newAuthority" in turn["players"][player]) {
+                        formattedRound["authority"][player] = {
+                            diff: turn["players"][player]["Authority"],
+                            new: turn["players"][player]["newAuthority"]
+                        }
+                    }
+                }
             }
-        }
-        else if (nextBalance['category'] == 'Authority') {
-            if (!(nextBalance['target'] in newBalance['authority'])) {
-                newBalance['authority'][nextBalance['target']] = {}
-                newBalance['authority'][nextBalance['target']]['diff'] = nextBalance['value']
-            } else {
-                newBalance['authority'][nextBalance['target']]['diff'] += nextBalance['value']
-            }
-            newBalance['authority'][nextBalance['target']]['new'] = nextBalance['newBalance']
-        }
-        //console.log(newBalance)
-        return newBalance
-    }
-    //auth1 auth2 are authority object of the form
-    // {
-    //     playerX: {diff: X, new: Y},
-    //     playerY: {diff: X, new: Y}
-    // }
-    updateAuthorityObj(currentAuth, nextAuth) {
-        let newAuth = {}
-        for (let key1 in currentAuth) {
-            newAuth[key1] = {}
-            if (key1 in nextAuth) {
-                newAuth[key1]['diff'] = currentAuth[key1]['diff'] + nextAuth[key1]['diff']
-                newAuth[key1]['new'] = nextAuth[key1]['new']
-            } else {
-                newAuth[key1]['diff'] = currentAuth[key1]['diff']
-                newAuth[key1]['new'] = currentAuth[key1]['new']
-            }
-        }
-        for (let key2 in nextAuth) {
-            if (!(key2 in currentAuth)) {
-                newAuth[key2] = {}
-                newAuth[key2]['diff'] = nextAuth[key2]['diff']
-                newAuth[key2]['new'] = nextAuth[key2]['new']
-            }
-        }
-        return newAuth
-    }
-
-    // grammar: turn+;
-    visitBattle(ctx) {
-        let firstPlayer = this.visit(ctx.turn()[0].endPhase())
-        let secondPlayer = this.visit(ctx.turn()[1].endPhase())
-        let rounds = []
-        let winner = ""
-        let winCondition = ""
-        for (let i = 0; i < ctx.turn().length; i++) {
-            let nextRound = this.visit(ctx.turn()[i])
-            if (nextRound['winner'] != "") {
-                winner = nextRound['winner']
-            }
-            if (nextRound['winCondition'] == "resignation") {
-                winCondition = nextRound['winCondition']
-            }
-            if (nextRound['winCondition'] == "timeout") {
-                winCondition = nextRound['winCondition']
-            }
-            if (i % 2 == 0) {
-                nextRound['player'] = firstPlayer
-            } else {
-                nextRound['player'] = secondPlayer
-            }
-            rounds.push(nextRound)
+            formattedRound["purchasedCards"] = turn["purchasedCards"]
+            formattedRound["completedMissions"] = turn["missions"]
+            formattedRound["events"] = turn["events"]
+            formattedRound["scrappedCards"] = turn["scrappedCards"]
+            formattedRound["discardedCards"] = turn["discardedCards"]
+            formattedRound["destroyedBases"] = turn["destroyedBases"]
+            formattedRound["winner"] = turn["winner"]
+            formattedRound["winCondition"] = turn["winCondition"]
+            formattedRound["drawCount"] = turn["drawCount"]
+            formattedRound["tradeRowSlot"] = turn["tradeRowSlot"]
+            formattedRound["shuffleCount"] = turn["shuffleCount"]
+            rounds.push(formattedRound)
         }
         return {
             firstPlayer: firstPlayer,
-            winner: winner,
+            winner: rounds[rounds.length - 1]["winner"],
             rounds: rounds,
-            winCondition: winCondition
+            winCondition: rounds[rounds.length - 1]["winCondition"]
         }
     }
 
-    // grammar: name HAS WON THE GAME NEWLINE ;
-    // returns the name of the winner
+    visitTurn(ctx) {
+        let turnData = {
+            purchasedCards: [],
+            scrappedCards: [],
+            discardedCards: [],
+            destroyedBases: [],
+            events: [],
+            missions: [],
+            tradeRowSlot: [],
+            winner: "",
+            winCondition: "",
+            drawCount: 0,
+            shuffleCount: 0,
+            currentPlayer: "",
+            players: {}
+        }
+        for (let i = 0; i < ctx.action().length; i++) {
+            let action = this.visit(ctx.action()[i])
+            if ("cardAcquisition" in action) {
+                if (!(action["cardAcquisition"].match("tothetopofthedeck") || action["cardAcquisition"].match("tohand"))) {
+                    turnData["purchasedCards"].push(action["cardAcquisition"])
+                }
+            }
+            else if ("discardedCard" in action) {
+                turnData["discardedCards"].push(action["discardedCard"])
+            }
+            else if ("baseDestroy" in action) {
+                turnData["destroyedBases"].push(action["baseDestroy"])
+            }
+            else if ("cardAction" in action) {
+                //console.log(action["cardAction"]["cardEffect"]["players"])
+                let listPlayers = Object.keys(action["cardAction"]["cardEffect"]["players"])
+                for (let i = 0; i < listPlayers.length; i++) {
+                    let playerName = listPlayers[i]
+                    let player = action["cardAction"]["cardEffect"]["players"][playerName]
+                    if (!(playerName in turnData["players"])) {
+                        turnData["players"][playerName] = {
+                            tradePool: player["tradePool"],
+                            usedTrade: player["usedTrade"],
+                            combatPool: player["combatPool"],
+                            usedCombat: player["usedCombat"],
+                            Authority: player["Authority"],
+                            Discard: player["Discard"],
+                        }
+                    } else {
+                        turnData["players"][playerName]["tradePool"] += player["tradePool"]
+                        turnData["players"][playerName]["usedTrade"] += player["usedTrade"]
+                        turnData["players"][playerName]["combatPool"] += player["combatPool"]
+                        turnData["players"][playerName]["usedCombat"] += player["usedCombat"]
+                        turnData["players"][playerName]["Authority"] += player["Authority"]
+                        turnData["players"][playerName]["Discard"] += player["Discard"]
+                    }
+                    if ("newAuthority" in player) {
+                        //console.log(player)
+                        turnData["players"][playerName]["newAuthority"] = player["newAuthority"]
+                    }
+                }
+                //turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
+                turnData["drawCount"] += action["cardAction"]["cardEffect"]["drawCount"]
+                turnData["shuffleCount"] += action["cardAction"]["cardEffect"]["shuffleCount"]
+                turnData["purchasedCards"] = turnData["purchasedCards"].concat(action["cardAction"]["cardEffect"]["acquiredCards"])
+                if ("event" in action["cardAction"]["trigger"]) {
+                    turnData["events"] = turnData["events"].concat(action["cardAction"]["trigger"]["event"])
+                }
+                else if ("mission" in action["cardAction"]["trigger"]) {
+                    turnData["missions"] = turnData["missions"].concat(action["cardAction"]["trigger"]["mission"])
+                }
+                else if("scrapSelf" in action["cardAction"]["trigger"]){
+                    //check if we are scrapping a stealthneedle
+                    if(action["cardAction"]["cardEffect"]["scrap"].includes("stealthneedle")){
+                        turnData["scrappedCards"].push("stealthneedle")
+                    }else{
+                        turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["trigger"]["scrapSelf"])
+                    }
+                    //in some cases self-scrap can trigger the scrap of deck cards
+                    if(selfScrapToDeckScrapCards.includes(action["cardAction"]["trigger"]["scrapSelf"])){
+                        turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrapSummary"])
+                    }
+                    if(action["cardAction"]["trigger"]["scrapSelf"] == "acceptablelosses"){
+                        //scrapping this card does not result in a "player is scrapping X" so we need to check the scrapped cards
+                        for(let i = 0; i < action["cardAction"]["cardEffect"]["scrap"].length; i++){
+                            if(action["cardAction"]["cardEffect"]["scrap"][i] != "acceptablelosses"){
+                                turnData["scrappedCards"].push(action["cardAction"]["cardEffect"]["scrap"][i])
+                            }
+                        }
+                    }
+                }
+                else if("play" in action["cardAction"]["trigger"]){
+                    if(cardsWithDeckScrapAbility.includes(action["cardAction"]["trigger"]["play"])){
+                        if(action["cardAction"]["cardEffect"]["scrapSummary"].length != 0){
+                            turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrapSummary"])
+                        }else{
+                            //for some cards (battle bot) the instant effect doesn't result in a "player is scrapping  X"
+                            turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
+                        }
+                    }
+                }
+                else if("activate" in action["cardAction"]["trigger"]){
+                    if(cardsWithDeckScrapAbility.includes(action["cardAction"]["trigger"]["activate"])){
+                        turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
+                    }
+                }
+                else if("resolve" in action["cardAction"]["trigger"]){
+                    turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
+                }
+                else if("traderowslot" in action["cardAction"]["trigger"]){
+                    turnData["tradeRowSlot"] = action["cardAction"]["cardEffect"]["scrap"]
+                }
+                else if("chose" in action["cardAction"]["trigger"]){
+                    turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
+                }
+            }
+            else if ("balanceUpdate" in action) {
+                let playerName = action["balanceUpdate"]["target"]
+                if (!(playerName in turnData["players"])) {
+                    turnData["players"][playerName] = {
+                        tradePool: 0,
+                        usedTrade: 0,
+                        combatPool: 0,
+                        usedCombat: 0,
+                        Authority: 0,
+                        Discard: 0
+                    }
+                }
+                let category = action["balanceUpdate"]["effect"]["category"]
+                turnData["players"][playerName][category] += action["balanceUpdate"]["effect"]["value"]
+                if (category == "Authority") {
+                    //console.log(action["balanceUpdate"])
+                    turnData["players"][playerName]["newAuthority"] = action["balanceUpdate"]["newValue"]
+                }
+            }
+            else if ("drawCount" in action) {
+                turnData["drawCount"] += action["drawCount"]
+            }
+            else if ("currentPlayer" in action) {
+                turnData["currentPlayer"] = action["currentPlayer"]
+            }
+            else if ("winner" in action) {
+                turnData["winner"] = action["winner"]
+            }
+            else if ("scrapped" in action) {
+                if(action["scrapped"] == "graymarket"){
+                    turnData["scrappedCards"].push(action["scrapped"])
+                }
+            }
+            else if("concede" in action){
+                turnData["winCondition"] = "resignation"
+            }
+            else if("timeout" in action){
+                turnData["winCondition"] = "timeout"
+            }
+            else if("alignBotScrap" in action){
+                turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["alignBotScrap"]["scrap"])
+                let listPlayers = Object.keys(action["alignBotScrap"]["players"])
+                for (let i = 0; i < listPlayers.length; i++) {
+                    let playerName = listPlayers[i]
+                    let player = action["alignBotScrap"]["players"][playerName]
+                    if (!(playerName in turnData["players"])) {
+                        turnData["players"][playerName] = {
+                            tradePool: player["tradePool"],
+                            usedTrade: player["usedTrade"],
+                            combatPool: player["combatPool"],
+                            usedCombat: player["usedCombat"],
+                            Authority: player["Authority"],
+                            Discard: player["Discard"],
+                        }
+                    } else {
+                        turnData["players"][playerName]["tradePool"] += player["tradePool"]
+                        turnData["players"][playerName]["usedTrade"] += player["usedTrade"]
+                        turnData["players"][playerName]["combatPool"] += player["combatPool"]
+                        turnData["players"][playerName]["usedCombat"] += player["usedCombat"]
+                        turnData["players"][playerName]["Authority"] += player["Authority"]
+                        turnData["players"][playerName]["Discard"] += player["Discard"]
+                    }
+                    if ("newAuthority" in player) {
+                        //console.log(player)
+                        turnData["players"][playerName]["newAuthority"] = player["newAuthority"]
+                    }
+                }
+            }else if("shuffled" in action){
+                turnData["shuffleCount"] += 1
+            }
+        }
+        //console.log(turnData)
+        return turnData
+    }
+
+    visitAction(ctx) {
+        if (ctx.cardAcquisition()) {
+            //console.log(`acquired card: ${this.visit(ctx.cardAcquisition())}`)
+            return {
+                cardAcquisition: this.visit(ctx.cardAcquisition())
+            }
+        } else if (ctx.discarded()) {
+            //console.log(`player is discarding: ${this.visit(ctx.discard())}`)
+            return {
+                discardedCard: this.visit(ctx.discarded())
+            }
+        } else if (ctx.destroyBase()) {
+            //console.log(`player destroyed base: ${this.visit(ctx.destroyBase())}`)
+            return {
+                baseDestroy: this.visit(ctx.destroyBase())
+            }
+        } else if (ctx.cardAction()) {
+            return {
+                cardAction: this.visit(ctx.cardAction())
+            }
+        } else if (ctx.balanceUpdate()) {
+            return {
+                balanceUpdate: this.visit(ctx.balanceUpdate())
+            }
+        } else if (ctx.drawCards()) {
+            //console.log(`Player just drew ${this.visit(ctx.drawCards())} cards`)
+            return {
+                drawCount: this.visit(ctx.drawCards())
+            }
+        } else if (ctx.shuffleCards()) {
+            return {
+                shuffled: true
+            }
+        } else if (ctx.endTurn()) {
+            return {
+                currentPlayer: this.visit(ctx.endTurn())
+            }
+        } else if (ctx.winStatus()) {
+            //console.log(`player ${this.visit(ctx.winStatus())} has won the game`)
+            return {
+                winner: this.visit(ctx.winStatus())
+            }
+        } else if (ctx.scrapped()) {
+            return {
+                scrapped: this.visit(ctx.scrapped())
+            }
+        } else if(ctx.concede()){
+            return {
+                concede: this.visit(ctx.concede())
+            }
+        }else if (ctx.timeout()){
+            return {
+                timeout: this.visit(ctx.timeout())
+            }
+        }else if(ctx.resolveAlignmentBotScrap()){
+            return {
+                alignBotScrap: this.visit(ctx.resolveAlignmentBotScrap())
+            }
+        } else {
+            return {}
+        }
+    }
+
+    visitCardAction(ctx) {
+        let cardAction = {
+            trigger: this.visit(ctx.cardTrigger()),
+            cardEffect: {
+                scrap: [],
+                scrapSummary: [],
+                drawCount: 0,
+                players: [],
+                acquiredCards: [],
+                shuffleCount: 0
+            }
+        }
+        //console.log(`Card triggering effect is ${this.visit(ctx.cardTrigger())}`)
+        for (let i = 0; i < ctx.cardEffect().length; i++) {
+            let cardEffect = this.visit(ctx.cardEffect()[i])
+            if ("balanceUpdate" in cardEffect) {
+                let target = cardEffect["balanceUpdate"]["target"]
+                if (!(target in cardAction["cardEffect"]["players"])) {
+                    cardAction["cardEffect"]["players"][target] = {
+                        tradePool: 0,
+                        usedTrade: 0,
+                        combatPool: 0,
+                        usedCombat: 0,
+                        Authority: 0,
+                        Discard: 0
+                    }
+                }
+                let category = cardEffect["balanceUpdate"]["effect"]["category"]
+                cardAction["cardEffect"]["players"][target][category] += cardEffect["balanceUpdate"]["effect"]["value"]
+                if (category == "Authority") {
+                    cardAction["cardEffect"]["players"][target]["newAuthority"] = cardEffect["balanceUpdate"]["newValue"]
+                }
+            }
+            if ("scrapped" in cardEffect) {
+                cardAction["cardEffect"]["scrap"].push(cardEffect["scrapped"])
+            }
+            if ("drawCount" in cardEffect) {
+                cardAction["cardEffect"]["drawCount"] += cardEffect["drawCount"]
+            }
+            if ("acquiredCard" in cardEffect) {
+                cardAction["cardEffect"]["acquiredCards"].push(cardEffect["acquiredCard"])
+            }
+            if("scrapSummary" in cardEffect){
+                cardAction["cardEffect"]["scrapSummary"].push(cardEffect["scrapSummary"])
+            }
+            if("shuffled" in cardEffect){
+                cardAction["cardEffect"]["shuffleCount"] += 1
+            }
+        }
+        return cardAction
+    }
+
+    visitCardTrigger(ctx) {
+        if (ctx.playSingle()) {
+            return {
+                "play": this.visit(ctx.playSingle())
+            }
+        } else if (ctx.activate()) {
+            return {
+                "activate": this.visit(ctx.activate())
+            }
+        } else if (ctx.scrapSelf()) {
+            return {
+                "scrapSelf": this.visit(ctx.scrapSelf())
+            }
+        } else if (ctx.event()) {
+            return {
+                "event": this.visit(ctx.event())
+            }
+        } else if (ctx.mission()) {
+            return {
+                "mission": this.visit(ctx.mission())
+            }
+        } else if(ctx.resolving()){
+            return this.visit(ctx.resolving())
+        } else if(ctx.choseScrapHandOrDiscard()){
+            return {
+                "chose": true
+            }
+        }else {
+            return {}
+        }
+    }
+
+    visitCardEffect(ctx) {
+        let cardEffect = {}
+        if (ctx.balanceUpdate()) {
+            cardEffect["balanceUpdate"] = this.visit(ctx.balanceUpdate())
+        } else if (ctx.scrapped()) {
+            cardEffect["scrapped"] = this.visit(ctx.scrapped())
+        } else if (ctx.scrapSummary()) {
+            cardEffect["scrapSummary"] = this.visit(ctx.scrapSummary())
+        } else if (ctx.drawCards()) {
+            cardEffect["drawCount"] = this.visit(ctx.drawCards())
+        } else if (ctx.acquireToHand()) {
+            cardEffect["acquiredCard"] = this.visit(ctx.acquireToHand())
+        } else if (ctx.acquireToDeck()) {
+            cardEffect["acquiredCard"] = this.visit(ctx.acquireToDeck())
+        }else if(ctx.shuffleCards()){
+            cardEffect["shuffled"] = true
+        }
+        return cardEffect
+    }
+
+    visitBalanceUpdate(ctx) {
+        let balanceUpdate = {
+            target: this.visit(ctx.name()),
+            effect: this.visit(ctx.effect())
+        }
+        if (ctx.card()) {
+            balanceUpdate["card"] = this.visit(ctx.card())
+        }
+        if (ctx.INT()) {
+            balanceUpdate["newValue"] = parseInt(ctx.INT())
+        } else {
+            balanceUpdate["newValue"] = 0 - Number(ctx.DECREASE().getText().replace('-', ''))
+        }
+        //console.log(balanceUpdate)
+        return balanceUpdate
+    }
+
+    visitScrapSummary(ctx) {
+        return this.visit(ctx.card())
+    }
+
+    visitDiscarded(ctx) {
+        return this.visit(ctx.card())
+    }
+
     visitWinStatus(ctx) {
         return this.visit(ctx.name())
     }
 
-    // for each turn, get the summary of action and the user who performed it
-    // grammar: action+ (endPhase | winStatus | EOF) ;
-    visitTurn(ctx) {
-        let turnData = {
-            tradePool: 0,
-            combatPool: 0,
-            usedTrade: 0,
-            usedCombat: 0,
-            purchasedCards: [],
-            completedMissions: [],
-            events: [],
-            scrappedCards: [],
-            discardedCards: [],
-            destroyedBases: [],
-            winner: "",
-            winCondition: "",
-            drawCount: 0,
-            authority: {},
-        }
-        //get summary of all actions performed in this turn
-        for (let i = 0; i < ctx.action().length; i++) {
-            //console.log(turnData['authority'])
-            if (ctx.action()[i].startTurnEffect()) {
-                if (ctx.action()[i].startTurnEffect().positiveBalance()) {
-                    let balance = this.computeNewBalance({}, this.visit(ctx.action()[i]))
-                    turnData['tradePool'] += balance['tradePool']
-                    turnData['combatPool'] += balance['combatPool']
-                    turnData['usedTrade'] += balance['usedTrade']
-                    turnData['usedCombat'] += balance['usedCombat']
-                    //console.log(balance['authority'])
-                    turnData['authority'] = this.updateAuthorityObj(turnData['authority'], balance['authority'])
-                } else { //drawCardsWithShuffle
-                    turnData['drawCount'] += this.visit(ctx.action()[i])
-                }
-            }
-            else if (ctx.action()[i].triggeredEvent()) {
-                let triggeredEventDetail = this.visit(ctx.action()[i])
-                turnData['events'].push(triggeredEventDetail['event'])
-                turnData['tradePool'] += triggeredEventDetail['balance']['tradePool']
-                turnData['combatPool'] += triggeredEventDetail['balance']['combatPool']
-                turnData['usedTrade'] += triggeredEventDetail['balance']['usedTrade']
-                turnData['usedCombat'] += triggeredEventDetail['balance']['usedCombat']
-                //console.log(triggeredEventDetail['balance']['authority'])
-                turnData['authority'] = this.updateAuthorityObj(turnData['authority'], triggeredEventDetail['balance']['authority'])
-                turnData['scrappedCards'] = turnData['scrappedCards'].concat(triggeredEventDetail['scrappedCards'])
-                turnData['discardedCards'] = turnData['discardedCards'].concat(triggeredEventDetail['discardedCards'])
-                turnData['purchasedCards'] = turnData['purchasedCards'].concat(triggeredEventDetail['acquiredCards'])
-                turnData['drawCount'] += triggeredEventDetail['drawCount']
-            }
-            else if (ctx.action()[i].resolveEvent()) {
-                let resolveEventDetail = this.visit(ctx.action()[i])
-                turnData['drawCount'] += resolveEventDetail['drawCount']
-                turnData['tradePool'] += resolveEventDetail['balance']['tradePool']
-                turnData['combatPool'] += resolveEventDetail['balance']['combatPool']
-                turnData['usedTrade'] += resolveEventDetail['balance']['usedTrade']
-                turnData['usedCombat'] += resolveEventDetail['balance']['usedCombat']
-                //console.log(resolveEventDetail['balance']['authority'])
-                turnData['authority'] = this.updateAuthorityObj(turnData['authority'], resolveEventDetail['balance']['authority'])
-                turnData['scrappedCards'] = turnData['scrappedCards'].concat(resolveEventDetail['scrappedCards'])
-                turnData['discardedCards'] = turnData['discardedCards'].concat(resolveEventDetail['discardedCards'])
-                turnData['purchasedCards'] = turnData['purchasedCards'].concat(resolveEventDetail['acquiredCards'])
-            }
-            else if (ctx.action()[i].purchase()) {
-                let purchaseActionDetail = this.visit(ctx.action()[i])
-                turnData['purchasedCards'].push(purchaseActionDetail['card'])
-                turnData['tradePool'] += purchaseActionDetail['balance']['tradePool']
-                turnData['combatPool'] += purchaseActionDetail['balance']['combatPool']
-                turnData['usedTrade'] += purchaseActionDetail['balance']['usedTrade']
-                turnData['usedCombat'] += purchaseActionDetail['balance']['usedCombat']
-                //console.log(purchaseActionDetail['balance']['authority'])
-                turnData['authority'] = this.updateAuthorityObj(turnData['authority'], purchaseActionDetail['balance']['authority'])
-            }
-            else if (ctx.action()[i].purchaseHero()) {
-                let purchaseHeroDetail = this.visit(ctx.action()[i])
-                turnData['purchasedCards'].push(purchaseHeroDetail['card'])
-                turnData['events'] = turnData['events'].concat(purchaseHeroDetail['events'])
-                turnData['tradePool'] += purchaseHeroDetail['balance']['tradePool']
-                turnData['combatPool'] += purchaseHeroDetail['balance']['combatPool']
-                turnData['usedTrade'] += purchaseHeroDetail['balance']['usedTrade']
-                turnData['usedCombat'] += purchaseHeroDetail['balance']['usedCombat']
-                //console.log(purchaseHeroDetail['balance']['authority'])
-                turnData['authority'] = this.updateAuthorityObj(turnData['authority'], purchaseHeroDetail['balance']['authority'])
-                turnData['scrappedCards'] = turnData['scrappedCards'].concat(purchaseHeroDetail['scrappedCards'])
-                turnData['discardedCards'] = turnData['discardedCards'].concat(purchaseHeroDetail['discardedCards'])
-                turnData['drawCount'] += purchaseHeroDetail['drawCount']
-            }
-            else if (ctx.action()[i].play()) {
-                let playActionDetail = this.visit(ctx.action()[i])
-                turnData['events'] = turnData['events'].concat(playActionDetail['events'])
-                turnData['purchasedCards'] = turnData['purchasedCards'].concat(playActionDetail['acquiredCards'])
-                //turnData['playedCards'] = turnData['playedCards'].concat(playActionDetail['playedCards'])
-                turnData['scrappedCards'] = turnData['scrappedCards'].concat(playActionDetail['scrappedCards'])
-                turnData['discardedCards'] = turnData['discardedCards'].concat(playActionDetail['discardedCards'])
-                turnData['drawCount'] += playActionDetail['drawCount']
-                turnData['tradePool'] += playActionDetail['balance']['tradePool']
-                turnData['combatPool'] += playActionDetail['balance']['combatPool']
-                turnData['usedTrade'] += playActionDetail['balance']['usedTrade']
-                turnData['usedCombat'] += playActionDetail['balance']['usedCombat']
-                //console.log(playActionDetail['balance']['authority'])
-                turnData['authority'] = this.updateAuthorityObj(turnData['authority'], playActionDetail['balance']['authority'])
-                if (playActionDetail['mission'] != "") {
-                    turnData['completedMissions'].push(playActionDetail['mission'])
-                }
-                if (playActionDetail['winner'] != "") {
-                    turnData['winner'] = playActionDetail['winner']
-                }
-            }
-            else if (ctx.action()[i].attackPlayer()) {
-                let attackPlayerActionDetail = this.visit(ctx.action()[i])
-                turnData['authority'] = this.updateAuthorityObj(turnData['authority'], attackPlayerActionDetail['authority'])
-                turnData['tradePool'] += attackPlayerActionDetail['tradePool']
-                turnData['combatPool'] += attackPlayerActionDetail['combatPool']
-                turnData['usedTrade'] += attackPlayerActionDetail['usedTrade']
-                turnData['usedCombat'] += attackPlayerActionDetail['usedCombat']
-            }
-            else if (ctx.action()[i].attackBase()) {
-                let attackBaseActionDetail = this.visit(ctx.action()[i])
-                turnData['destroyedBases'].push(attackBaseActionDetail['target'])
-                turnData['scrappedCards'] = turnData['scrappedCards'].concat(attackBaseActionDetail['scrappedCards'])
-                turnData['tradePool'] += attackBaseActionDetail['balance']['tradePool']
-                turnData['combatPool'] += attackBaseActionDetail['balance']['combatPool']
-                turnData['usedTrade'] += attackBaseActionDetail['balance']['usedTrade']
-                turnData['usedCombat'] += attackBaseActionDetail['balance']['usedCombat']
-                //console.log(attackBaseActionDetail['balance']['authority'])
-                turnData['authority'] = this.updateAuthorityObj(turnData['authority'], attackBaseActionDetail['balance']['authority'])
-            }
-            else if (ctx.action()[i].scrapCard()) {
-                let scrapCardActionDetail = this.visit(ctx.action()[i])
-                turnData['scrappedCards'] = turnData['scrappedCards'].concat(scrapCardActionDetail['scrappedCards'])
-                turnData['purchasedCards'] = turnData['purchasedCards'].concat(scrapCardActionDetail['acquiredCards'])
-                turnData['destroyedBases'] = turnData['destroyedBases'].concat(scrapCardActionDetail['destroyedBases'])
-                turnData['drawCount'] += scrapCardActionDetail['drawCount']
-                turnData['tradePool'] += scrapCardActionDetail['balance']['tradePool']
-                turnData['combatPool'] += scrapCardActionDetail['balance']['combatPool']
-                turnData['usedTrade'] += scrapCardActionDetail['balance']['usedTrade']
-                turnData['usedCombat'] += scrapCardActionDetail['balance']['usedCombat']
-                //console.log(scrapCardActionDetail['balance']['authority'])
-                turnData['authority'] = this.updateAuthorityObj(turnData['authority'], scrapCardActionDetail['balance']['authority'])
-            }
-            else if (ctx.action()[i].discard()) {
-                let discardActionDetail = this.visit(ctx.action()[i])
-                turnData['discardedCards'] = turnData['discardedCards'].concat(discardActionDetail['discardedCards'])
-                //console.log(turnData['discardedCards'])
-            }
-            else if (ctx.action()[i].choseEffect()) {
-                let choseEffectActionDetail = this.visit(ctx.action()[i])
-                turnData['discardedCards'] = turnData['discardedCards'].concat(choseEffectActionDetail['discardedCards'])
-                turnData['drawCount'] += choseEffectActionDetail['drawCount']
-                turnData['scrappedCards'] = turnData['scrappedCards'].concat(choseEffectActionDetail['scrappedCards'])
-                turnData['tradePool'] += choseEffectActionDetail['balance']['tradePool']
-                turnData['combatPool'] += choseEffectActionDetail['balance']['combatPool']
-                turnData['usedTrade'] += choseEffectActionDetail['balance']['usedTrade']
-                turnData['usedCombat'] += choseEffectActionDetail['balance']['usedCombat']
-                //console.log(choseEffectActionDetail['balance']['authority'])
-                turnData['authority'] = this.updateAuthorityObj(turnData['authority'], choseEffectActionDetail['balance']['authority'])
-            } else if (ctx.action()[i].activatingEffect()) {
-                let activatingEffectActionDetail = this.visit(ctx.action()[i])
-                turnData['purchasedCards'] = turnData['purchasedCards'].concat(activatingEffectActionDetail['acquiredCards'])
-                turnData['scrappedCards'] = turnData['scrappedCards'].concat(activatingEffectActionDetail['scrappedCards'])
-                turnData['discardedCards'] = turnData['discardedCards'].concat(activatingEffectActionDetail['discardedCards'])
-                turnData['drawCount'] += activatingEffectActionDetail['drawCount']
-                turnData['tradePool'] += activatingEffectActionDetail['balance']['tradePool']
-                turnData['combatPool'] += activatingEffectActionDetail['balance']['combatPool']
-                turnData['usedTrade'] += activatingEffectActionDetail['balance']['usedTrade']
-                turnData['usedCombat'] += activatingEffectActionDetail['balance']['usedCombat']
-                turnData['authority'] = this.updateAuthorityObj(turnData['authority'], activatingEffectActionDetail['balance']['authority'])
-                if (activatingEffectActionDetail['mission'] != "") {
-                    turnData['completedMissions'].push(activatingEffectActionDetail['mission'])
-                }
-                if (activatingEffectActionDetail['winner'] != "") {
-                    turnData['winner'] = activatingEffectActionDetail['winner']
-                }
-            } else if (ctx.action()[i].concede()) {
-                let summary = this.visit(ctx.action()[i])
-                turnData['authority'] = this.updateAuthorityObj(turnData['authority'], summary['authority'])
-                turnData['winCondition'] = "resignation"
-            } else if (ctx.action()[i].timeout()) {
-                turnData['winCondition'] = "timeout"
-            } else if (ctx.action()[i].completeMission()) {
-                let missionSummary = this.visit(ctx.action()[i])
-                turnData['tradePool'] += missionSummary['balance']['tradePool']
-                turnData['combatPool'] += missionSummary['balance']['combatPool']
-                turnData['usedTrade'] += missionSummary['balance']['usedTrade']
-                turnData['usedCombat'] += missionSummary['balance']['usedCombat']
-                turnData['authority'] = this.updateAuthorityObj(turnData['authority'], missionSummary['balance']['authority'])
-                turnData['acquiredCards'] = turnData['purchasedCards'].concat(missionSummary['purchasedCards'])
-                turnData['drawCount'] += missionSummary['drawCount']
-                turnData['completedMissions'].push(missionSummary['name'])
-                turnData['winner'] = missionSummary['winner']
-            }
-        }
-        if (ctx.winStatus()) {
-            turnData['winner'] = this.visit(ctx.winStatus())
-        }
-        //console.log(turnData['authority'])
-        return turnData
-    }
-
-    //grammar: endTurn drawPhaseDetail* ;
-    visitEndPhase(ctx) {
-        return this.visit(ctx.endTurn())
-    }
-
-    // grammar: name ENDS TURN INT NEWLINE ;
-    visitEndTurn(ctx) {
-        return ctx.name().getText()
-    }
-
-    // grammar: name '('INT ')' CONCEDED NEWLINE negativeBalance;
-    visitConcede(ctx) {
-        return this.computeNewBalance({}, this.visit(ctx.negativeBalance()))
-    }
-
-    //grammar: startTurnEffect | triggeredEvent | resolveEvent | purchase | purchaseHero | play | attackPlayer | attackBase | scrapCard | discard | choseEffect | activatingEffect | concede;
-    visitAction(ctx) {
-        if (ctx.startTurnEffect()) {
-            return this.visit(ctx.startTurnEffect())
-        } else if (ctx.triggeredEvent()) {
-            return this.visit(ctx.triggeredEvent())
-        } else if (ctx.resolveEvent()) {
-            return this.visit(ctx.resolveEvent())
-        } else if (ctx.purchase()) {
-            return this.visit(ctx.purchase())
-        } else if (ctx.purchaseHero()) {
-            return this.visit(ctx.purchaseHero())
-        } else if (ctx.play()) {
-            return this.visit(ctx.play())
-        } else if (ctx.attackPlayer()) {
-            return this.visit(ctx.attackPlayer())
-        } else if (ctx.attackBase()) {
-            return this.visit(ctx.attackBase())
-        } else if (ctx.scrapCard()) {
-            return this.visit(ctx.scrapCard())
-        } else if (ctx.discard()) {
-            return this.visit(ctx.discard())
-        } else if (ctx.choseEffect()) {
-            return this.visit(ctx.choseEffect())
-        } else if (ctx.activatingEffect()) {
-            return this.visit(ctx.activatingEffect())
-        } else if (ctx.concede()) {
-            return this.visit(ctx.concede())
-        } else if (ctx.completeMission()) {
-            return this.visit(ctx.completeMission())
-        }
-    }
-
-    // grammar: positiveBalance | drawCardsWithShuffle;
-    visitStartTurnEffect(ctx) {
-        if (ctx.positiveBalance()) {
-            return this.visit(ctx.positiveBalance())
-        }
-        if (ctx.drawCardsWithShuffle()) {
-            return this.visit(ctx.drawCardsWithShuffle())
-        }
-    }
-
-    // grammar: purchaseSummary purchaseDetail*;
-    visitPurchase(ctx) {
-        let purchase = {
-            balance: {
-                tradePool: 0,
-                combatPool: 0,
-                usedTrade: 0,
-                usedCombat: 0,
-                authority: {}
-            }
-        }
-        purchase['card'] = this.visit(ctx.purchaseSummary())
-        for (let i = 0; i < ctx.purchaseDetail().length; i++) {
-            if (ctx.purchaseDetail()[i].negativeBalance()) {
-                let newBalanceDetail = this.visit(ctx.purchaseDetail()[i])
-                purchase['balance'] = this.computeNewBalance(purchase['balance'], newBalanceDetail)
-            }
-        }
-        return purchase
-    }
-
-    // grammar: ACQUIRED card  NEWLINE;
-    visitPurchaseSummary(ctx) {
+    visitEvent(ctx) {
         return this.visit(ctx.card())
     }
 
-    // grammar: negativeBalance | acquireToHand | acquireToDeck;
-    visitPurchaseDetail(ctx) {
-        let balance = this.visit(ctx.negativeBalance())
-        if (balance['category'] != 'Trade' || balance['value'] > 0) {
-            return 'there was some error'
-        }
-        return balance
-    }
-
-    // grammar: ACQUIRED card TO HAND NEWLINE;
-    visitAcquireToHand(ctx) {
+    visitMission(ctx) {
         return this.visit(ctx.card())
     }
 
-    // grammar: ACQUIRED card TO THE TOP OF THE DECK NEWLINE;
-    visitAcquireToDeck(ctx) {
-        return this.visit(ctx.card());
-    }
-
-    // grammar: purchaseSummary purchaseHeroDetail playHero*;
-    visitPurchaseHero(ctx) {
-        let purchase = {
-            card: '',
-            events: [],
-            scrappedCards: [],
-            discardedCards: [],
-            drawCount: 0,
-            balance: {
-                tradePool: 0,
-                combatPool: 0,
-                usedTrade: 0,
-                usedCombat: 0,
-                authority: {}
-            }
-        }
-        purchase['card'] = this.visit(ctx.purchaseSummary())
-        let newBalanceDetail = this.visit(ctx.purchaseHeroDetail())
-        purchase['balance'] = this.computeNewBalance(purchase['balance'], newBalanceDetail)
-        for (let i = 0; i < ctx.playHero().length; i++) {
-            if (ctx.playHero()[i].positiveBalance()) {
-                let playHeroDetail = this.visit(ctx.playHero()[i])
-                purchase['balance'] = this.computeNewBalance(purchase['balance'], playHeroDetail)
-            } else if (ctx.playHero()[i].drawCardsWithShuffle()) {
-                purchase['drawCount'] += this.visit(ctx.playHero()[i])
-            } else if (ctx.playHero()[i].multiScrapDetail()) {
-                let playHeroDetail = this.visit(ctx.playHero()[i])
-                purchase['scrappedCards'] = purchase['scrappedCards'].concat(playHeroDetail)
-            } else if (ctx.playHero()[i].simpleScrap()) {
-                let playHeroDetail = this.visit(ctx.playHero()[i])
-                purchase['scrappedCards'].push(playHeroDetail)
-            } else if (ctx.playHero()[i].discarding()) {
-                let playHeroDetail = this.visit(ctx.playHero()[i])
-                purchase['discardedCards'].push(playHeroDetail)
-            } else if (ctx.playHero()[i].triggeredEvent()) {
-                let playHeroDetail = this.visit(ctx.playHero()[i])
-                purchase['events'].push(playHeroDetail['event'])
-                purchase['balance']['tradePool'] += playHeroDetail['balance']['tradePool']
-                purchase['balance']['combatPool'] += playHeroDetail['balance']['combatPool']
-                purchase['balance']['usedTrade'] += playHeroDetail['balance']['usedTrade']
-                purchase['balance']['usedCombat'] += playHeroDetail['balance']['usedCombat']
-                //console.log(triggeredEventDetail['balance']['authority'])
-                purchase['balance']['authority'] = this.updateAuthorityObj(purchase['balance']['authority'], playHeroDetail['balance']['authority'])
-                purchase['scrappedCards'] = purchase['scrappedCards'].concat(playHeroDetail['scrappedCards'])
-                purchase['discardedCards'] = purchase['discardedCards'].concat(playHeroDetail['discardedCards'])
-                purchase['drawCount'] += playHeroDetail['drawCount']
-            }
-        }
-        return purchase
-    }
-
-    // grammar: negativeBalance acquireHeroToTable refreshIndicators;
-    visitPurchaseHeroDetail(ctx) {
-        return this.visit(ctx.negativeBalance())
-    }
-
-    // grammar: triggeredEvent | tradeRowScrap | resolveFreeAcquire | resolveSelfScrap | multiScrapSummary | positiveBalance | drawCardsWithShuffle | multiScrapDetail | simpleScrap | discarding;
-    visitPlayHero(ctx) {
-        if (ctx.positiveBalance()) {
-            return this.visit(ctx.positiveBalance())
-        } else if (ctx.drawCardsWithShuffle()) {
-            return this.visit(ctx.drawCardsWithShuffle())
-        } else if (ctx.multiScrapDetail()) {
-            return this.visit(ctx.multiScrapDetail())
-        } else if (ctx.simpleScrap()) {
-            return this.visit(ctx.simpleScrap())
-        } else if (ctx.triggeredEvent()) {
-            return this.visit(ctx.triggeredEvent())
-        } else if (ctx.discarding()) {
-            return this.visit(ctx.discarding())
-        }
-    }
-
-    // grammar: playSummary playDetail* completeMission?;
-    // returns info about the cards played and associated effects
-    visitPlay(ctx) {
-        let playSummary = {
-            events: [],
-            acquiredCards: [],
-            playedCards: [],
-            scrappedCards: [],
-            destroyedBases: [],
-            discardedCards: [],
-            drawCount: 0,
-            winner: "",
-            mission: "",
-            balance: {
-                tradePool: 0,
-                combatPool: 0,
-                usedTrade: 0,
-                usedCombat: 0,
-                authority: {}
-            }
-        }
-        if (ctx.playSummary().playSingle()) {
-            playSummary['playedCards'].push(this.visit(ctx.playSummary().playSingle()))
-        }
-        for (let i = 0; i < ctx.playDetail().length; i++) {
-            if (ctx.playDetail()[i].positiveBalance()) {
-                let newBalanceDetail = this.visit(ctx.playDetail()[i])
-                playSummary['balance'] = this.computeNewBalance(playSummary['balance'], newBalanceDetail)
-            }
-            else if (ctx.playDetail()[i].drawCardsWithShuffle()) {
-                let drawCountSummary = this.visit(ctx.playDetail()[i])
-                playSummary['drawCount'] += drawCountSummary
-            }
-            else if (ctx.playDetail()[i].multiScrap()) {
-                let scrappedCards = this.visit(ctx.playDetail()[i])
-                playSummary['scrappedCards'] = playSummary['scrappedCards'].concat(scrappedCards)
-            }
-            else if (ctx.playDetail()[i].simpleScrap()) {
-                let simpleScrapSummary = this.visit(ctx.playDetail()[i])
-                playSummary['scrappedCards'].push(simpleScrapSummary)
-            }
-            else if (ctx.playDetail()[i].destroyBase()) {
-                let destroyBaseSummary = this.visit(ctx.playDetail()[i])
-                playSummary['destroyedBases'].push(destroyBaseSummary)
-            }
-            else if (ctx.playDetail()[i].freeAcquire()) {
-                let acquiredCard = this.visit(ctx.playDetail()[i])
-                playSummary['acquiredCards'].push(acquiredCard)
-            } else if (ctx.playDetail()[i].triggeredEvent()) {
-                let triggeredEventInfo = this.visit(ctx.playDetail()[i])
-                playSummary['events'].push(triggeredEventInfo['event'])
-                playSummary['balance']['tradePool'] += triggeredEventInfo['balance']['tradePool']
-                playSummary['balance']['combatPool'] += triggeredEventInfo['balance']['combatPool']
-                playSummary['balance']['usedTrade'] += triggeredEventInfo['balance']['usedTrade']
-                playSummary['balance']['usedCombat'] += triggeredEventInfo['balance']['usedCombat']
-                playSummary['balance']['authority'] = this.updateAuthorityObj(playSummary['balance']['authority'], triggeredEventInfo['balance']['authority'])
-                playSummary['scrappedCards'] = playSummary['scrappedCards'].concat(triggeredEventInfo['scrappedCards'])
-                playSummary['discardedCards'] = playSummary['discardedCards'].concat(triggeredEventInfo['discardedCards'])
-                playSummary['drawCount'] += triggeredEventInfo['drawCount']
-            }
-        }
-        if (ctx.completeMission()) {
-            let missionSummary = this.visit(ctx.completeMission())
-            playSummary['balance']['tradePool'] += missionSummary['balance']['tradePool']
-            playSummary['balance']['combatPool'] += missionSummary['balance']['combatPool']
-            playSummary['balance']['usedTrade'] += missionSummary['balance']['usedTrade']
-            playSummary['balance']['usedCombat'] += missionSummary['balance']['usedCombat']
-            playSummary['balance']['authority'] = this.updateAuthorityObj(playSummary['balance']['authority'], missionSummary['balance']['authority'])
-            playSummary['acquiredCards'] = playSummary['acquiredCards'].concat(missionSummary['purchasedCards'])
-            playSummary['drawCount'] += missionSummary['drawCount']
-            playSummary['mission'] = missionSummary['name']
-            playSummary['winner'] = missionSummary['winner']
-
-        }
-        return playSummary
-    }
-
-    // grammar: PLAYED card NEWLINE;
-    visitPlaySingle(ctx) {
+    visitScrapped(ctx) {
         return this.visit(ctx.card())
     }
 
-    // grammar: positiveBalance | newAbility | drawCardsWithShuffle | scrapCardEffect | discarding | multiScrap | noScrap | simpleScrap | destroyBase | moveBaseToDeck | freeAcquire | copyCardSummary | copyCardEffect;
-    visitPlayDetail(ctx) {
-        if (ctx.positiveBalance()) {
-            return this.visit(ctx.positiveBalance())
-        } else if (ctx.drawCardsWithShuffle()) {
-            return this.visit(ctx.drawCardsWithShuffle())
-        } else if (ctx.multiScrap()) {
-            return this.visit(ctx.multiScrap())
-        } else if (ctx.simpleScrap()) {
-            return this.visit(ctx.simpleScrap())
-        } else if (ctx.destroyBase()) {
-            return this.visit(ctx.destroyBase())
-        } else if (ctx.freeAcquire()) {
-            return this.visit(ctx.freeAcquire())
-        } else if (ctx.triggeredEvent()) {
-            return this.visit(ctx.triggeredEvent())
-        }
-    }
-
-    // grammar: multiScrapSummary multiScrapDetail;
-    visitMultiScrap(ctx) {
-        return this.visit(ctx.multiScrapDetail());
-    }
-
-    // grammar: scrapCardEffect+ simpleScrap+;
-    visitMultiScrapDetail(ctx) {
-        let scrappedCards = []
-        for (let i = 0; i < ctx.simpleScrap().length; i++) {
-            scrappedCards.push(this.visit(ctx.simpleScrap()[i]))
-        }
-        return scrappedCards
-    }
-
-    // grammar: SCRAPPED card NEWLINE;
-    visitSimpleScrap(ctx) {
-        return this.visit(ctx.card())
-    }
-
-    // grammar: ACQUIRED card  NEWLINE (acquireToHand|acquireToDeck);
-    visitFreeAcquire(ctx) {
-        return this.visit(ctx.card());
-    }
-
-    // grammar: completeMissionSummary  completeMissionsDetail*;
-    visitCompleteMission(ctx) {
-        let missionSummary = {
-            name: '',
-            drawCount: 0,
-            purchasedCards: [],
-            winner: "",
-            balance: {
-                tradePool: 0,
-                combatPool: 0,
-                usedTrade: 0,
-                usedCombat: 0,
-                authority: {}
-            }
-        }
-        missionSummary['name'] = this.visit(ctx.completeMissionSummary())
-        for (let i = 0; i < ctx.completeMissionsDetail().length; i++) {
-            if (ctx.completeMissionsDetail()[i].positiveBalance()) {
-                let missionDetail = this.visit(ctx.completeMissionsDetail()[i])
-                missionSummary['balance'] = this.computeNewBalance(missionSummary['balance'], missionDetail)
-            } else if (ctx.completeMissionsDetail()[i].drawCardsWithShuffle()) {
-                missionSummary['drawCount'] += this.visit(ctx.completeMissionsDetail()[i])
-            } else if (ctx.completeMissionsDetail()[i].acquireToHand()) {
-                let missionDetail = this.visit(ctx.completeMissionsDetail()[i])
-                missionSummary['purchasedCards'].push(missionDetail)
-            } else if (ctx.completeMissionsDetail()[i].freeAcquire()) {
-                let missionDetail = this.visit(ctx.completeMissionsDetail()[i])
-                missionSummary['purchasedCards'].push(missionDetail)
-            } else if (ctx.completeMissionsDetail()[i].winStatus()) {
-                missionSummary['winner'] = this.visit(ctx.completeMissionsDetail()[i])
-            }
-        }
-        //console.log(missionSummary)
-        return missionSummary
-    }
-
-    // grammar: positiveBalance | drawCardsWithShuffle | acquireToHand | selectMissionsReward | winStatus | freeAcquire | resolveAllyReward | resolveRuleReward | resolveDefendReward | resolveConvertReward;
-    visitCompleteMissionsDetail(ctx) {
-        if (ctx.positiveBalance()) {
-            return this.visit(ctx.positiveBalance())
-        } else if (ctx.drawCardsWithShuffle()) {
-            return this.visit(ctx.drawCardsWithShuffle())
-        } else if (ctx.acquireToHand()) {
-            return this.visit(ctx.acquireToHand())
-        } else if (ctx.freeAcquire()) {
-            return this.visit(ctx.freeAcquire())
-        } else if (ctx.winStatus()) {
-            return this.visit(ctx.winStatus())
-        }
-    }
-
-    //grammar: REVEALED card NEWLINE;
-    visitCompleteMissionSummary(ctx) {
-        return this.visit(ctx.card());
-    }
-
-    // grammar: triggeredEventSummary triggeredEventDetail* ;
-    visitTriggeredEvent(ctx) {
-        let eventSummary = {
-            drawCount: 0,
-            event: '',
-            scrappedCards: [],
-            discardedCards: [],
-            acquiredCards: [],
-            balance: {
-                tradePool: 0,
-                combatPool: 0,
-                usedTrade: 0,
-                usedCombat: 0,
-                authority: {}
-            }
-        }
-        eventSummary['event'] = this.visit(ctx.triggeredEventSummary())
-        for (let i = 0; i < ctx.triggeredEventDetail().length; i++) {
-            if (ctx.triggeredEventDetail()[i].positiveBalance()) {
-                let newBalance = this.visit(ctx.triggeredEventDetail()[i])
-                eventSummary['balance'] = this.computeNewBalance(eventSummary['balance'], newBalance)
-            } else if (ctx.triggeredEventDetail()[i].negativeBalance()) {
-                let newBalance = this.visit(ctx.triggeredEventDetail()[i])
-                eventSummary['balance'] = this.computeNewBalance(eventSummary['balance'], newBalance)
-            } else if (ctx.triggeredEventDetail()[i].scrapAction()) {
-                let scrappedCard = this.visit(ctx.triggeredEventDetail()[i])
-                eventSummary['scrappedCards'].push(scrappedCard)
-            } else if (ctx.triggeredEventDetail()[i].drawCardsWithShuffle()) {
-                eventSummary['drawCount'] += this.visit(ctx.triggeredEventDetail()[i])
-            } else if (ctx.triggeredEventDetail()[i].resolveEvent()) {
-                let resolveEvent = this.visit(ctx.triggeredEventDetail()[i])
-                eventSummary['drawCount'] += resolveEvent['drawCount']
-                eventSummary['balance']['tradePool'] += resolveEvent['balance']['tradePool']
-                eventSummary['balance']['combatPool'] += resolveEvent['balance']['combatPool']
-                eventSummary['balance']['usedTrade'] += resolveEvent['balance']['usedTrade']
-                eventSummary['balance']['usedCombat'] += resolveEvent['balance']['usedCombat']
-                eventSummary['balance']['authority'] = this.updateAuthorityObj(eventSummary['balance']['authority'], resolveEvent['balance']['authority'])
-                eventSummary['scrappedCards'] = eventSummary['scrappedCards'].concat(resolveEvent['scrappedCards'])
-                eventSummary['discardedCards'] = eventSummary['discardedCards'].concat(resolveEvent['discardedCards'])
-                eventSummary['acquiredCards'] = eventSummary['acquiredCards'].concat(resolveEvent['acquiredCards'])
-            }
-        }
-        //console.log(eventSummary)
-        return eventSummary
-    }
-
-    //grammar: REVEALED EVENT card NEWLINE ;
-    visitTriggeredEventSummary(ctx) {
-        return this.visit(ctx.card())
-    }
-
-
-    // positiveBalance | negativeBalance | scrapAction | drawCardsWithShuffle | resolveEvent;
-    visitTriggeredEventDetail(ctx) {
-        if (ctx.positiveBalance()) {
-            return this.visit(ctx.positiveBalance())
-        } else if (ctx.negativeBalance()) {
-            return this.visit(ctx.negativeBalance())
-        } else if (ctx.scrapAction()) {
-            return this.visit(ctx.scrapAction())
-        } else if (ctx.drawCardsWithShuffle()) {
-            return this.visit(ctx.drawCardsWithShuffle())
-        } else if (ctx.resolveEvent()) {
-            return this.visit(ctx.resolveEvent())
-        }
-    }
-
-    // grammar: resolveEventSummary resolveEventDetail*;
-    visitResolveEvent(ctx) {
-        let eventSummary = {
-            scrappedCards: [],
-            discardedCards: [],
-            acquiredCards: [],
-            drawCount: 0,
-            balance: {
-                tradePool: 0,
-                combatPool: 0,
-                usedTrade: 0,
-                usedCombat: 0,
-                authority: {}
-            }
-        }
-        if (ctx.resolveEventSummary().negativeBalance()) {
-            let newBalance = this.visit(ctx.resolveEventSummary())
-            eventSummary['balance'] = this.computeNewBalance(eventSummary['balance'], newBalance)
-        }
-        for (let i = 0; i < ctx.resolveEventDetail().length; i++) {
-            if (ctx.resolveEventDetail()[i].negativeBalance()) {
-                let newBalance = this.visit(ctx.resolveEventDetail()[i])
-                eventSummary['balance'] = this.computeNewBalance(eventSummary['balance'], newBalance)
-            } else if (ctx.resolveEventDetail()[i].positiveBalance()) {
-                let newBalance = this.visit(ctx.resolveEventDetail()[i])
-                eventSummary['balance'] = this.computeNewBalance(eventSummary['balance'], newBalance)
-            } else if (ctx.resolveEventDetail()[i].acquireToDeck()) {
-                let summary = this.visit(ctx.resolveEventDetail()[i])
-                eventSummary['acquiredCards'].push(summary)
-            } else if (ctx.resolveEventDetail()[i].drawCardsWithShuffle()) {
-                eventSummary['drawCount'] += this.visit(ctx.resolveEventDetail()[i])
-            } else if (ctx.resolveEventDetail()[i].discarding()) {
-                let discardedCard = this.visit(ctx.resolveEventDetail()[i])
-                eventSummary['discardedCards'].push(discardedCard)
-            } else if (ctx.resolveEventDetail()[i].scrapDetail()) {
-                let scrappedCard = this.visit(ctx.resolveEventDetail()[i])
-                eventSummary['scrappedCards'].push(scrappedCard)
-            }
-        }
-        return eventSummary
-    }
-
-    // grammar: resolveSimple | resolveBombardment | resolveComet | resolveCard | negativeBalance | resolveSupplyRun | resolvingTacticalMan1 | resolvingTacticalMan2 | resolveWormhole;
-    visitResolveEventSummary(ctx) {
-        if (ctx.negativeBalance()) {
-            return this.visit(ctx.negativeBalance())
-        }
-    }
-
-    // grammar: negativeBalance | positiveBalance | discardFromEvent | discarding | scrapSummary | scrapDetail | resolveMobilization | acquireToDeck | selectCard | drawCardsWithShuffle | moveCardToHand | acquireToHand;
-    visitResolveEventDetail(ctx) {
-        if (ctx.negativeBalance()) {
-            return this.visit(ctx.negativeBalance())
-        } else if (ctx.positiveBalance()) {
-            return this.visit(ctx.positiveBalance())
-        } else if (ctx.acquireToDeck()) {
-            return this.visit(ctx.acquireToDeck())
-        } else if (ctx.drawCardsWithShuffle()) {
-            return this.visit(ctx.drawCardsWithShuffle())
-        } else if (ctx.discarding()) {
-            return this.visit(ctx.discarding())
-        } else if (ctx.scrapDetail()) {
-            return this.visit(ctx.scrapDetail())
-        }
-    }
-
-    // grammar: attackPlayerSummary negativeBalance+;
-    visitAttackPlayer(ctx) {
-        let balance = {
-            tradePool: 0,
-            combatPool: 0,
-            usedTrade: 0,
-            usedCombat: 0,
-            authority: {}
-        }
-        for (let i = 0; i < ctx.negativeBalance().length; i++) {
-            let newBalance = this.visit(ctx.negativeBalance()[i])
-            balance = this.computeNewBalance(balance, newBalance)
-        }
-        return balance
-    }
-
-    // grammar: atackBaseSummary attackBaseDetail* ;
-    visitAttackBase(ctx) {
-        let attackBase = {
-            scrappedCards: [],
-            balance: {
-                tradePool: 0,
-                combatPool: 0,
-                usedTrade: 0,
-                usedCombat: 0,
-                authority: {}
-            }
-
-        }
-        attackBase['target'] = this.visit(ctx.attackBaseSummary())
-        for (let i = 0; i < ctx.attackBaseDetail().length; i++) {
-            if (ctx.attackBaseDetail()[i].negativeBalance()) {
-                let newBalanceDetail = this.visit(ctx.attackBaseDetail()[i])
-                attackBase['balance'] = this.computeNewBalance(attackBase['balance'], newBalanceDetail)
-            } else if (ctx.attackBaseDetail()[i].scrapAction()) {
-                attackBase['scrappedCards'].push(this.visit(ctx.attackBaseDetail()[i]))
-            }
-        }
-        return attackBase
-    }
-
-    // grammar: ATTACKED card NEWLINE;
-    visitAttackBaseSummary(ctx) {
-        return this.visit(ctx.card())
-    }
-
-    // grammar: negativeBalance | destroyBase | scrapAction;
-    visitAttackBaseDetail(ctx) {
-        if (ctx.negativeBalance()) {
-            return this.visit(ctx.negativeBalance())
-        } else if (ctx.scrapAction()) {
-            return this.visit(ctx.scrapAction())
-        }
-    }
-
-    // grammar: scrappingSummary scrappingDetail;
-    visitScrapCard(ctx) {
-        return this.visit(ctx.scrappingDetail())
-    }
-
-    // grammar: scrapEffect+;
-    visitScrappingDetail(ctx) {
-        let scrapSummary = {
-            scrappedCards: [],
-            acquiredCards: [],
-            drawCount: 0,
-            destroyedBases: [],
-            balance: {
-                tradePool: 0,
-                combatPool: 0,
-                usedTrade: 0,
-                usedCombat: 0,
-                authority: {}
-            }
-        }
-        for (let i = 0; i < ctx.scrapEffect().length; i++) {
-            if (ctx.scrapEffect()[i].scrapAction()) {
-                scrapSummary['scrappedCards'].push(this.visit(ctx.scrapEffect()[i]))
-                if (ctx.scrapEffect()[i].freePurchase()) {
-                    scrapSummary['acquiredCards'].push(this.visit(ctx.scrapEffect()[i].freePurchase()))
-                }
-            }
-            else if (ctx.scrapEffect()[i].drawCardsWithShuffle()) {
-                scrapSummary['drawCount'] += this.visit(ctx.scrapEffect()[i])
-            }
-            else if (ctx.scrapEffect()[i].destroyBase()) {
-                scrapSummary['destroyedBases'].push(this.visit(ctx.scrapEffect()[i]))
-            } else if (ctx.scrapEffect()[i].newBalanceDetail()) {
-                scrapSummary['balance'] = this.computeNewBalance(scrapSummary['balance'], this.visit(ctx.scrapEffect()[i]))
-            }
-        }
-        return scrapSummary
-    }
-
-    // grammar: scrapAction | drawCardsWithShuffle | destroyBase | newBalanceDetail | (freePurchase scrapAction) | replaceGambit | scrapSummary | moveDiscardToDeck;
-    visitScrapEffect(ctx) {
-        if (ctx.scrapAction()) {
-            return this.visit(ctx.scrapAction())
-        } else if (ctx.drawCardsWithShuffle()) {
-            return this.visit(ctx.drawCardsWithShuffle())
-        } else if (ctx.destroyBase()) {
-            return this.visit(ctx.destroyBase())
-        } else if (ctx.newBalanceDetail()) {
-            return this.visit(ctx.newBalanceDetail())
-        }
-    }
-
-    // grammar: SCRAPPED card NEWLINE;
-    visitScrapAction(ctx) {
-        return this.visit(ctx.card())
-    }
-
-    // grammar: (ACQUIRED card TO HAND NEWLINE) | ( ACQUIRED card TO THE TOP OF THE DECK NEWLINE) | (ACQUIRED card NEWLINE) ;
-    visitFreePurchase(ctx) {
-        return this.visit(ctx.card());
-    }
-
-    // grammar: discardSummary discardDetail* ;
-    visitDiscard(ctx) {
-        let discardSummary = {
-            discardedCards: [],
-            balance: {
-                tradePool: 0,
-                combatPool: 0,
-                usedTrade: 0,
-                usedCombat: 0,
-                authority: {}
-            }
-        }
-        for (let i = 0; i < ctx.discardDetail().length; i++) {
-            if (ctx.discardDetail()[i].discarding()) {
-                let discardedCard = this.visit(ctx.discardDetail()[i])
-                discardSummary['discardedCards'].push(discardedCard)
-            }
-            else if (ctx.discardDetail()[i].negativeBalance()) {
-                let balance = this.visit(ctx.discardDetail()[i])
-                discardSummary['balance'] = this.computeNewBalance(discardSummary['balance'], balance)
-            }
-        }
-        return discardSummary
-    }
-
-    // grammar: discardAction | discardEnd | discarding | eventRefuseDiscard | negativeBalance ;
-    visitDiscardDetail(ctx) {
-        if (ctx.discarding()) {
-            return this.visit(ctx.discarding())
-        }
-        else if (ctx.negativeBalance()) {
-            return this.visit(ctx.negativeBalance())
-        }
-    }
-
-    // grammar: choseEffectSummary choseEffectDetail*;
-    visitChoseEffect(ctx) {
-        let choseEffectSummary = {
-            discardedCards: [],
-            scrappedCards: [],
-            drawCount: 0,
-            balance: {
-                tradePool: 0,
-                combatPool: 0,
-                usedTrade: 0,
-                usedCombat: 0,
-                authority: {}
-            }
-        }
-        for (let i = 0; i < ctx.choseEffectDetail().length; i++) {
-            if (ctx.choseEffectDetail()[i].discarding()) {
-                let discardedCard = this.visit(ctx.choseEffectDetail()[i])
-                choseEffectSummary['discardedCards'].push(discardedCard)
-            } else if (ctx.choseEffectDetail()[i].drawCardsWithShuffle()) {
-                let drawCount = this.visit(ctx.choseEffectDetail()[i])
-                choseEffectSummary['drawCount'] += drawCount
-            } else if (ctx.choseEffectDetail()[i].simpleScrap()) {
-                let scrappedCard = this.visit(ctx.choseEffectDetail()[i])
-                choseEffectSummary['scrappedCards'].push(scrappedCard)
-            } else if (ctx.choseEffectDetail()[i].positiveBalance()) {
-                let newBalance = this.visit(ctx.choseEffectDetail()[i])
-                choseEffectSummary['balance'] = this.computeNewBalance(choseEffectSummary['balance'], newBalance)
-            } else if (ctx.choseEffectDetail()[i].scrap()) {
-                let summary = this.visit(ctx.choseEffectDetail()[i])
-                choseEffectSummary['scrappedCards'] = choseEffectSummary['scrappedCards'].concat(summary)
-            }
-        }
-        return choseEffectSummary
-    }
-
-    // grammar: selectDiscard | discardForPool | discarding | drawCardsWithShuffle | noScrap | simpleScrap | positiveBalance | refreshTradeRow | changeHiddenBaseToFaction | replaceGambit | scrap;
-    visitChoseEffectDetail(ctx) {
-        if (ctx.discarding()) {
-            return this.visit(ctx.discarding())
-        } else if (ctx.drawCardsWithShuffle()) {
-            return this.visit(ctx.drawCardsWithShuffle())
-        } else if (ctx.simpleScrap()) {
-            return this.visit(ctx.simpleScrap())
-        } else if (ctx.positiveBalance()) {
-            return this.visit(ctx.positiveBalance())
-        } else if (ctx.scrap()) {
-            return this.visit(ctx.scrap())
-        }
-    }
-
-    // grammar: activatingSummary activatingDetail*;
-    visitActivatingEffect(ctx) {
-        let activatingEffectSummary = {
-            mission: "",
-            winner: "",
-            acquiredCards: [],
-            scrappedCards: [],
-            discardedCards: [],
-            drawCount: 0,
-            balance: {
-                tradePool: 0,
-                combatPool: 0,
-                usedTrade: 0,
-                usedCombat: 0,
-                authority: {}
-            }
-        }
-        for (let i = 0; i < ctx.activatingDetail().length; i++) {
-            if (ctx.activatingDetail()[i].drawCardsWithShuffle()) {
-                activatingEffectSummary['drawCount'] += this.visit(ctx.activatingDetail()[i])
-            } else if (ctx.activatingDetail()[i].freeAcquireToTop()) {
-                let summary = this.visit(ctx.activatingDetail()[i])
-                activatingEffectSummary['acquiredCards'].push(summary)
-            } else if (ctx.activatingDetail()[i].scrapDetail()) {
-                let summary = this.visit(ctx.activatingDetail()[i])
-                activatingEffectSummary['scrappedCards'].push(summary)
-            } else if (ctx.activatingDetail()[i].copyBase()) {
-                let summary = this.visit(ctx.activatingDetail()[i])
-                activatingEffectSummary['balance'] = this.computeNewBalance(activatingEffectSummary['balance'], summary)
-            } else if (ctx.activatingDetail()[i].discardAndDraw()) {
-                let summary = this.visit(ctx.activatingDetail()[i])
-                activatingEffectSummary['discardedCards'] = activatingEffectSummary['discardedCards'].concat(summary['discardedCards'])
-                activatingEffectSummary['drawCount'] += summary['drawCount']
-            } else if (ctx.activatingDetail()[i].positiveBalance()) {
-                let summary = this.visit(ctx.activatingDetail()[i])
-                activatingEffectSummary['balance'] = this.computeNewBalance(activatingEffectSummary['balance'], summary)
-            } else if (ctx.activatingDetail()[i].negativeBalance()) {
-                let summary = this.visit(ctx.activatingDetail()[i])
-                activatingEffectSummary['balance'] = this.computeNewBalance(activatingEffectSummary['balance'], summary)
-            } else if (ctx.activatingDetail()[i].discarding()) {
-                let summary = this.visit(ctx.activatingDetail()[i])
-                activatingEffectSummary['discardedCards'].push(summary)
-            }
-        }
-        if (ctx.completeMission()) {
-            let missionSummary = this.visit(ctx.completeMission())
-            activatingEffectSummary['balance']['tradePool'] += missionSummary['balance']['tradePool']
-            activatingEffectSummary['balance']['combatPool'] += missionSummary['balance']['combatPool']
-            activatingEffectSummary['balance']['usedTrade'] += missionSummary['balance']['usedTrade']
-            activatingEffectSummary['balance']['usedCombat'] += missionSummary['balance']['usedCombat']
-            activatingEffectSummary['balance']['authority'] = this.updateAuthorityObj(activatingEffectSummary['balance']['authority'], missionSummary['balance']['authority'])
-            activatingEffectSummary['acquiredCards'] = activatingEffectSummary['acquiredCards'].concat(missionSummary['purchasedCards'])
-            activatingEffectSummary['drawCount'] += missionSummary['drawCount']
-            activatingEffectSummary['mission'] = missionSummary['name']
-            activatingEffectSummary['winner'] = missionSummary['winner']
-        }
-        return activatingEffectSummary
-    }
-
-    // grammar: drawAndScrapFromHand | scrapAndDraw | drawCardsWithShuffle | scrap | noScrap | freeAcquireToTop | destroyBase | scrapDetail | noCopy | noCopyBases | copyCard | copyBase | discardAndDraw | positiveBalance | negativeBalance | resolveStealth | copyStealth | selectCard;
-    visitActivatingDetail(ctx) {
-        if (ctx.resolveHandScrap()) {
-            return this.visit(ctx.resolveHandScrap())
-        } else if (ctx.drawCardsWithShuffle()) {
-            return this.visit(ctx.drawCardsWithShuffle())
-        } else if (ctx.freeAcquireToTop()) {
-            return this.visit(ctx.freeAcquireToTop())
-        } else if (ctx.scrapDetail()) {
-            return this.visit(ctx.scrapDetail())
-        } else if (ctx.copyBase()) {
-            return this.visit(ctx.copyBase())
-        } else if (ctx.discardAndDraw()) {
-            return this.visit(ctx.discardAndDraw())
-        } else if (ctx.positiveBalance()) {
-            return this.visit(ctx.positiveBalance())
-        } else if (ctx.negativeBalance()) {
-            return this.visit(ctx.negativeBalance())
-        } else if (ctx.discarding()) {
-            return this.visit(ctx.discarding())
-        }
-    }
-
-    // grammar: resolveHandScrapSummary scrapDetail;
-    visitResolveHandScrap(ctx) {
-        return this.visit(ctx.scrapDetail())
-    }
-
-    // grammar: ACQUIRED card NEWLINE purchaseToTop;
-    visitFreeAcquireToTop(ctx) {
-        return this.visit(ctx.card())
-    }
-
-    // grammar: copyBaseSummary copyBaseDetail;
-    visitCopyBase(ctx) {
-        return this.visit(ctx.copyBaseDetail());
-    }
-
-    // grammar: copyCardEffect newBalanceDetail*;
-    visitCopyBaseDetail(ctx) {
-        let balance = {
-            tradePool: 0,
-            combatPool: 0,
-            usedTrade: 0,
-            usedCombat: 0,
-            authority: {}
-        }
-        if (ctx.newBalanceDetail()) {
-            for (let i = 0; i < ctx.newBalanceDetail().length; i++) {
-                balance = this.computeNewBalance(balance, this.visit(ctx.newBalanceDetail()[i]))
-            }
-        }
-        return balance
-    }
-
-    // grammar: selectDiscard+ discarding+ drawCardsWithShuffle;
-    visitDiscardAndDraw(ctx) {
-        let discardAndDraw = {
-            discardedCards: [],
-            drawCount: 0
-        }
-        for (let i = 0; i < ctx.discarding().length; i++) {
-            discardAndDraw['discardedCards'].push(this.visit(ctx.discarding()[i]))
-        }
-        discardAndDraw['drawCount'] = this.visit(ctx.drawCardsWithShuffle())
-        return discardAndDraw
-    }
-
-    // grammar:  scrapSummary+ scrapDetail+;
-    visitScrap(ctx) {
-        let scrappedCards = []
-        for (let i = 0; i < ctx.scrapDetail().length; i++) {
-            scrappedCards.push(this.visit(ctx.scrapDetail()[i]))
-        }
-        return scrappedCards
-    }
-
-    // grammar: SCRAPPED card NEWLINE;
-    visitScrapDetail(ctx) {
-        return this.visit(ctx.card())
-    }
-
-    // grammar: 'Destroyed' card NEWLINE;
     visitDestroyBase(ctx) {
         return this.visit(ctx.card())
     }
 
-    // grammar: DISCARDED card NEWLINE;
-    visitDiscarding(ctx) {
+    visitCardAcquisition(ctx) {
         return this.visit(ctx.card())
     }
 
-    // grammar: (drawCards+ shuffleCards drawCards+) | (shuffleCards? drawCards+);
-    visitDrawCardsWithShuffle(ctx) {
-        //need to improve this
-        let drawCount = 0
-        for (let i = 0; i < ctx.drawCards().length; i++) {
-            drawCount += this.visit(ctx.drawCards()[i])
+    visitAcquireToDeck(ctx) {
+        return this.visit(ctx.card())
+    }
+
+    visitAcquireToHand(ctx) {
+        return this.visit(ctx.card())
+    }
+
+    visitPlaySingle(ctx) {
+        return this.visit(ctx.card())
+    }
+
+    visitActivate(ctx) {
+        return this.visit(ctx.card())
+    }
+
+    visitScrapSelf(ctx) {
+        return this.visit(ctx.card())
+    }
+
+    visitEndTurn(ctx) {
+        return this.visit(ctx.name())
+    }
+
+    visitResolving(ctx){
+        if(ctx.resolveScrapHand()){
+            return {
+                "resolve": true
+            }
+        }else if(ctx.resolveScrapHandOrDiscard()){
+            return {
+                "resolve": true
+            }
+        }else if(ctx.resolveScrapMultiple()){
+            return {
+                "resolve": true
+            }
+        }else if(ctx.resolvePatience()){
+            return {
+                "traderowslot": true
+            }
+        }else {
+            return {}
         }
-        return drawCount
     }
 
-    // grammar: DREW INT 'cards' NEWLINE;
-    visitDrawCards(ctx) {
-        return parseInt(ctx.INT())
+    visitResolveAlignmentBotScrap(ctx){
+        let summary = {
+            scrap: [],
+            players: []
+        }
+        for(let i = 0; i < ctx.alignBotScrap().length; i++){
+            let result = this.visit(ctx.alignBotScrap()[i])
+            if("scrap" in result){
+                summary["scrap"].push(result["scrap"])
+            }
+            if("balanceUpdate" in result){
+                let target = result["balanceUpdate"]["target"]
+                if (!(target in summary["players"])) {
+                    summary["players"][target] = {
+                        tradePool: 0,
+                        usedTrade: 0,
+                        combatPool: 0,
+                        usedCombat: 0,
+                        Authority: 0,
+                        Discard: 0
+                    }
+                }
+                let category = result["balanceUpdate"]["effect"]["category"]
+                summary["players"][target][category] += result["balanceUpdate"]["effect"]["value"]
+                if (category == "Authority") {
+                    summary["players"][target]["newAuthority"] = result["balanceUpdate"]["newValue"]
+                }
+            }
+        }
+        return summary
     }
 
-    //grammar: name SEPARATOR card? effect balance NEWLINE;
-    visitNewBalanceDetail(ctx) {
-        let effect = this.visit(ctx.effect())
-        effect['target'] = ctx.name().getText()
-        return effect
+    visitAlignBotScrap(ctx){
+        if(ctx.scrapped()){
+            return  {
+                "scrap": this.visit(ctx.scrapped())
+            }
+        }else if(ctx.balanceUpdate()){
+            return {
+                "balanceUpdate": this.visit(ctx.balanceUpdate())
+            }
+        }else{
+            return {}
+        }
     }
 
-    // grammar: : (INCREMENT | DECREASE | INT) (wordPlus) ;
+    visitConcede(ctx){
+        return this.visit(ctx.name())
+    }
+
+    visitTimeout(ctx){
+        return this.visit(ctx.name())
+    }
+
     visitEffect(ctx) {
-        let val
+        let val;
         if (ctx.INCREMENT()) {
             val = Number(ctx.INCREMENT().getText().replace('+', ''))
         } else if (ctx.DECREASE()) {
             val = 0 - Number(ctx.DECREASE().getText().replace('-', ''))
         } else {
-            val = 0
+            val = Number(ctx.INT())
         }
-        return { category: ctx.wordPlus().getText(), value: val }
-    }
-
-    // grammar: name SEPARATOR card? (INCREMENT | INT) (wordPlus) balance NEWLINE;
-    visitPositiveBalance(ctx) {
-        let val
-        if (ctx.INCREMENT()) {
-            val = Number(ctx.INCREMENT().getText().replace('+', ''))
+        let category = ctx.customWord().getText()
+        if (category == "Trade" && val >= 0) {
+            return {
+                category: "tradePool",
+                value: val
+            }
+        } else if (category == "Trade" && val < 0) {
+            return {
+                category: "usedTrade",
+                value: val
+            }
+        } else if (category == "Combat" && val >= 0) {
+            return {
+                category: "combatPool",
+                value: val
+            }
+        } else if (category == "Combat" && val < 0) {
+            return {
+                category: "usedCombat",
+                value: val
+            }
         } else {
-            val = 0
-        }
-        return {
-            category: ctx.wordPlus().getText(),
-            value: val,
-            target: ctx.name().getText(),
-            newBalance: this.visit(ctx.balance())
+            return {
+                category: ctx.customWord().getText(),
+                value: val
+            }
         }
     }
 
-    // grammar: name SEPARATOR card? (DECREASE) (wordPlus) balance NEWLINE;
-    visitNegativeBalance(ctx) {
-        let val
-        if (ctx.DECREASE()) {
-            val = 0 - Number(ctx.DECREASE().getText().replace('-', ''))
-        }
-        return {
-            category: ctx.wordPlus().getText(),
-            value: val,
-            target: ctx.name().getText(),
-            newBalance: this.visit(ctx.balance())
-        }
+    visitDrawCards(ctx) {
+        return Number(ctx.INT())
     }
 
-    // grammar: '('wordPlus':'(INT | DECREASE)')' ;
-    visitBalance(ctx) {
-        if (ctx.INT()) {
-            return parseInt(ctx.INT())
-        } else {
-            return 0 - Number(ctx.DECREASE().getText().replace('-', ''))
-        }
+    visitCard(ctx) {
+        return ctx.getText().toLowerCase().replace("\'", "")
     }
 
-    // grammar: (wordPlus)+ ;
     visitName(ctx) {
         return ctx.getText()
     }
-
-    //grammar: ((wordPlus '\'s'?) | INT)+ 
-    visitCard(ctx) {
-        return ctx.getText().toLowerCase()
-    }
-
-    visitWordPlus(ctx) {
-        return ctx.getText()
-    }
-
 }
 
-//battle log is a string representation of a battle log file content
 export function parseBattle(battlelog) {
     const chars = new antlr4.InputStream(battlelog);
-    const lexer = new StarRealmsLexer(chars);
+    const lexer = new StarStarLexer(chars);
     const tokens = new antlr4.CommonTokenStream(lexer);
-    const parser = new StarRealmsParser(tokens);
+    const parser = new StarStarParser(tokens);
     parser.buildParseTrees = true;
     try {
         const tree = parser.battle();
+        const data = tree.accept(new Visitor())
         return {
             status: "success",
-            data: tree.accept(new Visitor())
+            data: data
         }
     } catch (error) {
         return {
             status: "error",
-            data: error.message
+            data: "Input data contains errors"
         }
     }
 }
@@ -1274,10 +718,14 @@ export function parseBattle(battlelog) {
 //identify if there are any syntax errors in the file
 export function findErrors(battlelog) {
     const chars = new antlr4.InputStream(battlelog);
-    const lexer = new StarRealmsLexer(chars);
+    const lexer = new StarStarLexer(chars);
     const tokens = new antlr4.CommonTokenStream(lexer);
-    const parser = new StarRealmsParser(tokens);
+    const parser = new StarStarParser(tokens);
     parser.buildParseTrees = true;
-    parser.battle() //this is really slow
-    return parser._syntaxErrors == 0
+    try{
+        parser.battle() //this is really slow
+        return parser._syntaxErrors == 0
+    } catch(error){
+        return false
+    }
 }

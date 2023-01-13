@@ -21,13 +21,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "benjouille": {
             "diff": -1,
             "new": 49
           }
         },
-        "player": "Pistol"
+        "player": "Pistol",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -45,13 +47,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "Pistol": {
             "diff": -1,
             "new": 49
           }
         },
-        "player": "benjouille"
+        "player": "benjouille",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -70,13 +74,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "benjouille": {
             "diff": -1,
             "new": 48
           }
         },
-        "player": "Pistol"
+        "player": "Pistol",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -94,13 +100,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "Pistol": {
             "diff": -1,
             "new": 48
           }
         },
-        "player": "benjouille"
+        "player": "benjouille",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -118,13 +126,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "benjouille": {
             "diff": -6,
             "new": 42
           }
         },
-        "player": "Pistol"
+        "player": "Pistol",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 7,
@@ -145,8 +155,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "benjouille"
+        "player": "benjouille",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -164,13 +176,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "benjouille": {
             "diff": -4,
             "new": 38
           }
         },
-        "player": "Pistol"
+        "player": "Pistol",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -188,13 +202,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "Pistol": {
             "diff": -1,
             "new": 47
           }
         },
-        "player": "benjouille"
+        "player": "benjouille",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -215,8 +231,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "Pistol"
+        "player": "Pistol",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -234,6 +252,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "benjouille": {
             "diff": 1,
@@ -244,7 +263,8 @@
             "new": 45
           }
         },
-        "player": "benjouille"
+        "player": "benjouille",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -264,13 +284,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "benjouille": {
             "diff": -1,
             "new": 38
           }
         },
-        "player": "Pistol"
+        "player": "Pistol",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 7,
@@ -288,13 +310,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "Pistol": {
             "diff": -4,
             "new": 41
           }
         },
-        "player": "benjouille"
+        "player": "benjouille",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -314,13 +338,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 1,
         "authority": {
           "benjouille": {
             "diff": -13,
             "new": 25
           }
         },
-        "player": "Pistol"
+        "player": "Pistol",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -341,13 +367,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "benjouille": {
             "diff": 2,
             "new": 27
           }
         },
-        "player": "benjouille"
+        "player": "benjouille",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -365,13 +393,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "benjouille": {
             "diff": -1,
             "new": 26
           }
         },
-        "player": "Pistol"
+        "player": "Pistol",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -390,6 +420,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "benjouille": {
             "diff": 3,
@@ -400,7 +431,8 @@
             "new": 36
           }
         },
-        "player": "benjouille"
+        "player": "benjouille",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -423,8 +455,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "Pistol"
+        "player": "Pistol",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 2,
@@ -444,13 +478,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "Pistol": {
             "diff": -10,
             "new": 26
           }
         },
-        "player": "benjouille"
+        "player": "benjouille",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 8,
@@ -474,13 +510,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "benjouille": {
             "diff": -2,
             "new": 27
           }
         },
-        "player": "Pistol"
+        "player": "Pistol",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -500,13 +538,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "Pistol": {
             "diff": -2,
             "new": 24
           }
         },
-        "player": "benjouille"
+        "player": "benjouille",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 2,
@@ -526,13 +566,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "benjouille": {
             "diff": -1,
             "new": 26
           }
         },
-        "player": "Pistol"
+        "player": "Pistol",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 7,
@@ -553,13 +595,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "benjouille": {
             "diff": 2,
             "new": 28
           }
         },
-        "player": "benjouille"
+        "player": "benjouille",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 2,
@@ -582,13 +626,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 1,
         "authority": {
           "benjouille": {
             "diff": -13,
             "new": 15
           }
         },
-        "player": "Pistol"
+        "player": "Pistol",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 0,
@@ -608,8 +654,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "benjouille"
+        "player": "benjouille",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -629,13 +677,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "benjouille": {
             "diff": -4,
             "new": 11
           }
         },
-        "player": "Pistol"
+        "player": "Pistol",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 0,
@@ -651,8 +701,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "benjouille"
+        "player": "benjouille",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 0,
@@ -668,13 +720,15 @@
         "winner": "Pistol",
         "winCondition": "",
         "drawCount": 0,
+        "shuffleCount": 0,
         "authority": {
           "benjouille": {
             "diff": -11,
             "new": 0
           }
         },
-        "player": "Pistol"
+        "player": "Pistol",
+        "tradeRowSlot": []
       }
     ],
     "winCondition": ""

@@ -20,8 +20,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "Scorpusss"
+        "player": "Scorpusss",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -39,8 +41,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -58,13 +62,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "YL5943": {
             "diff": -1,
             "new": 49
           }
         },
-        "player": "Scorpusss"
+        "player": "Scorpusss",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -82,13 +88,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "Scorpusss": {
             "diff": -2,
             "new": 48
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -107,13 +115,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "YL5943": {
             "diff": -1,
             "new": 48
           }
         },
-        "player": "Scorpusss"
+        "player": "Scorpusss",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -132,13 +142,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "Scorpusss": {
             "diff": -3,
             "new": 45
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 7,
@@ -156,8 +168,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "Scorpusss"
+        "player": "Scorpusss",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -176,13 +190,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "Scorpusss": {
             "diff": -1,
             "new": 44
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -202,8 +218,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "Scorpusss"
+        "player": "Scorpusss",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -222,8 +240,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 10,
@@ -244,8 +264,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "Scorpusss"
+        "player": "Scorpusss",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -264,13 +286,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "YL5943": {
             "diff": 2,
             "new": 50
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 9,
@@ -292,6 +316,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "Scorpusss": {
             "diff": 4,
@@ -302,7 +327,8 @@
             "new": 39
           }
         },
-        "player": "Scorpusss"
+        "player": "Scorpusss",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -325,8 +351,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 7,
@@ -348,13 +376,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "YL5943": {
             "diff": -3,
             "new": 36
           }
         },
-        "player": "Scorpusss"
+        "player": "Scorpusss",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 8,
@@ -373,13 +403,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "Scorpusss": {
             "diff": -2,
             "new": 46
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 13,
@@ -400,6 +432,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 8,
+        "shuffleCount": 1,
         "authority": {
           "Scorpusss": {
             "diff": 15,
@@ -410,7 +443,8 @@
             "new": 25
           }
         },
-        "player": "Scorpusss"
+        "player": "Scorpusss",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -432,13 +466,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "YL5943": {
             "diff": 2,
             "new": 27
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 7,
@@ -459,6 +495,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 0,
         "authority": {
           "Scorpusss": {
             "diff": 8,
@@ -469,7 +506,8 @@
             "new": 13
           }
         },
-        "player": "Scorpusss"
+        "player": "Scorpusss",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 0,
@@ -490,13 +528,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "Scorpusss": {
             "diff": -11,
             "new": 58
           }
         },
-        "player": "YL5943"
+        "player": "YL5943",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -518,6 +558,7 @@
         "winner": "Scorpusss",
         "winCondition": "",
         "drawCount": 2,
+        "shuffleCount": 0,
         "authority": {
           "Scorpusss": {
             "diff": 2,
@@ -528,7 +569,8 @@
             "new": -3
           }
         },
-        "player": "Scorpusss"
+        "player": "Scorpusss",
+        "tradeRowSlot": []
       }
     ],
     "winCondition": ""

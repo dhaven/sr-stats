@@ -21,13 +21,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "Rosty": {
             "diff": -1,
             "new": 49
           }
         },
-        "player": "astrojw"
+        "player": "astrojw",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -46,13 +48,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "astrojw": {
             "diff": -1,
             "new": 49
           }
         },
-        "player": "Rosty"
+        "player": "Rosty",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -71,13 +75,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "Rosty": {
             "diff": -1,
             "new": 48
           }
         },
-        "player": "astrojw"
+        "player": "astrojw",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -95,13 +101,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "astrojw": {
             "diff": -1,
             "new": 48
           }
         },
-        "player": "Rosty"
+        "player": "Rosty",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -120,8 +128,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "astrojw"
+        "player": "astrojw",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -139,13 +149,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "astrojw": {
             "diff": -5,
             "new": 43
           }
         },
-        "player": "Rosty"
+        "player": "Rosty",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -165,8 +177,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "astrojw"
+        "player": "astrojw",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -188,13 +202,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "Rosty": {
             "diff": 4,
             "new": 52
           }
         },
-        "player": "Rosty"
+        "player": "Rosty",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -212,13 +228,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "Rosty": {
             "diff": -2,
             "new": 50
           }
         },
-        "player": "astrojw"
+        "player": "astrojw",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -238,6 +256,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "Rosty": {
             "diff": 7,
@@ -248,7 +267,8 @@
             "new": 38
           }
         },
-        "player": "Rosty"
+        "player": "Rosty",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -269,8 +289,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "astrojw"
+        "player": "astrojw",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 8,
@@ -291,13 +313,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "astrojw": {
             "diff": -1,
             "new": 37
           }
         },
-        "player": "Rosty"
+        "player": "Rosty",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -320,6 +344,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "astrojw": {
             "diff": 8,
@@ -330,7 +355,8 @@
             "new": 49
           }
         },
-        "player": "astrojw"
+        "player": "astrojw",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 2,
@@ -355,13 +381,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "astrojw": {
             "diff": -2,
             "new": 43
           }
         },
-        "player": "Rosty"
+        "player": "Rosty",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -379,6 +407,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "astrojw": {
             "diff": 3,
@@ -389,7 +418,8 @@
             "new": 43
           }
         },
-        "player": "astrojw"
+        "player": "astrojw",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -409,8 +439,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "Rosty"
+        "player": "Rosty",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -433,6 +465,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "astrojw": {
             "diff": 7,
@@ -443,7 +476,8 @@
             "new": 35
           }
         },
-        "player": "astrojw"
+        "player": "astrojw",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -466,13 +500,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "astrojw": {
             "diff": -4,
             "new": 49
           }
         },
-        "player": "Rosty"
+        "player": "Rosty",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 8,
@@ -493,6 +529,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "astrojw": {
             "diff": 4,
@@ -503,7 +540,8 @@
             "new": 31
           }
         },
-        "player": "astrojw"
+        "player": "astrojw",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -525,6 +563,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 1,
         "authority": {
           "Rosty": {
             "diff": 5,
@@ -535,7 +574,8 @@
             "new": 51
           }
         },
-        "player": "Rosty"
+        "player": "Rosty",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 2,
@@ -555,8 +595,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "astrojw"
+        "player": "astrojw",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -574,8 +616,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "Rosty"
+        "player": "Rosty",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -597,6 +641,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "astrojw": {
             "diff": 8,
@@ -607,7 +652,8 @@
             "new": 30
           }
         },
-        "player": "astrojw"
+        "player": "astrojw",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 2,
@@ -633,13 +679,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "astrojw": {
             "diff": -4,
             "new": 55
           }
         },
-        "player": "Rosty"
+        "player": "Rosty",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -660,13 +708,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "Rosty": {
             "diff": -8,
             "new": 22
           }
         },
-        "player": "astrojw"
+        "player": "astrojw",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -690,6 +740,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 1,
         "authority": {
           "Rosty": {
             "diff": 9,
@@ -700,7 +751,8 @@
             "new": 41
           }
         },
-        "player": "Rosty"
+        "player": "Rosty",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -724,13 +776,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "astrojw": {
             "diff": 7,
             "new": 48
           }
         },
-        "player": "astrojw"
+        "player": "astrojw",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 2,
@@ -753,13 +807,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 0,
         "authority": {
           "astrojw": {
             "diff": -18,
             "new": 30
           }
         },
-        "player": "Rosty"
+        "player": "Rosty",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -779,6 +835,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "astrojw": {
             "diff": 8,
@@ -789,7 +846,8 @@
             "new": 25
           }
         },
-        "player": "astrojw"
+        "player": "astrojw",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -810,6 +868,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 1,
         "authority": {
           "Rosty": {
             "diff": 5,
@@ -820,7 +879,8 @@
             "new": 33
           }
         },
-        "player": "Rosty"
+        "player": "Rosty",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -841,8 +901,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "astrojw"
+        "player": "astrojw",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 8,
@@ -866,6 +928,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "Rosty": {
             "diff": 9,
@@ -876,7 +939,8 @@
             "new": 30
           }
         },
-        "player": "Rosty"
+        "player": "Rosty",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -899,13 +963,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "Rosty": {
             "diff": -1,
             "new": 38
           }
         },
-        "player": "astrojw"
+        "player": "astrojw",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 8,
@@ -928,13 +994,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 1,
         "authority": {
           "astrojw": {
             "diff": -14,
             "new": 16
           }
         },
-        "player": "Rosty"
+        "player": "Rosty",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 0,
@@ -954,13 +1022,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 0,
         "authority": {
           "astrojw": {
             "diff": 3,
             "new": 19
           }
         },
-        "player": "astrojw"
+        "player": "astrojw",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 7,
@@ -987,6 +1057,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "Rosty": {
             "diff": 2,
@@ -997,7 +1068,8 @@
             "new": 4
           }
         },
-        "player": "Rosty"
+        "player": "Rosty",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -1024,13 +1096,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "astrojw": {
             "diff": 7,
             "new": 11
           }
         },
-        "player": "astrojw"
+        "player": "astrojw",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -1053,6 +1127,7 @@
         "winner": "Rosty",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 1,
         "authority": {
           "Rosty": {
             "diff": 13,
@@ -1063,7 +1138,8 @@
             "new": -34
           }
         },
-        "player": "Rosty"
+        "player": "Rosty",
+        "tradeRowSlot": []
       }
     ],
     "winCondition": ""

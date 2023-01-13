@@ -20,13 +20,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 0,
         "authority": {
           "Av3nger": {
             "diff": -2,
             "new": 64
           }
         },
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 7,
@@ -49,6 +51,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 8,
+        "shuffleCount": 1,
         "authority": {
           "Av3nger": {
             "diff": 4,
@@ -59,7 +62,8 @@
             "new": 61
           }
         },
-        "player": "Av3nger"
+        "player": "Av3nger",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 8,
@@ -88,8 +92,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -107,13 +113,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "Scottopia": {
             "diff": -4,
             "new": 57
           }
         },
-        "player": "Av3nger"
+        "player": "Av3nger",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 8,
@@ -144,8 +152,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 8,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -165,13 +175,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 1,
         "authority": {
           "Scottopia": {
             "diff": -15,
             "new": 42
           }
         },
-        "player": "Av3nger"
+        "player": "Av3nger",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 8,
@@ -200,6 +212,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 10,
+        "shuffleCount": 1,
         "authority": {
           "Scottopia": {
             "diff": 5,
@@ -210,7 +223,8 @@
             "new": 59
           }
         },
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -231,13 +245,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "Scottopia": {
             "diff": -3,
             "new": 44
           }
         },
-        "player": "Av3nger"
+        "player": "Av3nger",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 9,
@@ -266,13 +282,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 10,
+        "shuffleCount": 1,
         "authority": {
           "Av3nger": {
             "diff": -6,
             "new": 53
           }
         },
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -296,13 +314,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 1,
         "authority": {
           "Scottopia": {
             "diff": -7,
             "new": 37
           }
         },
-        "player": "Av3nger"
+        "player": "Av3nger",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 9,
@@ -328,6 +348,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 11,
+        "shuffleCount": 1,
         "authority": {
           "Scottopia": {
             "diff": 12,
@@ -338,7 +359,8 @@
             "new": 40
           }
         },
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -358,6 +380,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "Av3nger": {
             "diff": 5,
@@ -368,7 +391,8 @@
             "new": 44
           }
         },
-        "player": "Av3nger"
+        "player": "Av3nger",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 8,
@@ -400,6 +424,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 9,
+        "shuffleCount": 0,
         "authority": {
           "Scottopia": {
             "diff": 11,
@@ -410,7 +435,8 @@
             "new": 39
           }
         },
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -434,6 +460,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 1,
         "authority": {
           "Av3nger": {
             "diff": 2,
@@ -444,7 +471,8 @@
             "new": 36
           }
         },
-        "player": "Av3nger"
+        "player": "Av3nger",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 14,
@@ -481,6 +509,7 @@
         "winner": "Scottopia",
         "winCondition": "",
         "drawCount": 8,
+        "shuffleCount": 1,
         "authority": {
           "Scottopia": {
             "diff": 25,
@@ -491,7 +520,8 @@
             "new": -3
           }
         },
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       }
     ],
     "winCondition": ""

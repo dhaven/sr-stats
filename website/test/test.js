@@ -7,8 +7,8 @@
 // verify that the visitor returns the know json object
 
 import antlr4 from 'antlr4';
-import StarRealmsLexer from './antlr4/StarRealmsLexer.js';
-import StarRealmsParser from './antlr4/StarRealmsParser.js';
+import StarStarLexer from './antlr4/StarStarLexer.js';
+import StarStarParser from './antlr4/StarStarParser.js';
 import axios from 'axios';
 import fs from 'fs';
 import path from 'path';
@@ -78,9 +78,9 @@ for (let i = 0; i < test_input.length; i++) {
   //read input data to memory
   const log_data = fs.readFileSync(test_input[i], 'utf8');
   const chars = new antlr4.InputStream(log_data);
-  const lexer = new StarRealmsLexer(chars);
+  const lexer = new StarStarLexer(chars);
   const tokens = new antlr4.CommonTokenStream(lexer);
-  const parser = new StarRealmsParser(tokens);
+  const parser = new StarStarParser(tokens);
   parser.buildParseTrees = true;
   const tree = parser.battle()
   const tree_output = tree.accept(new Visitor())
@@ -117,7 +117,7 @@ for (let i = 0; i < test_input.length; i++) {
   //fs.writeFileSync(tree_outfile, JSON.stringify(tree_output, null, 2), 'utf8');
   const battlefile = "battledata" + test_input[i].substring(7)
   await axios
-    .post('http://localhost:3000/api/testbis', JSON.stringify(log_data),)
+    .post('http://localhost:3000/api/test', JSON.stringify(log_data),)
     .then(res => {
       try {
         const battle_data = fs.readFileSync(battlefile, 'utf8');

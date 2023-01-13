@@ -20,8 +20,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "GASmokeDiver"
+        "player": "GASmokeDiver",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -40,13 +42,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "GASmokeDiver": {
             "diff": -1,
             "new": 49
           }
         },
-        "player": "UmmActually"
+        "player": "UmmActually",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -64,13 +68,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "UmmActually": {
             "diff": -2,
             "new": 48
           }
         },
-        "player": "GASmokeDiver"
+        "player": "GASmokeDiver",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -88,13 +94,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "GASmokeDiver": {
             "diff": -1,
             "new": 48
           }
         },
-        "player": "UmmActually"
+        "player": "UmmActually",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -112,13 +120,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "UmmActually": {
             "diff": -5,
             "new": 43
           }
         },
-        "player": "GASmokeDiver"
+        "player": "GASmokeDiver",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -137,6 +147,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "UmmActually": {
             "diff": 4,
@@ -147,7 +158,8 @@
             "new": 46
           }
         },
-        "player": "UmmActually"
+        "player": "UmmActually",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -166,13 +178,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "UmmActually": {
             "diff": -5,
             "new": 42
           }
         },
-        "player": "GASmokeDiver"
+        "player": "GASmokeDiver",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -192,13 +206,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "GASmokeDiver": {
             "diff": -6,
             "new": 40
           }
         },
-        "player": "UmmActually"
+        "player": "UmmActually",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 2,
@@ -214,13 +230,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "UmmActually": {
             "diff": -9,
             "new": 33
           }
         },
-        "player": "GASmokeDiver"
+        "player": "GASmokeDiver",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -240,13 +258,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "GASmokeDiver": {
             "diff": -5,
             "new": 35
           }
         },
-        "player": "UmmActually"
+        "player": "UmmActually",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -264,8 +284,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "GASmokeDiver"
+        "player": "GASmokeDiver",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -285,6 +307,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 1,
         "authority": {
           "UmmActually": {
             "diff": 4,
@@ -295,7 +318,8 @@
             "new": 33
           }
         },
-        "player": "UmmActually"
+        "player": "UmmActually",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -315,13 +339,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "UmmActually": {
             "diff": -13,
             "new": 24
           }
         },
-        "player": "GASmokeDiver"
+        "player": "GASmokeDiver",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -339,13 +365,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "GASmokeDiver": {
             "diff": -6,
             "new": 27
           }
         },
-        "player": "UmmActually"
+        "player": "UmmActually",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -365,6 +393,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "GASmokeDiver": {
             "diff": 3,
@@ -375,7 +404,8 @@
             "new": 20
           }
         },
-        "player": "GASmokeDiver"
+        "player": "GASmokeDiver",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 8,
@@ -399,6 +429,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 8,
+        "shuffleCount": 0,
         "authority": {
           "UmmActually": {
             "diff": 13,
@@ -409,7 +440,8 @@
             "new": 18
           }
         },
-        "player": "UmmActually"
+        "player": "UmmActually",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -427,13 +459,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "UmmActually": {
             "diff": -4,
             "new": 29
           }
         },
-        "player": "GASmokeDiver"
+        "player": "GASmokeDiver",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -451,13 +485,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 1,
         "authority": {
           "GASmokeDiver": {
             "diff": -1,
             "new": 17
           }
         },
-        "player": "UmmActually"
+        "player": "UmmActually",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 1,
@@ -475,13 +511,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 5,
+        "shuffleCount": 0,
         "authority": {
           "UmmActually": {
             "diff": -14,
             "new": 15
           }
         },
-        "player": "GASmokeDiver"
+        "player": "GASmokeDiver",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -503,13 +541,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "GASmokeDiver": {
             "diff": -11,
             "new": 6
           }
         },
-        "player": "UmmActually"
+        "player": "UmmActually",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 4,
@@ -529,13 +569,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "UmmActually": {
             "diff": -5,
             "new": 10
           }
         },
-        "player": "GASmokeDiver"
+        "player": "GASmokeDiver",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 0,
@@ -553,13 +595,15 @@
         "winner": "UmmActually",
         "winCondition": "resignation",
         "drawCount": 0,
+        "shuffleCount": 0,
         "authority": {
           "GASmokeDiver": {
             "diff": -6,
             "new": 0
           }
         },
-        "player": "UmmActually"
+        "player": "UmmActually",
+        "tradeRowSlot": []
       }
     ],
     "winCondition": "resignation"

@@ -23,13 +23,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "Scottopia": {
             "diff": -5,
             "new": 67
           }
         },
-        "player": "George21"
+        "player": "George21",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 9,
@@ -59,6 +61,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 11,
+        "shuffleCount": 1,
         "authority": {
           "Scottopia": {
             "diff": 6,
@@ -69,7 +72,8 @@
             "new": 56
           }
         },
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 7,
@@ -97,13 +101,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 11,
+        "shuffleCount": 2,
         "authority": {
           "Scottopia": {
             "diff": -15,
             "new": 58
           }
         },
-        "player": "George21"
+        "player": "George21",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 8,
@@ -121,8 +127,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -142,13 +150,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "Scottopia": {
             "diff": -16,
             "new": 42
           }
         },
-        "player": "George21"
+        "player": "George21",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 6,
@@ -174,8 +184,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 1,
         "authority": {},
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 3,
@@ -195,13 +207,15 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 1,
         "authority": {
           "Scottopia": {
             "diff": -20,
             "new": 22
           }
         },
-        "player": "George21"
+        "player": "George21",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 5,
@@ -223,8 +237,10 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 7,
+        "shuffleCount": 0,
         "authority": {},
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 2,
@@ -246,6 +262,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 6,
+        "shuffleCount": 0,
         "authority": {
           "George21": {
             "diff": -5,
@@ -256,7 +273,8 @@
             "new": 2
           }
         },
-        "player": "George21"
+        "player": "George21",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 10,
@@ -289,6 +307,7 @@
         "winner": "",
         "winCondition": "",
         "drawCount": 9,
+        "shuffleCount": 1,
         "authority": {
           "Scottopia": {
             "diff": 8,
@@ -299,7 +318,8 @@
             "new": 29
           }
         },
-        "player": "Scottopia"
+        "player": "Scottopia",
+        "tradeRowSlot": []
       },
       {
         "tradePool": 2,
@@ -320,13 +340,15 @@
         "winner": "George21",
         "winCondition": "",
         "drawCount": 1,
+        "shuffleCount": 0,
         "authority": {
           "Scottopia": {
             "diff": -15,
             "new": -5
           }
         },
-        "player": "George21"
+        "player": "George21",
+        "tradeRowSlot": []
       }
     ],
     "winCondition": ""
