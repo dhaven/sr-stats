@@ -1,5 +1,8 @@
 import PlayerOverview from '../../components/playerOverview'
 import DeckOverview from '../../components/deckOverview'
+import DeckOverviewV2 from '../../components/deckOverviewV2'
+import DeckDetailV2 from '../../components/deckDetailV2'
+import PlayerOverviewV2 from '../../components/playerOverviewV2'
 import Head from 'next/head'
 import Layout from '../../components/layout'
 import AddGameModal from '../../components/addGameModal.js'
@@ -31,42 +34,14 @@ const { MongoClient, ObjectId } = require('mongodb');
 export default function Game({ winner, loser, extensions, events, players, winCondition, decks, chartData }) {
     const router = useRouter()
     const { id } = router.query
-    let [activePlayer, setActivePlayer] = useState(winner)
     let [statsTab, setStatsTab] = useState("player") //can be either player or game
     let [isAddGameOpen, setAddGameIsOpen] = useState(false)
     let [turnA, setTurnA] = useState(decks.length - 1)
     let [turnB, setTurnB] = useState(decks.length - 1)
+    let [isOpen, setIsOpen] = useState(false)
     console.log(decks)
     function openAddGameModal() {
         setAddGameIsOpen(true)
-    }
-    function updateTurn(i, value) {
-        if (i == 0) {
-            setTurnA(value)
-        } else if (i == 1) {
-            setTurnB(value)
-        } else {
-            setTurnA(value)
-            setTurnB(value)
-        }
-    }
-    function getTurnState(i) {
-        if (i == 0) {
-            return turnA
-        } else {
-            return turnB
-        }
-    }
-    let displayPlayerCard = function (isActive, player) {
-        if (player == winner && isActive) {
-            return 'md:rounded-lg md:scale-110 md:border-4 md:border-winner'
-        } else if (player == winner && !isActive) {
-            return 'md:rounded-lg md:border-4 md:border-winner'
-        } else if (player != winner && isActive) {
-            return 'md:rounded-lg md:scale-110 md:border-4 md:border-loser'
-        } else if (player != winner && !isActive) {
-            return 'md:rounded-lg md:border-4 md:border-loser'
-        }
     }
     return (
         <Layout>
@@ -76,101 +51,67 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                 <meta name="og:image:width" content="1200" />
                 <meta name="og:image:height" content="600" />
             </Head>
-            <div className="flex flex-col gap-2 w-screen md:w-full lg:w-5/6 2xl:w-2/3">
+            <div className="flex flex-col gap-2 w-screen md:w-full lg:w-5/6">
                 <GameSummary winner={winner} loser={loser} winCondition={winCondition} extensions={extensions}></GameSummary>
-                <div className="hidden md:flex flex-row ml-2 mb-2">
-                    <button onClick={() => setStatsTab("player")} className={
-                        statsTab == "player" ?
-                            "bg-scifi3 text-white text-md md:border-2 md:border-scifi4 font-medium py-2 px-6 m-1 md:rounded-lg" :
-                            "bg-white text-scifi5 hover:ring ring-scifi2 text-md font-medium px-6 py-2 m-1 md:border-2 md:border-scifi4 md:rounded-lg"}
-                    >
-                        Player stats
-                    </button>
-                    <button onClick={() => setStatsTab("game")} className={
-                        statsTab == "game" ?
-                            "bg-scifi3 text-white text-md md:border-2 md:border-scifi4 font-medium px-6 py-2 m-1 md:rounded-lg" :
-                            "bg-white text-scifi5 hover:ring ring-scifi2 text-md font-medium px-6 py-2 m-1 md:border-2 md:border-scifi4 md:rounded-lg"}
-                    >
-                        Game stats
-                    </button>
-                </div>
-                <div className="flex flex-row flex-wrap md:flex-nowrap md:px-4 gap-2 md:gap-8">
+                <div className="flex flex-col bg-red-500">
+                    <div className="flex flex-row justify-center items-center">
+
+                        <button
+                            onClick={() => setStatsTab("player")}
+                            className={`${statsTab == "player" ? "bg-scifi3 text-white" : "bg-white text-scifi5 hover:ring ring-scifi2"} text-md font-medium px-6 py-2 m-1 md:border-2 md:border-scifi4 md:rounded-lg`}
+                        >
+                            Player stats
+                        </button>
+                        <button
+                            onClick={() => setStatsTab("game")}
+                            className={`${statsTab == "game" ? "bg-scifi3 text-white" : "bg-white text-scifi5 hover:ring ring-scifi2"} text-md font-medium px-6 py-2 m-1 md:border-2 md:border-scifi4 md:rounded-lg`}
+                        >
+                            Game stats
+                        </button>
+
+                    </div>
                     {statsTab == "player" &&
-                        players.map((oneKey, i) => {
-                            return (
-                                <div key={i}
-                                    onClick={() => setActivePlayer(oneKey)}
-                                    className="flex flex-col w-full">
-                                    <div className={`${displayPlayerCard(oneKey == activePlayer, oneKey)} md:p-2 flex flex-col grow justify-between hover:bg-slate-300 p-2 md:p-4 bg-scifi1 md:rounded-md gap-2 md:gap-4`}>
-                                        <PlayerOverview name={oneKey} deck={decks[getTurnState(i)]['players'][oneKey]['deck']} authority={chartData["authorityData"][oneKey][getTurnState(i)]} missions={decks[getTurnState(i)]['players'][oneKey]['missions']}></PlayerOverview>
-                                        <div className="hidden md:flex justify-center px-2">
-                                            <ArrowDownIcon className='h-5 w-5' />
+
+                        <div className="flex flex-row mx-2 px-4 gap-5">
+                            {
+                                players.map((oneKey, i) => {
+                                    let currentTurn = i == 0 ? turnA : turnB
+                                    return (
+                                        <div key={i} className="flex flex-col bg-scifi1 w-1/2 rounded-md border-2 border-scifi5">
+
+                                            <PlayerOverviewV2 decks={decks} name={oneKey} authority={chartData["authorityData"][oneKey][currentTurn]} setTurn={i == 0 ? setTurnA : setTurnB} turn={currentTurn}></PlayerOverviewV2>
+                                            <DeckOverviewV2 missions={decks[currentTurn]['players'][oneKey]['missions']} gambit={decks[currentTurn]['players'][oneKey]['gambit']} deck={decks[currentTurn]['players'][oneKey]['deck']}></DeckOverviewV2>
+                                            <DeckDetailV2 deck={decks[currentTurn]['players'][oneKey]['deck']}></DeckDetailV2>
                                         </div>
-                                        <div className="flex md:hidden">
-                                            <ReactSlider
-                                                className="horizontal-slider w-full h-6"
-                                                thumbClassName="example-thumb-mobile rounded-xl text-sm"
-                                                trackClassName="example-track-mobile"
-                                                max={decks.length - 1}
-                                                defaultValue={decks.length - 1}
-                                                onChange={(value, index) => {
-                                                    updateTurn(i, value)
-                                                }}
-                                                renderThumb={(props, state) => <div {...props}>turn {state.valueNow}</div>}
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="md:hidden md:rounded-b-xl">
-                                        <DeckOverview deck={decks[getTurnState(i)]['players'][oneKey]['deck']}></DeckOverview>
-                                    </div>
+                                    )
+                                })
+                            }
+                        </div>
+
+                    }
+                    {
+                        statsTab == "game" &&
+                        <div className="flex flex-col gap-4 md:mx-4">
+                            {
+                                events.length != 0 &&
+                                <div className="flex flex-row gap-2 md:p-2">
+                                    {
+                                        events.map((value, index) => {
+                                            return (
+                                                <div key={index}>
+                                                    <EventCard event={value}></EventCard>
+                                                </div>
+                                            )
+                                        })
+                                    }
                                 </div>
-                            )
-                        })
+                            }
+                            <div className="flex w-full h-full">
+                                <GameStats winner={winner} chartData={chartData} turnDecks={decks} events={events}></GameStats>
+                            </div>
+                        </div>
                     }
                 </div>
-
-                {statsTab == "player" &&
-                    <div>
-                        <div className="hidden md:flex flex-row justify-center mt-6 p-2 rounded-md border-2 mx-12 border-scifi4 bg-scifi1">
-                            <ReactSlider
-                                className="horizontal-slider w-50 w-1/2 h-12"
-                                thumbClassName="example-thumb rounded-xl text-lg"
-                                trackClassName="example-track"
-                                max={decks.length - 1}
-                                defaultValue={getTurnState(-1)}
-                                onChange={(value, index) => {
-                                    updateTurn(-1, value)
-                                }}
-                                renderThumb={(props, state) => <div {...props}>turn {state.valueNow}</div>}
-                            />
-                        </div>
-                        <div className="hidden md:flex md:py-4 lg:py-6 md:px-2 lg:px-4 md:mx-4 lg:p-2 rounded-b-xl">
-                            <DeckOverview isWinner={activePlayer == winner} deck={decks[getTurnState(-1)]['players'][activePlayer]['deck']}></DeckOverview>
-                        </div>
-                    </div>
-                }
-                {
-                    statsTab == "game" &&
-                    <div className="flex flex-col gap-4 md:mx-4">
-                        {
-                            events.length != 0 &&
-                            <div className="flex flex-row overflow-auto gap-2 md:p-2">
-                                {
-                                    events.map((value, index) => {
-                                        return (
-                                            <div key={index}>
-                                                <EventCard event={value}></EventCard>
-                                            </div>
-                                        )
-                                    })
-                                }
-                            </div>
-                        }
-                        <div className="flex w-full h-full">
-                            <GameStats winner={winner} chartData={chartData} turnDecks={decks} events={events}></GameStats>
-                        </div>
-                    </div>
-                }
                 <div className="flex sm:hidden justify-start mx-2">
                     <a href="https://discord.gg/q4kqH775FA" target="_blank">
                         <div className="flex bg-white rounded-lg py-2 px-1 border-black border">
@@ -237,15 +178,15 @@ export async function getServerSideProps(context) {
         playersNames.splice(playersNames.indexOf(data['winner']), 1)
         let loserName = playersNames[0]
         let authorityData = getAuthorityChart(data['rounds'])
-        let combatData = getChart(data['rounds'],'combatPool')
-        let tradeData = getChart(data['rounds'],'tradePool')
+        let combatData = getChart(data['rounds'], 'combatPool')
+        let tradeData = getChart(data['rounds'], 'tradePool')
         let discardData = getDiscardChart(data['rounds'])
-        let drawData = getChart(data['rounds'],'drawCount')
+        let drawData = getChart(data['rounds'], 'drawCount')
         let shuffleData = getChart(data['rounds'], 'shuffleCount')
 
         let turnDecks = getTemporalDeck(data['rounds'])
         let { extensions, events } = getExtensionsAndEvents(data['rounds'])
-        if (turnDecks[turnDecks.length -1]['players'][data['winner']]['missions'].length == 3) {
+        if (turnDecks[turnDecks.length - 1]['players'][data['winner']]['missions'].length == 3) {
             winCondition = "completed missions" //data['winner'] + "won by completing 3 missions"
         } else {
             if (data['winCondition'] == "resignation") {
@@ -256,7 +197,7 @@ export async function getServerSideProps(context) {
                 winCondition = "defeat" //data['winner'] + " won by defeating " + loserName
             }
         }
-        let deckSizeData  = getDeckSizeChart(turnDecks)
+        let deckSizeData = getDeckSizeChart(turnDecks)
         return {
             props: {
                 winner: data['winner'],

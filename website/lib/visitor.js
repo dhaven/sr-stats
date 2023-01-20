@@ -130,6 +130,7 @@ class Visitor extends StarStarVisitor {
             formattedRound["drawCount"] = turn["drawCount"]
             formattedRound["tradeRowSlot"] = turn["tradeRowSlot"]
             formattedRound["shuffleCount"] = turn["shuffleCount"]
+            formattedRound["foundGambits"] = turn["foundGambits"]
             rounds.push(formattedRound)
         }
         return {
@@ -154,7 +155,8 @@ class Visitor extends StarStarVisitor {
             drawCount: 0,
             shuffleCount: 0,
             currentPlayer: "",
-            players: {}
+            players: {},
+            foundGambits: []
         }
         for (let i = 0; i < ctx.action().length; i++) {
             let action = this.visit(ctx.action()[i])
@@ -201,6 +203,7 @@ class Visitor extends StarStarVisitor {
                 turnData["drawCount"] += action["cardAction"]["cardEffect"]["drawCount"]
                 turnData["shuffleCount"] += action["cardAction"]["cardEffect"]["shuffleCount"]
                 turnData["purchasedCards"] = turnData["purchasedCards"].concat(action["cardAction"]["cardEffect"]["acquiredCards"])
+                turnData["foundGambits"] = turnData["foundGambits"].concat(action["cardAction"]["cardEffect"]["foundGambits"])
                 if ("event" in action["cardAction"]["trigger"]) {
                     turnData["events"] = turnData["events"].concat(action["cardAction"]["trigger"]["event"])
                 }
@@ -269,6 +272,12 @@ class Visitor extends StarStarVisitor {
                 if (category == "Authority") {
                     //console.log(action["balanceUpdate"])
                     turnData["players"][playerName]["newAuthority"] = action["balanceUpdate"]["newValue"]
+                }
+                if("card" in action["balanceUpdate"]){
+                    if((action["balanceUpdate"]["card"] == "energyshield") || (action["balanceUpdate"]["card"] == "frontierfleet") || (action["balanceUpdate"]["card"] == "veteranpilots")){
+                        console.log(action["balanceUpdate"]["card"])
+                        turnData["foundGambits"].push(action["balanceUpdate"]["card"])
+                    }
                 }
             }
             else if ("drawCount" in action) {
@@ -399,7 +408,8 @@ class Visitor extends StarStarVisitor {
                 drawCount: 0,
                 players: [],
                 acquiredCards: [],
-                shuffleCount: 0
+                shuffleCount: 0,
+                foundGambits: []
             }
         }
         //console.log(`Card triggering effect is ${this.visit(ctx.cardTrigger())}`)
@@ -421,6 +431,11 @@ class Visitor extends StarStarVisitor {
                 cardAction["cardEffect"]["players"][target][category] += cardEffect["balanceUpdate"]["effect"]["value"]
                 if (category == "Authority") {
                     cardAction["cardEffect"]["players"][target]["newAuthority"] = cardEffect["balanceUpdate"]["newValue"]
+                }
+                if("card" in cardEffect["balanceUpdate"]){
+                    if((cardEffect["balanceUpdate"]["card"] == "energyshield") || (cardEffect["balanceUpdate"]["card"] == "frontierfleet") || (cardEffect["balanceUpdate"]["card"] == "veteranpilots")){
+                        cardAction["cardEffect"]["foundGambits"].push(cardEffect["balanceUpdate"]["card"])
+                    }
                 }
             }
             if ("scrapped" in cardEffect) {

@@ -53,7 +53,7 @@ body {
   background: #002439;
 }
 .horizontal-slider .example-track {
-  top: 20px;
+  top: 50%;
   height: 10px;
 }
 .horizontal-slider .example-track-mobile {
@@ -61,7 +61,7 @@ body {
   height: 5px;
 }
 .horizontal-slider .example-thumb {
-  top: 1px;
+  top: 30%;
   width: 100px;
   height: 48px;
   line-height: 38px;

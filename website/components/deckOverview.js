@@ -24,6 +24,7 @@ function DeckOverview({ isWinner, deck }) {
     const [selectedFactions, setSelectedFactions] = useState([factions[0], factions[1], factions[2], factions[3], factions[4]])
     const [selectedSorting, setSelectedSorting] = useState(sortingOrder[0])
     const [hideScrappedCards, setHideScrappedCards] = useState(true)
+    const [deckType, setDeckType] = useState("deck");
     let cardCount = 0
     let shipCount = 0
     let baseCount = 0
@@ -31,7 +32,7 @@ function DeckOverview({ isWinner, deck }) {
         cardCount += deck[card]["purchaseCount"] - deck[card]["scrapCount"]
         if (card_list[card]['type'] == 'ship') {
             shipCount += deck[card]["purchaseCount"] - deck[card]["scrapCount"]
-        } else {
+        } else if (card_list[card]['type'] == 'base') {
             baseCount += deck[card]["purchaseCount"] - deck[card]["scrapCount"]
         }
     })
@@ -56,56 +57,76 @@ function DeckOverview({ isWinner, deck }) {
                     <div className="text-lg sm:text-xl">{cardCount}</div>
                 </div>
             </div>
-            <div className="flex flex-row justify-center">
-                <div className="flex flex-col sm:flex-row flex-wrap bg-scifi4 rounded-lg">
-                    <Listbox value={selectedFactions} onChange={setSelectedFactions} by={(a, b) => { return a.id == b.id }} multiple>
-                        <div className="relative p-2">
-                            <Listbox.Button className="relative w-full cursor-pointer rounded-lg bg-white p-1 pl-2 pr-8 sm:py-2 sm:pl-3 sm:pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
-                                <span className="block truncate">Select factions</span>
-                                <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
-                                    <ChevronUpDownIcon
-                                        className="h-5 w-5 text-gray-400"
-                                        aria-hidden="true"
-                                    />
-                                </span>
-                            </Listbox.Button>
-                            <Transition
-                                as={Fragment}
-                                leave="transition ease-in duration-100"
-                                leaveFrom="opacity-100"
-                                leaveTo="opacity-0"
-                            >
-                                <Listbox.Options className="z-20 w-56 absolute mt-1 max-h-60 overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
-                                    {factions.map((faction) => (
-                                        <Listbox.Option
-                                            key={faction.id}
-                                            className={({ active }) =>
-                                                `z-30 relative cursor-pointer select-none py-2 pl-10 pr-4 ${active ? 'bg-scifi1 text-scifi4' : ' text-gray-900'
-                                                }`
-                                            }
-                                            value={faction}
-                                        >
-                                            {({ selected }) => (
-                                                <>
-                                                    <span
-                                                        className={`block truncate ${getNameList(selectedFactions).includes(faction.name) ? 'font-medium' : 'font-normal'
-                                                            }`}
-                                                    >
-                                                        {faction.name}
-                                                    </span>
-                                                    {getNameList(selectedFactions).includes(faction.name) ? (
-                                                        <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-scifi3">
-                                                            <CheckIcon className="h-5 w-5" aria-hidden="true" />
+            <div>
+                <button type="button"
+                    onClick={(e) => { setDeckType("deck") }}
+                    className={`${deckType == "deck" ? 'bg-scifi4 text-white pt-4' : 'bg-white text-scifi5 transition-all duration-200'} border border-scifi4 -mb-0.5 ml-2 font-medium rounded-tl-md rounded-tr-md text-sm px-4 py-2 text-center inline-flex items-center`}>
+                    Deck
+                </button>
+                <button type="button"
+                    onClick={(e) => { setDeckType("heroes") }}
+                    className={`${deckType == "heroes" ? 'bg-scifi4 text-white pt-4' : 'bg-white text-scifi5 transition-all duration-200'} border border-scifi4 -mb-0.5 ml-2 font-medium rounded-tl-md rounded-tr-md text-sm px-4 py-2 text-center inline-flex items-center`}>
+                    Heroes
+                </button>
+                <button type="button"
+                    onClick={(e) => { setDeckType("tech") }}
+                    className={`${deckType == "tech" ? 'bg-scifi4 text-white pt-4' : 'bg-white text-scifi5 transition-all duration-200'} border border-scifi4 -mb-0.5 ml-2 font-medium rounded-tl-md rounded-tr-md text-sm px-4 py-2 text-center inline-flex items-center`}>
+                    Tech
+                </button>
+            </div>
+            <div className="flex flex-row bg-scifi4 rounded-tr-lg mx-2 border border-2 border-black">
+                <div className="flex flex-col sm:flex-row flex-wrap">
+                    {
+                        deckType == "deck" &&
+                        <Listbox value={selectedFactions} onChange={setSelectedFactions} by={(a, b) => { return a.id == b.id }} multiple>
+                            <div className="relative p-2">
+                                <Listbox.Button className="relative w-full cursor-pointer rounded-lg bg-white p-1 pl-2 pr-8 sm:py-2 sm:pl-3 sm:pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
+                                    <span className="block truncate">Select factions</span>
+                                    <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
+                                        <ChevronUpDownIcon
+                                            className="h-5 w-5 text-gray-400"
+                                            aria-hidden="true"
+                                        />
+                                    </span>
+                                </Listbox.Button>
+                                <Transition
+                                    as={Fragment}
+                                    leave="transition ease-in duration-100"
+                                    leaveFrom="opacity-100"
+                                    leaveTo="opacity-0"
+                                >
+                                    <Listbox.Options className="z-20 w-56 absolute mt-1 max-h-60 overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+                                        {factions.map((faction) => (
+                                            <Listbox.Option
+                                                key={faction.id}
+                                                className={({ active }) =>
+                                                    `z-30 relative cursor-pointer select-none py-2 pl-10 pr-4 ${active ? 'bg-scifi1 text-scifi4' : ' text-gray-900'
+                                                    }`
+                                                }
+                                                value={faction}
+                                            >
+                                                {({ selected }) => (
+                                                    <>
+                                                        <span
+                                                            className={`block truncate ${getNameList(selectedFactions).includes(faction.name) ? 'font-medium' : 'font-normal'
+                                                                }`}
+                                                        >
+                                                            {faction.name}
                                                         </span>
-                                                    ) : null}
-                                                </>
-                                            )}
-                                        </Listbox.Option>
-                                    ))}
-                                </Listbox.Options>
-                            </Transition>
-                        </div>
-                    </Listbox>
+                                                        {getNameList(selectedFactions).includes(faction.name) ? (
+                                                            <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-scifi3">
+                                                                <CheckIcon className="h-5 w-5" aria-hidden="true" />
+                                                            </span>
+                                                        ) : null}
+                                                    </>
+                                                )}
+                                            </Listbox.Option>
+                                        ))}
+                                    </Listbox.Options>
+                                </Transition>
+                            </div>
+                        </Listbox>
+                    }
                     <Listbox value={selectedSorting} onChange={setSelectedSorting} by={(a, b) => { return a.id == b.id }}>
                         <div className="relative p-2">
                             <Listbox.Button className="relative w-full cursor-pointer rounded-lg bg-white p-1 pl-2 pr-8 sm:py-2 sm:pl-3 sm:pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
@@ -174,7 +195,7 @@ function DeckOverview({ isWinner, deck }) {
                     </div>
                 </div>
             </div>
-            <DeckDetail className="z-10" deck={deck} filters={getNameList(selectedFactions)} sorting={selectedSorting} hideScrappedCards={hideScrappedCards}></DeckDetail>
+            <DeckDetail className="z-10" deck={deck} deckType={deckType} filters={getNameList(selectedFactions)} sorting={selectedSorting} hideScrappedCards={hideScrappedCards}></DeckDetail>
         </div>
     )
 }

@@ -2,25 +2,25 @@ import CardShip from './cardShip'
 import CardBase from './cardBase'
 import card_list from '../lib/card_data/cards.js'
 
-function DeckDetail({ deck, deckType, filters, sorting, hideScrappedCards}) {
+function CardList({ deck, deckType, filters, sorting, hideScrappedCards }) {
     function filterDeck(deck, deckType, filters) {
         //Ignore filters if deckType is heroes or tech
         let filteredDeck = {}
-        if(deckType == "heroes"){
+        if (deckType == "heroes") {
             for (let card in deck) {
-                if(card_list[card]['type'] == "hero"){
+                if (card_list[card]['type'] == "hero") {
                     filteredDeck[card] = deck[card]
                 }
             }
-        }else if(deckType == "tech"){
+        } else if (deckType == "tech") {
             for (let card in deck) {
-                if(card_list[card]['type'] == "tech"){
+                if (card_list[card]['type'] == "tech") {
                     filteredDeck[card] = deck[card]
                 }
             }
-        }else {
+        } else {
             for (let card in deck) {
-                if((card_list[card]['type'] != "hero") && (card_list[card]['type'] != "tech")){
+                if ((card_list[card]['type'] != "hero") && (card_list[card]['type'] != "tech")) {
                     for (let i = 0; i < card_list[card]['faction'].length; i++) {
                         if (filters.includes(card_list[card]['faction'][i])) {
                             filteredDeck[card] = deck[card]
@@ -61,11 +61,11 @@ function DeckDetail({ deck, deckType, filters, sorting, hideScrappedCards}) {
         return cardNames
     }
     return (
-        <div className="flex flex-row overflow-auto sm:grid sm:grid-cols-3 sm:grid-cols-5 p-4 justify-items-center bg-white mx-2 mb-2 rounded-bl-lg rounded-br-lg border border-2 border-black">
+        <div className="flex flex-row flex-wrap p-4 justify-items-center bg-white mx-2 mb-2 rounded-bl-lg rounded-br-lg border border-2 border-black">
             {
                 sortDeck(Object.keys(filterDeck(deck, deckType, filters)), sorting).map((card, index) => {
                     let count = deck[card]["purchaseCount"] - deck[card]["scrapCount"]
-                    if(card == "mobilemarket"){ //when this card is scrapped it goes to the discard pile
+                    if (card == "mobilemarket") { //when this card is scrapped it goes to the discard pile
                         return <CardBase key={index} file={card} card={card_list[card]} count={deck[card]["purchaseCount"]} isScrapped={false}></CardBase>
                     }
                     if (count > 0) {
@@ -75,7 +75,7 @@ function DeckDetail({ deck, deckType, filters, sorting, hideScrappedCards}) {
                                 :
                                 <CardBase key={index} file={card} card={card_list[card]} count={count} isScrapped={false}></CardBase>
                         )
-                    }else if(!hideScrappedCards){
+                    } else if (!hideScrappedCards) {
                         return (
                             card_list[card]['type'] == 'ship' ?
                                 <CardShip key={index} file={card} card={card_list[card]} count={count} isScrapped={true}></CardShip>
@@ -89,4 +89,4 @@ function DeckDetail({ deck, deckType, filters, sorting, hideScrappedCards}) {
     )
 }
 
-export default DeckDetail
+export default CardList
