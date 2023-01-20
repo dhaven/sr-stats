@@ -5,20 +5,6 @@ function GameStats({ winner, chartData, turnDecks, events }) {
     const [chartType, setChartType] = useState("authorityData");
     return (
         <div className="flex flex-col gap-4 md:mx-4">
-            {
-                events.length != 0 &&
-                <div className="flex flex-row overflow-auto gap-2 md:p-2">
-                    {
-                        events.map((value, index) => {
-                            return (
-                                <div key={index}>
-                                    <EventCard event={value}></EventCard>
-                                </div>
-                            )
-                        })
-                    }
-                </div>
-            }
             <div className="flex flex-col w-full bg-scifi4 md:rounded-md border-2 border-scifi4 drop-shadow-scifi5 p-2 sm:p-4">
                 <div className="flex flex-row flex-wrap sm:p-2 sm:p-4 gap-2 sm:gap-4">
                     <button
