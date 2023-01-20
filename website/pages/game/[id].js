@@ -38,8 +38,6 @@ export default function Game({ winner, loser, extensions, events, players, winCo
     let [isAddGameOpen, setAddGameIsOpen] = useState(false)
     let [turnA, setTurnA] = useState(decks.length - 1)
     let [turnB, setTurnB] = useState(decks.length - 1)
-    let [isOpen, setIsOpen] = useState(false)
-    console.log(decks)
     function openAddGameModal() {
         setAddGameIsOpen(true)
     }

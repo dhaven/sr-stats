@@ -4,7 +4,6 @@ import BarChartTemporal from "./charts/barChartTemporal";
 import BarChartTotal from "./charts/barChartTotal";
 
 function SRChart({ winner, chartType, chartData }) {
-    console.log(chartData)
     function hasMultipleCharts(chartType) {
         if (chartType == "tradeData" || chartType == "combatData" || chartType == "discardData" || chartType == "drawData" || chartType == "shuffleData") {
             return true
