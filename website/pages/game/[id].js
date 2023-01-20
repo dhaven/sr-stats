@@ -51,32 +51,35 @@ export default function Game({ winner, loser, extensions, events, players, winCo
             </Head>
             <div className="flex flex-col gap-2 w-screen md:w-full lg:w-5/6">
                 <GameSummary winner={winner} loser={loser} winCondition={winCondition} extensions={extensions}></GameSummary>
-                <div className="flex flex-col bg-red-500">
-                    <div className="flex flex-row justify-center items-center">
-
-                        <button
-                            onClick={() => setStatsTab("player")}
-                            className={`${statsTab == "player" ? "bg-scifi3 text-white" : "bg-white text-scifi5 hover:ring ring-scifi2"} text-md font-medium px-6 py-2 m-1 md:border-2 md:border-scifi4 md:rounded-lg`}
-                        >
-                            Player stats
-                        </button>
-                        <button
-                            onClick={() => setStatsTab("game")}
-                            className={`${statsTab == "game" ? "bg-scifi3 text-white" : "bg-white text-scifi5 hover:ring ring-scifi2"} text-md font-medium px-6 py-2 m-1 md:border-2 md:border-scifi4 md:rounded-lg`}
-                        >
-                            Game stats
-                        </button>
-
+                <div className="flex flex-col">
+                    <div className="flex flex-row justify-center items-center mx-2 p-2 bg-scifi4/80 rounded-tl-lg rounded-tr-lg">
+                        <div className="flex flex-col">
+                            <div className="flex flex-row">
+                                <button
+                                    onClick={() => setStatsTab("player")}
+                                    className={`${statsTab == "player" ? "" : ""} text-scifi1 text-md font-medium px-2 mx-2`}
+                                >
+                                    Player stats
+                                </button>
+                                <button
+                                    onClick={() => setStatsTab("game")}
+                                    className={`${statsTab == "game" ? "" : ""} text-scifi1 text-md font-medium px-2 mx-2`}
+                                >
+                                    Game stats
+                                </button>
+                            </div>
+                            <div className={`${statsTab == "game" ? "translate-x-full":""} transition duration-500 w-1/2 px-8 mt-1`}>
+                            <hr className="border-2 border-scifi1 rounded-full w-full"></hr>
+                            </div>
+                        </div>
                     </div>
                     {statsTab == "player" &&
-
-                        <div className="flex flex-row mx-2 px-4 gap-5">
+                        <div className="flex flex-row mx-2 px-4 gap-5 bg-scifi4/80 pb-2 rounded-bl-lg rounded-br-lg">
                             {
                                 players.map((oneKey, i) => {
                                     let currentTurn = i == 0 ? turnA : turnB
                                     return (
                                         <div key={i} className="flex flex-col bg-scifi1 w-1/2 rounded-md border-2 border-scifi5">
-
                                             <PlayerOverviewV2 decks={decks} name={oneKey} authority={chartData["authorityData"][oneKey][currentTurn]} setTurn={i == 0 ? setTurnA : setTurnB} turn={currentTurn}></PlayerOverviewV2>
                                             <DeckOverviewV2 missions={decks[currentTurn]['players'][oneKey]['missions']} gambit={decks[currentTurn]['players'][oneKey]['gambit']} deck={decks[currentTurn]['players'][oneKey]['deck']}></DeckOverviewV2>
                                             <DeckDetailV2 deck={decks[currentTurn]['players'][oneKey]['deck']}></DeckDetailV2>
@@ -89,7 +92,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                     }
                     {
                         statsTab == "game" &&
-                        <div className="flex flex-col gap-4 md:mx-4">
+                        <div className="flex flex-col items-center gap-4 bg-scifi4/80 pb-2 mx-2 rounded-bl-lg rounded-br-lg">
                             {
                                 events.length != 0 &&
                                 <div className="flex flex-row gap-2 md:p-2">
@@ -104,7 +107,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                                     }
                                 </div>
                             }
-                            <div className="flex w-full h-full">
+                            <div className="flex w-full h-full justify-center">
                                 <GameStats winner={winner} chartData={chartData} turnDecks={decks} events={events}></GameStats>
                             </div>
                         </div>
