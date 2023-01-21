@@ -21,7 +21,7 @@ function FiltersMenu({ deckType, selectedFactions, selectedSorting, setSelectedF
         })
     }
     return (
-        <div className="flex flex-col sm:flex-row flex-wrap">
+        <div className="flex flex-row flex-wrap">
             {
                 deckType == "deck" &&
                 <Listbox value={selectedFactions} onChange={setSelectedFactions} by={(a, b) => { return a.id == b.id }} multiple>

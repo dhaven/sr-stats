@@ -1,5 +1,3 @@
-import PlayerOverview from '../../components/playerOverview'
-import DeckOverview from '../../components/deckOverview'
 import DeckOverviewV2 from '../../components/deckOverviewV2'
 import DeckDetailV2 from '../../components/deckDetailV2'
 import PlayerOverviewV2 from '../../components/playerOverviewV2'
@@ -7,7 +5,6 @@ import Head from 'next/head'
 import Layout from '../../components/layout'
 import AddGameModal from '../../components/addGameModal.js'
 import { useState } from 'react'
-import { ArrowDownIcon } from '@heroicons/react/24/solid'
 import EventCard from '../../components/eventCard'
 import GameSummary from '../../components/gameSummary'
 import GameStats from '../../components/gameStats'
@@ -20,6 +17,11 @@ import { getChart } from '../../lib/helper/enhanceBattle'
 import { getDiscardChart } from '../../lib/helper/enhanceBattle'
 import { getTemporalDeck } from '../../lib/helper/enhanceBattle'
 import { getDeckSizeChart } from '../../lib/helper/enhanceBattle'
+
+//mobile UIs
+import GameResult from '../../components/mobile/gameResult'
+import PlayerCard from '../../components/mobile/playerCard'
+import PlayerDetail from '../../components/mobile/playerDetail'
 
 // import dynamic method from next
 import dynamic from 'next/dynamic';
@@ -38,8 +40,17 @@ export default function Game({ winner, loser, extensions, events, players, winCo
     let [isAddGameOpen, setAddGameIsOpen] = useState(false)
     let [turnA, setTurnA] = useState(decks.length - 1)
     let [turnB, setTurnB] = useState(decks.length - 1)
+
+    //keep state of which UI we need to display on mobile
+    let [isHome, setIsHome] = useState(true) //if we are on the homepage
+    let [isWinner, setIsWinner] = useState(true) //if we are on the winner detail page
+
     function openAddGameModal() {
         setAddGameIsOpen(true)
+    }
+    function updateScreen(player) {
+        setIsHome(false)
+        setIsWinner(player == winner)
     }
     return (
         <Layout>
@@ -49,7 +60,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                 <meta name="og:image:width" content="1200" />
                 <meta name="og:image:height" content="600" />
             </Head>
-            <div className="flex flex-col gap-2 w-screen md:w-full lg:w-5/6">
+            <div className="hidden lg:flex flex-col gap-2 w-screen md:w-full lg:w-5/6">
                 <GameSummary winner={winner} loser={loser} winCondition={winCondition} extensions={extensions}></GameSummary>
                 <div className="flex flex-col">
                     <div className="flex flex-row justify-center items-center mx-2 p-2 bg-scifi4/80 rounded-tl-lg rounded-tr-lg">
@@ -68,8 +79,8 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                                     Game stats
                                 </button>
                             </div>
-                            <div className={`${statsTab == "game" ? "translate-x-full":""} transition duration-500 w-1/2 px-8 mt-1`}>
-                            <hr className="border-2 border-scifi1 rounded-full w-full"></hr>
+                            <div className={`${statsTab == "game" ? "translate-x-full" : ""} transition duration-500 w-1/2 px-8 mt-1`}>
+                                <hr className="border-2 border-scifi1 rounded-full w-full"></hr>
                             </div>
                         </div>
                     </div>
@@ -127,7 +138,56 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                         </div>
                     </a>
                 </div>
-                <div className="z-20 md:hidden sticky bottom-0 left-0 right-0">
+            </div>
+            <div className="flex lg:hidden flex-col w-screen">
+                {
+                    isHome && (
+                        <GameResult
+                            players={players}
+                            chartData={chartData}
+                            winCondition={winCondition}
+                            winner={winner}
+                            loser={loser}
+                            extensions={extensions}
+                        ></GameResult>
+                    )
+                }
+                {
+                    isHome && players.map((oneKey, i) => {
+                        let lastTurn = decks.length - 1
+                        return (
+                            <div key={i} onClick={(e) => { updateScreen(oneKey) }}>
+                                <PlayerCard
+                                    player={oneKey}
+                                    deck={decks[lastTurn]['players'][oneKey]['deck']}
+                                    gambit={decks[lastTurn]['players'][oneKey]['gambit']}
+                                    missions={decks[lastTurn]['players'][oneKey]['missions']}
+                                ></PlayerCard>
+                            </div>
+                        )
+                    })
+                }
+                {
+                    (!isHome && isWinner) && (
+                        <PlayerDetail
+                            name={winner}
+                            authority={chartData["authorityData"][winner][decks.length - 1]}
+                            setIsHome={setIsHome}
+                            decks={decks}
+                        ></PlayerDetail>
+                    )
+                }
+                {
+                    (!isHome && !isWinner) && (
+                        <PlayerDetail
+                            name={loser}
+                            authority={chartData["authorityData"][winner][decks.length - 1]}
+                            setIsHome={setIsHome}
+                            decks={decks}
+                        ></PlayerDetail>
+                    )
+                }
+                <div className="z-20 sticky bottom-0 left-0 right-0">
                     {!isAddGameOpen &&
                         <div className="flex justify-end">
                             <button type="button" onClick={openAddGameModal} className="m-3 bg-scifi3 border border-scifi4 ring-scifi-2 drop-shadow-md hover:ring font-medium rounded-full text-md p-2.5 text-center inline-flex items-center">
@@ -137,14 +197,14 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                     }
                     <div className="flex justify-around bg-white">
                         <button onClick={() => setStatsTab("player")} className={
-                            statsTab == "player" ? "flex justify-center grow bg-scifi3 text-white text-md border-2 border-scifi4 font-medium py-2 px-6 m-1 md:rounded-lg"
-                                : "flex justify-center grow bg-scifi1 ring-scifi2 hover:ring border-2 border-scifi4 text-scifi4 text-md border-2 border-scifi4 font-medium py-2 px-6 m-1 md:rounded-lg"
+                            statsTab == "player" ? "flex justify-center grow bg-scifi3 text-white text-md border-2 border-scifi4 font-medium py-2 px-6 m-1 rounded-lg"
+                                : "flex justify-center grow bg-scifi1 ring-scifi2 hover:ring border-2 border-scifi4 text-scifi4 text-md border-2 border-scifi4 rounded-lg font-medium py-2 px-6 m-1 md:rounded-lg"
                         }>
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
                         </button>
                         <button onClick={() => setStatsTab("game")} className={
-                            statsTab == "game" ? "flex justify-center grow bg-scifi3 text-white text-md border-2 border-scifi4 font-medium py-2 px-6 m-1 md:rounded-lg"
-                                : "flex justify-center grow bg-scifi1 ring-scifi2 hover:ring border-2 border-scifi4 text-scifi4 text-md border-2 border-scifi4 font-medium py-2 px-6 m-1 md:rounded-lg"
+                            statsTab == "game" ? "flex justify-center grow bg-scifi3 text-white text-md border-2 border-scifi4 font-medium py-2 px-6 m-1 rounded-lg"
+                                : "flex justify-center grow bg-scifi1 ring-scifi2 hover:ring border-2 border-scifi4 text-scifi4 text-md border-2 border-scifi4 rounded-lg font-medium py-2 px-6 m-1 md:rounded-lg"
                         }>
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
                         </button>
