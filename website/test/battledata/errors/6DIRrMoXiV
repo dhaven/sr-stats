@@ -1,0 +1,1123 @@
+{
+  "status": "success",
+  "data": {
+    "firstPlayer": "fustylugs",
+    "winner": "",
+    "rounds": [
+      {
+        "tradePool": 2,
+        "combatPool": 1,
+        "usedTrade": -2,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "blobfighter",
+          "imperialfighter"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "Jobbi": {
+            "diff": -1,
+            "new": 49
+          }
+        },
+        "player": "fustylugs",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 1,
+        "usedTrade": -4,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "recyclingstation"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "fustylugs": {
+            "diff": -1,
+            "new": 49
+          }
+        },
+        "player": "Jobbi",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 1,
+        "usedTrade": -4,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "tradepod",
+          "explorer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "Jobbi": {
+            "diff": -1,
+            "new": 48
+          }
+        },
+        "player": "fustylugs",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 1,
+        "usedTrade": -4,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "federationshuttle",
+          "tradingpost"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "fustylugs": {
+            "diff": -1,
+            "new": 48
+          }
+        },
+        "player": "Jobbi",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 2,
+        "usedTrade": -3,
+        "usedCombat": -2,
+        "purchasedCards": [
+          "tradebot",
+          "corvette"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "Jobbi": {
+            "diff": -2,
+            "new": 46
+          }
+        },
+        "player": "fustylugs",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 0,
+        "usedTrade": -3,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "imperialfrigate"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "viper",
+          "scout"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 7,
+        "shuffleCount": 0,
+        "authority": {
+          "Jobbi": {
+            "diff": 1,
+            "new": 47
+          }
+        },
+        "player": "Jobbi",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 2,
+        "usedTrade": -5,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "mechworld"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {},
+        "player": "fustylugs",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 0,
+        "usedTrade": -7,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "embassyyacht",
+          "barterworld"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "viper"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "Jobbi": {
+            "diff": 4,
+            "new": 51
+          }
+        },
+        "player": "Jobbi",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 5,
+        "usedTrade": -7,
+        "usedCombat": -4,
+        "purchasedCards": [
+          "tradebot",
+          "blobfighter",
+          "patrolmech",
+          "imperialfighter"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [
+          "recyclingstation"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 0,
+        "authority": {},
+        "player": "fustylugs",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 1,
+        "usedTrade": -6,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "barterworld",
+          "explorer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "Jobbi": {
+            "diff": 3,
+            "new": 54
+          },
+          "fustylugs": {
+            "diff": -1,
+            "new": 47
+          }
+        },
+        "player": "Jobbi",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 8,
+        "usedTrade": -3,
+        "usedCombat": -8,
+        "purchasedCards": [
+          "blobfighter",
+          "explorer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [
+          "tradingpost"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 0,
+        "authority": {
+          "Jobbi": {
+            "diff": -4,
+            "new": 50
+          }
+        },
+        "player": "fustylugs",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 0,
+        "usedTrade": -5,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "battlemech"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "viper"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {},
+        "player": "Jobbi",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 1,
+        "usedTrade": -3,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "surveyship"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "Jobbi": {
+            "diff": -1,
+            "new": 49
+          }
+        },
+        "player": "fustylugs",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 5,
+        "usedTrade": -3,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "surveyship"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {},
+        "player": "Jobbi",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 2,
+        "usedTrade": -5,
+        "usedCombat": -2,
+        "purchasedCards": [
+          "explorer",
+          "tradingpost"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "explorer"
+        ],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "Jobbi": {
+            "diff": -2,
+            "new": 47
+          }
+        },
+        "player": "fustylugs",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 8,
+        "combatPool": 1,
+        "usedTrade": -7,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "dreadnaught"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {},
+        "player": "Jobbi",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 14,
+        "usedTrade": -6,
+        "usedCombat": -14,
+        "purchasedCards": [
+          "junkyard"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "barterworld",
+          "barterworld"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 7,
+        "shuffleCount": 0,
+        "authority": {
+          "Jobbi": {
+            "diff": -6,
+            "new": 41
+          }
+        },
+        "player": "fustylugs",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 0,
+        "usedTrade": -5,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "warworld"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "battlemech"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "Jobbi": {
+            "diff": 3,
+            "new": 44
+          }
+        },
+        "player": "Jobbi",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 2,
+        "combatPool": 14,
+        "usedTrade": -2,
+        "usedCombat": -14,
+        "purchasedCards": [
+          "battlepod"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "surveyship",
+          "scout"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 7,
+        "shuffleCount": 1,
+        "authority": {
+          "Jobbi": {
+            "diff": -14,
+            "new": 30
+          }
+        },
+        "player": "fustylugs",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 0,
+        "usedTrade": -2,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "cutter"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "scout",
+          "scout"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "Jobbi": {
+            "diff": 5,
+            "new": 35
+          }
+        },
+        "player": "Jobbi",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 14,
+        "usedTrade": -2,
+        "usedCombat": -14,
+        "purchasedCards": [
+          "explorer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout",
+          "explorer"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "recyclingstation",
+          "tradingpost"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 0,
+        "authority": {
+          "Jobbi": {
+            "diff": -6,
+            "new": 29
+          }
+        },
+        "player": "fustylugs",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 8,
+        "usedTrade": -4,
+        "usedCombat": -8,
+        "purchasedCards": [
+          "freighter"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "mechworld"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "fustylugs": {
+            "diff": -2,
+            "new": 45
+          }
+        },
+        "player": "Jobbi",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 0,
+        "usedTrade": -4,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "stealthneedle"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "viper"
+        ],
+        "discardedCards": [
+          "imperialfighter"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {},
+        "player": "fustylugs",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 8,
+        "combatPool": 11,
+        "usedTrade": -8,
+        "usedCombat": -11,
+        "purchasedCards": [
+          "fleethq"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "explorer"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 7,
+        "shuffleCount": 0,
+        "authority": {
+          "Jobbi": {
+            "diff": 3,
+            "new": 32
+          },
+          "fustylugs": {
+            "diff": -11,
+            "new": 34
+          }
+        },
+        "player": "Jobbi",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 11,
+        "usedTrade": 0,
+        "usedCombat": -11,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "barterworld"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 7,
+        "shuffleCount": 0,
+        "authority": {
+          "Jobbi": {
+            "diff": -7,
+            "new": 25
+          }
+        },
+        "player": "fustylugs",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 2,
+        "combatPool": 3,
+        "usedTrade": 0,
+        "usedCombat": 0,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "Jobbi": {
+            "diff": 2,
+            "new": 27
+          }
+        },
+        "player": "Jobbi",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 6,
+        "usedTrade": -7,
+        "usedCombat": -6,
+        "purchasedCards": [
+          "mothership"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "explorer"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "warworld"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 1,
+        "authority": {
+          "Jobbi": {
+            "diff": -2,
+            "new": 25
+          }
+        },
+        "player": "fustylugs",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 2,
+        "usedTrade": -7,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "machinebase"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 8,
+        "shuffleCount": 0,
+        "authority": {
+          "Jobbi": {
+            "diff": 6,
+            "new": 31
+          }
+        },
+        "player": "Jobbi",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 8,
+        "combatPool": 11,
+        "usedTrade": -8,
+        "usedCombat": -11,
+        "purchasedCards": [
+          "blobworld"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout",
+          "explorer"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "tradingpost",
+          "barterworld"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 0,
+        "authority": {
+          "Jobbi": {
+            "diff": -3,
+            "new": 28
+          }
+        },
+        "player": "fustylugs",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 8,
+        "combatPool": 16,
+        "usedTrade": -6,
+        "usedCombat": -16,
+        "purchasedCards": [
+          "missilemech"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "viper",
+          "imperialfrigate"
+        ],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [
+          "junkyard",
+          "tradingpost"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 8,
+        "shuffleCount": 0,
+        "authority": {
+          "fustylugs": {
+            "diff": -12,
+            "new": 22
+          }
+        },
+        "player": "Jobbi",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 2,
+        "combatPool": 14,
+        "usedTrade": 0,
+        "usedCombat": -14,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout"
+        ],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [
+          "barterworld",
+          "fleethq"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 7,
+        "shuffleCount": 1,
+        "authority": {
+          "Jobbi": {
+            "diff": -2,
+            "new": 26
+          }
+        },
+        "player": "fustylugs",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 14,
+        "usedTrade": -5,
+        "usedCombat": -14,
+        "purchasedCards": [
+          "spacestation",
+          "tradebot"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "scout",
+          "scout"
+        ],
+        "destroyedBases": [
+          "mechworld"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 8,
+        "shuffleCount": 1,
+        "authority": {
+          "Jobbi": {
+            "diff": 8,
+            "new": 34
+          },
+          "fustylugs": {
+            "diff": -8,
+            "new": 14
+          }
+        },
+        "player": "Jobbi",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 12,
+        "usedTrade": -3,
+        "usedCombat": -12,
+        "purchasedCards": [
+          "ram"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "viper"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "recyclingstation",
+          "fleethq"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 0,
+        "authority": {},
+        "player": "fustylugs",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 2,
+        "combatPool": 3,
+        "usedTrade": -2,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "tradepod"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "viper"
+        ],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 0,
+        "authority": {},
+        "player": "Jobbi",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 2,
+        "combatPool": 45,
+        "usedTrade": 0,
+        "usedCombat": -45,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "machinebase",
+          "warworld"
+        ],
+        "winner": "fustylugs",
+        "winCondition": "",
+        "drawCount": 11,
+        "shuffleCount": 1,
+        "authority": {
+          "Jobbi": {
+            "diff": -35,
+            "new": -1
+          }
+        },
+        "player": "fustylugs",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 0,
+        "combatPool": 0,
+        "usedTrade": 0,
+        "usedCombat": 0,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "shuffleCount": 0,
+        "authority": {},
+        "player": "Jobbi",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 0,
+        "combatPool": 0,
+        "usedTrade": 0,
+        "usedCombat": 0,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "shuffleCount": 0,
+        "authority": {},
+        "player": "fustylugs",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 0,
+        "combatPool": 0,
+        "usedTrade": 0,
+        "usedCombat": 0,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "shuffleCount": 0,
+        "authority": {},
+        "player": "Jobbi",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 0,
+        "combatPool": 0,
+        "usedTrade": 0,
+        "usedCombat": 0,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "shuffleCount": 0,
+        "authority": {},
+        "player": "fustylugs",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 0,
+        "combatPool": 0,
+        "usedTrade": 0,
+        "usedCombat": 0,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "shuffleCount": 0,
+        "authority": {},
+        "player": "Jobbi",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 0,
+        "combatPool": 0,
+        "usedTrade": 0,
+        "usedCombat": 0,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "shuffleCount": 0,
+        "authority": {},
+        "player": "fustylugs",
+        "tradeRowSlot": []
+      },
+      {
+        "tradePool": 0,
+        "combatPool": 0,
+        "usedTrade": 0,
+        "usedCombat": 0,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 0,
+        "shuffleCount": 0,
+        "authority": {},
+        "player": "Jobbi",
+        "tradeRowSlot": []
+      }
+    ],
+    "winCondition": ""
+  }
+}

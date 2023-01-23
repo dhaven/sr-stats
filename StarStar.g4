@@ -2,7 +2,7 @@ grammar StarStar;
 
 battle            : turn+ EOF;
 turn              : action+ startTurn?;
-action            : cardAcquisition | discarded | destroyBase | cardAction | balanceUpdate | drawCards | shuffleCards | endTurn | winStatus | scrapped | concede | timeout | resolveAlignmentBotScrap | (skipText NEWLINE);
+action            : cardAcquisition | discarded | destroyBase | cardAction | balanceUpdate | drawCards | shuffleCards | endTurn | winStatus | scrapped | concede | timeout | resolveAlignmentBotScrap | (skipText NEWLINE?);
 
 cardAction        : cardTrigger cardEffect*;
 cardTrigger       : playSingle | activate | scrapSelf | event | mission | resolving | choseScrapHandOrDiscard;

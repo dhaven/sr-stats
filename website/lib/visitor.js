@@ -1,7 +1,7 @@
 import antlr4 from 'antlr4';
-import StarStarLexer from './antlr4bis/StarStarLexer.js';
-import StarStarParser from './antlr4bis/StarStarParser.js';
-import StarStarVisitor from './antlr4bis/StarStarVisitor.js';
+import StarStarLexer from './antlr4/StarStarLexer.js';
+import StarStarParser from './antlr4/StarStarParser.js';
+import StarStarVisitor from './antlr4/StarStarVisitor.js';
 
 const cardsWithDeckScrapAbility = [
     "assimilator",
