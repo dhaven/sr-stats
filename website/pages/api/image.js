@@ -1,4 +1,5 @@
 const { MongoClient, ObjectId } = require('mongodb');
+import { getAuthorityChart, getExtensionsAndEvents } from '../../lib/helper/enhanceBattle'
 
 export default async function handler(req, res) {
     const { id } = req.query
@@ -14,25 +15,29 @@ export default async function handler(req, res) {
     const db = DBclient.db("starrealms")
     const cursor = db.collection('battle')
         .find({ _id: ObjectId(id) })
-        .project({ 'data.winner': 1, 'data.extensions': 1, 'data.players': 1 })
+        .project({ 'data.winner': 1, 'data.rounds': 1 })
     if (await cursor.hasNext()) {
         let { data } = await cursor.next()
-        let playersNames = Object.keys(data['players'])
+        let playersNames = []
+        playersNames[0] = data['rounds'][0]['player']
+        playersNames[1] = data['rounds'][1]['player']
         playersNames.splice(playersNames.indexOf(data['winner']), 1)
         let loserName = playersNames[0]
+        let authorityData = getAuthorityChart(data['rounds'])
+        let { extensions, events } = getExtensionsAndEvents(data['rounds'])
         res.status(200).json({
             id: id,
             status: "success",
             data: {
                 winner: {
                     name: data['winner'],
-                    authority: data['players'][data['winner']]['finalAuthority']
+                    authority: authorityData[data['winner']][data['rounds'].length - 1]
                 },
                 loser: {
                     name: loserName,
-                    authority: data['players'][loserName]['finalAuthority']
+                    authority: authorityData[loserName][data['rounds'].length - 1]
                 },
-                extensions: data['extensions']
+                extensions: extensions
             }
         })
     }

@@ -11,7 +11,6 @@ export function getExtensionsAndEvents(rounds) {
         nextRound = rounds[i]
         for(let j = 0; j < nextRound['purchasedCards'].length; j++){
             let nextCard = nextRound['purchasedCards'][j]
-            console.log(nextCard)
             if(!(extensions.includes(card_list[nextCard]['metadata']['extension']))){
                 extensions.push(card_list[nextCard]['metadata']['extension'])
             }
