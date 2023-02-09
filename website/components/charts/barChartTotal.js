@@ -56,7 +56,7 @@ function BarChartTotal({ winner, description, chartData }) {
         },
     }
     return (
-        <div className="h-32 sm:h-60 bg-scifi1 rounded-md p-2 drop-shadow-scifi5">
+        <div className="h-32 sm:h-60 bg-white rounded-md p-2 drop-shadow-scifi5">
             <Bar
                 options={options}
                 data={dataChart}

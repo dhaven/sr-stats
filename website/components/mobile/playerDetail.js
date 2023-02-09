@@ -40,7 +40,7 @@ function PlayerDetail({ name, authority, setSrScreen, decks }) {
                     Back
                 </p>
             </div>
-            <div className="flex flex-col bg-white">
+            <div className="flex flex-col bg-scifi1">
                 <div className="flex flex-row justify-around">
                     <div className="flex flex-col justify-center items-center">
                         <div className="flex flex-col justify-center text-center">

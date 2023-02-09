@@ -32,7 +32,7 @@ function CardShip({ file, card, count, isScrapped }) {
                     }
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                    <p className="hidden group-hover:flex rounded-full bg-white border border-black w-10 h-10 items-center justify-center">{count}x</p>
+                    <p className="hidden lg:group-hover:flex rounded-full bg-white border border-black w-10 h-10 items-center justify-center">{count}x</p>
                 </div>
             </div>
             <SRCard type="ship" filename={filename} isOpen={isOpen} setIsOpen={setIsOpen}></SRCard>

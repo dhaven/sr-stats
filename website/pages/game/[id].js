@@ -68,18 +68,18 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                             <div className="flex flex-row">
                                 <button
                                     onClick={() => setSrScreen(0)}
-                                    className={`${statsTab == "player" ? "" : ""} text-scifi1 text-md font-medium px-2 mx-2`}
+                                    className="text-scifi1 text-md font-medium px-2 mx-2 hover:bg-scifi5 rounded-md"
                                 >
                                     Player stats
                                 </button>
                                 <button
                                     onClick={() => setSrScreen(1)}
-                                    className={`${statsTab == "game" ? "" : ""} text-scifi1 text-md font-medium px-2 mx-2`}
+                                    className="text-scifi1 text-md font-medium px-2 mx-2 hover:bg-scifi5 rounded-md"
                                 >
                                     Game stats
                                 </button>
                             </div>
-                            <div className={`${statsTab == "game" ? "translate-x-full" : ""} transition duration-500 w-1/2 px-8 mt-1`}>
+                            <div className={`${srScreen == 1 ? "translate-x-full" : ""} transition duration-500 w-1/2 px-8 mt-1`}>
                                 <hr className="border-2 border-scifi1 rounded-full w-full"></hr>
                             </div>
                         </div>
@@ -201,7 +201,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                     }
                     <div className="flex justify-around bg-white">
                         <button onClick={() => setSrScreen(0)} className={
-                            srScreen == 0 ? "flex justify-center grow bg-scifi3 text-white text-md border-2 border-scifi4 font-medium py-2 px-6 m-1 rounded-lg"
+                            srScreen == 0 || srScreen == 2 ? "flex justify-center grow bg-scifi3 text-white text-md border-2 border-scifi4 font-medium py-2 px-6 m-1 rounded-lg"
                                 : "flex justify-center grow bg-scifi1 ring-scifi2 hover:ring border-2 border-scifi4 text-scifi4 text-md border-2 border-scifi4 rounded-lg font-medium py-2 px-6 m-1 md:rounded-lg"
                         }>
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>

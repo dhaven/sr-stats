@@ -24,7 +24,7 @@ function GameStatsMobile({ winner, chartData, events }) {
         }
     }
     return (
-        <div className="flex flex-col bg-white">
+        <div className="flex flex-col bg-scifi1">
             <div className="flex flex-row items-center pt-4">
                 <div className="flex justify-start" onClick={() => { setChartType(Math.max(0, chartType - 1)) }}>
                     <ChevronLeftIcon className="w-16 h-16"></ChevronLeftIcon>

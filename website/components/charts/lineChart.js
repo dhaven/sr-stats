@@ -63,7 +63,7 @@ function LineChart({ winner, description, chartData }) {
         },
     }
     return (
-        <div className="bg-scifi1 rounded-lg md:drop-shadow-scifi5 w-full p-2 md:p-4">
+        <div className="bg-white rounded-lg md:drop-shadow-scifi5 w-full p-2 md:p-4">
             <Line
                 options={options}
                 data={data}

@@ -90,11 +90,11 @@ function PlayerCard({ player, deck, gambit, missions }) {
         },
     }
     return (
-        <div className="flex flex-row bg-white p-2">
+        <div className="flex flex-row bg-scifi1 p-2 overflow-scroll">
             <div className="flex flex-col grow">
                 <div className="flex flex-row my-2">
                     <p className="flex text-xl font-bold">{player}</p>
-                    <div className="h-8 w-3/4">
+                    <div className="h-8 w-2/3">
                         <Bar
                             className="rounded-full p-2"
                             data={data}
