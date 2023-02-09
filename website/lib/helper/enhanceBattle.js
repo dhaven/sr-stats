@@ -157,10 +157,13 @@ export function getTemporalDeck(rounds) {
         let currentRound = rounds[i]
         let nextTurnDecks = JSON.parse(JSON.stringify(lastTurnDeck));
         let currentPlayer = ""
+        let otherPlayer = ""
         if (i % 2 == 0) {
             currentPlayer = firstPlayer
+            otherPlayer = secondPlayer
         } else {
             currentPlayer = secondPlayer
+            otherPlayer = firstPlayer
         }
         //this is the effect of patience rewarded event
         if (currentRound["tradeRowSlot"].length == 1) {
@@ -169,6 +172,20 @@ export function getTemporalDeck(rounds) {
         //update completed missions
         if (currentRound["completedMissions"].length != 0) {
             nextTurnDecks['players'][currentPlayer]['missions'] = nextTurnDecks['players'][currentPlayer]['missions'].concat(currentRound["completedMissions"])
+        }
+        if("foundGambits" in currentRound){
+            for(let i = 0; i < currentRound["foundGambits"].length; i++){
+                let gambitCard = currentRound["foundGambits"][i]
+                if(gambitCard == "energyshield" && !(gambitCard in nextTurnDecks['players'][otherPlayer]["gambit"])){ //energy shield affects the other player
+                    nextTurnDecks['players'][otherPlayer]["gambit"][gambitCard] = {
+                        scrapCount: 0
+                    }
+                }else if(gambitCard != "energyshield" && !(gambitCard in nextTurnDecks['players'][currentPlayer]["gambit"])) {
+                    nextTurnDecks['players'][currentPlayer]["gambit"][gambitCard] = {
+                        scrapCount: 0
+                    }
+                }
+            }
         }
         for (let j = 0; j < currentRound['purchasedCards'].length; j++) {
             let purchasedCard = currentRound['purchasedCards'][j]

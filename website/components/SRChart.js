@@ -48,15 +48,15 @@ function SRChart({ winner, chartType, chartData }) {
         }
     }
     return (
-        <div>
+        <div className="flex flex-col w-full">
             {
                 hasMultipleCharts(chartType) ? (
-                    <div className="flex flex-col w-full py-2 md:p-4 gap-4">
+                    <div className="flex flex-col w-screen lg:w-full py-2 md:p-4 gap-4">
                         <BarChartTotal winner={winner} description={getDescription(chartType, "total")} chartData={chartData}></BarChartTotal>
                         <BarChartTemporal winner={winner} description={getDescription(chartType, "temporal")} chartData={chartData}></BarChartTemporal>
                     </div>
                 ) : (
-                    <div className="flex h-40 md:h-80 w-full py-2 md:p-4 gap-4">
+                    <div className="flex h-60 md:h-80 w-screen lg:w-full py-2 md:p-4 gap-4">
                         <LineChart winner={winner} description={getDescription(chartType, "")} chartData={chartData}></LineChart>
                     </div>
                 )
