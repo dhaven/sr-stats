@@ -4,7 +4,6 @@ import FactionPie from '../factionPie'
 import card_list from '../../lib/card_data/cards.js'
 import { useState } from 'react'
 import DeckDetailV2 from '../deckDetailV2'
-import FiltersMobile from './filters'
 
 // import dynamic method from next
 import dynamic from 'next/dynamic';
@@ -14,8 +13,8 @@ const ReactSlider = dynamic(
     { ssr: false }
 );
 
-function PlayerDetail({ name, authority, setIsHome, decks }) {
-    let  [ turn, setTurn] = useState(decks.length - 1)
+function PlayerDetail({ name, authority, setSrScreen, decks }) {
+    let [turn, setTurn] = useState(decks.length - 1)
     let factions = {
         'Machine Cult': 0,
         'Trade Federation': 0,
@@ -30,7 +29,7 @@ function PlayerDetail({ name, authority, setIsHome, decks }) {
     })
     return (
         <div className="flex flex-col">
-            <div className="flex flex-row items-center bg-scifi3" onClick={(e) => { setIsHome(true) }}>
+            <div className="flex flex-row items-center bg-scifi3" onClick={(e) => { setSrScreen(0) }}>
                 <div className="relative w-10 h-10 m-2">
                     <ArrowLeftIcon
                         className="absolute text-white inset-x-0 inset-y-0"
@@ -41,39 +40,39 @@ function PlayerDetail({ name, authority, setIsHome, decks }) {
                     Back
                 </p>
             </div>
-            <div className="flex flex-row justify-around bg-white">
-                <div className="flex flex-col justify-center items-center">
-                    <div className="flex flex-col justify-center text-center">
-                        <p className="sm:p-2 text-2xl text-scifi5 font-bold whitespace-nowrap">{name}</p>
+            <div className="flex flex-col bg-white">
+                <div className="flex flex-row justify-around">
+                    <div className="flex flex-col justify-center items-center">
+                        <div className="flex flex-col justify-center text-center">
+                            <p className="sm:p-2 text-2xl text-scifi5 font-bold whitespace-nowrap">{name}</p>
+                        </div>
+                        <div className="">
+                            <FinalAuthority authority={authority}></FinalAuthority>
+                        </div>
                     </div>
-                    <div className="">
-                        <FinalAuthority authority={authority}></FinalAuthority>
+                    <div className="flex flex-col justify-center">
+                        <p className="text-lg font-medium">Factions</p>
+                        <hr className="border-2 border-scifi5 rounded-full w-3/4 mb-2"></hr>
+                        <div className="flex h-32 w-32 md:h-48 md:w-48 lg:h-36 lg:w-36 xl:h-40 xl:w-40 2xl:w-48 2xl:h-48">
+                            <FactionPie factions={factions}></FactionPie>
+                        </div>
                     </div>
                 </div>
-                <div className="flex flex-col justify-center">
-                    <p className="text-lg font-medium">Factions</p>
-                    <hr className="border-2 border-scifi5 rounded-full w-3/4 mb-2"></hr>
-                    <div className="flex h-32 w-32 md:h-48 md:w-48 lg:h-36 lg:w-36 xl:h-40 xl:w-40 2xl:w-48 2xl:h-48">
-                        <FactionPie factions={factions}></FactionPie>
-                    </div>
+                <div className="p-2">
+                    <ReactSlider
+                        className="horizontal-slider w-full h-6"
+                        thumbClassName="example-thumb-mobile rounded-xl text-sm"
+                        trackClassName="example-track-mobile"
+                        max={decks.length - 1}
+                        defaultValue={decks.length - 1}
+                        onChange={(value, index) => {
+                            setTurn(value)
+                        }}
+                        renderThumb={(props, state) => <div {...props}>turn {state.valueNow}</div>}
+                    />
                 </div>
             </div>
-            <div className="flex">
-                <ReactSlider
-                    className="horizontal-slider w-full h-6"
-                    thumbClassName="example-thumb-mobile rounded-xl text-sm"
-                    trackClassName="example-track-mobile"
-                    max={decks.length - 1}
-                    defaultValue={decks.length - 1}
-                    onChange={(value, index) => {
-                        setTurn(value)
-                    }}
-                    renderThumb={(props, state) => <div {...props}>turn {state.valueNow}</div>}
-                />
-            </div>
-            <FiltersMobile></FiltersMobile>
             <DeckDetailV2 deck={decks[turn]['players'][name]['deck']}>
-
             </DeckDetailV2>
         </div>
     )

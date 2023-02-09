@@ -22,6 +22,7 @@ import { getDeckSizeChart } from '../../lib/helper/enhanceBattle'
 import GameResult from '../../components/mobile/gameResult'
 import PlayerCard from '../../components/mobile/playerCard'
 import PlayerDetail from '../../components/mobile/playerDetail'
+import GameStatsMobile from '../../components/mobile/gameStatsMobile'
 
 // import dynamic method from next
 import dynamic from 'next/dynamic';
@@ -42,14 +43,13 @@ export default function Game({ winner, loser, extensions, events, players, winCo
     let [turnB, setTurnB] = useState(decks.length - 1)
 
     //keep state of which UI we need to display on mobile
-    let [isHome, setIsHome] = useState(true) //if we are on the homepage
+    let [srScreen, setSrScreen] = useState(0) //0 is home screen, 1 is game stats screen, 2 is player detail screen
     let [isWinner, setIsWinner] = useState(true) //if we are on the winner detail page
-
     function openAddGameModal() {
         setAddGameIsOpen(true)
     }
     function updateScreen(player) {
-        setIsHome(false)
+        setSrScreen(2)
         setIsWinner(player == winner)
     }
     return (
@@ -60,20 +60,20 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                 <meta name="og:image:width" content="1200" />
                 <meta name="og:image:height" content="600" />
             </Head>
-            <div className="hidden lg:flex flex-col gap-2 w-screen md:w-full lg:w-5/6">
+            <div className="hidden lg:flex flex-col gap-2 w-screen lg:w-5/6">
                 <GameSummary winner={winner} loser={loser} winCondition={winCondition} extensions={extensions}></GameSummary>
                 <div className="flex flex-col">
                     <div className="flex flex-row justify-center items-center mx-2 p-2 bg-scifi4/80 rounded-tl-lg rounded-tr-lg">
                         <div className="flex flex-col">
                             <div className="flex flex-row">
                                 <button
-                                    onClick={() => setStatsTab("player")}
+                                    onClick={() => setSrScreen(0)}
                                     className={`${statsTab == "player" ? "" : ""} text-scifi1 text-md font-medium px-2 mx-2`}
                                 >
                                     Player stats
                                 </button>
                                 <button
-                                    onClick={() => setStatsTab("game")}
+                                    onClick={() => setSrScreen(1)}
                                     className={`${statsTab == "game" ? "" : ""} text-scifi1 text-md font-medium px-2 mx-2`}
                                 >
                                     Game stats
@@ -84,7 +84,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                             </div>
                         </div>
                     </div>
-                    {statsTab == "player" &&
+                    {srScreen == 0 &&
                         <div className="flex flex-row mx-2 px-4 gap-5 bg-scifi4/80 pb-2 rounded-bl-lg rounded-br-lg">
                             {
                                 players.map((oneKey, i) => {
@@ -102,7 +102,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
 
                     }
                     {
-                        statsTab == "game" &&
+                        srScreen == 1 &&
                         <div className="flex flex-col items-center gap-4 bg-scifi4/80 pb-2 mx-2 rounded-bl-lg rounded-br-lg">
                             {
                                 events.length != 0 &&
@@ -141,7 +141,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
             </div>
             <div className="flex lg:hidden flex-col w-screen">
                 {
-                    isHome && (
+                    srScreen == 0 && (
                         <GameResult
                             players={players}
                             chartData={chartData}
@@ -153,7 +153,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                     )
                 }
                 {
-                    isHome && players.map((oneKey, i) => {
+                    srScreen == 0 && players.map((oneKey, i) => {
                         let lastTurn = decks.length - 1
                         return (
                             <div key={i} onClick={(e) => { updateScreen(oneKey) }}>
@@ -168,21 +168,25 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                     })
                 }
                 {
-                    (!isHome && isWinner) && (
+                    srScreen == 1 &&
+                    <GameStatsMobile winner={winner} chartData={chartData} events={events}></GameStatsMobile>
+                }
+                {
+                    (srScreen == 2 && isWinner) && (
                         <PlayerDetail
                             name={winner}
                             authority={chartData["authorityData"][winner][decks.length - 1]}
-                            setIsHome={setIsHome}
+                            setSrScreen={setSrScreen}
                             decks={decks}
                         ></PlayerDetail>
                     )
                 }
                 {
-                    (!isHome && !isWinner) && (
+                    (srScreen == 2 && !isWinner) && (
                         <PlayerDetail
                             name={loser}
                             authority={chartData["authorityData"][winner][decks.length - 1]}
-                            setIsHome={setIsHome}
+                            setSrScreen={setSrScreen}
                             decks={decks}
                         ></PlayerDetail>
                     )
@@ -196,14 +200,14 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                         </div>
                     }
                     <div className="flex justify-around bg-white">
-                        <button onClick={() => setStatsTab("player")} className={
-                            statsTab == "player" ? "flex justify-center grow bg-scifi3 text-white text-md border-2 border-scifi4 font-medium py-2 px-6 m-1 rounded-lg"
+                        <button onClick={() => setSrScreen(0)} className={
+                            srScreen == 0 ? "flex justify-center grow bg-scifi3 text-white text-md border-2 border-scifi4 font-medium py-2 px-6 m-1 rounded-lg"
                                 : "flex justify-center grow bg-scifi1 ring-scifi2 hover:ring border-2 border-scifi4 text-scifi4 text-md border-2 border-scifi4 rounded-lg font-medium py-2 px-6 m-1 md:rounded-lg"
                         }>
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
                         </button>
-                        <button onClick={() => setStatsTab("game")} className={
-                            statsTab == "game" ? "flex justify-center grow bg-scifi3 text-white text-md border-2 border-scifi4 font-medium py-2 px-6 m-1 rounded-lg"
+                        <button onClick={() => setSrScreen(1)} className={
+                            srScreen == 1 ? "flex justify-center grow bg-scifi3 text-white text-md border-2 border-scifi4 font-medium py-2 px-6 m-1 rounded-lg"
                                 : "flex justify-center grow bg-scifi1 ring-scifi2 hover:ring border-2 border-scifi4 text-scifi4 text-md border-2 border-scifi4 rounded-lg font-medium py-2 px-6 m-1 md:rounded-lg"
                         }>
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
