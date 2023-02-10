@@ -30,11 +30,13 @@ function GameStatsMobile({ winner, chartData, events }) {
         }
     }
     function nextChart() {
+        window.alert("nextChart")
         let nextChartId = Math.min(6, chartType + 1)
         const element = document.getElementById(`chart-${nextChartId}`);
         element.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
     }
     function previousChart() {
+        window.alert("previousChart")
         let previousChartId = Math.max(0, chartType - 1)
         const element = document.getElementById(`chart-${previousChartId}`);
         element.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
