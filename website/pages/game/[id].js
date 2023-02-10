@@ -139,7 +139,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                     </a>
                 </div>
             </div>
-            <div className="flex lg:hidden flex-col w-screen">
+            <div className="flex lg:hidden flex-col w-screen gap-4">
                 {
                     srScreen == 0 && (
                         <GameResult
