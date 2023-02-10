@@ -7,6 +7,7 @@ function GameStatsMobile({ winner, chartData, events }) {
     let [chartType, setChartType] = useState(0)
     useEffect(() => {
         document.getElementById("chart-carousel").addEventListener("scroll", (event) => {
+            console.log("event fired")
             let scrollPos = document.getElementById("chart-carousel").scrollLeft
             setChartType(Math.round(scrollPos / window.innerWidth))
         });
@@ -34,6 +35,7 @@ function GameStatsMobile({ winner, chartData, events }) {
         let nextChartId = Math.min(6, chartType + 1)
         window.alert(nextChartId)
         const element = document.getElementById(`chart-${nextChartId}`);
+        console.log(element)
         element.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
     }
     function previousChart() {
