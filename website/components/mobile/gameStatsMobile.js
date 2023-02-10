@@ -7,10 +7,8 @@ function GameStatsMobile({ winner, chartData, events }) {
     let [chartType, setChartType] = useState(0)
     useEffect(() => {
         document.getElementById("chart-carousel").addEventListener("scroll", (event) => {
-            setTimeout(() => {
-                let scrollPos = document.getElementById("chart-carousel").scrollLeft
-                setChartType(Math.round(scrollPos / window.innerWidth))
-            }, 500);
+            let scrollPos = document.getElementById("chart-carousel").scrollLeft
+            setChartType(Math.round(scrollPos / window.innerWidth))
         });
     });
     let chartTypes = ["authorityData", "tradeData", "combatData", "discardData", "drawData", "deckSizeData", "shuffleData"]

@@ -61,7 +61,7 @@ function FiltersMobile({ isOpen, setIsOpen, selectedFactions, selectedSorting, h
                                 leaveFrom="opacity-100 scale-100"
                                 leaveTo="opacity-0 scale-95"
                             >
-                                <Dialog.Panel className="w-full h-full max-h-screen transform overflow-hidden bg-white text-left align-middle shadow-xl transition-all">
+                                <Dialog.Panel className="w-full h-full max-h-screen transform bg-white text-left align-middle shadow-xl transition-all">
                                     <div className="flex flex-row justify-between px-2 shadow-lg">
                                         <div className="flex flex-row items-center">
                                             <p className="text-xl">Filter and sort deck</p>
@@ -155,9 +155,7 @@ function FiltersMobile({ isOpen, setIsOpen, selectedFactions, selectedSorting, h
                                                 />
                                             </Switch>
                                         </div>
-                                    </div>
-
-                                    <div className="absolute inset-x-0 bottom-0 w-full p-2">
+                                        <div className="absolute inset-x-0 bottom-0 w-full p-2">
                                         <button
                                             type="button"
                                             className="inline-flex w-full justify-center rounded-md text-white bg-scifi4 px-4 py-2 text-sm font-medium"
@@ -165,6 +163,7 @@ function FiltersMobile({ isOpen, setIsOpen, selectedFactions, selectedSorting, h
                                         >
                                             Apply
                                         </button>
+                                    </div>
                                     </div>
                                 </Dialog.Panel>
                             </Transition.Child>
