@@ -44,13 +44,13 @@ function GameStatsMobile({ winner, chartData, events }) {
     return (
         <div className="flex flex-col bg-scifi1">
             <div className="flex flex-row items-center pt-4">
-                <div className="flex justify-start" onClick={previousChart}>
+                <div className="flex justify-start active:bg-slate-100 rounded-full" onClick={previousChart}>
                     <ChevronLeftIcon className="w-16 h-16"></ChevronLeftIcon>
                 </div>
                 <div className="flex justify-center grow">
                     <p className="font-medium text-2xl">{chartTitle()}</p>
                 </div>
-                <div className="flex justify-end" onClick={nextChart}>
+                <div className="flex justify-end active:bg-slate-100 rounded-full" onClick={nextChart}>
                     <ChevronRightIcon className="w-16 h-16"></ChevronRightIcon>
                 </div>
             </div>

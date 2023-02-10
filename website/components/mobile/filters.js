@@ -61,7 +61,7 @@ function FiltersMobile({ isOpen, setIsOpen, selectedFactions, selectedSorting, h
                                 leaveFrom="opacity-100 scale-100"
                                 leaveTo="opacity-0 scale-95"
                             >
-                                <Dialog.Panel className="w-full h-screen max-h-screen transform overflow-hidden bg-white text-left align-middle shadow-xl transition-all">
+                                <Dialog.Panel className="w-full h-full max-h-screen transform overflow-hidden bg-white text-left align-middle shadow-xl transition-all">
                                     <div className="flex flex-row justify-between px-2 shadow-lg">
                                         <div className="flex flex-row items-center">
                                             <p className="text-xl">Filter and sort deck</p>
