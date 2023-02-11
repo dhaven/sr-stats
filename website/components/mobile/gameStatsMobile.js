@@ -7,7 +7,6 @@ function GameStatsMobile({ winner, chartData, events }) {
     let [chartType, setChartType] = useState(0)
     useEffect(() => {
         document.getElementById("chart-carousel").addEventListener("scroll", (event) => {
-            console.log("event fired")
             let scrollPos = document.getElementById("chart-carousel").scrollLeft
             setChartType(Math.round(scrollPos / window.innerWidth))
         });

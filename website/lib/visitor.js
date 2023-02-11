@@ -275,7 +275,7 @@ class Visitor extends StarStarVisitor {
                 }
                 if("card" in action["balanceUpdate"]){
                     if((action["balanceUpdate"]["card"] == "energyshield") || (action["balanceUpdate"]["card"] == "frontierfleet") || (action["balanceUpdate"]["card"] == "veteranpilots")){
-                        console.log(action["balanceUpdate"]["card"])
+                        //console.log(action["balanceUpdate"]["card"])
                         turnData["foundGambits"].push(action["balanceUpdate"]["card"])
                     }
                 }

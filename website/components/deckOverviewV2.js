@@ -1,5 +1,6 @@
 
 import HorizontalCard from './horizontalCard'
+import VerticalCard from './verticalCard'
 import card_list from '../lib/card_data/cards.js'
 import FactionPie from './factionPie'
 
@@ -31,7 +32,7 @@ function DeckOverviewV2({ missions, gambit, deck }) {
                 <div className="flex flex-col p-2 grow">
                     <p className="mx-2 text-lg font-medium">Gambits</p>
                     <hr className="border-2 border-scifi5 rounded-full m-2 w-1/2"></hr>
-                    <div className="flex flex-row gap-2 p-2">
+                    <div className="flex flex-wrap flex-row gap-2 p-2">
                         {
                             Object.keys(gambit).map((value, index) => {
                                 return (
@@ -44,11 +45,11 @@ function DeckOverviewV2({ missions, gambit, deck }) {
                 <div className="flex flex-col p-2 grow">
                     <p className="mx-2 text-lg font-medium">Missions</p>
                     <hr className="border-2 border-scifi5 rounded-full m-2 w-1/2"></hr>
-                    <div className="flex flex-row gap-2 p-2">
+                    <div className="flex flex-wrap flex-row gap-2 p-2">
                         {
                             missions.map((value, index) => {
                                 return (
-                                    <HorizontalCard key={index} cardName={value} category={"missions"}></HorizontalCard>
+                                    <VerticalCard key={index} cardName={value} category={"missions"}></VerticalCard>
                                 )
                             })
                         }

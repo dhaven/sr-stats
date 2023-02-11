@@ -36,7 +36,7 @@ function GameResult({ players, chartData, winCondition, winner, loser, extension
 
     }
     return (
-        <div className="flex flex-col items-center bg-scifi1 gap-4">
+        <div className="flex flex-col items-center bg-scifi1 gap-2 m-2 p-2 rounded-lg border-double border-scifi5 border-4">
             <div className="flex flex-row gap-4 items-center justify-center mt-4">
                 <p className="font-bold text-2xl order-2">
                     VS
@@ -57,7 +57,7 @@ function GameResult({ players, chartData, winCondition, winner, loser, extension
                     })
                 }
             </div>
-            <p className="flex text-lg font-medium">{getSummaryMessage(winCondition, winner, loser)}</p>
+            <p className="flex text-lg font-medium text-center">{getSummaryMessage(winCondition, winner, loser)}</p>
             <div className="flex flex-wrap items-center gap-2 md:gap-2">
                 {
                     extensions.map((value, index) => {
