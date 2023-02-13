@@ -52,6 +52,15 @@ export default function Game({ winner, loser, extensions, events, players, winCo
         setSrScreen(2)
         setIsWinner(player == winner)
     }
+    let sortWinnerFirst = function(players, chartData){
+        console.log(players)
+        let sortedPlayers = players.sort((x,y) => {
+            let lastTurnX = chartData["authorityData"][x].length - 1
+            let lastTurnY = chartData["authorityData"][y].length - 1
+            return chartData["authorityData"][y][lastTurnY] - chartData["authorityData"][x][lastTurnX]
+        })
+        return sortedPlayers
+    }
     return (
         <Layout>
             <Head>
@@ -153,7 +162,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                     )
                 }
                 {
-                    srScreen == 0 && players.map((oneKey, i) => {
+                    srScreen == 0 && sortWinnerFirst(players,chartData).map((oneKey, i) => {
                         let lastTurn = decks.length - 1
                         return (
                             <div key={i} onClick={(e) => { updateScreen(oneKey) }}>
@@ -185,7 +194,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                     (srScreen == 2 && !isWinner) && (
                         <PlayerDetail
                             name={loser}
-                            authority={chartData["authorityData"][winner][decks.length - 1]}
+                            authority={chartData["authorityData"][loser][decks.length - 1]}
                             setSrScreen={setSrScreen}
                             decks={decks}
                         ></PlayerDetail>

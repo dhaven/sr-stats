@@ -35,6 +35,15 @@ function GameResult({ players, chartData, winCondition, winner, loser, extension
         }
 
     }
+    let sortWinnerFirst = function(players, chartData){
+        console.log(players)
+        let sortedPlayers = players.sort((x,y) => {
+            let lastTurnX = chartData["authorityData"][x].length - 1
+            let lastTurnY = chartData["authorityData"][y].length - 1
+            return chartData["authorityData"][y][lastTurnY] - chartData["authorityData"][x][lastTurnX]
+        })
+        return sortedPlayers
+    }
     return (
         <div className="flex flex-col items-center bg-scifi1 gap-2 m-2 p-2 rounded-lg border-double border-scifi5 border-4">
             <div className="flex flex-row gap-4 items-center justify-center mt-4">
@@ -42,7 +51,7 @@ function GameResult({ players, chartData, winCondition, winner, loser, extension
                     VS
                 </p>
                 {
-                    players.map((oneKey, i) => {
+                    sortWinnerFirst(players,chartData).map((oneKey, i) => {
                         let lastTurn = chartData["authorityData"][oneKey].length - 1
                         return (
                             <div key={i} className={`${i == 0 ? "order-1" : "order-3"} flex flex-col items-center`}>
