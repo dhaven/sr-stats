@@ -1,6 +1,6 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment} from 'react'
-import { appVersion } from './layout.js'
+import { appVersion } from '../layout.js'
 
 export default function NewFeatureModal({isOpen, setIsOpen}) {
     function closeModal() {

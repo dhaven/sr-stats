@@ -36,7 +36,7 @@ function GameResult({ players, chartData, winCondition, winner, loser, extension
 
     }
     let sortWinnerFirst = function(players, chartData){
-        console.log(players)
+        //console.log(players)
         let sortedPlayers = players.sort((x,y) => {
             let lastTurnX = chartData["authorityData"][x].length - 1
             let lastTurnY = chartData["authorityData"][y].length - 1

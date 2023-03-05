@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import SRLogInput from './SRLogInput.js'
-import AddGameModal from './addGameModal.js'
+import AddGameModal from './dialogs/addGameModal.js'
 import { useState } from 'react'
 import step1 from '../public/images/1.png'
 import step2 from '../public/images/2.png'

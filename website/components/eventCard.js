@@ -1,6 +1,6 @@
 import SRLogo from '../public/svg/star_realms_logo.svg'
 import { useState } from 'react'
-import SRCard from './SRCard.js'
+import SRCard from './dialogs/SRCard.js'
 import { Popup } from 'semantic-ui-react'
 
 function EventCard({event}) {

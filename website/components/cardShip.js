@@ -3,7 +3,7 @@ import StarEmpire from '../public/svg/star_empire.svg'
 import Blob from '../public/svg/blob.svg'
 import TradeFederation from '../public/svg/trade_federation.svg'
 import MachineCult from '../public/svg/machine_cult.svg'
-import SRCard from './SRCard.js'
+import SRCard from './dialogs/SRCard.js'
 import { useState } from 'react'
 
 function CardShip({ file, card, count, isScrapped }) {

@@ -2,14 +2,43 @@ import { Formik, Form, Field } from 'formik';
 import { atom, useAtom } from 'jotai'
 import { example1, example2 } from '../lib/example_data.js'
 import { useRouter } from 'next/router'
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSession } from "next-auth/react"
+import SRLoginInvite from './dialogs/loginInvite.js'
 
 const errorMessageAtom = atom("")
 
 export default function SRLogInput() {
   const [errorMessage, setErrorMessage] = useAtom(errorMessageAtom)
   const [isLoading, setIsLoading] = useState(false);
+  const [isUploadCompleted, setIsUploadCompleted] = useState(false);
+  const [openLoginInvite, setOpenLoginInvite] = useState(false)
+  const [gameSummary, setGameSummary] = useState("")
   const router = useRouter()
+  const { data: session, status } = useSession()
+  useEffect(() => {
+    if(isUploadCompleted && (status == "unauthenticated")){
+      setIsUploadCompleted(false) //switch back to false to make sure we don't store the game too many times
+      console.log("adding game to local storage")
+      //store the game in cache
+      let games = localStorage.getItem('games')
+      if(games != null){
+        games = JSON.parse(games)
+        games.push(gameSummary)
+        localStorage.setItem('games', JSON.stringify(games));
+      }else{
+        games = []
+        games.push(gameSummary)
+        localStorage.setItem('games', JSON.stringify(games));
+      }
+      //ask user to login so that we can link a user to the game
+      setOpenLoginInvite(true)
+    }else if(isUploadCompleted && (status == "authenticated")){
+      //if user is already logged in then just redirect 
+      router.push(`/game/${gameSummary['id']}`)
+    }
+
+  }, [isUploadCompleted])
   return (
     <div className="p-2 m-2 h-full">
       <Formik
@@ -30,7 +59,14 @@ export default function SRLogInput() {
               .then(response => response.json())
               .then(data => {
                 if (data['status'] == 'success') {
-                  router.push(`/game/${data['id']}`)
+                  //check here if the user is logged in
+                  //if he isn't prompt him the create an account so that the game is saved
+                  //also save to local storage the game ids so that if the user does decide
+                  //to create an account we can update his account with the games from local
+                  //storage
+                  setGameSummary(data['summary'])
+                  console.log(data['summary'])
+                  setIsUploadCompleted(true)
                 } else {
                   console.error('Error:', data['status']);
                   setErrorMessage(data['status'])
@@ -90,6 +126,7 @@ export default function SRLogInput() {
           </Form>
         )}
       </Formik>
+      <SRLoginInvite isOpen={openLoginInvite} setIsOpen={setOpenLoginInvite} gameSummary={gameSummary}></SRLoginInvite>
     </div>
   )
 }

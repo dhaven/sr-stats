@@ -3,7 +3,7 @@ import DeckDetailV2 from '../../components/deckDetailV2'
 import PlayerOverviewV2 from '../../components/playerOverviewV2'
 import Head from 'next/head'
 import Layout from '../../components/layout'
-import AddGameModal from '../../components/addGameModal.js'
+import AddGameModal from '../../components/dialogs/addGameModal.js'
 import { useState } from 'react'
 import EventCard from '../../components/eventCard'
 import GameSummary from '../../components/gameSummary'
@@ -17,6 +17,7 @@ import { getChart } from '../../lib/helper/enhanceBattle'
 import { getDiscardChart } from '../../lib/helper/enhanceBattle'
 import { getTemporalDeck } from '../../lib/helper/enhanceBattle'
 import { getDeckSizeChart } from '../../lib/helper/enhanceBattle'
+import { arrowUturnLeft } from '@heroicons/react/24/outline'
 
 //mobile UIs
 import GameResult from '../../components/mobile/gameResult'
@@ -53,7 +54,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
         setIsWinner(player == winner)
     }
     let sortWinnerFirst = function(players, chartData){
-        console.log(players)
+        //0console.log(players)
         let sortedPlayers = players.sort((x,y) => {
             let lastTurnX = chartData["authorityData"][x].length - 1
             let lastTurnY = chartData["authorityData"][y].length - 1
@@ -96,7 +97,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                     {srScreen == 0 &&
                         <div className="flex flex-row mx-2 px-4 gap-5 bg-scifi4/80 pb-2 rounded-bl-lg rounded-br-lg">
                             {
-                                players.map((oneKey, i) => {
+                                sortWinnerFirst(players,chartData).map((oneKey, i) => {
                                     let currentTurn = i == 0 ? turnA : turnB
                                     return (
                                         <div key={i} className="flex flex-col bg-scifi1 w-1/2 rounded-md border-2 border-scifi5">

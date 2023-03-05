@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import SRCard from './SRCard.js'
+import SRCard from './dialogs/SRCard.js'
 import Image from 'next/image'
 
 function VerticalCard({ cardName, category }) {

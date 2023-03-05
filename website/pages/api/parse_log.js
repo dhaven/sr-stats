@@ -1,6 +1,9 @@
 const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
 const { MongoClient } = require('mongodb');
 import { findErrors, parseBattle } from '../../lib/visitor'
+import { authOptions } from "./auth/[...nextauth]"
+import { getServerSession } from "next-auth"
+import { getTemporalDeck } from '../../lib/helper/enhanceBattle'
 
 export default async function handler(req, res) {
   const IAMCreds = {
@@ -93,9 +96,46 @@ export default async function handler(req, res) {
             })
           })
       }
-      //check for failed insertion
-      DBclient.close();
       let battleID = battle._id
+      const session = await getServerSession(req, res, authOptions)
+      let playersNames = []
+      playersNames[0] = battle['data']['rounds'][0]['player']
+      playersNames[1] = battle['data']['rounds'][1]['player']
+      playersNames.splice(playersNames.indexOf(battle['data']['winner']), 1)
+      let loserName = playersNames[0]
+      let turnDecks = getTemporalDeck(battle['data']['rounds'])
+      let winCondition = ""
+      if (turnDecks[turnDecks.length - 1]['players'][battle['data']['winner']]['missions'].length == 3) {
+        winCondition = "completed missions" //data['winner'] + "won by completing 3 missions"
+      } else {
+        if (battle['data']['winCondition'] == "resignation") {
+          winCondition = "resignation" //data['winner'] + " won by resignation"
+        } else if (battle['data']['winCondition'] == "timeout") {
+          winCondition = "timeout"
+        } else {
+          winCondition = "defeat" //data['winner'] + " won by defeating " + loserName
+        }
+      }
+      let battleSummary = {
+        id: battleID.toString(),
+        winner: battle['data']['winner'],
+        loser: loserName,
+        winCondition: winCondition
+      }
+      if (session) {
+        try {
+          await db.collection("users").updateOne(
+            { email: session.user.email },
+            { $push: { games: battleSummary } }
+          );
+        } catch (error) {
+          console.log(error)
+          res.status(500).json({
+            status: error
+          })
+        }
+      }
+      DBclient.close();
       const uploadParams = {
         Bucket: process.env.S3_BUCKET,
         Body: req.body,
@@ -105,7 +145,8 @@ export default async function handler(req, res) {
         .then(() => {
           res.status(200).json({
             id: battleID,
-            status: "success"
+            status: "success",
+            summary: battleSummary
           })
         })
         .catch(error => {
