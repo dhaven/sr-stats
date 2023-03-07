@@ -94,7 +94,7 @@ function SRLogin({ isOpen, setIsOpen }) {
                                     Login to your SR-stats account to access all your games!
                                 </Dialog.Title>
                                 <div className="flex flex-row justify-center">
-                                    <div className="w-3/4 flex flex-col items-center gap-2">
+                                    <div className="w-full md:w-3/4 flex flex-col items-center gap-2">
                                         <button
                                             onClick={() => oAuthLogin("google")}
                                             className="w-full inline-flex justify-center items-center text-scifi5 font-medium bg-white text-sm px-2 sm:px-4 py-2 border border-scifi4 ring-scifi2 drop-shadow-md hover:ring rounded-lg"

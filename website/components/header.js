@@ -5,9 +5,19 @@ import { signOut, useSession } from "next-auth/react"
 import AddGameModal from './dialogs/addGameModal.js'
 import SRLogin from './dialogs/login.js'
 import AddIGN from './dialogs/addIGN.js'
+import Drawer from './ui/drawer.js'
 import { useState, useEffect, Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
-import { ChevronDownIcon, WrenchScrewdriverIcon, TrophyIcon, ArrowRightOnRectangleIcon, UserCircleIcon, PlusIcon } from '@heroicons/react/24/outline'
+import {
+    ChevronDownIcon,
+    WrenchScrewdriverIcon,
+    TrophyIcon,
+    ArrowRightOnRectangleIcon,
+    UserCircleIcon,
+    PlusIcon,
+    Bars3Icon,
+    XMarkIcon
+} from '@heroicons/react/24/outline'
 
 export default function Header() {
     const { data: session, status } = useSession()
@@ -16,6 +26,7 @@ export default function Header() {
     let [isLoginOpen, setIsLoginOpen] = useState(false)
     let [isAddGameOpen, setAddGameIsOpen] = useState(false)
     let [isAddIGNOpen, setIsAddIGNOpen] = useState(false)
+    const [showSidebar, setShowSidebar] = useState(false)
     let isUpdatingUserGames = false
     useEffect(() => {
         //console.log(session)
@@ -56,6 +67,15 @@ export default function Header() {
                     </span>
                     stats
                 </p>
+                <button onClick={(e) => { setShowSidebar(true) }} className="md:hidden absolute top-0 left-0 m-2">
+                    <Bars3Icon
+                        className="h-8 w-8"
+                        aria-hidden="true"
+                    />
+                </button>
+                <div className={`${showSidebar ? "translate-x-0 " : "-translate-x-full"} absolute top-0 left-0 h-full w-2/3 md:hidden min-h-screen`}>
+                    <Drawer setIsOpen={setShowSidebar} loginDialog={setIsLoginOpen}/>
+                </div>
                 <div className="hidden md:block absolute top-0 right-0 m-3">
                     <div className="flex flex-row gap-2">
                         <button onClick={(e) => { setAddGameIsOpen(true) }} className="inline-flex items-center font-medium bg-scifi3 text-white text-sm text-bold px-2 sm:px-4 py-2 border border-scifi4 ring-scifi2 drop-shadow-md hover:ring rounded-lg" type="button">

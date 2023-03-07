@@ -65,7 +65,7 @@ const Settings = () => {
             <Head>
                 <title>SR Stats - Settings</title>
             </Head>
-            <div className="flex flex-col gap-1 w-2/3 items-center bg-white p-8 rounded-lg border-2 border-scifi5">
+            <div className="flex flex-col gap-1 m-2 w-full md:w-2/3 items-center bg-white p-8 rounded-lg border-2 border-scifi5">
                 {session.user.image ? (
                     <Image
                         alt="profile_picture"
@@ -90,7 +90,7 @@ const Settings = () => {
                 <p className="italic text-sm font-medium">
                     Signed in with Google
                 </p>
-                <div className="mt-4 w-1/2">
+                <div className="mt-4 w-full md:w-1/2">
                     <Formik
                         initialValues={{ ign: session.user.ign }}
                         onSubmit={(values) => {
@@ -139,7 +139,7 @@ const Settings = () => {
                         }
                     </Formik>
                 </div>
-                <div className="flex flex-col gap-2 w-1/2 rounded-md border bg-red-100 border-red-700 mt-4 px-4 pb-4">
+                <div className="flex flex-col gap-2 w-full md:w-1/2 rounded-md border bg-red-100 border-red-700 mt-4 px-4 pb-4">
                     <div className="flex flex-row items-center mt-2">
                         <div className="">
                             <ExclamationTriangleIcon className="w-8 text-red-700"></ExclamationTriangleIcon>

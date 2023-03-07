@@ -53,7 +53,7 @@ function AddIGN({ isOpen, setIsOpen, session }) {
                                     Finalize account creation
                                 </Dialog.Title>
                                 <div className="flex flex-row justify-center">
-                                    <div className="w-3/4 flex flex-col gap-2">
+                                    <div className="w-full md:w-3/4 flex flex-col gap-2">
                                         <div className="text-center">
                                             What is your Star Realms IGN (in-game name) ?
                                         </div>

@@ -5,9 +5,12 @@ import { authOptions } from "./api/auth/[...nextauth]"
 import { useSession } from "next-auth/react"
 const { MongoClient } = require('mongodb');
 import GameCard from '../components/gameCard.js'
+import AddGameModal from '../components/dialogs/addGameModal.js'
+import { useState } from 'react'
 
 const Games = ({ games, user }) => {
     const { data: session } = useSession()
+    const [isAddGameOpen, setIsAddGameOpen] = useState(false)
     // If no session exists, display access denied message
     if (!session) {
         return (
@@ -24,7 +27,7 @@ const Games = ({ games, user }) => {
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <div className="flex flex-col gap-1 w-2/3">
+            <div className="flex flex-col gap-1 w-full md:w-2/3">
                 <div className="flex flex-row flex-wrap bg-scifi3 rounded-md gap-2 p-4">
                     {
                         games.map((game, index) => {
@@ -42,6 +45,18 @@ const Games = ({ games, user }) => {
                     }
                 </div>
             </div>
+            {!isAddGameOpen &&
+                <div className="md:hidden">
+                    <div className="z-20 fixed bottom-0 left-0 right-0">
+                        <div className="flex justify-end">
+                            <button type="button" onClick={() => setIsAddGameOpen(true)} className="m-3 bg-scifi3 border border-scifi4 ring-scifi-2 drop-shadow-md hover:ring font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center">
+                                <svg className="w-8 h-8" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            }
+            <AddGameModal isOpen={isAddGameOpen} setIsOpen={setIsAddGameOpen}></AddGameModal>
         </Layout>
     )
 }
