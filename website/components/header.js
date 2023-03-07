@@ -60,7 +60,7 @@ export default function Header() {
     }, [session, status])
     return (
         <>
-            <header className="z-10 bg-white flex flex-row drop-shadow-md lg:drop-shadow-scifi5 justify-center p-2 md:p-4 gap-1">
+            <header className="sticky top-0 z-10 bg-white flex flex-row drop-shadow-md lg:drop-shadow-scifi5 justify-center p-2 md:p-4 gap-1">
                 <p onClick={() => { router.push('/') }} className="text-2xl text-scifi5 font-semibold tracking-widest hover:ring ring-scifi-2 rounded-md">
                     <span className="bg-scifi5 text-white mx-2 text-2xl px-1">
                         SR

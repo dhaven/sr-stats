@@ -119,8 +119,8 @@ const Settings = () => {
                                     <p className="font-medium m-2">
                                         In Game Name (IGN)
                                     </p>
-                                    <div className="flex flex-row mx-2 justify-between gap-2">
-                                        <Field id="ign" name="ign" as="input" className="grow px-2 border border-scifi4 ring-scifi2 hover:ring text-sm rounded-lg resize-none" />
+                                    <div className="flex flex-row mx-2 justify-between gap-2 w-full">
+                                        <Field id="ign" name="ign" as="input" className="w-3/4 px-2 border border-scifi4 ring-scifi2 hover:ring text-sm rounded-lg resize-none" />
                                         <button type="submit" className="w-min font-medium bg-scifi3 text-white text-sm text-bold p-1 lg:px-4 lg:py-2 border items-center drop-shadow-md border-scifi4 ring-scifi-2 hover:ring rounded-lg">
                                             Update
                                         </button>
