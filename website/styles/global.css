@@ -14,9 +14,6 @@ body {
   margin: 0;
   line-height: 1.6;
   font-size: 18px;
-  display: block;
-  overflow: auto;
-  height: 100%;
 }
 
 * {
