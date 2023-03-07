@@ -22,7 +22,7 @@ function Loading() {
     })
 
     return loading && (
-        <div className="z-40 absolute inset-0 w-full h-full backdrop-brightness-50 flex justify-center items-center">
+        <div className="z-40 fixed inset-0 w-full h-full backdrop-brightness-50 flex justify-center items-center">
             <p className="py-4 px-8 bg-scifi1 rounded-xl border-2 border-scifi4">
                 Loading....
             </p>

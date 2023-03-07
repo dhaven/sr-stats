@@ -2,29 +2,29 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import { getServerSession } from "next-auth/next"
 import { authOptions } from "./api/auth/[...nextauth]"
+import { useSession } from "next-auth/react"
 const { MongoClient } = require('mongodb');
-import { useState } from 'react'
-import AddGameModal from '../components/dialogs/addGameModal.js'
 import GameCard from '../components/gameCard.js'
-import { PlusIcon } from '@heroicons/react/24/outline'
 
 const Games = ({ games, user }) => {
-    let [isAddGameOpen, setAddGameIsOpen] = useState(false)
+    const { data: session } = useSession()
+    // If no session exists, display access denied message
+    if (!session) {
+        return (
+            <Layout>
+                <Head>
+                    <title>SR Stats - settings</title>
+                </Head>
+                <p className="p-4 bg-white rounded-lg border-2 border-scifi4">Nothing to see here...</p>
+            </Layout>
+        )
+    }
     return (
         <Layout>
             <Head>
                 <title>{siteTitle}</title>
             </Head>
             <div className="flex flex-col gap-1 w-2/3">
-                <div className="flex flex-row justify-end">
-                    <button onClick={(e) => setAddGameIsOpen(true)} className="inline-flex items-center bg-white text-sm text-scifi5 p-1 lg:p-2 border drop-shadow-md border-scifi4 ring-scifi2 hover:ring rounded-lg">
-                        <PlusIcon
-                            className="mr-2 h-5 w-5 border-2 rounded-full border-scifi5"
-                            aria-hidden="true"
-                        />
-                        add game
-                    </button>
-                </div>
                 <div className="flex flex-row flex-wrap bg-scifi3 rounded-md gap-2 p-4">
                     {
                         games.map((game, index) => {
@@ -42,15 +42,17 @@ const Games = ({ games, user }) => {
                     }
                 </div>
             </div>
-            <AddGameModal isOpen={isAddGameOpen} setIsOpen={setAddGameIsOpen}></AddGameModal>
         </Layout>
     )
 }
 
 export async function getServerSideProps(context) {
     const session = await getServerSession(context.req, context.res, authOptions)
-    //if user is not logged in redirect him to homepage. This page should not be visible
-    //if you are not signed in.
+    if(!session){
+        return {
+            props: { },
+        }
+    }
     const DBclient = new MongoClient(process.env.MONGODB_URI,
         {
             auth: {

@@ -59,13 +59,7 @@ export default function SRLogInput() {
               .then(response => response.json())
               .then(data => {
                 if (data['status'] == 'success') {
-                  //check here if the user is logged in
-                  //if he isn't prompt him the create an account so that the game is saved
-                  //also save to local storage the game ids so that if the user does decide
-                  //to create an account we can update his account with the games from local
-                  //storage
                   setGameSummary(data['summary'])
-                  console.log(data['summary'])
                   setIsUploadCompleted(true)
                 } else {
                   console.error('Error:', data['status']);

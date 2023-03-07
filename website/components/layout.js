@@ -10,7 +10,7 @@ export const appVersion = '1.0.0'
 
 export default function Layout({ children }) {
   return (
-    <div className="bg-scifi w-full h-full flex flex-col bg-repeat-y bg-center">
+    <div className="bg-scifi w-full min-h-full flex flex-col bg-repeat-y bg-center">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta

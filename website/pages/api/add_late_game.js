@@ -5,8 +5,6 @@ const { MongoClient } = require('mongodb');
 export default async function handler(req, res) {
     const session = await getServerSession(req, res, authOptions)
     if (session) {
-        console.log(session.user.email)
-        console.log(req.body)
         //add games array field to user object
         const DBclient = new MongoClient(process.env.MONGODB_URI,
             {

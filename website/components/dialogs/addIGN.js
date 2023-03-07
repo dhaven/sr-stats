@@ -3,7 +3,7 @@ import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 import { Formik, Form, Field } from "formik"
 
-function AddIGN({ isOpen, setIsOpen }) {
+function AddIGN({ isOpen, setIsOpen, session }) {
     function closeModal() {
         setIsOpen(false)
     }
@@ -68,7 +68,7 @@ function AddIGN({ isOpen, setIsOpen }) {
                                                     body: JSON.stringify(values.ign),
                                                 })
                                                     .then(data => {
-                                                        //console.log(data)
+                                                        session.user.ign = values.ign
                                                         closeModal()
                                                     })
                                                     .catch((error) => {
