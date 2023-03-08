@@ -23,13 +23,12 @@ function CardBase({ file, card, count, isScrapped }) {
     return (
         <div>
             <div onClick={() => setIsOpen(true)} className={`${isScrapped ? 'bg-red-600/70 hover:bg-red-700/70' : 'hover:bg-slate-300/70'} relative group flex flex-col w-24 h-16 sm:h-24 sm:w-32 m-2 border-2 border-scifi4 border-double rounded-sm hover:ring ring-scifi2`}>
-                <p className="z-10 bg-white/70 text-md text-center rounded-t-sm leading-snug">{card['name']}</p>
                 <div className="absolute inset-0 flex items-center justify-center">
                     <Base />
                 </div>
                 <div className="absolute inset-0 flex items-end justify-center">
                     {
-                        card['faction'].map((faction,index) =>{
+                        card['faction'].map((faction, index) => {
                             if (faction == "Blob") {
                                 return <Blob key={index} className="bg-blob border-2 border-black rounded-full -mx-2 m-1 p-0.5 w-7 h-7" />
                             } else if (faction == "Trade Federation") {
@@ -42,9 +41,7 @@ function CardBase({ file, card, count, isScrapped }) {
                         })
                     }
                 </div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                    <p className="z-20 hidden group-hover:flex rounded-full bg-white border border-black w-10 h-10 items-center justify-center">{count}x</p>
-                </div>
+                <p className="absolute inset-x-0 top-0 bg-white/70 text-md text-center rounded-t-sm leading-snug">{card['name']}</p>
             </div>
             <SRCard type="base" filename={filename} isOpen={isOpen} setIsOpen={setIsOpen}></SRCard>
         </div>

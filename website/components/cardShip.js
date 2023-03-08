@@ -12,7 +12,6 @@ function CardShip({ file, card, count, isScrapped }) {
     return (
         <div>
             <div onClick={() => setIsOpen(true)} className={`${isScrapped ? 'bg-red-600/70 hover:bg-red-700/70' : 'hover:bg-slate-300/70'} relative group flex flex-col w-16 h-24 sm:w-24 sm:h-32 m-2 border-2 border-scifi4 border-double hover:ring ring-scifi2`}>
-                <p className="z-10 bg-white/70 text-md text-center rounded-t-sm leading-snug">{card['name']}</p>
                 <div className="absolute inset-0 flex items-center justify-center">
                     <Rocket />
                 </div>
@@ -34,6 +33,7 @@ function CardShip({ file, card, count, isScrapped }) {
                 <div className="absolute inset-0 flex items-center justify-center">
                     <p className="hidden lg:group-hover:flex rounded-full bg-white border border-black w-10 h-10 items-center justify-center">{count}x</p>
                 </div>
+                <p className="absolute inset-x-0 top-0 bg-white/70 text-md text-center rounded-t-sm leading-snug">{card['name']}</p>
             </div>
             <SRCard type="ship" filename={filename} isOpen={isOpen} setIsOpen={setIsOpen}></SRCard>
         </div>

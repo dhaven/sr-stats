@@ -64,6 +64,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
     return (
         <Layout>
             <Head>
+                <title>SR Stats - {`${winner} vs ${loser}`}</title>
                 <meta name="og:title" content={`${winner} vs ${loser}`} />
                 <meta name="og:image" content={`${process.env.NEXT_PUBLIC_BASE_URL}/api/og?id=${id}`} />
                 <meta name="og:image:width" content="1200" />

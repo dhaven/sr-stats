@@ -8,7 +8,7 @@ const Drawer = ({ setIsOpen, loginDialog }) => {
     const { data: session, status } = useSession()
     console.log(session)
     return (
-        <div className="bg-scifi1 border-r-2 border-scifi5 h-full flex flex-col">
+        <div className="z-20 bg-scifi1 border-r-2 border-scifi5 h-full flex flex-col">
             <div className="flex flex-row justify-end m-4">
                 <XMarkIcon
                     className="h-10 w-10 font-medium text-sm text-bold px-2 py-2 border drop-shadow-md border-scifi4 ring-scifi-2 hover:ring rounded-full"
