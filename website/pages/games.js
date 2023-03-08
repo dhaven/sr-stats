@@ -16,7 +16,7 @@ const Games = ({ games, user }) => {
         return (
             <Layout>
                 <Head>
-                    <title>SR Stats - settings</title>
+                    <title>SR Stats - games</title>
                 </Head>
                 <p className="p-4 bg-white rounded-lg border-2 border-scifi4">Nothing to see here...</p>
             </Layout>
@@ -25,10 +25,10 @@ const Games = ({ games, user }) => {
     return (
         <Layout>
             <Head>
-                <title>{siteTitle}</title>
+                <title>SR Stats - games</title>
             </Head>
             <div className="flex flex-col gap-1 w-full md:w-2/3">
-                <div className="flex flex-row flex-wrap bg-scifi3 rounded-md gap-2 p-4">
+                <div className="flex flex-row flex-wrap md:bg-scifi3 rounded-md gap-2 p-4">
                     {
                         games.map((game, index) => {
                             return (
@@ -38,9 +38,9 @@ const Games = ({ games, user }) => {
                     }
                     {
                         games.length == 0 && (
-                            <div>
+                            <p className="text-sm font-medium bg-scifi1 border-2 border-scifi5 p-4 rounded-md">
                                 No games found. Try uploading a game first
-                            </div>
+                            </p>
                         )
                     }
                 </div>
@@ -83,10 +83,11 @@ export async function getServerSideProps(context) {
         .project({ 'games': 1 })
     if (await cursor.hasNext()) {
         let val = await cursor.next()
-        console.log(val)
         let games = val.games || []
+        let user = session.user.ign || session.user.email
+        console.log(games)
         return {
-            props: { games, user: session.user.ign },
+            props: { games, user: user },
         }
     }
 }

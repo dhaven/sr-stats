@@ -1,19 +1,24 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Layout, { siteTitle } from '../components/layout'
+import AddGameModal from '../components/dialogs/addGameModal.js'
 import { useSession } from "next-auth/react"
+import { authOptions } from "./api/auth/[...nextauth]"
 import Image from 'next/image'
 import { Formik, Form, Field } from "formik"
+const { MongoClient, ObjectId } = require('mongodb');
+import { getServerSession } from "next-auth/next"
 import { useState } from 'react'
 import { CheckCircleIcon, ExclamationTriangleIcon, UserCircleIcon, ExclamationCircleIcon } from '@heroicons/react/24/outline'
 
-const Settings = () => {
+const Settings = ({ provider }) => {
     const { data: session } = useSession()
     const router = useRouter()
     const [isSuccess, setIsSuccess] = useState(false)
     const [isError, setIsError] = useState(false)
     const [deleteMessage, setDeleteMessage] = useState("Delete account")
     const [deleteInProgress, setDeleteInProgress] = useState(false)
+    const [isAddGameOpen, setIsAddGameOpen] = useState(false)
     // If no session exists, display access denied message
     if (!session) {
         return (
@@ -28,7 +33,7 @@ const Settings = () => {
     const reloadSession = () => {
         const event = new Event("visibilitychange");
         document.dispatchEvent(event);
-      };
+    };
     const delete_account = () => {
         setIsError(false)
         setDeleteInProgress(true)
@@ -88,7 +93,7 @@ const Settings = () => {
                     {session.user.email}
                 </p>
                 <p className="italic text-sm font-medium">
-                    Signed in with Google
+                    Signed in with {provider.replace(/\b\w/g, l => l.toUpperCase())}
                 </p>
                 <div className="mt-4 w-full md:w-1/2">
                     <Formik
@@ -171,8 +176,54 @@ const Settings = () => {
 
                 </div>
             </div>
+            {!isAddGameOpen &&
+                <div className="md:hidden">
+                    <div className="z-20 fixed bottom-0 left-0 right-0">
+                        <div className="flex justify-end">
+                            <button type="button" onClick={() => setIsAddGameOpen(true)} className="m-3 bg-scifi3 border border-scifi4 ring-scifi-2 drop-shadow-md hover:ring font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center">
+                                <svg className="w-8 h-8" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            }
+            <AddGameModal isOpen={isAddGameOpen} setIsOpen={setIsAddGameOpen}></AddGameModal>
         </Layout>
     )
+}
+
+export async function getServerSideProps(context) {
+    const session = await getServerSession(context.req, context.res, authOptions)
+    if(!session){
+        return {
+            props: { },
+        }
+    }
+    const DBclient = new MongoClient(process.env.MONGODB_URI,
+        {
+            auth: {
+                username: process.env.MONGODB_USERNAME,
+                password: process.env.MONGODB_PASSWORD
+            },
+            authSource: '$external',
+            authMechanism: 'SCRAM'
+        });
+    const db = DBclient.db("starrealms")
+    const cursor = db.collection('accounts')
+        .find({ userId: ObjectId(session.user.id) })
+        .project({ 'provider': 1 })
+    if (await cursor.hasNext()) {
+        let val = await cursor.next()
+        let provider = val.provider || "email"
+        console.log(provider)
+        return {
+            props: { provider },
+        }
+    }else{
+        return {
+            props: { provider: "email" },
+        }
+    }
 }
 
 export default Settings

@@ -17,7 +17,6 @@ import { getChart } from '../../lib/helper/enhanceBattle'
 import { getDiscardChart } from '../../lib/helper/enhanceBattle'
 import { getTemporalDeck } from '../../lib/helper/enhanceBattle'
 import { getDeckSizeChart } from '../../lib/helper/enhanceBattle'
-import { arrowUturnLeft } from '@heroicons/react/24/outline'
 
 //mobile UIs
 import GameResult from '../../components/mobile/gameResult'
@@ -149,7 +148,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                     </a>
                 </div>
             </div>
-            <div className="flex lg:hidden flex-col w-screen gap-4">
+            <div className="flex relative lg:hidden flex-col w-screen gap-4">
                 {
                     srScreen == 0 && (
                         <GameResult
@@ -215,7 +214,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                         </div>
                     </a>
                 </div>
-                <div className="z-20 sticky bottom-0 left-0 right-0">
+                <div className="z-20 absolute sticky bottom-0 left-0 right-0">
                     {!isAddGameOpen &&
                         <div className="flex justify-end">
                             <button type="button" onClick={openAddGameModal} className="m-3 bg-scifi3 border border-scifi4 ring-scifi-2 drop-shadow-md hover:ring font-medium rounded-full text-md p-2.5 text-center inline-flex items-center">

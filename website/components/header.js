@@ -73,7 +73,7 @@ export default function Header() {
                         aria-hidden="true"
                     />
                 </button>
-                <div className={`${showSidebar ? "translate-x-0 " : "-translate-x-full"} absolute top-0 left-0 h-full w-2/3 md:hidden min-h-screen`}>
+                <div className={`${showSidebar ? "translate-x-0 " : "-translate-x-full"} ease-in-out duration-300 absolute top-0 left-0 h-full w-2/3 md:hidden min-h-screen`}>
                     <Drawer setIsOpen={setShowSidebar} loginDialog={setIsLoginOpen}/>
                 </div>
                 <div className="hidden md:block absolute top-0 right-0 m-3">

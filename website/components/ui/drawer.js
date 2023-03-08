@@ -8,10 +8,10 @@ const Drawer = ({ setIsOpen, loginDialog }) => {
     const { data: session, status } = useSession()
     console.log(session)
     return (
-        <div className="bg-scifi1 border-r-2 border-scifi3 h-full flex flex-col">
+        <div className="bg-scifi1 border-r-2 border-scifi5 h-full flex flex-col">
             <div className="flex flex-row justify-end m-4">
                 <XMarkIcon
-                    className="h-8 w-8 font-medium text-sm text-bold px-2 py-2 border drop-shadow-md border-scifi4 ring-scifi-2 hover:ring rounded-full"
+                    className="h-10 w-10 font-medium text-sm text-bold px-2 py-2 border drop-shadow-md border-scifi4 ring-scifi-2 hover:ring rounded-full"
                     aria-hidden="true"
                     onClick={(e) => { setIsOpen(false) }}
                 />
@@ -50,7 +50,7 @@ const Drawer = ({ setIsOpen, loginDialog }) => {
                     </div>
                     <Link
                         href="/games"
-                        className="bg-scifi1 border-t-2 border-scifi3 text-scifi3 font-medium inline-flex group flex w-full justify-center items-center px-2 py-4 text-sm"
+                        className="bg-scifi1 border-t-2 border-scifi5 text-scifi5 font-medium inline-flex group flex w-full justify-center items-center px-2 py-4 text-sm"
                     >
                         <TrophyIcon
                             className="text-scifi3 mr-2 h-5 w-5"
@@ -60,7 +60,7 @@ const Drawer = ({ setIsOpen, loginDialog }) => {
                     </Link>
                     <Link
                         href="/settings"
-                        className="bg-scifi1 border-t-2 border-scifi3 text-scifi3 font-medium inline-flex group flex w-full justify-center items-center px-2 py-4 text-sm"
+                        className="bg-scifi1 border-t-2 border-scifi5 text-scifi5 font-medium inline-flex group flex w-full justify-center items-center px-2 py-4 text-sm"
                     >
                         <WrenchScrewdriverIcon
                             className="text-scifi3 mr-2 h-5 w-5"
@@ -73,7 +73,7 @@ const Drawer = ({ setIsOpen, loginDialog }) => {
                             e.preventDefault()
                             signOut({ callbackUrl: `${process.env.NEXT_PUBLIC_BASE_URL}` })
                         }}
-                        className="bg-scifi1 border-t-2 border-b-2 border-scifi3 text-scifi3 font-medium inline-flex group flex w-full justify-center items-center px-2 py-4 text-sm"
+                        className="bg-scifi1 border-t-2 border-b-2 border-scifi5 text-scifi5 font-medium inline-flex group flex w-full justify-center items-center px-2 py-4 text-sm"
                     >
                         <ArrowRightOnRectangleIcon
                             className="text-scifi3 mr-2 h-5 w-5"
