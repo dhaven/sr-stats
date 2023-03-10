@@ -4,14 +4,7 @@ import FactionPie from '../factionPie'
 import card_list from '../../lib/card_data/cards.js'
 import { useState } from 'react'
 import DeckDetailV2 from '../deckDetailV2'
-
-// import dynamic method from next
-import dynamic from 'next/dynamic';
-// import your component with dynamic and disable SSR
-const ReactSlider = dynamic(
-    () => import('react-slider'),
-    { ssr: false }
-);
+import Slider from '@mui/material/Slider';
 
 function PlayerDetail({ name, authority, setSrScreen, decks }) {
     let [turn, setTurn] = useState(decks.length - 1)
@@ -58,17 +51,19 @@ function PlayerDetail({ name, authority, setSrScreen, decks }) {
                         </div>
                     </div>
                 </div>
-                <div className="p-2">
-                    <ReactSlider
-                        className="horizontal-slider w-full h-6"
-                        thumbClassName="example-thumb-mobile rounded-xl text-sm"
-                        trackClassName="example-track-mobile"
+                <div className="p-2 mx-4">
+                    <Slider
+                        defaultValue={turn}
+                        className="text-scifi4"
+                        valueLabelDisplay="auto"
+                        valueLabelFormat={(value, index) => {return `turn ${value}`}}
+                        step={1}
+                        marks
+                        min={0}
                         max={decks.length - 1}
-                        defaultValue={decks.length - 1}
-                        onChange={(value, index) => {
+                        onChange={(event, value) => {
                             setTurn(value)
                         }}
-                        renderThumb={(props, state) => <div {...props}>turn {state.valueNow}</div>}
                     />
                 </div>
             </div>
