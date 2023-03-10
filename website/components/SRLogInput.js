@@ -60,6 +60,7 @@ export default function SRLogInput() {
               .then(data => {
                 if (data['status'] == 'success') {
                   setGameSummary(data['summary'])
+                  setIsLoading(false)
                   setIsUploadCompleted(true)
                 } else {
                   console.error('Error:', data['status']);

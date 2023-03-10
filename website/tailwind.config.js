@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors:{
+      colors: {
         winner: '#3d5a80',
         winnerlight: "#c5d2e3",
         winnerdark: "#375173",
@@ -26,7 +26,7 @@ module.exports = {
         'scifi3': '0 10px 8px rgba(78, 121, 136, 0.4)',
         'scifi4': '0 10px 8px rgba(0, 80, 102, 0.3)',
         'scifi5': '0 10px 8px rgba(0, 36, 57, 0.5)',
-        'white' : '0 12px 10px rgba(250, 250, 250, 0.8)'
+        'white': '0 12px 10px rgba(250, 250, 250, 0.8)'
       },
       backgroundImage: {
         'scifi': "linear-gradient(rgba(228, 239, 240, 0.4), rgba(228, 239, 240, 0.4)), url('/images/star-sky.jpg')",

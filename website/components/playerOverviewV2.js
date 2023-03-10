@@ -13,8 +13,8 @@ function PlayerOverviewV2({ decks, name, authority, setTurn, turn }) {
             <div className="w-full flex flex-row items-center m-4">
                 <Slider
                     defaultValue={turn}
-                    className="text-scifi4"
                     valueLabelDisplay="auto"
+                    className="text-scifi4"
                     valueLabelFormat={(value, index) => {return `turn ${value}`}}
                     step={1}
                     marks

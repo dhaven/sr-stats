@@ -18,10 +18,11 @@ export default async function handler(req, res) {
         const db = DBclient.db("starrealms")
         let games = JSON.parse(req.body)
         for (let i = 0; i < games.length; i++) {
+            console.log("adding game for user")
             try {
                 await db.collection("users").updateOne(
                     { email: session.user.email },
-                    { $push: { games: games[i] } } //check for duplicate IDs with $cond operator
+                    { $addToSet: { games: games[i] } }
                 );
             } catch (error) {
                 console.log(error)

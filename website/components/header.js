@@ -28,6 +28,10 @@ export default function Header() {
     let [isAddIGNOpen, setIsAddIGNOpen] = useState(false)
     const [showSidebar, setShowSidebar] = useState(false)
     let isUpdatingUserGames = false
+    const reloadSession = () => {
+        const event = new Event("visibilitychange");
+        document.dispatchEvent(event);
+    };
     useEffect(() => {
         //console.log(session)
         if (session && status != "loading" && session.user.ign === undefined) {
@@ -168,6 +172,7 @@ export default function Header() {
                                                             <button
                                                                 onClick={(e) => {
                                                                     e.preventDefault()
+                                                                    reloadSession()
                                                                     signOut({ callbackUrl: `${process.env.NEXT_PUBLIC_BASE_URL}` })
                                                                 }}
                                                                 className={`${active ? 'bg-scifi3 text-white' : 'text-gray-900'
