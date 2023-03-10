@@ -39,6 +39,9 @@ export const authOptions = {
             session.user.id = user.id
             return session
         }
+    },
+    pages:{
+        signIn: '/'
     }
 }
 
