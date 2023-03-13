@@ -44,7 +44,6 @@ export default function Header() {
             isUpdatingUserGames = true
             let games = localStorage.getItem('games')
             if (games != null) {
-                console.log("updating user with list of games")
                 fetch('/api/add_late_game', {
                     method: 'POST',
                     headers: {

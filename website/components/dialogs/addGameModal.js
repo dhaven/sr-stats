@@ -23,7 +23,6 @@ export default function AddGameModal({ isOpen, setIsOpen }) {
   useEffect(() => {
     if(isUploadCompleted && (status == "unauthenticated")){
       setIsUploadCompleted(false) //switch back to false to make sure we don't store the game too many times
-      console.log("adding game to local storage")
       //store the game in cache
       let games = localStorage.getItem('games')
       if(games != null){
@@ -38,8 +37,6 @@ export default function AddGameModal({ isOpen, setIsOpen }) {
       //ask user to login so that we can link a user to the game
       setOpenLoginInvite(true)
     }else if(isUploadCompleted && (status == "authenticated")){
-      console.log(status)
-      console.log(session)
       //if user is already logged in then just redirect 
       router.push(`/game/${gameSummary['id']}`)
     }

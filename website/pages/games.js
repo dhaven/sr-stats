@@ -85,7 +85,6 @@ export async function getServerSideProps(context) {
         let val = await cursor.next()
         let games = val.games || []
         let user = session.user.ign || session.user.email
-        console.log(games)
         return {
             props: { games, user: user },
         }

@@ -2,8 +2,6 @@ import Link from 'next/link'
 import Loading from './loading.js'
 
 function GameCard({ game, user }) {
-    console.log(user)
-    console.log(game)
     //true if logged in user is a player of the game
     let isPlayer = (game) => {
         return game['winner'] == user || game['loser'] == user || game['winner'] == "Player" || game['loser'] == "Player"

@@ -49,7 +49,6 @@ const Settings = ({ provider }) => {
             .then(data => {
                 setDeleteInProgress(false)
                 setDeleteMessage("Delete account")
-                console.log(data)
                 if (data['status'] == 'success') {
                     localStorage.clear()
                     reloadSession()
@@ -100,7 +99,7 @@ const Settings = ({ provider }) => {
                         initialValues={{ ign: session.user.ign }}
                         onSubmit={(values) => {
                             setIsSuccess(false)
-                            setIsError(true)
+                            setIsError(false)
                             fetch('/api/update_account', {
                                 method: 'POST', // or 'PUT'
                                 headers: {
@@ -110,7 +109,7 @@ const Settings = ({ provider }) => {
                             })
                                 .then(data => {
                                     setIsSuccess(true)
-                                    closeModal()
+                                    reloadSession()
                                 })
                                 .catch((error) => {
                                     console.error('Error:', error);
@@ -215,7 +214,6 @@ export async function getServerSideProps(context) {
     if (await cursor.hasNext()) {
         let val = await cursor.next()
         let provider = val.provider || "email"
-        console.log(provider)
         return {
             props: { provider },
         }

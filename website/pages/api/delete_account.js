@@ -26,7 +26,6 @@ export default async function handler(req, res) {
                 .project({ games: 1, _id: 0 })
             while( await cursor.hasNext()){
                 let { games } = await cursor.next() | []
-                console.log(games)
                 for(let i = 0; i < games?.length; i++){
                     const query = { _id: ObjectId(games[i].id) }
                     await db.collection("battle").deleteOne(query)

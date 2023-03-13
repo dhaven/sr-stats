@@ -6,7 +6,6 @@ import { UserCircleIcon, TrophyIcon, WrenchScrewdriverIcon, ArrowRightOnRectangl
 
 const Drawer = ({ setIsOpen, loginDialog }) => {
     const { data: session, status } = useSession()
-    console.log(session)
     return (
         <div className="z-20 bg-scifi1 border-r-2 border-scifi5 h-full flex flex-col">
             <div className="flex flex-row justify-end m-4">
