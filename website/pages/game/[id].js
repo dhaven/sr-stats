@@ -17,6 +17,7 @@ import { getChart } from '../../lib/helper/enhanceBattle'
 import { getDiscardChart } from '../../lib/helper/enhanceBattle'
 import { getTemporalDeck } from '../../lib/helper/enhanceBattle'
 import { getDeckSizeChart } from '../../lib/helper/enhanceBattle'
+import Link from 'next/link'
 
 //mobile UIs
 import GameResult from '../../components/mobile/gameResult'
@@ -52,9 +53,9 @@ export default function Game({ winner, loser, extensions, events, players, winCo
         setSrScreen(2)
         setIsWinner(player == winner)
     }
-    let sortWinnerFirst = function(players, chartData){
+    let sortWinnerFirst = function (players, chartData) {
         //0console.log(players)
-        let sortedPlayers = players.sort((x,y) => {
+        let sortedPlayers = players.sort((x, y) => {
             let lastTurnX = chartData["authorityData"][x].length - 1
             let lastTurnY = chartData["authorityData"][y].length - 1
             return chartData["authorityData"][y][lastTurnY] - chartData["authorityData"][x][lastTurnX]
@@ -97,7 +98,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                     {srScreen == 0 &&
                         <div className="flex flex-row mx-2 px-4 gap-5 bg-scifi4/80 pb-2 rounded-bl-lg rounded-br-lg">
                             {
-                                sortWinnerFirst(players,chartData).map((oneKey, i) => {
+                                sortWinnerFirst(players, chartData).map((oneKey, i) => {
                                     let currentTurn = i == 0 ? turnA : turnB
                                     return (
                                         <div key={i} className="flex flex-col bg-scifi1 w-1/2 rounded-md border-2 border-scifi5">
@@ -134,22 +135,8 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                         </div>
                     }
                 </div>
-                <div className="flex sm:hidden justify-start mx-2">
-                    <a href="https://discord.gg/q4kqH775FA" target="_blank">
-                        <div className="flex bg-white rounded-lg py-2 px-1 border-black border">
-                            <div className="flex items-center mx-2">
-                                <Image
-                                    src={discord_img}
-                                    height="24"
-                                    width="24"
-                                />
-                            </div>
-                            <p>Join the community! </p>
-                        </div>
-                    </a>
-                </div>
             </div>
-            <div className="flex relative lg:hidden flex-col w-screen gap-4">
+            <div className="flex relative md:hidden flex-col w-screen gap-4">
                 {
                     srScreen == 0 && (
                         <GameResult
@@ -163,7 +150,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                     )
                 }
                 {
-                    srScreen == 0 && sortWinnerFirst(players,chartData).map((oneKey, i) => {
+                    srScreen == 0 && sortWinnerFirst(players, chartData).map((oneKey, i) => {
                         let lastTurn = decks.length - 1
                         return (
                             <div key={i} onClick={(e) => { updateScreen(oneKey) }}>
@@ -201,19 +188,36 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                         ></PlayerDetail>
                     )
                 }
-                <div className="flex justify-start mx-2">
-                    <a href="https://discord.gg/q4kqH775FA" target="_blank">
-                        <div className="flex bg-white rounded-lg py-2 px-1 border-black border">
-                            <div className="flex items-center mx-2">
-                                <Image
-                                    src={discord_img}
-                                    height="24"
-                                    width="24"
-                                />
+                <div className="flex flex-row w-3/4">
+                    <div className="flex m-2">
+                        <a href="https://discord.gg/q4kqH775FA" target="_blank">
+                            <div className="flex bg-white rounded-lg border-black border">
+                                <div className="flex items-center mx-1">
+                                    <Image
+                                        src={discord_img}
+                                        height="24"
+                                        width="24"
+                                    />
+                                </div>
+                                <p className="text-sm font-medium text-scifi5">Join the community! </p>
                             </div>
-                            <p>Join the community! </p>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
+                    <div className="flex items-center text-sm font-medium underline text-scifi1">
+                        <Link
+                            href="/privacy"
+                            target="_blank"
+                            className="flex justify-center"
+                        >
+                            Privacy policy
+                        </Link>
+                        <Link
+                            href="/tos"
+                            target="_blank"
+                        >
+                            Terms of service
+                        </Link>
+                    </div>
                 </div>
                 <div className="z-20 absolute sticky bottom-0 left-0 right-0">
                     {!isAddGameOpen &&

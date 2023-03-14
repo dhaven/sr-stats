@@ -4,11 +4,14 @@ import Image from 'next/image'
 import discord_img from '../public/images/discord.png'
 import Header from './header.js'
 import Loading from './loading.js'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export const siteTitle = 'Star Realms stats'
 export const appVersion = '1.0.0'
 
 export default function Layout({ children }) {
+  const { pathname } = useRouter()
   return (
     <div className="bg-scifi w-full min-h-full flex flex-col bg-repeat-y bg-center">
       <Head>
@@ -25,20 +28,73 @@ export default function Layout({ children }) {
         <Loading></Loading>
       </main>
       <Toast />
-      <footer className="hidden md:flex">
-        <div className="flex justify-center gap-2 m-2">
-          <a href="https://discord.gg/q4kqH775FA" target="_blank">
-            <div className="flex bg-white rounded-lg py-2 px-1 border-black border">
-              <div className="flex items-center mx-2">
-                <Image
-                  src={discord_img}
-                  height="24"
-                  width="24"
-                />
+      <footer className="flex">
+        <div className="flex md:hidden">
+          {
+            pathname != "/game/[id]" &&
+            <div className="flex flex-row w-3/4">
+              <div className="flex m-2">
+                <a href="https://discord.gg/q4kqH775FA" target="_blank">
+                  <div className="flex bg-white rounded-lg border-black border">
+                    <div className="flex items-center mx-1">
+                      <Image
+                        src={discord_img}
+                        height="24"
+                        width="24"
+                      />
+                    </div>
+                    <p className="text-sm font-medium text-scifi5">Join the community! </p>
+                  </div>
+                </a>
               </div>
-              <p>Join the community! </p>
+              <div className="flex items-center text-sm font-medium underline text-scifi1">
+                <Link
+                  href="/privacy"
+                  className="flex justify-center"
+                >
+                  Privacy policy
+                </Link>
+                <Link
+                  href="/tos"
+                >
+                  Terms of service
+                </Link>
+              </div>
             </div>
-          </a>
+          }
+        </div>
+        <div className="hidden md:flex w-full">
+          <div className="flex flex-row w-full justify-between">
+            <div className="flex justify-center m-2">
+              <a href="https://discord.gg/q4kqH775FA" target="_blank">
+                <div className="flex bg-white rounded-lg py-2 px-1 border-black border">
+                  <div className="flex items-center mx-2">
+                    <Image
+                      src={discord_img}
+                      height="24"
+                      width="24"
+                    />
+                  </div>
+                  <p className="text:md font-medium text-scifi5">Join the community! </p>
+                </div>
+              </a>
+            </div>
+            <div className="flex justify-end gap-4 items-center text-sm font-medium underline text-scifi1 mx-4">
+              <Link
+                href="/privacy"
+                target="_blank"
+                className="flex justify-center"
+              >
+                Privacy policy
+              </Link>
+              <Link
+                target="_blank"
+                href="/tos"
+              >
+                Terms of service
+              </Link>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

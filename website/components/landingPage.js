@@ -55,20 +55,6 @@ export default function LandingPage() {
                         </div>
                     </div>
                 </div>
-                <div className="flex md:hidden">
-                    <a href="https://discord.gg/q4kqH775FA" target="_blank">
-                        <div className="flex bg-white rounded-lg py-2 px-1 border-black border">
-                            <div className="flex items-center mx-2">
-                                <Image
-                                    src={discord_img}
-                                    height="24"
-                                    width="24"
-                                />
-                            </div>
-                            <p>Join the community! </p>
-                        </div>
-                    </a>
-                </div>
             </div>
             <div className="hidden md:flex md:flex-col w-1/2 gap-4 p-2">
                 <div className="bg-white rounded-lg lg:p-4 w-full drop-shadow-scifi5">
