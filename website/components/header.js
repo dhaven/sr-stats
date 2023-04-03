@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import Link from 'next/link'
-import { signOut, useSession } from "next-auth/react"
+import { signIn, signOut, useSession } from "next-auth/react"
 import AddGameModal from './dialogs/addGameModal.js'
 import SRLogin from './dialogs/login.js'
 import AddIGN from './dialogs/addIGN.js'
@@ -32,6 +32,7 @@ export default function Header() {
         const event = new Event("visibilitychange");
         document.dispatchEvent(event);
     };
+
     useEffect(() => {
         //console.log(session)
         if (session && status != "loading" && session.user.ign === undefined) {
@@ -90,7 +91,7 @@ export default function Header() {
                         </button>
                         {
                             !session &&
-                            <button onClick={(e) => { setIsLoginOpen(true) }} className="text-scifi5 font-medium bg-white text-sm px-2 sm:px-4 py-2 border border-scifi4 ring-scifi2 drop-shadow-md hover:ring rounded-lg" type="button">
+                            <button onClick={(e) => { signIn('cognito') }} className="text-scifi5 font-medium bg-white text-sm px-2 sm:px-4 py-2 border border-scifi4 ring-scifi2 drop-shadow-md hover:ring rounded-lg" type="button">
                                 Sign in
                             </button>
                         }
