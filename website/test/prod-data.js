@@ -39,19 +39,20 @@ for(let i = 1; i < battleFilenames.length; i++){
         const response = await s3Client.send(getCommand);
         // The Body object also has 'transformToByteArray' and 'transformToWebStream' methods.
         battleData = await response.Body.transformToString();
+        fs.writeFileSync(battleFilenames[i] + ".txt", battleData, 'utf8');
     } catch (err) {
         console.error(err);
     }
-    await axios
-        .post('http://localhost:3000/api/test', JSON.stringify(battleData),)
-        .then(res => {
-            try {
-                fs.writeFileSync(battleFilenames[i] + ".json", JSON.stringify(res.data, null, 2), 'utf8');
-            } catch (err) {
-                console.log(err)
-            }
-        })
-        .catch(error => {
-            console.error(error);
-        });
+    // await axios
+    //     .post('http://localhost:3000/api/test', JSON.stringify(battleData),)
+    //     .then(res => {
+    //         try {
+    //             fs.writeFileSync(battleFilenames[i] + ".json", JSON.stringify(res.data, null, 2), 'utf8');
+    //         } catch (err) {
+    //             console.log(err)
+    //         }
+    //     })
+    //     .catch(error => {
+    //         console.error(error);
+    //     });
 }

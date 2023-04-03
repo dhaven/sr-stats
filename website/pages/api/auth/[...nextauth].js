@@ -4,20 +4,26 @@ import { MongoDBAdapter } from "@next-auth/mongodb-adapter"
 import clientPromise from "../../../lib/mongodb/client"
 import GoogleProvider from "next-auth/providers/google";
 import FacebookProvider from "next-auth/providers/facebook";
+import CognitoProvider from "next-auth/providers/cognito";
 
 export const authOptions = {
     adapter: MongoDBAdapter(clientPromise, {
         databaseName: 'starrealms'
     }),
     providers: [
-        FacebookProvider({
+        /* FacebookProvider({
             clientId: process.env.FACEBOOK_CLIENT_ID,
             clientSecret: process.env.FACEBOOK_CLIENT_SECRET
         }),
         GoogleProvider({
             clientId: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET
-        }),
+        }), */
+        CognitoProvider({
+            clientId: process.env.COGNITO_CLIENT_ID,
+            clientSecret: process.env.COGNITO_CLIENT_SECRET,
+            issuer: process.env.COGNITO_ISSUER,
+          }),
         EmailProvider({
             server: {
                 host: process.env.SMTP_HOST,
@@ -39,9 +45,6 @@ export const authOptions = {
             session.user.id = user.id
             return session
         }
-    },
-    pages:{
-        signIn: '/'
     }
 }
 

@@ -109,6 +109,7 @@ function SRLogin({ isOpen, setIsOpen }) {
                                             Continue with Google
                                         </button>
                                         */}
+                                        {/*
                                         <button
                                             onClick={() => oAuthLogin("facebook")}
                                             className="w-full inline-flex justify-center items-center text-scifi5 font-medium bg-white text-sm px-2 sm:px-4 py-2 border border-scifi4 ring-scifi2 drop-shadow-md hover:ring rounded-lg"
@@ -123,6 +124,7 @@ function SRLogin({ isOpen, setIsOpen }) {
                                                 OR
                                             </span>
                                         </div>
+                                        */}
                                         <input placeholder="Enter your email" className="w-full p-2 border drop-shadow-md border-scifi4 ring-scifi2 hover:ring text-sm rounded-lg resize-none" type="email" value={email} onChange={handleEmailChange} />
                                         <button
                                             onClick={() => emailLogin(email)}
