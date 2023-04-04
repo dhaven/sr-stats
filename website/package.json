@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@aws-sdk/client-cognito-identity-provider": "^3.303.0",
     "@aws-sdk/client-s3": "^3.81.0",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
@@ -23,6 +24,7 @@
     "jotai": "^1.6.0",
     "mongodb": "^4.13",
     "next": "latest",
+    "next-auth": "^4.21.1",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.0.1",
     "react-dom": "^18.2.0",

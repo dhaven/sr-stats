@@ -91,7 +91,7 @@ export default function Header() {
                         </button>
                         {
                             !session &&
-                            <button onClick={(e) => { signIn('cognito', null, { state: "" }) }} className="text-scifi5 font-medium bg-white text-sm px-2 sm:px-4 py-2 border border-scifi4 ring-scifi2 drop-shadow-md hover:ring rounded-lg" type="button">
+                            <button onClick={(e) => { signIn('auth0', null, {prompt: 'login'}) }} className="text-scifi5 font-medium bg-white text-sm px-2 sm:px-4 py-2 border border-scifi4 ring-scifi2 drop-shadow-md hover:ring rounded-lg" type="button">
                                 Sign in
                             </button>
                         }
@@ -173,11 +173,12 @@ export default function Header() {
                                                                 onClick={(e) => {
                                                                     e.preventDefault()
                                                                     reloadSession()
-                                                                    //signOut({ callbackUrl: `${process.env.NEXT_PUBLIC_BASE_URL}` })
-                                                                    fetch("/api/logout")
+                                                                    signOut({ callbackUrl: `${process.env.NEXT_PUBLIC_BASE_URL}` })
+                                                                    /* fetch("/api/logout")
                                                                         .then(() => {
                                                                             signOut({ callbackUrl: `${process.env.NEXT_PUBLIC_BASE_URL}` });
-                                                                        })
+                                                                            localStorage.clear()
+                                                                        }) */
 
                                                                 }}
                                                                 className={`${active ? 'bg-scifi3 text-white' : 'text-gray-900'

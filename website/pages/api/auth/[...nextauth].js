@@ -2,27 +2,17 @@ import NextAuth from "next-auth"
 import EmailProvider from "next-auth/providers/email"
 import { MongoDBAdapter } from "@next-auth/mongodb-adapter"
 import clientPromise from "../../../lib/mongodb/client"
-import GoogleProvider from "next-auth/providers/google";
-import FacebookProvider from "next-auth/providers/facebook";
-import CognitoProvider from "next-auth/providers/cognito";
+import Auth0Provider from "next-auth/providers/auth0";
 
 export const authOptions = {
     adapter: MongoDBAdapter(clientPromise, {
         databaseName: 'starrealms'
     }),
     providers: [
-        /* FacebookProvider({
-            clientId: process.env.FACEBOOK_CLIENT_ID,
-            clientSecret: process.env.FACEBOOK_CLIENT_SECRET
-        }),
-        GoogleProvider({
-            clientId: process.env.GOOGLE_CLIENT_ID,
-            clientSecret: process.env.GOOGLE_CLIENT_SECRET
-        }), */
-        CognitoProvider({
-            clientId: process.env.COGNITO_CLIENT_ID,
-            clientSecret: process.env.COGNITO_CLIENT_SECRET,
-            issuer: process.env.COGNITO_ISSUER,
+        Auth0Provider({
+            clientId: process.env.AUTH0_CLIENT_ID,
+            clientSecret: process.env.AUTH0_CLIENT_SECRET,
+            issuer: process.env.AUTH0_ISSUER
           }),
         EmailProvider({
             server: {
