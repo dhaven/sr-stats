@@ -1,5 +1,5 @@
 import { XMarkIcon } from '@heroicons/react/24/outline'
-import { signOut, useSession } from "next-auth/react"
+import { signIn, signOut, useSession } from "next-auth/react"
 import Image from 'next/image'
 import Link from 'next/link'
 import { UserCircleIcon, TrophyIcon, WrenchScrewdriverIcon, ArrowRightOnRectangleIcon } from '@heroicons/react/24/outline'
@@ -17,7 +17,7 @@ const Drawer = ({ setIsOpen, loginDialog }) => {
             </div>
             {
                 !session &&
-                <button onClick={() => { setIsOpen(false); loginDialog(true) }} className="m-4 text-scifi5 font-medium bg-white text-sm px-2 sm:px-4 py-2 border border-scifi4 ring-scifi2 drop-shadow-md hover:ring rounded-full" type="button">
+                <button onClick={() => { setIsOpen(false); signIn('auth0', null, {prompt: 'login'}) }} className="m-4 text-scifi5 font-medium bg-white text-sm px-2 sm:px-4 py-2 border border-scifi4 ring-scifi2 drop-shadow-md hover:ring rounded-full" type="button">
                     Sign in
                 </button>
             }
