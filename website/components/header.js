@@ -78,7 +78,7 @@ export default function Header() {
                     />
                 </button>
                 <div className={`${showSidebar ? "translate-x-0 " : "-translate-x-full"} z-20 ease-in-out duration-300 absolute top-0 left-0 h-full w-2/3 md:hidden min-h-screen`}>
-                    <Drawer setIsOpen={setShowSidebar} loginDialog={setIsLoginOpen}/>
+                    <Drawer setIsOpen={setShowSidebar} loginDialog={setIsLoginOpen} />
                 </div>
                 <div className="hidden md:block absolute top-0 right-0 m-3">
                     <div className="flex flex-row gap-2">
@@ -91,7 +91,7 @@ export default function Header() {
                         </button>
                         {
                             !session &&
-                            <button onClick={(e) => { signIn('cognito') }} className="text-scifi5 font-medium bg-white text-sm px-2 sm:px-4 py-2 border border-scifi4 ring-scifi2 drop-shadow-md hover:ring rounded-lg" type="button">
+                            <button onClick={(e) => { signIn('cognito', null, { state: "" }) }} className="text-scifi5 font-medium bg-white text-sm px-2 sm:px-4 py-2 border border-scifi4 ring-scifi2 drop-shadow-md hover:ring rounded-lg" type="button">
                                 Sign in
                             </button>
                         }
@@ -173,7 +173,12 @@ export default function Header() {
                                                                 onClick={(e) => {
                                                                     e.preventDefault()
                                                                     reloadSession()
-                                                                    signOut({ callbackUrl: `${process.env.NEXT_PUBLIC_BASE_URL}` })
+                                                                    //signOut({ callbackUrl: `${process.env.NEXT_PUBLIC_BASE_URL}` })
+                                                                    fetch("/api/logout")
+                                                                        .then(() => {
+                                                                            signOut({ callbackUrl: `${process.env.NEXT_PUBLIC_BASE_URL}` });
+                                                                        })
+
                                                                 }}
                                                                 className={`${active ? 'bg-scifi3 text-white' : 'text-gray-900'
                                                                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
