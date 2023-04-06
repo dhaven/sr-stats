@@ -78,20 +78,20 @@ export default function SRLogInput() {
         {props => (
           <Form className="flex flex-col w-full h-full gap-2">
             <div className="flex flex-row gap-1 w-full h-full">
-              <Field className="w-full h-48 p-2 border drop-shadow-md border-scifi4 ring-scifi-2 hover:ring text-sm rounded-lg resize-none" placeholder={example1} name="battlelog" as="textarea" />
+              <Field className="w-full h-48 p-2 border drop-shadow-md border-scifi4 ring-scifi2 hover:ring text-sm rounded-lg resize-none" placeholder={example1} name="battlelog" as="textarea" />
             </div>
             <div className="flex flex-row gap-1 justify-between w-full">
               <div className="flex flex-row gap-1 w-full">
-                <button type="button" className="bg-white border border-scifi4 ring-scifi-2 drop-shadow-md hover:ring font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center" onClick={(e) => { props.setFieldValue("battlelog", "") }}>
+                <button type="button" className="bg-white border border-scifi4 ring-scifi2 drop-shadow-md hover:ring font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center" onClick={(e) => { props.setFieldValue("battlelog", "") }}>
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
                 </button>
               </div>
               <div className="flex flex-row gap-1">
-                <button type="button" className="w-min text-scifi5 bg-white rounded-lg drop-shadow-md border border-scifi4 ring-scifi-2 hover:ring text-sm p-1 lg:px-4 lg:py-2 text-center inline-flex items-center mr-2" onClick={(e) => { navigator.clipboard.readText().then(cliptext => props.setFieldValue("battlelog", cliptext)) }}>
+                <button type="button" className="w-min text-scifi5 bg-white rounded-lg drop-shadow-md border border-scifi4 ring-scifi2 hover:ring text-sm p-1 lg:px-4 lg:py-2 text-center inline-flex items-center mr-2" onClick={(e) => { navigator.clipboard.readText().then(cliptext => props.setFieldValue("battlelog", cliptext)) }}>
                   <svg className="w-6 h-6 mr-2 -ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
                   Paste
                 </button>
-                <button className="inline-flex w-min font-medium bg-scifi3 text-white text-sm text-bold p-1 lg:px-4 lg:py-2 border items-center drop-shadow-md border-scifi4 ring-scifi-2 hover:ring rounded-lg" type="submit">
+                <button className="inline-flex w-min font-medium bg-scifi3 text-white text-sm text-bold p-1 lg:px-4 lg:py-2 border items-center drop-shadow-md border-scifi4 ring-scifi2 hover:ring rounded-lg" type="submit">
                   {
                     isLoading &&
                     <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">

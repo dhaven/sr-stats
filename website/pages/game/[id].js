@@ -195,21 +195,6 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                             </div>
                         </a>
                     </div>
-                    <div className="flex items-center text-sm font-medium underline text-scifi1">
-                        <Link
-                            href="/privacy"
-                            target="_blank"
-                            className="flex justify-center"
-                        >
-                            Privacy policy
-                        </Link>
-                        <Link
-                            href="/tos"
-                            target="_blank"
-                        >
-                            Terms of service
-                        </Link>
-                    </div>
                 </div>
                 <div className="z-20 absolute sticky bottom-0 left-0 right-0">
                     {!isAddGameOpen &&

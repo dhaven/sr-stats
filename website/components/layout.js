@@ -47,19 +47,6 @@ export default function Layout({ children }) {
                   </div>
                 </a>
               </div>
-              <div className="flex items-center text-sm font-medium underline text-scifi1">
-                <Link
-                  href="/privacy"
-                  className="flex justify-center"
-                >
-                  Privacy policy
-                </Link>
-                <Link
-                  href="/tos"
-                >
-                  Terms of service
-                </Link>
-              </div>
             </div>
           }
         </div>
@@ -78,21 +65,6 @@ export default function Layout({ children }) {
                   <p className="text:md font-medium text-scifi5">Join the community! </p>
                 </div>
               </a>
-            </div>
-            <div className="flex justify-end gap-4 items-center text-sm font-medium underline text-scifi1 mx-4">
-              <Link
-                href="/privacy"
-                target="_blank"
-                className="flex justify-center"
-              >
-                Privacy policy
-              </Link>
-              <Link
-                target="_blank"
-                href="/tos"
-              >
-                Terms of service
-              </Link>
             </div>
           </div>
         </div>
