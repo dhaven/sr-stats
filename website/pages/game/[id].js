@@ -25,14 +25,6 @@ import PlayerCard from '../../components/mobile/playerCard'
 import PlayerDetail from '../../components/mobile/playerDetail'
 import GameStatsMobile from '../../components/mobile/gameStatsMobile'
 
-// import dynamic method from next
-import dynamic from 'next/dynamic';
-// import your component with dynamic and disable SSR
-const ReactSlider = dynamic(
-    () => import('react-slider'),
-    { ssr: false }
-);
-
 const { MongoClient, ObjectId } = require('mongodb');
 
 export default function Game({ winner, loser, extensions, events, players, winCondition, decks, chartData }) {

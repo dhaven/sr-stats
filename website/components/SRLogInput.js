@@ -1,6 +1,6 @@
 import { Formik, Form, Field } from 'formik';
 import { atom, useAtom } from 'jotai'
-import { example1, example2 } from '../lib/example_data.js'
+import { example1 } from '../lib/example_data.js'
 import { useRouter } from 'next/router'
 import { useState, useEffect } from "react";
 import { useSession } from "next-auth/react"
@@ -17,29 +17,29 @@ export default function SRLogInput() {
   const router = useRouter()
   const { data: session, status } = useSession()
   useEffect(() => {
-    if(isUploadCompleted && (status == "unauthenticated")){
+    if (isUploadCompleted && (status == "unauthenticated")) {
       setIsUploadCompleted(false) //switch back to false to make sure we don't store the game too many times
       //store the game in cache
       let games = localStorage.getItem('games')
-      if(games != null){
+      if (games != null) {
         games = JSON.parse(games)
         games.push(gameSummary)
         localStorage.setItem('games', JSON.stringify(games));
-      }else{
+      } else {
         games = []
         games.push(gameSummary)
         localStorage.setItem('games', JSON.stringify(games));
       }
       //ask user to login so that we can link a user to the game
       setOpenLoginInvite(true)
-    }else if(isUploadCompleted && (status == "authenticated")){
+    } else if (isUploadCompleted && (status == "authenticated")) {
       //if user is already logged in then just redirect 
       router.push(`/game/${gameSummary['id']}`)
     }
 
   }, [isUploadCompleted])
   return (
-    <div className="p-2 m-2 h-full">
+    <div className="p-2 h-full">
       <Formik
         initialValues={{ battlelog: '' }}
         onSubmit={(values) => {
@@ -77,21 +77,13 @@ export default function SRLogInput() {
       >
         {props => (
           <Form className="flex flex-col w-full h-full gap-2">
-            <div className="flex flex-row justify-end gap-1 w-full">
-              <button type="button" className="bg-white border border-scifi4 ring-scifi-2 drop-shadow-md hover:ring font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center" onClick={(e) => { props.setFieldValue("battlelog", "") }}>
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
-              </button>
-            </div>
             <div className="flex flex-row gap-1 w-full h-full">
-              <Field className="w-full p-2 border drop-shadow-md border-scifi4 ring-scifi-2 hover:ring text-sm rounded-lg resize-none" name="battlelog" as="textarea" />
+              <Field className="w-full h-48 p-2 border drop-shadow-md border-scifi4 ring-scifi-2 hover:ring text-sm rounded-lg resize-none" placeholder={example1} name="battlelog" as="textarea" />
             </div>
             <div className="flex flex-row gap-1 justify-between w-full">
-              <div className="flex flex-row gap-1">
-                <button className="bg-white  min-w-48 text-scifi5 text-sm p-1 lg:p-2 border drop-shadow-md border-scifi4 ring-scifi-2 hover:ring rounded-lg" type="button" onClick={(e) => { props.setFieldValue("battlelog", example1) }}>
-                  example 1
-                </button>
-                <button className="bg-white text-sm text-scifi5 p-1 lg:p-2 border drop-shadow-md border-scifi4 ring-scifi-2 hover:ring rounded-lg" type="button" onClick={(e) => { props.setFieldValue("battlelog", example2) }}>
-                  example 2
+              <div className="flex flex-row gap-1 w-full">
+                <button type="button" className="bg-white border border-scifi4 ring-scifi-2 drop-shadow-md hover:ring font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center" onClick={(e) => { props.setFieldValue("battlelog", "") }}>
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
                 </button>
               </div>
               <div className="flex flex-row gap-1">

@@ -49,9 +49,9 @@ export default function HelperModal({isOpen, setIsOpen}) {
                   as="h3"
                   className="text-lg font-medium leading-6 text-gray-900"
                 >
-                  Fetching your battle data
+                  How to retrieve a Star realms game
                 </Dialog.Title>
-                <div className="mt-2">
+                <div className="flex flex-col mt-2 gap-2">
                   <Image
                         src="/images/1.png" // Route of the image file
                         height={1080} // Desired size with correct aspect ratio

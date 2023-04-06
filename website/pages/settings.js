@@ -91,9 +91,6 @@ const Settings = ({ provider }) => {
                 <p className="text-lg font-medium text-scifi5">
                     {session.user.email}
                 </p>
-                <p className="italic text-sm font-medium">
-                    Signed in with {provider.replace(/\b\w/g, l => l.toUpperCase())}
-                </p>
                 <div className="mt-4 w-full md:w-1/2">
                     <Formik
                         initialValues={{ ign: session.user.ign }}

@@ -6,6 +6,9 @@ export default function handler(req, res) {
       console.log(req.body)
       let battle = parseBattle(req.body)
       console.log(battle)
+      if(battle.status == "error"){
+        res.status(500).json(battle)
+      }
       res.status(200).json(battle)
     } 
   }

@@ -1,7 +1,7 @@
 function FinalAuthority({authority}) {
     return (
-    <div className="relative p-2 w-24 h-20">
-        <svg className="absolute inset-x-0 drop-shadow-md" fill="#0f8942" stroke="#0f8942" viewBox="0 0 166.88282 104.205" xmlns="http://www.w3.org/2000/svg">
+    <div className="relative p-2 w-20 h-18 md:w-24 md:h-20">
+        <svg className={`${authority > 0 ? "fill-green-600" : "fill-red-600"} "absolute inset-x-0 drop-shadow-md`} viewBox="0 0 166.88282 104.205" xmlns="http://www.w3.org/2000/svg">
             <g transform="translate(-148.13691,-117.23627)">
                 <g transform="translate(1224.9083,528.21529)" />
                  <g>
@@ -11,7 +11,7 @@ function FinalAuthority({authority}) {
                 </g>
             </g>
         </svg>
-        <p className="font-bold text-scifi5 text-lg absolute text-center inset-x-2 inset-y-4">{authority}</p>
+        <p className="font-bold text-scifi5 text-md md:text-lg absolute text-center inset-x-2 inset-y-2 md:inset-y-4">{authority}</p>
     </div>
     )
   }
