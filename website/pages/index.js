@@ -92,7 +92,6 @@ export async function getServerSideProps(context) {
     popularMidGameCards = topN(midGame, 5)
     popularLateGameCards = topN(lateGame, 5)
   }
-  console.log(popularEarlyGameCards)
   return {
     props: {
       recentGames: recentGames,

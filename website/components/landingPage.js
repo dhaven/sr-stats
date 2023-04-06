@@ -55,7 +55,6 @@ export default function LandingPage({ recentGames, popularCards }) {
                     <div className="flex flex-row justify-between">
                         {
                             Object.keys(popularCards).map((phase, index) => {
-                                console.log(popularCards[phase])
                                 return (
                                     <div key={index} className="flex flex-col items-center">
                                         <p className="rounded-md shadow-md border-2 md:border-4 border-scifi3 p-1 md:p-2 text-lg m-1 md:m-2">{phase == "earlyGame" ? "early Game" : phase == "midGame" ? "mid Game" : "late Game"}</p>
