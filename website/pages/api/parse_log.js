@@ -51,7 +51,7 @@ export default async function handler(req, res) {
       });
     const db = DBclient.db("starrealms")
     let battle = parseBattle(req.body)
-    if (battle["status"] == "error") {
+    if (battle["status"] == "error" || battle['data']['winner'] == "") {
       let battleID = makeid(10)
       const uploadParams = {
         Bucket: process.env.S3_BUCKET,

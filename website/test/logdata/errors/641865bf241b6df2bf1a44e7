@@ -1,0 +1,460 @@
+Play all
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#1589FF>Embassy Yacht</color>
+        Riker446 - -3 Trade (Trade:0)
+Riker446 ends turn 1
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now OrbiterCorp's turn 2
+Play all
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#FF0000>Patrol Mech</color>
+        OrbiterCorp - -4 Trade (Trade:1)
+Acquired <color=#FFFF00>Imperial Fighter</color>
+        OrbiterCorp - -1 Trade (Trade:0)
+OrbiterCorp ends turn 2
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Riker446's turn 3
+Play all
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Riker446  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Riker446  >  <color=#800080>Viper</color> +1 Combat (Combat:2)
+Acquired <color=#FFFF00>Imperial Frigate</color>
+        Riker446 - -3 Trade (Trade:0)
+Attacked OrbiterCorp for 2 (New Authority:48)
+        Riker446 - -2 Combat (Combat:0)
+        OrbiterCorp - -2 Authority (Authority:48)
+Riker446 ends turn 3
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now OrbiterCorp's turn 4
+Play all
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        OrbiterCorp  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        OrbiterCorp  >  <color=#800080>Viper</color> +1 Combat (Combat:2)
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Attacked Riker446 for 2 (New Authority:48)
+        OrbiterCorp - -2 Combat (Combat:0)
+        Riker446 - -2 Authority (Authority:48)
+Acquired <color=#800080>Explorer</color>
+        OrbiterCorp - -2 Trade (Trade:1)
+OrbiterCorp ends turn 4
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Riker446's turn 5
+Play all
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Riker446  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Acquired <color=#FF0000>Patrol Mech</color>
+        Riker446 - -4 Trade (Trade:0)
+Attacked OrbiterCorp for 1 (New Authority:47)
+        Riker446 - -1 Combat (Combat:0)
+        OrbiterCorp - -1 Authority (Authority:47)
+Riker446 ends turn 5
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now OrbiterCorp's turn 6
+Play all
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        OrbiterCorp  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        OrbiterCorp  >  <color=#800080>Explorer</color> +2 Trade (Trade:5)
+Acquired <color=#FF0000>Battle Mech</color>
+        OrbiterCorp - -5 Trade (Trade:0)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        OrbiterCorp  >  <color=#800080>Explorer</color> +2 Combat (Combat:3)
+Attacked Riker446 for 3 (New Authority:45)
+        OrbiterCorp - -3 Combat (Combat:0)
+        Riker446 - -3 Authority (Authority:45)
+OrbiterCorp ends turn 6
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Riker446's turn 7
+Played <color=#FFFF00>Imperial Frigate</color>
+        Riker446  >  <color=#FFFF00>Imperial Frigate</color> +4 Combat (Combat:4)
+        OrbiterCorp  <  <color=#FFFF00>Imperial Frigate</color> +1 Discard (Discarding: 1)
+Played <color=#1589FF>Embassy Yacht</color>
+        Riker446  >  <color=#1589FF>Embassy Yacht</color> +3 Authority (Authority:48)
+        Riker446  >  <color=#1589FF>Embassy Yacht</color> +2 Trade (Trade:2)
+Play all
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#FF0000>Mech World</color>
+        Riker446 - -5 Trade (Trade:0)
+Attacked OrbiterCorp for 4 (New Authority:43)
+        Riker446 - -4 Combat (Combat:0)
+        OrbiterCorp - -4 Authority (Authority:43)
+Riker446 ends turn 7
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now OrbiterCorp's turn 8
+Resolving Discard 1 cards
+OrbiterCorp is discarding Viper
+        no more cards to discard
+        Discarded <color=#800080>Viper</color>
+Play all
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        OrbiterCorp  >  <color=#FFFF00>Imperial Fighter</color> +2 Combat (Combat:2)
+        Riker446  <  <color=#FFFF00>Imperial Fighter</color> +1 Discard (Discarding: 1)
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#4CC417>Blob Fighter</color>
+        OrbiterCorp - -1 Trade (Trade:2)
+Acquired <color=#FFFF00>Corvette</color>
+        OrbiterCorp - -2 Trade (Trade:0)
+Attacked Riker446 for 2 (New Authority:46)
+        OrbiterCorp - -2 Combat (Combat:0)
+        Riker446 - -2 Authority (Authority:46)
+OrbiterCorp ends turn 8
+        Drew 3 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now Riker446's turn 9
+Resolving Discard 1 cards
+Riker446 is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Play all
+        Riker446  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#4CC417>Blob Wheel</color>
+        Riker446 - -3 Trade (Trade:0)
+Attacked OrbiterCorp for 1 (New Authority:42)
+        Riker446 - -1 Combat (Combat:0)
+        OrbiterCorp - -1 Authority (Authority:42)
+Riker446 ends turn 9
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now OrbiterCorp's turn 10
+Played <color=#FF0000>Patrol Mech</color>
+        OrbiterCorp  >  <color=#FF0000>Patrol Mech</color> ability available
+        OrbiterCorp  >  <color=#FF0000>Patrol Mech</color> +3 Trade (Trade:3)
+Played <color=#800080>Scout</color>
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Played <color=#800080>Viper</color>
+        OrbiterCorp  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Played <color=#800080>Scout</color>
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Played <color=#800080>Scout</color>
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+Acquired <color=#1589FF>Flagship</color>
+        OrbiterCorp - -6 Trade (Trade:0)
+Attacked Riker446 for 1 (New Authority:45)
+        OrbiterCorp - -1 Combat (Combat:0)
+        Riker446 - -1 Authority (Authority:45)
+OrbiterCorp ends turn 10
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Riker446's turn 11
+Played <color=#FFFF00>Imperial Frigate</color>
+        Riker446  >  <color=#FFFF00>Imperial Frigate</color> +4 Combat (Combat:4)
+        OrbiterCorp  <  <color=#FFFF00>Imperial Frigate</color> +1 Discard (Discarding: 1)
+Played <color=#1589FF>Embassy Yacht</color>
+        Riker446  >  <color=#1589FF>Embassy Yacht</color> +3 Authority (Authority:48)
+        Riker446  >  <color=#1589FF>Embassy Yacht</color> +2 Trade (Trade:2)
+Play all
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#FFFF00>Recycling Station</color>
+        Riker446 - -4 Trade (Trade:1)
+Attacked OrbiterCorp for 4 (New Authority:38)
+        Riker446 - -4 Combat (Combat:0)
+        OrbiterCorp - -4 Authority (Authority:38)
+Riker446 ends turn 11
+        Drew 4 cards.
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+        Refresh ally indicators
+        It is now OrbiterCorp's turn 12
+Resolving Discard 1 cards
+OrbiterCorp is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Played <color=#FF0000>Battle Mech</color>
+OrbiterCorp is scrapping: Viper
+        OrbiterCorp  >  <color=#FF0000>Battle Mech</color> +4 Combat (Combat:4)
+        Scrapped <color=#800080>Viper</color>
+Played <color=#FFFF00>Corvette</color>
+        OrbiterCorp  >  <color=#FFFF00>Corvette</color> +1 Combat (Combat:5)
+        Drew 1 cards.
+Play all
+        OrbiterCorp  >  <color=#FFFF00>Imperial Fighter</color> +2 Combat (Combat:7)
+        Riker446  <  <color=#FFFF00>Imperial Fighter</color> +1 Discard (Discarding: 1)
+        OrbiterCorp  >  <color=#FFFF00>Corvette</color> +2 Combat (Combat:9)
+        OrbiterCorp  >  <color=#FFFF00>Imperial Fighter</color> +2 Combat (Combat:11)
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Acquired <color=#4CC417>Trade Pod</color>
+        OrbiterCorp - -2 Trade (Trade:0)
+Attacked Riker446 for 11 (New Authority:37)
+        OrbiterCorp - -11 Combat (Combat:0)
+        Riker446 - -11 Authority (Authority:37)
+OrbiterCorp ends turn 12
+        Drew 4 cards.
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+        Refresh ally indicators
+        It is now Riker446's turn 13
+Resolving Discard 1 cards
+Riker446 is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Played <color=#FF0000>Mech World</color>
+        Riker446  >  <color=#FF0000>Mech World</color> ability available
+Played <color=#FF0000>Patrol Mech</color>
+        Riker446  >  <color=#FF0000>Patrol Mech</color> ability available
+        Riker446  >  <color=#FF0000>Patrol Mech</color> +5 Combat (Combat:5)
+Activating Patrol Mech
+Play all
+        Riker446  >  <color=#800080>Viper</color> +1 Combat (Combat:6)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+Attacked OrbiterCorp for 6 (New Authority:32)
+        Riker446 - -6 Combat (Combat:0)
+        OrbiterCorp - -6 Authority (Authority:32)
+Riker446 ends turn 13
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now OrbiterCorp's turn 14
+Played <color=#4CC417>Blob Fighter</color>
+        OrbiterCorp  >  <color=#4CC417>Blob Fighter</color> +3 Combat (Combat:3)
+Played <color=#FF0000>Patrol Mech</color>
+        OrbiterCorp  >  <color=#FF0000>Patrol Mech</color> ability available
+        OrbiterCorp  >  <color=#FF0000>Patrol Mech</color> +5 Combat (Combat:8)
+Play all
+        OrbiterCorp  >  <color=#800080>Viper</color> +1 Combat (Combat:9)
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Attacked Mech World
+        OrbiterCorp - -6 Combat (Combat:3)
+        Destroyed <color=#FF0000>Mech World</color>
+Attacked Riker446 for 3 (New Authority:34)
+        OrbiterCorp - -3 Combat (Combat:0)
+        Riker446 - -3 Authority (Authority:34)
+OrbiterCorp ends turn 14
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Riker446's turn 15
+Play all
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Riker446  >  <color=#4CC417>Blob Wheel</color> +1 Combat (Combat:1)
+        Riker446  >  <color=#800080>Viper</color> +1 Combat (Combat:2)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#FFFF00>Imperial Frigate</color>
+        Riker446 - -3 Trade (Trade:0)
+Attacked OrbiterCorp for 2 (New Authority:30)
+        Riker446 - -2 Combat (Combat:0)
+        OrbiterCorp - -2 Authority (Authority:30)
+Riker446 ends turn 15
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now OrbiterCorp's turn 16
+Played <color=#FF0000>Battle Mech</color>
+OrbiterCorp is scrapping: Scout
+        OrbiterCorp  >  <color=#FF0000>Battle Mech</color> +4 Combat (Combat:4)
+        Scrapped <color=#800080>Scout</color>
+Play all
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#4CC417>Ram</color>
+        OrbiterCorp - -3 Trade (Trade:1)
+Attacked Riker446 for 4 (New Authority:30)
+        OrbiterCorp - -4 Combat (Combat:0)
+        Riker446 - -4 Authority (Authority:30)
+OrbiterCorp ends turn 16
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Riker446's turn 17
+        Riker446  >  <color=#4CC417>Blob Wheel</color> +1 Combat (Combat:1)
+Played <color=#FFFF00>Recycling Station</color>
+        Riker446  >  <color=#FFFF00>Recycling Station</color> ability available
+Chose Discard and Redraw up to 2 card(s)
+Riker446 is selecting Scout
+Riker446 is selecting Scout
+        Discarded <color=#800080>Scout</color>
+        Discarded <color=#800080>Scout</color>
+        Drew 1 cards.
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+Played <color=#1589FF>Embassy Yacht</color>
+        Riker446  >  <color=#1589FF>Embassy Yacht</color> +3 Authority (Authority:33)
+        Riker446  >  <color=#1589FF>Embassy Yacht</color> +2 Trade (Trade:2)
+        Drew 1 cards.
+        Drew 1 cards.
+Played <color=#FFFF00>Imperial Frigate</color>
+        Riker446  >  <color=#FFFF00>Imperial Frigate</color> +4 Combat (Combat:5)
+        OrbiterCorp  <  <color=#FFFF00>Imperial Frigate</color> +1 Discard (Discarding: 1)
+        Riker446  >  <color=#FFFF00>Imperial Frigate</color> +2 Combat (Combat:7)
+Played <color=#FFFF00>Imperial Frigate</color>
+        Riker446  >  <color=#FFFF00>Imperial Frigate</color> +4 Combat (Combat:11)
+        OrbiterCorp  <  <color=#FFFF00>Imperial Frigate</color> +1 Discard (Discarding: 2)
+        Riker446  >  <color=#FFFF00>Imperial Frigate</color> +2 Combat (Combat:13)
+Play all
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#FF0000>Missile Bot</color>
+        Riker446 - -2 Trade (Trade:3)
+Acquired <color=#800080>Explorer</color>
+        Riker446 - -2 Trade (Trade:1)
+Attacked OrbiterCorp for 13 (New Authority:17)
+        Riker446 - -13 Combat (Combat:0)
+        OrbiterCorp - -13 Authority (Authority:17)
+Acquired <color=#FF0000>Trade Bot</color>
+        Riker446 - -1 Trade (Trade:0)
+Riker446 ends turn 17
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now OrbiterCorp's turn 18
+Resolving Discard 2 cards
+OrbiterCorp is discarding Scout
+OrbiterCorp is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+        Discarded <color=#800080>Scout</color>
+Played <color=#FFFF00>Corvette</color>
+        OrbiterCorp  >  <color=#FFFF00>Corvette</color> +1 Combat (Combat:1)
+        Drew 1 cards.
+Played <color=#FFFF00>Imperial Fighter</color>
+        OrbiterCorp  >  <color=#FFFF00>Imperial Fighter</color> +2 Combat (Combat:3)
+        Riker446  <  <color=#FFFF00>Imperial Fighter</color> +1 Discard (Discarding: 1)
+        OrbiterCorp  >  <color=#FFFF00>Corvette</color> +2 Combat (Combat:5)
+        OrbiterCorp  >  <color=#FFFF00>Imperial Fighter</color> +2 Combat (Combat:7)
+Played <color=#1589FF>Flagship</color>
+        OrbiterCorp  >  <color=#1589FF>Flagship</color> +5 Combat (Combat:12)
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+Played <color=#4CC417>Trade Pod</color>
+        OrbiterCorp  >  <color=#4CC417>Trade Pod</color> +3 Trade (Trade:3)
+Played <color=#800080>Scout</color>
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Attacked Recycling Station
+        OrbiterCorp - -4 Combat (Combat:8)
+        Destroyed <color=#FFFF00>Recycling Station</color>
+Attacked Riker446 for 8 (New Authority:25)
+        OrbiterCorp - -8 Combat (Combat:0)
+        Riker446 - -8 Authority (Authority:25)
+Acquired <color=#FF0000>Stealth Needle</color>
+        OrbiterCorp - -4 Trade (Trade:0)
+OrbiterCorp ends turn 18
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Riker446's turn 19
+Resolving Discard 1 cards
+Riker446 is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+        Riker446  >  <color=#4CC417>Blob Wheel</color> +1 Combat (Combat:1)
+Played <color=#FF0000>Patrol Mech</color>
+        Riker446  >  <color=#FF0000>Patrol Mech</color> ability available
+        Riker446  >  <color=#FF0000>Patrol Mech</color> +5 Combat (Combat:6)
+Played <color=#FF0000>Mech World</color>
+        Riker446  >  <color=#FF0000>Mech World</color> ability available
+Activating Patrol Mech
+Riker446 is scrapping: Scout
+        Scrapped <color=#800080>Scout</color>
+Play all
+        Riker446  >  <color=#800080>Viper</color> +1 Combat (Combat:7)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+Attacked OrbiterCorp for 7 (New Authority:10)
+        Riker446 - -7 Combat (Combat:0)
+        OrbiterCorp - -7 Authority (Authority:10)
+Riker446 ends turn 19
+        Drew 4 cards.
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+        Refresh ally indicators
+        It is now OrbiterCorp's turn 20
+Played <color=#FF0000>Patrol Mech</color>
+        OrbiterCorp  >  <color=#FF0000>Patrol Mech</color> ability available
+        OrbiterCorp  >  <color=#FF0000>Patrol Mech</color> +5 Combat (Combat:5)
+Played <color=#FF0000>Battle Mech</color>
+OrbiterCorp is scrapping: Scout
+        OrbiterCorp  >  <color=#FF0000>Battle Mech</color> +4 Combat (Combat:9)
+        Scrapped <color=#800080>Scout</color>
+        Drew 1 cards.
+Played <color=#4CC417>Blob Fighter</color>
+        OrbiterCorp  >  <color=#4CC417>Blob Fighter</color> +3 Combat (Combat:12)
+Attacked Mech World
+        OrbiterCorp - -6 Combat (Combat:6)
+        Destroyed <color=#FF0000>Mech World</color>
+Play all
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#FFFF00>Imperial Frigate</color>
+        OrbiterCorp - -3 Trade (Trade:0)
+Attacked Riker446 for 6 (New Authority:19)
+        OrbiterCorp - -6 Combat (Combat:0)
+        Riker446 - -6 Authority (Authority:19)
+OrbiterCorp ends turn 20
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Riker446's turn 21
+        Riker446  >  <color=#4CC417>Blob Wheel</color> +1 Combat (Combat:1)
+Play all
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Riker446  >  <color=#800080>Viper</color> +1 Combat (Combat:2)
+        Riker446  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Scrapping Blob Wheel
+        Scrapped <color=#4CC417>Blob Wheel</color>
+        Riker446  >  <color=#4CC417>Blob Wheel</color> +3 Trade (Trade:7)
+Acquired <color=#4CC417>The Hive</color>
+        Riker446 - -5 Trade (Trade:2)
+Acquired <color=#FFFF00>Corvette</color>
+        Riker446 - -2 Trade (Trade:0)
+Attacked OrbiterCorp for 2 (New Authority:8)
+        Riker446 - -2 Combat (Combat:0)
+        OrbiterCorp - -2 Authority (Authority:8)
+Riker446 ends turn 21
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now OrbiterCorp's turn 22
+Play all
+        OrbiterCorp  >  <color=#4CC417>Ram</color> +5 Combat (Combat:5)
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        OrbiterCorp  >  <color=#800080>Viper</color> +1 Combat (Combat:6)
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        OrbiterCorp  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Attacked Riker446 for 6 (New Authority:13)
+        OrbiterCorp - -6 Combat (Combat:0)
+        Riker446 - -6 Authority (Authority:13)
+Scrapping Ram
+        Scrapped <color=#4CC417>Ram</color>
+        OrbiterCorp  >  <color=#4CC417>Ram</color> +3 Trade (Trade:6)
+Acquired <color=#1589FF>Defense Center</color>
+        OrbiterCorp - -5 Trade (Trade:1)
+OrbiterCorp ends turn 22
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Riker446's turn 23
