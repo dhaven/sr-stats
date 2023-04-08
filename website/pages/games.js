@@ -83,7 +83,7 @@ export async function getServerSideProps(context) {
         .project({ 'games': 1 })
     if (await cursor.hasNext()) {
         let val = await cursor.next()
-        let games = val.games || []
+        let games = val.games.reverse() || []
         let user = session.user.ign || session.user.email
         return {
             props: { games, user: user },
