@@ -56,8 +56,8 @@ export default function LandingPage({ recentGames, popularCards }) {
                         {
                             Object.keys(popularCards).map((phase, index) => {
                                 return (
-                                    <div key={index} className="flex flex-col items-center">
-                                        <p className="rounded-md shadow-md border-2 md:border-4 border-scifi3 p-1 md:p-2 text-lg m-1 md:m-2">{phase == "earlyGame" ? "Early Game" : phase == "midGame" ? "Mid Game" : "Late Game"}</p>
+                                    <div key={index} className="flex flex-col items-center border-2 border-scifi3 rounded-md shadow-md">
+                                        <p className="p-1 md:p-2 text-lg m-1 md:m-2">{phase == "earlyGame" ? "Early Game" : phase == "midGame" ? "Mid Game" : "Late Game"}</p>
                                         <div className="flex flex-col items-center gap-2 m-2">
                                             {
                                                 popularCards[phase].map((card, index) => {
