@@ -38,7 +38,6 @@ const cursor = db
     .project({ _id: 1, status: 1 })
 while (await cursor.hasNext()) {
     let { _id } = await cursor.next()
-    //this has an old format
     const getCommand = new GetObjectCommand({
         Bucket: process.env.S3_BUCKET,
         Key: "games/" + _id.toString()
