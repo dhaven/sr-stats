@@ -183,7 +183,7 @@ export default function Game({ winner, loser, extensions, events, players, winCo
                 <div className="flex flex-row w-3/4">
                     <div className="flex m-2">
                         <a href="https://discord.gg/q4kqH775FA" target="_blank">
-                            <div className="flex bg-white rounded-lg border-black border">
+                            <div className="flex px-1 py-2 bg-white rounded-lg border-black border">
                                 <div className="flex items-center mx-1">
                                     <Image
                                         src={discord_img}

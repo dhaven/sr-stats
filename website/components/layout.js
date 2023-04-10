@@ -32,10 +32,10 @@ export default function Layout({ children }) {
         <div className="flex md:hidden">
           {
             pathname != "/game/[id]" &&
-            <div className="flex flex-row w-3/4">
+            <div className="flex flex-row w-full">
               <div className="flex m-2">
                 <a href="https://discord.gg/q4kqH775FA" target="_blank">
-                  <div className="flex bg-white rounded-lg border-black border">
+                  <div className="flex bg-white py-2 px-1 rounded-lg border-black border">
                     <div className="flex items-center mx-1">
                       <Image
                         src={discord_img}
