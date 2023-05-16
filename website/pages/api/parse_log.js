@@ -120,7 +120,8 @@ export default async function handler(req, res) {
         id: battleID.toString(),
         winner: battle['data']['winner'],
         loser: loserName,
-        winCondition: winCondition
+        winCondition: winCondition,
+        date: battle['createdAt']
       }
       if (session) {
         try {

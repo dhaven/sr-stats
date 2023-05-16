@@ -28,6 +28,7 @@ import GameStatsMobile from '../../components/mobile/gameStatsMobile'
 const { MongoClient, ObjectId } = require('mongodb');
 
 export default function Game({ winner, loser, extensions, events, players, winCondition, decks, chartData }) {
+    console.log(decks)
     const router = useRouter()
     const { id } = router.query
     let [statsTab, setStatsTab] = useState("player") //can be either player or game

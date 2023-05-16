@@ -202,6 +202,7 @@ class Visitor extends StarStarVisitor {
                 //turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
                 turnData["drawCount"] += action["cardAction"]["cardEffect"]["drawCount"]
                 turnData["shuffleCount"] += action["cardAction"]["cardEffect"]["shuffleCount"]
+                // if we see a new shuffle we should create a new list of purchased cards to distinguish decks
                 turnData["purchasedCards"] = turnData["purchasedCards"].concat(action["cardAction"]["cardEffect"]["acquiredCards"])
                 turnData["foundGambits"] = turnData["foundGambits"].concat(action["cardAction"]["cardEffect"]["foundGambits"])
                 if ("event" in action["cardAction"]["trigger"]) {

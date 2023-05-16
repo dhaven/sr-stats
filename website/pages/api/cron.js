@@ -34,9 +34,9 @@ export default async function handler(req, res) {
             let { data } = await cursor.next()
             for (let i = 0; i < data['rounds'].length; i++) {
                 let phase;
-                if (i <= 3) { //early game = round 0,1,2,3
+                if (i <= 5) { //early game = round 0,1,2,3
                     phase = earlyGameCards
-                } else if (i <= 9) { //mid game = round 4,5,6,7,8,9
+                } else if (i <= 13) { //mid game = round 4,5,6,7,8,9
                     phase = midGameCards
                 } else { //late game
                     phase = lateGameCards

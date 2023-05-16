@@ -76,7 +76,7 @@ function FiltersMenu({ deckType, selectedFactions, selectedSorting, setSelectedF
             <Listbox value={selectedSorting} onChange={setSelectedSorting} by={(a, b) => { return a.id == b.id }}>
                 <div className="relative p-2">
                     <Listbox.Button className="relative w-full cursor-pointer rounded-lg bg-white p-1 pl-2 pr-8 sm:py-2 sm:pl-3 sm:pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
-                        <span className="block truncate">Sort</span>
+                        <span className="block truncate">Sort by</span>
                         <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
                             <ChevronUpDownIcon
                                 className="h-5 w-5 text-gray-400"

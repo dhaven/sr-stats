@@ -52,6 +52,9 @@ function GameCard({ game, user }) {
                                     "🏃‍♂️"
                     }
                 </div>
+                <div className="mt-2 flex justify-center">
+                    {(new Date(game["createdAt"])).toDateString()}
+                </div>
             </div>
         </Link>
     )
