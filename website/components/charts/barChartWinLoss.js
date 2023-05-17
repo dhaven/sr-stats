@@ -1,25 +1,16 @@
 import { Chart as ChartJS } from 'chart.js/auto';
 import { Bar } from 'react-chartjs-2';
 
-function BarChartTotal({ winner, description, chartData }) {
+
+function BarChartWinLoss({ data }) {
+    let colors = ["#00a5cf", "#ee6055"]
+    let labels = ["win", "loss"]
     let datasets = []
-    let data = []
-    let labels = []
-    let colors = []
-    for (let player in chartData) {
-        data.push(chartData[player].reduce((x,y) => { return x + y}, 0))
-        labels.push(player)
-        if (player == winner) {
-            colors.push("#00a5cf")
-        } else {
-            colors.push("#ee6055")
-        }
-    }
-    console.log(data)
     datasets.push({
         data: data,
         fill: false,
-        backgroundColor: colors
+        backgroundColor: colors,
+        borderRadius: 50
     })
     const dataChart = {
         labels: labels,
@@ -28,42 +19,39 @@ function BarChartTotal({ winner, description, chartData }) {
     let options = {
         indexAxis: 'y',
         plugins: {
-            title: {
-                display: true,
-                text: description
-            },
             legend: {
                 display: false,
             },
         },
-        //   animate in
-        animation: {
-            duration: 1,
-        },
         responsive: true,
         maintainAspectRatio: false,
+        indexAxis: 'y',
         //   show the x and y scales*-
         scales: {
             x: {
                 beginAtZero: true,
                 display: false,
-                offset: false
             },
             y: {
                 grid: {
                     display: false
+                },
+                ticks: {
+                    font: {
+                        size: 18,
+                    }
                 }
             }
         },
     }
     return (
-        <div className="h-32 sm:h-60 bg-white rounded-md p-2 drop-shadow-scifi5">
+        <>
             <Bar
                 options={options}
                 data={dataChart}
             />
-        </div>
+        </>
     )
 }
 
-export default BarChartTotal
+export default BarChartWinLoss

@@ -7,9 +7,9 @@ function BarChartTemporal({ winner, description, chartData }) {
     for (let player in chartData) {
         let borderColor = ""
         if (player == winner) {
-            borderColor = "#3d5a80"
+            borderColor = "#00a5cf"
         } else {
-            borderColor = "#ee6c4d"
+            borderColor = "#ee6055"
         }
         datasets.push({
             label: player,

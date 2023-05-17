@@ -2,14 +2,6 @@ import { useState, Fragment } from 'react'
 import { Combobox, Transition } from '@headlessui/react'
 import { CheckIcon, XCircleIcon } from '@heroicons/react/20/solid'
 
-const people = [
-  { id: 1, name: 'Durward Reynolds' },
-  { id: 2, name: 'Kenton Towne' },
-  { id: 3, name: 'Therese Wunsch' },
-  { id: 4, name: 'Benedict Kessler' },
-  { id: 5, name: 'Katelyn Rohan' },
-]
-
 function SearchPlayer({ opponents, selectedPlayer, setSelectedPlayer }) {
   const [query, setQuery] = useState('')
   const filteredPlayers =

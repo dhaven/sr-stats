@@ -3,15 +3,22 @@ import Layout, { siteTitle } from '../components/layout'
 import { getServerSession } from "next-auth/next"
 import { authOptions } from "./api/auth/[...nextauth]"
 import { useSession } from "next-auth/react"
-const { MongoClient } = require('mongodb');
+const { MongoClient, ObjectId } = require('mongodb');
 import GameCard from '../components/gameCard.js'
 import AddGameModal from '../components/dialogs/addGameModal.js'
 import SearchPlayer from '../components/ui/searchPlayer.js'
+import BarChartWinLoss from '../components/charts/barChartWinLoss'
+import BarChartAverageFaction from '../components/charts/barChartAverageFaction'
+import { getTemporalDeck } from '../lib/helper/enhanceBattle'
+import card_list from '../lib/card_data/cards.js'
 import { useState, Fragment } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
+import { Chart as ChartJS } from 'chart.js/auto';
+import { Bar } from 'react-chartjs-2';
 
-const Games = ({ games, user }) => {
+const Games = ({ games, user, factions }) => {
+    console.log(factions)
     const { data: session } = useSession()
     const [isAddGameOpen, setIsAddGameOpen] = useState(false)
     const [selectedSorting, setSelectedSorting] = useState("newest -> oldest")
@@ -52,10 +59,11 @@ const Games = ({ games, user }) => {
         }
     }
     let filteredGames = (games, filter, victoryOrDefeat, user, selectedPlayer) => {
+        console.log(selectedPlayer)
         let winConditions = getNameList(filter)
         let filteredGames = []
         for (let i = 0; i < games.length; i++) {
-            if (selectedPlayer == "" || (games[i]["winner "] == selectedPlayer || games[i]["loser"] == selectedPlayer)) {
+            if (selectedPlayer == "" || (games[i]["winner"] == selectedPlayer || games[i]["loser"] == selectedPlayer)) {
                 if (winConditions.includes(games[i]['winCondition'])) {
                     if (isWinner(games[i], user) && getNameList(victoryOrDefeat).includes("victory")) {
                         filteredGames.push(games[i])
@@ -76,6 +84,9 @@ const Games = ({ games, user }) => {
     let isWinner = (game, user) => {
         return (user == game['winner']) || ("Player" == game['winner'])
     }
+    let isLoser = (game, user) => {
+        return (user == game['loser']) || ("Player" == game['loser'])
+    }
     let getListOpponents = (games, user) => {
         let opponents = {}
         for (let i = 0; i < games.length; i++) {
@@ -90,13 +101,33 @@ const Games = ({ games, user }) => {
         opponents["HardAI"] = 1
         return Object.keys(opponents)
     }
+    let getWinLossCount = (games, user) => {
+        let winCount = 0
+        let loseCount = 0
+        for (let i = 0; i < games.length; i++) {
+            if (isWinner(games[i], user)) {
+                winCount += 1
+            }
+            if (isLoser(games[i], user)) {
+                loseCount += 1
+            }
+        }
+        return {winCount, loseCount}
+    }
+    let { winCount, loseCount} = getWinLossCount(games, user)
     return (
         <Layout>
             <Head>
                 <title>SR Stats - games</title>
             </Head>
+            <div className="bg-scifi1 md:w-1/2 rounded-md p-2 drop-shadow-scifi5">
+                <BarChartWinLoss data={[winCount, loseCount]}></BarChartWinLoss>
+            </div>
+            <div className="flex justify-center bg-scifi1 md:w-1/2 rounded-md p-2 h-20 drop-shadow-scifi5">
+                <BarChartAverageFaction factions={factions}></BarChartAverageFaction>
+            </div>
             <div className="flex flex-col items-center w-full md:w-2/3">
-                <div className="flex flex-row w-full">
+                <div className="bg-scifi4 rounded-tl-md rounded-tr-md flex flex-row w-full p-1">
                     <div className="flex w-full flex-row justify-start">
                         <Listbox value={selectedSorting} onChange={setSelectedSorting} by={(a, b) => { return a == b }}>
                             <div className="relative p-2">
@@ -247,8 +278,8 @@ const Games = ({ games, user }) => {
                         <SearchPlayer opponents={getListOpponents(games, user)} selectedPlayer={selectedPlayer} setSelectedPlayer={setSelectedPlayer}></SearchPlayer>
                     </div>
                 </div>
-                <div className="flex flex-col gap-1 w-full">
-                    <div className="flex flex-row flex-wrap md:bg-scifi3 rounded-md gap-2 p-4">
+                <div className="flex flex-col md:bg-scifi3 rounded-bl-md rounded-br-md gap-1 w-full">
+                    <div className="flex flex-row flex-wrap gap-2 p-4">
                         {
                             sortGames(filteredGames(games, selectedWinCondition, selectVictoryOrDefeat, user, selectedPlayer), selectedSorting).map((game, index) => {
                                 return (
@@ -284,6 +315,7 @@ const Games = ({ games, user }) => {
 
 export async function getServerSideProps(context) {
     const session = await getServerSession(context.req, context.res, authOptions)
+    let user = session.user.ign || session.user.email
     if (!session) {
         return {
             props: {},
@@ -304,13 +336,44 @@ export async function getServerSideProps(context) {
         .project({ 'games': 1 })
     if (await cursor.hasNext()) {
         let { games } = await cursor.next()
+        let factions = {
+            'Machine Cult': 0,
+            'Trade Federation': 0,
+            'Star Empire': 0,
+            'Blob': 0,
+            'Unaligned': 0
+        }
         for (let i = 0; i < games.length; i++) {
             games[i]['createdAt'] = games[i]['createdAt'].toString()
+            //fetch the game data
+            const cursor2 = db.collection('battle')
+                .find({ _id: ObjectId(games[i]['id']) })
+                .project({ 'data.rounds': 1, 'data.winner': 1 })
+            if (await cursor2.hasNext()) {
+                let { data } = await cursor2.next()
+                let turnDecks = getTemporalDeck(data['rounds'])
+                let lastRoundDecks = turnDecks[turnDecks.length - 1]
+                if (data["winner"] == user || data["winner"] == "Player") {
+                    //Only account decks that were winning
+                    let deck = lastRoundDecks['players'][data["winner"]]['deck']
+                    Object.keys(deck).forEach(card => {
+                        card_list[card]['faction'].forEach(faction => {
+                            if (faction != "Unaligned") {
+                                factions[faction] += deck[card]["purchaseCount"] - deck[card]["scrapCount"]
+                            }
+                        })
+                    })
+                }
+            }
+            //get final deck faction proportion
+            //tally count for each faction
         }
-        games.reverse()
-        let user = session.user.ign || session.user.email
         return {
-            props: { games, user: user },
+            props: {
+                games,
+                user,
+                factions
+            },
         }
     }
 }

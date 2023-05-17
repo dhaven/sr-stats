@@ -6,10 +6,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        winner: '#3d5a80',
+        winner: '#60d394',
         winnerlight: "#c5d2e3",
         winnerdark: "#375173",
-        loser: '#ee6c4d',
+        loser: '#ee6055',
         scifi1: "#e4eff0",
         scifi2: "#78cce2",
         scifi3: "#4e7988",
