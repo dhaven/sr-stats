@@ -342,6 +342,9 @@ export async function getServerSideProps(context) {
             'Blob': 0,
             'Unaligned': 0
         }
+        if(games == undefined || games == null){
+            games = []
+        }
         for (let i = 0; i < games.length; i++) {
             games[i]['createdAt'] = games[i]['createdAt'].toString()
             //fetch the game data
