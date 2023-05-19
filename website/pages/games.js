@@ -18,7 +18,6 @@ import { Chart as ChartJS } from 'chart.js/auto';
 import { Bar } from 'react-chartjs-2';
 
 const Games = ({ games, user, factions }) => {
-    console.log(factions)
     const { data: session } = useSession()
     const [isAddGameOpen, setIsAddGameOpen] = useState(false)
     const [selectedSorting, setSelectedSorting] = useState("newest -> oldest")

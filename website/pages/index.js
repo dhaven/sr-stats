@@ -5,13 +5,14 @@ import { getAuthorityChart } from '../lib/helper/enhanceBattle'
 
 const { MongoClient } = require('mongodb');
 
-export default function Home({ recentGames, popularCards }) {
+export default function Home({ recentGames, popularCards, tips }) {
+  console.log(tips)
   return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <LandingPage recentGames={recentGames} popularCards={popularCards}></LandingPage>
+      <LandingPage recentGames={recentGames} popularCards={popularCards} tips={tips}></LandingPage>
     </Layout>
   )
 }
@@ -24,12 +25,12 @@ export async function getServerSideProps(context) {
     let topCards = cards
     topCards.sort(mySort)
     let spliceIndex = -1
-    for(let i = 0; i < cards.length; i++){
-      if(Object.keys(cards[i])[0] == "explorer"){
+    for (let i = 0; i < cards.length; i++) {
+      if (Object.keys(cards[i])[0] == "explorer") {
         spliceIndex = i
       }
     }
-    if(spliceIndex != -1){
+    if (spliceIndex != -1) {
       topCards.splice(spliceIndex, 1)
     }
     return topCards.slice(0, n)
@@ -92,6 +93,27 @@ export async function getServerSideProps(context) {
     popularMidGameCards = topN(midGame, 5)
     popularLateGameCards = topN(lateGame, 5)
   }
+  //fetch strategy tips
+  let sortedFactions = []
+  let cardCosts = [0,1,2,3,4,5,6,7,8,9]
+  let gamesCount2, baseCount2, shipCount2 = 0
+  const cursor3 = db.collection('winning_strategy')
+    .find()
+    .sort({ createdAt: -1 })
+    .limit(1)
+    .project({ gamesCount: 1, factionsCount: 1, cardCostCount: 1, baseCount: 1, shipCount: 1 })
+  while(await cursor3.hasNext()){
+    let { gamesCount, factionsCount, cardCostCount, baseCount, shipCount } = await cursor3.next()
+    gamesCount2 = gamesCount
+    baseCount2 = baseCount
+    shipCount2 = shipCount
+    sortedFactions = Object.keys(factionsCount).sort((a,b) => {
+      return factionsCount[b] - factionsCount[a]
+    })
+    cardCosts.sort((a,b) => {
+      return cardCostCount[b] - cardCostCount[a]
+    })
+  }
   return {
     props: {
       recentGames: recentGames,
@@ -99,6 +121,13 @@ export async function getServerSideProps(context) {
         earlyGame: popularEarlyGameCards,
         midGame: popularMidGameCards,
         lateGame: popularLateGameCards
+      },
+      tips: {
+        gamesCount: gamesCount2,
+        sortedFactions,
+        cardCosts,
+        baseCount: baseCount2,
+        shipCount: shipCount2
       }
     }
   }

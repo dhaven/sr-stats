@@ -8,12 +8,33 @@ import RecentGameItem from './recentGameItem.js'
 import card_list from '../lib/card_data/cards.js'
 import HorizontalCard from './horizontalCard.js'
 import VerticalCard from './verticalCard.js'
+import StarEmpire from '../public/svg/star_empire.svg'
+import Blob from '../public/svg/blob.svg'
+import TradeFederation from '../public/svg/trade_federation.svg'
+import MachineCult from '../public/svg/machine_cult.svg'
 
-export default function LandingPage({ recentGames, popularCards }) {
+export default function LandingPage({ recentGames, popularCards, tips }) {
     let [isAddGameOpen, setAddGameIsOpen] = useState(false)
     let [isHelperOpen, setHelperIsOpen] = useState(false)
     function openAddGameModal() {
         setAddGameIsOpen(true)
+    }
+    tips['sortedFactions'] = tips['sortedFactions'].filter(faction => {
+        return faction !== 'Unaligned';
+    });
+    tips['cardCosts'] = tips['cardCosts'].filter(cost => {
+        return cost !== 0;
+    });
+    let getFactionIcon = faction => {
+        if(faction == "Blob"){
+            return <Blob className="bg-blob border-2 border-black rounded-full m-1 w-7 h-7" />
+        }else if (faction == "Trade Federation") {
+            return <TradeFederation className="bg-tradefederation border-2 border-black rounded-full m-1 w-7 h-7" />
+        } else if (faction == "Star Empire") {
+            return <StarEmpire className="bg-starempire border-2 border-black rounded-full m-1 w-7 h-7" />
+        } else if (faction == "Machine Cult") {
+            return <MachineCult className="bg-machinecult border-2 border-black rounded-full m-1 w-7 h-7" />
+        }
     }
     return (
         <div className="flex flex-col items-center w-full h-full m-1 p-1 lg:px-2">
@@ -31,6 +52,38 @@ export default function LandingPage({ recentGames, popularCards }) {
                         <QuestionMarkCircleIcon className="w-6 cursor-pointer" onClick={() => { setHelperIsOpen(true) }}></QuestionMarkCircleIcon>
                     </div>
                     <SRLogInput></SRLogInput>
+                </div>
+            </div>
+            <div className="p-4 mx-6 md:mx-12 md:my-6 w-1/2 bg-white rounded-lg drop-shadow-scifi5">
+                <p className="mb-4 text-xl md:mb-4 md:text-3xl text-scifi5 text-left">
+                    Strategy tips
+                </p>
+                <div className="flex flex-col gap-2">
+                    <div>
+                        Based on <b>{tips['gamesCount']}</b> Games analyzed. The most popular faction is
+                        <div className="align-middle inline-flex items-center">
+                            {getFactionIcon(tips['sortedFactions'][0])}
+                        </div>
+                        followed by
+                        <div className="align-middle inline-flex items-center">
+                            {getFactionIcon(tips['sortedFactions'][1])}
+                        </div>
+                        , 
+                        <div className="align-middle inline-flex items-center">
+                            {getFactionIcon(tips['sortedFactions'][2])}
+                        </div> 
+                        and 
+                        <div className="align-middle inline-flex items-center">
+                            {getFactionIcon(tips['sortedFactions'][3])}
+                        </div>.
+                    </div>
+                    <div>
+                        On average a winning deck will contain <b>{tips['shipCount'] + tips['baseCount']}</b> cards. <b>{tips['shipCount']}</b> ships and <b>{tips['baseCount']}</b> bases.
+                    </div>
+                    <div>
+                        When deciding which card to purchase, players favor cards that cost <b>{tips['cardCosts'][0]}</b> coins or <b>{tips['cardCosts'][1]}</b> coins. 
+                        Cards that cost <b>{tips['cardCosts'][2]}</b> or <b>{tips['cardCosts'][3]}</b> coins are purchased less often.
+                    </div>
                 </div>
             </div>
             <div className="flex flex-row w-full m-6 md:px-12 flex-wrap lg:flex-nowrap gap-4">
