@@ -38,13 +38,13 @@ export default function LandingPage({ recentGames, popularCards, tips }) {
     }
     return (
         <div className="flex flex-col items-center w-full h-full m-1 p-1 lg:px-2">
-            <div className="flex flex-row flex-wrap lg:flex-nowrap justify-center md:px-12 md:py-6 items-center">
+            <div className="flex flex-row flex-wrap m-6 lg:flex-nowrap justify-center md:px-12 md:py-6 items-center">
                 <div className="m-6 md:mx-12 md:my-6 md:w-1/2 rounded-lg drop-shadow-scifi5">
                     <p className="md:tracking-widest md:leading-10 font-bold md:text-3xl text-xl text-white text-center md:text-left">
                         With SR stats, enhance your Star Realms experience by unlocking in depth statistics for all your  games.
                     </p>
                 </div>
-                <div className="flex flex-col mx-6 bg-white rounded-lg p-4 md:mx-12 md:my-6 md:w-1/2 h-full drop-shadow-scifi5">
+                <div className="flex flex-col w-full bg-white rounded-lg p-4 md:mx-12 md:my-6 md:w-1/2 h-full drop-shadow-scifi5">
                     <div className="flex flex-row gap-2 items-center">
                         <p className="text-xl md:text-3xl text-scifi5 text-left">
                             Add your own game!
@@ -54,7 +54,7 @@ export default function LandingPage({ recentGames, popularCards, tips }) {
                     <SRLogInput></SRLogInput>
                 </div>
             </div>
-            <div className="p-4 mx-6 md:mx-12 md:my-6 w-1/2 bg-white rounded-lg drop-shadow-scifi5">
+            <div className="p-4 m-6 md:mx-12 md:my-6 md:w-1/2 bg-white rounded-lg drop-shadow-scifi5">
                 <p className="mb-4 text-xl md:mb-4 md:text-3xl text-scifi5 text-left">
                     Strategy tips
                 </p>
