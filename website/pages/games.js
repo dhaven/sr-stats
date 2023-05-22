@@ -127,7 +127,7 @@ const Games = ({ games, user, factions }) => {
             </div>
             <div className="flex flex-col items-center w-full md:w-2/3">
                 <div className="bg-scifi4 rounded-tl-md rounded-tr-md flex flex-col md:flex-row w-full p-1">
-                    <div className="flex w-full flex-row flex-wrap justify-start">
+                    <div className="flex w-full flex-row flex-wrap md:flex-nowrap justify-start">
                         <Listbox value={selectedSorting} onChange={setSelectedSorting} by={(a, b) => { return a == b }}>
                             <div className="relative p-2">
                                 <Listbox.Button className="relative w-full cursor-pointer rounded-lg bg-white p-1 pl-2 pr-8 sm:py-2 sm:pl-3 sm:pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">

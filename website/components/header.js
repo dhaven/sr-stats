@@ -64,7 +64,7 @@ export default function Header() {
     }, [session, status])
     return (
         <>
-            <header className="sticky top-0 z-10 bg-white flex flex-row drop-shadow-md lg:drop-shadow-scifi5 justify-center p-2 md:p-4 gap-1">
+            <header className="sticky top-0 z-30 bg-white flex flex-row drop-shadow-md lg:drop-shadow-scifi5 justify-center p-2 md:p-4 gap-1">
                 <p onClick={() => { router.push('/') }} className="text-2xl text-scifi5 font-semibold tracking-widest hover:ring ring-scifi-2 rounded-md">
                     <span className="bg-scifi5 text-white mx-2 text-2xl px-1">
                         SR
@@ -77,7 +77,7 @@ export default function Header() {
                         aria-hidden="true"
                     />
                 </button>
-                <div className={`${showSidebar ? "translate-x-0 " : "-translate-x-full"} z-20 ease-in-out duration-300 absolute top-0 left-0 h-full w-2/3 md:hidden min-h-screen`}>
+                <div className={`${showSidebar ? "translate-x-0 " : "-translate-x-full"} ease-in-out duration-300 absolute top-0 left-0 h-full w-2/3 md:hidden min-h-screen`}>
                     <Drawer setIsOpen={setShowSidebar} loginDialog={setIsLoginOpen} />
                 </div>
                 <div className="hidden md:block absolute top-0 right-0 m-3">
