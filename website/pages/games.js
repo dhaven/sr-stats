@@ -49,11 +49,23 @@ const Games = ({ games, user, factions }) => {
     let sortGames = (games, order) => {
         if (order == "newest -> oldest") {
             return games.sort((a, b) => {
-                return new Date(b["createdAt"]).getTime() - new Date(a["createdAt"]).getTime()
+                if(b["createdAt"] == "unknown date"){
+                    return -1
+                }else if(a["createdAt"] == "unknown date"){
+                    return 1
+                }else{
+                    return new Date(b["createdAt"]).getTime() - new Date(a["createdAt"]).getTime()
+                }
             })
         } else {
             return games.sort((a, b) => {
-                return new Date(a["createdAt"]).getTime() - new Date(b["createdAt"]).getTime()
+                if(b["createdAt"] == "unknown date"){
+                    return 1
+                }else if(a["createdAt"] == "unknown date"){
+                    return -1
+                }else{
+                    return new Date(a["createdAt"]).getTime() - new Date(b["createdAt"]).getTime()
+                }
             })
         }
     }
@@ -346,7 +358,11 @@ export async function getServerSideProps(context) {
             games = []
         }
         for (let i = 0; i < games.length; i++) {
-            games[i]['createdAt'] = games[i]['createdAt'].toString()
+            if(games[i]['createdAt'] != null){
+                games[i]['createdAt'] = games[i]['createdAt'].toString()
+            }else{
+                games[i]['createdAt'] = "unknown date"
+            }
             //fetch the game data
             const cursor2 = db.collection('battle')
                 .find({ _id: ObjectId(games[i]['id']) })
