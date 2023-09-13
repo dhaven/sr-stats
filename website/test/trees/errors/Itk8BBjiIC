@@ -22472,9 +22472,9 @@
         {
           "action": [
             {
-              "resolveAlignmentBotScrap": [
+              "cardAction": [
                 {
-                  "choseScrapType": [
+                  "cardTrigger": [
                     {
                       "choseScrapDiscard": [
                         "Chose",
@@ -22491,7 +22491,7 @@
                   ]
                 },
                 {
-                  "alignBotScrap": [
+                  "cardEffect": [
                     {
                       "scrapSummary": [
                         {
@@ -22526,7 +22526,7 @@
                   ]
                 },
                 {
-                  "alignBotScrap": [
+                  "cardEffect": [
                     {
                       "scrapped": [
                         "Scrapped",
@@ -22600,7 +22600,7 @@
                   ]
                 },
                 {
-                  "alignBotScrap": [
+                  "cardEffect": [
                     {
                       "scrapped": [
                         "Scrapped",

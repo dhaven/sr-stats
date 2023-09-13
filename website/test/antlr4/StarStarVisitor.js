@@ -60,6 +60,12 @@ export default class StarStarVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
+	// Visit a parse tree produced by StarStarParser#resolveCommander.
+	visitResolveCommander(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
 	// Visit a parse tree produced by StarStarParser#scrapSummary.
 	visitScrapSummary(ctx) {
 	  return this.visitChildren(ctx);
@@ -192,18 +198,6 @@ export default class StarStarVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
-	// Visit a parse tree produced by StarStarParser#resolveAlignmentBotScrap.
-	visitResolveAlignmentBotScrap(ctx) {
-	  return this.visitChildren(ctx);
-	}
-
-
-	// Visit a parse tree produced by StarStarParser#choseScrapType.
-	visitChoseScrapType(ctx) {
-	  return this.visitChildren(ctx);
-	}
-
-
 	// Visit a parse tree produced by StarStarParser#choseScrapDiscard.
 	visitChoseScrapDiscard(ctx) {
 	  return this.visitChildren(ctx);
@@ -216,14 +210,20 @@ export default class StarStarVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
-	// Visit a parse tree produced by StarStarParser#alignBotScrap.
-	visitAlignBotScrap(ctx) {
+	// Visit a parse tree produced by StarStarParser#choseScrapTradeRow.
+	visitChoseScrapTradeRow(ctx) {
 	  return this.visitChildren(ctx);
 	}
 
 
-	// Visit a parse tree produced by StarStarParser#noscrap.
-	visitNoscrap(ctx) {
+	// Visit a parse tree produced by StarStarParser#choseAddAuthority.
+	visitChoseAddAuthority(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by StarStarParser#noScrap.
+	visitNoScrap(ctx) {
 	  return this.visitChildren(ctx);
 	}
 

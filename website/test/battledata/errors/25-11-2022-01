@@ -29,7 +29,11 @@
           }
         },
         "player": "MAX1478",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": [
+          "frontierfleet",
+          "veteranpilots"
+        ]
       },
       {
         "tradePool": 4,
@@ -55,7 +59,8 @@
           }
         },
         "player": "YL5943",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -82,7 +87,11 @@
           }
         },
         "player": "MAX1478",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": [
+          "frontierfleet",
+          "veteranpilots"
+        ]
       },
       {
         "tradePool": 4,
@@ -109,7 +118,8 @@
           }
         },
         "player": "YL5943",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -130,7 +140,10 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "MAX1478",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": [
+          "frontierfleet"
+        ]
       },
       {
         "tradePool": 7,
@@ -160,7 +173,8 @@
           }
         },
         "player": "YL5943",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 0,
@@ -179,7 +193,10 @@
         "shuffleCount": 1,
         "authority": {},
         "player": "MAX1478",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": [
+          "frontierfleet"
+        ]
       },
       {
         "tradePool": 3,
@@ -205,7 +222,8 @@
           }
         },
         "player": "YL5943",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 0,
@@ -224,7 +242,10 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "MAX1478",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": [
+          "frontierfleet"
+        ]
       }
     ],
     "winCondition": "timeout"

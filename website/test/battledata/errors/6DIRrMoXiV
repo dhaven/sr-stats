@@ -2,7 +2,7 @@
   "status": "success",
   "data": {
     "firstPlayer": "fustylugs",
-    "winner": "",
+    "winner": "fustylugs",
     "rounds": [
       {
         "tradePool": 2,
@@ -29,7 +29,8 @@
           }
         },
         "player": "fustylugs",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -55,7 +56,8 @@
           }
         },
         "player": "Jobbi",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -82,7 +84,8 @@
           }
         },
         "player": "fustylugs",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -109,7 +112,8 @@
           }
         },
         "player": "Jobbi",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -136,7 +140,8 @@
           }
         },
         "player": "fustylugs",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -165,7 +170,8 @@
           }
         },
         "player": "Jobbi",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -186,7 +192,8 @@
         "shuffleCount": 1,
         "authority": {},
         "player": "fustylugs",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 7,
@@ -215,7 +222,8 @@
           }
         },
         "player": "Jobbi",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 7,
@@ -241,7 +249,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "fustylugs",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 6,
@@ -272,7 +281,8 @@
           }
         },
         "player": "Jobbi",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -301,7 +311,8 @@
           }
         },
         "player": "fustylugs",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -324,7 +335,8 @@
         "shuffleCount": 1,
         "authority": {},
         "player": "Jobbi",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -350,7 +362,8 @@
           }
         },
         "player": "fustylugs",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -371,7 +384,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "Jobbi",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -402,7 +416,8 @@
           }
         },
         "player": "fustylugs",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 8,
@@ -423,7 +438,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "Jobbi",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 6,
@@ -454,7 +470,8 @@
           }
         },
         "player": "fustylugs",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -482,7 +499,8 @@
           }
         },
         "player": "Jobbi",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 2,
@@ -511,7 +529,8 @@
           }
         },
         "player": "fustylugs",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -540,7 +559,8 @@
           }
         },
         "player": "Jobbi",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -572,7 +592,8 @@
           }
         },
         "player": "fustylugs",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -602,7 +623,8 @@
           }
         },
         "player": "Jobbi",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -627,7 +649,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "fustylugs",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 8,
@@ -659,7 +682,8 @@
           }
         },
         "player": "Jobbi",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -687,7 +711,8 @@
           }
         },
         "player": "fustylugs",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 2,
@@ -713,7 +738,8 @@
           }
         },
         "player": "Jobbi",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 7,
@@ -743,7 +769,8 @@
           }
         },
         "player": "fustylugs",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 7,
@@ -769,7 +796,8 @@
           }
         },
         "player": "Jobbi",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 8,
@@ -801,7 +829,8 @@
           }
         },
         "player": "fustylugs",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 8,
@@ -835,7 +864,8 @@
           }
         },
         "player": "Jobbi",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 2,
@@ -866,7 +896,8 @@
           }
         },
         "player": "fustylugs",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -902,7 +933,8 @@
           }
         },
         "player": "Jobbi",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -928,7 +960,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "fustylugs",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 2,
@@ -953,7 +986,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "Jobbi",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 2,
@@ -982,140 +1016,8 @@
           }
         },
         "player": "fustylugs",
-        "tradeRowSlot": []
-      },
-      {
-        "tradePool": 0,
-        "combatPool": 0,
-        "usedTrade": 0,
-        "usedCombat": 0,
-        "purchasedCards": [],
-        "completedMissions": [],
-        "events": [],
-        "scrappedCards": [],
-        "discardedCards": [],
-        "destroyedBases": [],
-        "winner": "",
-        "winCondition": "",
-        "drawCount": 0,
-        "shuffleCount": 0,
-        "authority": {},
-        "player": "Jobbi",
-        "tradeRowSlot": []
-      },
-      {
-        "tradePool": 0,
-        "combatPool": 0,
-        "usedTrade": 0,
-        "usedCombat": 0,
-        "purchasedCards": [],
-        "completedMissions": [],
-        "events": [],
-        "scrappedCards": [],
-        "discardedCards": [],
-        "destroyedBases": [],
-        "winner": "",
-        "winCondition": "",
-        "drawCount": 0,
-        "shuffleCount": 0,
-        "authority": {},
-        "player": "fustylugs",
-        "tradeRowSlot": []
-      },
-      {
-        "tradePool": 0,
-        "combatPool": 0,
-        "usedTrade": 0,
-        "usedCombat": 0,
-        "purchasedCards": [],
-        "completedMissions": [],
-        "events": [],
-        "scrappedCards": [],
-        "discardedCards": [],
-        "destroyedBases": [],
-        "winner": "",
-        "winCondition": "",
-        "drawCount": 0,
-        "shuffleCount": 0,
-        "authority": {},
-        "player": "Jobbi",
-        "tradeRowSlot": []
-      },
-      {
-        "tradePool": 0,
-        "combatPool": 0,
-        "usedTrade": 0,
-        "usedCombat": 0,
-        "purchasedCards": [],
-        "completedMissions": [],
-        "events": [],
-        "scrappedCards": [],
-        "discardedCards": [],
-        "destroyedBases": [],
-        "winner": "",
-        "winCondition": "",
-        "drawCount": 0,
-        "shuffleCount": 0,
-        "authority": {},
-        "player": "fustylugs",
-        "tradeRowSlot": []
-      },
-      {
-        "tradePool": 0,
-        "combatPool": 0,
-        "usedTrade": 0,
-        "usedCombat": 0,
-        "purchasedCards": [],
-        "completedMissions": [],
-        "events": [],
-        "scrappedCards": [],
-        "discardedCards": [],
-        "destroyedBases": [],
-        "winner": "",
-        "winCondition": "",
-        "drawCount": 0,
-        "shuffleCount": 0,
-        "authority": {},
-        "player": "Jobbi",
-        "tradeRowSlot": []
-      },
-      {
-        "tradePool": 0,
-        "combatPool": 0,
-        "usedTrade": 0,
-        "usedCombat": 0,
-        "purchasedCards": [],
-        "completedMissions": [],
-        "events": [],
-        "scrappedCards": [],
-        "discardedCards": [],
-        "destroyedBases": [],
-        "winner": "",
-        "winCondition": "",
-        "drawCount": 0,
-        "shuffleCount": 0,
-        "authority": {},
-        "player": "fustylugs",
-        "tradeRowSlot": []
-      },
-      {
-        "tradePool": 0,
-        "combatPool": 0,
-        "usedTrade": 0,
-        "usedCombat": 0,
-        "purchasedCards": [],
-        "completedMissions": [],
-        "events": [],
-        "scrappedCards": [],
-        "discardedCards": [],
-        "destroyedBases": [],
-        "winner": "",
-        "winCondition": "",
-        "drawCount": 0,
-        "shuffleCount": 0,
-        "authority": {},
-        "player": "Jobbi",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       }
     ],
     "winCondition": ""

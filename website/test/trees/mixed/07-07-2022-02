@@ -17526,9 +17526,9 @@
         {
           "action": [
             {
-              "resolveAlignmentBotScrap": [
+              "cardAction": [
                 {
-                  "choseScrapType": [
+                  "cardTrigger": [
                     {
                       "choseScrapDiscard": [
                         "Chose",
@@ -17545,7 +17545,7 @@
                   ]
                 },
                 {
-                  "alignBotScrap": [
+                  "cardEffect": [
                     {
                       "scrapSummary": [
                         {
@@ -17575,7 +17575,7 @@
                   ]
                 },
                 {
-                  "alignBotScrap": [
+                  "cardEffect": [
                     {
                       "scrapped": [
                         "Scrapped",
@@ -17649,7 +17649,7 @@
                   ]
                 },
                 {
-                  "alignBotScrap": [
+                  "cardEffect": [
                     {
                       "scrapped": [
                         "Scrapped",
@@ -22278,76 +22278,72 @@
         {
           "action": [
             {
-              "skipText": [
+              "cardAction": [
                 {
-                  "customWord": [
-                    "Chose"
+                  "cardTrigger": [
+                    {
+                      "choseAddAuthority": [
+                        "Chose",
+                        "Add",
+                        "1",
+                        "Authority",
+                        "\n"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "customWord": [
-                    "Add"
-                  ]
-                },
-                "1",
-                {
-                  "customWord": [
-                    "Authority"
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "YL5943"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Trading"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Post"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+1",
+                            {
+                              "customWord": [
+                                "Authority"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Authority"
+                          ]
+                        },
+                        ":",
+                        "21",
+                        ")",
+                        "\n"
+                      ]
+                    }
                   ]
                 }
-              ]
-            },
-            "\n"
-          ]
-        },
-        {
-          "action": [
-            {
-              "balanceUpdate": [
-                {
-                  "name": [
-                    {
-                      "customWord": [
-                        "YL5943"
-                      ]
-                    }
-                  ]
-                },
-                ">",
-                {
-                  "card": [
-                    {
-                      "customWord": [
-                        "Trading"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "Post"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "effect": [
-                    "+1",
-                    {
-                      "customWord": [
-                        "Authority"
-                      ]
-                    }
-                  ]
-                },
-                "(",
-                {
-                  "customWord": [
-                    "Authority"
-                  ]
-                },
-                ":",
-                "21",
-                ")",
-                "\n"
               ]
             }
           ]

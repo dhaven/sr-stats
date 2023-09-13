@@ -2,14 +2,15 @@ grammar StarStar;
 
 battle            : turn+ EOF;
 turn              : action+ startTurn?;
-action            : cardAcquisition | discarded | destroyBase | cardAction | balanceUpdate | drawCards | shuffleCards | endTurn | winStatus | scrapped | concede | timeout | resolveAlignmentBotScrap | (skipText NEWLINE?);
+action            : cardAcquisition | discarded | destroyBase | cardAction | balanceUpdate | drawCards | shuffleCards | resolveCommander | endTurn | winStatus | scrapped | concede | timeout | (skipText NEWLINE?);
 
 cardAction        : cardTrigger cardEffect*;
-cardTrigger       : playSingle | activate | scrapSelf | event | mission | resolving | choseScrapHandOrDiscard;
-cardEffect        : balanceUpdate | scrapped | scrapSummary | drawCards | shuffleCards | otherEffect | acquireToHand | acquireToDeck;
+cardTrigger       : playSingle | activate | scrapSelf | event | mission | resolving | choseScrapHandOrDiscard | choseScrapDiscard | choseBattleAndDiscard | choseScrapTradeRow | choseAddAuthority;
+cardEffect        : balanceUpdate | scrapped | scrapSummary | drawCards | shuffleCards | otherEffect | acquireToHand | acquireToDeck | noScrap;
 skipText          : (customWord | INT | DECREASE | SEPARATOR | '(' | ':' | ')')+ ;
 balanceUpdate     : name SEPARATOR card? effect '('customWord':'(INT | DECREASE)')' NEWLINE;
 otherEffect       : name SEPARATOR card? customWord+ NEWLINE ;
+resolveCommander  : RESOLVING COMMANDER ':' WORD OR COMMANDER ':' WORD OR COMMANDER ':' WORD NEWLINE;
 scrapSummary      : name IS SCRAPPING (':')? card NEWLINE;
 discarded         : DISCARDED card NEWLINE ;
 winStatus         : name HAS WON THE GAME NEWLINE? ;
@@ -32,16 +33,17 @@ resolveScrapMultiple : RESOLVING SCRAP UP TO INT CARDS FROM YOUR HAND OR DISCARD
 resolvePatience   : RESOLVING CHOOSE WORD CARD TO SET ASIDE NEWLINE;
 resolveOthers     : RESOLVING (customWord | INT)+ NEWLINE;
 choseScrapHandOrDiscard : CHOSE SCRAP WORD CARD FROM YOUR HAND OR DISCARD PILE NEWLINE ;
-
-// specific rule for alignment bot scrap ability
-resolveAlignmentBotScrap : choseScrapType alignBotScrap+ ;
-choseScrapType    : choseScrapDiscard | choseBattleAndDiscard ;
 choseScrapDiscard : CHOSE SCRAP WORD CARD FROM YOUR DISCARD PILE NEWLINE ;
 choseBattleAndDiscard : CHOSE ADD INT COMBAT OPPONENT DISCARDS INT CARDS NEWLINE ;
-alignBotScrap     : scrapped | balanceUpdate | scrapSummary | noscrap;
+choseScrapTradeRow : CHOSE ADD INT COMBAT SCRAP WORD CARD IN THE TRADE ROW NEWLINE;
+choseAddAuthority : CHOSE ADD INT AUTHORITY NEWLINE;
+// specific rule for alignment bot scrap ability
+//resolveAlignmentBotScrap : choseScrapType alignBotScrap+ ;
+//choseScrapType    : choseScrapDiscard | choseBattleAndDiscard ;
+//alignBotScrap     : scrapped | balanceUpdate | scrapSummary | noscrap;
 
 
-noscrap           : name IS NOT SCRAPPING ANY CARDS NEWLINE ;
+noScrap           : name IS NOT SCRAPPING ANY CARDS NEWLINE ;
 concede           : name '('INT ')' CONCEDED NEWLINE;
 timeout           : name WINS THE GAME NEWLINE;
 shuffleCards      : SHUFFLED DISCARD PILE TO FORM NEW DECK NEWLINE;
@@ -50,7 +52,7 @@ drawCards         : DREW INT CARDS NEWLINE;
 
 card              : ((customWord '\'s'?) | INT)+ ;
 name              : customWord+ ;
-customWord        : WORD|ACQUIRED|ACTIVATING|ADD|ALL|ALLY|ANY|ASIDE|CARD|CARDS|CHOOSE|CHOSE|COMBAT|CONCEDED|DECK|DESTROYED|DISCARD|DISCARDING|DISCARDS|DREW|ENDS|EVENT|FORM|FROM|GAME|HAND|HAS|INDICATORS|IS|IT|NEW|NOT|NOW|OF|OPPONENT|OR|PILE|PLAY|PLAYED|REFRESH|RESOLVING|REVEALED|SCRAP|SCRAPPED|SCRAPPING|SET|SHUFFLED|THE|TO|TOP|TURN|UP|WINS|WON|YOUR;
+customWord        : WORD|ACQUIRED|ACTIVATING|AUTHORITY|COMMANDER|ADD|ALL|ALLY|ANY|ASIDE|CARD|CARDS|CHOOSE|CHOSE|COMBAT|CONCEDED|DECK|DESTROYED|DISCARD|DISCARDING|DISCARDS|DREW|ENDS|EVENT|FORM|FROM|GAME|HAND|HAS|INDICATORS|IS|IN|IT|NEW|NOT|NOW|OF|OPPONENT|OR|PILE|PLAY|PLAYED|REFRESH|RESOLVING|REVEALED|SCRAP|SCRAPPED|SCRAPPING|SET|SHUFFLED|THE|TO|TOP|TURN|UP|WINS|WON|YOUR|TRADE|ROW;
 
 fragment A : ('A'|'a');
 fragment B : ('B'|'b');
@@ -81,6 +83,8 @@ fragment Z : ('Z'|'z');
 
 ACQUIRED            : A C Q U I R E D ;
 ACTIVATING          : A C T I V A T I N G ;
+AUTHORITY           : A U T H O R I T Y ;
+COMMANDER           : C O M M A N D E R ;
 ADD                 : A D D ;
 ALL                 : A L L ;
 ALLY                : A L L Y ;
@@ -108,6 +112,7 @@ HAND                : H A N D ;
 HAS                 : H A S ;
 INDICATORS          : I N D I C A T O R S ;
 IS                  : I S ;
+IN                  : I N ;
 IT                  : I T ;
 NEW                 : N E W ;
 NOT                 : N O T ;
@@ -134,6 +139,8 @@ UP                  : U P ;
 WINS                : W I N S ;
 WON                 : W O N ;
 YOUR                : Y O U R ;
+TRADE               : T R A D E ;
+ROW                 : R O W ;
 
 
 WHITESPACE          : (' ' | '\t') -> skip ;

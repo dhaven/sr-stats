@@ -24,7 +24,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "YL5943",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -51,7 +52,8 @@
           }
         },
         "player": "greg19",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -73,7 +75,8 @@
         "shuffleCount": 1,
         "authority": {},
         "player": "YL5943",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -100,7 +103,8 @@
           }
         },
         "player": "greg19",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -128,7 +132,8 @@
           }
         },
         "player": "YL5943",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 6,
@@ -153,7 +158,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "greg19",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 9,
@@ -174,7 +180,8 @@
         "shuffleCount": 1,
         "authority": {},
         "player": "YL5943",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -201,7 +208,8 @@
           }
         },
         "player": "greg19",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 6,
@@ -222,7 +230,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "YL5943",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -251,7 +260,8 @@
           }
         },
         "player": "greg19",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -280,7 +290,8 @@
           }
         },
         "player": "YL5943",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -311,7 +322,8 @@
           }
         },
         "player": "greg19",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -340,7 +352,8 @@
           }
         },
         "player": "YL5943",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       }
     ],
     "winCondition": "resignation"

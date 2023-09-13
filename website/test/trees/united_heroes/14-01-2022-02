@@ -9305,98 +9305,82 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "noScrap": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "Player"
+                              ]
+                            }
+                          ]
+                        },
+                        "is",
+                        "not",
+                        "scrapping",
+                        "any",
+                        "cards",
+                        "\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "Player"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Builder"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Bot"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+1",
+                            {
+                              "customWord": [
+                                "Trade"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Trade"
+                          ]
+                        },
+                        ":",
+                        "6",
+                        ")",
+                        "\n"
+                      ]
+                    }
+                  ]
                 }
-              ]
-            }
-          ]
-        },
-        {
-          "action": [
-            {
-              "skipText": [
-                {
-                  "customWord": [
-                    "Player"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "is"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "not"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "scrapping"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "any"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "cards"
-                  ]
-                }
-              ]
-            },
-            "\n"
-          ]
-        },
-        {
-          "action": [
-            {
-              "balanceUpdate": [
-                {
-                  "name": [
-                    {
-                      "customWord": [
-                        "Player"
-                      ]
-                    }
-                  ]
-                },
-                ">",
-                {
-                  "card": [
-                    {
-                      "customWord": [
-                        "Builder"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "Bot"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "effect": [
-                    "+1",
-                    {
-                      "customWord": [
-                        "Trade"
-                      ]
-                    }
-                  ]
-                },
-                "(",
-                {
-                  "customWord": [
-                    "Trade"
-                  ]
-                },
-                ":",
-                "6",
-                ")",
-                "\n"
               ]
             }
           ]

@@ -1,0 +1,7901 @@
+{
+  "battle": [
+    {
+      "turn": [
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Play"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "all"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "1",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Viper"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "1",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Viper"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "2",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAcquisition": [
+                "Acquired",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "Bot"
+                      ]
+                    }
+                  ]
+                },
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "0",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Attacked"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Hard"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "AI"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "for"
+                  ]
+                },
+                "2",
+                "(",
+                {
+                  "customWord": [
+                    "New"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Authority"
+                  ]
+                },
+                ":",
+                "48",
+                ")"
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-2",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "0",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-2",
+                    {
+                      "customWord": [
+                        "Authority"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Authority"
+                  ]
+                },
+                ":",
+                "48",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "endTurn": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "ends",
+                "turn",
+                "1",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "drawCards": [
+                "Drew",
+                "5",
+                "cards",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Refresh"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "ally"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "indicators"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "startTurn": [
+            "It",
+            "is",
+            "now",
+            {
+              "name": [
+                {
+                  "customWord": [
+                    "Hard"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "AI"
+                  ]
+                }
+              ]
+            },
+            "'s",
+            "turn",
+            "2",
+            "\r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "turn": [
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Play"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "all"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Viper"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "1",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "1",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Viper"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "2",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "2",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "3",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAcquisition": [
+                "Acquired",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Battle"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "Pod"
+                      ]
+                    }
+                  ]
+                },
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-2",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "1",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAcquisition": [
+                "Acquired",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Blob"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "Fighter"
+                      ]
+                    }
+                  ]
+                },
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "0",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Attacked"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Player"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "for"
+                  ]
+                },
+                "2",
+                "(",
+                {
+                  "customWord": [
+                    "New"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Authority"
+                  ]
+                },
+                ":",
+                "48",
+                ")"
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-2",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "0",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-2",
+                    {
+                      "customWord": [
+                        "Authority"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Authority"
+                  ]
+                },
+                ":",
+                "48",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "endTurn": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                "ends",
+                "turn",
+                "2",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "drawCards": [
+                "Drew",
+                "5",
+                "cards",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Refresh"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "ally"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "indicators"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "startTurn": [
+            "It",
+            "is",
+            "now",
+            {
+              "name": [
+                {
+                  "customWord": [
+                    "Player"
+                  ]
+                }
+              ]
+            },
+            "'s",
+            "turn",
+            "3",
+            "\r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "turn": [
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Play"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "all"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "1",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "2",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "3",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "4",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "5",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAcquisition": [
+                "Acquired",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Freighter"
+                      ]
+                    }
+                  ]
+                },
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-4",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "1",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAcquisition": [
+                "Acquired",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "BioWarrior"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "Storm"
+                      ]
+                    }
+                  ]
+                },
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "0",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Refresh"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "ally"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "indicators"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Refresh"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "ally"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "indicators"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Changed"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "BioWarrior"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Storm"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "to"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "on"
+                  ]
+                },
+                "-",
+                {
+                  "customWord": [
+                    "table"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "image"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "endTurn": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "ends",
+                "turn",
+                "3",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "drawCards": [
+                "Drew",
+                "2",
+                "cards",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "shuffleCards": [
+                "Shuffled",
+                "discard",
+                "pile",
+                "to",
+                "form",
+                "new",
+                "deck",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "drawCards": [
+                "Drew",
+                "3",
+                "cards",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Refresh"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "ally"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "indicators"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "startTurn": [
+            "It",
+            "is",
+            "now",
+            {
+              "name": [
+                {
+                  "customWord": [
+                    "Hard"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "AI"
+                  ]
+                }
+              ]
+            },
+            "'s",
+            "turn",
+            "4",
+            "\r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "turn": [
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Play"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "all"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "1",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "2",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "3",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "4",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "5",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAcquisition": [
+                "Acquired",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "The"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "Hive"
+                      ]
+                    }
+                  ]
+                },
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-5",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "0",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "endTurn": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                "ends",
+                "turn",
+                "4",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "shuffleCards": [
+                "Shuffled",
+                "discard",
+                "pile",
+                "to",
+                "form",
+                "new",
+                "deck",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "drawCards": [
+                "Drew",
+                "5",
+                "cards",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Refresh"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "ally"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "indicators"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "startTurn": [
+            "It",
+            "is",
+            "now",
+            {
+              "name": [
+                {
+                  "customWord": [
+                    "Player"
+                  ]
+                }
+              ]
+            },
+            "'s",
+            "turn",
+            "5",
+            "\r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "turn": [
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Play"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "all"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "1",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "2",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "3",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Viper"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "1",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "4",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAcquisition": [
+                "Acquired",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Blob"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "Destroyer"
+                      ]
+                    }
+                  ]
+                },
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-4",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "0",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Attacked"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Hard"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "AI"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "for"
+                  ]
+                },
+                "1",
+                "(",
+                {
+                  "customWord": [
+                    "New"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Authority"
+                  ]
+                },
+                ":",
+                "47",
+                ")"
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-1",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "0",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-1",
+                    {
+                      "customWord": [
+                        "Authority"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Authority"
+                  ]
+                },
+                ":",
+                "47",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "endTurn": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "ends",
+                "turn",
+                "5",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "drawCards": [
+                "Drew",
+                "5",
+                "cards",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Refresh"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "ally"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "indicators"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "startTurn": [
+            "It",
+            "is",
+            "now",
+            {
+              "name": [
+                {
+                  "customWord": [
+                    "Hard"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "AI"
+                  ]
+                }
+              ]
+            },
+            "'s",
+            "turn",
+            "6",
+            "\r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "turn": [
+        {
+          "action": [
+            {
+              "cardAction": [
+                {
+                  "cardTrigger": [
+                    {
+                      "playSingle": [
+                        "Played",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "The"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Hive"
+                              ]
+                            }
+                          ]
+                        },
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "Hard"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "AI"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "The"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Hive"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+3",
+                            {
+                              "customWord": [
+                                "Combat"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Combat"
+                          ]
+                        },
+                        ":",
+                        "3",
+                        ")",
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Play"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "all"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Blob"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "Fighter"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+3",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "6",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "drawCards": [
+                "Drew",
+                "1",
+                "cards",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "drawCards": [
+                "Drew",
+                "1",
+                "cards",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Play"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "all"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Viper"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "7",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "1",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "2",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "3",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "4",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAcquisition": [
+                "Acquired",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Stealth"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "Needle"
+                      ]
+                    }
+                  ]
+                },
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-4",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "0",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Attacked"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Player"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "for"
+                  ]
+                },
+                "7",
+                "(",
+                {
+                  "customWord": [
+                    "New"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Authority"
+                  ]
+                },
+                ":",
+                "41",
+                ")"
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-7",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "0",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-7",
+                    {
+                      "customWord": [
+                        "Authority"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Authority"
+                  ]
+                },
+                ":",
+                "41",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "endTurn": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                "ends",
+                "turn",
+                "6",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "drawCards": [
+                "Drew",
+                "5",
+                "cards",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Refresh"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "ally"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "indicators"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "startTurn": [
+            "It",
+            "is",
+            "now",
+            {
+              "name": [
+                {
+                  "customWord": [
+                    "Player"
+                  ]
+                }
+              ]
+            },
+            "'s",
+            "turn",
+            "7",
+            "\r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "turn": [
+        {
+          "action": [
+            {
+              "cardAction": [
+                {
+                  "cardTrigger": [
+                    {
+                      "playSingle": [
+                        "Played",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Trade"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Bot"
+                              ]
+                            }
+                          ]
+                        },
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "scrapSummary": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "Player"
+                              ]
+                            }
+                          ]
+                        },
+                        "is",
+                        "scrapping",
+                        ":",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Viper"
+                              ]
+                            }
+                          ]
+                        },
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "Player"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Trade"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Bot"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+1",
+                            {
+                              "customWord": [
+                                "Trade"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Trade"
+                          ]
+                        },
+                        ":",
+                        "1",
+                        ")",
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "scrapped": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Viper"
+                              ]
+                            }
+                          ]
+                        },
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Play"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "all"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "2",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "3",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Freighter"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+4",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "7",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Viper"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "1",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAcquisition": [
+                "Acquired",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Machine"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "Base"
+                      ]
+                    }
+                  ]
+                },
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-7",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "0",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Attacked"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Hard"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "AI"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "for"
+                  ]
+                },
+                "1",
+                "(",
+                {
+                  "customWord": [
+                    "New"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Authority"
+                  ]
+                },
+                ":",
+                "46",
+                ")"
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-1",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "0",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-1",
+                    {
+                      "customWord": [
+                        "Authority"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Authority"
+                  ]
+                },
+                ":",
+                "46",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "endTurn": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "ends",
+                "turn",
+                "7",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "drawCards": [
+                "Drew",
+                "2",
+                "cards",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "shuffleCards": [
+                "Shuffled",
+                "discard",
+                "pile",
+                "to",
+                "form",
+                "new",
+                "deck",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "drawCards": [
+                "Drew",
+                "3",
+                "cards",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Refresh"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "ally"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "indicators"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "startTurn": [
+            "It",
+            "is",
+            "now",
+            {
+              "name": [
+                {
+                  "customWord": [
+                    "Hard"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "AI"
+                  ]
+                }
+              ]
+            },
+            "'s",
+            "turn",
+            "8",
+            "\r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "turn": [
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "The"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "Hive"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+3",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "3",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAction": [
+                {
+                  "cardTrigger": [
+                    {
+                      "playSingle": [
+                        "Played",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Battle"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Pod"
+                              ]
+                            }
+                          ]
+                        },
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "Hard"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "AI"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Battle"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Pod"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+4",
+                            {
+                              "customWord": [
+                                "Combat"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Combat"
+                          ]
+                        },
+                        ":",
+                        "7",
+                        ")",
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "scrapped": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Missile"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Mech"
+                              ]
+                            }
+                          ]
+                        },
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "Hard"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "AI"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Battle"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Pod"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+2",
+                            {
+                              "customWord": [
+                                "Combat"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Combat"
+                          ]
+                        },
+                        ":",
+                        "9",
+                        ")",
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "drawCards": [
+                        "Drew",
+                        "1",
+                        "cards",
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Play"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "all"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "1",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "2",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Viper"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "10",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "3",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "4",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAcquisition": [
+                "Acquired",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Battle"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "Station"
+                      ]
+                    }
+                  ]
+                },
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-3",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "1",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAcquisition": [
+                "Acquired",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Blob"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "Fighter"
+                      ]
+                    }
+                  ]
+                },
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "0",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Attacked"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Player"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "for"
+                  ]
+                },
+                "10",
+                "(",
+                {
+                  "customWord": [
+                    "New"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Authority"
+                  ]
+                },
+                ":",
+                "31",
+                ")"
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-10",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "0",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-10",
+                    {
+                      "customWord": [
+                        "Authority"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Authority"
+                  ]
+                },
+                ":",
+                "31",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "endTurn": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                "ends",
+                "turn",
+                "8",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "shuffleCards": [
+                "Shuffled",
+                "discard",
+                "pile",
+                "to",
+                "form",
+                "new",
+                "deck",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "drawCards": [
+                "Drew",
+                "5",
+                "cards",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Refresh"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "ally"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "indicators"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "startTurn": [
+            "It",
+            "is",
+            "now",
+            {
+              "name": [
+                {
+                  "customWord": [
+                    "Player"
+                  ]
+                }
+              ]
+            },
+            "'s",
+            "turn",
+            "9",
+            "\r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "turn": [
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Play"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "all"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "1",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "2",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "3",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "4",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "5",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAcquisition": [
+                "Acquired",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "War"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "World"
+                      ]
+                    }
+                  ]
+                },
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-5",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "0",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "endTurn": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "ends",
+                "turn",
+                "9",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "drawCards": [
+                "Drew",
+                "5",
+                "cards",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Refresh"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "ally"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "indicators"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "startTurn": [
+            "It",
+            "is",
+            "now",
+            {
+              "name": [
+                {
+                  "customWord": [
+                    "Hard"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "AI"
+                  ]
+                }
+              ]
+            },
+            "'s",
+            "turn",
+            "10",
+            "\r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "turn": [
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "The"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "Hive"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+3",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "3",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAction": [
+                {
+                  "cardTrigger": [
+                    {
+                      "playSingle": [
+                        "Played",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Battle"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Pod"
+                              ]
+                            }
+                          ]
+                        },
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "Hard"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "AI"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Battle"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Pod"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+4",
+                            {
+                              "customWord": [
+                                "Combat"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Combat"
+                          ]
+                        },
+                        ":",
+                        "7",
+                        ")",
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "scrapped": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Freighter"
+                              ]
+                            }
+                          ]
+                        },
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "Hard"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "AI"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Battle"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Pod"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+2",
+                            {
+                              "customWord": [
+                                "Combat"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Combat"
+                          ]
+                        },
+                        ":",
+                        "9",
+                        ")",
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "drawCards": [
+                        "Drew",
+                        "1",
+                        "cards",
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Play"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "all"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Blob"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "Fighter"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+3",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "12",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "drawCards": [
+                "Drew",
+                "1",
+                "cards",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAction": [
+                {
+                  "cardTrigger": [
+                    {
+                      "playSingle": [
+                        "Played",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Scout"
+                              ]
+                            }
+                          ]
+                        },
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "Hard"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "AI"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Scout"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+1",
+                            {
+                              "customWord": [
+                                "Trade"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Trade"
+                          ]
+                        },
+                        ":",
+                        "1",
+                        ")",
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAction": [
+                {
+                  "cardTrigger": [
+                    {
+                      "playSingle": [
+                        "Played",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Viper"
+                              ]
+                            }
+                          ]
+                        },
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "Hard"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "AI"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Viper"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+1",
+                            {
+                              "customWord": [
+                                "Combat"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Combat"
+                          ]
+                        },
+                        ":",
+                        "13",
+                        ")",
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAction": [
+                {
+                  "cardTrigger": [
+                    {
+                      "playSingle": [
+                        "Played",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Scout"
+                              ]
+                            }
+                          ]
+                        },
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "Hard"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "AI"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Scout"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+1",
+                            {
+                              "customWord": [
+                                "Trade"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Trade"
+                          ]
+                        },
+                        ":",
+                        "2",
+                        ")",
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAction": [
+                {
+                  "cardTrigger": [
+                    {
+                      "playSingle": [
+                        "Played",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Viper"
+                              ]
+                            }
+                          ]
+                        },
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "Hard"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "AI"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Viper"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+1",
+                            {
+                              "customWord": [
+                                "Combat"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Combat"
+                          ]
+                        },
+                        ":",
+                        "14",
+                        ")",
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAction": [
+                {
+                  "cardTrigger": [
+                    {
+                      "activate": [
+                        "Activating",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Stealth"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Needle"
+                              ]
+                            }
+                          ]
+                        },
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Hard"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "AI"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "selecting"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "ship"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Battle"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Pod"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Changed"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Stealth"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Needle"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "to"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Battle"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Pod"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAction": [
+                {
+                  "cardTrigger": [
+                    {
+                      "playSingle": [
+                        "Played",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Battle"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Pod"
+                              ]
+                            }
+                          ]
+                        },
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "Hard"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "AI"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Stealth"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Needle"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+4",
+                            {
+                              "customWord": [
+                                "Combat"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Combat"
+                          ]
+                        },
+                        ":",
+                        "18",
+                        ")",
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "scrapped": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Battle"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Blob"
+                              ]
+                            }
+                          ]
+                        },
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "Hard"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "AI"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Stealth"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Needle"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+2",
+                            {
+                              "customWord": [
+                                "Combat"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Combat"
+                          ]
+                        },
+                        ":",
+                        "20",
+                        ")",
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAcquisition": [
+                "Acquired",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Corvette"
+                      ]
+                    }
+                  ]
+                },
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-2",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "0",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Attacked"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Player"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "for"
+                  ]
+                },
+                "20",
+                "(",
+                {
+                  "customWord": [
+                    "New"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Authority"
+                  ]
+                },
+                ":",
+                "11",
+                ")"
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-20",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "0",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-20",
+                    {
+                      "customWord": [
+                        "Authority"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Authority"
+                  ]
+                },
+                ":",
+                "11",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "endTurn": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                "ends",
+                "turn",
+                "10",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Changed"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Stealth"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Needle"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "to"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Unaligned"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "drawCards": [
+                "Drew",
+                "5",
+                "cards",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Refresh"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "ally"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "indicators"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "startTurn": [
+            "It",
+            "is",
+            "now",
+            {
+              "name": [
+                {
+                  "customWord": [
+                    "Player"
+                  ]
+                }
+              ]
+            },
+            "'s",
+            "turn",
+            "11",
+            "\r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "turn": [
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Play"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "all"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Freighter"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+4",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "4",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "5",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Viper"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "1",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Blob"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "Destroyer"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+6",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "7",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "6",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAcquisition": [
+                "Acquired",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Embassy"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "Yacht"
+                      ]
+                    }
+                  ]
+                },
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-3",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "3",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAcquisition": [
+                "Acquired",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Cutter"
+                      ]
+                    }
+                  ]
+                },
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-2",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "1",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Attacked"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Hard"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "AI"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "for"
+                  ]
+                },
+                "7",
+                "(",
+                {
+                  "customWord": [
+                    "New"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Authority"
+                  ]
+                },
+                ":",
+                "39",
+                ")"
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-7",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "0",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-7",
+                    {
+                      "customWord": [
+                        "Authority"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Authority"
+                  ]
+                },
+                ":",
+                "39",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAcquisition": [
+                "Acquired",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "Bot"
+                      ]
+                    }
+                  ]
+                },
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "0",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "endTurn": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "ends",
+                "turn",
+                "11",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "drawCards": [
+                "Drew",
+                "3",
+                "cards",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "shuffleCards": [
+                "Shuffled",
+                "discard",
+                "pile",
+                "to",
+                "form",
+                "new",
+                "deck",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "drawCards": [
+                "Drew",
+                "2",
+                "cards",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Refresh"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "ally"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "indicators"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "startTurn": [
+            "It",
+            "is",
+            "now",
+            {
+              "name": [
+                {
+                  "customWord": [
+                    "Hard"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "AI"
+                  ]
+                }
+              ]
+            },
+            "'s",
+            "turn",
+            "12",
+            "\r\n"
+          ]
+        }
+      ]
+    },
+    {
+      "turn": [
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "The"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "Hive"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+3",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "3",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Play"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "all"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Blob"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "Fighter"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+3",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "6",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "drawCards": [
+                "Drew",
+                "1",
+                "cards",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "drawCards": [
+                "Drew",
+                "1",
+                "cards",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAction": [
+                {
+                  "cardTrigger": [
+                    {
+                      "playSingle": [
+                        "Played",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Battle"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Station"
+                              ]
+                            }
+                          ]
+                        },
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Play"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "all"
+                  ]
+                }
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "1",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "2",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "3",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "4",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                ">",
+                {
+                  "card": [
+                    {
+                      "customWord": [
+                        "Scout"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "effect": [
+                    "+1",
+                    {
+                      "customWord": [
+                        "Trade"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Trade"
+                  ]
+                },
+                ":",
+                "5",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "cardAction": [
+                {
+                  "cardTrigger": [
+                    {
+                      "scrapSelf": [
+                        "Scrapping",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Battle"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Station"
+                              ]
+                            }
+                          ]
+                        },
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "scrapped": [
+                        "Scrapped",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Battle"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Station"
+                              ]
+                            }
+                          ]
+                        },
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "Hard"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "AI"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Battle"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Station"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+5",
+                            {
+                              "customWord": [
+                                "Combat"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Combat"
+                          ]
+                        },
+                        ":",
+                        "11",
+                        ")",
+                        "\r\n"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "skipText": [
+                {
+                  "customWord": [
+                    "Attacked"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Player"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "for"
+                  ]
+                },
+                "11",
+                "(",
+                {
+                  "customWord": [
+                    "New"
+                  ]
+                },
+                {
+                  "customWord": [
+                    "Authority"
+                  ]
+                },
+                ":",
+                "0",
+                ")"
+              ]
+            },
+            "\r\n"
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-11",
+                    {
+                      "customWord": [
+                        "Combat"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Combat"
+                  ]
+                },
+                ":",
+                "0",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "balanceUpdate": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Player"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "effect": [
+                    "-11",
+                    {
+                      "customWord": [
+                        "Authority"
+                      ]
+                    }
+                  ]
+                },
+                "(",
+                {
+                  "customWord": [
+                    "Authority"
+                  ]
+                },
+                ":",
+                "0",
+                ")",
+                "\r\n"
+              ]
+            }
+          ]
+        },
+        {
+          "action": [
+            {
+              "winStatus": [
+                {
+                  "name": [
+                    {
+                      "customWord": [
+                        "Hard"
+                      ]
+                    },
+                    {
+                      "customWord": [
+                        "AI"
+                      ]
+                    }
+                  ]
+                },
+                "has",
+                "won",
+                "the",
+                "game",
+                "\r\n"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "<EOF>"
+  ]
+}

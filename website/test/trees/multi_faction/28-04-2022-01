@@ -11071,151 +11071,147 @@
         {
           "action": [
             {
-              "skipText": [
+              "cardAction": [
                 {
-                  "customWord": [
-                    "Chose"
+                  "cardTrigger": [
+                    {
+                      "choseAddAuthority": [
+                        "Chose",
+                        "Add",
+                        "3",
+                        "Authority",
+                        "\n"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "customWord": [
-                    "Add"
-                  ]
-                },
-                "3",
-                {
-                  "customWord": [
-                    "Authority"
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "Player"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "C"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "o"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "a"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "l"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "i"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "t"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "i"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "o"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "n"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "F"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "o"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "r"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "t"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "r"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "e"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "s"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "s"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+3",
+                            {
+                              "customWord": [
+                                "Authority"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Authority"
+                          ]
+                        },
+                        ":",
+                        "39",
+                        ")",
+                        "\n"
+                      ]
+                    }
                   ]
                 }
-              ]
-            },
-            "\n"
-          ]
-        },
-        {
-          "action": [
-            {
-              "balanceUpdate": [
-                {
-                  "name": [
-                    {
-                      "customWord": [
-                        "Player"
-                      ]
-                    }
-                  ]
-                },
-                ">",
-                {
-                  "card": [
-                    {
-                      "customWord": [
-                        "C"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "o"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "a"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "l"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "i"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "t"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "i"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "o"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "n"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "F"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "o"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "r"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "t"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "r"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "e"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "s"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "s"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "effect": [
-                    "+3",
-                    {
-                      "customWord": [
-                        "Authority"
-                      ]
-                    }
-                  ]
-                },
-                "(",
-                {
-                  "customWord": [
-                    "Authority"
-                  ]
-                },
-                ":",
-                "39",
-                ")",
-                "\n"
               ]
             }
           ]
@@ -18947,9 +18943,9 @@
         {
           "action": [
             {
-              "resolveAlignmentBotScrap": [
+              "cardAction": [
                 {
-                  "choseScrapType": [
+                  "cardTrigger": [
                     {
                       "choseScrapDiscard": [
                         "Chose",
@@ -18966,9 +18962,9 @@
                   ]
                 },
                 {
-                  "alignBotScrap": [
+                  "cardEffect": [
                     {
-                      "noscrap": [
+                      "noScrap": [
                         {
                           "name": [
                             {
@@ -18994,7 +18990,7 @@
                   ]
                 },
                 {
-                  "alignBotScrap": [
+                  "cardEffect": [
                     {
                       "scrapped": [
                         "Scrapped",

@@ -25,7 +25,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "HardAI",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -53,7 +54,10 @@
           }
         },
         "player": "Player",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": [
+          "energyshield"
+        ]
       },
       {
         "tradePool": 3,
@@ -79,7 +83,8 @@
           }
         },
         "player": "HardAI",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -109,7 +114,10 @@
           }
         },
         "player": "Player",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": [
+          "energyshield"
+        ]
       },
       {
         "tradePool": 5,
@@ -130,7 +138,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "HardAI",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 6,
@@ -157,7 +166,10 @@
           }
         },
         "player": "Player",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": [
+          "energyshield"
+        ]
       },
       {
         "tradePool": 3,
@@ -183,7 +195,8 @@
           }
         },
         "player": "HardAI",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -207,7 +220,8 @@
         "shuffleCount": 1,
         "authority": {},
         "player": "Player",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -240,7 +254,8 @@
           }
         },
         "player": "HardAI",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -278,6 +293,9 @@
         "player": "Player",
         "tradeRowSlot": [
           "dreadnaught"
+        ],
+        "foundGambits": [
+          "energyshield"
         ]
       },
       {
@@ -302,7 +320,8 @@
         "player": "HardAI",
         "tradeRowSlot": [
           "defensesystem"
-        ]
+        ],
+        "foundGambits": []
       },
       {
         "tradePool": 1,
@@ -329,7 +348,10 @@
           }
         },
         "player": "Player",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": [
+          "energyshield"
+        ]
       },
       {
         "tradePool": 2,
@@ -356,7 +378,8 @@
           }
         },
         "player": "HardAI",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 7,
@@ -388,7 +411,10 @@
           }
         },
         "player": "Player",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": [
+          "energyshield"
+        ]
       },
       {
         "tradePool": 11,
@@ -418,7 +444,8 @@
         "shuffleCount": 1,
         "authority": {},
         "player": "HardAI",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -448,7 +475,10 @@
           }
         },
         "player": "Player",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": [
+          "energyshield"
+        ]
       },
       {
         "tradePool": 3,
@@ -471,7 +501,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "HardAI",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 1,
@@ -505,7 +536,10 @@
           }
         },
         "player": "Player",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": [
+          "energyshield"
+        ]
       },
       {
         "tradePool": 6,
@@ -547,7 +581,8 @@
           }
         },
         "player": "HardAI",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 1,
@@ -577,7 +612,10 @@
           }
         },
         "player": "Player",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": [
+          "energyshield"
+        ]
       },
       {
         "tradePool": 5,
@@ -603,7 +641,8 @@
         "shuffleCount": 1,
         "authority": {},
         "player": "HardAI",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -637,7 +676,10 @@
           }
         },
         "player": "Player",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": [
+          "energyshield"
+        ]
       }
     ],
     "winCondition": ""

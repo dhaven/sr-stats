@@ -31,7 +31,8 @@
           }
         },
         "player": "George21",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 9,
@@ -73,7 +74,8 @@
           }
         },
         "player": "Scottopia",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 7,
@@ -109,7 +111,8 @@
           }
         },
         "player": "George21",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 8,
@@ -130,7 +133,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "Scottopia",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -158,7 +162,8 @@
           }
         },
         "player": "George21",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 6,
@@ -187,7 +192,8 @@
         "shuffleCount": 1,
         "authority": {},
         "player": "Scottopia",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -215,7 +221,8 @@
           }
         },
         "player": "George21",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -240,7 +247,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "Scottopia",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 2,
@@ -274,7 +282,8 @@
           }
         },
         "player": "George21",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 10,
@@ -319,7 +328,8 @@
           }
         },
         "player": "Scottopia",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 2,
@@ -348,7 +358,8 @@
           }
         },
         "player": "George21",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       }
     ],
     "winCondition": ""

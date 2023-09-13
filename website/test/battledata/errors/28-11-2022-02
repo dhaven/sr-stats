@@ -29,7 +29,8 @@
           }
         },
         "player": "Willydt",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -55,7 +56,8 @@
           }
         },
         "player": "ZaZ333",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -76,7 +78,8 @@
         "shuffleCount": 1,
         "authority": {},
         "player": "Willydt",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -102,7 +105,8 @@
           }
         },
         "player": "ZaZ333",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -129,7 +133,8 @@
           }
         },
         "player": "Willydt",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -158,7 +163,8 @@
           }
         },
         "player": "ZaZ333",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -182,7 +188,8 @@
         "shuffleCount": 1,
         "authority": {},
         "player": "Willydt",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -204,7 +211,8 @@
         "shuffleCount": 1,
         "authority": {},
         "player": "ZaZ333",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -234,7 +242,8 @@
           }
         },
         "player": "Willydt",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 6,
@@ -257,7 +266,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "ZaZ333",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 7,
@@ -285,7 +295,8 @@
           }
         },
         "player": "Willydt",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -315,7 +326,8 @@
           }
         },
         "player": "ZaZ333",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -343,7 +355,8 @@
           }
         },
         "player": "Willydt",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -371,7 +384,8 @@
           }
         },
         "player": "ZaZ333",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 10,
@@ -400,7 +414,8 @@
           }
         },
         "player": "Willydt",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 2,
@@ -429,7 +444,8 @@
           }
         },
         "player": "ZaZ333",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 2,
@@ -459,7 +475,8 @@
           }
         },
         "player": "Willydt",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 6,
@@ -482,7 +499,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "ZaZ333",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -514,7 +532,8 @@
           }
         },
         "player": "Willydt",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -546,7 +565,8 @@
           }
         },
         "player": "ZaZ333",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 8,
@@ -572,7 +592,8 @@
           }
         },
         "player": "Willydt",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 7,
@@ -608,7 +629,8 @@
           }
         },
         "player": "ZaZ333",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -644,7 +666,8 @@
           }
         },
         "player": "Willydt",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       }
     ],
     "winCondition": ""

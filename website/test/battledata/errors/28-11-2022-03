@@ -29,7 +29,8 @@
           }
         },
         "player": "astrojw",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -56,7 +57,8 @@
           }
         },
         "player": "Rosty",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -83,7 +85,8 @@
           }
         },
         "player": "astrojw",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -109,7 +112,8 @@
           }
         },
         "player": "Rosty",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -131,7 +135,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "astrojw",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -157,7 +162,8 @@
           }
         },
         "player": "Rosty",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 6,
@@ -180,7 +186,8 @@
         "shuffleCount": 1,
         "authority": {},
         "player": "astrojw",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 6,
@@ -210,7 +217,8 @@
           }
         },
         "player": "Rosty",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -236,7 +244,8 @@
           }
         },
         "player": "astrojw",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -268,7 +277,8 @@
           }
         },
         "player": "Rosty",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -292,7 +302,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "astrojw",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 8,
@@ -321,7 +332,8 @@
           }
         },
         "player": "Rosty",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -356,7 +368,8 @@
           }
         },
         "player": "astrojw",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 2,
@@ -389,7 +402,8 @@
           }
         },
         "player": "Rosty",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -419,7 +433,8 @@
           }
         },
         "player": "astrojw",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -442,7 +457,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "Rosty",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -477,7 +493,8 @@
           }
         },
         "player": "astrojw",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -508,7 +525,8 @@
           }
         },
         "player": "Rosty",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 8,
@@ -541,7 +559,8 @@
           }
         },
         "player": "astrojw",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -575,7 +594,8 @@
           }
         },
         "player": "Rosty",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 2,
@@ -598,7 +618,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "astrojw",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 6,
@@ -619,7 +640,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "Rosty",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -653,7 +675,8 @@
           }
         },
         "player": "astrojw",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 2,
@@ -687,7 +710,8 @@
           }
         },
         "player": "Rosty",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 6,
@@ -716,7 +740,8 @@
           }
         },
         "player": "astrojw",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 6,
@@ -752,7 +777,8 @@
           }
         },
         "player": "Rosty",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -784,7 +810,8 @@
           }
         },
         "player": "astrojw",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 2,
@@ -815,7 +842,8 @@
           }
         },
         "player": "Rosty",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -847,7 +875,8 @@
           }
         },
         "player": "astrojw",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -880,7 +909,8 @@
           }
         },
         "player": "Rosty",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 6,
@@ -904,7 +934,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "astrojw",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 8,
@@ -940,7 +971,8 @@
           }
         },
         "player": "Rosty",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -971,7 +1003,8 @@
           }
         },
         "player": "astrojw",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 8,
@@ -1002,7 +1035,8 @@
           }
         },
         "player": "Rosty",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 0,
@@ -1030,7 +1064,8 @@
           }
         },
         "player": "astrojw",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 7,
@@ -1069,7 +1104,8 @@
           }
         },
         "player": "Rosty",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -1104,7 +1140,8 @@
           }
         },
         "player": "astrojw",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 6,
@@ -1139,7 +1176,8 @@
           }
         },
         "player": "Rosty",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       }
     ],
     "winCondition": ""
