@@ -56,7 +56,8 @@ const cardsWithDeckScrapAbility = [
     "theoracle",
     "thewrecker",
     "tradebot",
-    "tradeenvoy"
+    "tradeenvoy",
+    "unitystation"
 ]
 
 //when scrapped using the scrap ability, these cards will
@@ -256,7 +257,18 @@ class Visitor extends StarStarVisitor {
                 }
                 else if("activate" in action["cardAction"]["trigger"]){
                     if(cardsWithDeckScrapAbility.includes(action["cardAction"]["trigger"]["activate"])){
-                        turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
+                        //careful that acivating unity fighter will let you scrap from both deck and trade row
+                        //the solution is to only read the scrap from the scrapsummary if it is present
+                        if(action["cardAction"]["cardEffect"]["scrapSummary"].length != 0){
+                            turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrapSummary"])
+                            if(action["cardAction"]["trigger"]["activate"] == "recyclebot"){
+                                //if we are activating recycle bot then it is also scrapped
+                                turnData["scrappedCards"].push("recyclebot")
+                            }
+                        }else{
+                            //for some cards (battle bot) the instant effect doesn't result in a "player is scrapping  X"
+                            turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
+                        }
                     }
                 }
                 else if("resolve" in action["cardAction"]["trigger"]){

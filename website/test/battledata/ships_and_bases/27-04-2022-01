@@ -771,8 +771,8 @@
         "scrappedCards": [
           "blobfighter",
           "scout",
-          "recyclebot",
-          "missilebot"
+          "missilebot",
+          "recyclebot"
         ],
         "discardedCards": [],
         "destroyedBases": [],
