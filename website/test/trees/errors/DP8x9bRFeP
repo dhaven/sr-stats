@@ -5,58 +5,22 @@
         {
           "action": [
             {
-              "skipText": [
-                {
-                  "customWord": [
-                    "Resolving"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "Commander"
-                  ]
-                },
+              "resolveCommander": [
+                "Resolving",
+                "Commander",
                 ":",
-                {
-                  "customWord": [
-                    "Unity"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "or"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "Commander"
-                  ]
-                },
+                "Unity",
+                "or",
+                "Commander",
                 ":",
-                {
-                  "customWord": [
-                    "Alignment"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "or"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "Commander"
-                  ]
-                },
+                "Alignment",
+                "or",
+                "Commander",
                 ":",
-                {
-                  "customWord": [
-                    "Coalition"
-                  ]
-                }
+                "Coalition",
+                "\n"
               ]
-            },
-            "\n"
+            }
           ]
         },
         {
@@ -110,58 +74,22 @@
         {
           "action": [
             {
-              "skipText": [
-                {
-                  "customWord": [
-                    "Resolving"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "Commander"
-                  ]
-                },
+              "resolveCommander": [
+                "Resolving",
+                "Commander",
                 ":",
-                {
-                  "customWord": [
-                    "Alliance"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "or"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "Commander"
-                  ]
-                },
+                "Alliance",
+                "or",
+                "Commander",
                 ":",
-                {
-                  "customWord": [
-                    "Union"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "or"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "Commander"
-                  ]
-                },
+                "Union",
+                "or",
+                "Commander",
                 ":",
-                {
-                  "customWord": [
-                    "Pact"
-                  ]
-                }
+                "Pact",
+                "\n"
               ]
-            },
-            "\n"
+            }
           ]
         },
         {

@@ -1,0 +1,1224 @@
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#FF0000>Trade Bot</color>
+        Hard AI - -1 Trade (Trade:2)
+Acquired <color=#800080>Explorer</color>
+        Hard AI - -2 Trade (Trade:0)
+Hard AI ends turn 1
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 2
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#1589FF>Freighter</color>
+        Player - -4 Trade (Trade:0)
+Attacked Hard AI for 1 (New Authority:49)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:49)
+Player ends turn 2
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 3
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:2)
+Acquired <color=#800080>Explorer</color>
+        Hard AI - -2 Trade (Trade:1)
+Attacked Player for 2 (New Authority:48)
+        Hard AI - -2 Combat (Combat:0)
+        Player - -2 Authority (Authority:48)
+Hard AI ends turn 3
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now Player's turn 4
+Play all
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#1589FF>Barter World</color>
+        Player - -4 Trade (Trade:0)
+Attacked Hard AI for 1 (New Authority:48)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:48)
+Player ends turn 4
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 5
+Play all
+        Hard AI  >  <color=#800080>Explorer</color> +2 Trade (Trade:2)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Acquired <color=#1589FF>Trading Post</color>
+        Hard AI - -3 Trade (Trade:2)
+Acquired <color=#1589FF>Cutter</color>
+        Hard AI - -2 Trade (Trade:0)
+Attacked Player for 1 (New Authority:47)
+        Hard AI - -1 Combat (Combat:0)
+        Player - -1 Authority (Authority:47)
+Hard AI ends turn 5
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 6
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#1589FF>Freighter</color> +4 Trade (Trade:7)
+Acquired <color=#FF0000>C</color><color=#F1080F>o</color><color=#E3101E>a</color><color=#D6182D>l</color><color=#C8203C>i</color><color=#BA284B>t</color><color=#AC305A>i</color><color=#9F3869>o</color><color=#914078>n</color><color=#834987> </color><color=#755196>F</color><color=#6859A5>o</color><color=#5A61B4>r</color><color=#4C69C3>t</color><color=#3E71D2>r</color><color=#3179E1>e</color><color=#2381F0>s</color><color=#1589FF>s</color>
+        Player - -6 Trade (Trade:1)
+Attacked Hard AI for 1 (New Authority:47)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:47)
+Player ends turn 6
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 7
+Play all
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#1589FF>Freighter</color>
+        Hard AI - -4 Trade (Trade:0)
+Attacked Player for 1 (New Authority:46)
+        Hard AI - -1 Combat (Combat:0)
+        Player - -1 Authority (Authority:46)
+Hard AI ends turn 7
+        Drew 3 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now Player's turn 8
+Player ends turn 8
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 9
+Played <color=#FF0000>Trade Bot</color>
+Hard AI is scrapping: Scout
+        Hard AI  >  <color=#FF0000>Trade Bot</color> +1 Trade (Trade:1)
+        Scrapped <color=#800080>Scout</color>
+Play all
+        Hard AI  >  <color=#800080>Explorer</color> +2 Trade (Trade:3)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#FF0000>Patrol Mech</color>
+        Hard AI - -4 Trade (Trade:1)
+Acquired <color=#FF0000>Trade Bot</color>
+        Hard AI - -1 Trade (Trade:0)
+Hard AI ends turn 9
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 10
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#FF0000>C</color><color=#F1080F>o</color><color=#E3101E>a</color><color=#D6182D>l</color><color=#C8203C>i</color><color=#BA284B>t</color><color=#AC305A>i</color><color=#9F3869>o</color><color=#914078>n</color><color=#834987> </color><color=#755196>F</color><color=#6859A5>o</color><color=#5A61B4>r</color><color=#4C69C3>t</color><color=#3E71D2>r</color><color=#3179E1>e</color><color=#2381F0>s</color><color=#1589FF>s</color> +2 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Chose Add 2 Trade
+        Player  >  <color=#1589FF>Barter World</color> +2 Trade (Trade:7)
+Chose Add 3 Authority
+        Player  >  <color=#FF0000>C</color><color=#F1080F>o</color><color=#E3101E>a</color><color=#D6182D>l</color><color=#C8203C>i</color><color=#BA284B>t</color><color=#AC305A>i</color><color=#9F3869>o</color><color=#914078>n</color><color=#834987> </color><color=#755196>F</color><color=#6859A5>o</color><color=#5A61B4>r</color><color=#4C69C3>t</color><color=#3E71D2>r</color><color=#3179E1>e</color><color=#2381F0>s</color><color=#1589FF>s</color> +3 Authority (Authority:49)
+Acquired <color=#4CC417>Battle Blob</color>
+        Player - -6 Trade (Trade:1)
+Acquired <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>F</color><color=#B4520A>i</color><color=#C34108>g</color><color=#D23106>h</color><color=#E12104>t</color><color=#F01002>e</color><color=#FF0000>r</color>
+        Player - -1 Trade (Trade:0)
+Player ends turn 10
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 11
+Played <color=#1589FF>Trading Post</color>
+Chose Add 1 Trade
+        Hard AI  >  <color=#1589FF>Trading Post</color> +1 Trade (Trade:1)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FFFF00>Recycling Station</color>
+        Hard AI - -4 Trade (Trade:0)
+Hard AI ends turn 11
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 12
+        Player  >  <color=#FF0000>C</color><color=#F1080F>o</color><color=#E3101E>a</color><color=#D6182D>l</color><color=#C8203C>i</color><color=#BA284B>t</color><color=#AC305A>i</color><color=#9F3869>o</color><color=#914078>n</color><color=#834987> </color><color=#755196>F</color><color=#6859A5>o</color><color=#5A61B4>r</color><color=#4C69C3>t</color><color=#3E71D2>r</color><color=#3179E1>e</color><color=#2381F0>s</color><color=#1589FF>s</color> +2 Trade (Trade:2)
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:2)
+Chose Add 2 Trade
+        Player  >  <color=#1589FF>Barter World</color> +2 Trade (Trade:7)
+Acquired <color=#1589FF>Defense Center</color>
+        Player - -5 Trade (Trade:2)
+Acquired <color=#1589FF>Cutter</color>
+        Player - -2 Trade (Trade:0)
+Chose Add 3 Authority
+        Player  >  <color=#FF0000>C</color><color=#F1080F>o</color><color=#E3101E>a</color><color=#D6182D>l</color><color=#C8203C>i</color><color=#BA284B>t</color><color=#AC305A>i</color><color=#9F3869>o</color><color=#914078>n</color><color=#834987> </color><color=#755196>F</color><color=#6859A5>o</color><color=#5A61B4>r</color><color=#4C69C3>t</color><color=#3E71D2>r</color><color=#3179E1>e</color><color=#2381F0>s</color><color=#1589FF>s</color> +3 Authority (Authority:52)
+Player ends turn 12
+        Drew 3 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 13
+Chose Add 1 Trade
+        Hard AI  >  <color=#1589FF>Trading Post</color> +1 Trade (Trade:1)
+Play all
+        Hard AI  >  <color=#1589FF>Cutter</color> +4 Authority (Authority:51)
+        Hard AI  >  <color=#1589FF>Cutter</color> +2 Trade (Trade:3)
+        Hard AI  >  <color=#1589FF>Cutter</color> +4 Combat (Combat:4)
+        Hard AI  >  <color=#800080>Explorer</color> +2 Trade (Trade:5)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:7)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:5)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        Hard AI  >  <color=#800080>Explorer</color> +2 Combat (Combat:7)
+Acquired <color=#4CC417>Blob Destroyer</color>
+        Hard AI - -4 Trade (Trade:3)
+Acquired <color=#4CC417>Ram</color>
+        Hard AI - -3 Trade (Trade:0)
+Attacked Coalition Fortress
+        Hard AI - -6 Combat (Combat:1)
+        Destroyed <color=#FF0000>C</color><color=#F1080F>o</color><color=#E3101E>a</color><color=#D6182D>l</color><color=#C8203C>i</color><color=#BA284B>t</color><color=#AC305A>i</color><color=#9F3869>o</color><color=#914078>n</color><color=#834987> </color><color=#755196>F</color><color=#6859A5>o</color><color=#5A61B4>r</color><color=#4C69C3>t</color><color=#3E71D2>r</color><color=#3179E1>e</color><color=#2381F0>s</color><color=#1589FF>s</color>
+Attacked Player for 1 (New Authority:51)
+        Hard AI - -1 Combat (Combat:0)
+        Player - -1 Authority (Authority:51)
+Hard AI ends turn 13
+        Drew 1 cards.
+        Shuffled discard pile to form new deck
+        Drew 4 cards.
+        Refresh ally indicators
+        It is now Player's turn 14
+Played <color=#1589FF>Cutter</color>
+        Player  >  <color=#1589FF>Cutter</color> +4 Authority (Authority:55)
+        Player  >  <color=#1589FF>Cutter</color> +2 Trade (Trade:2)
+        Player  >  <color=#1589FF>Cutter</color> +4 Combat (Combat:4)
+Played <color=#1589FF>Freighter</color>
+        Player  >  <color=#1589FF>Freighter</color> +4 Trade (Trade:6)
+Chose Add 2 Trade
+        Player  >  <color=#1589FF>Barter World</color> +2 Trade (Trade:8)
+Acquired <color=#1589FF>Command Ship</color>
+        Player - -8 Trade (Trade:0)
+        Acquired <color=#1589FF>Command Ship</color> to the top of the deck.
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:5)
+Attacked Trading Post
+        Player - -4 Combat (Combat:1)
+        Destroyed <color=#1589FF>Trading Post</color>
+Attacked Hard AI for 1 (New Authority:50)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:50)
+Player ends turn 14
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 15
+Played <color=#FF0000>Patrol Mech</color>
+        Hard AI  >  <color=#FF0000>Patrol Mech</color> ability available
+        Hard AI  >  <color=#FF0000>Patrol Mech</color> +3 Trade (Trade:3)
+Played <color=#FF0000>Trade Bot</color>
+Hard AI is scrapping: Viper
+        Hard AI  >  <color=#FF0000>Trade Bot</color> +1 Trade (Trade:4)
+        Scrapped <color=#800080>Viper</color>
+        Hard AI  >  <color=#FF0000>Trade Bot</color> +2 Combat (Combat:2)
+Activating Patrol Mech
+Play all
+        Hard AI  >  <color=#1589FF>Freighter</color> +4 Trade (Trade:8)
+        Hard AI  >  <color=#4CC417>Blob Destroyer</color> +6 Combat (Combat:8)
+Acquired <color=#FF0000>Brain World</color>
+        Hard AI - -8 Trade (Trade:0)
+Attacked Barter World
+        Hard AI - -4 Combat (Combat:4)
+        Destroyed <color=#1589FF>Barter World</color>
+Attacked Player for 4 (New Authority:51)
+        Hard AI - -4 Combat (Combat:0)
+        Player - -4 Authority (Authority:51)
+Hard AI ends turn 15
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 16
+Played <color=#1589FF>Command Ship</color>
+        Player  >  <color=#1589FF>Command Ship</color> +4 Authority (Authority:55)
+        Player  >  <color=#1589FF>Command Ship</color> +5 Combat (Combat:5)
+        Drew 1 cards.
+        Drew 1 cards.
+Played <color=#1589FF>Defense Center</color>
+        Player  >  <color=#1589FF>Defense Center</color> +2 Combat (Combat:7)
+Chose Add 3 Authority
+        Player  >  <color=#1589FF>Defense Center</color> +3 Authority (Authority:58)
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:8)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#1589FF>Embassy Yacht</color>
+        Player - -3 Trade (Trade:1)
+Attacked Hard AI for 8 (New Authority:42)
+        Player - -8 Combat (Combat:0)
+        Hard AI - -8 Authority (Authority:42)
+Player ends turn 16
+        Drew 4 cards.
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 17
+Played <color=#FFFF00>Recycling Station</color>
+        Hard AI  >  <color=#FFFF00>Recycling Station</color> ability available
+Chose Discard and Redraw up to 2 card(s)
+Hard AI is selecting Scout
+Hard AI is selecting Scout
+        Discarded <color=#800080>Scout</color>
+        Discarded <color=#800080>Scout</color>
+        Drew 1 cards.
+        Drew 1 cards.
+Played <color=#FF0000>Trade Bot</color>
+Hard AI is scrapping: Scout
+        Hard AI  >  <color=#FF0000>Trade Bot</color> +1 Trade (Trade:1)
+        Scrapped <color=#800080>Scout</color>
+Play all
+        Hard AI  >  <color=#1589FF>Cutter</color> +4 Authority (Authority:46)
+        Hard AI  >  <color=#1589FF>Cutter</color> +2 Trade (Trade:3)
+        Hard AI  >  <color=#4CC417>Ram</color> +5 Combat (Combat:5)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Scrapping Ram
+        Scrapped <color=#4CC417>Ram</color>
+        Hard AI  >  <color=#4CC417>Ram</color> +3 Trade (Trade:7)
+Acquired <color=#FFFF00>Battlecruiser</color>
+        Hard AI - -6 Trade (Trade:1)
+Acquired <color=#FFFF00>Imperial Fighter</color>
+        Hard AI - -1 Trade (Trade:0)
+Attacked Defense Center
+        Hard AI - -5 Combat (Combat:0)
+        Destroyed <color=#1589FF>Defense Center</color>
+Hard AI ends turn 17
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 18
+Played <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>F</color><color=#B4520A>i</color><color=#C34108>g</color><color=#D23106>h</color><color=#E12104>t</color><color=#F01002>e</color><color=#FF0000>r</color>
+        Player  >  <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>F</color><color=#B4520A>i</color><color=#C34108>g</color><color=#D23106>h</color><color=#E12104>t</color><color=#F01002>e</color><color=#FF0000>r</color> ability available
+        Player  >  <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>F</color><color=#B4520A>i</color><color=#C34108>g</color><color=#D23106>h</color><color=#E12104>t</color><color=#F01002>e</color><color=#FF0000>r</color> +3 Combat (Combat:3)
+        Scrapped <color=#4CC417>Blob Wheel</color>
+Scrapping Unity Fighter
+Player is scrapping: Scout
+        Scrapped <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>F</color><color=#B4520A>i</color><color=#C34108>g</color><color=#D23106>h</color><color=#E12104>t</color><color=#F01002>e</color><color=#FF0000>r</color>
+        Scrapped <color=#800080>Scout</color>
+Played <color=#1589FF>Embassy Yacht</color>
+        Player  >  <color=#1589FF>Embassy Yacht</color> +3 Authority (Authority:61)
+        Player  >  <color=#1589FF>Embassy Yacht</color> +2 Trade (Trade:2)
+Acquired <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>F</color><color=#B4520A>i</color><color=#C34108>g</color><color=#D23106>h</color><color=#E12104>t</color><color=#F01002>e</color><color=#FF0000>r</color>
+        Player - -1 Trade (Trade:1)
+Played <color=#4CC417>Battle Blob</color>
+        Player  >  <color=#4CC417>Battle Blob</color> +8 Combat (Combat:11)
+Played <color=#800080>Scout</color>
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Attacked Recycling Station
+        Player - -4 Combat (Combat:7)
+        Destroyed <color=#FFFF00>Recycling Station</color>
+Attacked Hard AI for 7 (New Authority:39)
+        Player - -7 Combat (Combat:0)
+        Hard AI - -7 Authority (Authority:39)
+Player ends turn 18
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 19
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Hard AI  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FF0000>Patrol Mech</color>
+        Hard AI - -4 Trade (Trade:0)
+Attacked Player for 1 (New Authority:60)
+        Hard AI - -1 Combat (Combat:0)
+        Player - -1 Authority (Authority:60)
+Hard AI ends turn 19
+        Drew 1 cards.
+        Shuffled discard pile to form new deck
+        Drew 4 cards.
+        Refresh ally indicators
+        It is now Player's turn 20
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#1589FF>Cutter</color> +4 Authority (Authority:64)
+        Player  >  <color=#1589FF>Cutter</color> +2 Trade (Trade:4)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#FFFF00>A</color><color=#EFF711>l</color><color=#E0EF22>l</color><color=#D0E733>i</color><color=#C1E044>a</color><color=#B1D855>n</color><color=#A1D066>c</color><color=#92C877>e</color><color=#82C088> </color><color=#73B899>L</color><color=#63B0AA>a</color><color=#53A8BB>n</color><color=#44A1CC>d</color><color=#3499DD>i</color><color=#2591EE>n</color><color=#1589FF>g</color>
+        Player - -5 Trade (Trade:0)
+Attacked Hard AI for 1 (New Authority:38)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:38)
+Player ends turn 20
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 21
+Played <color=#1589FF>Trading Post</color>
+Played <color=#FF0000>Trade Bot</color>
+Hard AI is scrapping: Imperial Fighter
+        Hard AI  >  <color=#FF0000>Trade Bot</color> +1 Trade (Trade:1)
+        Scrapped <color=#FFFF00>Imperial Fighter</color>
+Played <color=#FF0000>Trade Bot</color>
+Hard AI is scrapping: Explorer
+        Hard AI  >  <color=#FF0000>Trade Bot</color> +1 Trade (Trade:2)
+        Scrapped <color=#800080>Explorer</color>
+        Hard AI  >  <color=#FF0000>Trade Bot</color> +2 Combat (Combat:2)
+        Hard AI  >  <color=#FF0000>Trade Bot</color> +2 Combat (Combat:4)
+Chose Add 1 Trade
+        Hard AI  >  <color=#1589FF>Trading Post</color> +1 Trade (Trade:3)
+Acquired <color=#FF0000>Supply Bot</color>
+        Hard AI - -3 Trade (Trade:0)
+Attacked Player for 4 (New Authority:60)
+        Hard AI - -4 Combat (Combat:0)
+        Player - -4 Authority (Authority:60)
+Hard AI ends turn 21
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 22
+Played <color=#FF0000>C</color><color=#F1080F>o</color><color=#E3101E>a</color><color=#D6182D>l</color><color=#C8203C>i</color><color=#BA284B>t</color><color=#AC305A>i</color><color=#9F3869>o</color><color=#914078>n</color><color=#834987> </color><color=#755196>F</color><color=#6859A5>o</color><color=#5A61B4>r</color><color=#4C69C3>t</color><color=#3E71D2>r</color><color=#3179E1>e</color><color=#2381F0>s</color><color=#1589FF>s</color>
+        Player  >  <color=#FF0000>C</color><color=#F1080F>o</color><color=#E3101E>a</color><color=#D6182D>l</color><color=#C8203C>i</color><color=#BA284B>t</color><color=#AC305A>i</color><color=#9F3869>o</color><color=#914078>n</color><color=#834987> </color><color=#755196>F</color><color=#6859A5>o</color><color=#5A61B4>r</color><color=#4C69C3>t</color><color=#3E71D2>r</color><color=#3179E1>e</color><color=#2381F0>s</color><color=#1589FF>s</color> +2 Trade (Trade:2)
+Played <color=#1589FF>Command Ship</color>
+        Player  >  <color=#1589FF>Command Ship</color> +4 Authority (Authority:64)
+        Player  >  <color=#1589FF>Command Ship</color> +5 Combat (Combat:5)
+        Drew 1 cards.
+        Drew 1 cards.
+Played <color=#1589FF>Barter World</color>
+Played <color=#1589FF>Freighter</color>
+        Player  >  <color=#1589FF>Freighter</color> +4 Trade (Trade:6)
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:7)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:8)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:6)
+Acquired <color=#FFFF00>Recycling Station</color>
+        Player - -4 Trade (Trade:4)
+Chose Add 2 Trade
+        Player  >  <color=#1589FF>Barter World</color> +2 Trade (Trade:6)
+Acquired <color=#FFFF00>Space Station</color>
+        Player - -4 Trade (Trade:2)
+Activating Command Ship
+        Destroyed <color=#1589FF>Trading Post</color>
+Attacked Hard AI for 6 (New Authority:32)
+        Player - -6 Combat (Combat:0)
+        Hard AI - -6 Authority (Authority:32)
+Chose Add 3 Authority
+        Player  >  <color=#FF0000>C</color><color=#F1080F>o</color><color=#E3101E>a</color><color=#D6182D>l</color><color=#C8203C>i</color><color=#BA284B>t</color><color=#AC305A>i</color><color=#9F3869>o</color><color=#914078>n</color><color=#834987> </color><color=#755196>F</color><color=#6859A5>o</color><color=#5A61B4>r</color><color=#4C69C3>t</color><color=#3E71D2>r</color><color=#3179E1>e</color><color=#2381F0>s</color><color=#1589FF>s</color> +3 Authority (Authority:67)
+Player ends turn 22
+        Drew 1 cards.
+        Shuffled discard pile to form new deck
+        Drew 4 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 23
+Play all
+        Hard AI  >  <color=#1589FF>Freighter</color> +4 Trade (Trade:4)
+        Hard AI  >  <color=#1589FF>Cutter</color> +4 Combat (Combat:4)
+        Hard AI  >  <color=#1589FF>Cutter</color> +4 Authority (Authority:36)
+        Hard AI  >  <color=#1589FF>Cutter</color> +2 Trade (Trade:6)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:7)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:8)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:9)
+Acquired <color=#4CC417>Blob World</color>
+        Hard AI - -8 Trade (Trade:1)
+Hard AI ends turn 23
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 24
+        Player  >  <color=#FF0000>C</color><color=#F1080F>o</color><color=#E3101E>a</color><color=#D6182D>l</color><color=#C8203C>i</color><color=#BA284B>t</color><color=#AC305A>i</color><color=#9F3869>o</color><color=#914078>n</color><color=#834987> </color><color=#755196>F</color><color=#6859A5>o</color><color=#5A61B4>r</color><color=#4C69C3>t</color><color=#3E71D2>r</color><color=#3179E1>e</color><color=#2381F0>s</color><color=#1589FF>s</color> +2 Trade (Trade:2)
+Played <color=#FFFF00>Space Station</color>
+        Player  >  <color=#FFFF00>Space Station</color> +2 Combat (Combat:2)
+Played <color=#1589FF>Command Ship</color>
+        Player  >  <color=#1589FF>Command Ship</color> +4 Authority (Authority:71)
+        Player  >  <color=#1589FF>Command Ship</color> +5 Combat (Combat:7)
+        Drew 1 cards.
+        Drew 1 cards.
+Played <color=#1589FF>Defense Center</color>
+        Player  >  <color=#1589FF>Defense Center</color> +2 Combat (Combat:9)
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+Chose Add 2 Trade
+        Player  >  <color=#1589FF>Barter World</color> +2 Trade (Trade:8)
+Acquired <color=#1589FF>Trade Escort</color>
+        Player - -5 Trade (Trade:3)
+Acquired <color=#FFFF00>Corvette</color>
+        Player - -2 Trade (Trade:1)
+Chose Add 3 Authority
+        Player  >  <color=#FF0000>C</color><color=#F1080F>o</color><color=#E3101E>a</color><color=#D6182D>l</color><color=#C8203C>i</color><color=#BA284B>t</color><color=#AC305A>i</color><color=#9F3869>o</color><color=#914078>n</color><color=#834987> </color><color=#755196>F</color><color=#6859A5>o</color><color=#5A61B4>r</color><color=#4C69C3>t</color><color=#3E71D2>r</color><color=#3179E1>e</color><color=#2381F0>s</color><color=#1589FF>s</color> +3 Authority (Authority:74)
+Chose Add 3 Authority
+        Player  >  <color=#1589FF>Defense Center</color> +3 Authority (Authority:77)
+Attacked Hard AI for 9 (New Authority:27)
+        Player - -9 Combat (Combat:0)
+        Hard AI - -9 Authority (Authority:27)
+Player ends turn 24
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 25
+Played <color=#FF0000>Brain World</color>
+        Hard AI  >  <color=#FF0000>Brain World</color> ability available
+Played <color=#FFFF00>Recycling Station</color>
+        Hard AI  >  <color=#FFFF00>Recycling Station</color> ability available
+Activating Brain World
+Hard AI is scrapping Scout
+Hard AI is scrapping Scout
+        Scrapped <color=#800080>Scout</color>
+        Scrapped <color=#800080>Scout</color>
+        Drew 2 cards.
+Chose Discard and Redraw up to 2 card(s)
+Hard AI is selecting Viper
+Hard AI is selecting Scout
+        Discarded <color=#800080>Viper</color>
+        Discarded <color=#800080>Scout</color>
+        Drew 1 cards.
+        Drew 1 cards.
+Played <color=#FF0000>Patrol Mech</color>
+        Hard AI  >  <color=#FF0000>Patrol Mech</color> ability available
+        Hard AI  >  <color=#FF0000>Patrol Mech</color> +3 Trade (Trade:3)
+Played <color=#FF0000>Patrol Mech</color>
+        Hard AI  >  <color=#FF0000>Patrol Mech</color> ability available
+        Hard AI  >  <color=#FF0000>Patrol Mech</color> +5 Combat (Combat:5)
+Activating Patrol Mech
+Hard AI is scrapping: Viper
+        Scrapped <color=#800080>Viper</color>
+Activating Patrol Mech
+Hard AI is scrapping: Scout
+        Scrapped <color=#800080>Scout</color>
+Play all
+        Hard AI  >  <color=#4CC417>Blob Destroyer</color> +6 Combat (Combat:11)
+        Player  <  <color=#FFFF00>Battlecruiser</color> +1 Discard (Discarding: 1)
+        Hard AI  >  <color=#FFFF00>Battlecruiser</color> +5 Combat (Combat:16)
+        Drew 1 cards.
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#FFFF00>Imperial Frigate</color>
+        Hard AI - -3 Trade (Trade:2)
+Acquired <color=#1589FF>Cutter</color>
+        Hard AI - -2 Trade (Trade:0)
+Attacked Coalition Fortress
+        Hard AI - -6 Combat (Combat:10)
+        Destroyed <color=#FF0000>C</color><color=#F1080F>o</color><color=#E3101E>a</color><color=#D6182D>l</color><color=#C8203C>i</color><color=#BA284B>t</color><color=#AC305A>i</color><color=#9F3869>o</color><color=#914078>n</color><color=#834987> </color><color=#755196>F</color><color=#6859A5>o</color><color=#5A61B4>r</color><color=#4C69C3>t</color><color=#3E71D2>r</color><color=#3179E1>e</color><color=#2381F0>s</color><color=#1589FF>s</color>
+Attacked Defense Center
+        Hard AI - -5 Combat (Combat:5)
+        Destroyed <color=#1589FF>Defense Center</color>
+Attacked Space Station
+        Hard AI - -4 Combat (Combat:1)
+        Destroyed <color=#FFFF00>Space Station</color>
+Attacked Player for 1 (New Authority:76)
+        Hard AI - -1 Combat (Combat:0)
+        Player - -1 Authority (Authority:76)
+Hard AI ends turn 25
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 26
+Resolving Discard 1 cards
+Player is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Played <color=#FFFF00>Recycling Station</color>
+        Player  >  <color=#FFFF00>Recycling Station</color> ability available
+Chose Discard and Redraw up to 2 card(s)
+Player is selecting Viper
+Player is selecting Freighter
+        Discarded <color=#800080>Viper</color>
+        Discarded <color=#1589FF>Freighter</color>
+        Drew 1 cards.
+        Drew 1 cards.
+Play all
+        Player  >  <color=#4CC417>Battle Blob</color> +8 Combat (Combat:8)
+        Player  >  <color=#1589FF>Cutter</color> +4 Combat (Combat:12)
+        Player  >  <color=#1589FF>Cutter</color> +4 Authority (Authority:80)
+        Player  >  <color=#1589FF>Cutter</color> +2 Trade (Trade:2)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Attacked Recycling Station
+        Player - -4 Combat (Combat:8)
+        Destroyed <color=#FFFF00>Recycling Station</color>
+Attacked Brain World
+        Player - -6 Combat (Combat:2)
+        Destroyed <color=#FF0000>Brain World</color>
+Attacked Hard AI for 2 (New Authority:25)
+        Player - -2 Combat (Combat:0)
+        Hard AI - -2 Authority (Authority:25)
+Chose Add 2 Authority
+        Player  >  <color=#1589FF>Barter World</color> +2 Authority (Authority:82)
+Acquired <color=#FFFF00>Survey Ship</color>
+        Player - -3 Trade (Trade:0)
+Player ends turn 26
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 27
+Played <color=#4CC417>Blob World</color>
+        Hard AI  >  <color=#4CC417>Blob World</color> ability available
+Played <color=#FF0000>Supply Bot</color>
+Hard AI is scrapping: Cutter
+        Hard AI  >  <color=#FF0000>Supply Bot</color> +2 Trade (Trade:2)
+        Scrapped <color=#1589FF>Cutter</color>
+Play all
+        Hard AI  >  <color=#4CC417>Blob Destroyer</color> +6 Combat (Combat:6)
+        Hard AI  >  <color=#1589FF>Freighter</color> +4 Trade (Trade:6)
+Activating Blob Destroyer
+        Destroyed <color=#FFFF00>Recycling Station</color>
+        Scrapped <color=#4CC417>U</color><color=#5BC915>n</color><color=#6ACE13>i</color><color=#79D311>o</color><color=#88D80F>n</color><color=#97DD0D> </color><color=#A6E20C>C</color><color=#B4E60A>l</color><color=#C3EB08>u</color><color=#D2F006>s</color><color=#E1F504>t</color><color=#F0FA02>e</color><color=#FFFF00>r</color>
+Chose Draw a card for every Blob card played this turn
+        Drew 1 cards.
+        Drew 1 cards.
+Played <color=#FF0000>Patrol Mech</color>
+        Hard AI  >  <color=#FF0000>Patrol Mech</color> ability available
+        Hard AI  >  <color=#FF0000>Patrol Mech</color> +5 Combat (Combat:11)
+        Hard AI  >  <color=#FF0000>Supply Bot</color> +2 Combat (Combat:13)
+Activating Patrol Mech
+Play all
+        Hard AI  >  <color=#FFFF00>Imperial Frigate</color> +4 Combat (Combat:17)
+        Player  <  <color=#FFFF00>Imperial Frigate</color> +1 Discard (Discarding: 1)
+Acquired <color=#1589FF>Flagship</color>
+        Hard AI - -6 Trade (Trade:0)
+Attacked Barter World
+        Hard AI - -4 Combat (Combat:13)
+        Destroyed <color=#1589FF>Barter World</color>
+Attacked Player for 13 (New Authority:69)
+        Hard AI - -13 Combat (Combat:0)
+        Player - -13 Authority (Authority:69)
+Hard AI ends turn 27
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 28
+Resolving Discard 1 cards
+Player is discarding Viper
+        no more cards to discard
+        Discarded <color=#800080>Viper</color>
+Played <color=#FFFF00>A</color><color=#EFF711>l</color><color=#E0EF22>l</color><color=#D0E733>i</color><color=#C1E044>a</color><color=#B1D855>n</color><color=#A1D066>c</color><color=#92C877>e</color><color=#82C088> </color><color=#73B899>L</color><color=#63B0AA>a</color><color=#53A8BB>n</color><color=#44A1CC>d</color><color=#3499DD>i</color><color=#2591EE>n</color><color=#1589FF>g</color>
+        Player  >  <color=#FFFF00>A</color><color=#EFF711>l</color><color=#E0EF22>l</color><color=#D0E733>i</color><color=#C1E044>a</color><color=#B1D855>n</color><color=#A1D066>c</color><color=#92C877>e</color><color=#82C088> </color><color=#73B899>L</color><color=#63B0AA>a</color><color=#53A8BB>n</color><color=#44A1CC>d</color><color=#3499DD>i</color><color=#2591EE>n</color><color=#1589FF>g</color> +2 Trade (Trade:2)
+Played <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>F</color><color=#B4520A>i</color><color=#C34108>g</color><color=#D23106>h</color><color=#E12104>t</color><color=#F01002>e</color><color=#FF0000>r</color>
+        Player  >  <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>F</color><color=#B4520A>i</color><color=#C34108>g</color><color=#D23106>h</color><color=#E12104>t</color><color=#F01002>e</color><color=#FF0000>r</color> ability available
+        Player  >  <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>F</color><color=#B4520A>i</color><color=#C34108>g</color><color=#D23106>h</color><color=#E12104>t</color><color=#F01002>e</color><color=#FF0000>r</color> +3 Combat (Combat:3)
+        Scrapped <color=#FF0000>Missile Bot</color>
+Played <color=#1589FF>Embassy Yacht</color>
+        Player  >  <color=#1589FF>Embassy Yacht</color> +3 Authority (Authority:72)
+        Player  >  <color=#1589FF>Embassy Yacht</color> +2 Trade (Trade:4)
+        Player  >  <color=#FFFF00>A</color><color=#EFF711>l</color><color=#E0EF22>l</color><color=#D0E733>i</color><color=#C1E044>a</color><color=#B1D855>n</color><color=#A1D066>c</color><color=#92C877>e</color><color=#82C088> </color><color=#73B899>L</color><color=#63B0AA>a</color><color=#53A8BB>n</color><color=#44A1CC>d</color><color=#3499DD>i</color><color=#2591EE>n</color><color=#1589FF>g</color> +2 Combat (Combat:5)
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#4CC417>The Hive</color>
+        Player - -5 Trade (Trade:0)
+Scrapping Unity Fighter
+Player is scrapping: Viper
+        Scrapped <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>F</color><color=#B4520A>i</color><color=#C34108>g</color><color=#D23106>h</color><color=#E12104>t</color><color=#F01002>e</color><color=#FF0000>r</color>
+        Scrapped <color=#800080>Viper</color>
+Attacked Hard AI for 5 (New Authority:20)
+        Player - -5 Combat (Combat:0)
+        Hard AI - -5 Authority (Authority:20)
+Player ends turn 28
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 29
+Played <color=#1589FF>Trading Post</color>
+Chose Add 1 Authority
+        Hard AI  >  <color=#1589FF>Trading Post</color> +1 Authority (Authority:21)
+Play all
+        Hard AI  >  <color=#1589FF>Cutter</color> +4 Authority (Authority:25)
+        Hard AI  >  <color=#1589FF>Cutter</color> +2 Trade (Trade:2)
+        Hard AI  >  <color=#1589FF>Cutter</color> +4 Combat (Combat:4)
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Chose Add 5 Combat
+        Hard AI  >  <color=#4CC417>Blob World</color> +5 Combat (Combat:9)
+Acquired <color=#4CC417>Blob Destroyer</color>
+        Hard AI - -4 Trade (Trade:1)
+Acquired <color=#1589FF>Federation Shuttle</color>
+        Hard AI - -1 Trade (Trade:0)
+Attacked Alliance Landing
+        Hard AI - -5 Combat (Combat:4)
+        Destroyed <color=#FFFF00>A</color><color=#EFF711>l</color><color=#E0EF22>l</color><color=#D0E733>i</color><color=#C1E044>a</color><color=#B1D855>n</color><color=#A1D066>c</color><color=#92C877>e</color><color=#82C088> </color><color=#73B899>L</color><color=#63B0AA>a</color><color=#53A8BB>n</color><color=#44A1CC>d</color><color=#3499DD>i</color><color=#2591EE>n</color><color=#1589FF>g</color>
+Attacked Player for 4 (New Authority:68)
+        Hard AI - -4 Combat (Combat:0)
+        Player - -4 Authority (Authority:68)
+Hard AI ends turn 29
+        Drew 4 cards.
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+        Refresh ally indicators
+        It is now Player's turn 30
+Played <color=#FF0000>C</color><color=#F1080F>o</color><color=#E3101E>a</color><color=#D6182D>l</color><color=#C8203C>i</color><color=#BA284B>t</color><color=#AC305A>i</color><color=#9F3869>o</color><color=#914078>n</color><color=#834987> </color><color=#755196>F</color><color=#6859A5>o</color><color=#5A61B4>r</color><color=#4C69C3>t</color><color=#3E71D2>r</color><color=#3179E1>e</color><color=#2381F0>s</color><color=#1589FF>s</color>
+        Player  >  <color=#FF0000>C</color><color=#F1080F>o</color><color=#E3101E>a</color><color=#D6182D>l</color><color=#C8203C>i</color><color=#BA284B>t</color><color=#AC305A>i</color><color=#9F3869>o</color><color=#914078>n</color><color=#834987> </color><color=#755196>F</color><color=#6859A5>o</color><color=#5A61B4>r</color><color=#4C69C3>t</color><color=#3E71D2>r</color><color=#3179E1>e</color><color=#2381F0>s</color><color=#1589FF>s</color> +2 Trade (Trade:2)
+Played <color=#1589FF>Barter World</color>
+Played <color=#1589FF>Trade Escort</color>
+        Player  >  <color=#1589FF>Trade Escort</color> +4 Combat (Combat:4)
+        Player  >  <color=#1589FF>Trade Escort</color> +4 Authority (Authority:72)
+        Drew 1 cards.
+Played <color=#FFFF00>Recycling Station</color>
+        Player  >  <color=#FFFF00>Recycling Station</color> ability available
+Chose Discard and Redraw up to 2 card(s)
+Player is selecting Scout
+        Discarded <color=#800080>Scout</color>
+        Drew 1 cards.
+Played <color=#FFFF00>Space Station</color>
+        Player  >  <color=#FFFF00>Space Station</color> +2 Combat (Combat:6)
+        Player  >  <color=#FFFF00>Space Station</color> +2 Combat (Combat:8)
+Played <color=#1589FF>Cutter</color>
+        Player  >  <color=#1589FF>Cutter</color> +4 Authority (Authority:76)
+        Player  >  <color=#1589FF>Cutter</color> +2 Trade (Trade:4)
+        Player  >  <color=#1589FF>Cutter</color> +4 Combat (Combat:12)
+Attacked Trading Post
+        Player - -4 Combat (Combat:8)
+        Destroyed <color=#1589FF>Trading Post</color>
+Attacked Blob World
+        Player - -7 Combat (Combat:1)
+        Destroyed <color=#4CC417>Blob World</color>
+Attacked Hard AI for 1 (New Authority:24)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:24)
+Chose Add 3 Authority
+        Player  >  <color=#FF0000>C</color><color=#F1080F>o</color><color=#E3101E>a</color><color=#D6182D>l</color><color=#C8203C>i</color><color=#BA284B>t</color><color=#AC305A>i</color><color=#9F3869>o</color><color=#914078>n</color><color=#834987> </color><color=#755196>F</color><color=#6859A5>o</color><color=#5A61B4>r</color><color=#4C69C3>t</color><color=#3E71D2>r</color><color=#3179E1>e</color><color=#2381F0>s</color><color=#1589FF>s</color> +3 Authority (Authority:79)
+Acquired <color=#4CC417>Blob Fighter</color>
+        Player - -1 Trade (Trade:3)
+Acquired <color=#FFFF00>Survey Ship</color>
+        Player - -3 Trade (Trade:0)
+Chose Add 2 Authority
+        Player  >  <color=#1589FF>Barter World</color> +2 Authority (Authority:81)
+Player ends turn 30
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 31
+Played <color=#FF0000>Brain World</color>
+        Hard AI  >  <color=#FF0000>Brain World</color> ability available
+Activating Brain World
+Hard AI is scrapping Trade Bot
+Hard AI is scrapping Trade Bot
+        Scrapped <color=#FF0000>Trade Bot</color>
+        Scrapped <color=#FF0000>Trade Bot</color>
+        Drew 2 cards.
+Played <color=#FF0000>Patrol Mech</color>
+        Hard AI  >  <color=#FF0000>Patrol Mech</color> ability available
+        Hard AI  >  <color=#FF0000>Patrol Mech</color> +5 Combat (Combat:5)
+Played <color=#FF0000>Patrol Mech</color>
+        Hard AI  >  <color=#FF0000>Patrol Mech</color> ability available
+        Hard AI  >  <color=#FF0000>Patrol Mech</color> +5 Combat (Combat:10)
+Activating Patrol Mech
+Activating Patrol Mech
+Play all
+        Hard AI  >  <color=#FFFF00>Battlecruiser</color> +5 Combat (Combat:15)
+        Drew 1 cards.
+        Hard AI  >  <color=#1589FF>Flagship</color> +5 Combat (Combat:20)
+        Drew 1 cards.
+Played <color=#FF0000>Supply Bot</color>
+Hard AI is scrapping: Cutter
+        Hard AI  >  <color=#FF0000>Supply Bot</color> +2 Trade (Trade:2)
+        Scrapped <color=#1589FF>Cutter</color>
+        Hard AI  >  <color=#FF0000>Supply Bot</color> +2 Combat (Combat:22)
+Acquired <color=#4CC417>Battle Pod</color>
+        Hard AI - -2 Trade (Trade:0)
+Attacked Coalition Fortress
+        Hard AI - -6 Combat (Combat:16)
+        Destroyed <color=#FF0000>C</color><color=#F1080F>o</color><color=#E3101E>a</color><color=#D6182D>l</color><color=#C8203C>i</color><color=#BA284B>t</color><color=#AC305A>i</color><color=#9F3869>o</color><color=#914078>n</color><color=#834987> </color><color=#755196>F</color><color=#6859A5>o</color><color=#5A61B4>r</color><color=#4C69C3>t</color><color=#3E71D2>r</color><color=#3179E1>e</color><color=#2381F0>s</color><color=#1589FF>s</color>
+Attacked Space Station
+        Hard AI - -4 Combat (Combat:12)
+        Destroyed <color=#FFFF00>Space Station</color>
+Attacked Recycling Station
+        Hard AI - -4 Combat (Combat:8)
+        Destroyed <color=#FFFF00>Recycling Station</color>
+Attacked Barter World
+        Hard AI - -4 Combat (Combat:4)
+        Destroyed <color=#1589FF>Barter World</color>
+Attacked Player for 4 (New Authority:77)
+        Hard AI - -4 Combat (Combat:0)
+        Player - -4 Authority (Authority:77)
+Hard AI ends turn 31
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 32
+Played <color=#1589FF>Command Ship</color>
+        Player  >  <color=#1589FF>Command Ship</color> +4 Authority (Authority:81)
+        Player  >  <color=#1589FF>Command Ship</color> +5 Combat (Combat:5)
+        Drew 1 cards.
+        Drew 1 cards.
+Played <color=#4CC417>The Hive</color>
+        Player  >  <color=#4CC417>The Hive</color> +3 Combat (Combat:8)
+Played <color=#4CC417>Battle Blob</color>
+        Player  >  <color=#4CC417>Battle Blob</color> +8 Combat (Combat:16)
+        Drew 1 cards.
+        Drew 1 cards.
+Played <color=#1589FF>Embassy Yacht</color>
+        Player  >  <color=#1589FF>Embassy Yacht</color> +3 Authority (Authority:84)
+        Player  >  <color=#1589FF>Embassy Yacht</color> +2 Trade (Trade:2)
+Played <color=#1589FF>Defense Center</color>
+        Player  >  <color=#1589FF>Defense Center</color> +2 Combat (Combat:18)
+Chose Add 3 Authority
+        Player  >  <color=#1589FF>Defense Center</color> +3 Authority (Authority:87)
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Player  >  <color=#800080>Viper</color> +1 Combat (Combat:19)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Activating Command Ship
+        Destroyed <color=#FF0000>Brain World</color>
+Attacked Hard AI for 19 (New Authority:5)
+        Player - -19 Combat (Combat:0)
+        Hard AI - -19 Authority (Authority:5)
+Acquired <color=#FF0000>Battle Mech</color>
+        Player - -5 Trade (Trade:0)
+Player ends turn 32
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 33
+Play all
+        Hard AI  >  <color=#1589FF>Federation Shuttle</color> +2 Trade (Trade:2)
+        Hard AI  >  <color=#4CC417>Blob Destroyer</color> +6 Combat (Combat:6)
+        Hard AI  >  <color=#4CC417>Blob Destroyer</color> +6 Combat (Combat:12)
+Activating Blob Destroyer
+        Destroyed <color=#1589FF>Defense Center</color>
+        Scrapped <color=#FF0000>Machine Base</color>
+Activating Blob Destroyer
+        Destroyed <color=#4CC417>The Hive</color>
+        Scrapped <color=#FFFF00>Dreadnaught</color>
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#1589FF>Trading Post</color>
+        Hard AI - -3 Trade (Trade:1)
+Attacked Player for 12 (New Authority:75)
+        Hard AI - -12 Combat (Combat:0)
+        Player - -12 Authority (Authority:75)
+Hard AI ends turn 33
+        Drew 4 cards.
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+        Refresh ally indicators
+        It is now Player's turn 34
+Played <color=#FFFF00>Survey Ship</color>
+        Drew 1 cards.
+        Player  >  <color=#FFFF00>Survey Ship</color> +1 Trade (Trade:1)
+Played <color=#FFFF00>Corvette</color>
+        Player  >  <color=#FFFF00>Corvette</color> +1 Combat (Combat:1)
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+        Player  >  <color=#FFFF00>Corvette</color> +2 Combat (Combat:3)
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Player  >  <color=#1589FF>Freighter</color> +4 Trade (Trade:8)
+        Player  >  <color=#4CC417>Battle Blob</color> +8 Combat (Combat:11)
+Acquired <color=#FFFF00>Fleet HQ</color>
+        Player - -8 Trade (Trade:0)
+Scrapping Survey Ship
+        Scrapped <color=#FFFF00>Survey Ship</color>
+        Hard AI  <  <color=#FFFF00>Survey Ship</color> +1 Discard (Discarding: 1)
+Player ends turn 34
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 35
+Resolving Discard 1 cards
+Hard AI is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Played <color=#FFFF00>Recycling Station</color>
+        Hard AI  >  <color=#FFFF00>Recycling Station</color> ability available
+Chose Add 1 Trade
+        Hard AI  >  <color=#FFFF00>Recycling Station</color> +1 Trade (Trade:1)
+Played <color=#FF0000>Patrol Mech</color>
+        Hard AI  >  <color=#FF0000>Patrol Mech</color> ability available
+        Hard AI  >  <color=#FF0000>Patrol Mech</color> +5 Combat (Combat:5)
+Play all
+        Hard AI  >  <color=#FFFF00>Imperial Frigate</color> +4 Combat (Combat:9)
+        Player  <  <color=#FFFF00>Imperial Frigate</color> +1 Discard (Discarding: 1)
+        Hard AI  >  <color=#FFFF00>Imperial Frigate</color> +2 Combat (Combat:11)
+        Hard AI  >  <color=#1589FF>Freighter</color> +4 Trade (Trade:5)
+Acquired <color=#FFFF00>War World</color>
+        Hard AI - -5 Trade (Trade:0)
+Attacked Player for 11 (New Authority:64)
+        Hard AI - -11 Combat (Combat:0)
+        Player - -11 Authority (Authority:64)
+Hard AI ends turn 35
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 36
+Resolving Discard 1 cards
+Player is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Play all
+        Player  >  <color=#4CC417>The Hive</color> +3 Combat (Combat:3)
+        Player  >  <color=#FFFF00>Space Station</color> +2 Combat (Combat:5)
+        Player  >  <color=#FF0000>C</color><color=#F1080F>o</color><color=#E3101E>a</color><color=#D6182D>l</color><color=#C8203C>i</color><color=#BA284B>t</color><color=#AC305A>i</color><color=#9F3869>o</color><color=#914078>n</color><color=#834987> </color><color=#755196>F</color><color=#6859A5>o</color><color=#5A61B4>r</color><color=#4C69C3>t</color><color=#3E71D2>r</color><color=#3179E1>e</color><color=#2381F0>s</color><color=#1589FF>s</color> +2 Trade (Trade:2)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Attacked Recycling Station
+        Player - -4 Combat (Combat:1)
+        Destroyed <color=#FFFF00>Recycling Station</color>
+Attacked Hard AI for 1 (New Authority:4)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:4)
+Player ends turn 36
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 37
+Play all
+        Hard AI  >  <color=#1589FF>Flagship</color> +5 Combat (Combat:5)
+        Drew 1 cards.
+        Hard AI  >  <color=#4CC417>Blob Destroyer</color> +6 Combat (Combat:11)
+        Hard AI  >  <color=#4CC417>Blob Destroyer</color> +6 Combat (Combat:17)
+        Hard AI  >  <color=#FFFF00>Battlecruiser</color> +5 Combat (Combat:22)
+        Drew 1 cards.
+Played <color=#FF0000>Patrol Mech</color>
+        Hard AI  >  <color=#FF0000>Patrol Mech</color> ability available
+        Hard AI  >  <color=#FF0000>Patrol Mech</color> +5 Combat (Combat:27)
+Activating Blob Destroyer
+        Destroyed <color=#FF0000>C</color><color=#F1080F>o</color><color=#E3101E>a</color><color=#D6182D>l</color><color=#C8203C>i</color><color=#BA284B>t</color><color=#AC305A>i</color><color=#9F3869>o</color><color=#914078>n</color><color=#834987> </color><color=#755196>F</color><color=#6859A5>o</color><color=#5A61B4>r</color><color=#4C69C3>t</color><color=#3E71D2>r</color><color=#3179E1>e</color><color=#2381F0>s</color><color=#1589FF>s</color>
+        Scrapped <color=#FFFF00>Royal Redoubt</color>
+Activating Blob Destroyer
+        Destroyed <color=#FFFF00>Space Station</color>
+        Scrapped <color=#FFFF00>Imperial Fighter</color>
+Play all
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Hard AI  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Acquired <color=#4CC417>Blob Fighter</color>
+        Hard AI - -1 Trade (Trade:1)
+Acquired <color=#FFFF00>Imperial Fighter</color>
+        Hard AI - -1 Trade (Trade:0)
+Attacked The Hive
+        Hard AI - -5 Combat (Combat:22)
+        Destroyed <color=#4CC417>The Hive</color>
+Attacked Player for 22 (New Authority:42)
+        Hard AI - -22 Combat (Combat:0)
+        Player - -22 Authority (Authority:42)
+Hard AI ends turn 37
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 38
+Played <color=#FFFF00>Survey Ship</color>
+        Drew 1 cards.
+        Player  >  <color=#FFFF00>Survey Ship</color> +1 Trade (Trade:1)
+Played <color=#1589FF>Command Ship</color>
+        Player  >  <color=#1589FF>Command Ship</color> +4 Authority (Authority:46)
+        Player  >  <color=#1589FF>Command Ship</color> +5 Combat (Combat:5)
+        Drew 1 cards.
+        Drew 1 cards.
+Played <color=#1589FF>Defense Center</color>
+        Player  >  <color=#1589FF>Defense Center</color> +2 Combat (Combat:7)
+Played <color=#1589FF>Trade Escort</color>
+        Player  >  <color=#1589FF>Trade Escort</color> +4 Combat (Combat:11)
+        Player  >  <color=#1589FF>Trade Escort</color> +4 Authority (Authority:50)
+        Drew 1 cards.
+Played <color=#FFFF00>A</color><color=#EFF711>l</color><color=#E0EF22>l</color><color=#D0E733>i</color><color=#C1E044>a</color><color=#B1D855>n</color><color=#A1D066>c</color><color=#92C877>e</color><color=#82C088> </color><color=#73B899>L</color><color=#63B0AA>a</color><color=#53A8BB>n</color><color=#44A1CC>d</color><color=#3499DD>i</color><color=#2591EE>n</color><color=#1589FF>g</color>
+        Player  >  <color=#FFFF00>A</color><color=#EFF711>l</color><color=#E0EF22>l</color><color=#D0E733>i</color><color=#C1E044>a</color><color=#B1D855>n</color><color=#A1D066>c</color><color=#92C877>e</color><color=#82C088> </color><color=#73B899>L</color><color=#63B0AA>a</color><color=#53A8BB>n</color><color=#44A1CC>d</color><color=#3499DD>i</color><color=#2591EE>n</color><color=#1589FF>g</color> +2 Trade (Trade:3)
+        Player  >  <color=#FFFF00>A</color><color=#EFF711>l</color><color=#E0EF22>l</color><color=#D0E733>i</color><color=#C1E044>a</color><color=#B1D855>n</color><color=#A1D066>c</color><color=#92C877>e</color><color=#82C088> </color><color=#73B899>L</color><color=#63B0AA>a</color><color=#53A8BB>n</color><color=#44A1CC>d</color><color=#3499DD>i</color><color=#2591EE>n</color><color=#1589FF>g</color> +2 Combat (Combat:13)
+Played <color=#1589FF>Embassy Yacht</color>
+        Player  >  <color=#1589FF>Embassy Yacht</color> +3 Authority (Authority:53)
+        Player  >  <color=#1589FF>Embassy Yacht</color> +2 Trade (Trade:5)
+        Drew 1 cards.
+        Drew 1 cards.
+Played <color=#FFFF00>Recycling Station</color>
+        Player  >  <color=#FFFF00>Recycling Station</color> ability available
+Chose Discard and Redraw up to 2 card(s)
+Player is selecting Scout
+Player is selecting Viper
+        Discarded <color=#800080>Scout</color>
+        Discarded <color=#800080>Viper</color>
+        Drew 1 cards.
+        Drew 1 cards.
+Played <color=#FF0000>Battle Mech</color>
+Player is scrapping: Viper
+        Player  >  <color=#FF0000>Battle Mech</color> +4 Combat (Combat:17)
+        Scrapped <color=#800080>Viper</color>
+Played <color=#1589FF>Barter World</color>
+Played <color=#1589FF>Cutter</color>
+        Player  >  <color=#1589FF>Cutter</color> +4 Authority (Authority:57)
+        Player  >  <color=#1589FF>Cutter</color> +2 Trade (Trade:7)
+        Player  >  <color=#1589FF>Cutter</color> +4 Combat (Combat:21)
+Chose Add 2 Authority
+        Player  >  <color=#1589FF>Barter World</color> +2 Authority (Authority:59)
+Chose Add 3 Authority
+        Player  >  <color=#1589FF>Defense Center</color> +3 Authority (Authority:62)
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:8)
+Acquired <color=#FF0000>Stealth Needle</color>
+        Player - -4 Trade (Trade:4)
+Acquired <color=#FF0000>Battle Station</color>
+        Player - -3 Trade (Trade:1)
+Scrapping Survey Ship
+        Scrapped <color=#FFFF00>Survey Ship</color>
+        Hard AI  <  <color=#FFFF00>Survey Ship</color> +1 Discard (Discarding: 1)
+Player ends turn 38
+        Drew 1 cards.
+        Shuffled discard pile to form new deck
+        Drew 4 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 39
+Resolving Discard 1 cards
+Hard AI is discarding Federation Shuttle
+        no more cards to discard
+        Discarded <color=#1589FF>Federation Shuttle</color>
+Played <color=#1589FF>Trading Post</color>
+Played <color=#4CC417>Blob World</color>
+        Hard AI  >  <color=#4CC417>Blob World</color> ability available
+Played <color=#FF0000>Brain World</color>
+        Hard AI  >  <color=#FF0000>Brain World</color> ability available
+Played <color=#1589FF>Trading Post</color>
+Activating Brain World
+Hard AI is scrapping Scout
+Hard AI is scrapping Scout
+        Scrapped <color=#800080>Scout</color>
+        Scrapped <color=#800080>Scout</color>
+        Drew 2 cards.
+Played <color=#FF0000>Supply Bot</color>
+Hard AI is scrapping: Scout
+        Hard AI  >  <color=#FF0000>Supply Bot</color> +2 Trade (Trade:2)
+        Scrapped <color=#800080>Scout</color>
+        Hard AI  >  <color=#FF0000>Supply Bot</color> +2 Combat (Combat:2)
+Chose Add 1 Authority
+        Hard AI  >  <color=#1589FF>Trading Post</color> +1 Authority (Authority:5)
+Chose Add 1 Authority
+        Hard AI  >  <color=#1589FF>Trading Post</color> +1 Authority (Authority:6)
+Played <color=#4CC417>Battle Pod</color>
+        Hard AI  >  <color=#4CC417>Battle Pod</color> +4 Combat (Combat:6)
+        Scrapped <color=#4CC417>U</color><color=#5BB415>n</color><color=#6AA313>i</color><color=#799311>t</color><color=#88830F>y</color><color=#97720D> </color><color=#A6620C>S</color><color=#B4520A>t</color><color=#C34108>a</color><color=#D23106>t</color><color=#E12104>i</color><color=#F01002>o</color><color=#FF0000>n</color>
+        Hard AI  >  <color=#4CC417>Battle Pod</color> +2 Combat (Combat:8)
+Chose Draw a card for every Blob card played this turn
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+        Drew 1 cards.
+Play all
+        Hard AI  >  <color=#FFFF00>Imperial Frigate</color> +4 Combat (Combat:12)
+        Player  <  <color=#FFFF00>Imperial Frigate</color> +1 Discard (Discarding: 1)
+        Drew 1 cards.
+        Hard AI  >  <color=#4CC417>Blob Fighter</color> +3 Combat (Combat:15)
+Played <color=#FFFF00>Recycling Station</color>
+        Hard AI  >  <color=#FFFF00>Recycling Station</color> ability available
+        Hard AI  >  <color=#FFFF00>Imperial Frigate</color> +2 Combat (Combat:17)
+Chose Add 1 Trade
+        Hard AI  >  <color=#FFFF00>Recycling Station</color> +1 Trade (Trade:3)
+Acquired <color=#FF0000>Battle Station</color>
+        Hard AI - -3 Trade (Trade:0)
+Attacked Defense Center
+        Hard AI - -5 Combat (Combat:12)
+        Destroyed <color=#1589FF>Defense Center</color>
+Attacked Alliance Landing
+        Hard AI - -5 Combat (Combat:7)
+        Destroyed <color=#FFFF00>A</color><color=#EFF711>l</color><color=#E0EF22>l</color><color=#D0E733>i</color><color=#C1E044>a</color><color=#B1D855>n</color><color=#A1D066>c</color><color=#92C877>e</color><color=#82C088> </color><color=#73B899>L</color><color=#63B0AA>a</color><color=#53A8BB>n</color><color=#44A1CC>d</color><color=#3499DD>i</color><color=#2591EE>n</color><color=#1589FF>g</color>
+Attacked Recycling Station
+        Hard AI - -4 Combat (Combat:3)
+        Destroyed <color=#FFFF00>Recycling Station</color>
+Attacked Player for 3 (New Authority:59)
+        Hard AI - -3 Combat (Combat:0)
+        Player - -3 Authority (Authority:59)
+Hard AI ends turn 39
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 40
+Resolving Discard 1 cards
+Player is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Played <color=#1589FF>Command Ship</color>
+        Player  >  <color=#1589FF>Command Ship</color> +4 Authority (Authority:63)
+        Player  >  <color=#1589FF>Command Ship</color> +5 Combat (Combat:5)
+        Drew 1 cards.
+        Drew 1 cards.
+Played <color=#4CC417>Battle Blob</color>
+        Player  >  <color=#4CC417>Battle Blob</color> +8 Combat (Combat:13)
+Played <color=#4CC417>Blob Fighter</color>
+        Player  >  <color=#4CC417>Blob Fighter</color> +3 Combat (Combat:16)
+        Drew 1 cards.
+        Drew 1 cards.
+Play all
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Player  >  <color=#FFFF00>Fleet HQ</color> +1 Combat (Combat:17)
+        Player  >  <color=#FF0000>C</color><color=#F1080F>o</color><color=#E3101E>a</color><color=#D6182D>l</color><color=#C8203C>i</color><color=#BA284B>t</color><color=#AC305A>i</color><color=#9F3869>o</color><color=#914078>n</color><color=#834987> </color><color=#755196>F</color><color=#6859A5>o</color><color=#5A61B4>r</color><color=#4C69C3>t</color><color=#3E71D2>r</color><color=#3179E1>e</color><color=#2381F0>s</color><color=#1589FF>s</color> +2 Trade (Trade:3)
+        Player  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Player  >  <color=#FFFF00>Fleet HQ</color> +1 Combat (Combat:18)
+Activating Command Ship
+        Destroyed <color=#FF0000>Brain World</color>
+Attacked Recycling Station
+        Player - -4 Combat (Combat:14)
+        Destroyed <color=#FFFF00>Recycling Station</color>
+Attacked Trading Post
+        Player - -4 Combat (Combat:10)
+        Destroyed <color=#1589FF>Trading Post</color>
+Attacked Trading Post
+        Player - -4 Combat (Combat:6)
+        Destroyed <color=#1589FF>Trading Post</color>
+Chose Add 2 Combat
+        Player  >  <color=#FF0000>C</color><color=#F1080F>o</color><color=#E3101E>a</color><color=#D6182D>l</color><color=#C8203C>i</color><color=#BA284B>t</color><color=#AC305A>i</color><color=#9F3869>o</color><color=#914078>n</color><color=#834987> </color><color=#755196>F</color><color=#6859A5>o</color><color=#5A61B4>r</color><color=#4C69C3>t</color><color=#3E71D2>r</color><color=#3179E1>e</color><color=#2381F0>s</color><color=#1589FF>s</color> +2 Combat (Combat:8)
+Attacked Blob World
+        Player - -7 Combat (Combat:1)
+        Destroyed <color=#4CC417>Blob World</color>
+Chose Add 2 Authority
+        Player  >  <color=#1589FF>Barter World</color> +2 Authority (Authority:65)
+Attacked Hard AI for 1 (New Authority:5)
+        Player - -1 Combat (Combat:0)
+        Hard AI - -1 Authority (Authority:5)
+Player ends turn 40
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 41
+Played <color=#FFFF00>War World</color>
+        Hard AI  >  <color=#FFFF00>War World</color> +3 Combat (Combat:3)
+Play all
+        Hard AI  >  <color=#1589FF>Federation Shuttle</color> +2 Trade (Trade:2)
+        Hard AI  >  <color=#1589FF>Federation Shuttle</color> +4 Authority (Authority:9)
+        Player  <  <color=#FFFF00>Battlecruiser</color> +1 Discard (Discarding: 1)
+        Hard AI  >  <color=#1589FF>Flagship</color> +5 Authority (Authority:14)
+        Hard AI  >  <color=#FFFF00>War World</color> +4 Combat (Combat:7)
+        Hard AI  >  <color=#FFFF00>Battlecruiser</color> +5 Combat (Combat:12)
+        Drew 1 cards.
+        Hard AI  >  <color=#1589FF>Flagship</color> +5 Combat (Combat:17)
+        Drew 1 cards.
+        Hard AI  >  <color=#4CC417>Blob Destroyer</color> +6 Combat (Combat:23)
+Play all
+        Hard AI  >  <color=#4CC417>Blob Destroyer</color> +6 Combat (Combat:29)
+        Hard AI  >  <color=#1589FF>Freighter</color> +4 Trade (Trade:6)
+Activating Blob Destroyer
+        Destroyed <color=#FF0000>C</color><color=#F1080F>o</color><color=#E3101E>a</color><color=#D6182D>l</color><color=#C8203C>i</color><color=#BA284B>t</color><color=#AC305A>i</color><color=#9F3869>o</color><color=#914078>n</color><color=#834987> </color><color=#755196>F</color><color=#6859A5>o</color><color=#5A61B4>r</color><color=#4C69C3>t</color><color=#3E71D2>r</color><color=#3179E1>e</color><color=#2381F0>s</color><color=#1589FF>s</color>
+        Scrapped <color=#1589FF>Central Office</color>
+Activating Blob Destroyer
+        Destroyed <color=#FF0000>Battle Station</color>
+        Scrapped <color=#FF0000>Junkyard</color>
+Acquired <color=#FF0000>C</color><color=#F2080E>o</color><color=#E50F1C>a</color><color=#D8172A>l</color><color=#CB1E39>i</color><color=#BE2647>t</color><color=#B12E55>i</color><color=#A43563>o</color><color=#973D71>n</color><color=#8A4480> </color><color=#7D4C8E>F</color><color=#70549C>r</color><color=#635BAA>e</color><color=#5663B8>i</color><color=#496BC6>g</color><color=#3C72D4>h</color><color=#2F7AE3>t</color><color=#2281F1>e</color><color=#1589FF>r</color>
+        Hard AI - -4 Trade (Trade:2)
+        Acquired <color=#FF0000>C</color><color=#F2080E>o</color><color=#E50F1C>a</color><color=#D8172A>l</color><color=#CB1E39>i</color><color=#BE2647>t</color><color=#B12E55>i</color><color=#A43563>o</color><color=#973D71>n</color><color=#8A4480> </color><color=#7D4C8E>F</color><color=#70549C>r</color><color=#635BAA>e</color><color=#5663B8>i</color><color=#496BC6>g</color><color=#3C72D4>h</color><color=#2F7AE3>t</color><color=#2281F1>e</color><color=#1589FF>r</color> to the top of the deck.
+Acquired <color=#FFFF00>Corvette</color>
+        Hard AI - -2 Trade (Trade:0)
+Attacked Fleet HQ
+        Hard AI - -8 Combat (Combat:21)
+        Destroyed <color=#FFFF00>Fleet HQ</color>
+Attacked Barter World
+        Hard AI - -4 Combat (Combat:17)
+        Destroyed <color=#1589FF>Barter World</color>
+Attacked Player for 17 (New Authority:48)
+        Hard AI - -17 Combat (Combat:0)
+        Player - -17 Authority (Authority:48)
+Hard AI ends turn 41
+        Drew 4 cards.
+        Shuffled discard pile to form new deck
+        Drew 1 cards.
+        Refresh ally indicators
+        It is now Player's turn 42
+Player ends turn 42
+Player is discarding Cutter
+        no more cards to discard
+        Discarded <color=#1589FF>Cutter</color>
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 43
+        Hard AI  >  <color=#FFFF00>War World</color> +3 Combat (Combat:3)
+Played <color=#1589FF>Trading Post</color>
+Played <color=#FF0000>C</color><color=#F2080E>o</color><color=#E50F1C>a</color><color=#D8172A>l</color><color=#CB1E39>i</color><color=#BE2647>t</color><color=#B12E55>i</color><color=#A43563>o</color><color=#973D71>n</color><color=#8A4480> </color><color=#7D4C8E>F</color><color=#70549C>r</color><color=#635BAA>e</color><color=#5663B8>i</color><color=#496BC6>g</color><color=#3C72D4>h</color><color=#2F7AE3>t</color><color=#2281F1>e</color><color=#1589FF>r</color>
+        Hard AI  >  <color=#FF0000>C</color><color=#F2080E>o</color><color=#E50F1C>a</color><color=#D8172A>l</color><color=#CB1E39>i</color><color=#BE2647>t</color><color=#B12E55>i</color><color=#A43563>o</color><color=#973D71>n</color><color=#8A4480> </color><color=#7D4C8E>F</color><color=#70549C>r</color><color=#635BAA>e</color><color=#5663B8>i</color><color=#496BC6>g</color><color=#3C72D4>h</color><color=#2F7AE3>t</color><color=#2281F1>e</color><color=#1589FF>r</color> +3 Trade (Trade:3)
+Played <color=#FF0000>Patrol Mech</color>
+        Hard AI  >  <color=#FF0000>Patrol Mech</color> ability available
+        Hard AI  >  <color=#FF0000>Patrol Mech</color> +3 Trade (Trade:6)
+Played <color=#FF0000>Patrol Mech</color>
+        Hard AI  >  <color=#FF0000>Patrol Mech</color> ability available
+        Hard AI  >  <color=#FF0000>Patrol Mech</color> +5 Combat (Combat:8)
+Chose Add 1 Authority
+        Hard AI  >  <color=#1589FF>Trading Post</color> +1 Authority (Authority:15)
+Activating Coalition Freighter
+Hard AI is scrapping: Imperial Fighter
+        Scrapped <color=#FFFF00>Imperial Fighter</color>
+Activating Patrol Mech
+Activating Patrol Mech
+Scrapping Trading Post
+        Scrapped <color=#1589FF>Trading Post</color>
+        Hard AI  >  <color=#1589FF>Trading Post</color> +3 Combat (Combat:11)
+Attacked Player for 11 (New Authority:37)
+        Hard AI - -11 Combat (Combat:0)
+        Player - -11 Authority (Authority:37)
+Acquired <color=#FFFF00>Space Station</color>
+        Hard AI - -4 Trade (Trade:2)
+Acquired <color=#4CC417>A</color><color=#5ECA15>s</color><color=#70D012>s</color><color=#82D610>a</color><color=#94DC0E>u</color><color=#A6E20C>l</color><color=#B7E709>t</color><color=#C9ED07> </color><color=#DBF305>P</color><color=#EDF902>o</color><color=#FFFF00>d</color>
+        Hard AI - -2 Trade (Trade:0)
+        Acquired <color=#4CC417>A</color><color=#5ECA15>s</color><color=#70D012>s</color><color=#82D610>a</color><color=#94DC0E>u</color><color=#A6E20C>l</color><color=#B7E709>t</color><color=#C9ED07> </color><color=#DBF305>P</color><color=#EDF902>o</color><color=#FFFF00>d</color> to the top of the deck.
+Hard AI ends turn 43
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Player's turn 44
+Player ends turn 44
+        Drew 3 cards.
+        Shuffled discard pile to form new deck
+        Drew 2 cards.
+        Refresh ally indicators
+        It is now Hard AI's turn 45
+        Hard AI  >  <color=#FFFF00>War World</color> +3 Combat (Combat:3)
+Played <color=#1589FF>Trading Post</color>
+Played <color=#FF0000>Supply Bot</color>
+Hard AI is scrapping: Blob Fighter
+        Hard AI  >  <color=#FF0000>Supply Bot</color> +2 Trade (Trade:2)
+        Scrapped <color=#4CC417>Blob Fighter</color>
+Chose Add 1 Authority
+        Hard AI  >  <color=#1589FF>Trading Post</color> +1 Authority (Authority:16)
+Play all
+        Hard AI  >  <color=#4CC417>A</color><color=#5ECA15>s</color><color=#70D012>s</color><color=#82D610>a</color><color=#94DC0E>u</color><color=#A6E20C>l</color><color=#B7E709>t</color><color=#C9ED07> </color><color=#DBF305>P</color><color=#EDF902>o</color><color=#FFFF00>d</color> +3 Combat (Combat:6)
+        Drew 1 cards.
+        Player  <  <color=#FFFF00>Battlecruiser</color> +1 Discard (Discarding: 1)
+        Hard AI  >  <color=#FFFF00>War World</color> +4 Combat (Combat:10)
+        Hard AI  >  <color=#FFFF00>Battlecruiser</color> +5 Combat (Combat:15)
+        Drew 1 cards.
+Played <color=#4CC417>Blob World</color>
+        Hard AI  >  <color=#4CC417>Blob World</color> ability available
+Play all
+        Hard AI  >  <color=#1589FF>Federation Shuttle</color> +2 Trade (Trade:4)
+        Hard AI  >  <color=#1589FF>Federation Shuttle</color> +4 Authority (Authority:20)
+Chose Draw a card for every Blob card played this turn
+        Drew 1 cards.
+        Drew 1 cards.
+Played <color=#FF0000>Brain World</color>
+        Hard AI  >  <color=#FF0000>Brain World</color> ability available
+        Hard AI  >  <color=#FF0000>Supply Bot</color> +2 Combat (Combat:17)
+Activating Brain World
+Play all
+        Hard AI  >  <color=#4CC417>Blob Destroyer</color> +6 Combat (Combat:23)
+Activating Blob Destroyer
+        Scrapped <color=#FFFF00>A</color><color=#EFF711>l</color><color=#E0EF22>l</color><color=#D0E733>i</color><color=#C1E044>a</color><color=#B1D855>n</color><color=#A1D066>c</color><color=#92C877>e</color><color=#82C088> </color><color=#73B899>F</color><color=#63B0AA>r</color><color=#53A8BB>i</color><color=#44A1CC>g</color><color=#3499DD>a</color><color=#2591EE>t</color><color=#1589FF>e</color>
+Scrapping Battlecruiser
+        Scrapped <color=#FFFF00>Battlecruiser</color>
+        Drew 1 cards.
+Play all
+        Hard AI  >  <color=#FFFF00>Imperial Frigate</color> +4 Combat (Combat:27)
+        Player  <  <color=#FFFF00>Imperial Frigate</color> +1 Discard (Discarding: 2)
+        Hard AI  >  <color=#FFFF00>Imperial Frigate</color> +2 Combat (Combat:29)
+Scrapping Imperial Frigate
+        Scrapped <color=#FFFF00>Imperial Frigate</color>
+        Drew 1 cards.
+Played <color=#FF0000>Battle Station</color>
+Scrapping Battle Station
+        Scrapped <color=#FF0000>Battle Station</color>
+        Hard AI  >  <color=#FF0000>Battle Station</color> +5 Combat (Combat:34)
+Scrapping Trading Post
+        Scrapped <color=#1589FF>Trading Post</color>
+        Hard AI  >  <color=#1589FF>Trading Post</color> +3 Combat (Combat:37)
+Attacked Player for 37 (New Authority:0)
+        Hard AI - -37 Combat (Combat:0)
+        Player - -37 Authority (Authority:0)
+        === Hard AI has won the game. ===

@@ -1276,7 +1276,7 @@
         "discardedCards": [],
         "destroyedBases": [],
         "winner": "Randomosity",
-        "winCondition": "timeout",
+        "winCondition": "resignation",
         "drawCount": 0,
         "shuffleCount": 0,
         "authority": {
@@ -1290,6 +1290,6 @@
         "foundGambits": []
       }
     ],
-    "winCondition": "timeout"
+    "winCondition": "resignation"
   }
 }

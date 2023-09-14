@@ -1,0 +1,476 @@
+Play all
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#4CC417>Ram</color>
+        Janoszny - -3 Trade (Trade:0)
+Janoszny ends turn 1
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Wondrej's turn 2
+Play all
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+Acquired <color=#1589FF>Freighter</color>
+        Wondrej - -4 Trade (Trade:1)
+Wondrej ends turn 2
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Janoszny's turn 3
+Play all
+        Janoszny  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FF0000>Patrol Mech</color>
+        Janoszny - -4 Trade (Trade:0)
+Attacked Wondrej for 1 (New Authority:49)
+        Janoszny - -1 Combat (Combat:0)
+        Wondrej - -1 Authority (Authority:49)
+Janoszny ends turn 3
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now Wondrej's turn 4
+Play all
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Wondrej  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Wondrej  >  <color=#800080>Viper</color> +1 Combat (Combat:2)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#FFFF00>Imperial Frigate</color>
+        Wondrej - -3 Trade (Trade:0)
+Attacked Janoszny for 2 (New Authority:48)
+        Wondrej - -2 Combat (Combat:0)
+        Janoszny - -2 Authority (Authority:48)
+Wondrej ends turn 4
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Janoszny's turn 5
+Play all
+        Janoszny  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Janoszny  >  <color=#800080>Viper</color> +1 Combat (Combat:2)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#FFFF00>Imperial Frigate</color>
+        Janoszny - -3 Trade (Trade:0)
+Attacked Wondrej for 2 (New Authority:47)
+        Janoszny - -2 Combat (Combat:0)
+        Wondrej - -2 Authority (Authority:47)
+Janoszny ends turn 5
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Wondrej's turn 6
+Play all
+        Wondrej  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Wondrej  >  <color=#FFFF00>Imperial Frigate</color> +4 Combat (Combat:5)
+        Janoszny  <  <color=#FFFF00>Imperial Frigate</color> +1 Discard (Discarding: 1)
+Acquired <color=#1589FF>Embassy Yacht</color>
+        Wondrej - -3 Trade (Trade:0)
+Attacked Janoszny for 5 (New Authority:43)
+        Wondrej - -5 Combat (Combat:0)
+        Janoszny - -5 Authority (Authority:43)
+Wondrej ends turn 6
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Janoszny's turn 7
+Resolving Discard 1 cards
+Janoszny is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Played <color=#FF0000>Patrol Mech</color>
+        Janoszny  >  <color=#FF0000>Patrol Mech</color> ability available
+        Janoszny  >  <color=#FF0000>Patrol Mech</color> +3 Trade (Trade:3)
+Acquired <color=#4CC417>Blob Fighter</color>
+        Janoszny - -1 Trade (Trade:2)
+Play all
+        Janoszny  >  <color=#4CC417>Ram</color> +5 Combat (Combat:5)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#FFFF00>Space Station</color>
+        Janoszny - -4 Trade (Trade:0)
+Attacked Wondrej for 5 (New Authority:42)
+        Janoszny - -5 Combat (Combat:0)
+        Wondrej - -5 Authority (Authority:42)
+Janoszny ends turn 7
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now Wondrej's turn 8
+Play all
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Wondrej  >  <color=#1589FF>Freighter</color> +4 Trade (Trade:6)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:7)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:8)
+Acquired <color=#4CC417>Blob Carrier</color>
+        Wondrej - -6 Trade (Trade:2)
+Acquired <color=#4CC417>Trade Pod</color>
+        Wondrej - -2 Trade (Trade:0)
+Wondrej ends turn 8
+        Drew 2 cards.
+        Shuffled discard pile to form new deck
+        Drew 3 cards.
+        Refresh ally indicators
+        It is now Janoszny's turn 9
+Played <color=#FF0000>Patrol Mech</color>
+        Janoszny  >  <color=#FF0000>Patrol Mech</color> ability available
+        Janoszny  >  <color=#FF0000>Patrol Mech</color> +3 Trade (Trade:3)
+Played <color=#FFFF00>Imperial Frigate</color>
+        Janoszny  >  <color=#FFFF00>Imperial Frigate</color> +4 Combat (Combat:4)
+        Wondrej  <  <color=#FFFF00>Imperial Frigate</color> +1 Discard (Discarding: 1)
+Play all
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+Acquired <color=#1589FF>Trading Post</color>
+        Janoszny - -3 Trade (Trade:3)
+Acquired <color=#4CC417>Blob Wheel</color>
+        Janoszny - -3 Trade (Trade:0)
+Attacked Wondrej for 4 (New Authority:38)
+        Janoszny - -4 Combat (Combat:0)
+        Wondrej - -4 Authority (Authority:38)
+Janoszny ends turn 9
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Wondrej's turn 10
+Resolving Discard 1 cards
+Wondrej is discarding Viper
+        no more cards to discard
+        Discarded <color=#800080>Viper</color>
+Play all
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+Acquired <color=#4CC417>Blob Destroyer</color>
+        Wondrej - -4 Trade (Trade:0)
+Wondrej ends turn 10
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Janoszny's turn 11
+Play all
+        Janoszny  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Janoszny  >  <color=#FFFF00>Space Station</color> +2 Combat (Combat:3)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Janoszny  >  <color=#4CC417>Ram</color> +5 Combat (Combat:8)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Attacked Wondrej for 8 (New Authority:30)
+        Janoszny - -8 Combat (Combat:0)
+        Wondrej - -8 Authority (Authority:30)
+Janoszny ends turn 11
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Wondrej's turn 12
+Play all
+        Wondrej  >  <color=#1589FF>Freighter</color> +4 Trade (Trade:4)
+        Wondrej  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:5)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:7)
+Acquired <color=#1589FF>Trade Escort</color>
+        Wondrej - -5 Trade (Trade:2)
+Acquired <color=#800080>Explorer</color>
+        Wondrej - -2 Trade (Trade:0)
+Wondrej ends turn 12
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Janoszny's turn 13
+        Janoszny  >  <color=#FFFF00>Space Station</color> +2 Combat (Combat:2)
+Play all
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Janoszny  >  <color=#4CC417>Blob Fighter</color> +3 Combat (Combat:5)
+        Janoszny  >  <color=#800080>Viper</color> +1 Combat (Combat:6)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Attacked Wondrej for 6 (New Authority:24)
+        Janoszny - -6 Combat (Combat:0)
+        Wondrej - -6 Authority (Authority:24)
+Janoszny ends turn 13
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Wondrej's turn 14
+Played <color=#4CC417>Blob Carrier</color>
+        Wondrej  >  <color=#4CC417>Blob Carrier</color> +7 Combat (Combat:7)
+Played <color=#4CC417>Trade Pod</color>
+        Wondrej  >  <color=#4CC417>Trade Pod</color> +3 Trade (Trade:3)
+        Wondrej  >  <color=#4CC417>Trade Pod</color> +2 Combat (Combat:9)
+Activating Blob Carrier
+Acquired <color=#1589FF>Freighter</color>
+        Acquired <color=#1589FF>Freighter</color> to the top of the deck.
+Played <color=#FFFF00>Imperial Frigate</color>
+        Wondrej  >  <color=#FFFF00>Imperial Frigate</color> +4 Combat (Combat:13)
+        Janoszny  <  <color=#FFFF00>Imperial Frigate</color> +1 Discard (Discarding: 1)
+Played <color=#1589FF>Embassy Yacht</color>
+        Wondrej  >  <color=#1589FF>Embassy Yacht</color> +3 Authority (Authority:27)
+        Wondrej  >  <color=#1589FF>Embassy Yacht</color> +2 Trade (Trade:5)
+Scrapping Imperial Frigate
+        Scrapped <color=#FFFF00>Imperial Frigate</color>
+        Drew 1 cards.
+Played <color=#1589FF>Freighter</color>
+        Wondrej  >  <color=#1589FF>Freighter</color> +4 Trade (Trade:9)
+Acquired <color=#4CC417>Blob World</color>
+        Wondrej - -8 Trade (Trade:1)
+Play all
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Attacked Space Station
+        Wondrej - -4 Combat (Combat:9)
+        Destroyed <color=#FFFF00>Space Station</color>
+Attacked Janoszny for 9 (New Authority:34)
+        Wondrej - -9 Combat (Combat:0)
+        Janoszny - -9 Authority (Authority:34)
+Wondrej ends turn 14
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Janoszny's turn 15
+Resolving Discard 1 cards
+Janoszny is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Play all
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Janoszny  >  <color=#4CC417>Blob Wheel</color> +1 Combat (Combat:1)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Chose Add 1 Authority
+        Janoszny  >  <color=#1589FF>Trading Post</color> +1 Authority (Authority:35)
+Attacked Wondrej for 1 (New Authority:26)
+        Janoszny - -1 Combat (Combat:0)
+        Wondrej - -1 Authority (Authority:26)
+Janoszny ends turn 15
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Wondrej's turn 16
+Played <color=#4CC417>Blob World</color>
+        Wondrej  >  <color=#4CC417>Blob World</color> ability available
+Played <color=#4CC417>Blob Carrier</color>
+        Wondrej  >  <color=#4CC417>Blob Carrier</color> +7 Combat (Combat:7)
+Played <color=#4CC417>Blob Destroyer</color>
+        Wondrej  >  <color=#4CC417>Blob Destroyer</color> +6 Combat (Combat:13)
+Attacked Trading Post
+        Wondrej - -4 Combat (Combat:9)
+        Destroyed <color=#1589FF>Trading Post</color>
+Activating Blob Destroyer
+        Destroyed <color=#4CC417>Blob Wheel</color>
+        Scrapped <color=#FFFF00>Royal Redoubt</color>
+Chose Draw a card for every Blob card played this turn
+        Drew 1 cards.
+        Drew 1 cards.
+        Drew 1 cards.
+Play all
+        Wondrej  >  <color=#800080>Explorer</color> +2 Trade (Trade:2)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Wondrej  >  <color=#800080>Viper</color> +1 Combat (Combat:10)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:4)
+        Wondrej  >  <color=#1589FF>Freighter</color> +4 Trade (Trade:8)
+Acquired <color=#FF0000>Machine Base</color>
+        Wondrej - -7 Trade (Trade:1)
+Scrapping Explorer
+        Scrapped <color=#800080>Explorer</color>
+        Wondrej  >  <color=#800080>Explorer</color> +2 Combat (Combat:12)
+Attacked Janoszny for 12 (New Authority:23)
+        Wondrej - -12 Combat (Combat:0)
+        Janoszny - -12 Authority (Authority:23)
+Wondrej ends turn 16
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Janoszny's turn 17
+Played <color=#FF0000>Patrol Mech</color>
+        Janoszny  >  <color=#FF0000>Patrol Mech</color> ability available
+        Janoszny  >  <color=#FF0000>Patrol Mech</color> +5 Combat (Combat:5)
+Play all
+        Janoszny  >  <color=#800080>Viper</color> +1 Combat (Combat:6)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Janoszny  >  <color=#4CC417>Blob Fighter</color> +3 Combat (Combat:9)
+Attacked Blob World
+        Janoszny - -7 Combat (Combat:2)
+        Destroyed <color=#4CC417>Blob World</color>
+Attacked Wondrej for 2 (New Authority:24)
+        Janoszny - -2 Combat (Combat:0)
+        Wondrej - -2 Authority (Authority:24)
+Janoszny ends turn 17
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Wondrej's turn 18
+Play all
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Wondrej  >  <color=#1589FF>Freighter</color> +4 Trade (Trade:7)
+        Wondrej  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+Acquired <color=#4CC417>The Hive</color>
+        Wondrej - -5 Trade (Trade:2)
+Attacked Janoszny for 1 (New Authority:22)
+        Wondrej - -1 Combat (Combat:0)
+        Janoszny - -1 Authority (Authority:22)
+Wondrej ends turn 18
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Janoszny's turn 19
+Play all
+        Janoszny  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Janoszny  >  <color=#FFFF00>Imperial Frigate</color> +4 Combat (Combat:5)
+        Wondrej  <  <color=#FFFF00>Imperial Frigate</color> +1 Discard (Discarding: 1)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#4CC417>Blob Wheel</color>
+        Janoszny - -3 Trade (Trade:0)
+Attacked Wondrej for 5 (New Authority:19)
+        Janoszny - -5 Combat (Combat:0)
+        Wondrej - -5 Authority (Authority:19)
+Janoszny ends turn 19
+        Drew 1 cards.
+        Shuffled discard pile to form new deck
+        Drew 4 cards.
+        Refresh ally indicators
+        It is now Wondrej's turn 20
+Resolving Discard 1 cards
+Wondrej is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Played <color=#1589FF>Trade Escort</color>
+        Wondrej  >  <color=#1589FF>Trade Escort</color> +4 Combat (Combat:4)
+        Wondrej  >  <color=#1589FF>Trade Escort</color> +4 Authority (Authority:23)
+Played <color=#1589FF>Embassy Yacht</color>
+        Wondrej  >  <color=#1589FF>Embassy Yacht</color> +3 Authority (Authority:26)
+        Wondrej  >  <color=#1589FF>Embassy Yacht</color> +2 Trade (Trade:2)
+        Drew 1 cards.
+Play all
+        Wondrej  >  <color=#4CC417>Trade Pod</color> +3 Trade (Trade:5)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:6)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:7)
+Acquired <color=#4CC417>Battle Blob</color>
+        Wondrej - -6 Trade (Trade:1)
+Attacked Janoszny for 4 (New Authority:18)
+        Wondrej - -4 Combat (Combat:0)
+        Janoszny - -4 Authority (Authority:18)
+Wondrej ends turn 20
+        Shuffled discard pile to form new deck
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Janoszny's turn 21
+Played <color=#4CC417>Ram</color>
+        Janoszny  >  <color=#4CC417>Ram</color> +5 Combat (Combat:5)
+Played <color=#4CC417>Blob Fighter</color>
+        Janoszny  >  <color=#4CC417>Blob Fighter</color> +3 Combat (Combat:8)
+        Janoszny  >  <color=#4CC417>Ram</color> +2 Combat (Combat:10)
+        Drew 1 cards.
+Play all
+        Janoszny  >  <color=#800080>Viper</color> +1 Combat (Combat:11)
+        Janoszny  >  <color=#4CC417>Blob Wheel</color> +1 Combat (Combat:12)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+Attacked Wondrej for 12 (New Authority:14)
+        Janoszny - -12 Combat (Combat:0)
+        Wondrej - -12 Authority (Authority:14)
+Janoszny ends turn 21
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Wondrej's turn 22
+Play all
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Wondrej  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+        Wondrej  >  <color=#800080>Viper</color> +1 Combat (Combat:1)
+        Wondrej  >  <color=#4CC417>Trade Pod</color> +3 Trade (Trade:6)
+Acquired <color=#FF0000>Mech World</color>
+        Wondrej - -5 Trade (Trade:1)
+Attacked Janoszny for 1 (New Authority:17)
+        Wondrej - -1 Combat (Combat:0)
+        Janoszny - -1 Authority (Authority:17)
+Wondrej ends turn 22
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Janoszny's turn 23
+        Janoszny  >  <color=#4CC417>Blob Wheel</color> +1 Combat (Combat:1)
+Played <color=#FFFF00>Imperial Frigate</color>
+        Janoszny  >  <color=#FFFF00>Imperial Frigate</color> +4 Combat (Combat:5)
+        Wondrej  <  <color=#FFFF00>Imperial Frigate</color> +1 Discard (Discarding: 1)
+Played <color=#FF0000>Patrol Mech</color>
+        Janoszny  >  <color=#FF0000>Patrol Mech</color> ability available
+        Janoszny  >  <color=#FF0000>Patrol Mech</color> +5 Combat (Combat:10)
+Scrapping Imperial Frigate
+        Scrapped <color=#FFFF00>Imperial Frigate</color>
+        Drew 1 cards.
+Play all
+        Janoszny  >  <color=#4CC417>Blob Wheel</color> +1 Combat (Combat:11)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Janoszny  >  <color=#800080>Viper</color> +1 Combat (Combat:12)
+Attacked Wondrej for 12 (New Authority:2)
+        Janoszny - -12 Combat (Combat:0)
+        Wondrej - -12 Authority (Authority:2)
+Janoszny ends turn 23
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Wondrej's turn 24
+Resolving Discard 1 cards
+Wondrej is discarding Scout
+        no more cards to discard
+        Discarded <color=#800080>Scout</color>
+Played <color=#4CC417>Blob Destroyer</color>
+        Wondrej  >  <color=#4CC417>Blob Destroyer</color> +6 Combat (Combat:6)
+Played <color=#1589FF>Trade Escort</color>
+        Wondrej  >  <color=#1589FF>Trade Escort</color> +4 Combat (Combat:10)
+        Wondrej  >  <color=#1589FF>Trade Escort</color> +4 Authority (Authority:6)
+Played <color=#FF0000>Machine Base</color>
+        Wondrej  >  <color=#FF0000>Machine Base</color> ability available
+Activating Machine Base
+        Drew 1 cards.
+Resolving Scrap a card from your hand
+        Scrapped <color=#800080>Scout</color>
+Played <color=#800080>Viper</color>
+        Wondrej  >  <color=#800080>Viper</color> +1 Combat (Combat:11)
+Attacked Janoszny for 11 (New Authority:6)
+        Wondrej - -11 Combat (Combat:0)
+        Janoszny - -11 Authority (Authority:6)
+Wondrej ends turn 24
+        Drew 5 cards.
+        Refresh ally indicators
+        It is now Janoszny's turn 25
+        Janoszny  >  <color=#4CC417>Blob Wheel</color> +1 Combat (Combat:1)
+        Janoszny  >  <color=#4CC417>Blob Wheel</color> +1 Combat (Combat:2)
+Play all
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:1)
+        Janoszny  >  <color=#FFFF00>Space Station</color> +2 Combat (Combat:4)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:2)
+        Janoszny  >  <color=#800080>Scout</color> +1 Trade (Trade:3)
+Acquired <color=#1589FF>Trading Post</color>
+        Janoszny - -3 Trade (Trade:0)
+Chose Add 1 Authority
+        Janoszny  >  <color=#1589FF>Trading Post</color> +1 Authority (Authority:7)
+Scrapping Trading Post
+        Scrapped <color=#1589FF>Trading Post</color>
+        Janoszny  >  <color=#1589FF>Trading Post</color> +3 Combat (Combat:7)
+Attacked Machine Base
+        Janoszny - -6 Combat (Combat:1)
+        Destroyed <color=#FF0000>Machine Base</color>
+Attacked Wondrej for 1 (New Authority:5)
+        Janoszny - -1 Combat (Combat:0)
+        Wondrej - -1 Authority (Authority:5)
+Janoszny ends turn 25
+        Drew 1 cards.
+        Shuffled discard pile to form new deck
+        Drew 4 cards.
+        Refresh ally indicators
+        It is now Wondrej's turn 26
+Janoszny(0) conceded
+        Janoszny - -7 Authority (Authority:0)
+        === Wondrej has won the game. ===
+Wondrej wins the game
+        === Wondrej has won the game. ===
+ 
