@@ -11404,76 +11404,72 @@
         {
           "action": [
             {
-              "skipText": [
+              "cardAction": [
                 {
-                  "customWord": [
-                    "Chose"
+                  "cardTrigger": [
+                    {
+                      "choseAddAuthority": [
+                        "Chose",
+                        "Add",
+                        "3",
+                        "Authority",
+                        "\n"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "customWord": [
-                    "Add"
-                  ]
-                },
-                "3",
-                {
-                  "customWord": [
-                    "Authority"
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "astrojw"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Defense"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Center"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+3",
+                            {
+                              "customWord": [
+                                "Authority"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Authority"
+                          ]
+                        },
+                        ":",
+                        "46",
+                        ")",
+                        "\n"
+                      ]
+                    }
                   ]
                 }
-              ]
-            },
-            "\n"
-          ]
-        },
-        {
-          "action": [
-            {
-              "balanceUpdate": [
-                {
-                  "name": [
-                    {
-                      "customWord": [
-                        "astrojw"
-                      ]
-                    }
-                  ]
-                },
-                ">",
-                {
-                  "card": [
-                    {
-                      "customWord": [
-                        "Defense"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "Center"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "effect": [
-                    "+3",
-                    {
-                      "customWord": [
-                        "Authority"
-                      ]
-                    }
-                  ]
-                },
-                "(",
-                {
-                  "customWord": [
-                    "Authority"
-                  ]
-                },
-                ":",
-                "46",
-                ")",
-                "\n"
               ]
             }
           ]
@@ -13068,76 +13064,72 @@
         {
           "action": [
             {
-              "skipText": [
+              "cardAction": [
                 {
-                  "customWord": [
-                    "Chose"
+                  "cardTrigger": [
+                    {
+                      "choseAddAuthority": [
+                        "Chose",
+                        "Add",
+                        "3",
+                        "Authority",
+                        "\n"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "customWord": [
-                    "Add"
-                  ]
-                },
-                "3",
-                {
-                  "customWord": [
-                    "Authority"
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "astrojw"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Defense"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Center"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+3",
+                            {
+                              "customWord": [
+                                "Authority"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Authority"
+                          ]
+                        },
+                        ":",
+                        "53",
+                        ")",
+                        "\n"
+                      ]
+                    }
                   ]
                 }
-              ]
-            },
-            "\n"
-          ]
-        },
-        {
-          "action": [
-            {
-              "balanceUpdate": [
-                {
-                  "name": [
-                    {
-                      "customWord": [
-                        "astrojw"
-                      ]
-                    }
-                  ]
-                },
-                ">",
-                {
-                  "card": [
-                    {
-                      "customWord": [
-                        "Defense"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "Center"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "effect": [
-                    "+3",
-                    {
-                      "customWord": [
-                        "Authority"
-                      ]
-                    }
-                  ]
-                },
-                "(",
-                {
-                  "customWord": [
-                    "Authority"
-                  ]
-                },
-                ":",
-                "53",
-                ")",
-                "\n"
               ]
             }
           ]
@@ -16690,9 +16682,9 @@
         {
           "action": [
             {
-              "resolveAlignmentBotScrap": [
+              "cardAction": [
                 {
-                  "choseScrapType": [
+                  "cardTrigger": [
                     {
                       "choseBattleAndDiscard": [
                         "Chose",
@@ -16709,7 +16701,7 @@
                   ]
                 },
                 {
-                  "alignBotScrap": [
+                  "cardEffect": [
                     {
                       "scrapped": [
                         "Scrapped",
@@ -16783,7 +16775,7 @@
                   ]
                 },
                 {
-                  "alignBotScrap": [
+                  "cardEffect": [
                     {
                       "balanceUpdate": [
                         {
@@ -16885,7 +16877,7 @@
                   ]
                 },
                 {
-                  "alignBotScrap": [
+                  "cardEffect": [
                     {
                       "balanceUpdate": [
                         {
@@ -24776,76 +24768,72 @@
         {
           "action": [
             {
-              "skipText": [
+              "cardAction": [
                 {
-                  "customWord": [
-                    "Chose"
+                  "cardTrigger": [
+                    {
+                      "choseAddAuthority": [
+                        "Chose",
+                        "Add",
+                        "3",
+                        "Authority",
+                        "\n"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "customWord": [
-                    "Add"
-                  ]
-                },
-                "3",
-                {
-                  "customWord": [
-                    "Authority"
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "astrojw"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Defense"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Center"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+3",
+                            {
+                              "customWord": [
+                                "Authority"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Authority"
+                          ]
+                        },
+                        ":",
+                        "48",
+                        ")",
+                        "\n"
+                      ]
+                    }
                   ]
                 }
-              ]
-            },
-            "\n"
-          ]
-        },
-        {
-          "action": [
-            {
-              "balanceUpdate": [
-                {
-                  "name": [
-                    {
-                      "customWord": [
-                        "astrojw"
-                      ]
-                    }
-                  ]
-                },
-                ">",
-                {
-                  "card": [
-                    {
-                      "customWord": [
-                        "Defense"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "Center"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "effect": [
-                    "+3",
-                    {
-                      "customWord": [
-                        "Authority"
-                      ]
-                    }
-                  ]
-                },
-                "(",
-                {
-                  "customWord": [
-                    "Authority"
-                  ]
-                },
-                ":",
-                "48",
-                ")",
-                "\n"
               ]
             }
           ]
@@ -34775,76 +34763,72 @@
         {
           "action": [
             {
-              "skipText": [
+              "cardAction": [
                 {
-                  "customWord": [
-                    "Chose"
+                  "cardTrigger": [
+                    {
+                      "choseAddAuthority": [
+                        "Chose",
+                        "Add",
+                        "3",
+                        "Authority",
+                        "\n"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "customWord": [
-                    "Add"
-                  ]
-                },
-                "3",
-                {
-                  "customWord": [
-                    "Authority"
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "astrojw"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Defense"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Center"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+3",
+                            {
+                              "customWord": [
+                                "Authority"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Authority"
+                          ]
+                        },
+                        ":",
+                        "19",
+                        ")",
+                        "\n"
+                      ]
+                    }
                   ]
                 }
-              ]
-            },
-            "\n"
-          ]
-        },
-        {
-          "action": [
-            {
-              "balanceUpdate": [
-                {
-                  "name": [
-                    {
-                      "customWord": [
-                        "astrojw"
-                      ]
-                    }
-                  ]
-                },
-                ">",
-                {
-                  "card": [
-                    {
-                      "customWord": [
-                        "Defense"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "Center"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "effect": [
-                    "+3",
-                    {
-                      "customWord": [
-                        "Authority"
-                      ]
-                    }
-                  ]
-                },
-                "(",
-                {
-                  "customWord": [
-                    "Authority"
-                  ]
-                },
-                ":",
-                "19",
-                ")",
-                "\n"
               ]
             }
           ]
@@ -36487,76 +36471,72 @@
         {
           "action": [
             {
-              "skipText": [
+              "cardAction": [
                 {
-                  "customWord": [
-                    "Chose"
+                  "cardTrigger": [
+                    {
+                      "choseAddAuthority": [
+                        "Chose",
+                        "Add",
+                        "2",
+                        "Authority",
+                        "\n"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "customWord": [
-                    "Add"
-                  ]
-                },
-                "2",
-                {
-                  "customWord": [
-                    "Authority"
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "Rosty"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Barter"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "World"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+2",
+                            {
+                              "customWord": [
+                                "Authority"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Authority"
+                          ]
+                        },
+                        ":",
+                        "40",
+                        ")",
+                        "\n"
+                      ]
+                    }
                   ]
                 }
-              ]
-            },
-            "\n"
-          ]
-        },
-        {
-          "action": [
-            {
-              "balanceUpdate": [
-                {
-                  "name": [
-                    {
-                      "customWord": [
-                        "Rosty"
-                      ]
-                    }
-                  ]
-                },
-                ">",
-                {
-                  "card": [
-                    {
-                      "customWord": [
-                        "Barter"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "World"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "effect": [
-                    "+2",
-                    {
-                      "customWord": [
-                        "Authority"
-                      ]
-                    }
-                  ]
-                },
-                "(",
-                {
-                  "customWord": [
-                    "Authority"
-                  ]
-                },
-                ":",
-                "40",
-                ")",
-                "\n"
               ]
             }
           ]
@@ -36657,9 +36637,9 @@
         {
           "action": [
             {
-              "resolveAlignmentBotScrap": [
+              "cardAction": [
                 {
-                  "choseScrapType": [
+                  "cardTrigger": [
                     {
                       "choseBattleAndDiscard": [
                         "Chose",
@@ -36676,7 +36656,7 @@
                   ]
                 },
                 {
-                  "alignBotScrap": [
+                  "cardEffect": [
                     {
                       "scrapped": [
                         "Scrapped",
@@ -36750,7 +36730,7 @@
                   ]
                 },
                 {
-                  "alignBotScrap": [
+                  "cardEffect": [
                     {
                       "balanceUpdate": [
                         {
@@ -36852,7 +36832,7 @@
                   ]
                 },
                 {
-                  "alignBotScrap": [
+                  "cardEffect": [
                     {
                       "balanceUpdate": [
                         {
@@ -38308,76 +38288,72 @@
         {
           "action": [
             {
-              "skipText": [
+              "cardAction": [
                 {
-                  "customWord": [
-                    "Chose"
+                  "cardTrigger": [
+                    {
+                      "choseAddAuthority": [
+                        "Chose",
+                        "Add",
+                        "3",
+                        "Authority",
+                        "\n"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "customWord": [
-                    "Add"
-                  ]
-                },
-                "3",
-                {
-                  "customWord": [
-                    "Authority"
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "astrojw"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Defense"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Center"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+3",
+                            {
+                              "customWord": [
+                                "Authority"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Authority"
+                          ]
+                        },
+                        ":",
+                        "11",
+                        ")",
+                        "\n"
+                      ]
+                    }
                   ]
                 }
-              ]
-            },
-            "\n"
-          ]
-        },
-        {
-          "action": [
-            {
-              "balanceUpdate": [
-                {
-                  "name": [
-                    {
-                      "customWord": [
-                        "astrojw"
-                      ]
-                    }
-                  ]
-                },
-                ">",
-                {
-                  "card": [
-                    {
-                      "customWord": [
-                        "Defense"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "Center"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "effect": [
-                    "+3",
-                    {
-                      "customWord": [
-                        "Authority"
-                      ]
-                    }
-                  ]
-                },
-                "(",
-                {
-                  "customWord": [
-                    "Authority"
-                  ]
-                },
-                ":",
-                "11",
-                ")",
-                "\n"
               ]
             }
           ]

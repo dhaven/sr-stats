@@ -19,6 +19,7 @@ import { frontiers_events } from './frontiers_events.js'
 import { requisition } from './requisition.js'
 import { cosmic } from './cosmic.js'
 import { gambit } from './gambit.js'
+import { high_alert_heroes } from './high_alert_heroes.js';
 
 export default Object.assign(
     core_set['cards'],
@@ -41,5 +42,6 @@ export default Object.assign(
     frontiers_events['cards'],
     requisition['cards'],
     gambit['cards'],
-    cosmic['cards']
+    cosmic['cards'],
+    high_alert_heroes['cards']
 )

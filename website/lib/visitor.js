@@ -3,6 +3,8 @@ import StarStarLexer from './antlr4/StarStarLexer.js';
 import StarStarParser from './antlr4/StarStarParser.js';
 import StarStarVisitor from './antlr4/StarStarVisitor.js';
 
+//these cards have a primary or ally ability
+//which lets the user scrap a card from his deck
 const cardsWithDeckScrapAbility = [
     "assimilator",
     "battlebot",
@@ -54,9 +56,12 @@ const cardsWithDeckScrapAbility = [
     "theoracle",
     "thewrecker",
     "tradebot",
-    "tradeenvoy"
+    "tradeenvoy",
+    "unitystation"
 ]
 
+//when scrapped using the scrap ability, these cards will
+//let the user scrap another card from his deck 
 const selfScrapToDeckScrapCards = [
     "acceptablelosses",
     "chancellorhartman",
@@ -64,7 +69,8 @@ const selfScrapToDeckScrapCards = [
     "highpriestlyle",
     "lesforay",
     "unityfighter",
-    "warelder"
+    "warelder",
+    "alignmentbot"
 ]
 class Visitor extends StarStarVisitor {
     visitBattle(ctx) {
@@ -73,65 +79,67 @@ class Visitor extends StarStarVisitor {
         let secondPlayer = ""
         for (let i = 0; i < ctx.turn().length; i++) {
             let turn = this.visit(ctx.turn()[i])
-            if(i == 0){
-                firstPlayer = turn["currentPlayer"]
-            }
-            if(i == 1){
-                secondPlayer = turn["currentPlayer"]
-            }
-            let formattedRound = {
-                tradePool: 0,
-                combatPool: 0,
-                usedTrade: 0,
-                usedCombat: 0,
-                purchasedCards: [],
-                completedMissions: [],
-                events: [],
-                scrappedCards: [],
-                discardedCards: [],
-                destroyedBases: [],
-                winner: "",
-                winCondition: "",
-                drawCount: 0,
-                shuffleCount: 0,
-                authority: {},
-            }
-            let currentPlayer = turn["currentPlayer"];
-            if(currentPlayer == ''){
-                if(i % 2 == 0){
-                    currentPlayer = firstPlayer
-                }else{
-                    currentPlayer = secondPlayer
+            if(turn != null){
+                if(i % 2 == 0 && firstPlayer == ""){
+                    firstPlayer = turn["currentPlayer"]
                 }
-            }
-            formattedRound["player"] = currentPlayer
-            if (Object.keys(turn["players"]).length != 0) {
-                formattedRound["tradePool"] = turn["players"][currentPlayer]["tradePool"]
-                formattedRound["combatPool"] = turn["players"][currentPlayer]["combatPool"]
-                formattedRound["usedTrade"] = turn["players"][currentPlayer]["usedTrade"]
-                formattedRound["usedCombat"] = turn["players"][currentPlayer]["usedCombat"]
-                for (let player in turn["players"]) {
-                    if ("newAuthority" in turn["players"][player]) {
-                        formattedRound["authority"][player] = {
-                            diff: turn["players"][player]["Authority"],
-                            new: turn["players"][player]["newAuthority"]
+                if(i % 2 == 1 && secondPlayer == ""){
+                    secondPlayer = turn["currentPlayer"]
+                }
+                let formattedRound = {
+                    tradePool: 0,
+                    combatPool: 0,
+                    usedTrade: 0,
+                    usedCombat: 0,
+                    purchasedCards: [],
+                    completedMissions: [],
+                    events: [],
+                    scrappedCards: [],
+                    discardedCards: [],
+                    destroyedBases: [],
+                    winner: "",
+                    winCondition: "",
+                    drawCount: 0,
+                    shuffleCount: 0,
+                    authority: {},
+                }
+                let currentPlayer = turn["currentPlayer"];
+                if(currentPlayer == ''){
+                    if(i % 2 == 0){
+                        currentPlayer = firstPlayer
+                    }else{
+                        currentPlayer = secondPlayer
+                    }
+                }
+                formattedRound["player"] = currentPlayer
+                if (Object.keys(turn["players"]).length != 0) {
+                    formattedRound["tradePool"] = turn["players"][currentPlayer]["tradePool"]
+                    formattedRound["combatPool"] = turn["players"][currentPlayer]["combatPool"]
+                    formattedRound["usedTrade"] = turn["players"][currentPlayer]["usedTrade"]
+                    formattedRound["usedCombat"] = turn["players"][currentPlayer]["usedCombat"]
+                    for (let player in turn["players"]) {
+                        if ("newAuthority" in turn["players"][player]) {
+                            formattedRound["authority"][player] = {
+                                diff: turn["players"][player]["Authority"],
+                                new: turn["players"][player]["newAuthority"]
+                            }
                         }
                     }
                 }
+                formattedRound["purchasedCards"] = turn["purchasedCards"]
+                formattedRound["completedMissions"] = turn["missions"]
+                formattedRound["events"] = turn["events"]
+                formattedRound["scrappedCards"] = turn["scrappedCards"]
+                formattedRound["discardedCards"] = turn["discardedCards"]
+                formattedRound["destroyedBases"] = turn["destroyedBases"]
+                formattedRound["winner"] = turn["winner"]
+                formattedRound["winCondition"] = turn["winCondition"]
+                formattedRound["drawCount"] = turn["drawCount"]
+                formattedRound["tradeRowSlot"] = turn["tradeRowSlot"]
+                formattedRound["shuffleCount"] = turn["shuffleCount"]
+                formattedRound["foundGambits"] = turn["foundGambits"]
+                rounds.push(formattedRound)
             }
-            formattedRound["purchasedCards"] = turn["purchasedCards"]
-            formattedRound["completedMissions"] = turn["missions"]
-            formattedRound["events"] = turn["events"]
-            formattedRound["scrappedCards"] = turn["scrappedCards"]
-            formattedRound["discardedCards"] = turn["discardedCards"]
-            formattedRound["destroyedBases"] = turn["destroyedBases"]
-            formattedRound["winner"] = turn["winner"]
-            formattedRound["winCondition"] = turn["winCondition"]
-            formattedRound["drawCount"] = turn["drawCount"]
-            formattedRound["tradeRowSlot"] = turn["tradeRowSlot"]
-            formattedRound["shuffleCount"] = turn["shuffleCount"]
-            formattedRound["foundGambits"] = turn["foundGambits"]
-            rounds.push(formattedRound)
         }
         return {
             firstPlayer: firstPlayer,
@@ -158,8 +166,14 @@ class Visitor extends StarStarVisitor {
             players: {},
             foundGambits: []
         }
+        if(ctx.action().length > 0 && ctx.action()[0].resolveCommander()){
+            //skip the first turns of a skirmish because nothing happend
+            //during these turns apart from the user chosing their commander
+            return null
+        }
         for (let i = 0; i < ctx.action().length; i++) {
             let action = this.visit(ctx.action()[i])
+            //console.log(action)
             if ("cardAcquisition" in action) {
                 if (!(action["cardAcquisition"].match("tothetopofthedeck") || action["cardAcquisition"].match("tohand"))) {
                     turnData["purchasedCards"].push(action["cardAcquisition"])
@@ -243,7 +257,18 @@ class Visitor extends StarStarVisitor {
                 }
                 else if("activate" in action["cardAction"]["trigger"]){
                     if(cardsWithDeckScrapAbility.includes(action["cardAction"]["trigger"]["activate"])){
-                        turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
+                        //careful that acivating unity fighter will let you scrap from both deck and trade row
+                        //the solution is to only read the scrap from the scrapsummary if it is present
+                        if(action["cardAction"]["cardEffect"]["scrapSummary"].length != 0){
+                            turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrapSummary"])
+                            if(action["cardAction"]["trigger"]["activate"] == "recyclebot"){
+                                //if we are activating recycle bot then it is also scrapped
+                                turnData["scrappedCards"].push("recyclebot")
+                            }
+                        }else{
+                            //for some cards (battle bot) the instant effect doesn't result in a "player is scrapping  X"
+                            turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
+                        }
                     }
                 }
                 else if("resolve" in action["cardAction"]["trigger"]){
@@ -254,6 +279,17 @@ class Visitor extends StarStarVisitor {
                 }
                 else if("chose" in action["cardAction"]["trigger"]){
                     turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["cardAction"]["cardEffect"]["scrap"])
+                }else if("choseScrapTradeRow" in action["cardAction"]["trigger"]){
+                    if(action["cardAction"]["cardEffect"]["scrap"].includes("biodroidotto")){
+                        //don't include card scrapped from the trade row
+                        turnData["scrappedCards"] = turnData["scrappedCards"].concat(["biodroidotto"])
+                    }else if(action["cardAction"]["cardEffect"]["scrap"].includes("biocaptainkalle")){
+                        //don't include card scrapped from the trade row
+                        turnData["scrappedCards"] = turnData["scrappedCards"].concat(["biocaptainkalle"])
+                    }else if(action["cardAction"]["cardEffect"]["scrap"].includes("pactmanagerscott")){
+                        //don't include card scrapped from the trade row
+                        turnData["scrappedCards"] = turnData["scrappedCards"].concat(["pactmanagerscott"])
+                    }
                 }
             }
             else if ("balanceUpdate" in action) {
@@ -301,39 +337,10 @@ class Visitor extends StarStarVisitor {
             else if("timeout" in action){
                 turnData["winCondition"] = "timeout"
             }
-            else if("alignBotScrap" in action){
-                turnData["scrappedCards"] = turnData["scrappedCards"].concat(action["alignBotScrap"]["scrap"])
-                let listPlayers = Object.keys(action["alignBotScrap"]["players"])
-                for (let i = 0; i < listPlayers.length; i++) {
-                    let playerName = listPlayers[i]
-                    let player = action["alignBotScrap"]["players"][playerName]
-                    if (!(playerName in turnData["players"])) {
-                        turnData["players"][playerName] = {
-                            tradePool: player["tradePool"],
-                            usedTrade: player["usedTrade"],
-                            combatPool: player["combatPool"],
-                            usedCombat: player["usedCombat"],
-                            Authority: player["Authority"],
-                            Discard: player["Discard"],
-                        }
-                    } else {
-                        turnData["players"][playerName]["tradePool"] += player["tradePool"]
-                        turnData["players"][playerName]["usedTrade"] += player["usedTrade"]
-                        turnData["players"][playerName]["combatPool"] += player["combatPool"]
-                        turnData["players"][playerName]["usedCombat"] += player["usedCombat"]
-                        turnData["players"][playerName]["Authority"] += player["Authority"]
-                        turnData["players"][playerName]["Discard"] += player["Discard"]
-                    }
-                    if ("newAuthority" in player) {
-                        //console.log(player)
-                        turnData["players"][playerName]["newAuthority"] = player["newAuthority"]
-                    }
-                }
-            }else if("shuffled" in action){
+            else if("shuffled" in action){
                 turnData["shuffleCount"] += 1
             }
         }
-        //console.log(turnData)
         return turnData
     }
 
@@ -390,10 +397,6 @@ class Visitor extends StarStarVisitor {
         }else if (ctx.timeout()){
             return {
                 timeout: this.visit(ctx.timeout())
-            }
-        }else if(ctx.resolveAlignmentBotScrap()){
-            return {
-                alignBotScrap: this.visit(ctx.resolveAlignmentBotScrap())
             }
         } else {
             return {}
@@ -481,10 +484,15 @@ class Visitor extends StarStarVisitor {
             }
         } else if(ctx.resolving()){
             return this.visit(ctx.resolving())
-        } else if(ctx.choseScrapHandOrDiscard()){
+        } else if(ctx.choseScrapHandOrDiscard() || ctx.choseScrapDiscard() || ctx.choseBattleAndDiscard() || ctx.choseAddAuthority()){
             return {
                 "chose": true
             }
+        }else if(ctx.choseScrapTradeRow()){
+            return {
+                "choseScrapTradeRow": true
+            }
+        
         }else {
             return {}
         }
@@ -506,6 +514,8 @@ class Visitor extends StarStarVisitor {
             cardEffect["acquiredCard"] = this.visit(ctx.acquireToDeck())
         }else if(ctx.shuffleCards()){
             cardEffect["shuffled"] = true
+        }else{
+            return {}
         }
         return cardEffect
     }
@@ -601,52 +611,6 @@ class Visitor extends StarStarVisitor {
                 "traderowslot": true
             }
         }else {
-            return {}
-        }
-    }
-
-    visitResolveAlignmentBotScrap(ctx){
-        let summary = {
-            scrap: [],
-            players: []
-        }
-        for(let i = 0; i < ctx.alignBotScrap().length; i++){
-            let result = this.visit(ctx.alignBotScrap()[i])
-            if("scrap" in result){
-                summary["scrap"].push(result["scrap"])
-            }
-            if("balanceUpdate" in result){
-                let target = result["balanceUpdate"]["target"]
-                if (!(target in summary["players"])) {
-                    summary["players"][target] = {
-                        tradePool: 0,
-                        usedTrade: 0,
-                        combatPool: 0,
-                        usedCombat: 0,
-                        Authority: 0,
-                        Discard: 0
-                    }
-                }
-                let category = result["balanceUpdate"]["effect"]["category"]
-                summary["players"][target][category] += result["balanceUpdate"]["effect"]["value"]
-                if (category == "Authority") {
-                    summary["players"][target]["newAuthority"] = result["balanceUpdate"]["newValue"]
-                }
-            }
-        }
-        return summary
-    }
-
-    visitAlignBotScrap(ctx){
-        if(ctx.scrapped()){
-            return  {
-                "scrap": this.visit(ctx.scrapped())
-            }
-        }else if(ctx.balanceUpdate()){
-            return {
-                "balanceUpdate": this.visit(ctx.balanceUpdate())
-            }
-        }else{
             return {}
         }
     }

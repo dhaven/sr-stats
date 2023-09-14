@@ -86,6 +86,15 @@ export default class StarStarListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
+	// Enter a parse tree produced by StarStarParser#resolveCommander.
+	enterResolveCommander(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#resolveCommander.
+	exitResolveCommander(ctx) {
+	}
+
+
 	// Enter a parse tree produced by StarStarParser#scrapSummary.
 	enterScrapSummary(ctx) {
 	}
@@ -284,24 +293,6 @@ export default class StarStarListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
-	// Enter a parse tree produced by StarStarParser#resolveAlignmentBotScrap.
-	enterResolveAlignmentBotScrap(ctx) {
-	}
-
-	// Exit a parse tree produced by StarStarParser#resolveAlignmentBotScrap.
-	exitResolveAlignmentBotScrap(ctx) {
-	}
-
-
-	// Enter a parse tree produced by StarStarParser#choseScrapType.
-	enterChoseScrapType(ctx) {
-	}
-
-	// Exit a parse tree produced by StarStarParser#choseScrapType.
-	exitChoseScrapType(ctx) {
-	}
-
-
 	// Enter a parse tree produced by StarStarParser#choseScrapDiscard.
 	enterChoseScrapDiscard(ctx) {
 	}
@@ -320,21 +311,30 @@ export default class StarStarListener extends antlr4.tree.ParseTreeListener {
 	}
 
 
-	// Enter a parse tree produced by StarStarParser#alignBotScrap.
-	enterAlignBotScrap(ctx) {
+	// Enter a parse tree produced by StarStarParser#choseScrapTradeRow.
+	enterChoseScrapTradeRow(ctx) {
 	}
 
-	// Exit a parse tree produced by StarStarParser#alignBotScrap.
-	exitAlignBotScrap(ctx) {
+	// Exit a parse tree produced by StarStarParser#choseScrapTradeRow.
+	exitChoseScrapTradeRow(ctx) {
 	}
 
 
-	// Enter a parse tree produced by StarStarParser#noscrap.
-	enterNoscrap(ctx) {
+	// Enter a parse tree produced by StarStarParser#choseAddAuthority.
+	enterChoseAddAuthority(ctx) {
 	}
 
-	// Exit a parse tree produced by StarStarParser#noscrap.
-	exitNoscrap(ctx) {
+	// Exit a parse tree produced by StarStarParser#choseAddAuthority.
+	exitChoseAddAuthority(ctx) {
+	}
+
+
+	// Enter a parse tree produced by StarStarParser#noScrap.
+	enterNoScrap(ctx) {
+	}
+
+	// Exit a parse tree produced by StarStarParser#noScrap.
+	exitNoScrap(ctx) {
 	}
 
 

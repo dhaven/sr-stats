@@ -29,7 +29,8 @@
           }
         },
         "player": "Pistol",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -55,7 +56,8 @@
           }
         },
         "player": "benjouille",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -82,7 +84,8 @@
           }
         },
         "player": "Pistol",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -108,7 +111,8 @@
           }
         },
         "player": "benjouille",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -134,7 +138,8 @@
           }
         },
         "player": "Pistol",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 7,
@@ -158,7 +163,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "benjouille",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -184,7 +190,8 @@
           }
         },
         "player": "Pistol",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -210,7 +217,8 @@
           }
         },
         "player": "benjouille",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -234,7 +242,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "Pistol",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -264,7 +273,8 @@
           }
         },
         "player": "benjouille",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -292,7 +302,8 @@
           }
         },
         "player": "Pistol",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 7,
@@ -318,7 +329,8 @@
           }
         },
         "player": "benjouille",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -346,7 +358,8 @@
           }
         },
         "player": "Pistol",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -375,7 +388,8 @@
           }
         },
         "player": "benjouille",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -401,7 +415,8 @@
           }
         },
         "player": "Pistol",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -432,7 +447,8 @@
           }
         },
         "player": "benjouille",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -458,7 +474,8 @@
         "shuffleCount": 1,
         "authority": {},
         "player": "Pistol",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 2,
@@ -486,7 +503,8 @@
           }
         },
         "player": "benjouille",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 8,
@@ -518,7 +536,8 @@
           }
         },
         "player": "Pistol",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 6,
@@ -546,7 +565,8 @@
           }
         },
         "player": "benjouille",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 2,
@@ -574,7 +594,8 @@
           }
         },
         "player": "Pistol",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 7,
@@ -603,7 +624,8 @@
           }
         },
         "player": "benjouille",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 2,
@@ -634,7 +656,8 @@
           }
         },
         "player": "Pistol",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 0,
@@ -657,7 +680,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "benjouille",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -685,7 +709,8 @@
           }
         },
         "player": "Pistol",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 0,
@@ -704,7 +729,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "benjouille",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 0,
@@ -728,7 +754,8 @@
           }
         },
         "player": "Pistol",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       }
     ],
     "winCondition": ""

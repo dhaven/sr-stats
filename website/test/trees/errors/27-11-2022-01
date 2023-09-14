@@ -12241,76 +12241,72 @@
         {
           "action": [
             {
-              "skipText": [
+              "cardAction": [
                 {
-                  "customWord": [
-                    "Chose"
+                  "cardTrigger": [
+                    {
+                      "choseAddAuthority": [
+                        "Chose",
+                        "Add",
+                        "1",
+                        "Authority",
+                        "\n"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "customWord": [
-                    "Add"
-                  ]
-                },
-                "1",
-                {
-                  "customWord": [
-                    "Authority"
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "YL5943"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Trading"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Post"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+1",
+                            {
+                              "customWord": [
+                                "Authority"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Authority"
+                          ]
+                        },
+                        ":",
+                        "24",
+                        ")",
+                        "\n"
+                      ]
+                    }
                   ]
                 }
-              ]
-            },
-            "\n"
-          ]
-        },
-        {
-          "action": [
-            {
-              "balanceUpdate": [
-                {
-                  "name": [
-                    {
-                      "customWord": [
-                        "YL5943"
-                      ]
-                    }
-                  ]
-                },
-                ">",
-                {
-                  "card": [
-                    {
-                      "customWord": [
-                        "Trading"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "Post"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "effect": [
-                    "+1",
-                    {
-                      "customWord": [
-                        "Authority"
-                      ]
-                    }
-                  ]
-                },
-                "(",
-                {
-                  "customWord": [
-                    "Authority"
-                  ]
-                },
-                ":",
-                "24",
-                ")",
-                "\n"
               ]
             }
           ]

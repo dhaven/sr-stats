@@ -8947,148 +8947,140 @@
                       ]
                     }
                   ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "action": [
-            {
-              "skipText": [
-                {
-                  "customWord": [
-                    "Hard"
-                  ]
                 },
                 {
-                  "customWord": [
-                    "AI"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "is"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "not"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "scrapping"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "any"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "cards"
-                  ]
-                }
-              ]
-            },
-            "\n"
-          ]
-        },
-        {
-          "action": [
-            {
-              "skipText": [
-                {
-                  "customWord": [
-                    "Hard"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "AI"
-                  ]
-                },
-                ">",
-                {
-                  "customWord": [
-                    "Destroyer"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "Bot"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "ability"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "available"
-                  ]
-                }
-              ]
-            },
-            "\n"
-          ]
-        },
-        {
-          "action": [
-            {
-              "balanceUpdate": [
-                {
-                  "name": [
+                  "cardEffect": [
                     {
-                      "customWord": [
-                        "Hard"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "AI"
-                      ]
-                    }
-                  ]
-                },
-                ">",
-                {
-                  "card": [
-                    {
-                      "customWord": [
-                        "Destroyer"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "Bot"
+                      "noScrap": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "Hard"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "AI"
+                              ]
+                            }
+                          ]
+                        },
+                        "is",
+                        "not",
+                        "scrapping",
+                        "any",
+                        "cards",
+                        "\n"
                       ]
                     }
                   ]
                 },
                 {
-                  "effect": [
-                    "+5",
+                  "cardEffect": [
                     {
-                      "customWord": [
-                        "Combat"
+                      "otherEffect": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "Hard"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "AI"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Destroyer"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Bot"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "ability"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "customWord": [
+                            "available"
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]
                 },
-                "(",
                 {
-                  "customWord": [
-                    "Combat"
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "Hard"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "AI"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Destroyer"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Bot"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+5",
+                            {
+                              "customWord": [
+                                "Combat"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Combat"
+                          ]
+                        },
+                        ":",
+                        "5",
+                        ")",
+                        "\n"
+                      ]
+                    }
                   ]
-                },
-                ":",
-                "5",
-                ")",
-                "\n"
+                }
               ]
             }
           ]

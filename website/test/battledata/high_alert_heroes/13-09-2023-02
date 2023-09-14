@@ -1,0 +1,616 @@
+{
+  "status": "success",
+  "data": {
+    "firstPlayer": "HardAI",
+    "winner": "HardAI",
+    "rounds": [
+      {
+        "tradePool": 3,
+        "combatPool": 0,
+        "usedTrade": -3,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "blobfighter",
+          "explorer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {},
+        "player": "HardAI",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 0,
+        "usedTrade": -4,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "freighter"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {},
+        "player": "Player",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 1,
+        "usedTrade": -4,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "barterworld"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "Player": {
+            "diff": -1,
+            "new": 49
+          }
+        },
+        "player": "HardAI",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 2,
+        "usedTrade": -3,
+        "usedCombat": -2,
+        "purchasedCards": [
+          "surveyship"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "HardAI": {
+            "diff": -2,
+            "new": 48
+          }
+        },
+        "player": "Player",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 2,
+        "usedTrade": -4,
+        "usedCombat": -2,
+        "purchasedCards": [
+          "stealthneedle"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "Player": {
+            "diff": -2,
+            "new": 47
+          }
+        },
+        "player": "HardAI",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 1,
+        "usedTrade": -7,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "missilebot",
+          "mechworld"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "HardAI": {
+            "diff": -1,
+            "new": 47
+          }
+        },
+        "player": "Player",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 0,
+        "usedTrade": -6,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "missilemech"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {},
+        "player": "HardAI",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 1,
+        "usedTrade": -3,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "highadmiralshaner"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "HardAI": {
+            "diff": -1,
+            "new": 46
+          }
+        },
+        "player": "Player",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 3,
+        "usedTrade": -6,
+        "usedCombat": -3,
+        "purchasedCards": [
+          "freighter",
+          "cutter"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "Player": {
+            "diff": -3,
+            "new": 44
+          }
+        },
+        "player": "HardAI",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 8,
+        "combatPool": 2,
+        "usedTrade": -8,
+        "usedCombat": -2,
+        "purchasedCards": [
+          "patrolmech",
+          "spacestation"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "highadmiralshaner"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 0,
+        "authority": {
+          "HardAI": {
+            "diff": -2,
+            "new": 44
+          }
+        },
+        "player": "Player",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 13,
+        "usedTrade": -5,
+        "usedCombat": -13,
+        "purchasedCards": [
+          "warworld"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "viper"
+        ],
+        "destroyedBases": [
+          "mechworld"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 7,
+        "shuffleCount": 1,
+        "authority": {
+          "Player": {
+            "diff": -13,
+            "new": 31
+          }
+        },
+        "player": "HardAI",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 5,
+        "usedTrade": -5,
+        "usedCombat": -5,
+        "purchasedCards": [
+          "surveyship",
+          "battlepod"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout",
+          "scout"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "barterworld"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "HardAI": {
+            "diff": -1,
+            "new": 43
+          }
+        },
+        "player": "Player",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 0,
+        "usedTrade": -7,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "junkyard",
+          "administratortung"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "HardAI": {
+            "diff": 4,
+            "new": 47
+          }
+        },
+        "player": "HardAI",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 1,
+        "usedTrade": -3,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "surveyship"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "HardAI": {
+            "diff": -1,
+            "new": 46
+          }
+        },
+        "player": "Player",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 20,
+        "usedTrade": -6,
+        "usedCombat": -20,
+        "purchasedCards": [
+          "imperialfrigate",
+          "biowarriorstorm",
+          "cutter"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "administratortung"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "mechworld"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 7,
+        "shuffleCount": 0,
+        "authority": {
+          "Player": {
+            "diff": -20,
+            "new": 11
+          }
+        },
+        "player": "HardAI",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 7,
+        "usedTrade": -7,
+        "usedCombat": -7,
+        "purchasedCards": [
+          "templarbrehmer",
+          "spacestation"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "viper",
+          "templarbrehmer",
+          "surveyship"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "warworld"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 0,
+        "authority": {
+          "HardAI": {
+            "diff": -3,
+            "new": 43
+          }
+        },
+        "player": "Player",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 2,
+        "combatPool": 6,
+        "usedTrade": -2,
+        "usedCombat": -6,
+        "purchasedCards": [
+          "tradebot",
+          "federationshuttle"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "biowarriorstorm"
+        ],
+        "discardedCards": [
+          "viper",
+          "scout"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 7,
+        "shuffleCount": 1,
+        "authority": {
+          "Player": {
+            "diff": -6,
+            "new": 5
+          }
+        },
+        "player": "HardAI",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 13,
+        "usedTrade": 0,
+        "usedCombat": -13,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "surveyship"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "junkyard"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 1,
+        "authority": {
+          "HardAI": {
+            "diff": -8,
+            "new": 35
+          }
+        },
+        "player": "Player",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 5,
+        "usedTrade": -5,
+        "usedCombat": -5,
+        "purchasedCards": [
+          "tradeescort"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "barterworld"
+        ],
+        "discardedCards": [
+          "viper"
+        ],
+        "destroyedBases": [
+          "spacestation"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "Player": {
+            "diff": -1,
+            "new": 4
+          }
+        },
+        "player": "HardAI",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 8,
+        "combatPool": 2,
+        "usedTrade": -8,
+        "usedCombat": -2,
+        "purchasedCards": [
+          "fleethq"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout",
+          "surveyship"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 1,
+        "authority": {
+          "HardAI": {
+            "diff": -2,
+            "new": 33
+          }
+        },
+        "player": "Player",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 7,
+        "usedTrade": 0,
+        "usedCombat": -7,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "imperialfrigate",
+          "explorer"
+        ],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [],
+        "winner": "HardAI",
+        "winCondition": "",
+        "drawCount": 1,
+        "shuffleCount": 0,
+        "authority": {
+          "HardAI": {
+            "diff": 4,
+            "new": 37
+          },
+          "Player": {
+            "diff": -7,
+            "new": -3
+          }
+        },
+        "player": "HardAI",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      }
+    ],
+    "winCondition": ""
+  }
+}

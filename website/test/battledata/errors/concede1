@@ -1,0 +1,1295 @@
+{
+  "status": "success",
+  "data": {
+    "firstPlayer": "marcuseth",
+    "winner": "Randomosity",
+    "rounds": [
+      {
+        "tradePool": 2,
+        "combatPool": 1,
+        "usedTrade": -2,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "plasmabot"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "Randomosity": {
+            "diff": -1,
+            "new": 49
+          }
+        },
+        "player": "marcuseth",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 0,
+        "usedTrade": -4,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "frontierhawk",
+          "outlandstation"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {},
+        "player": "Randomosity",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 1,
+        "usedTrade": -4,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "explorer",
+          "spikecluster"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "Randomosity": {
+            "diff": -1,
+            "new": 48
+          }
+        },
+        "player": "marcuseth",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 2,
+        "usedTrade": -3,
+        "usedCombat": -2,
+        "purchasedCards": [
+          "integrationport"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "marcuseth": {
+            "diff": -2,
+            "new": 48
+          }
+        },
+        "player": "Randomosity",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 3,
+        "usedTrade": -3,
+        "usedCombat": -3,
+        "purchasedCards": [
+          "patrolboat"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "Randomosity": {
+            "diff": -3,
+            "new": 45
+          }
+        },
+        "player": "marcuseth",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 2,
+        "combatPool": 5,
+        "usedTrade": -2,
+        "usedCombat": -5,
+        "purchasedCards": [
+          "explorer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [
+          "spikecluster"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 0,
+        "authority": {
+          "marcuseth": {
+            "diff": -2,
+            "new": 46
+          }
+        },
+        "player": "Randomosity",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 1,
+        "usedTrade": -4,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "moonwurmhatchling"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {},
+        "player": "marcuseth",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 0,
+        "usedTrade": -6,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "reclamationstation"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {},
+        "player": "Randomosity",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 3,
+        "usedTrade": -4,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "orbitalgunplatform"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {},
+        "player": "marcuseth",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 3,
+        "usedTrade": -5,
+        "usedCombat": -3,
+        "purchasedCards": [
+          "destroyerbot",
+          "builderbot",
+          "frontierrunner"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "explorer"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "Randomosity": {
+            "diff": 3,
+            "new": 48
+          },
+          "marcuseth": {
+            "diff": -3,
+            "new": 43
+          }
+        },
+        "player": "Randomosity",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 7,
+        "usedTrade": -4,
+        "usedCombat": -6,
+        "purchasedCards": [
+          "farmship"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "explorer"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "reclamationstation"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "marcuseth": {
+            "diff": 3,
+            "new": 46
+          }
+        },
+        "player": "marcuseth",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 3,
+        "usedTrade": -6,
+        "usedCombat": -3,
+        "purchasedCards": [
+          "mobilemarket",
+          "explorer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "viper"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 1,
+        "authority": {
+          "marcuseth": {
+            "diff": -3,
+            "new": 43
+          }
+        },
+        "player": "Randomosity",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 6,
+        "usedTrade": -3,
+        "usedCombat": -6,
+        "purchasedCards": [
+          "capturedoutpost"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [
+          "integrationport",
+          "outlandstation"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "Randomosity": {
+            "diff": -2,
+            "new": 46
+          }
+        },
+        "player": "marcuseth",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 3,
+        "usedTrade": -4,
+        "usedCombat": -3,
+        "purchasedCards": [
+          "repairmech"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "builderbot"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "spikecluster"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {},
+        "player": "Randomosity",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 1,
+        "usedTrade": -6,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "infestedmoon"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "viper"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 0,
+        "authority": {
+          "Randomosity": {
+            "diff": -1,
+            "new": 45
+          }
+        },
+        "player": "marcuseth",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 5,
+        "usedTrade": -3,
+        "usedCombat": -5,
+        "purchasedCards": [
+          "orbitalshuttle",
+          "stinger"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout",
+          "viper"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "marcuseth": {
+            "diff": -5,
+            "new": 38
+          }
+        },
+        "player": "Randomosity",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 1,
+        "combatPool": 6,
+        "usedTrade": 0,
+        "usedCombat": -6,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "reclamationstation",
+          "mobilemarket"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "Randomosity": {
+            "diff": -2,
+            "new": 43
+          }
+        },
+        "player": "marcuseth",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 5,
+        "usedTrade": -5,
+        "usedCombat": -5,
+        "purchasedCards": [
+          "ionstation"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "explorer"
+        ],
+        "discardedCards": [
+          "viper"
+        ],
+        "destroyedBases": [
+          "orbitalgunplatform"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 1,
+        "authority": {
+          "Randomosity": {
+            "diff": 2,
+            "new": 45
+          },
+          "marcuseth": {
+            "diff": -1,
+            "new": 37
+          }
+        },
+        "player": "Randomosity",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 4,
+        "usedTrade": -3,
+        "usedCombat": -4,
+        "purchasedCards": [
+          "outlandstation"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "marcuseth": {
+            "diff": 3,
+            "new": 40
+          },
+          "Randomosity": {
+            "diff": -4,
+            "new": 41
+          }
+        },
+        "player": "marcuseth",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 0,
+        "usedTrade": -4,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "defensesystem"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "Randomosity": {
+            "diff": 3,
+            "new": 44
+          }
+        },
+        "player": "Randomosity",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 0,
+        "usedTrade": -7,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "neuralnexus"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "scout",
+          "scout"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 7,
+        "shuffleCount": 0,
+        "authority": {},
+        "player": "marcuseth",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 10,
+        "combatPool": 12,
+        "usedTrade": -10,
+        "usedCombat": -12,
+        "purchasedCards": [
+          "nanobotswarm",
+          "cargocraft"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout",
+          "scout"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "capturedoutpost"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 0,
+        "authority": {
+          "Randomosity": {
+            "diff": 11,
+            "new": 55
+          },
+          "marcuseth": {
+            "diff": -9,
+            "new": 31
+          }
+        },
+        "player": "Randomosity",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 1,
+        "combatPool": 8,
+        "usedTrade": -1,
+        "usedCombat": -8,
+        "purchasedCards": [
+          "builderbot"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [
+          "ionstation",
+          "outlandstation"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "marcuseth": {
+            "diff": 3,
+            "new": 34
+          },
+          "Randomosity": {
+            "diff": -4,
+            "new": 51
+          }
+        },
+        "player": "marcuseth",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 3,
+        "usedTrade": -2,
+        "usedCombat": -3,
+        "purchasedCards": [
+          "orbitalshuttle"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "viper"
+        ],
+        "discardedCards": [
+          "viper"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 1,
+        "authority": {
+          "Randomosity": {
+            "diff": 2,
+            "new": 53
+          },
+          "marcuseth": {
+            "diff": -3,
+            "new": 31
+          }
+        },
+        "player": "Randomosity",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 2,
+        "combatPool": 10,
+        "usedTrade": -2,
+        "usedCombat": -10,
+        "purchasedCards": [
+          "explorer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [
+          "reclamationstation"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 1,
+        "authority": {
+          "marcuseth": {
+            "diff": 3,
+            "new": 34
+          },
+          "Randomosity": {
+            "diff": -4,
+            "new": 49
+          }
+        },
+        "player": "marcuseth",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 10,
+        "combatPool": 9,
+        "usedTrade": -8,
+        "usedCombat": -9,
+        "purchasedCards": [
+          "transitnexus"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "mobilemarket"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "orbitalgunplatform",
+          "infestedmoon"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 7,
+        "shuffleCount": 0,
+        "authority": {
+          "Randomosity": {
+            "diff": 6,
+            "new": 55
+          }
+        },
+        "player": "Randomosity",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 10,
+        "usedTrade": -5,
+        "usedCombat": -10,
+        "purchasedCards": [
+          "destroyerbot",
+          "explorer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout",
+          "scout"
+        ],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [
+          "ionstation",
+          "defensesystem",
+          "integrationport"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 7,
+        "shuffleCount": 0,
+        "authority": {
+          "marcuseth": {
+            "diff": 3,
+            "new": 37
+          }
+        },
+        "player": "marcuseth",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 7,
+        "usedTrade": -3,
+        "usedCombat": -7,
+        "purchasedCards": [
+          "lightcruiser"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [
+          "neuralnexus"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 0,
+        "authority": {
+          "Randomosity": {
+            "diff": 3,
+            "new": 58
+          },
+          "marcuseth": {
+            "diff": -1,
+            "new": 36
+          }
+        },
+        "player": "Randomosity",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 6,
+        "usedTrade": -2,
+        "usedCombat": -6,
+        "purchasedCards": [
+          "explorer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout"
+        ],
+        "discardedCards": [
+          "viper"
+        ],
+        "destroyedBases": [
+          "outlandstation"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "marcuseth": {
+            "diff": 8,
+            "new": 44
+          },
+          "Randomosity": {
+            "diff": -2,
+            "new": 56
+          }
+        },
+        "player": "marcuseth",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 3,
+        "usedTrade": -6,
+        "usedCombat": -3,
+        "purchasedCards": [
+          "mobilemarket",
+          "cargocraft"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "spikecluster"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "Randomosity": {
+            "diff": 2,
+            "new": 58
+          }
+        },
+        "player": "Randomosity",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 11,
+        "usedTrade": -4,
+        "usedCombat": -11,
+        "purchasedCards": [
+          "explorer",
+          "explorer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout",
+          "explorer"
+        ],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [
+          "reclamationstation"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 7,
+        "shuffleCount": 0,
+        "authority": {
+          "marcuseth": {
+            "diff": 3,
+            "new": 47
+          },
+          "Randomosity": {
+            "diff": -5,
+            "new": 53
+          }
+        },
+        "player": "marcuseth",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 22,
+        "usedTrade": -2,
+        "usedCombat": -22,
+        "purchasedCards": [
+          "blobminer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout",
+          "scout",
+          "mobilemarket"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "capturedoutpost",
+          "neuralnexus",
+          "infestedmoon",
+          "outlandstation"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 8,
+        "shuffleCount": 0,
+        "authority": {
+          "Randomosity": {
+            "diff": 2,
+            "new": 55
+          },
+          "marcuseth": {
+            "diff": -4,
+            "new": 43
+          }
+        },
+        "player": "Randomosity",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 3,
+        "combatPool": 3,
+        "usedTrade": -2,
+        "usedCombat": -3,
+        "purchasedCards": [
+          "plasmabot"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "scout",
+          "explorer",
+          "plasmabot"
+        ],
+        "destroyedBases": [
+          "defensesystem"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 0,
+        "authority": {
+          "Randomosity": {
+            "diff": -3,
+            "new": 52
+          }
+        },
+        "player": "marcuseth",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 16,
+        "combatPool": 14,
+        "usedTrade": -16,
+        "usedCombat": -14,
+        "purchasedCards": [
+          "imperialflagship",
+          "swarmcluster"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "repairmech"
+        ],
+        "destroyedBases": [
+          "orbitalgunplatform"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 8,
+        "shuffleCount": 0,
+        "authority": {
+          "Randomosity": {
+            "diff": 17,
+            "new": 69
+          },
+          "marcuseth": {
+            "diff": -10,
+            "new": 33
+          }
+        },
+        "player": "Randomosity",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 2,
+        "combatPool": 8,
+        "usedTrade": -1,
+        "usedCombat": -8,
+        "purchasedCards": [
+          "builderbot"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "explorer"
+        ],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [
+          "ionstation"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "marcuseth": {
+            "diff": 3,
+            "new": 36
+          },
+          "Randomosity": {
+            "diff": -3,
+            "new": 66
+          }
+        },
+        "player": "marcuseth",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 10,
+        "combatPool": 8,
+        "usedTrade": -10,
+        "usedCombat": -8,
+        "purchasedCards": [
+          "federationcruiser",
+          "defensesystem",
+          "frontierhawk"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "frontierhawk"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "Randomosity": {
+            "diff": 10,
+            "new": 76
+          },
+          "marcuseth": {
+            "diff": -8,
+            "new": 28
+          }
+        },
+        "player": "Randomosity",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 2,
+        "combatPool": 8,
+        "usedTrade": -2,
+        "usedCombat": -8,
+        "purchasedCards": [
+          "explorer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout",
+          "scout"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "mobilemarket",
+          "outlandstation"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 0,
+        "authority": {},
+        "player": "marcuseth",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 8,
+        "combatPool": 18,
+        "usedTrade": -7,
+        "usedCombat": -18,
+        "purchasedCards": [
+          "siegefortress"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "blobminer"
+        ],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [
+          "neuralnexus",
+          "orbitalgunplatform"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 0,
+        "authority": {
+          "Randomosity": {
+            "diff": 5,
+            "new": 81
+          },
+          "marcuseth": {
+            "diff": -8,
+            "new": 20
+          }
+        },
+        "player": "Randomosity",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 2,
+        "combatPool": 11,
+        "usedTrade": -2,
+        "usedCombat": -11,
+        "purchasedCards": [
+          "cargocraft"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "explorer"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "defensesystem",
+          "integrationport",
+          "transitnexus"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "marcuseth": {
+            "diff": 3,
+            "new": 23
+          }
+        },
+        "player": "marcuseth",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 13,
+        "combatPool": 22,
+        "usedTrade": -13,
+        "usedCombat": -22,
+        "purchasedCards": [
+          "burrower",
+          "crusher",
+          "federationbattleship"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout",
+          "frontierhawk"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "capturedoutpost"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 9,
+        "shuffleCount": 0,
+        "authority": {
+          "Randomosity": {
+            "diff": 14,
+            "new": 95
+          },
+          "marcuseth": {
+            "diff": -19,
+            "new": 4
+          }
+        },
+        "player": "Randomosity",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 0,
+        "combatPool": 0,
+        "usedTrade": 0,
+        "usedCombat": 0,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "Randomosity",
+        "winCondition": "timeout",
+        "drawCount": 0,
+        "shuffleCount": 0,
+        "authority": {
+          "marcuseth": {
+            "diff": -4,
+            "new": 0
+          }
+        },
+        "player": "marcuseth",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      }
+    ],
+    "winCondition": "timeout"
+  }
+}

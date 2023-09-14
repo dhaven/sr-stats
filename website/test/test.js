@@ -49,9 +49,9 @@ function getFolderFiles(folder) {
 }
 
 const argv = yargs(process.argv.slice(2))
-  .option('overrride', {
+  .option('override', {
     alias: 'o',
-    description: 'overrride files with data returned by API',
+    description: 'override files with data returned by API',
     type: 'boolean'
   })
   .option('folder', {
@@ -61,7 +61,7 @@ const argv = yargs(process.argv.slice(2))
   })
 
 axios.defaults.headers.post['Content-Type'] = 'application/json';
-
+console.log(argv.argv)
 let test_input = ""
 if(argv.argv.folder){
   test_input = getFolderFiles("logdata/" + argv.argv.folder)
@@ -90,7 +90,7 @@ for (let i = 0; i < test_input.length; i++) {
     console.log(`Error: Unable to parse file ${test_input[i]} using grammar.`)
   }
   // test that the tree structure is unchanged
-  const treefile = "trees" + test_input[i].substring(7)
+  const treefile = "trees" + test_input[i].substring(7) //skip "logdata"
   try {
     const tree_data = fs.readFileSync(treefile, 'utf8');
     let json1 = JSON.stringify(JSON.parse(tree_data))

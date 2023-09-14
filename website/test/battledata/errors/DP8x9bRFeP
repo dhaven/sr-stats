@@ -1,0 +1,1246 @@
+{
+  "status": "success",
+  "data": {
+    "firstPlayer": "Bathorys",
+    "winner": "Bathorys",
+    "rounds": [
+      {
+        "tradePool": 1,
+        "combatPool": 4,
+        "usedTrade": -1,
+        "usedCombat": -4,
+        "purchasedCards": [
+          "blobfighter"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 14,
+        "shuffleCount": 0,
+        "authority": {
+          "Connor": {
+            "diff": -4,
+            "new": 64
+          }
+        },
+        "player": "Bathorys",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 8,
+        "combatPool": 1,
+        "usedTrade": -8,
+        "usedCombat": -1,
+        "purchasedCards": [
+          "brainworld"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "Bathorys": {
+            "diff": -1,
+            "new": 69
+          }
+        },
+        "player": "Connor",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 2,
+        "usedTrade": -6,
+        "usedCombat": -2,
+        "purchasedCards": [
+          "ram",
+          "templeguardian"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 1,
+        "authority": {
+          "Connor": {
+            "diff": -2,
+            "new": 62
+          }
+        },
+        "player": "Bathorys",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 0,
+        "usedTrade": -6,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "midgatestation",
+          "rampilot"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "Connor": {
+            "diff": 5,
+            "new": 67
+          }
+        },
+        "player": "Connor",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 10,
+        "usedTrade": -7,
+        "usedCombat": -10,
+        "purchasedCards": [
+          "dreadnaught"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 7,
+        "shuffleCount": 0,
+        "authority": {
+          "Connor": {
+            "diff": -10,
+            "new": 57
+          }
+        },
+        "player": "Bathorys",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 3,
+        "usedTrade": -6,
+        "usedCombat": -3,
+        "purchasedCards": [
+          "freightraft",
+          "ceotorres",
+          "laser"
+        ],
+        "completedMissions": [],
+        "events": [
+          "mobilization"
+        ],
+        "scrappedCards": [
+          "ceotorres"
+        ],
+        "discardedCards": [
+          "scout",
+          "scout",
+          "viper"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 10,
+        "shuffleCount": 0,
+        "authority": {
+          "Connor": {
+            "diff": 9,
+            "new": 66
+          },
+          "Bathorys": {
+            "diff": -3,
+            "new": 66
+          }
+        },
+        "player": "Connor",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 9,
+        "combatPool": 7,
+        "usedTrade": -9,
+        "usedCombat": -7,
+        "purchasedCards": [
+          "assimilator",
+          "warelder",
+          "specialopsdirector"
+        ],
+        "completedMissions": [],
+        "events": [
+          "supplyrun"
+        ],
+        "scrappedCards": [
+          "walshsstratagem",
+          "ram",
+          "warelder"
+        ],
+        "discardedCards": [
+          "ranger",
+          "swarmling",
+          "viper"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 10,
+        "shuffleCount": 1,
+        "authority": {
+          "Connor": {
+            "diff": -7,
+            "new": 59
+          }
+        },
+        "player": "Bathorys",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 6,
+        "usedTrade": -7,
+        "usedCombat": -6,
+        "purchasedCards": [
+          "portofcall",
+          "laser"
+        ],
+        "completedMissions": [],
+        "events": [
+          "tacticalmaneuver"
+        ],
+        "scrappedCards": [
+          "nandisonslaught",
+          "viper",
+          "scout"
+        ],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 10,
+        "shuffleCount": 1,
+        "authority": {
+          "Bathorys": {
+            "diff": -6,
+            "new": 60
+          },
+          "Connor": {
+            "diff": 9,
+            "new": 68
+          }
+        },
+        "player": "Connor",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 1,
+        "combatPool": 18,
+        "usedTrade": -1,
+        "usedCombat": -18,
+        "purchasedCards": [
+          "recyclebot"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "viper"
+        ],
+        "discardedCards": [
+          "blobfighter",
+          "welderdrone",
+          "protopod"
+        ],
+        "destroyedBases": [
+          "brainworld",
+          "midgatestation"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 7,
+        "shuffleCount": 1,
+        "authority": {
+          "Bathorys": {
+            "diff": 6,
+            "new": 66
+          },
+          "Connor": {
+            "diff": -9,
+            "new": 59
+          }
+        },
+        "player": "Bathorys",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 8,
+        "combatPool": 0,
+        "usedTrade": -8,
+        "usedCombat": 0,
+        "purchasedCards": [
+          "centraloffice",
+          "cunningcaptain"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "Connor": {
+            "diff": 2,
+            "new": 61
+          }
+        },
+        "player": "Connor",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 2,
+        "combatPool": 18,
+        "usedTrade": -2,
+        "usedCombat": -18,
+        "purchasedCards": [
+          "explorer"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout",
+          "scout"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "portofcall"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 9,
+        "shuffleCount": 0,
+        "authority": {
+          "Connor": {
+            "diff": -13,
+            "new": 48
+          }
+        },
+        "player": "Bathorys",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 11,
+        "combatPool": 7,
+        "usedTrade": -11,
+        "usedCombat": -7,
+        "purchasedCards": [
+          "tractorbeam",
+          "recyclingstation"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "cunningcaptain",
+          "rampilot"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "brainworld"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 8,
+        "shuffleCount": 0,
+        "authority": {
+          "Connor": {
+            "diff": 6,
+            "new": 54
+          }
+        },
+        "player": "Connor",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 4,
+        "usedTrade": -3,
+        "usedCombat": -4,
+        "purchasedCards": [
+          "cutter",
+          "rampilot"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "scout",
+          "ranger",
+          "explorer",
+          "recyclebot"
+        ],
+        "destroyedBases": [
+          "midgatestation"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 1,
+        "authority": {},
+        "player": "Bathorys",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 16,
+        "combatPool": 3,
+        "usedTrade": -16,
+        "usedCombat": -3,
+        "purchasedCards": [
+          "tradeenvoy",
+          "fleethq"
+        ],
+        "completedMissions": [],
+        "events": [
+          "superflare"
+        ],
+        "scrappedCards": [],
+        "discardedCards": [
+          "imperialviper",
+          "scout",
+          "scout"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 12,
+        "shuffleCount": 2,
+        "authority": {
+          "Connor": {
+            "diff": 14,
+            "new": 68
+          },
+          "Bathorys": {
+            "diff": -3,
+            "new": 63
+          }
+        },
+        "player": "Connor",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 18,
+        "usedTrade": -5,
+        "usedCombat": -18,
+        "purchasedCards": [
+          "defensecenter"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "rampilot",
+          "specialopsdirector",
+          "explorer"
+        ],
+        "discardedCards": [
+          "scout"
+        ],
+        "destroyedBases": [
+          "midgatestation",
+          "portofcall",
+          "recyclingstation",
+          "centraloffice"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 8,
+        "shuffleCount": 1,
+        "authority": {
+          "Bathorys": {
+            "diff": 8,
+            "new": 71
+          },
+          "Connor": {
+            "diff": -1,
+            "new": 67
+          }
+        },
+        "player": "Bathorys",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 9,
+        "combatPool": 11,
+        "usedTrade": -9,
+        "usedCombat": -11,
+        "purchasedCards": [
+          "surveyship",
+          "junkyard"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "surveyship"
+        ],
+        "discardedCards": [
+          "ranger",
+          "scout"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 9,
+        "shuffleCount": 1,
+        "authority": {
+          "Connor": {
+            "diff": 11,
+            "new": 78
+          },
+          "Bathorys": {
+            "diff": -11,
+            "new": 60
+          }
+        },
+        "player": "Connor",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 2,
+        "combatPool": 17,
+        "usedTrade": -1,
+        "usedCombat": -17,
+        "purchasedCards": [
+          "imperialfighter"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "scout",
+          "scout"
+        ],
+        "destroyedBases": [
+          "fleethq"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 7,
+        "shuffleCount": 1,
+        "authority": {
+          "Connor": {
+            "diff": -10,
+            "new": 68
+          }
+        },
+        "player": "Bathorys",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 6,
+        "usedTrade": -4,
+        "usedCombat": -6,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "scout",
+          "federationscout",
+          "ranger",
+          "cargoboat",
+          "scout"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 11,
+        "shuffleCount": 0,
+        "authority": {
+          "Connor": {
+            "diff": 14,
+            "new": 82
+          },
+          "Bathorys": {
+            "diff": -6,
+            "new": 54
+          }
+        },
+        "player": "Connor",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 13,
+        "usedTrade": -4,
+        "usedCombat": -13,
+        "purchasedCards": [
+          "blobwheel",
+          "guidance"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout",
+          "scout"
+        ],
+        "discardedCards": [
+          "scout",
+          "scout"
+        ],
+        "destroyedBases": [
+          "midgatestation",
+          "recyclingstation"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 8,
+        "shuffleCount": 0,
+        "authority": {
+          "Bathorys": {
+            "diff": 4,
+            "new": 58
+          },
+          "Connor": {
+            "diff": -6,
+            "new": 76
+          }
+        },
+        "player": "Bathorys",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 7,
+        "usedTrade": -6,
+        "usedCombat": -7,
+        "purchasedCards": [
+          "barterworld"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout",
+          "barterworld"
+        ],
+        "discardedCards": [
+          "scout",
+          "imperialviper"
+        ],
+        "destroyedBases": [
+          "brainworld"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 7,
+        "shuffleCount": 1,
+        "authority": {},
+        "player": "Connor",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 4,
+        "combatPool": 19,
+        "usedTrade": -4,
+        "usedCombat": -19,
+        "purchasedCards": [
+          "stealthneedle"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [
+          "junkyard",
+          "portofcall",
+          "centraloffice"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 8,
+        "shuffleCount": 1,
+        "authority": {
+          "Bathorys": {
+            "diff": 3,
+            "new": 61
+          },
+          "Connor": {
+            "diff": -5,
+            "new": 71
+          }
+        },
+        "player": "Bathorys",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 9,
+        "usedTrade": -7,
+        "usedCombat": -9,
+        "purchasedCards": [
+          "patrolmech"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "scout",
+          "federationscout",
+          "scout",
+          "diplomaticshuttle"
+        ],
+        "destroyedBases": [
+          "defensecenter"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 10,
+        "shuffleCount": 1,
+        "authority": {
+          "Connor": {
+            "diff": 5,
+            "new": 76
+          },
+          "Bathorys": {
+            "diff": -3,
+            "new": 58
+          }
+        },
+        "player": "Connor",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 2,
+        "combatPool": 22,
+        "usedTrade": -2,
+        "usedCombat": -22,
+        "purchasedCards": [
+          "tradepod"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "ranger",
+          "welderdrone"
+        ],
+        "discardedCards": [
+          "ranger"
+        ],
+        "destroyedBases": [
+          "recyclingstation",
+          "fleethq"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 10,
+        "shuffleCount": 1,
+        "authority": {
+          "Bathorys": {
+            "diff": 4,
+            "new": 62
+          },
+          "Connor": {
+            "diff": -12,
+            "new": 64
+          }
+        },
+        "player": "Bathorys",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 5,
+        "combatPool": 4,
+        "usedTrade": -4,
+        "usedCombat": 0,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "scout"
+        ],
+        "discardedCards": [
+          "scout",
+          "cargoboat"
+        ],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 0,
+        "authority": {
+          "Connor": {
+            "diff": 4,
+            "new": 68
+          }
+        },
+        "player": "Connor",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 8,
+        "combatPool": 22,
+        "usedTrade": -8,
+        "usedCombat": -22,
+        "purchasedCards": [
+          "cargorocket",
+          "embassyyacht",
+          "freightraft"
+        ],
+        "completedMissions": [],
+        "events": [
+          "wormhole"
+        ],
+        "scrappedCards": [
+          "scoutbot",
+          "recyclebot",
+          "blobwheel"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "midgatestation",
+          "junkyard"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 9,
+        "shuffleCount": 1,
+        "authority": {
+          "Bathorys": {
+            "diff": 3,
+            "new": 65
+          },
+          "Connor": {
+            "diff": -14,
+            "new": 54
+          }
+        },
+        "player": "Bathorys",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 9,
+        "combatPool": 18,
+        "usedTrade": -9,
+        "usedCombat": -18,
+        "purchasedCards": [
+          "battlepod",
+          "embassyyacht",
+          "explorer",
+          "explorer"
+        ],
+        "completedMissions": [],
+        "events": [
+          "reconmission"
+        ],
+        "scrappedCards": [
+          "explorer"
+        ],
+        "discardedCards": [
+          "federationscout",
+          "scout"
+        ],
+        "destroyedBases": [
+          "brainworld",
+          "defensecenter"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 10,
+        "shuffleCount": 1,
+        "authority": {
+          "Connor": {
+            "diff": 5,
+            "new": 59
+          },
+          "Bathorys": {
+            "diff": -5,
+            "new": 60
+          }
+        },
+        "player": "Connor",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 8,
+        "combatPool": 32,
+        "usedTrade": -8,
+        "usedCombat": -32,
+        "purchasedCards": [
+          "stealth",
+          "blobfighter",
+          "spacestation"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "explorer",
+          "templeguardian",
+          "freightraft"
+        ],
+        "destroyedBases": [
+          "midgatestation",
+          "centraloffice"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 9,
+        "shuffleCount": 1,
+        "authority": {
+          "Bathorys": {
+            "diff": 7,
+            "new": 67
+          },
+          "Connor": {
+            "diff": -23,
+            "new": 36
+          }
+        },
+        "player": "Bathorys",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 10,
+        "combatPool": 7,
+        "usedTrade": -10,
+        "usedCombat": -7,
+        "purchasedCards": [
+          "demolisher"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [],
+        "destroyedBases": [],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 0,
+        "authority": {
+          "Connor": {
+            "diff": 7,
+            "new": 43
+          },
+          "Bathorys": {
+            "diff": -7,
+            "new": 60
+          }
+        },
+        "player": "Connor",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 22,
+        "usedTrade": -6,
+        "usedCombat": -22,
+        "purchasedCards": [
+          "explorer",
+          "explorer",
+          "recyclingstation",
+          "battlepod"
+        ],
+        "completedMissions": [],
+        "events": [
+          "reconmission"
+        ],
+        "scrappedCards": [
+          "explorer"
+        ],
+        "discardedCards": [],
+        "destroyedBases": [
+          "portofcall"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 8,
+        "shuffleCount": 0,
+        "authority": {
+          "Bathorys": {
+            "diff": 6,
+            "new": 66
+          },
+          "Connor": {
+            "diff": -17,
+            "new": 26
+          }
+        },
+        "player": "Bathorys",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 8,
+        "combatPool": 16,
+        "usedTrade": -4,
+        "usedCombat": -16,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "demolisher",
+          "scout",
+          "federationscout",
+          "explorer"
+        ],
+        "discardedCards": [
+          "scout",
+          "federationscout"
+        ],
+        "destroyedBases": [
+          "spacestation"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 9,
+        "shuffleCount": 1,
+        "authority": {
+          "Connor": {
+            "diff": 11,
+            "new": 37
+          },
+          "Bathorys": {
+            "diff": -11,
+            "new": 55
+          }
+        },
+        "player": "Connor",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 18,
+        "usedTrade": -6,
+        "usedCombat": -18,
+        "purchasedCards": [
+          "battlemech"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "explorer",
+          "swarmling"
+        ],
+        "discardedCards": [
+          "explorer",
+          "laserdrone",
+          "templeguardian"
+        ],
+        "destroyedBases": [
+          "junkyard"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 10,
+        "shuffleCount": 1,
+        "authority": {
+          "Bathorys": {
+            "diff": 11,
+            "new": 66
+          },
+          "Connor": {
+            "diff": -14,
+            "new": 23
+          }
+        },
+        "player": "Bathorys",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 10,
+        "combatPool": 11,
+        "usedTrade": -6,
+        "usedCombat": -7,
+        "purchasedCards": [
+          "tradepod"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "ranger",
+          "diplomaticshuttle",
+          "cargoboat",
+          "stellarfalcon"
+        ],
+        "destroyedBases": [
+          "brainworld"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 12,
+        "shuffleCount": 1,
+        "authority": {
+          "Connor": {
+            "diff": 9,
+            "new": 32
+          }
+        },
+        "player": "Connor",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 7,
+        "combatPool": 26,
+        "usedTrade": -7,
+        "usedCombat": -26,
+        "purchasedCards": [
+          "cargorocket",
+          "plaguepod",
+          "plaguepod",
+          "specialopsdirector"
+        ],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "cargorocket"
+        ],
+        "destroyedBases": [
+          "midgatestation",
+          "portofcall",
+          "recyclingstation",
+          "fleethq",
+          "centraloffice"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 8,
+        "shuffleCount": 0,
+        "authority": {
+          "Bathorys": {
+            "diff": 7,
+            "new": 73
+          },
+          "Connor": {
+            "diff": -2,
+            "new": 30
+          }
+        },
+        "player": "Bathorys",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 6,
+        "combatPool": 6,
+        "usedTrade": -4,
+        "usedCombat": -6,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [
+          "ranger",
+          "imperialviper"
+        ],
+        "discardedCards": [
+          "imperialviper",
+          "ranger"
+        ],
+        "destroyedBases": [
+          "defensecenter"
+        ],
+        "winner": "",
+        "winCondition": "",
+        "drawCount": 6,
+        "shuffleCount": 0,
+        "authority": {
+          "Connor": {
+            "diff": 7,
+            "new": 37
+          }
+        },
+        "player": "Connor",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      },
+      {
+        "tradePool": 2,
+        "combatPool": 43,
+        "usedTrade": 0,
+        "usedCombat": -43,
+        "purchasedCards": [],
+        "completedMissions": [],
+        "events": [],
+        "scrappedCards": [],
+        "discardedCards": [
+          "protopod",
+          "freightraft"
+        ],
+        "destroyedBases": [
+          "junkyard"
+        ],
+        "winner": "Bathorys",
+        "winCondition": "",
+        "drawCount": 5,
+        "shuffleCount": 1,
+        "authority": {
+          "Bathorys": {
+            "diff": 4,
+            "new": 77
+          },
+          "Connor": {
+            "diff": -39,
+            "new": -2
+          }
+        },
+        "player": "Bathorys",
+        "tradeRowSlot": [],
+        "foundGambits": []
+      }
+    ],
+    "winCondition": ""
+  }
+}

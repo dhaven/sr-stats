@@ -10703,133 +10703,125 @@
                       ]
                     }
                   ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "action": [
-            {
-              "skipText": [
-                {
-                  "customWord": [
-                    "YL5943"
-                  ]
                 },
                 {
-                  "customWord": [
-                    "is"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "not"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "scrapping"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "any"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "cards"
-                  ]
-                }
-              ]
-            },
-            "\n"
-          ]
-        },
-        {
-          "action": [
-            {
-              "skipText": [
-                {
-                  "customWord": [
-                    "YL5943"
-                  ]
-                },
-                ">",
-                {
-                  "customWord": [
-                    "Destroyer"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "Bot"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "ability"
-                  ]
-                },
-                {
-                  "customWord": [
-                    "available"
-                  ]
-                }
-              ]
-            },
-            "\n"
-          ]
-        },
-        {
-          "action": [
-            {
-              "balanceUpdate": [
-                {
-                  "name": [
+                  "cardEffect": [
                     {
-                      "customWord": [
-                        "YL5943"
-                      ]
-                    }
-                  ]
-                },
-                ">",
-                {
-                  "card": [
-                    {
-                      "customWord": [
-                        "Destroyer"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "Bot"
+                      "noScrap": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "YL5943"
+                              ]
+                            }
+                          ]
+                        },
+                        "is",
+                        "not",
+                        "scrapping",
+                        "any",
+                        "cards",
+                        "\n"
                       ]
                     }
                   ]
                 },
                 {
-                  "effect": [
-                    "+5",
+                  "cardEffect": [
                     {
-                      "customWord": [
-                        "Combat"
+                      "otherEffect": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "YL5943"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Destroyer"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Bot"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "ability"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "customWord": [
+                            "available"
+                          ]
+                        },
+                        "\n"
                       ]
                     }
                   ]
                 },
-                "(",
                 {
-                  "customWord": [
-                    "Combat"
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "YL5943"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Destroyer"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Bot"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+5",
+                            {
+                              "customWord": [
+                                "Combat"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Combat"
+                          ]
+                        },
+                        ":",
+                        "5",
+                        ")",
+                        "\n"
+                      ]
+                    }
                   ]
-                },
-                ":",
-                "5",
-                ")",
-                "\n"
+                }
               ]
             }
           ]

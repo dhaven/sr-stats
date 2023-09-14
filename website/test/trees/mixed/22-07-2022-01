@@ -13613,9 +13613,9 @@
         {
           "action": [
             {
-              "resolveAlignmentBotScrap": [
+              "cardAction": [
                 {
-                  "choseScrapType": [
+                  "cardTrigger": [
                     {
                       "choseBattleAndDiscard": [
                         "Chose",
@@ -13632,7 +13632,7 @@
                   ]
                 },
                 {
-                  "alignBotScrap": [
+                  "cardEffect": [
                     {
                       "scrapped": [
                         "Scrapped",
@@ -13706,7 +13706,7 @@
                   ]
                 },
                 {
-                  "alignBotScrap": [
+                  "cardEffect": [
                     {
                       "balanceUpdate": [
                         {
@@ -13808,7 +13808,7 @@
                   ]
                 },
                 {
-                  "alignBotScrap": [
+                  "cardEffect": [
                     {
                       "balanceUpdate": [
                         {
@@ -17251,76 +17251,72 @@
         {
           "action": [
             {
-              "skipText": [
+              "cardAction": [
                 {
-                  "customWord": [
-                    "Chose"
+                  "cardTrigger": [
+                    {
+                      "choseAddAuthority": [
+                        "Chose",
+                        "Add",
+                        "2",
+                        "Authority",
+                        "\n"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "customWord": [
-                    "Add"
-                  ]
-                },
-                "2",
-                {
-                  "customWord": [
-                    "Authority"
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "YL5943"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Barter"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "World"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+2",
+                            {
+                              "customWord": [
+                                "Authority"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Authority"
+                          ]
+                        },
+                        ":",
+                        "14",
+                        ")",
+                        "\n"
+                      ]
+                    }
                   ]
                 }
-              ]
-            },
-            "\n"
-          ]
-        },
-        {
-          "action": [
-            {
-              "balanceUpdate": [
-                {
-                  "name": [
-                    {
-                      "customWord": [
-                        "YL5943"
-                      ]
-                    }
-                  ]
-                },
-                ">",
-                {
-                  "card": [
-                    {
-                      "customWord": [
-                        "Barter"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "World"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "effect": [
-                    "+2",
-                    {
-                      "customWord": [
-                        "Authority"
-                      ]
-                    }
-                  ]
-                },
-                "(",
-                {
-                  "customWord": [
-                    "Authority"
-                  ]
-                },
-                ":",
-                "14",
-                ")",
-                "\n"
               ]
             }
           ]

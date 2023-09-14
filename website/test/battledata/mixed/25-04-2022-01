@@ -23,7 +23,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "Scorpusss",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 5,
@@ -44,7 +45,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "YL5943",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -70,7 +72,8 @@
           }
         },
         "player": "Scorpusss",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -96,7 +99,8 @@
           }
         },
         "player": "YL5943",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 6,
@@ -123,7 +127,8 @@
           }
         },
         "player": "Scorpusss",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -150,7 +155,8 @@
           }
         },
         "player": "YL5943",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 7,
@@ -171,7 +177,8 @@
         "shuffleCount": 1,
         "authority": {},
         "player": "Scorpusss",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -198,7 +205,8 @@
           }
         },
         "player": "YL5943",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -221,7 +229,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "Scorpusss",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 6,
@@ -243,7 +252,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "YL5943",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 10,
@@ -267,7 +277,8 @@
         "shuffleCount": 0,
         "authority": {},
         "player": "Scorpusss",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 6,
@@ -294,7 +305,8 @@
           }
         },
         "player": "YL5943",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 9,
@@ -328,7 +340,8 @@
           }
         },
         "player": "Scorpusss",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 3,
@@ -354,7 +367,8 @@
         "shuffleCount": 1,
         "authority": {},
         "player": "YL5943",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 7,
@@ -384,7 +398,8 @@
           }
         },
         "player": "Scorpusss",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 8,
@@ -411,7 +426,8 @@
           }
         },
         "player": "YL5943",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 13,
@@ -444,7 +460,8 @@
           }
         },
         "player": "Scorpusss",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -474,7 +491,8 @@
           }
         },
         "player": "YL5943",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 7,
@@ -507,7 +525,8 @@
           }
         },
         "player": "Scorpusss",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 0,
@@ -536,7 +555,8 @@
           }
         },
         "player": "YL5943",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       },
       {
         "tradePool": 4,
@@ -570,7 +590,8 @@
           }
         },
         "player": "Scorpusss",
-        "tradeRowSlot": []
+        "tradeRowSlot": [],
+        "foundGambits": []
       }
     ],
     "winCondition": ""

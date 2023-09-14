@@ -15017,76 +15017,72 @@
         {
           "action": [
             {
-              "skipText": [
+              "cardAction": [
                 {
-                  "customWord": [
-                    "Chose"
+                  "cardTrigger": [
+                    {
+                      "choseAddAuthority": [
+                        "Chose",
+                        "Add",
+                        "3",
+                        "Authority",
+                        "\n"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "customWord": [
-                    "Add"
-                  ]
-                },
-                "3",
-                {
-                  "customWord": [
-                    "Authority"
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "TwinGodhead"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Outland"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Station"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+3",
+                            {
+                              "customWord": [
+                                "Authority"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Authority"
+                          ]
+                        },
+                        ":",
+                        "61",
+                        ")",
+                        "\n"
+                      ]
+                    }
                   ]
                 }
-              ]
-            },
-            "\n"
-          ]
-        },
-        {
-          "action": [
-            {
-              "balanceUpdate": [
-                {
-                  "name": [
-                    {
-                      "customWord": [
-                        "TwinGodhead"
-                      ]
-                    }
-                  ]
-                },
-                ">",
-                {
-                  "card": [
-                    {
-                      "customWord": [
-                        "Outland"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "Station"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "effect": [
-                    "+3",
-                    {
-                      "customWord": [
-                        "Authority"
-                      ]
-                    }
-                  ]
-                },
-                "(",
-                {
-                  "customWord": [
-                    "Authority"
-                  ]
-                },
-                ":",
-                "61",
-                ")",
-                "\n"
               ]
             }
           ]
@@ -19715,9 +19711,9 @@
         {
           "action": [
             {
-              "resolveAlignmentBotScrap": [
+              "cardAction": [
                 {
-                  "choseScrapType": [
+                  "cardTrigger": [
                     {
                       "choseScrapDiscard": [
                         "Chose",
@@ -19734,7 +19730,7 @@
                   ]
                 },
                 {
-                  "alignBotScrap": [
+                  "cardEffect": [
                     {
                       "scrapSummary": [
                         {
@@ -19769,7 +19765,7 @@
                   ]
                 },
                 {
-                  "alignBotScrap": [
+                  "cardEffect": [
                     {
                       "scrapped": [
                         "Scrapped",
@@ -19843,7 +19839,7 @@
                   ]
                 },
                 {
-                  "alignBotScrap": [
+                  "cardEffect": [
                     {
                       "scrapped": [
                         "Scrapped",
@@ -25079,76 +25075,72 @@
         {
           "action": [
             {
-              "skipText": [
+              "cardAction": [
                 {
-                  "customWord": [
-                    "Chose"
+                  "cardTrigger": [
+                    {
+                      "choseAddAuthority": [
+                        "Chose",
+                        "Add",
+                        "3",
+                        "Authority",
+                        "\n"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "customWord": [
-                    "Add"
-                  ]
-                },
-                "3",
-                {
-                  "customWord": [
-                    "Authority"
+                  "cardEffect": [
+                    {
+                      "balanceUpdate": [
+                        {
+                          "name": [
+                            {
+                              "customWord": [
+                                "TwinGodhead"
+                              ]
+                            }
+                          ]
+                        },
+                        ">",
+                        {
+                          "card": [
+                            {
+                              "customWord": [
+                                "Outland"
+                              ]
+                            },
+                            {
+                              "customWord": [
+                                "Station"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "effect": [
+                            "+3",
+                            {
+                              "customWord": [
+                                "Authority"
+                              ]
+                            }
+                          ]
+                        },
+                        "(",
+                        {
+                          "customWord": [
+                            "Authority"
+                          ]
+                        },
+                        ":",
+                        "57",
+                        ")",
+                        "\n"
+                      ]
+                    }
                   ]
                 }
-              ]
-            },
-            "\n"
-          ]
-        },
-        {
-          "action": [
-            {
-              "balanceUpdate": [
-                {
-                  "name": [
-                    {
-                      "customWord": [
-                        "TwinGodhead"
-                      ]
-                    }
-                  ]
-                },
-                ">",
-                {
-                  "card": [
-                    {
-                      "customWord": [
-                        "Outland"
-                      ]
-                    },
-                    {
-                      "customWord": [
-                        "Station"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "effect": [
-                    "+3",
-                    {
-                      "customWord": [
-                        "Authority"
-                      ]
-                    }
-                  ]
-                },
-                "(",
-                {
-                  "customWord": [
-                    "Authority"
-                  ]
-                },
-                ":",
-                "57",
-                ")",
-                "\n"
               ]
             }
           ]
